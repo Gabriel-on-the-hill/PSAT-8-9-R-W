@@ -1,0 +1,9 @@
+# Leftover dev files — not part of the deployed app
+data-easy.js
+notes-transitions-sample.html
+
+# Tooling / OS cruft
+*.py
+__pycache__/
+.DS_Store
+Thumbs.db

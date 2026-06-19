@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vocabulary — Notes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--bg:#f5f7fa;--surface:#fff;--surface2:#f1f5f9;--border:#e2e8f0;
+    --text:#1a2233;--muted:#5b6678;--accent:#7c3aed;--accent-soft:#f1ecfd;
+    --good:#15803d;--good-soft:#eef8f0;--radius:14px}
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);
+    line-height:1.6;font-size:16px}
+  .wrap{max-width:680px;margin:0 auto;padding:1.5rem 1.15rem 4rem}
+  header.bar{display:flex;align-items:center;gap:.6rem;margin-bottom:1.6rem}
+  .bar .mark{display:flex;align-items:center;gap:.5rem;font-weight:800;color:var(--accent)}
+  .bar .tag{flex:1;color:var(--muted);font-size:.85rem;font-weight:600}
+  .back{font-size:.82rem;font-weight:700;color:var(--text);text-decoration:none;
+    border:1px solid var(--border);background:var(--surface);border-radius:9px;padding:.4rem .7rem}
+  h1{font-size:1.6rem;font-weight:800;letter-spacing:-.01em;margin-bottom:.4rem}
+  .lede{color:var(--muted);font-size:1rem;margin-bottom:1.5rem}
+  .panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    padding:1.15rem 1.2rem;margin-bottom:1rem;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+  .panel h2{font-size:1.02rem;font-weight:800;margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem}
+  .panel h2 svg{color:var(--accent);flex:none}
+  .panel p{margin-bottom:.5rem}.panel p:last-child{margin-bottom:0}
+  .steps{list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:.55rem;margin-top:.3rem}
+  .steps li{counter-increment:s;display:flex;gap:.65rem;align-items:flex-start}
+  .steps li::before{content:counter(s);flex:none;width:1.5rem;height:1.5rem;border-radius:50%;
+    background:var(--accent);color:#fff;font-weight:700;font-size:.85rem;
+    display:flex;align-items:center;justify-content:center;margin-top:.1rem}
+  .ex{background:var(--accent-soft);border-radius:10px;padding:.7rem .85rem;font-size:.95rem;margin:.55rem 0}
+  .ex b{color:var(--accent)}
+  .label{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;
+    color:var(--muted);margin:1.6rem 0 .7rem .15rem}
+  table.roots{width:100%;border-collapse:collapse;font-size:.93rem}
+  table.roots th,table.roots td{text-align:left;padding:.5rem .55rem;border-bottom:1px solid var(--border);vertical-align:top}
+  table.roots th{font-weight:800;color:var(--muted);font-size:.78rem;text-transform:uppercase;letter-spacing:.04em}
+  table.roots td b{color:var(--accent)}
+  .deck-bar{display:flex;align-items:center;gap:.6rem;margin-bottom:.7rem;flex-wrap:wrap}
+  .filt{border:1px solid var(--border);background:var(--surface);border-radius:99px;
+    padding:.3rem .8rem;font-weight:700;font-size:.82rem;color:var(--muted);cursor:pointer}
+  .filt.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+  .card{border:1px solid var(--border);background:var(--surface);border-radius:var(--radius);
+    padding:1.4rem 1.2rem;text-align:center;min-height:150px;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;cursor:pointer;user-select:none}
+  .card .w{font-size:1.5rem;font-weight:800}
+  .card .d{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-top:.4rem}
+  .card .hint{font-size:.8rem;color:var(--muted);margin-top:.8rem}
+  .card .ans{display:none}
+  .card.flipped .face{display:none}
+  .card.flipped .ans{display:block}
+  .card .m{font-size:1.15rem;font-weight:700;color:var(--accent)}
+  .card .near{font-size:.85rem;color:var(--muted);margin-top:.6rem}
+  .nav{display:flex;align-items:center;justify-content:space-between;margin-top:.7rem;gap:.6rem}
+  .nav button{border:1px solid var(--border);background:var(--surface);border-radius:9px;
+    padding:.5rem .9rem;font-weight:700;font-size:.88rem;color:var(--text);cursor:pointer}
+  .nav .count{font-size:.85rem;color:var(--muted)}
+  .close{color:var(--muted);font-size:.95rem;margin-top:1.6rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="bar">
+    <span class="mark"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5a2 2 0 0 1 2-2h6v17H6a2 2 0 0 0-2 2z"/><path d="M20 5a2 2 0 0 0-2-2h-6v17h6a2 2 0 0 1 2 2z"/></svg> Notes</span>
+    <span class="tag">Craft &amp; Structure</span>
+    <a class="back" href="notes-hub.html">Back</a>
+  </header>
+
+  <h1>Vocabulary</h1>
+  <p class="lede">You can't memorize every word the test might use. What you can do is learn how to work out a word from the sentence around it, and learn the word parts that show up again and again. Those two skills work on words you've never seen.</p>
+
+  <div class="panel">
+    <h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>Working out a word from context</h2>
+    <ol class="steps">
+      <li>Read the whole sentence, and the one before it. What is it about?</li>
+      <li>Cover the word (or the blank) and say your own plain word that would fit. Make a prediction first.</li>
+      <li>Match your prediction to the closest choice. Then check the tone — is the word positive, negative, or neutral? Pick the one that fits both the meaning and the tone.</li>
+    </ol>
+    <div class="ex">The path was so <b>narrow</b> that the hikers had to walk single file. <br><span style="color:var(--muted)">Context tells you the word means "thin" — even if you'd never seen it.</span></div>
+  </div>
+
+  <div class="panel">
+    <h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3v18M5 8l7-5 7 5"/></svg>Word parts that unlock meaning</h2>
+    <p>Most long words are built from smaller parts. Learn these and you can often guess a new word by breaking it apart. <em>Inconceivable</em> = <b>in-</b> (not) + <b>conceive</b> (imagine) + <b>-able</b> (can be) = "cannot be imagined."</p>
+    <div class="label" style="margin:1rem 0 .4rem">Beginnings (prefixes)</div>
+    <table class="roots"><tr><th>Part</th><th>Means</th><th>Example</th></tr>
+      <tr><td><b>un-, in-, im-, dis-</b></td><td>not / opposite</td><td>unfair, invisible, dislike</td></tr>
+      <tr><td><b>re-</b></td><td>again, back</td><td>rewrite, return</td></tr>
+      <tr><td><b>pre-</b></td><td>before</td><td>preview, predict</td></tr>
+      <tr><td><b>mis-</b></td><td>wrong</td><td>mistake, misjudge</td></tr>
+      <tr><td><b>over-</b></td><td>too much</td><td>overcrowded</td></tr>
+      <tr><td><b>sub-</b></td><td>under, below</td><td>submarine, subway</td></tr>
+      <tr><td><b>inter-</b></td><td>between</td><td>interact, international</td></tr>
+    </table>
+    <div class="label" style="margin:1rem 0 .4rem">Middles (roots)</div>
+    <table class="roots"><tr><th>Part</th><th>Means</th><th>Example</th></tr>
+      <tr><td><b>spect, vis, vid</b></td><td>see</td><td>inspect, visible, video</td></tr>
+      <tr><td><b>port</b></td><td>carry</td><td>transport, portable</td></tr>
+      <tr><td><b>dict</b></td><td>say, tell</td><td>predict, dictate</td></tr>
+      <tr><td><b>struct</b></td><td>build</td><td>construct, structure</td></tr>
+      <tr><td><b>scrib, script</b></td><td>write</td><td>describe, script</td></tr>
+      <tr><td><b>ben, bene</b></td><td>good</td><td>benefit, benevolent</td></tr>
+      <tr><td><b>mal</b></td><td>bad</td><td>malfunction</td></tr>
+    </table>
+    <div class="label" style="margin:1rem 0 .4rem">Endings (suffixes)</div>
+    <table class="roots"><tr><th>Part</th><th>Means</th><th>Example</th></tr>
+      <tr><td><b>-able, -ible</b></td><td>can be</td><td>readable, possible</td></tr>
+      <tr><td><b>-less</b></td><td>without</td><td>harmless, fearless</td></tr>
+      <tr><td><b>-ful</b></td><td>full of</td><td>helpful, joyful</td></tr>
+      <tr><td><b>-ous</b></td><td>full of</td><td>dangerous, famous</td></tr>
+      <tr><td><b>-tion, -sion</b></td><td>act or state of</td><td>action, decision</td></tr>
+    </table>
+  </div>
+
+  <div class="label">Practice words &middot; from real PSAT 8/9 questions <span id="deckCount"></span></div>
+  <div class="deck-bar">
+    <span class="filt on" data-f="all">All</span>
+    <span class="filt" data-f="Easy">Easy</span>
+    <span class="filt" data-f="Medium">Medium</span>
+    <span class="filt" data-f="Hard">Hard</span>
+  </div>
+  <div class="card" id="card" onclick="this.classList.toggle('flipped')">
+    <div class="face"><div class="w" id="cw"></div><div class="d" id="cd"></div><div class="hint">Predict the meaning, then tap to check</div></div>
+    <div class="ans"><div class="m" id="cm"></div><div class="near" id="cn"></div></div>
+  </div>
+  <div class="nav">
+    <button id="prev">&larr; Back</button>
+    <span class="count" id="count"></span>
+    <button id="next">Next &rarr;</button>
+  </div>
+
+  <p class="close">Don't try to memorize this whole list. Use the cards to practice the two skills above — predicting from context, and breaking words into parts. Those are what carry over to the words you'll meet on test day.</p>
+</div>
+
+<script>
+const DECK = [{"word": "marked", "meaning": "Priced", "near": ["Staged", "Stained", "Watched"], "diff": "Easy"}, {"word": "involved in", "meaning": "", "near": ["nervous about", "completed by", "delayed by"], "diff": "Easy"}, {"word": "supported", "meaning": "Held up", "near": ["Encouraged", "Improved on", "Defended"], "diff": "Easy"}, {"word": "collects", "meaning": "Gathers", "near": ["Increases", "Makes", "Ignores"], "diff": "Easy"}, {"word": "featured", "meaning": "", "near": ["avoided", "appreciated", "disregarded"], "diff": "Easy"}, {"word": "spans", "meaning": "", "near": ["acknowledges", "produces", "advances"], "diff": "Easy"}, {"word": "spread", "meaning": "Extended", "near": ["Hidden", "Discussed", "Coated"], "diff": "Easy"}, {"word": "melodic", "meaning": "", "near": ["scholarly", "jarring", "personal"], "diff": "Medium"}, {"word": "demonstrating", "meaning": "", "near": ["pretending", "complaining", "requiring"], "diff": "Medium"}, {"word": "vivid", "meaning": "", "near": ["unknown", "definite", "reserved"], "diff": "Medium"}, {"word": "stimulated", "meaning": "", "near": ["assigned", "opposed", "disregarded"], "diff": "Medium"}, {"word": "preserving", "meaning": "", "near": ["replacing", "inventing", "counting"], "diff": "Medium"}, {"word": "conceivable", "meaning": "Imaginable", "near": ["Obvious", "Straightforward", "Uninterrupted"], "diff": "Medium"}, {"word": "protect", "meaning": "", "near": ["borrow", "postpone", "decorate"], "diff": "Medium"}, {"word": "embraced", "meaning": "", "near": ["distrusted", "released", "overlooked"], "diff": "Medium"}, {"word": "recognize", "meaning": "", "near": ["startle", "familiarize", "convey"], "diff": "Medium"}, {"word": "available", "meaning": "", "near": ["predictable", "complicated", "representative"], "diff": "Medium"}, {"word": "abrupt", "meaning": "", "near": ["catastrophic", "elusive", "imminent"], "diff": "Medium"}, {"word": "reaching", "meaning": "Arriving at", "near": ["Consulting with", "Running to", "Clinging to"], "diff": "Medium"}, {"word": "defied", "meaning": "", "near": ["reviewed", "respected", "prevented"], "diff": "Medium"}, {"word": "a suitable", "meaning": "", "near": ["a determined", "an arbitrary", "an unpredictable"], "diff": "Medium"}, {"word": "reputation for", "meaning": "", "near": ["complaint about", "question about", "requirement for"], "diff": "Medium"}, {"word": "indicator of", "meaning": "", "near": ["uncertainty about", "motivation for", "criticism of"], "diff": "Medium"}, {"word": "opaque", "meaning": "", "near": ["authoritative", "empirical", "facile"], "diff": "Hard"}, {"word": "assumed", "meaning": "Acquired", "near": ["Acknowledged", "Imitated", "Speculated"], "diff": "Hard"}, {"word": "supposition", "meaning": "", "near": ["recognition", "scheme", "synopsis"], "diff": "Hard"}, {"word": "optimize", "meaning": "", "near": ["adorn", "endorse", "counteract"], "diff": "Hard"}, {"word": "a straightforward", "meaning": "", "near": ["a discernible", "an inconclusive", "an unbiased"], "diff": "Hard"}, {"word": "invalidate", "meaning": "", "near": ["dispute", "withdraw", "underscore"], "diff": "Hard"}, {"word": "marginalize", "meaning": "", "near": ["epitomize", "extol", "substantiate"], "diff": "Hard"}, {"word": "quality", "meaning": "Characteristic", "near": ["Standard", "Prestige", "Accomplishment"], "diff": "Hard"}, {"word": "advantageous", "meaning": "", "near": ["risky", "misleading", "unremarkable"], "diff": "Hard"}, {"word": "comprises", "meaning": "", "near": ["engulfs", "encourages", "provokes"], "diff": "Hard"}, {"word": "an analogy", "meaning": "", "near": ["a collaboration", "an accessory", "a contradiction"], "diff": "Hard"}, {"word": "receptive to", "meaning": "", "near": ["apprised of", "incensed by", "cited in"], "diff": "Hard"}, {"word": "overshadowed by", "meaning": "", "near": ["consistent with", "representative of", "irrelevant to"], "diff": "Hard"}, {"word": "negligible", "meaning": "", "near": ["inevitable", "satisfactory", "commonplace"], "diff": "Hard"}, {"word": "An extraordinary", "meaning": "", "near": ["A lonely", "A disagreeable", "An acceptable"], "diff": "Hard"}, {"word": "accessible", "meaning": "", "near": ["innovative", "subversive", "profound"], "diff": "Hard"}, {"word": "discern", "meaning": "", "near": ["exploit", "prioritize", "yield"], "diff": "Hard"}, {"word": "diverse", "meaning": "", "near": ["predatory", "obscure", "localized"], "diff": "Hard"}, {"word": "mitigate", "meaning": "", "near": ["presuppose", "categorize", "validate"], "diff": "Hard"}, {"word": "mediated by", "meaning": "", "near": ["transposed with", "decoupled from", "antecedent to"], "diff": "Hard"}, {"word": "superseded", "meaning": "", "near": ["protracted", "curtailed", "obviated"], "diff": "Hard"}, {"word": "engendering", "meaning": "", "near": ["exploiting", "monetizing", "appraising"], "diff": "Hard"}, {"word": "consider", "meaning": "Take into account and follow", "near": ["Admire steadily and praise", "Come to a decision about", "Have an opinion on"], "diff": "Hard"}, {"word": "endure", "meaning": "Tolerate", "near": ["Regret", "Persist", "Encourage"], "diff": "Hard"}, {"word": "speculate about", "meaning": "", "near": ["dismiss", "expand on", "catalog"], "diff": "Hard"}, {"word": "asserted", "meaning": "", "near": ["exposed", "discovered", "doubted"], "diff": "Hard"}, {"word": "insurmountable", "meaning": "", "near": ["feasible", "substantial", "unnecessary"], "diff": "Hard"}, {"word": "confirm", "meaning": "", "near": ["acquire", "develop", "attract"], "diff": "Hard"}];
+let filter='all', i=0;
+function view(){ return filter==='all'?DECK:DECK.filter(d=>d.diff===filter); }
+function render(){
+  const v=view(); const card=document.getElementById('card'); card.classList.remove('flipped');
+  if(!v.length){document.getElementById('cw').textContent='—';return;}
+  if(i>=v.length)i=0; if(i<0)i=v.length-1;
+  const d=v[i];
+  document.getElementById('cw').textContent=d.word;
+  document.getElementById('cd').textContent=d.diff;
+  document.getElementById('cm').textContent=d.meaning?d.meaning:'(choose-the-word item)';
+  document.getElementById('cn').innerHTML=d.near&&d.near.length?('Tempting but wrong: '+d.near.join(' · ')):'';
+  document.getElementById('count').textContent=(i+1)+' / '+v.length;
+}
+document.getElementById('next').onclick=()=>{i++;render();};
+document.getElementById('prev').onclick=()=>{i--;render();};
+document.querySelectorAll('.filt').forEach(f=>f.onclick=()=>{
+  document.querySelectorAll('.filt').forEach(x=>x.classList.remove('on'));
+  f.classList.add('on'); filter=f.dataset.f; i=0; render();
+});
+document.getElementById('deckCount').textContent='('+DECK.length+' words)';
+render();
+</script>
+</body>
+</html>
