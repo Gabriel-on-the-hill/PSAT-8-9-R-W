@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transitions — Notes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --bg:#f5f7fa; --surface:#fff; --surface2:#f1f5f9; --border:#e2e8f0;
+    --text:#1a2233; --muted:#5b6678; --accent:#0d9488; --accent-soft:#e6f5f3;
+    --good:#15803d; --good-soft:#eef8f0; --radius:14px;
+  }
+  body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);
+    line-height:1.6;font-size:16px}
+  .wrap{max-width:680px;margin:0 auto;padding:1.5rem 1.15rem 4rem}
+  header.bar{display:flex;align-items:center;gap:.6rem;margin-bottom:1.6rem}
+  .bar .mark{display:flex;align-items:center;gap:.5rem;font-weight:800;color:var(--accent)}
+  .bar .tag{flex:1;color:var(--muted);font-size:.85rem;font-weight:600}
+  .back{font-size:.82rem;font-weight:700;color:var(--text);text-decoration:none;
+    border:1px solid var(--border);background:var(--surface);border-radius:9px;padding:.4rem .7rem}
+  h1{font-size:1.6rem;font-weight:800;letter-spacing:-.01em;margin-bottom:.4rem}
+  .lede{color:var(--muted);font-size:1rem;margin-bottom:1.5rem}
+  .panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    padding:1.15rem 1.2rem;margin-bottom:1rem;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+  .panel h2{font-size:1.02rem;font-weight:800;margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem}
+  .panel h2 svg{color:var(--accent);flex:none}
+  .formal{font-weight:600;color:var(--muted);font-size:.88rem}
+  .panel p{margin-bottom:.5rem}
+  .panel p:last-child{margin-bottom:0}
+  .steps{list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:.55rem;margin-top:.3rem}
+  .steps li{counter-increment:s;display:flex;gap:.65rem;align-items:flex-start}
+  .steps li::before{content:counter(s);flex:none;width:1.5rem;height:1.5rem;border-radius:50%;
+    background:var(--accent);color:#fff;font-weight:700;font-size:.85rem;
+    display:flex;align-items:center;justify-content:center;margin-top:.1rem}
+  .progress{display:flex;gap:.4rem;margin:.3rem 0 1.3rem}
+  .dot{width:100%;height:6px;border-radius:99px;background:var(--border)}
+  .dot.on{background:var(--accent)}
+  .label{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;
+    color:var(--muted);margin:1.6rem 0 .7rem .15rem}
+  .conn{border-left:4px solid var(--accent)}
+  .conn .ex{background:var(--accent-soft);border-radius:10px;padding:.7rem .85rem;font-size:.95rem;margin:.55rem 0}
+  .conn .ex b{color:var(--accent)}
+  .words{font-size:.92rem;color:var(--muted)}
+  .words b{color:var(--text)}
+  .gotit{margin-top:.7rem;border:1px solid var(--border);background:var(--surface2);
+    border-radius:9px;padding:.4rem .8rem;font-weight:700;font-size:.84rem;color:var(--text);cursor:pointer}
+  .gotit.done{background:var(--good-soft);border-color:#bfe6c8;color:var(--good)}
+  .try{background:var(--good-soft);border:1px solid #cdeacf}
+  .try .q{font-weight:600;margin-bottom:.6rem}
+  .reveal{border:none;background:var(--good);color:#fff;border-radius:9px;padding:.5rem .9rem;
+    font-weight:700;font-size:.88rem;cursor:pointer}
+  .answer{display:none;margin-top:.7rem;padding-top:.7rem;border-top:1px dashed #cdeacf}
+  .answer.show{display:block}
+  .close{color:var(--muted);font-size:.95rem;margin-top:1.6rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="bar">
+    <span class="mark">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 7h11M7 7l3-3M7 7l3 3"/><path d="M17 17H6M17 17l-3-3M17 17l-3 3"/></svg>
+      Notes
+    </span>
+    <span class="tag">Expression of Ideas</span>
+    <a class="back" href="notes-hub.html">Back</a>
+  </header>
+
+  <h1>Transitions</h1>
+  <p class="lede">A transition is a word or phrase that shows how one sentence connects to the next. Your job is to find the connection first, then pick the word that fits it.</p>
+
+  <div class="panel">
+    <h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l2.5 2.5"/></svg>The habit that works every time</h2>
+    <ol class="steps">
+      <li>Read both sentences fully. Make sure you know what each one is saying.</li>
+      <li>Ask yourself: how does the second sentence relate to the first? Name it in your own words before you look at the choices.</li>
+      <li>Pick the transition that matches the connection you named. Cross out any that point the wrong way.</li>
+    </ol>
+    <p style="margin-top:.7rem;color:var(--muted);font-size:.92rem">Tip: decide the connection <i>before</i> reading the answer choices. The wrong choices are designed to look tempting if you skip that step.</p>
+  </div>
+
+  <div class="label">The five connections · <span id="count">0 of 5</span></div>
+  <div class="progress" id="bar">
+    <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+  </div>
+
+  <div class="panel conn">
+    <h2>1 · Adding more <span class="formal">(Addition)</span></h2>
+    <p>The second sentence adds another point that agrees with the first.</p>
+    <div class="ex">The museum is free on Sundays. <b>In addition,</b> students get in free any day.</div>
+    <p class="words">Go-to words: <b>also, in addition, furthermore, moreover</b></p>
+    <button class="gotit">Mark as understood</button>
+  </div>
+
+  <div class="panel conn">
+    <h2>2 · Showing a difference <span class="formal">(Contrast)</span></h2>
+    <p>The second sentence goes against the first, or shows the other side.</p>
+    <div class="ex">The hike looked easy on the map. <b>However,</b> the trail was steep and rocky.</div>
+    <p class="words">Go-to words: <b>however, but, on the other hand, even so</b></p>
+    <button class="gotit">Mark as understood</button>
+  </div>
+
+  <div class="panel conn">
+    <h2>3 · Cause and effect <span class="formal">(Cause and Effect)</span></h2>
+    <p>The first sentence makes the second one happen. One causes the other.</p>
+    <div class="ex">It rained all week. <b>As a result,</b> the game was moved to Saturday.</div>
+    <p class="words">Go-to words: <b>so, therefore, as a result, because of this</b></p>
+    <button class="gotit">Mark as understood</button>
+  </div>
+
+  <div class="panel conn">
+    <h2>4 · Giving an example <span class="formal">(Illustration)</span></h2>
+    <p>The second sentence shows an example of what the first one said.</p>
+    <div class="ex">She loves outdoor sports. <b>For example,</b> she runs, swims, and climbs.</div>
+    <p class="words">Go-to words: <b>for example, for instance, such as</b></p>
+    <button class="gotit">Mark as understood</button>
+  </div>
+
+  <div class="panel conn">
+    <h2>5 · Putting things in order <span class="formal">(Sequence)</span></h2>
+    <p>The sentences show steps or a sequence in time.</p>
+    <div class="ex">First, mix the dry ingredients. <b>Next,</b> add the eggs and milk.</div>
+    <p class="words">Go-to words: <b>first, next, then, finally, meanwhile</b></p>
+    <button class="gotit">Mark as understood</button>
+  </div>
+
+  <div class="panel try">
+    <p class="q">Try one. Which connection is this?<br>
+    "The recipe calls for two cups of flour. ______, you can use one cup if you want a smaller batch."</p>
+    <button class="reveal" onclick="document.getElementById('a1').classList.add('show')">Show the answer</button>
+    <div class="answer" id="a1">
+      <p>This is a <b>difference</b> — the second sentence changes the first. A word like <b>However</b> fits. Watch out for "In addition," which would wrongly signal that you are adding more flour.</p>
+    </div>
+  </div>
+
+  <p class="close">Take these one at a time. Once a connection feels automatic, mark it understood and move on. You don't need to memorize every word — you need to recognize the connection.</p>
+
+</div>
+
+<script>
+  const btns = document.querySelectorAll('.gotit');
+  const dots = document.querySelectorAll('#bar .dot');
+  const count = document.getElementById('count');
+  function refresh(){
+    const done = document.querySelectorAll('.gotit.done').length;
+    dots.forEach((d,i)=>d.classList.toggle('on', i<done));
+    count.textContent = done + ' of 5';
+  }
+  btns.forEach((b,i)=>b.addEventListener('click', ()=>{
+    b.classList.toggle('done');
+    b.textContent = b.classList.contains('done') ? 'Understood' : 'Mark as understood';
+    refresh();
+  }));
+</script>
+</body>
+</html>
