@@ -13,7 +13,7 @@
 // ─────────────────────────────────────────────────────────────────
 
 const SHEET_SYNC_ENDPOINT =
-    'https://script.google.com/macros/s/AKfycbwrsMavUi5x79JETGZXnYaBNohwPnqPMlhMtOipQ8vXsmi24xcvENk9MDlFji4bWyXJ/exechttps://script.google.com/macros/s/AKfycbwrsMavUi5x79JETGZXnYaBNohwPnqPMlhMtOipQ8vXsmi24xcvENk9MDlFji4bWyXJ/exec';   // PSAT: paste your own Apps Script URL here to enable tutor sync
+    'https://script.google.com/macros/s/AKfycbwrsMavUi5x79JETGZXnYaBNohwPnqPMlhMtOipQ8vXsmi24xcvENk9MDlFji4bWyXJ/exec';   // tutor sync + sheet-based assignments
 
 // If your Apps Script has SHARED_SECRET set, put the same string here.
 const SHEET_SYNC_SECRET = '';

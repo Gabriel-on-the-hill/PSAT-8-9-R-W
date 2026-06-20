@@ -36,9 +36,9 @@
   .empty{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.4rem;color:var(--muted)}
   .note{color:var(--muted);font-size:.88rem;margin-top:1.3rem}
 </style>
-<script src="gate.js?v=20260619"></script>
-<script src="sheet-sync.js?v=20260619"></script>
-<script src="homework/assignments.js?v=20260619"></script>
+<script src="gate.js?v=20260620"></script>
+<script src="sheet-sync.js?v=20260620"></script>
+<script src="homework/assignments.js?v=20260620"></script>
 </head>
 <body>
 <div class="wrap">
@@ -59,7 +59,8 @@
   if (!student) { document.getElementById('who').textContent=''; list.innerHTML='<div class="empty">Please sign in from the hub first.</div>'; return; }
   document.getElementById('who').textContent = 'For ' + student;
   list.innerHTML = '<div class="empty">Loading your homework…</div>';
-  hwLoadPlan(student, function(plan){
+  hwLoadPlan(student, function(plan, source){
+  document.getElementById('who').textContent = 'For ' + student + (source==='sheet' ? ' · plan from your sheet' : ' · default plan (sheet not connected for this student)');
   if (!plan) { list.innerHTML='<div class="empty">No homework is assigned for '+student+' yet.</div>'; return; }
   document.getElementById('title').textContent = plan.title || 'Homework';
   var avail = hwDaysAvailable(plan.start);

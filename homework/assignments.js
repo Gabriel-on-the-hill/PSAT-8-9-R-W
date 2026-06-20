@@ -71,12 +71,13 @@ function hwDaysAvailable(startStr) {
 function hwLoadPlan(student, cb) {
   var local = (typeof HOMEWORK !== "undefined" && HOMEWORK[student]) ? HOMEWORK[student] : null;
   var ep = (typeof SHEET_SYNC_ENDPOINT === "string") ? SHEET_SYNC_ENDPOINT : "";
-  if (!ep) { cb(local); return; }
+  if (!ep) { cb(local, "default"); return; }
   var done = false, name = "__hwcb" + Math.random().toString(36).slice(2), sc;
   function finish(plan) { if (done) return; done = true;
     try { delete window[name]; } catch (e) {}
     if (sc && sc.parentNode) sc.parentNode.removeChild(sc);
-    cb((plan && plan.days && plan.days.length) ? plan : local); }
+    var ok = plan && plan.days && plan.days.length;
+    cb(ok ? plan : local, ok ? "sheet" : "default"); }
   var timer = setTimeout(function(){ finish(null); }, 4000);
   window[name] = function(data){ clearTimeout(timer); finish(data); };
   sc = document.createElement("script");
