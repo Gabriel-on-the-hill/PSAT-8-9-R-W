@@ -2,17 +2,19 @@
 // Storage key: 'psat89_progress'
 // Shape: { [questionId]: { correct: number, wrong: number, lastSeen: number } }
 
-const PROGRESS_KEY      = 'psat89_progress';
+// Per-student keys: the mastery ledger is scoped to whoever is signed in,
+// so multiple students can share a device without their progress mixing.
+function _hwUser() { try { return sessionStorage.getItem('psat89_user') || 'guest'; } catch (e) { return 'guest'; } }
 const MASTERY_THRESHOLD = 2;
 const MASTERY_DECAY_MS  = 21 * 86_400_000; // 21 days
 
 function getProgress() {
-    try { return JSON.parse(localStorage.getItem(PROGRESS_KEY)) || {}; }
+    try { return JSON.parse(localStorage.getItem(('psat89_progress_' + _hwUser()))) || {}; }
     catch(e) { return {}; }
 }
 
 function _saveProgress(ledger) {
-    try { localStorage.setItem(PROGRESS_KEY, JSON.stringify(ledger)); } catch(e) {}
+    try { localStorage.setItem(('psat89_progress_' + _hwUser()), JSON.stringify(ledger)); } catch(e) {}
 }
 
 // Call after every answered question.
@@ -115,8 +117,8 @@ function mergeProgress(incoming) {
 
 // Clear the entire ledger (use when Wayne wants a fresh start).
 function resetLedger() {
-    localStorage.removeItem(PROGRESS_KEY);
-    try { localStorage.removeItem(TRAP_KEY); } catch (e) {}
+    localStorage.removeItem(('psat89_progress_' + _hwUser()));
+    try { localStorage.removeItem(('psat89_trap_stats_' + _hwUser())); } catch (e) {}
 }
 
 // ── Trap analytics ────────────────────────────────────────────────
@@ -124,15 +126,15 @@ function resetLedger() {
 // with a specific `trapName` are tracked by that name; everything else
 // falls back to a per-skill bucket. Shape:
 //   { [bucket]: { wrong: number, total: number, skill: string } }
-const TRAP_KEY = 'psat89_trap_stats';
+
 
 function getTrapStats() {
-    try { return JSON.parse(localStorage.getItem(TRAP_KEY)) || {}; }
+    try { return JSON.parse(localStorage.getItem(('psat89_trap_stats_' + _hwUser()))) || {}; }
     catch (e) { return {}; }
 }
 
 function _saveTrapStats(stats) {
-    try { localStorage.setItem(TRAP_KEY, JSON.stringify(stats)); } catch (e) {}
+    try { localStorage.setItem(('psat89_trap_stats_' + _hwUser()), JSON.stringify(stats)); } catch (e) {}
 }
 
 // Call after every answered question that has a known skill.

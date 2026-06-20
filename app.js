@@ -539,6 +539,16 @@ function showCompletion() {
     pctEl.className   = 'completion-pct ' +
         (pct >= 80 ? 'pct-pass' : pct >= 60 ? 'pct-warn' : 'pct-fail');
 
+    // Calm, encouraging summary — names the effort, then points to the next step.
+    const msgEl = document.getElementById('completionMsg');
+    if (msgEl) {
+        let msg;
+        if (pct >= 80)      msg = "Strong work — you have a solid handle on these. Stretch yourself with a harder set next.";
+        else if (pct >= 60) msg = "Good effort. A few to review — that is exactly how you get better. Look over the ones you missed below.";
+        else                msg = "Nice try — these are tough. Reviewing the questions you missed is where the real progress happens.";
+        msgEl.textContent = msg;
+    }
+
     const timeEl = document.getElementById('completionTime');
     if (timeEl && duration > 0) {
         timeEl.textContent   = `${mins}m ${secs}s total · ${avgSecs}s per question`;
@@ -1011,7 +1021,7 @@ function handleOptionClick(btn, selectedLetter, q) {
     document.getElementById('currentScore').textContent = score;
     if (isCorrect) {
         btn.classList.add('correct');
-        feedbackTitle.textContent   = 'Correct!';
+        feedbackTitle.textContent   = "Nice — that's right.";
         feedbackContainer.className = 'feedback-section visible feedback-success';
     } else {
         btn.classList.add('incorrect');
@@ -1019,7 +1029,7 @@ function handleOptionClick(btn, selectedLetter, q) {
             const ltr = b.querySelector('.opt-letter');
             if (ltr && ltr.textContent.trim() === q.answer + '.') b.classList.add('correct');
         });
-        feedbackTitle.textContent   = 'Not quite.';
+        feedbackTitle.textContent   = "Not quite — here's why.";
         feedbackContainer.className = 'feedback-section visible feedback-error';
     }
 

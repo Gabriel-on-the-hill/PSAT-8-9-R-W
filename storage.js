@@ -6,11 +6,18 @@
 // (activeQuestions, score, questionBank, etc.) are referenced only inside
 // function bodies, so they resolve at call time once app.js has evaluated.
 
+// Per-student storage: history, in-progress session, and backups are scoped to
+// whoever is signed in, so multiple students can share a device without mixing.
+// Computed getters mean every existing STORAGE.HISTORY/SESSION/BACKUP call site
+// resolves to the current student's key with no other changes needed.
+function _storeUser() {
+    try { return sessionStorage.getItem('psat89_user') || 'guest'; } catch (e) { return 'guest'; }
+}
 const STORAGE = {
-    HISTORY: 'psat89_sat_history',
-    SESSION: 'psat89_sat_session',
-    SPLIT:   'psat89_sat_split',
-    BACKUP:  'psat89_sat_last_backup',
+    get HISTORY() { return 'psat89_hist_' + _storeUser(); },
+    get SESSION() { return 'psat89_sess_' + _storeUser(); },
+    get BACKUP()  { return 'psat89_backup_' + _storeUser(); },
+    SPLIT: 'psat89_split',   // panel-size preference is cosmetic; shared is fine
 };
 
 // ── Safe wrappers (localStorage can throw: private mode, quota, etc.) ──
@@ -342,7 +349,6 @@ function openRestoreAllModal() {
 const BACKUP_REMIND_AFTER = 5;   // new sessions since last full backup
 
 function renderBackupReminder() {
-    const el = document.getElementById('backupReminder');
     if (!el) return;
     const count = safeGetJSON(STORAGE.HISTORY, []).length;
     const meta  = safeGetJSON(STORAGE.BACKUP, null);

@@ -33,7 +33,15 @@
             <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
           </svg>
           PSAT 8/9 R&W
+          <span id="signedInAs" style="margin-left:auto;font-weight:600;color:var(--text-muted);opacity:0.9"></span>
         </div>
+        <script>
+          (function(){ try { var u = sessionStorage.getItem('psat89_user');
+            if (u) document.getElementById('signedInAs').innerHTML =
+              'Signed in as <b style="color:var(--primary)">' + u + '</b> &middot; ' +
+              '<a href="#" onclick="lockMastery();return false;" style="color:var(--text-muted)">Switch</a>';
+          } catch(e){} })();
+        </script>
 
         <h1 style="font-size:1.7rem;font-weight:700;margin-bottom:0.35rem">What are we doing today?</h1>
         <p style="color:var(--text-muted);font-size:0.95rem;margin-bottom:1.25rem">Choose your session type to get started.</p>
@@ -92,16 +100,16 @@
             <div style="font-size:0.82rem;color:var(--text-muted);line-height:1.4">All assigned homework in one place: Transitions, SEC, and Information &amp; Ideas drills.</div>
           </a>
 
-          <a href="progress.html" style="
+          <a href="progress-map.html" style="
               background:var(--surface);border:2px solid var(--border);
               border-radius:1rem;padding:1.5rem 1.25rem;cursor:pointer;
               text-align:left;transition:border-color 0.18s,box-shadow 0.18s,transform 0.15s;
               text-decoration:none;color:inherit;display:block;"
               onmouseover="this.style.borderColor='var(--primary-light)';this.style.transform='translateY(-2px)';this.style.boxShadow='var(--shadow)'"
               onmouseout="this.style.borderColor='var(--border)';this.style.transform='';this.style.boxShadow=''">
-            <div style="font-size:1.5rem;margin-bottom:0.6rem"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-0.15em"><path d="M4 19V5M4 19h16"/><path d="M7 15l4-4 3 2 5-6"/></svg></div>
+            <div style="font-size:1.5rem;margin-bottom:0.6rem"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-0.15em"><path d="M4 19V5M4 19h16"/><path d="M8 16l4-5 3 3 4-6"/></svg></div>
             <div style="font-size:1rem;font-weight:700;margin-bottom:0.3rem">Progress</div>
-            <div style="font-size:0.82rem;color:var(--text-muted);line-height:1.4">Recent session scores, per-skill accuracy, and mastery counts across all homework.</div>
+            <div style="font-size:0.82rem;color:var(--text-muted);line-height:1.4">Your skill journey: which skills are strong, which are in progress, and what to work on next.</div>
           </a>
 
           <a href="notes-hub.html" style="
@@ -449,6 +457,7 @@
                 </div>
                 <div id="completionTime" class="completion-time" style="display:none"></div>
                 <div id="mockScore" class="mock-score" style="display:none"></div>
+                <div id="completionMsg" style="margin-top:0.75rem;font-size:0.95rem;color:var(--text-muted);line-height:1.5"></div>
             </div>
 
             <div id="skillBreakdown" class="skill-breakdown"></div>

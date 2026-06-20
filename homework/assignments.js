@@ -1,222 +1,77 @@
-// ─────────────────────────────────────────────────────────────────
-// homework/assignments.js — catalog of all homework assignments.
-//
-// Each entry defines ONE homework drill. The homework-run.html page
-// reads `?assignment=<id>` from its URL and uses the matching entry
-// to drive the entire session.
-//
-// To add a new homework: append a new object below. No HTML/JS edits
-// elsewhere — homework-hub.html lists every entry automatically and
-// homework-run.js applies the config generically.
-//
-// Schema:
-//   id           — string, URL-safe. Used in ?assignment=<id> and as
-//                  the per-assignment localStorage key suffix.
-//   title        — short display name (e.g. shown on hub card + page logo).
-//   description  — one-line summary shown on the hub card.
-//   bank         — name of the global question-bank variable to draw
-//                  from: 'EOI' | 'CON' | 'II' | 'CS'.
-//   storageKey   — localStorage key for in-progress session state
-//                  (per-assignment so multiple homeworks can coexist).
-//   sections     — array of section configs. Each section:
-//                    skill       — string (matches question.skill)
-//                    difficulty  — 'Easy' | 'Medium' | 'Hard'
-//                    strategy    — short label shown on section card
-//                    count       — number of questions to pick
-//                    ids         — optional curated id list (drained first)
-//                    ruleWeights — optional { ruleType: count, ... }
-//                                  for SEC-style sub-rule targeting
-//   skillAbbr    — optional { 'Long Skill Name': 'Abbr' } for badges
-// ─────────────────────────────────────────────────────────────────
+// ══════════════════════════════════════════════════════════════════
+// PSAT 8/9 — per-student homework assignments.
+// The tutor "assigns" by editing this file: one entry per student
+// (keyed by the name their password maps to in gate.js), a start date,
+// and a day-by-day plan. Days unlock by date so the student gets a new
+// task each day. No server needed for the plan itself.
+// ══════════════════════════════════════════════════════════════════
 
-const HW_BANK_LOOKUP = {
-    EOI: () => (typeof questionBank_EOI !== 'undefined' ? questionBank_EOI : []),
-    CON: () => (typeof questionBank_CON !== 'undefined' ? questionBank_CON : []),
-    II:  () => (typeof questionBank_II  !== 'undefined' ? questionBank_II  : []),
-    CS:  () => (typeof questionBank_CS  !== 'undefined' ? questionBank_CS  : []),
+const HOMEWORK = {
+  // Maysa — week after a 16/18 baseline; focus Words in Context, then Rhetorical Synthesis.
+  "Maysa": {
+    title: "This week — Words in Context, then Rhetorical Synthesis",
+    start: "2026-06-20",      // YYYY-MM-DD: the day Day 1 becomes available
+    unlock: "cumulative",     // "cumulative" = missed days stay open · "strict" = one at a time
+    days: [
+      { n:1, focus:"Words in Context",            skills:["Words in Context"], diffs:["Easy","Medium"], count:5,
+        tip:"Read the Vocabulary guide first. Then: cover the word, predict your own word, pick the closest choice." },
+      { n:2, focus:"Words in Context",            skills:["Words in Context"], diffs:["Medium"], count:8,
+        tip:"Predict the meaning before reading the choices, then check the tone — positive, negative, or neutral?" },
+      { n:3, focus:"Words in Context (light day)", skills:["Words in Context"], diffs:["Easy","Medium"], count:5,
+        tip:"Re-read the word-roots table, then a short set. Let it settle — no need to push today." },
+      { n:4, focus:"Words in Context + Synthesis", skills:["Words in Context","Rhetorical Synthesis"], diffs:["Hard","Medium"], count:9,
+        tip:"Stretch on harder Words in Context. Then read the Rhetorical Synthesis guide and try a few — read the goal first." },
+      { n:5, focus:"Rhetorical Synthesis + mix",  skills:["Rhetorical Synthesis","Words in Context"], diffs:["Medium"], count:9,
+        tip:"Name the goal before reading the choices. Watch the 'true but off-task' trap." },
+      { n:6, focus:"Mixed review",                skills:["Words in Context","Rhetorical Synthesis"], diffs:["Easy","Medium","Hard"], count:6,
+        tip:"A short mixed set before our session. Read every explanation. Check your Progress page." },
+    ]
+  },
+
+  // Gabe — sample/placeholder plan; edit to assign.
+  "Gabe": {
+    title: "This week — mixed Reading & Writing review",
+    start: "2026-06-20",
+    unlock: "cumulative",
+    days: [
+      { n:1, focus:"Transitions",          skills:["Transitions"], diffs:["Easy","Medium"], count:6, tip:"Name the connection between the two sentences before looking at the words." },
+      { n:2, focus:"Boundaries",           skills:["Boundaries"], diffs:["Easy","Medium"], count:6, tip:"Decide if each part is a complete sentence, then walk the punctuation guide." },
+      { n:3, focus:"Light review",          skills:["Words in Context"], diffs:["Easy","Medium"], count:5, tip:"Short set. Predict, then check." },
+      { n:4, focus:"Information & Ideas",   skills:["Central Ideas and Details","Inferences"], diffs:["Medium"], count:8, tip:"For the main idea, cover the whole text. For inferences, stay close to what the text says." },
+      { n:5, focus:"Command of Evidence",  skills:["Command of Evidence — Textual","Command of Evidence — Quantitative"], diffs:["Medium"], count:8, tip:"Match the evidence to the whole claim. Read the figure before the choices." },
+      { n:6, focus:"Mixed review",          skills:["Transitions","Boundaries","Words in Context"], diffs:["Easy","Medium","Hard"], count:6, tip:"A short mix before our session." },
+    ]
+  }
 };
 
-const HW_ASSIGNMENTS = [
-    {
-        id:          'transitions',
-        title:       'Transitions Homework',
-        description: '20 questions · Transitions · 8 Medium · 12 Hard',
-        bank:        'EOI',
-        storageKey:  'hw_run_transitions',
-        skillAbbr:   { 'Transitions': 'Trans' },
-        sections: [
-            {
-                skill: 'Transitions', difficulty: 'Medium',
-                strategy: '4 Logical Relationships',
-                count: 8,
-                ids: ['39d1a519','221ecf0f','30438650','388b45aa','3fd0ab63','f8c4591b','17e49403','0c13dea9'],
-            },
-            {
-                skill: 'Transitions', difficulty: 'Hard',
-                strategy: '4 Logical Relationships',
-                count: 12,
-                ids: ['2df7b582','c071eca2','ecb31049','00221c00','f5959727','176edca6','974b5a8c','6e0c60da','9f1a0d91','edf30612','47e238be','e3edc138'],
-            },
-        ],
-    },
-    {
-        id:          'sec',
-        title:       'SEC Homework',
-        description: '30 questions · Boundaries + Form, Structure & Sense · 2 Easy · 13 Medium · 15 Hard',
-        bank:        'CON',
-        storageKey:  'hw_run_sec',
-        skillAbbr: {
-            'Boundaries':                 'Bnd',
-            'Form, Structure, and Sense': 'FSS',
-        },
-        sections: [
-            {
-                skill: 'Boundaries', difficulty: 'Medium',
-                strategy: 'The Decision Flowchart',
-                count: 7,
-                ruleWeights: { Semi: 1, Colon: 1, Commas: 4, NoPunct: 1 },
-            },
-            {
-                skill: 'Boundaries', difficulty: 'Hard',
-                strategy: 'The Decision Flowchart',
-                count: 8,
-                ruleWeights: { Semi: 3, Colon: 2, Commas: 2, Dash: 1 },
-            },
-            {
-                skill: 'Form, Structure, and Sense', difficulty: 'Easy',
-                strategy: 'Apply the Sub-Rule',
-                count: 2,
-                ruleWeights: { Poss: 1, SVA: 1 },
-            },
-            {
-                skill: 'Form, Structure, and Sense', difficulty: 'Medium',
-                strategy: 'Apply the Sub-Rule',
-                count: 6,
-                ruleWeights: { Mod: 2, Poss: 2, SVA: 2 },
-            },
-            {
-                skill: 'Form, Structure, and Sense', difficulty: 'Hard',
-                strategy: 'Apply the Sub-Rule',
-                count: 7,
-                ruleWeights: { Mod: 4, Poss: 1, SVA: 2 },
-            },
-        ],
-    },
-    {
-        id:          'ii',
-        title:       'Info & Ideas Homework',
-        description: '15 questions · Central Ideas + CoE-Textual + CoE-Quantitative · 3 Easy · 8 Medium · 4 Hard · ~20 min',
-        note:        'You can take this set more than once. Each attempt gives you new questions, so come back to it whenever you want more practice.',
-        bank:        'II',
-        storageKey:  'hw_run_ii',
-        skillAbbr: {
-            'Central Ideas and Details':         'CI',
-            'Command of Evidence — Textual':     'CoE-T',
-            'Command of Evidence — Quantitative':'CoE-Q',
-        },
-        // No curated `ids`: questions are drawn from the full pool by
-        // (skill, difficulty) and ordered unseen-first, so re-running the
-        // set serves fresh questions each time.
-        sections: [
-            { skill: 'Central Ideas and Details',          difficulty: 'Easy',   strategy: 'Claim → Broadest Accurate Statement', count: 1 },
-            { skill: 'Central Ideas and Details',          difficulty: 'Medium', strategy: 'Claim → Broadest Accurate Statement', count: 3 },
-            { skill: 'Central Ideas and Details',          difficulty: 'Hard',   strategy: 'Claim → Broadest Accurate Statement', count: 1 },
-            { skill: 'Command of Evidence — Textual',      difficulty: 'Easy',   strategy: 'Support Check', count: 1 },
-            { skill: 'Command of Evidence — Textual',      difficulty: 'Medium', strategy: 'Support Check', count: 4 },
-            { skill: 'Command of Evidence — Textual',      difficulty: 'Hard',   strategy: 'Support Check', count: 2 },
-            { skill: 'Command of Evidence — Quantitative', difficulty: 'Easy',   strategy: 'Data-to-Claim Match', count: 1 },
-            { skill: 'Command of Evidence — Quantitative', difficulty: 'Medium', strategy: 'Data-to-Claim Match', count: 1 },
-            { skill: 'Command of Evidence — Quantitative', difficulty: 'Hard',   strategy: 'Data-to-Claim Match', count: 1 },
-        ],
-    },
-    {
-        id:          'boundaries',
-        title:       'Boundaries Homework',
-        description: '20 questions · Boundaries only · 4 Easy · 10 Medium · 6 Hard',
-        bank:        'CON',
-        storageKey:  'hw_run_boundaries',
-        skillAbbr:   { 'Boundaries': 'Bnd' },
-        sections: [
-            {
-                skill: 'Boundaries', difficulty: 'Easy',
-                strategy: 'The Decision Flowchart',
-                count: 4,
-            },
-            {
-                skill: 'Boundaries', difficulty: 'Medium',
-                strategy: 'The Decision Flowchart',
-                count: 10,
-            },
-            {
-                skill: 'Boundaries', difficulty: 'Hard',
-                strategy: 'The Decision Flowchart',
-                count: 6,
-            },
-        ],
-    },
-    {
-        id:          'wic',
-        title:       'Words in Context Homework',
-        description: '30 questions · Words in Context · 6 Easy · 15 Medium · 9 Hard',
-        bank:        'CS',
-        storageKey:  'hw_run_wic',
-        skillAbbr:   { 'Words in Context': 'WIC' },
-        sections: [
-            {
-                skill: 'Words in Context', difficulty: 'Easy',
-                strategy: 'Two-Filter Method',
-                count: 6,
-            },
-            {
-                skill: 'Words in Context', difficulty: 'Medium',
-                strategy: 'Two-Filter Method',
-                count: 15,
-            },
-            {
-                skill: 'Words in Context', difficulty: 'Hard',
-                strategy: 'Two-Filter Method',
-                count: 9,
-            },
-        ],
-    },
-    {
-        id:          'ii-hard',
-        title:       'Info & Ideas — Hard (Inference Focus)',
-        description: '30 questions · all Hard · 12 Inference · 8 CoE-Textual · 6 Central Ideas · 4 CoE-Quantitative',
-        bank:        'II',
-        storageKey:  'hw_run_ii_hard',
-        skillAbbr: {
-            'Inferences':                        'Inf',
-            'Command of Evidence — Textual':     'CoE-T',
-            'Central Ideas and Details':         'CID',
-            'Command of Evidence — Quantitative':'CoE-Q',
-        },
-        sections: [
-            {
-                skill: 'Inferences', difficulty: 'Hard',
-                strategy: 'Inference Ceiling — grounded, not too extreme',
-                count: 12,
-            },
-            {
-                skill: 'Command of Evidence — Textual', difficulty: 'Hard',
-                strategy: 'Support Check — direct textual support',
-                count: 8,
-            },
-            {
-                skill: 'Central Ideas and Details', difficulty: 'Hard',
-                strategy: 'Main Idea — broadest accurate statement',
-                count: 6,
-            },
-            {
-                skill: 'Command of Evidence — Quantitative', difficulty: 'Hard',
-                strategy: 'Data-to-Claim Match — read the figure first',
-                count: 4,
-            },
-        ],
-    },
-];
-
-// Helper used by hub + runner.
-function hwGetAssignment(id) {
-    return HW_ASSIGNMENTS.find(a => a.id === id) || null;
+// Days available so far, given a start date (cumulative unlock by calendar day).
+function hwDaysAvailable(startStr) {
+  const [y,m,d] = (startStr||"").split("-").map(Number);
+  if (!y) return 0;
+  const start = new Date(y, m-1, d);
+  const now = new Date();
+  const days = Math.floor((now - start) / 86400000) + 1;   // Day 1 on the start date
+  return Math.max(0, days);
 }
+
+// Load a student's plan: try the tutor's Google Sheet first (JSONP, so it works
+// cross-origin), and fall back to the built-in plan above if there's no endpoint,
+// no sheet entry, or the network is slow. Either way the callback gets a plan or null.
+function hwLoadPlan(student, cb) {
+  var local = (typeof HOMEWORK !== "undefined" && HOMEWORK[student]) ? HOMEWORK[student] : null;
+  var ep = (typeof SHEET_SYNC_ENDPOINT === "string") ? SHEET_SYNC_ENDPOINT : "";
+  if (!ep) { cb(local); return; }
+  var done = false, name = "__hwcb" + Math.random().toString(36).slice(2), sc;
+  function finish(plan) { if (done) return; done = true;
+    try { delete window[name]; } catch (e) {}
+    if (sc && sc.parentNode) sc.parentNode.removeChild(sc);
+    cb((plan && plan.days && plan.days.length) ? plan : local); }
+  var timer = setTimeout(function(){ finish(null); }, 4000);
+  window[name] = function(data){ clearTimeout(timer); finish(data); };
+  sc = document.createElement("script");
+  sc.src = ep + (ep.indexOf("?") < 0 ? "?" : "&") + "action=plan&student=" + encodeURIComponent(student) + "&callback=" + name;
+  sc.onerror = function(){ clearTimeout(timer); finish(null); };
+  document.body.appendChild(sc);
+}
+
+if (typeof window !== "undefined") { window.HOMEWORK = HOMEWORK; window.hwDaysAvailable = hwDaysAvailable; window.hwLoadPlan = hwLoadPlan; }

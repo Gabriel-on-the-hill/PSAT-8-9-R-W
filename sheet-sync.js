@@ -13,7 +13,7 @@
 // ─────────────────────────────────────────────────────────────────
 
 const SHEET_SYNC_ENDPOINT =
-    '';   // PSAT: paste your own Apps Script URL here to enable tutor sync
+    'https://script.google.com/macros/s/AKfycbwrsMavUi5x79JETGZXnYaBNohwPnqPMlhMtOipQ8vXsmi24xcvENk9MDlFji4bWyXJ/exec';   // PSAT: paste your own Apps Script URL here to enable tutor sync
 
 // If your Apps Script has SHARED_SECRET set, put the same string here.
 const SHEET_SYNC_SECRET = '';
@@ -24,27 +24,27 @@ function syncSessionToSheet(record) {
 
     let student = '';
     try { student = sessionStorage.getItem('mastery_user') || ''; }
-    catch (e) {}
+    catch (e) { }
 
     const payload = {
-        date:            record.date || new Date().toISOString(),
+        date: record.date || new Date().toISOString(),
         student,
-        type:            record.source || 'practice',
-        assignmentId:    record.assignmentId    || '',
+        type: record.source || 'practice',
+        assignmentId: record.assignmentId || '',
         assignmentTitle: record.assignmentTitle || '',
-        score:           record.score ?? '',
-        total:           record.total ?? '',
-        pct:             record.pct   ?? '',
-        skills:          Array.isArray(record.skills) ? record.skills : [],
-        diffs:           Array.isArray(record.diffs)  ? record.diffs  : [],
-        mode:            record.mode || '',
-        duration:        record.duration ?? '',
-        avgSecs:         record.avgSecs  ?? '',
-        skillStats:      record.skillStats || {},
+        score: record.score ?? '',
+        total: record.total ?? '',
+        pct: record.pct ?? '',
+        skills: Array.isArray(record.skills) ? record.skills : [],
+        diffs: Array.isArray(record.diffs) ? record.diffs : [],
+        mode: record.mode || '',
+        duration: record.duration ?? '',
+        avgSecs: record.avgSecs ?? '',
+        skillStats: record.skillStats || {},
         // Integrity signal: tab-switches / focus-losses during the session.
-        blurCount:       record.blurCount ?? '',
+        blurCount: record.blurCount ?? '',
         // Per-question diagnostics: [{id,skill,difficulty,chosen,correct,isCorrect,secs,trap}]
-        questions:       Array.isArray(record.questions) ? record.questions : [],
+        questions: Array.isArray(record.questions) ? record.questions : [],
     };
     if (SHEET_SYNC_SECRET) payload.secret = SHEET_SYNC_SECRET;
 
@@ -56,19 +56,19 @@ function syncSessionToSheet(record) {
     // which avoids the CORS preflight that application/json would trigger.
     try {
         fetch(SHEET_SYNC_ENDPOINT, {
-            method:    'POST',
-            mode:      'no-cors',
-            redirect:  'follow',
-            cache:     'no-store',
-            body:      JSON.stringify(payload),
+            method: 'POST',
+            mode: 'no-cors',
+            redirect: 'follow',
+            cache: 'no-store',
+            body: JSON.stringify(payload),
             keepalive: true, // keeps the request alive across page unload
         })
-        .then(() => {
-            console.log('[sync] session posted:', payload.type, payload.assignmentTitle || payload.skills.join(','));
-        })
-        .catch(err => {
-            console.warn('[sync] upload failed (silent):', err);
-        });
+            .then(() => {
+                console.log('[sync] session posted:', payload.type, payload.assignmentTitle || payload.skills.join(','));
+            })
+            .catch(err => {
+                console.warn('[sync] upload failed (silent):', err);
+            });
     } catch (e) {
         console.warn('[sync] threw synchronously:', e);
     }
