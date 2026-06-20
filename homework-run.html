@@ -47,7 +47,7 @@
 </head>
 <body>
 <div class="wrap">
-  <div class="topbar"><span class="t" id="hdr">Homework</span><a class="back" href="homework-hub.html">All days</a></div>
+  <div class="topbar"><span class="t" id="hdr">Homework</span><span style="display:flex;gap:.6rem;align-items:center"><span id="timer" style="display:none;font-weight:800;font-variant-numeric:tabular-nums;background:var(--surface);border:1px solid var(--border);border-radius:9px;padding:.3rem .6rem">--:--</span><a class="back" href="homework-hub.html">All days</a></span></div>
   <div id="tip" class="tip"></div>
   <div id="run"></div>
   <div id="finish" class="hidden"></div>
@@ -61,6 +61,7 @@
   hwLoadPlan(student, function(plan){
   if(!plan||!dayN||!plan.days[dayN-1]){ run.innerHTML='<div class="done-card">This homework day was not found. <a href="homework-hub.html">Back to homework</a></div>'; document.getElementById('tip').style.display='none'; return; }
   var spec=plan.days[dayN-1];
+  var hwTimer=null;
   document.getElementById('hdr').textContent='Day '+dayN+' · '+spec.focus;
   document.getElementById('tip').textContent=spec.tip;
   var QB=[].concat(
@@ -101,6 +102,7 @@
     document.getElementById('next').classList.remove('hidden');
   }
   function finish(){
+    if(hwTimer) clearInterval(hwTimer);
     try{ localStorage.setItem('psat89_hw_'+student+'_'+plan.start+'_'+dayN,'1'); }catch(e){}
     var secs=Math.round((Date.now()-started)/1000);
     postLog(secs);
@@ -123,6 +125,11 @@
     }catch(e){}
   }
   render();
+  if (spec.minutes > 0) {
+    var remain = spec.minutes * 60, te = document.getElementById('timer'); te.style.display = 'inline-block';
+    function tick(){ var m = Math.floor(remain/60), x = remain%60; te.textContent = m + ':' + String(x).padStart(2,'0'); if (remain <= 0) { clearInterval(hwTimer); finish(); } remain--; }
+    tick(); hwTimer = setInterval(tick, 1000);
+  }
   });
 })();
 </script>

@@ -73,7 +73,7 @@
     var state = isDone? '<span class="state done">Done</span>' : (open? '<span class="state open">Available</span>' : '<span class="state lock">Opens '+fmtDate(plan.start, day.n-1)+'</span>');
     html += '<div class="'+cls+'">'
       + '<div class="top"><span class="num">'+day.n+'</span><span class="focus">'+day.focus+'</span>'+state+'</div>'
-      + '<div class="meta">'+day.diffs.join(' + ')+' &middot; '+day.count+' questions</div>'
+      + '<div class="meta">'+day.diffs.join(' + ')+' &middot; '+day.count+' questions'+(day.minutes? ' &middot; '+day.minutes+' min':'')+'</div>'
       + (open? '<div class="tip">'+day.tip+'</div>' : '')
       + (open? '<div class="go"><a class="btn'+(isDone?' sec':'')+'" href="homework-run.html?student='+encodeURIComponent(student)+'&day='+day.n+'">'+(isDone?'Do it again':'Start day '+day.n)+'</a></div>' : '')
       + '</div>';
