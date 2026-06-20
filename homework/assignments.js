@@ -44,14 +44,25 @@ const HOMEWORK = {
   }
 };
 
+// Parse a start date robustly: accepts "YYYY-MM-DD", a Date, ISO, or locale
+// formats like "6/20/2026". Returns a local Date at midnight, or null.
+function hwParseDate(s) {
+  if (s instanceof Date) return isNaN(s) ? null : new Date(s.getFullYear(), s.getMonth(), s.getDate());
+  if (!s) return null;
+  s = String(s).trim();
+  var m = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (m) return new Date(+m[1], +m[2] - 1, +m[3]);
+  var d = new Date(s);
+  return isNaN(d) ? null : new Date(d.getFullYear(), d.getMonth(), d.getDate());
+}
+
 // Days available so far, given a start date (cumulative unlock by calendar day).
 function hwDaysAvailable(startStr) {
-  const [y,m,d] = (startStr||"").split("-").map(Number);
-  if (!y) return 0;
-  const start = new Date(y, m-1, d);
-  const now = new Date();
-  const days = Math.floor((now - start) / 86400000) + 1;   // Day 1 on the start date
-  return Math.max(0, days);
+  var start = hwParseDate(startStr);
+  if (!start) return 1;   // if the date is missing/odd, open Day 1 rather than lock everything
+  var now = new Date();
+  var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  return Math.max(0, Math.floor((today - start) / 86400000) + 1);   // Day 1 on the start date
 }
 
 // Load a student's plan: try the tutor's Google Sheet first (JSONP, so it works
@@ -74,4 +85,4 @@ function hwLoadPlan(student, cb) {
   document.body.appendChild(sc);
 }
 
-if (typeof window !== "undefined") { window.HOMEWORK = HOMEWORK; window.hwDaysAvailable = hwDaysAvailable; window.hwLoadPlan = hwLoadPlan; }
+if (typeof window !== "undefined") { window.HOMEWORK = HOMEWORK; window.hwDaysAvailable = hwDaysAvailable; window.hwLoadPlan = hwLoadPlan; window.hwParseDate = hwParseDate; }
