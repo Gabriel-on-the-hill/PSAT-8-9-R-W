@@ -9,22 +9,22 @@
 const HOMEWORK = {
   // Maysa — week after a 16/18 baseline; focus Words in Context, then Rhetorical Synthesis.
   "Maysa": {
-    title: "This week — Words in Context, then Rhetorical Synthesis",
+    title: "Words in Context",
     start: "2026-06-20",      // YYYY-MM-DD: the day Day 1 becomes available
     unlock: "cumulative",     // "cumulative" = missed days stay open · "strict" = one at a time
     days: [
-      { n:1, focus:"Words in Context",            skills:["Words in Context"], diffs:["Easy","Medium"], count:5,
-        tip:"Read the Vocabulary guide first. Then: cover the word, predict your own word, pick the closest choice." },
-      { n:2, focus:"Words in Context",            skills:["Words in Context"], diffs:["Medium"], count:8,
-        tip:"Predict the meaning before reading the choices, then check the tone — positive, negative, or neutral?" },
-      { n:3, focus:"Words in Context (light day)", skills:["Words in Context"], diffs:["Easy","Medium"], count:5,
-        tip:"Re-read the word-roots table, then a short set. Let it settle — no need to push today." },
-      { n:4, focus:"Words in Context + Synthesis", skills:["Words in Context","Rhetorical Synthesis"], diffs:["Hard","Medium"], count:9,
-        tip:"Stretch on harder Words in Context. Then read the Rhetorical Synthesis guide and try a few — read the goal first." },
-      { n:5, focus:"Rhetorical Synthesis + mix",  skills:["Rhetorical Synthesis","Words in Context"], diffs:["Medium"], count:9,
-        tip:"Name the goal before reading the choices. Watch the 'true but off-task' trap." },
-      { n:6, focus:"Mixed review",                skills:["Words in Context","Rhetorical Synthesis"], diffs:["Easy","Medium","Hard"], count:6,
-        tip:"A short mixed set before our session. Read every explanation. Check your Progress page." },
+      { n:1, focus:"Words in Context", skills:["Words in Context"], diffs:["Easy","Medium"], count:5, minutes:5,
+        tip:"Cover the word, predict your own word then pick the correct choice." },
+      { n:2, focus:"Words in Context", skills:["Words in Context"], diffs:["Medium"], count:8, minutes:8,
+        tip:"Cover the word, predict your own word then pick the correct choice." },
+      { n:3, focus:"Words in Context", skills:["Words in Context"], diffs:["Easy","Medium"], count:5, minutes:5,
+        tip:"Cover the word, predict your own word then pick the correct choice." },
+      { n:4, focus:"Words in Context", skills:["Words in Context"], diffs:["Medium","Hard"], count:10, minutes:10,
+        tip:"Read the text carefully, cover the word, predict your own word then pick the correct choice." },
+      { n:5, focus:"Words in Context", skills:["Words in Context"], diffs:["Medium"], count:9, minutes:9,
+        tip:"Cover the word, predict your own word then pick the correct choice." },
+      { n:6, focus:"Words in Context", skills:["Words in Context"], diffs:["Easy","Medium","Hard"], count:9, minutes:9,
+        tip:"Read the question carefully, cover the word, predict your own word then pick the correct choice." },
     ]
   },
 
@@ -68,17 +68,23 @@ function hwDaysAvailable(startStr) {
 // Load a student's plan: try the tutor's Google Sheet first (JSONP, so it works
 // cross-origin), and fall back to the built-in plan above if there's no endpoint,
 // no sheet entry, or the network is slow. Either way the callback gets a plan or null.
+// Where homework PLANS come from:
+//   false = from this file (reliable, instant, works for every student, no backend) ← default
+//   true  = fetch from your Google Sheet's Plans tab (needs the backend fully working)
+// The homework/session LOG to your sheet works either way.
+var HW_USE_SHEET = false;
+
 function hwLoadPlan(student, cb) {
   var local = (typeof HOMEWORK !== "undefined" && HOMEWORK[student]) ? HOMEWORK[student] : null;
   var ep = (typeof SHEET_SYNC_ENDPOINT === "string") ? SHEET_SYNC_ENDPOINT : "";
-  if (!ep) { cb(local, "default"); return; }
+  if (!HW_USE_SHEET || !ep) { cb(local, "local"); return; }
   var done = false, name = "__hwcb" + Math.random().toString(36).slice(2), sc;
   function finish(plan) { if (done) return; done = true;
     try { delete window[name]; } catch (e) {}
     if (sc && sc.parentNode) sc.parentNode.removeChild(sc);
     var ok = plan && plan.days && plan.days.length;
     cb(ok ? plan : local, ok ? "sheet" : "default"); }
-  var timer = setTimeout(function(){ finish(null); }, 4000);
+  var timer = setTimeout(function(){ finish(null); }, 9000);
   window[name] = function(data){ clearTimeout(timer); finish(data); };
   sc = document.createElement("script");
   sc.src = ep + (ep.indexOf("?") < 0 ? "?" : "&") + "action=plan&student=" + encodeURIComponent(student) + "&callback=" + name;

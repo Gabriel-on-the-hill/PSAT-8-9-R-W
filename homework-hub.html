@@ -60,7 +60,7 @@
   document.getElementById('who').textContent = 'For ' + student;
   list.innerHTML = '<div class="empty">Loading your homework…</div>';
   hwLoadPlan(student, function(plan, source){
-  document.getElementById('who').textContent = 'For ' + student + (source==='sheet' ? ' · plan from your sheet' : ' · default plan (sheet not connected for this student)');
+  document.getElementById('who').textContent = 'For ' + student + (source==='sheet' ? ' · from your sheet' : '');
   if (!plan) { list.innerHTML='<div class="empty">No homework is assigned for '+student+' yet.</div>'; return; }
   document.getElementById('title').textContent = plan.title || 'Homework';
   var avail = hwDaysAvailable(plan.start);

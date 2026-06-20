@@ -1,21 +1,10 @@
-// ─────────────────────────────────────────────────────────────────
-// sheet-sync.js — fire-and-forget upload of every completed session
+// sheet-sync.js — fire-and-forget upload of completed sessions/homework
 // to the tutor-owned Google Sheet (via Apps Script Web App).
-//
-// Behaviour:
-//   • Never blocks the UI. The student doesn't wait for the network.
-//   • Local history (psat89_sat_history) keeps working regardless.
-//   • Failures are logged to console only — no user-visible error.
-//   • Includes the student's name from the gate (sessionStorage.mastery_user).
-//
-// To rotate the endpoint or disable sync, edit the URL below.
-// Set ENDPOINT = '' to disable upload entirely.
-// ─────────────────────────────────────────────────────────────────
+// Set SHEET_SYNC_ENDPOINT = '' to disable upload entirely.
 
 const SHEET_SYNC_ENDPOINT =
-    'https://script.google.com/macros/s/AKfycbwrsMavUi5x79JETGZXnYaBNohwPnqPMlhMtOipQ8vXsmi24xcvENk9MDlFji4bWyXJ/exec';   // tutor sync + sheet-based assignments
+    'https://script.google.com/macros/s/AKfycbww5MvDsh6crhh4LxE5lapi4LD2OAAFeB1zghjKEWghUc3rBbkAguhFuArIx5ndLccz/exec';   // tutor sync + sheet-based assignments
 
-// If your Apps Script has SHARED_SECRET set, put the same string here.
 const SHEET_SYNC_SECRET = '';
 
 function syncSessionToSheet(record) {
@@ -23,8 +12,7 @@ function syncSessionToSheet(record) {
     if (!record) return;
 
     let student = '';
-    try { student = sessionStorage.getItem('mastery_user') || ''; }
-    catch (e) { }
+    try { student = sessionStorage.getItem('psat89_user') || ''; } catch (e) { }
 
     const payload = {
         date: record.date || new Date().toISOString(),
@@ -41,19 +29,11 @@ function syncSessionToSheet(record) {
         duration: record.duration ?? '',
         avgSecs: record.avgSecs ?? '',
         skillStats: record.skillStats || {},
-        // Integrity signal: tab-switches / focus-losses during the session.
         blurCount: record.blurCount ?? '',
-        // Per-question diagnostics: [{id,skill,difficulty,chosen,correct,isCorrect,secs,trap}]
         questions: Array.isArray(record.questions) ? record.questions : [],
     };
     if (SHEET_SYNC_SECRET) payload.secret = SHEET_SYNC_SECRET;
 
-    // Apps Script /exec redirects to googleusercontent.com and CORS headers
-    // don't reliably survive that hop. We use mode:'no-cors' so the POST goes
-    // through reliably — the trade-off is we can't read the response. The
-    // request still lands and the row still appears in the Sheet.
-    // Body is a plain string so fetch defaults to text/plain;charset=UTF-8,
-    // which avoids the CORS preflight that application/json would trigger.
     try {
         fetch(SHEET_SYNC_ENDPOINT, {
             method: 'POST',
@@ -61,14 +41,10 @@ function syncSessionToSheet(record) {
             redirect: 'follow',
             cache: 'no-store',
             body: JSON.stringify(payload),
-            keepalive: true, // keeps the request alive across page unload
+            keepalive: true,
         })
-            .then(() => {
-                console.log('[sync] session posted:', payload.type, payload.assignmentTitle || payload.skills.join(','));
-            })
-            .catch(err => {
-                console.warn('[sync] upload failed (silent):', err);
-            });
+            .then(() => { console.log('[sync] posted:', payload.type); })
+            .catch(err => { console.warn('[sync] upload failed (silent):', err); });
     } catch (e) {
         console.warn('[sync] threw synchronously:', e);
     }
