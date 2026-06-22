@@ -349,6 +349,7 @@ function openRestoreAllModal() {
 const BACKUP_REMIND_AFTER = 5;   // new sessions since last full backup
 
 function renderBackupReminder() {
+    const el = document.getElementById('backupReminder');
     if (!el) return;
     const count = safeGetJSON(STORAGE.HISTORY, []).length;
     const meta  = safeGetJSON(STORAGE.BACKUP, null);
