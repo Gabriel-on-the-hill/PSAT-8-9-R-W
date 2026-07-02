@@ -12,7 +12,7 @@
 //   • Blocks copy / cut / Ctrl+A / Ctrl+P / Ctrl+S / Ctrl+U / F12 /
 //     Ctrl+Shift+I / Ctrl+Shift+J / Ctrl+Shift+C keyboard shortcuts.
 //   • Tiles a faint diagonal watermark with the current user's name
-//     (read from sessionStorage 'mastery_user', set by gate.js) — any
+//     (read from sessionStorage 'psat89_user', set by gate.js) — any
 //     leaked screenshot is traceable to whoever was logged in.
 //   • Logs every focus-loss / focus-regain to sessionStorage so the tutor
 //     can spot tab-switches during a session.
@@ -29,7 +29,7 @@
     if (window.__antiCheatLoaded) return;
     window.__antiCheatLoaded = true;
 
-    const USER_KEY      = 'mastery_user';
+    const USER_KEY      = 'psat89_user';   // matches gate.js / storage.js
     const BLUR_LOG_KEY  = 'mastery_focus_log';
     const BLUR_CNT_KEY  = 'mastery_blur_count';
 

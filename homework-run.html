@@ -78,7 +78,8 @@
     answered=false;
     var q=set[idx];
     var media = q.image ? '<div class="passage"><img src="'+q.image+'" alt="'+(q.alt||'figure').replace(/"/g,'&quot;')+'"></div>' : (q.passage?'<div class="passage">'+esc(q.passage)+'</div>':'');
-    var opts=q.options.map(function(o){var L=o.trim()[0];return '<button class="opt" data-l="'+L+'">'+esc(o)+'</button>';}).join('');
+    var optList=(q.options&&q.options.length)?q.options:['A','B','C','D'];
+    var opts=optList.map(function(o){var L=o.trim()[0];var t=o.trim().slice(2).trim();return '<button class="opt" data-l="'+L+'">'+esc(t?o:'Choice '+L)+'</button>';}).join('');
     run.innerHTML='<div class="t" style="margin-bottom:.5rem">Question '+(idx+1)+' of '+set.length+'</div>'
       +media+'<div class="qtext">'+esc(q.question)+'</div><div id="opts">'+opts+'</div>'
       +'<div class="fb" id="fb"><div class="h" id="fbh"></div><p id="fbt"></p></div>'

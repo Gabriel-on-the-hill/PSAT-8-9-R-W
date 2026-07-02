@@ -163,19 +163,21 @@ function getFilteredPool() {
     return questionBank.filter(q => skills.includes(q.skill) && diffs.includes(q.difficulty));
 }
 
-// Split a pool by whether the student has already answered it correctly.
-//   • fresh  = never seen (unseen) OR previously missed (needs review)
-//   • parked = answered correctly with no pending miss (soft- or fully-mastered)
+// Split a pool by whether a question is currently "resting" (recently answered
+// or mastered) vs. due to be practised.
+//   • fresh  = never seen (unseen), OR due for review/reinforcement (a miss, or
+//              a correct answer whose review cooldown has elapsed without mastery)
+//   • parked = resting: answered within the cooldown window, or fully mastered
 // A practice session serves fresh questions first; parked ones are only pulled
 // back in to fill a requested limit, or when no fresh questions remain — so a
-// question you got right doesn't reappear in the very next session.
+// question you just answered goes to the back of the queue instead of coming
+// straight back in the next set. Resting is time-based (see REVIEW_COOLDOWN_MS),
+// so a not-yet-mastered item returns for reinforcement the next day.
 function splitPoolByFreshness(pool) {
     const ledger = getProgress();
     const fresh = [], parked = [];
     pool.forEach(q => {
-        const r = ledger[q.id];
-        const answeredRight = r && (r.wrong || 0) === 0 && (r.correct || 0) > 0;
-        (answeredRight ? parked : fresh).push(q);
+        (_isResting(ledger[q.id]) ? parked : fresh).push(q);
     });
     return { fresh, parked };
 }
@@ -187,12 +189,39 @@ function buildActiveQuestions() {
 
     if (limit > 0) {
         if (orderedFresh.length >= limit) return orderedFresh.slice(0, limit);
-        // Not enough fresh questions — backfill with already-correct ones.
-        return orderedFresh.concat(prioritizePool(parked)).slice(0, limit);
+        // Not enough due questions to fill the requested count — top up with
+        // rested/mastered ones, least-recently-seen first so the questions just
+        // answered aren't the ones pulled back into this set.
+        const ledger = (typeof getProgress === 'function') ? getProgress() : {};
+        const topUp  = parked.slice().sort((a, b) =>
+            ((ledger[a.id] && ledger[a.id].lastSeen) || 0) -
+            ((ledger[b.id] && ledger[b.id].lastSeen) || 0));
+        return orderedFresh.concat(topUp).slice(0, limit);
     }
-    // "All matching questions": fresh only; fall back to parked once everything
-    // fresh is done, so practice is never empty.
-    return orderedFresh.length ? orderedFresh : prioritizePool(parked);
+    // "All matching questions": serve only what's genuinely due. When nothing is
+    // due (everything answered recently or mastered) this is empty, and the setup
+    // screen shows a "caught up" state instead of re-serving questions you just
+    // answered — a "practice anyway" link there gives an extra pass on demand.
+    return orderedFresh;
+}
+
+// Launch a session over the whole filtered pool, ignoring the review cooldown.
+// Used by the "practice anyway" link when everything is resting but the student
+// wants an extra pass right now.
+function startPracticeAnyway() {
+    const setupModeEl = document.getElementById('setupModeSelect');
+    const mode  = setupModeEl ? setupModeEl.value : 'assisted';
+    const tModeEl = document.getElementById('timerModeSelect');
+    const tmode = tModeEl ? tModeEl.value : 'off';
+    let total = 600;
+    if (tmode === 'countdown') {
+        const durEl = document.getElementById('timerDurationSelect');
+        total = durEl ? parseInt(durEl.value, 10) || 600 : 600;
+    }
+    const limit = getLimit();
+    let qs = prioritizePool(getFilteredPool());
+    if (limit > 0) qs = qs.slice(0, limit);
+    launchSession(qs, mode, { mode: tmode, total });
 }
 
 // ══════════════════════════════════════════════════════════════════
@@ -417,14 +446,25 @@ function updateSetupUI() {
                 `<a href="#" onclick="resetLedger();updateSetupUI();return false;" ` +
                 `style="color:var(--primary);font-weight:700">reset progress</a>`;
             summaryEl.className = 'session-summary session-summary-mastered';
+            startBtn.disabled   = false;
+        } else if (total === 0) {
+            // Nothing due right now: everything matching was answered recently and
+            // is resting. Don't re-serve it — offer an optional extra pass instead.
+            summaryEl.innerHTML =
+                `All caught up &mdash; you&rsquo;ve practised these recently. ` +
+                `They reopen for review over the next day. ` +
+                `<a href="#" onclick="startPracticeAnyway();return false;" ` +
+                `style="color:var(--primary);font-weight:700">practice anyway</a>`;
+            summaryEl.className = 'session-summary';
+            startBtn.disabled   = true;
         } else {
             const note = excluded > 0
                 ? ` \xb7 ${excluded} already correct (hidden)` : '';
             summaryEl.textContent =
                 `${total} question${total !== 1 ? 's' : ''} — ${labels.join(' + ')} — ${diffs.join(' \xb7 ')}${note}`;
             summaryEl.className = 'session-summary';
+            startBtn.disabled   = false;
         }
-        startBtn.disabled = false;
     }
 }
 
