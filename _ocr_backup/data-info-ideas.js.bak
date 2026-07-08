@@ -551,7 +551,7 @@ const questionBank_II = [
     "passage": "",
     "question": "Which choice most effectively uses data from the graph to complete the assertion?",
     "options": [
-      "A. providing medicinal plants than to improving the local microclimate.",
+      "A. providing medicinal plants than to improving the local microclimate. ’",
       "B. improving community members sense of attachment to the neighborhood than to offering educational opportunities.",
       "C. improving the local microclimate than to providing medicinal plants.",
       "D. improving the local microclimate than to providing tourist attractions."
@@ -583,7 +583,7 @@ const questionBank_II = [
     "skill": "Command of Evidence — Quantitative",
     "difficulty": "Hard",
     "passage": "",
-    "question": "Which choice best describes data from the graph that support the researchers conclusion?",
+    "question": "Which choice best describes data from the graph that support the researchers conclusion? ’",
     "options": [
       "A. When plants exposed to air from whitefly-free plants were infested, they produced more jasmonic acid than did control plants, whereas when plants exposed to air from whitefly-infested plants were infested, they produced less jasmonic acid and more salicylic acid than did control plants.",
       "B. When plants exposed to air from whitefly-infested plants were infested, they produced less jasmonic acid than salicylic acid, whereas when plants exposed to air from whitefly-free plants were infested, they produced about the same amount of jasmonic acid and salicylic acid.",
@@ -600,7 +600,7 @@ const questionBank_II = [
     "skill": "Command of Evidence — Quantitative",
     "difficulty": "Hard",
     "passage": "",
-    "question": "Which choice best describes data in the graph that support the student’s claim?",
+    "question": "Which choice best describes data in the graph that support the student’s claim? ’",
     "options": [
       "A. The percentage of newly installed turbines with rotor diameters greater than 130 meters increased every year between 2011 and 2021.",
       "B. In 2011, nearly 80% of turbines installed had rotor diameters of less than 100 meters, whereas only a little more than 20% of turbines installed that year had rotor diameters of 100 – 115 meters.",
@@ -940,7 +940,7 @@ const questionBank_II = [
     "skill": "Command of Evidence — Textual",
     "difficulty": "Medium",
     "passage": "To You” is an 1856 poem by Walt Whitman. In the poem, Whitman suggests that readers, whom he addresses directly, have not fully understood themselves, writing, ______",
-    "question": "Which quotation from To You most effectively illustrates the claim?",
+    "question": "Which quotation from “” To You most effectively illustrates the claim?",
     "options": [
       "A. You have not known what you are, you have slumber d upon yourself / all your life, / Your eyelids have been the same as closed most of the time.”",
       "B. These immense meadows, these interminable rivers, you are immense / and interminable as they.”",
@@ -1064,7 +1064,7 @@ const questionBank_II = [
     "options": [
       "A. prove financially successful for some musicians but disappointing for others.",
       "B. hold greater financial appeal for bands than for individual musicians.",
-      "C. cause most musicians who use the model to lower the suggested prices of their songs and albums over time.",
+      "C. cause most musicians who use the model to lower the suggested prices of their songs and albums over time. ’",
       "D. more strongly reflect differences in certain musicians popularity than traditional pricing models do."
     ],
     "answer": "A",
@@ -1083,7 +1083,7 @@ const questionBank_II = [
       "D. illustrates the artistic opportunity offered by off-off Broadway theaters."
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. The text says that off-off-Broadway theaters allowed artists to create more experimental shows, and then discusses how Fornés was free to direct her own strange plays however she wanted. This suggests that Fornés exemplifies the artistic freedom of off-off Broadway theaters.\n\nChoice A is incorrect. This inference isn’t supported. The text never discusses the costs of production, so we can’t logically make this claim. Choice B is incorrect. This inference isn’t supported. The text never discusses the complexity of staging plays either on Broadway or off-off Broadway, so there’s no basis to make this inference. Choice C is incorrect. This inference isn’t supported. The text never discusses fame at all, so there’s no basis to make this inference."
+    "explanation": "Choice D is the best answer. The text says that off-off-Broadway theaters allowed artists to create more experimental shows, and then discusses how Fornés was free to direct her own strange plays however she wanted. This suggests that Fornés exemplifies the artistic freedom of off-off “” Broadway theaters.\n\nChoice A is incorrect. This inference isn’t supported. The text never discusses the costs of production, so we can’t logically make this claim. Choice B is incorrect. This inference isn’t supported. The text never discusses the complexity of staging plays either on Broadway or off-off Broadway, so there’s no basis to make this inference. Choice C is incorrect. This inference isn’t supported. The text never discusses fame at all, so there’s no basis to make this inference."
   },
   {
     "id": "c7b8accc",
@@ -1248,7 +1248,7 @@ const questionBank_II = [
       "D. begin developing more ears of corn on each plant than the tallest variety of corn currently does."
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer because it presents the conclusion that most logically completes the text’s discussion about a trade-off in growing shorter varieties of corn. The text explains that plant specialists are working to develop shorter corn varieties in an effort to improve yields. The text points out that although greater height in corn plants can lead to more ears of corn per plant, it also makes the stalks more likely to be damaged by strong winds before there is a chance to harvest the corn. This presents a clear trade-off between potential yield (taller plants producing more ears per plant) and harvest reliability (shorter plants surviving until harvest time). Given this information, it is reasonable to infer that shorter corn varieties, while possibly producing fewer ears per plant, would be more likely to survive until harvest time. This survival advantage would result in improved yields of harvested corn because more plants would remain intact, thus offsetting the potential reduction in ears per shorter plant.\n\nChoice B is incorrect. According to the text, greater height makes cornstalks vulnerable to snapping or being uprooted in strong winds, implying — that taller plants not shorter ones —have greater stability problems. The text provides no basis for inferring that shorter corn varieties would be more likely to be uprooted due to corn weight; in fact, the text suggests the opposite relationship between height and stability. Choice C is incorrect because the text doesn’t provide information about the land requirements of either shorter corn varieties or shorter wheat and rice varieties, much less make any comparisons. The text mentions that plant breeders in the 1950s and 60s created shorter varieties of wheat and rice with improved yields and that researchers are now exploring shorter corn varieties, but it doesn’t compare land-use requirements of these crops. Choice D is incorrect because the idea that shorter cornstalks would yield more ears of corn would contradict the relationship between height and corn production described in the text. The text explicitly states that greater height allows individual plants to produce more ears of corn, which suggests that shorter varieties would produce fewer ears per plant, not more. The text therefore provides no basis for concluding that shorter varieties would begin developing more ears than the taller varieties currently do."
+    "explanation": "Choice A is the best answer because it presents the conclusion that most logically completes the text’s discussion about a trade-off in growing shorter varieties of corn. The text explains that plant specialists are working to develop shorter corn varieties in an effort to improve yields. The text points out that although greater height in corn plants can lead to more ears of corn per plant, it also makes the stalks more likely to be damaged by strong winds before there is a chance to harvest the corn. This presents a clear trade-off between potential yield (taller plants producing more ears per plant) and harvest reliability (shorter plants surviving until harvest time). Given this information, it is reasonable to infer that shorter corn varieties, while possibly producing fewer ears per plant, would be more likely to survive until harvest time. This survival advantage would result in improved yields of harvested corn because more plants would remain intact, thus offsetting the potential reduction in ears per shorter plant.\n\nChoice B is incorrect. According to the text, greater height makes cornstalks vulnerable to snapping or being uprooted in strong winds, implying — that taller plants not shorter ones —have greater stability problems. The text provides no basis for inferring that shorter corn varieties would be more likely to be uprooted due to corn weight; in fact, the text suggests the opposite relationship between height and stability. Choice C is’ incorrect because the text doesn’t provide information about the land requirements of either shorter corn varieties or shorter wheat and rice varieties, much less make any comparisons. The text mentions that plant breeders in the 1950s and 60s created shorter varieties of wheat and rice with improved yields and that researchers are now exploring shorter corn varieties, but it doesn’t compare land-use requirements of these crops. Choice D is incorrect because the idea that shorter cornstalks would yield more ears of corn would contradict the relationship between height and corn production described in the text. The text explicitly states that greater height allows individual plants to produce more ears of corn, which suggests that shorter varieties would produce fewer ears per plant, not more. The text therefore provides no basis for concluding that shorter varieties would begin developing more ears than the taller varieties currently do."
   },
   {
     "id": "fbb300a3",
@@ -1289,11 +1289,11 @@ const questionBank_II = [
     "options": [
       "A. Alspaugh inspired other women to save pieces of fabric in scrapbooks and provide historical records of nineteenth-century fashions in the United States.",
       "B. Historians rely on fabric scrapbooks to understand how fashions changed throughout the nineteenth-century United States.",
-      "C. Fabric scrapbooks were a popular hobby for many women in the nineteenth-century United States.",
+      "C. Fabric scrapbooks were a popular hobby for many women in the nineteenth-century United States. ’",
       "D. Alspaugh’s scrapbook provides a detailed account of her life and historical record of fashion trends in the nineteenth-century United States."
     ],
     "answer": "D",
-    "explanation": "Choice D is correct. The text describes how Alspaugh’s scrapbook is both a record of her life and a historical record of nineteenth-century textiles and dressmaking.\n\nChoice A is incorrect. The text says that it was common for American women to keep scrapbooks of fabric pieces in the nineteenth century, and it says that Alspaugh was one of these women. However, it never says that other women were inspired by Alspaugh. Choice B is incorrect. This is too general and too strong. The text says that Alspaugh’s scrapbook is a historical record of nineteenth-century textiles and dressmaking, but it never says that historians rely on such scrapbooks in general to understand how fashions changed throughout that time period. This choice also fails to even mention Alspaugh, who is the real focus of the text. Choice C is incorrect. The text does say this, but it’s a detail — not the main idea. The text is mainly about one woman’s scrapbook (Alspaugh’s), and this choice doesn’t even mention her."
+    "explanation": "Choice D is correct. The text describes how Alspaugh’s scrapbook is both a record of her life and a historical record of nineteenth-century textiles and dressmaking.\n\nChoice A is incorrect. The text says that it was common for American women to keep scrapbooks of fabric pieces in the nineteenth century, and it says that Alspaugh was one of these women. However, it never says that other women were inspired by Alspaugh. Choice B is incorrect. This is’ too general and too strong. The text says that Alspaugh’s scrapbook is a historical record of nineteenth-century textiles and dressmaking, but it never says that historians rely on such scrapbooks in general to understand how fashions changed throughout that time period. This choice also fails to even mention Alspaugh, who is the real focus of the text. Choice C is incorrect. The text does say this, but it’s a detail — not the main idea. The text is mainly about one woman’s scrapbook (Alspaugh’s), and this choice doesn’t even mention her."
   },
   {
     "id": "90748ac0",
@@ -1323,7 +1323,7 @@ const questionBank_II = [
       "D. An experiment showed that the way rewards are given out may affect whether young children think the situation is fair."
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. The text describes a study assessing how children think of rewards and fairness and its results. It concludes that the children in the study may have thought that a teacher who counted out loud when giving rewards cared more about fairness than a teacher who did not count out loud.\n\nChoice A is incorrect. The children in the study are described as being four to six, and the text doesn’t mention any differences among the different ages. Choice B is incorrect. The experiment wasn’t about teaching math — rather, it was about how counting out loud affected the children’s perception of fairness. Choice C is incorrect. The experiment doesn’t focus on whether the children care about fairness, and the text never mentions the children’s expectations of being rewarded."
+    "explanation": "Choice D is the best answer. The text describes a study assessing how children think of rewards and fairness and its results. It concludes that the children in the study may have thought that a teacher who counted out loud when giving rewards cared more about fairness than a teacher who did not count out loud.\n\nChoice A is incorrect. The children in the study are described as being “” four to six, and the text doesn’t mention any differences among the different ages. Choice B is incorrect. The experiment wasn’t about teaching math — rather, it was about how counting out loud affected the children’s perception of fairness. Choice C is incorrect. The experiment doesn’t focus on whether the children care about fairness, and the text never mentions the children’s expectations of being rewarded."
   },
   {
     "id": "83b551a3",
@@ -1368,7 +1368,7 @@ const questionBank_II = [
       "D. methods used to analyze bronze artifacts are not useful on pieces that are dated after the Shang dynasty."
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. The passage tells us that Shang dynasty bronze artifacts contained \"a rare form of lead,\" but that bronze artifacts’ after this time did not contain that lead. Although we don’t know where that specific type of bronze came from, we can conclude that that source was not used after the end of the Shang dynasty — otherwise, post-Shang dynasty pieces would also contain that rare form of lead.\n\nChoice A is incorrect. Despite these pieces containing \"a rare form of lead,\" there is no direct claim in the passage that Shang dynasty bronze is itself more rare or valuable than bronze pieces from other periods. Therefore, there’s no basis for this inference. Choice C is incorrect. Although the passage mentions that the nature of the bronze in Chinese artifacts changed after the Shang dynasty, bronze was still used to create … artifacts after this time. The passage in fact explicitly states \"bronze artifacts from China dated after the Shang dynasty,\" indicating that bronze was still used in China after the Shang dynasty. Choice D is incorrect. There’s no mention in the passage of methods used to analyze bronze artifacts, so there’s no basis for this inference."
+    "explanation": "Choice B is the best answer. The passage tells us that Shang dynasty bronze artifacts contained \"a rare form of lead,\" but that bronze artifacts’ after this time did not contain that lead. Although we don’t know where that specific type of bronze came from, we can conclude that that source was not used after the end of the Shang dynasty — otherwise, post-Shang dynasty pieces would also contain that rare form of lead.\n\nChoice A is incorrect. Despite these pieces containing \"a rare form of lead,\" there is no direct claim in the passage that Shang dynasty bronze is’ itself more rare or valuable than bronze pieces from other periods. Therefore, there’s no basis for this inference. Choice C is incorrect. Although the passage mentions that the nature of the bronze in Chinese artifacts changed after the Shang dynasty, bronze was still used to create … artifacts after this time. The passage in fact explicitly states \"bronze artifacts from China dated after the Shang dynasty,\" indicating that bronze was still used in China after the Shang dynasty. Choice D is incorrect. There’s no mention in the passage of methods used to analyze bronze artifacts, so there’s no basis for this inference."
   },
   {
     "id": "e43225b7",
@@ -1377,7 +1377,7 @@ const questionBank_II = [
     "passage": "Historians point to the rule of the Piast dynasty as crucial to the formation of the Polish state. However, some differentiate between members of the dynasty like Mieszko II Lambert, who ruled as king from 1025 to 1031 CE, and less well-documented figures like Siemomysł, who is said to have ruled in the 10th century but whose historical actuality is disputed. Siemomysł appears in the Gesta principum Polonorum, a chronicle of medieval Polish history written between 1112 and 1118. However, the chronicle’s documentation of Siemomysł relies on oral tradition, unlike its records of later rulers.",
     "question": "According to the text, what is a difference between how historians view Siemomysł and how they view Mieszko II Lambert?",
     "options": [
-      "A. Historians agree that Mieszko II Lambert existed, but disagree about whether Siemomysł existed.",
+      "A. Historians agree that Mieszko II Lambert existed, but disagree about whether Siemomysł existed. ’",
       "B. Historians believe that the Gesta principum Polonorum provides more evidence for Siemomysł s existence than it does for Mieszko II Lambert’s existence.",
       "C. Historians agree that Siemomysł ruled Poland much later than Mieszko II Lambert.",
       "D. Historians find the orally transmitted stories affirming the existence of Mieszko II Lambert to be more convincing than similar stories about Siemomysł."
@@ -1423,7 +1423,7 @@ const questionBank_II = [
     "question": "Which choice most logically completes the text?",
     "options": [
       "A. F. hypoleuca nestlings preference for their own dialect likely disappears as they mature to promote socialization between different F. hypoleuca populations.",
-      "B. F. hypoleuca nestlings who show an early preference for their own dialect are likely to receive more food from their caretakers than nestlings who show no preferences among any F. hypoleuca dialects.",
+      "B. F. hypoleuca nestlings who show an early preference for their own dialect are likely to receive more food from their caretakers than nestlings who show no preferences among any F. hypoleuca dialects. ’",
       "C. F. hypoleuca nestlings preference for their own dialect likely drives them when they mature to reproduce with other F. hypoleuca from local rather than nonlocal populations.",
       "D. F. hypoleuca nestlings show a preference for both local F. hypoleuca dialects and the songs of other local songbirds over the songs of nonlocal birds of any species."
     ],
@@ -1452,7 +1452,7 @@ const questionBank_II = [
     "passage": "In a study by Mika R. Moran, Daniel A. Rodriguez, and colleagues, residents of Quito, Ecuador, and Lima, Peru, were surveyed about parks in their cities. Of the 618 respondents from Quito, 82.9% indicated that they use the city’s parks, and of the 663 respondents from Lima, 72.7% indicated using city parks. Given that the percentage of Quito respondents who reported living within a 10-minute walk of a park was much lower than that reported by Lima respondents, greater proximity alone can’t explain the difference in park use.",
     "question": "The text makes which point about the difference between the proportions of Quito residents and Lima residents using parks?",
     "options": [
-      "A. It was much larger than the researchers conducting the study expected.",
+      "A. It was much larger than the researchers conducting the study expected. ’",
       "B. It is caused by something other than the parks proximity to city residents.",
       "C. It could be due to inaccuracies in the survey results.",
       "D. It was calculated using sources that predate the survey."
@@ -1604,7 +1604,7 @@ const questionBank_II = [
     "options": [
       "A. ensured that knowledge of the materials and techniques used by members of the craft guilds stayed within the craft guilds.",
       "B. emphasized ostentatious offerings in the case of the largest guilds and prosaic objects in the case of the craft guilds.",
-      "C. functioned as a way for craft guild members to maintain and enhance their professional reputations among their peers.",
+      "C. functioned as a way for craft guild members to maintain and enhance their professional reputations among their peers. ’",
       "D. conferred greater social status when the recipient belonged to one of London’s largest guilds than when the recipient belonged to a craft guild."
     ],
     "answer": "C",
@@ -1677,20 +1677,20 @@ const questionBank_II = [
     "passage": "With the ongoing expansion of e-commerce, consumers are expecting faster and faster delivery of goods, but delivery companies continue to struggle with last-mile logistics (the final step in delivery to consumers) due to challenges such as complex and inefficient delivery routes. Innovations to mitigate these challenges have been emerging — the use of aerial drones, for example —but these innovations tend to engender their own complications (e.g., regulations on the use of drones in residential airspace), leading researchers to conclude that ______",
     "question": "Which choice most logically completes the text?",
     "options": [
-      "A. consumers expectations for reduced delivery times may be outstripping what is viable for delivery companies to provide.",
+      "A. consumers expectations for reduced delivery times may be outstripping what is viable for delivery companies to provide. ’",
       "B. a better understanding of consumers expectations for delivery is needed so that companies can better plan for fluctuations in delivery volume.",
       "C. rapid delivery is a leading factor in consumer satisfaction, and therefore delivery companies would benefit from investing resources in reducing delivery times.",
       "D. there may not be sufficient incentive for delivery companies to attempt to solve the problems associated with last-mile logistics."
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer because it most logically completes the text’s discussion of consumer expectations and the struggles delivery companies face. The text states that while consumers expect ever-faster delivery of goods, delivery companies \"continue to struggle with last- mile logistics.\" The text further explains that innovations aimed at addressing this challenge have a tendency to cause complications of their own. Because escalating consumer demands for speed are paired with persistent, complex delivery obstacles and new problems arising from attempted solutions, it logically follows that consumer expectations for delivery times may be exceeding what companies can feasibly provide.\n\nChoice B is incorrect because the text doesn’t address the idea of delivery volumes at all and makes it clear that companies are already aware of and trying to address consumers expectations for delivery. Further, the challenge presented at the end of the text relates to new problems that tend to arise with solutions for logistical problems, not to a lack of understanding of what consumers want or how delivery volumes fluctuate. Choice C is incorrect. The text does suggest that rapid delivery is important for customer satisfaction and thus is a beneficial investment for companies, but that idea is already presented in the beginning of the text and doesn’t logically follow as a conclusion from the information about innovations companies are exploring to solve last-mile logistics problems; the idea that the potential solutions tend to introduce new issues points to the feasibility of meeting consumer expectations, not to the general fact that it would be beneficial to reduce delivery times. Choice D is incorrect because the text doesn’t suggest that there may be insufficient incentive for delivery companies to try to solve last-mile logistics problems —on the contrary, the text directly indicates that delivery companies are already actively pursuing innovations to try to address those problems, citing the example of the use of aerial drones, even though the innovations can introduce new complications."
+    "explanation": "Choice A is the best answer because it most logically completes the text’s discussion of consumer expectations and the struggles delivery companies face. The text states that while consumers expect ever-faster delivery of goods, delivery companies \"continue to struggle with last- mile logistics.\" The text further explains that innovations aimed at addressing this challenge have a tendency to cause complications of their own. Because escalating consumer demands for speed are paired with persistent, complex delivery obstacles and new problems arising from attempted solutions, it logically follows that consumer expectations for delivery times may be exceeding what companies can feasibly provide.\n\nChoice B is incorrect because the text doesn’t address the idea of delivery volumes at all and makes it clear that companies are already aware of and trying to address consumers expectations for delivery. Further, the challenge presented at the end of the text relates to new problems that tend to arise with solutions for logistical problems, not to a lack of understanding of what consumers want or how delivery volumes fluctuate. Choice C is incorrect. The text does suggest that rapid delivery is important for customer satisfaction and thus is a beneficial investment for companies, but that idea is already presented in the beginning of the text and doesn’t logically follow as a conclusion from the information about innovations companies are exploring to solve last-mile logistics problems; the idea that the potential solutions tend to introduce new issues points to the feasibility of meeting consumer expectations, not to the general fact that it would be beneficial to reduce delivery times. Choice D is’ incorrect because the text doesn’t suggest that there may be insufficient incentive for delivery companies to try to solve last-mile logistics problems —on the contrary, the text directly indicates that delivery companies are already actively pursuing innovations to try to address those problems, citing the example of the use of aerial drones, even though the innovations can introduce new complications."
   },
   {
     "id": "587461c5",
     "skill": "Command of Evidence — Textual",
     "difficulty": "Hard",
     "passage": "Pulitzer Prize – winning writer H éctor Tobar has built a multifaceted career as both a journalist and an author of short stories and novels. In an essay about Tobar’s work, a student claims that Tobar blends his areas of expertise by applying journalism techniques to his creation of works of fiction.",
-    "question": "Which quotation from a literary critic best supports the student’s claim?",
+    "question": "Which quotation from a literary critic best supports the student’s claim? ’",
     "options": [
       "A. For one novel, an imagined account of a real person’s global travels, Tobar approached his subject like a reporter, interviewing people the man had met along the way and researching the man’s own writings.”",
       "B. Tobar got his start as a volunteer for El Tecolote, a community newspaper in San Francisco, and wrote for newspapers for years before earning a degree in creative writing and starting to publish works of fiction.”",
@@ -1698,7 +1698,7 @@ const questionBank_II = [
       "D. The protagonist of Tobar’s third novel is a man who wants to be a novelist and keeps notes about interesting people he encounters so he can use them when developing characters for his stories.”"
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. The example of Tobar approaching his subject like a reporter, including conducting “interviews” and research, shows Tobar applying journalism techniques to his fiction-writing.\n Choice B is incorrect. This choice doesn’t support the claim. It tells us about Tobar’s initial career as a journalist, but it doesn’t say anything about him “applying journalism techniques” to his fiction-writing. Choice C is incorrect. This choice doesn’t support the claim. It tells us that Tobar applied fiction techniques to his nonfiction writing, but we’re looking for evidence of the other way around: that Tobar applied journalism techniques to his fiction-writing. Choice D is incorrect. This choice doesn’t support the claim. It tells us that a character in one of Tobar’s novels’ applied a journalism technique to his fiction-writing, but it doesn’t tell us that Tobar did that himself."
+    "explanation": "Choice A is the best answer. The example of Tobar approaching his subject “” like a reporter, including conducting “interviews” and “” research, shows Tobar applying journalism techniques to his fiction-writing.\n Choice B is incorrect. This choice doesn’t support the claim. It tells us about Tobar’s initial career as a journalist, but it doesn’t say anything about him “applying journalism techniques” to his fiction-writing. Choice C is incorrect. This choice doesn’t support the claim. It tells us that Tobar applied fiction techniques to his nonfiction writing, but we’re looking for evidence of the other way around: that Tobar applied journalism techniques to his fiction-writing. Choice D is incorrect. This choice doesn’t support the claim. It tells us that a character in one of Tobar’s novels’ applied a journalism technique to his fiction-writing, but it doesn’t tell us that Tobar did that himself."
   },
   {
     "id": "35c3a9cb",
@@ -1728,7 +1728,7 @@ const questionBank_II = [
       "D. And so the years go swiftly by, / Each, coming, brings ambitions high, / And each, departing, leaves a sigh / Linked to the past.”"
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer because it presents the quotation that most effectively illustrates the claim that the speaker of the poem describes experiencing an ongoing cycle of anticipation followed by regretful reflection. In this quotation, the speaker notes that as years go by, “Each, coming”— that is, each new year as it comes —“brings ambitions high.” In other words, the speaker begins each new year with large goals. But the “speaker goes on to say that as each year ends ( each, departing ), it” “leaves a sigh / Linked to the past.” A sigh is an expression of longing or regret, so in the context of the whole quotation, this portion suggests that at the end of each year, the speaker regretfully reflects on not having achieved the ambitions formed at the beginning of the year. The phrases “the years go swiftly by,”“Each, coming,” and “each, departing” indicate that this experience happens over and over again: the speaker experiences a cycle of anticipation followed by regretful reflection.\n\nChoice A is incorrect because this quotation does not describe an ongoing cycle of anticipation followed by regretful reflection. Instead, the speaker describes experiencing a sensation similar to fright as a result of something that has occurred at midnight. Specifically, the speaker has heard a “brazen tongue,” a figurative way of saying that the speaker has heard the clang of a bronze bell being rung. Choice B is incorrect because although this quotation does convey a sense of anticipation through its reference to “ominous stillness,” there is no suggestion of regretful reflection or any indication that the speaker is describing an ongoing cycle of anticipation followed by such reflection. Instead, the speaker is describing a particular moment when a winter storm appears to have momentarily calmed. Choice C is incorrect because although this quotation does convey a sense of regret ( many a squandered day ), nothing in the quotation suggests an ongoing cycle of anticipation followed by regret. Instead, the speaker is simply lamenting wasted time and opportunities."
+    "explanation": "Choice D is the best answer because it presents the quotation that most effectively illustrates the claim that the speaker of the poem describes experiencing an ongoing cycle of anticipation followed by regretful reflection. In this quotation, the speaker notes that as years go by, “Each, coming”— that is, each new year as it comes —“brings ambitions high.” In other words, the speaker begins each new year with large goals. But the “speaker goes on to say that as each year ends ( each, departing ), it” “leaves a sigh / Linked to the past.” A sigh is an expression of longing or regret, so in the context of the whole quotation, this portion suggests that at the end of each year, the speaker regretfully reflects on not having achieved the ambitions formed at the beginning of the year. The phrases “the years go swiftly by,”“Each, coming,” and “each, departing” indicate that this experience happens over and over again: the speaker experiences a cycle of anticipation followed by regretful reflection.\n\nChoice A is incorrect because this quotation does not describe an ongoing cycle of anticipation followed by regretful reflection. Instead, the speaker describes experiencing a sensation similar to fright as a result of something that has occurred at midnight. Specifically, the speaker has heard a “brazen tongue,” a figurative way of saying that the speaker has heard the clang of a bronze bell being rung. Choice B is incorrect because although this quotation does convey a sense of anticipation through its reference to “ominous stillness,” there is no suggestion of regretful reflection or any indication that the speaker is describing an ongoing cycle of anticipation followed by such reflection. Instead, the speaker is describing a particular moment when a winter storm appears to have momentarily calmed. Choice C is incorrect because although “” this quotation does convey a sense of regret ( many a squandered day ), nothing in the quotation suggests an ongoing cycle of anticipation followed by regret. Instead, the speaker is simply lamenting wasted time and opportunities."
   },
   {
     "id": "8319f75f",
@@ -1750,7 +1750,7 @@ const questionBank_II = [
     "skill": "Command of Evidence — Textual",
     "difficulty": "Hard",
     "passage": "Although it’s clear that Mars once had liquid water on its surface, astronomers have debated whether the evidence of ancient water reflects a prolonged phase of warm, wet conditions — the so-called wet and warm scenario —or a brief period of melting in an otherwise consistently frozen environment. Researchers Benjamin T. Cardenas and Michael P. Lamb recently added to this debate by using data from NASA and the Mars’ Orbiter Laser Altimeter to map the topography of what is now a large basin in Mars’s northern hemisphere. Cardenas and Lamb concluded that the wet and warm scenario is likely correct.",
-    "question": "Which finding about the basin, if true, would most directly support Cardenas and Lamb’s conclusion?",
+    "question": "Which finding about the basin, if true, would most directly support Cardenas and Lamb’s conclusion? ’",
     "options": [
       "A. Its dimensions and shape indicate that it is unlikely to have formed as the result of an asteroid or comet impact.",
       "B. It has features suggesting that it once held an ocean that underwent gradual sea-level changes over an extended time.",
@@ -1797,9 +1797,9 @@ const questionBank_II = [
     "passage": "In their 2022 paper, Christos Dimopoulos et al., having granted that the existence of antigravity — in which antimatter and matter repel rather than attract each other— lacked affirmative experimental support, rightly argued that such antigravity was worth considering on theoretical grounds given that evidence against it was similarly lacking. But a 2023 report by an international team of researchers details the first direct ballistic observations of antihydrogen atoms under gravity inside a CERN particle accelerator. Corresponding most closely to predictions under gravitational attraction, these observations were thoroughly inconsistent with antigravity.",
     "question": "Which choice best states the main idea of the text?",
     "options": [
-      "A. Antihydrogen ballistics observations were conducted at CERN to test specific conclusions about antigravity presented in the 2022 paper by Dimopoulos et al.",
+      "A. Antihydrogen ballistics observations were conducted at CERN to test specific conclusions about antigravity presented in the 2022 paper by Dimopoulos et al. ’",
       "B. Although theoreticians were justified in studying antigravity before the release of the 2023 report, the report’s findings suggest that the rationale for theoretical consideration offered in the 2022 paper by Dimopoulos et al. is no longer applicable.",
-      "C. The theoretical approach represented in the 2022 paper by Dimopoulos et al. assumed that unambiguous proof of antigravity would not be achievable, but the results in the 2023 report undermine that assumption.",
+      "C. The theoretical approach represented in the 2022 paper by Dimopoulos et al. assumed that unambiguous proof of antigravity would not be achievable, but the results in the 2023 report undermine that assumption. ’",
       "D. Before 2023, researchers inordinate focus on theoretical considerations hindered the development of the experimental regimen for direct antihydrogen ballistics observations."
     ],
     "answer": "B",
@@ -1947,7 +1947,7 @@ const questionBank_II = [
     "passage": "Matthew D. Rocklage and team examined whether consumer ratings of movies can predict box office success. The team considered both numeric star ratings and written reviews in their research. To analyze the written reviews, the team measured the emotionality — the degree to which a written review expresses an emotional reaction — of user reviews on a movie rating website, assigning each review an emotionality score. After reviewing this research, a student argues that the emotionality of movie reviews is unrelated to a movie’s success at the box office.",
     "question": "Which finding, if true, would most directly weaken the student’s conclusion?",
     "options": [
-      "A. Movies that had the highest average emotionality scores received the lowest average star ratings on the movie rating website.",
+      "A. Movies that had the highest average emotionality scores received the lowest average star ratings on the movie rating website. ’",
       "B. The average emotionality score of a movie’s reviews was a positive predictor of that movie’s box office earnings.",
       "C. More than half of the movies that the team examined received an average star rating of 3 out of 5 stars.",
       "D. The movies that were most successful at the box office tended to have high average star ratings."
@@ -1978,7 +1978,7 @@ const questionBank_II = [
     "question": "Which choice most logically completes the text?",
     "options": [
       "A. Roman de Brut is more historically accurate than History, because Culhwch and Olwen had not been written when Geoffrey of Monmouth was writing his work.",
-      "B. Geoffrey of Monmouth was unaware of stories of the Round Table when composing his History, though historians know that works containing such stories were available to him.",
+      "B. Geoffrey of Monmouth was unaware of stories of the Round Table when composing his History, though historians know that works containing such stories were available to him. ’",
       "C. Geoffrey of Monmouth’s accounts of Arthurian legends in his History are more similar overall in content to the accounts in Culhwch and Olwen than they are to the accounts in Roman de Brut.",
       "D. the Arthurian legends that the author of Vita Sancti Cadoci drew on would not have featured the Round Table."
     ],
@@ -1992,7 +1992,7 @@ const questionBank_II = [
     "passage": "Tides can deposit large quantities of dead vegetation within a salt marsh, smothering healthy plants and leaving a salt panne — a depression devoid of plants that tends to trap standing water — in the marsh’s interior. Ecologist Kathryn Beheshti and colleagues found that burrowing crabs living within these pannes improve drainage by loosening the soil, leading the pannes to shrink as marsh plants move back in. At salt marsh edges, however, crab-induced soil loosening can promote marsh loss by accelerating erosion, suggesting that the burrowing action of crabs ______",
     "question": "Which choice most logically completes the text?",
     "options": [
-      "A. can be beneficial to marshes with small pannes but can be harmful to marshes with large pannes.",
+      "A. can be beneficial to marshes with small pannes but can be harmful to marshes with large pannes. ’",
       "B. may promote increases in marsh plants or decreases in marsh plants, depending on the crabs location.",
       "C. tends to be more heavily concentrated in areas of marsh interiors with standing water than at marsh edges.",
       "D. varies in intensity depending on the size of the panne relative to the size of the surrounding marsh."
@@ -2112,7 +2112,7 @@ const questionBank_II = [
     "passage": "Many archaeologists will tell you that categorizing excavated fragments of pottery by style, period, and what objects they belong to relies not only on standard criteria, but also on instinct developed over years of practice. In a recent study, however, researchers trained a deep-learning computer model on thousands of images of pottery fragments and found that it could categorize them as accurately as a team of expert archaeologists. Some archaeologists have expressed concern that they might be replaced by such computer models, but the researchers claim that outcome is highly unlikely.",
     "question": "Which finding, if true, would most directly support the researchers claim?",
     "options": [
-      "A. In the researchers study, the model was able to categorize the pottery fragments much more quickly than the archaeologists could.",
+      "A. In the researchers study, the model was able to categorize the pottery fragments much more quickly than the archaeologists could. ’",
       "B. In the researchers study, neither the model nor the archeologists were able to accurately categorize all the pottery fragments that were presented.",
       "C. A survey of archaeologists showed that categorizing pottery fragments limits the amount of time they can dedicate to other important tasks that only human experts can do.",
       "D. A survey of archaeologists showed that few of them received dedicated training in how to properly categorize pottery fragments."
@@ -2232,13 +2232,13 @@ const questionBank_II = [
     "passage": "Gestures” in painting are typically thought of as bold, expressive brushstrokes. In the 1970s, American painter Jack Whitten built a 12-foot (3.7- meter) tool he named the “developer” to apply paint to an entire canvas in one motion, resulting in his series of “slab” paintings from that decade. Whitten described this process as making an entire painting in “one gesture,” signaling a clear departure from the prevalence of gestures in his work from the 1960s. Some art historians claim this shift represents “removing gesture” from the process. Therefore, regardless of whether using the developer constitutes a gesture, both Whitten and these art historians likely agree that ______",
     "question": "Which choice most logically completes the text?",
     "options": [
-      "A. any tool that a painter uses to create an artwork is capable of creating gestures.",
+      "A. any tool that a painter uses to create an artwork is capable of creating gestures. ’",
       "B. Whitten’s work from the 1960s exhibits many more gestures than his work from the 1970s does.",
-      "C. Whitten became less interested in exploring the role of gesture in his work as his career progressed.",
+      "C. Whitten became less interested in exploring the role of gesture in his work as his career progressed. ’",
       "D. Whitten’s work from the 1960s is much more realistic than his work from the 1970s is."
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. Whitten thinks the tool made “one gesture” paintings, while historians think the tool “removed gesture” from the process completely. But putting that debate aside, both Whitten and the historians would agree that the paintings he made with the tool in the 70s have way fewer gestures than his paintings from the 60s, in which gestures are “prevalent,” meaning widely and extensively present.\n\nChoice A is incorrect. This inference isn’t supported. The text only discusses the “developer”— it never mentions other tools. Choice C is incorrect. This inference isn’t supported. If anything, the text suggests the opposite: that Whitten became more interested in exploring the role of gesture in his work as his career progressed, as his earlier paintings had many gestures, and his 70s paintings only had “one gesture.” Choice D is incorrect. This inference isn’t supported. The text never discusses the “realism” of Whitten’s art."
+    "explanation": "Choice B is the best answer. Whitten thinks the tool made “one gesture” paintings, while historians think the tool “removed gesture” from the process completely. But putting that debate aside, both Whitten and the historians would agree that the paintings he made with the tool in the 70s have way fewer gestures than his paintings from the 60s, in which gestures are “prevalent,” meaning widely and extensively present.\n\nChoice A is incorrect. This inference isn’t supported. The text only discusses the “developer”— it never mentions other tools. Choice C is incorrect. This inference isn’t supported. If anything, the text suggests the opposite: that Whitten became more interested in exploring the role of gesture in his work as his career progressed, as his earlier paintings had many gestures, and his 70s paintings only had “one gesture.” Choice D is’ incorrect. This inference isn’t supported. The text never discusses the “realism” of Whitten’s art. ’"
   },
   {
     "id": "7465999c",
@@ -2367,10 +2367,10 @@ const questionBank_II = [
     "passage": "The ancient Greek concept of “mimesis,” a term used in the works of Plato, Aristotle, and other Greek philosophers in discussions of representational art — visual, performance, or literary art that aims to depict the real world — is a foundational concept of the Western philosophy of aesthetics. Mimesis is typically translated as “imitation” in modern editions of ancient Greek texts, but scholar Stephen Halliwell warns that this is overly reductive: “imitation” implies that art merely copies —and is thus by definition entirely derivative of — a reality that exists outside and prior to the work of art, and translating “mimesis” thusly obscures the multifaceted ways in which the ancient Greeks understood the relationship between art and reality.",
     "question": "Which statement, if true, would most directly support the claim by Halliwell presented in the text?",
     "options": [
-      "A. One of the earliest appearances of mimesis’s root word, mimos, can be found in an ancient Greek tragedy in reference to dramatic impersonation, and the mim- root came to be generally associated with the musical and poetic arts by the fifth century BCE.",
-      "B. Both Plato’s and Aristotle’s theorizations of mimesis examine the psychological effects that works of art induce in the viewer or listener.",
-      "C. Although several of Plato’s earliest philosophical works discuss aesthetic ideas, the term “mimesis” doesn’t appear in Plato’s discussions of art until Cratylus, a relatively late work.",
-      "D. Although Plato’s writings typically characterize representational art as an inferior reflection of the physical world, Aristotle suggests that mimesis can refer to art’s capacity to envision hypothetical conditions that could, but don’t yet, exist."
+      "A. One of the earliest appearances of mimesis’s root word, mimos, can be found in an ancient Greek tragedy in reference to dramatic impersonation, and the mim- root came to be generally associated with the musical and poetic arts by the fifth century BCE. ’",
+      "B. Both Plato’s and Aristotle’s theorizations of mimesis examine the psychological effects that works of art induce in the viewer or listener. ’",
+      "C. Although several of Plato’s earliest philosophical works discuss aesthetic ideas, the term “mimesis” doesn’t appear in Plato’s discussions of art until Cratylus, a relatively late work. ’",
+      "D. Although Plato’s writings typically characterize representational art as an inferior reflection of the physical world, Aristotle suggests that mimesis can refer to art’s capacity to envision hypothetical conditions that could, but don’t yet, exist. ’"
     ],
     "answer": "D",
     "explanation": "Choice D is the best answer because it presents a statement that would support Halliwell’s claim that \"imitation\" is an overly simplified translation of the word \"mimesis\" in the context of ancient Greek philosophical discussions of representational art and that, because it suggests a view of art as merely copying things that exist in reality, the translation obscures the fact that Plato, Aristotle, and other ancient Greeks’ understood the relationship between art and reality in varied ways. If Plato’s works tend to treat representational art as an inferior or inadequate reflection of the physical world (consistent with the idea of mere imitation), while Aristotle’s works suggest that the term \"mimesis\" can refer to art’s ability to show conditions that don’t currently exist but could exist (going beyond imitation into novel creation), that evidence would support the claim that the term \"mimesis\" means more than just \"imitation\" and that ancient Greek philosophers held different views of the relationship between art and reality.\n\nChoice A is incorrect because information about the root word mimos first being used in drama and the root mim- coming to be associated with music and poetry wouldn’t indicate anything about the meaning of the specific term \"mimesis\" as it was used by ancient Greek philosophers in discussions of representational art; thus, the information would have no bearing on Halliwell’s claim that a common translation of the specific term is an oversimplification. Choice B is incorrect because the issue of art’s psychological effects on audiences gets at how people respond to works of art instead of how art itself is related to reality, so the idea that Plato and Aristotle both addressed such effects in their considerations’ of mimesis wouldn’t have any bearing on Halliwell’s claim that a common translation of that term oversimplifies the relationship between art and reality. Further, this idea would touch on one general similarity in approaches to mimesis instead of illustrating the multifaceted, or varied, ways’ Halliwell claims ancient Greek philosophers understood art’s relation to reality. Choice C is incorrect because the idea that Plato discussed aesthetics in his early works but didn’t use the term \"mimesis\" until later doesn’t give any indication of how Plato or any other ancient Greek philosophers understood the relation between art and reality, so it would have no bearing on Halliwell’s claim that a common translation of the’ term \"mimesis\" is oversimplified and fails to reflect the varied ways the philosophers understood that relationship."
@@ -2384,7 +2384,7 @@ const questionBank_II = [
     "options": [
       "A. Barve’s investigation shows that some species of Himalayan songbirds have evolved feathers that better regulate body temperature than do the feathers of other species, contradicting previous predictions.",
       "B. Barve found an association between habitat temperature and feather structure among Himalayan songbirds, lending new support to a general prediction.",
-      "C. Barve discovered that songbirds have adapted to their environment by growing feathers without flat and smooth sections, complicating an earlier hypothesis.",
+      "C. Barve discovered that songbirds have adapted to their environment by growing feathers without flat and smooth sections, complicating an earlier hypothesis. ’",
       "D. The results of Barve’s study suggest that the ability of birds to withstand cold temperatures is determined more strongly by feather length than feather structure, challenging an established belief."
     ],
     "answer": "B",
@@ -2427,8 +2427,8 @@ const questionBank_II = [
     "passage": "Astronomers investigated the Arabia Terra region of Mars because it appears to contain irregularly shaped craters that may have been caused by massive volcanic explosions. In their investigations of Arabia Terra, the researchers found remnants of ash deposits in an amount and thickness that would result from a massive volcanic eruption. However, erosion and past resurfacing events could have modified the surface of the planet. Therefore, ______",
     "question": "Which choice most logically completes the text?",
     "options": [
-      "A. the current makeup of the Arabia Terra region might not accurately reflect the volcanic activity of Mars’s past.",
-      "B. eruptions from Mars’s volcanoes were likely not as massive as astronomers previously believed.",
+      "A. the current makeup of the Arabia Terra region might not accurately reflect the volcanic activity of Mars’s past. ’",
+      "B. eruptions from Mars’s volcanoes were likely not as massive as astronomers previously believed. ’",
       "C. ash was most likely expelled from multiple different volcanoes on Mars’s surface.",
       "D. the craters found in the Arabia Terra region were necessarily created by events other than volcanic eruptions."
     ],

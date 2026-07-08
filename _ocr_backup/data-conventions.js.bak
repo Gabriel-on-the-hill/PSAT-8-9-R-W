@@ -81,7 +81,7 @@ const questionBank_CON = [
     "id": "91d28dac",
     "skill": "Boundaries",
     "difficulty": "Easy",
-    "passage": "After the printing press was introduced in 1440, handwritten manuscripts from Europe’s medieval period were often destroyed and the paper used for other purposes. In one instance, pages ______ a collection of Norse tales dating to 1270 were discovered lining a bishop’s miter (hat).",
+    "passage": "After the printing press was introduced in 1440, handwritten manuscripts from Europe’s medieval period were often destroyed and the paper used for other purposes. In one instance, pages ______ a collection of Norse tales dating to 1270 were discovered lining a bishop’s miter (hat). ’",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
       "A. from:",
@@ -270,7 +270,7 @@ const questionBank_CON = [
       "D. of,"
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. “Themes of childhood” is one noun phrase, with “themes of” implicitly carrying over to the other items on the list “( themes of childhood, [themes of] womanhood, and [themes of] Chinese American identity ).” Choice A is incorrect. This choice inappropriately breaks up the introduction of a list. Also, “In her book …themes of” is not an independent clause, thanks to the dangling of at the end, so it can’t precede a colon. Choice C is incorrect. This choice inappropriately breaks up the introduction of a list. Also, “In her book… themes of” is not an independent clause, thanks to the dangling of at the end, so it can’t precede a single dash. Choice D is incorrect. This choice inappropriately breaks up the introduction of a list. “Themes of” “implicitly carries over to each item on the list ( themes” of childhood, [themes of] womanhood, and [themes of] Chinese American identity ), so we don’t want to use a comma to separate it."
+    "explanation": "Choice B is the best answer. “Themes of childhood” is one noun phrase, with “themes of” implicitly carrying over to the other items on the list “( themes of childhood, [themes of] womanhood, and [themes of] Chinese American identity ).” Choice A is incorrect. This choice inappropriately breaks up the introduction of a list. Also, “In her book …themes of” is not an independent clause, thanks to the dangling “” of at the end, so it can’t precede a colon. Choice C is incorrect. This choice inappropriately breaks up the introduction of a list. Also, “In her book… themes of” is not an independent clause, thanks to the dangling “” of at the end, so it can’t precede a single dash. Choice D is incorrect. This choice inappropriately breaks up the introduction of a list. “Themes of” “implicitly carries over to each item on the list ( themes” of childhood, [themes of] womanhood, and [themes of] Chinese American identity ), so we don’t want to use a comma to separate it."
   },
   {
     "id": "6b2a1288",
@@ -315,7 +315,7 @@ const questionBank_CON = [
       "D. not; aerobic"
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. A comma is the appropriate way to link the dependent clause While...not and the independent clause that follows.\n\nChoice A is incorrect. This choice creates a run-on sentence error. “While...not” is a dependent clause, which must be separated from the independent clause that follows with some sort of punctuation. Choice B is incorrect. This choice creates a sentence fragment. “While one requires oxygen and one does not” isn’t an independent clause, so it can’t stand alone as a complete sentence. Choice D is incorrect. This choice creates a punctuation error. “While one requires oxygen and one does not” isn’t an independent clause, so it can’t be linked to the clause that follows with a semicolon."
+    "explanation": "Choice C is the best answer. A comma is the appropriate way to link the dependent clause “” While...not and the independent clause that follows.\n\nChoice A is incorrect. This choice creates a run-on sentence error. “While...not” is a dependent clause, which must be separated from the independent clause that follows with some sort of punctuation. Choice B is incorrect. This choice creates a sentence fragment. “While one requires oxygen and one does not” isn’t an independent clause, so it can’t stand alone as a complete sentence. Choice D is incorrect. This choice creates a punctuation error. “While one requires oxygen and one does not” isn’t an independent clause, so it can’t be linked to the clause that follows with a semicolon."
   },
   {
     "id": "81000f32",
@@ -405,7 +405,7 @@ const questionBank_CON = [
       "D. most people prefer in a diet drink."
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. This sentence is a statement: “Moskowitz was hired by a soda company to determine how much artificial sweetener most people prefer in a diet drink.” So a period is the most appropriate punctuation mark.\n\nChoice A is incorrect. This doesn’t complete the text in a way that conforms to the conventions of Standard English. This sentence is not a question —’ it’s a statement. So a question mark is not the appropriate punctuation. Choice B is incorrect. This doesn’t complete the text in a way that conforms to the conventions of Standard English. We already have the verbs “… was hired” to determine in this sentence. The verb do is not needed and results in a confusing, ungrammatical sentence. Choice C is incorrect. This doesn’t complete the text in a way that conforms to the conventions of Standard English. This sentence is not a question —’it’s a statement. So a question mark is not the appropriate punctuation."
+    "explanation": "Choice D is the best answer. This sentence is a statement: “Moskowitz was hired by a soda company to determine how much artificial sweetener most people prefer in a diet drink.” So a period is the most appropriate punctuation mark.\n\nChoice A is incorrect. This doesn’t complete the text in a way that conforms to the conventions of Standard English. This sentence is not a question —’ it’s a statement. So a question mark is not the appropriate punctuation. Choice B is incorrect. This doesn’t complete the text in a way that conforms to the conventions of Standard English. We already have the verbs “… was hired” to determine in this sentence. The verb “” do is not needed and results in a confusing, ungrammatical sentence. Choice C is incorrect. This doesn’t complete the text in a way that conforms to the conventions of Standard English. This sentence is not a question —’it’s a statement. So a question mark is not the appropriate punctuation."
   },
   {
     "id": "edbbeca3",
@@ -660,7 +660,7 @@ const questionBank_CON = [
       "D. estimates"
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. The convention being tested is the use of punctuation within a sentence. This choice correctly completes the parenthetical element \"as many as 200,000, by some estimates\" with a closing parenthesis, pairing with the opening parenthesis that appears earlier in the sentence. This parenthetical element functions to specify the number of residents, and the use of parentheses indicates that this element could be removed without affecting the grammatical coherence of the sentence.\n\nChoice B is incorrect. While this choice completes the parenthetical element with a closing parenthesis, no comma is needed before the prepositional phrases (\"in...size\") that provide essential information about where the residents were housed. Choice C is incorrect because a dash can’t be paired with an opening parenthesis in this way to separate the parenthetical element from the rest of the sentence. Choice D is incorrect because it doesn’t close the parenthetical element that was opened earlier in the sentence."
+    "explanation": "Choice A is the best answer. The convention being tested is the use of punctuation within a sentence. This choice correctly completes the parenthetical element \"as many as 200,000, by some estimates\" with a closing parenthesis, pairing with the opening parenthesis that appears earlier in the sentence. This parenthetical element functions to specify the number of residents, and the use of parentheses indicates that this element could be removed without affecting the grammatical coherence of the sentence.\n\nChoice B is incorrect. While this choice completes the parenthetical element with a closing parenthesis, no comma is needed before the prepositional phrases (\"in...size\") that provide essential information about where the residents were housed. Choice C is incorrect because a dash can’t be paired with an opening parenthesis in this way to separate the parenthetical element from the rest of the sentence. Choice D is’ incorrect because it doesn’t close the parenthetical element that was opened earlier in the sentence."
   },
   {
     "id": "580e1a4a",
@@ -690,7 +690,7 @@ const questionBank_CON = [
       "D. California"
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. No punctuation should separate the subject of the sentence ( the Huntington Library in California ) from its verb “( received ).” Choice A is incorrect. No punctuation should separate the subject of the sentence ( the Huntington Library in California ) from its verb  ( received ). Choice B is incorrect. No punctuation should separate the subject of the sentence ( the Huntington Library in California ) from its  verb ( received ). Choice C is incorrect. No punctuation should separate the subject of the sentence ( the Huntington Library in California ) from “its verb ( received ).”"
+    "explanation": "Choice D is the best answer. No punctuation should separate the subject of the sentence ( the Huntington Library in California ) from its verb “( received ).” “” Choice A is incorrect. No punctuation should separate the subject of the sentence ( the Huntington Library in California ) from its verb “” “” ( received ). Choice B is incorrect. No punctuation should separate the subject of the sentence ( the Huntington Library in California ) from its “” “” verb ( received ). Choice C is incorrect. No punctuation should separate the subject of the sentence ( the Huntington Library in California ) from “its verb ( received ).”"
   },
   {
     "id": "9436c09a",
@@ -729,8 +729,8 @@ const questionBank_CON = [
     "passage": "Forming extensive networks via mycorrhizal association — that is, a symbiotic relationship between plants and fungi — ______",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
-      "A. it is the entanglement of pine trees roots and the fungus Tricholoma matsutake’s fungal hyphae that makes nutrient transport possible.",
-      "B. the transport of nutrients is possible through the entanglement of pine trees roots and the fungus Tricholoma matsutake’s fungal hyphae.",
+      "A. it is the entanglement of pine trees roots and the fungus Tricholoma matsutake’s fungal hyphae that makes nutrient transport possible. ’",
+      "B. the transport of nutrients is possible through the entanglement of pine trees roots and the fungus Tricholoma matsutake’s fungal hyphae. ’",
       "C. nutrients can be transported through the entanglement of pine trees roots and the fungus Tricholoma matsutake’s fungal hyphae.",
       "D. pine trees and the fungus Tricholoma matsutake can transport nutrients through their entangled tree roots and fungal hyphae."
     ],
@@ -780,7 +780,7 @@ const questionBank_CON = [
       "D. it"
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. The convention being tested is pronoun –antecedent agreement. The singular pronoun it agrees in number with the singular antecedent violin and thus indicates that the traditional violin (and not its curves) was made lighter.\n\nChoice A is incorrect because the plural pronoun “those” doesn’t agree in number with the singular antecedent violin. Choice B is incorrect because the singular pronoun “one” is ambiguous in this context; the resulting sentence leaves unclear what Stradivari made lighter. Choice C is incorrect because the plural pronoun “them” doesn’t agree in number with the singular antecedent violin."
+    "explanation": "Choice D is the best answer. The convention being tested is pronoun –antecedent agreement. The singular pronoun “” it agrees in number with the singular antecedent “” violin and thus indicates that the traditional violin (and not its curves) was made lighter.\n\nChoice A is incorrect because the plural pronoun “those” doesn’t agree in number with the singular antecedent “” violin. Choice B is incorrect because the singular pronoun “one” is ambiguous in this context; the resulting sentence leaves unclear what Stradivari made lighter. Choice C is incorrect because the plural pronoun “them” doesn’t agree in number with the singular antecedent “” violin."
   },
   {
     "id": "83cc4b6e",
@@ -790,8 +790,8 @@ const questionBank_CON = [
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
       "A. when their COF drops below 0.01, two surfaces reach superlubricity.",
-      "B. two surfaces, when their COF drops below 0.01, reach superlubricity.",
-      "C. reaching superlubricity occurs when two surfaces COF drops below 0.01.",
+      "B. two surfaces, when their COF drops below 0.01, reach superlubricity. ’",
+      "C. reaching superlubricity occurs when two surfaces COF drops below 0.01. ’",
       "D. superlubricity is reached when two surfaces COF drops below 0.01."
     ],
     "answer": "D",
@@ -894,9 +894,9 @@ const questionBank_CON = [
     "passage": "Supported by biochemical analyses of over 2,000 skeletons from the Middle Ages, ______",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
-      "A. vegetables and grains were, a 2022 study found, the primary components of early medieval rulers diets.",
-      "B. early medieval rulers diets were found, in a 2022 study, to have primarily consisted of vegetables and grains.",
-      "C. the primary components of early medieval rulers diets were vegetables and grains, according to a 2022 study.",
+      "A. vegetables and grains were, a 2022 study found, the primary components of early medieval rulers diets. ’",
+      "B. early medieval rulers diets were found, in a 2022 study, to have primarily consisted of vegetables and grains. ’",
+      "C. the primary components of early medieval rulers diets were vegetables and grains, according to a 2022 study. ’",
       "D. findings from a 2022 study suggested that vegetables and grains were the primary components of early medieval rulers diets."
     ],
     "answer": "D",
@@ -915,7 +915,7 @@ const questionBank_CON = [
       "D. is ascending"
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. \"Ascended\" is in the simple past tense. Since Kamehameha became king in the past, this makes the most sense.\n Choice B is incorrect. \"Will ascend\" is in the future tense, but we wouldn’t know about Kamehameha III’s ascent if it hadn’t happened yet. The information in the sentence, as well as the tense of other verbs, tells us that the events described happened in the past. Choice C is incorrect. \"Ascends\" is in the simple present tense. However, the information in the sentence, as well as the tense of other verbs, tells us that the events described happened in the past. Choice D is incorrect. \"Is ascending\" is in the continuous present tense, which we use to show that something is ongoing, but this doesn’t make sense here — the information in the sentence, as well as the tense of other verbs, tells us that the events described happened in the past."
+    "explanation": "Choice A is the best answer. \"Ascended\" is in the simple past tense. Since Kamehameha became king in the past, this makes the most sense.\n Choice B is incorrect. \"Will ascend\" is in the future tense, but we wouldn’t know about Kamehameha III’s ascent if it hadn’t happened yet. The information in the sentence, as well as the tense of other verbs, tells us that the events described happened in the past. Choice C is incorrect. \"Ascends\" is in the simple present tense. However, the information in the sentence, as well as the tense of other verbs, tells us that the events described happened in the past. Choice D is incorrect. \"Is ascending\" is in the continuous present tense, which we use to show that something is’ ongoing, but this doesn’t make sense here — the information in the sentence, as well as the tense of other verbs, tells us that the events described happened in the past."
   },
   {
     "id": "775aa448",
@@ -924,7 +924,7 @@ const questionBank_CON = [
     "passage": "Based on genetic evidence, archaeologists have generally agreed that reindeer domestication began in the eleventh century CE. However, since uncovering fragments of a 2,000-year-old reindeer training harness in northern Siberia, ______ may have begun much earlier.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
-      "A. researcher Robert Losey has argued that domestication",
+      "A. researcher Robert Losey has argued that domestication ’",
       "B. researcher Robert Losey’s argument is that domestication",
       "C. domestication, researcher Robert Losey has argued,",
       "D. the argument researcher Robert Losey has made is that domestication"
@@ -1104,10 +1104,10 @@ const questionBank_CON = [
     "passage": "In January 1776, Thomas Paine published Common Sense, an appeal for freedom from the British monarchy that famously helped ignite the desire for independence among the American colonists. After the colonies achieved their independence, Paine moved to Paris, where the provocative ______ would contribute to another revolution —the French Revolution.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
-      "A. authors political writings",
+      "A. authors political writings ’",
       "B. author’s political writings’",
-      "C. author’s political writing’s",
-      "D. authors political writings"
+      "C. author’s political writing’s ’",
+      "D. authors political writings ’"
     ],
     "answer": "B",
     "explanation": "Choice B is the best answer. The conventions being tested are the use of plural and possessive nouns. The singular possessive noun \"author’s\" correctly indicates that the political writings are those of Thomas Paine, and the plural noun \"writings\" correctly indicates that multiple works by Paine are being discussed.\n\nChoice A is incorrect because the context requires the singular possessive noun \"author’s,\" not the plural noun \"authors.\" Choice C is incorrect because the context requires the plural noun \"writings,\" not the singular possessive noun \"writing’s.\" Choice D is incorrect because the context requires the singular possessive noun \"author’s\" and the plural noun \"writings,\" not the plural possessive nouns \"authors \" and \"writings.\""
@@ -1194,13 +1194,13 @@ const questionBank_CON = [
     "passage": "In the canon of North African literature, Moroccan author Driss Chraïbi’s 1954 novel The Simple Past (Le Passé simple) looms large. A coming-of- age story, a social meditation, and a sober gaze into the dark maw of French colonialism, ______ interrogates systemic power with memorable intensity.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
-      "A. Morocco gained its independence two years before the publication of Chraïbi’s debut novel, which",
+      "A. Morocco gained its independence two years before the publication of Chraïbi’s debut novel, which ’",
       "B. Chraïbi’s debut novel, published two years before Morocco gained its independence,",
       "C. Chraïbi wrote a debut novel that, published two years before Morocco gained its independence,",
       "D. published two years before Morocco gained its independence, Chraïbi wrote a debut novel that"
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. Subject-modifier placement requires a modifier and its subject to be next to each other. The subject of the modifier \"a coming-of-age story … colonialism\" is Chraïbi’s novel The Simple Past, so the subject \"Chraïbi’s debut novel\" fits perfectly after this introductory modifying phrase.\n\nChoice A is incorrect. Modifiers and their subjects must go next to each other. The introductory modifier \"a coming-of-age story … colonialism\" is describing Chraïbi’s novel, not Morocco. However, this choice places Morocco directly next to that modifier. Choice C is incorrect. Modifiers and their subjects must go next to each other. The introductory modifier \"a coming-of-age story … colonialism\" all describes Chraïbi’s novel, not Chraïbi himself. However, this choice places Chraïbi directly next to that modifier. Choice D is incorrect. Modifiers and their subjects must go next to each other. The modifier \"a coming-of-age story … \" is describing Chraïbi’s novel, so that needs to be the subject immediately after the modifier. This choice adds another modifier that describes Chraïbi’s novel, but then puts \"Chraïbi\" himself — — not the novel right after that modifier, which doesn’t make sense. Chraïbi wasn’t \"published two years before\" Moroccan independence; his novel The Simple Past was."
+    "explanation": "Choice B is the best answer. Subject-modifier placement requires a modifier and its subject to be next to each other. The subject of the modifier \"a coming-of-age story … colonialism\" is Chraïbi’s novel The Simple Past, so the subject \"Chraïbi’s debut novel\" fits perfectly after this introductory modifying phrase.\n\nChoice A is incorrect. Modifiers and their subjects must go next to each other. The introductory modifier \"a coming-of-age story … colonialism\" is’ describing Chraïbi’s novel, not Morocco. However, this choice places Morocco directly next to that modifier. Choice C is incorrect. Modifiers and their subjects must go next to each other. The introductory modifier \"a coming-of-age story … colonialism\" all describes Chraïbi’s novel, not Chraïbi himself. However, this choice places Chraïbi directly next to that modifier. Choice D is incorrect. Modifiers and their subjects must go next to each other. The modifier \"a coming-of-age story … \" is describing Chraïbi’s novel, so that needs to be the subject immediately after the modifier. This choice adds another modifier that describes Chraïbi’s novel, but then puts \"Chraïbi\" himself — — not the novel right after that modifier, which doesn’t make sense. Chraïbi wasn’t \"published two years before\" Moroccan independence; his novel The Simple Past was."
   },
   {
     "id": "bdd3c593",
@@ -1314,13 +1314,13 @@ const questionBank_CON = [
     "passage": "Slam poet Elizabeth Acevedo’s debut novel The Poet X, winner of the 2018 National Book Award for Young People’s Literature, is composed of ______ protagonist, fifteen-year-old Xiomara Batista.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
-      "A. poems putatively written by the novel’s",
-      "B. poem’s putatively written by the novel’s",
-      "C. poem’s putatively written by the novels",
-      "D. poems putatively written by the novels"
+      "A. poems putatively written by the novel’s ’",
+      "B. poem’s putatively written by the novel’s ’",
+      "C. poem’s putatively written by the novels ’",
+      "D. poems putatively written by the novels ’"
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. Nothing belongs to the “poems” in the sentence, so it should not be possessive — just a simple plural noun. The protagonist does belong to the novel —’ it’s the protagonist of the novel — “so novel” needs to be a singular possessive noun.\n\nChoice B is incorrect. This doesn’t complete the text in a way that conforms to the conventions of Standard English. This choice uses the singular possessive “poem’s,’” but the text indicates that it should be the simple plural poems : there is more than one poem, and nothing belongs to the poems. Choice C is incorrect. This doesn’t complete the text in a way that conforms to the conventions of Standard English. This choice uses the singular possessive “poem’s, ’” but the text indicates that it should be the simple plural poems : there is more than one poem, and nothing belongs to the poems. This choice also uses the plural possessive “novels, ’” which is incorrect because there is only one novel. Choice D is incorrect. This doesn’t complete the text in a way that conforms to the conventions of Standard English. This choice uses the plural possessive “novels,’” which is incorrect because there is only one novel, so it should be the singular possessive “novel’s.’”."
+    "explanation": "Choice A is the best answer. Nothing belongs to the “poems” in the sentence, so it should not be possessive — just a simple plural noun. The protagonist does belong to the novel —’ it’s the protagonist of the novel — “so novel” needs to be a singular possessive noun.\n\nChoice B is incorrect. This doesn’t complete the text in a way that conforms to the conventions of Standard English. This choice uses the singular possessive “poem’s,’” but the text indicates that it should be the simple plural “” poems : there is more than one poem, and nothing belongs to the poems. Choice C is incorrect. This doesn’t complete the text in a way that conforms to the conventions of Standard English. This choice uses the singular possessive “poem’s, ’” but the text indicates that it should be the simple plural “” poems : there is more than one poem, and nothing belongs to the poems. This choice also uses the plural possessive “novels, ’” which is incorrect because there is only one novel. Choice D is incorrect. This doesn’t complete the text in a way that conforms to the conventions of Standard English. This choice uses the plural possessive “novels,’” which is incorrect because there is only one novel, so it should be the singular possessive “novel’s.’”."
   },
   {
     "id": "54868589",
@@ -1360,7 +1360,7 @@ const questionBank_CON = [
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
       "A. there are two problems associated with commercial plastics:",
-      "B. two problems are associated with commercial plastics:",
+      "B. two problems are associated with commercial plastics: ’",
       "C. commercial plastics two associated problems are that",
       "D. commercial plastics have two associated problems:"
     ],
@@ -1380,7 +1380,7 @@ const questionBank_CON = [
       "D. essays. Praising"
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. The convention being tested is punctuation use between sentences. In this choice, the period after “essays” is used “correctly to mark the boundary between one sentence ( American …” “essays ) and another ( praising …” Morrison ). The participial phrase beginning with Praising modifies the subject of the second sentence, “writer Robert Antoni.” Choice A is incorrect because it results in a comma splice. A comma can’t be used in this way to mark the boundary between sentences. Choice B is incorrect. Without a comma preceding it, the conjunction “and” can’t be used in this way to join sentences. Choice C is incorrect because it “results in a run-on sentence. The sentences ( American … essays” and “Praising …” Morrison ) are fused without punctuation and/or a conjunction."
+    "explanation": "Choice D is the best answer. The convention being tested is punctuation use between sentences. In this choice, the period after “essays” is used “correctly to mark the boundary between one sentence ( American …” “essays ) and another ( praising …” Morrison ). The participial phrase beginning with “” Praising modifies the subject of the second sentence, “writer Robert Antoni.” Choice A is incorrect because it results in a comma splice. A comma can’t be used in this way to mark the boundary between sentences. Choice B is incorrect. Without a comma preceding it, the conjunction “and” can’t be used in this way to join sentences. Choice C is incorrect because it “results in a run-on sentence. The sentences ( American … essays” and “Praising …” Morrison ) are fused without punctuation and/or a conjunction."
   },
   {
     "id": "278e3e3c",
@@ -1464,13 +1464,13 @@ const questionBank_CON = [
     "passage": "In assessing the films of Japanese director Akira Kurosawa, ______ have missed his equally deep engagement with Japanese artistic traditions such as Noh theater.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
-      "A. many critics have focused on Kurosawa’s use of Western literary sources but",
-      "B. Kurosawa’s use of Western literary sources has been the focus of many critics, who",
-      "C. there are many critics who have focused on Kurosawa’s use of Western literary sources, but they",
+      "A. many critics have focused on Kurosawa’s use of Western literary sources but ’",
+      "B. Kurosawa’s use of Western literary sources has been the focus of many critics, who ’",
+      "C. there are many critics who have focused on Kurosawa’s use of Western literary sources, but they ’",
       "D. the focus of many critics has been on Kurosawa’s use of Western literary sources; they"
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. The convention being tested is subject-modifier placement. This choice makes the noun phrase “many critics” the subject of the sentence and places it immediately after the modifying phrase “in assessing… Kurosawa.” In doing so, this choice clearly establishes that it is the critics— and not another noun in the sentence — who assess Kurosawa’s films.’ Choice B is incorrect because it results in a dangling modifier. The placement of the noun phrase “Kurosawa’s ’…sources” immediately after the modifying phrase illogically suggests that his use of Western literary sources is what assesses Kurosawa’s films. Choice C is incorrect because it results in a dangling modifier. The placement of the function word “there” immediately after the modifying phrase illogically suggests that “there” is what assesses Kurosawa’s films. Choice D is incorrect because it results in a dangling modifier. The placement of the noun phrase “the focus …” critics’ immediately after the modifying phrase illogically suggests that the critics focus is what assesses Kurosawa’s films."
+    "explanation": "Choice A is the best answer. The convention being tested is subject-modifier placement. This choice makes the noun phrase “many critics” the subject of the sentence and places it immediately after the modifying phrase “in assessing… Kurosawa.” In doing so, this choice clearly establishes that it is the critics— and not another noun in the sentence — who assess Kurosawa’s films.’ Choice B is incorrect because it results in a dangling modifier. The placement of the noun phrase “Kurosawa’s ’…sources” immediately after the modifying phrase illogically suggests that his use of Western literary sources is what assesses Kurosawa’s films. Choice C is incorrect because it results in a dangling modifier. The placement of the function word “there” immediately after the modifying phrase illogically suggests that “there” is what assesses Kurosawa’s films. Choice D is incorrect because it results in a dangling modifier. The placement of the noun phrase “the focus …” critics’ immediately after the modifying phrase illogically suggests that the critics focus is what assesses Kurosawa’s films. ’"
   },
   {
     "id": "b995581c",

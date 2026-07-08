@@ -30,7 +30,7 @@ const questionBank_CS = [
       "D. Markings on depictions of human faces are not necessarily intended to portray particular details about the physical appearance of individuals."
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. Trever thinks that the “hyper-realistic portrayal of identifiable people” interpretation ignores the sculptors imagination and creativity. We can infer that Trevor thinks the facial markings on the sculptures may not have represented real skin blemishes on real people.\n\nChoice A is incorrect. The text gives us no reason to think that Trever would respond to the underlined interpretation in this way. Neither text compares the depictions of human faces to the depictions of plants or animals, so we have no basis to draw this conclusion. Choice B is incorrect. The text gives us no reason to think that Trever would respond to the underlined interpretation in this way. There’s nothing in either text about multiple depictions representing the same person, so we have no basis to draw this conclusion. Choice C is incorrect. The text gives us no reason to think that Trever would respond to the underlined interpretation in this way. Neither text mentions the state of the vessels (damaged or intact), so we have no basis to draw this conclusion.",
+    "explanation": "Choice D is the best answer. Trever thinks that the “hyper-realistic portrayal of identifiable people” interpretation ignores the sculptors imagination and creativity. We can infer that Trevor thinks the facial markings on the sculptures may not have represented real skin blemishes on real people.\n\nChoice A is incorrect. The text gives us no reason to think that Trever would respond to the underlined interpretation in this way. Neither text compares the depictions of human faces to the depictions of plants or animals, so we have no basis to draw this conclusion. Choice B is’ incorrect. The text gives us no reason to think that Trever would respond to the underlined interpretation in this way. There’s nothing in either text about multiple depictions representing the same person, so we have no basis to draw this conclusion. Choice C is incorrect. The text gives us no reason to think that Trever would respond to the underlined interpretation in this way. Neither text mentions the state of the vessels (damaged or intact), so we have no basis to draw this conclusion.",
     "image": "assets/coeq_e864a04f.png",
     "alt": "Data figure. Text 1  Historians studying pre-Inca Peru have looked to ceramic vessels to understand daily life among the Moche people. These mold-made sculptures present plants, animals, and human faces in precise ways — vessels representing human faces are so detailed that scholars have interpreted facial markings to represent scars and other skin irregularities. Some historians have even used these objects to identify potential skin diseases that may have afflicted people at the time. Text 2  Art historian and archaeologist Lisa Trever has argued that the interpretation of Moche “portrait” vessels as hyper-realistic portrayals of identifiable people may inadvertently disregard the creativity of the objects creators. Moche ceramic vessels, Trever argues, are artworks in which sculptors could free their imagination, using realistic objects and people around them as inspiration to explore more abstract concepts."
   },
@@ -41,8 +41,8 @@ const questionBank_CS = [
     "passage": "",
     "question": "Which choice best describes the function of the underlined lines in the text as a whole?",
     "options": [
-      "A. It establishes that the speaker’s enthusiasm about current travels conflicts with the growing urge to return home.",
-      "B. It illustrates the speaker’s uncertainty about maintaining strong links with relatives in distant places.",
+      "A. It establishes that the speaker’s enthusiasm about current travels conflicts with the growing urge to return home. ’",
+      "B. It illustrates the speaker’s uncertainty about maintaining strong links with relatives in distant places. ’",
       "C. It conveys the speaker’s sense of feeling a pull toward home while traveling in an unfamiliar place.",
       "D. It reveals that upon returning after an extended absence, the speaker longs for the way a location once felt."
     ],
@@ -64,7 +64,7 @@ const questionBank_CS = [
       "D. By noting that if the bees were truly playing, any positive feelings they may have experienced were probably quite basic"
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. The author of Text 2 agrees with the author of Text 1 that bumblebees may engage in play and possibly experience some kind of positive emotional state. However, the author of Text 2 also qualifies this claim by stating that emotions in insects, if they do exist, are likely very rudimentary.\n\nChoice A is incorrect. While Text 2 states that other studies might indicate “negative emotional states” in bees, it does not contradict the findings from the Galpayage study — that the bees might have been having fun. Choice B is incorrect. The author of Text 2 does not mention or imply that any insects, including bumblebees, are capable of experiencing complex emotional states. The author of Text 2 states that if insects do feel emotions, those emotions are likely very rudimentary. Choice C is incorrect. The author of Text 2 does not compare or contrast the behavior or emotions of insects and humans, and neither does the author of Text 1.",
+    "explanation": "Choice D is the best answer. The author of Text 2 agrees with the author of Text 1 that bumblebees may engage in play and possibly experience some kind of positive emotional state. However, the author of Text 2 also qualifies this claim by stating that emotions in insects, if they do exist, are “” likely very rudimentary.\n\nChoice A is incorrect. While Text 2 states that other studies might indicate “negative emotional states” in bees, it does not contradict the findings from the Galpayage study — that the bees might have been having fun. Choice B is incorrect. The author of Text 2 does not mention or imply that any insects, including bumblebees, are capable of experiencing complex emotional states. The author of Text 2 states that if insects do feel emotions, those emotions are “” likely very rudimentary. Choice C is incorrect. The author of Text 2 does not compare or contrast the behavior or emotions of insects and humans, and neither does the author of Text 1.",
     "image": "assets/coeq_9086691f.png",
     "alt": "Data figure. Text 1  In a study of insect behavior, Samadi Galpayage and colleagues presented bumblebees with small wooden balls and observed many of the bees clinging to, rolling, and dragging the objects. The researchers provided no external rewards (such as food) to encourage these interactions. The bees simply appeared to be playing — and for no other reason than because they were having fun. Text 2  Insects do not have cortexes or other brain areas associated with emotions in humans. Still, Galpayage and her team have shown that bumblebees may engage in play, possibly experiencing some kind of positive emotional state. Other studies have suggested that bees experience negative emotional states (for example, stress), but as Galpayage and her team have acknowledged, emotions in insects, if they do indeed exist, are likely very rudimentary."
   },
@@ -109,7 +109,7 @@ const questionBank_CS = [
     "passage": "",
     "question": "Which choice best describes the function of the underlined portion in the text?",
     "options": [
-      "A. It indicates Grande’s unhappiness over Mago’s disinterest in Grande’s doll.",
+      "A. It indicates Grande’s unhappiness over Mago’s disinterest in Grande’s doll. ’",
       "B. It expresses Grande’s anger over Mago’s refusal to spend time with her.",
       "C. It presents an example of how Mago and Grande generally played together as children.",
       "D. It provides a reason for why Mago is unwilling to play with Grande."
@@ -132,7 +132,7 @@ const questionBank_CS = [
       "D. It provides context that clarifies the significance of the information that follows in the rest of the sentence."
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. The text describes how a new discovery expands our understanding of Denisovans. The underlined portion describes what we used to believe about Denisovans, which helps the reader understand the significance of the discovery of the molar: it suggests that they lived in more places than we d previously thought.\n\nChoice A is incorrect. The underlined portion doesn’t do this. Instead, it explains what we used to believe about Denisovans before the discovery — it doesn’t dismiss the new discovery as false. Choice B is incorrect. The underlined portion doesn’t do this. No term is defined here. Choice C is incorrect. The underlined portion doesn’t do this. The text never tells us what the “goal” of the research was, just what its discovery was.",
+    "explanation": "Choice D is the best answer. The text describes how a new discovery expands our understanding of Denisovans. The underlined portion describes what we used to believe about Denisovans, which helps the reader understand the significance of the discovery of the molar: it suggests that they lived in more places than we d previously thought.\n\nChoice A is incorrect. The underlined portion doesn’t do this. Instead, it explains what we used to believe about Denisovans before the discovery — it doesn’t dismiss the new discovery as false. Choice B is incorrect. The underlined portion doesn’t do this. No term is defined here. Choice C is’ incorrect. The underlined portion doesn’t do this. The text never tells us what the “goal” of the research was, just what its discovery was.",
     "image": "assets/coeq_d2f209b3.png",
     "alt": "Data figure. Researchers have found a nearly 164,000-year-old molar from a member of the archaic human species known as Denisovans in a cave in Laos, suggesting that Denisovans lived in a wider range of environments than indicated by earlier evidence. Before the discovery, Denisovans were thought to have lived only at high altitudes in relatively cold climates in what are now Russia and China, but the discovery of the tooth in Laos suggests that they may have lived at low altitudes in relatively warm climates in Southeast Asia as well."
   },
@@ -144,12 +144,12 @@ const questionBank_CS = [
     "question": "Which choice best describes the function of the underlined question in the text as a whole?",
     "options": [
       "A. It reinforces the text’s skepticism about the possibility of truly achieving self-knowledge.",
-      "B. It speculates that some readers will share the doubts expressed in the text about the value of self-knowledge.",
+      "B. It speculates that some readers will share the doubts expressed in the text about the value of self-knowledge. ’",
       "C. It cautions readers that the text’s directions for how to achieve self-knowledge are hard to follow.",
       "D. It concedes that the definition of self-knowledge advanced in the text is unpopular."
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. The text repeatedly claims that true self-knowledge can’t possibly be achieved, and this rhetorical question emphasizes that point.\n\nChoice B is incorrect. The underlined question doesn’t do this. The text never expresses doubts about the value of self-knowledge —rather, the text expresses doubts about the possibility of achieving self-knowledge. Choice C is incorrect. The underlined question doesn’t do this. The text doesn’t provide directions for how to achieve self-knowledge — rather, it claims that true self-knowledge is impossible to achieve. Choice D is incorrect. The underlined question doesn’t do this. The text doesn’t ever define self-knowledge, and popularity isn’t mentioned in the text at all.",
+    "explanation": "Choice A is the best answer. The text repeatedly claims that true self-knowledge can’t possibly be achieved, and this rhetorical question emphasizes that point.\n\nChoice B is incorrect. The underlined question doesn’t do this. The text never expresses doubts about the value of self-knowledge —rather, the text expresses doubts about the possibility of achieving self-knowledge. Choice C is incorrect. The underlined question doesn’t do this. The text doesn’t provide directions for how to achieve self-knowledge — rather, it claims that true self-knowledge is impossible to achieve. Choice D is’ incorrect. The underlined question doesn’t do this. The text doesn’t ever define self-knowledge, and popularity isn’t mentioned in the text at all.",
     "image": "assets/coeq_c0628d2c.png",
     "alt": "Data figure. The following text is adapted from Oscar Wilde’s 1897 nonfiction work De Profundis. People whose desire is solely for self-realisation never know where they are going. In one sense of the word it is of course necessary to know oneself: that is the first achievement of knowledge. But to recognise that the soul of a man is unknowable, is the ultimate achievement of wisdom. When one has weighed the sun in the balance, and measured the steps of the moon, and mapped out the seven heavens star by star, there still remains oneself. Who can calculate the orbit of his own soul?"
   },
@@ -228,7 +228,7 @@ const questionBank_CS = [
     "passage": "",
     "question": "Which choice best describes the function of the underlined sentence in the text as a whole?",
     "options": [
-      "A. It explains why efforts to determine the country of origin of the items mentioned in the previous sentence remain inconclusive.",
+      "A. It explains why efforts to determine the country of origin of the items mentioned in the previous sentence remain inconclusive. ’",
       "B. It provides information that helps support a claim about a discovery’s significance that is presented in the following sentence.",
       "C. It traces the steps that were taken to locate and recover the objects that are described in the previous sentence.",
       "D. It outlines a hypothesis that additional evidence discussed in the following sentence casts some doubt on."
@@ -245,9 +245,9 @@ const questionBank_CS = [
     "passage": "",
     "question": "Which choice best describes the function of the underlined portions in the text as a whole?",
     "options": [
-      "A. To demonstrate individuals puzzlement over the reputation of a certain artwork",
-      "B. To highlight the physical effort involved in individuals construction of large-scale works of art",
-      "C. To draw attention to individuals discontent with the group’s conversation about art",
+      "A. To demonstrate individuals puzzlement over the reputation of a certain artwork ’",
+      "B. To highlight the physical effort involved in individuals construction of large-scale works of art ’",
+      "C. To draw attention to individuals discontent with the group’s conversation about art ’",
       "D. To emphasize the extent of individuals struggles to articulate thoughts on art"
     ],
     "answer": "D",
@@ -343,11 +343,11 @@ const questionBank_CS = [
     "options": [
       "A. It introduces an artist and then explains some common characteristics of well-known paintings by that artist.",
       "B. It explains a specific painting technique and then provides examples of artists who use the technique.",
-      "C. It describes a famous painting and then compares it to a lesser-known painting from the same time period.",
+      "C. It describes a famous painting and then compares it to a lesser-known painting from the same time period. ’",
       "D. It gives an opinion on an artist and then suggests multiple reasons why the artist’s work has been largely overlooked."
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. The first sentence introduces Senju as a famous artist, while the next three sentences describe the defining features of his art, such as it only showing part of the waterfall and its origins in US art movements and Japanese techniques.\n Choice B is incorrect. The text doesn’t provide examples of any other artists who use Senju’s techniques. Choice C is incorrect. The text doesn’t describe any single famous painting or make comparisons between paintings. Choice D is incorrect. The text doesn’t provide an opinion on Senju — (just facts), nor does it suggest that his art has been overlooked in fact, it states that he is known worldwide."
+    "explanation": "Choice A is the best answer. The first sentence introduces Senju as a famous artist, while the next three sentences describe the defining features of his art, such as it only showing part of the waterfall and its origins in US art movements and Japanese techniques.\n Choice B is incorrect. The text doesn’t provide examples of any other artists who use Senju’s techniques. Choice C is incorrect. The text doesn’t describe any single famous painting or make comparisons between paintings. Choice D is incorrect. The text doesn’t provide an opinion on Senju — (just facts), nor does it suggest that his art has been overlooked in fact, it states that he is “” known worldwide."
   },
   {
     "id": "4bcc2029",
@@ -572,7 +572,7 @@ const questionBank_CS = [
       "D. reserved"
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. \"Vivid\" can mean \"colorful\" or \"bright-colored.\" This definition fits the context clues about Alemán’s fascination with and passion for bold colors.\n\nChoice B is incorrect. This doesn’t fit the logic of the text. Nothing in the text indicates that Alemán’s artworks are \"unknown.\" Choice C is incorrect. This doesn’t fit the logic of the text. \"Definite\" means \"certain\" or \"decided.\" It wouldn’t make sense to describe artwork as \"definite.\" Choice D is incorrect. This doesn’t fit the logic of the text. \"Reserved\" can either mean \"slow to reveal emotions\" or \"booked.\" But the clues suggest that Alemán’s artworks are boldly colorful—almost the opposite of \"reserved.\""
+    "explanation": "Choice A is the best answer. \"Vivid\" can mean \"colorful\" or \"bright-colored.\" This definition fits the context clues about Alemán’s fascination with and passion for bold colors.\n\nChoice B is incorrect. This doesn’t fit the logic of the text. Nothing in the text indicates that Alemán’s artworks are \"unknown.\" Choice C is’ incorrect. This doesn’t fit the logic of the text. \"Definite\" means \"certain\" or \"decided.\" It wouldn’t make sense to describe artwork as \"definite.\" Choice D is incorrect. This doesn’t fit the logic of the text. \"Reserved\" can either mean \"slow to reveal emotions\" or \"booked.\" But the clues suggest that Alemán’s artworks are boldly colorful—almost the opposite of \"reserved.\""
   },
   {
     "id": "7a0f5cdb",
@@ -669,11 +669,11 @@ const questionBank_CS = [
     "skill": "Cross-Text Connections",
     "difficulty": "Medium",
     "passage": "Text 1\n\nA team led by Bernardo Strassburg has found that rewilding farmland (returning the land to its natural state) could help preserve biodiversity and offset carbon emissions. The amount of farmland that would need to be restored, they found, is remarkably low. Rewilding a mere 15% of the world’s current farmland would prevent 60% of expected species extinctions and help absorb nearly 299 gigatons of carbon dioxide — a clear win in the fight against the biodiversity and climate crises.\n\nText 2\n While Strassburg’s team’s findings certainly offer encouraging insight into the potential benefits of rewilding, it’s important to consider potential effects on global food supplies. The researchers suggest that to compensate for the loss of food-producing land, remaining farmland would need to produce even more food. Thus, policies focused on rewilding farmland must also address strategies for higher-yield farming.",
-    "question": "Which choice best describes a difference in how the author of Text 1 and the author of Text 2 view Strassburg’s team’s study?",
+    "question": "Which choice best describes a difference in how the author of Text 1 and the author of Text 2 view Strassburg’s team’s study? ’",
     "options": [
-      "A. The author of Text 2 approaches the study’s findings with some caution, whereas the author of Text 1 is optimistic about the reported potential environmental benefits.",
-      "B. The author of Text 2 claims that the percentage of farmland identified by Strassburg’s team is too low for rewilding to achieve meaningful results, whereas the author of Text 1 thinks the percentage is sufficient.",
-      "C. The author of Text 2 believes that the results described by Strassburg’s team are achievable in the near future, whereas the author of Text 1 argues that they likely aren’t.",
+      "A. The author of Text 2 approaches the study’s findings with some caution, whereas the author of Text 1 is optimistic about the reported potential environmental benefits. ’",
+      "B. The author of Text 2 claims that the percentage of farmland identified by Strassburg’s team is too low for rewilding to achieve meaningful results, whereas the author of Text 1 thinks the percentage is sufficient. ’",
+      "C. The author of Text 2 believes that the results described by Strassburg’s team are achievable in the near future, whereas the author of Text 1 argues that they likely aren’t. ’",
       "D. The author of Text 2 focuses on rewilding’s effect on carbon emissions, whereas the author of Text 1 focuses on its effect on biodiversity."
     ],
     "answer": "A",
@@ -1046,8 +1046,8 @@ const questionBank_CS = [
     "passage": "The following text is from John Dryden’s 1697 translation of Virgil’s poem the Aeneid, written in the first century BCE. Queen Dido has just heard the Trojan hero Aeneas recount a sad tale.\n\nBut anxious cares already seiz d the queen:\n\nShe fed within her veins a flame unseen;\n\nThe hero’s valor, acts, and birth inspire\n\nHer soul with love, and fan the secret fire.\n\nHis words, his looks, imprinted in her heart,\n\nImprove the passion, and increase the smart.",
     "question": "Which choice best states the main purpose of the text?",
     "options": [
-      "A. To indicate that Dido is hiding her skepticism of Aeneas’s account",
-      "B. To emphasize that Dido has been deeply affected by Aeneas’s story",
+      "A. To indicate that Dido is hiding her skepticism of Aeneas’s account ’",
+      "B. To emphasize that Dido has been deeply affected by Aeneas’s story ’",
       "C. To imply that Dido engages both emotionally and intellectually with Aeneas",
       "D. To suggest that Dido is worried that Aeneas might discover a secret she is keeping from him"
     ],
@@ -1082,7 +1082,7 @@ const questionBank_CS = [
       "D. Accomplishment"
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. “This quality” refers to Gatsby’s “resourcefulness of movement,” which is described as a characteristic or trait of his.\n\nChoice A is incorrect. This isn’t what “quality” means in this context. Here, “this quality” refers to Gatsby’s “resourcefulness of movement,” which is described as a characteristic or trait of his. “Standard” is a synonym for a different definition of quality : the degree of excellence of something. Choice B is incorrect. This isn’t what “quality” means in this context. Here, “this quality” refers to Gatsby’s “resourcefulness of movement,” which is described as a characteristic or trait of his. “Prestige” would suggest a high status or an admirable reputation, which doesn’t match that description. Choice D is incorrect. This isn’t what “quality” means in this context. Here, “this quality” refers to Gatsby’s “resourcefulness of movement,” which is described as a characteristic or trait of his. “Accomplishment” would suggest an achievement, which doesn’t match that description."
+    "explanation": "Choice C is the best answer. “This quality” refers to Gatsby’s “resourcefulness of movement,” which is described as a characteristic or trait of his.\n\nChoice A is incorrect. This isn’t what “quality” means in this context. Here, “this quality” refers to Gatsby’s “resourcefulness of movement,” which is described as a characteristic or trait of his. “Standard” is a synonym for a different definition of “” quality : the degree of excellence of something. Choice B is incorrect. This isn’t what “quality” means in this context. Here, “this quality” refers to Gatsby’s “resourcefulness of movement,” which is described as a characteristic or trait of his. “Prestige” would suggest a high status or an admirable reputation, which doesn’t match that description. Choice D is incorrect. This isn’t what “quality” means in this context. Here, “this quality” refers to Gatsby’s “resourcefulness of movement,” which is described as a characteristic or trait of his. “Accomplishment” would suggest an achievement, which doesn’t match that description."
   },
   {
     "id": "e7b4523e",
@@ -1127,7 +1127,7 @@ const questionBank_CS = [
       "D. provokes"
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer because it most logically completes the text’s discussion of Gardley’s play. In this context, “comprises” means constitutes or makes up the totality of, and the text indicates that The House That Will Not Stand had an all-female cast that stands in some relationship to “an array of female characters” in the play. Because all cast members are female, the characters must be played by these female cast members; therefore the cast constitutes, or comprises, the collection of characters.\n\nChoice A is incorrect. In this context, “engulfs” would mean encloses or overwhelms, and although it is fairly common to describe an actor as embodying (or personifying realistically) a character, there is nothing in the text to suggest that the cast members enclosed or overwhelmed the characters they played. Choice B is incorrect because in this context, “encourages” would mean inspires with courage or hope. Although the text does mention “a strong mother and several daughters dealing with individual struggles,” which might suggest that there are moments of encouragement among the characters during the play, there is nothing to suggest that the cast members encouraged the characters they portrayed. Choice D is incorrect because, in this context, “provokes” would mean instigates or incites to anger. Nothing in the text addresses provocation or what it might mean for actors to provoke the characters they are playing."
+    "explanation": "Choice C is the best answer because it most logically completes the text’s discussion of Gardley’s play. In this context, “comprises” means constitutes or makes up the totality of, and the text indicates that The House That Will Not Stand had an “” all-female cast that stands in some relationship to “an array of female characters” in the play. Because all cast members are female, the characters must be played by these female cast members; therefore the cast constitutes, or comprises, the collection of characters.\n\nChoice A is incorrect. In this context, “engulfs” would mean encloses or overwhelms, and although it is fairly common to describe an actor as embodying (or personifying realistically) a character, there is nothing in the text to suggest that the cast members enclosed or overwhelmed the characters they played. Choice B is incorrect because in this context, “encourages” would mean inspires with courage or hope. Although the text does mention “a strong mother and several daughters dealing with individual struggles,” which might suggest that there are moments of encouragement among the characters during the play, there is nothing to suggest that the cast members encouraged the characters they portrayed. Choice D is incorrect because, in this context, “provokes” would mean instigates or incites to anger. Nothing in the text addresses provocation or what it might mean for actors to provoke the characters they are playing."
   },
   {
     "id": "ef399b40",
@@ -1377,8 +1377,8 @@ const questionBank_CS = [
     "question": "Based on the texts, how would Cáceres and colleagues (Text 2) most likely describe the view of the theorists presented in Text 1?",
     "options": [
       "A. It is largely correct, but it requires a minor refinement in light of the research team’s results.",
-      "B. It is not compelling as a theory regardless of any experimental data collected by the research team.",
-      "C. It may seem plausible, but it is not supported by the research team’s findings.",
+      "B. It is not compelling as a theory regardless of any experimental data collected by the research team. ’",
+      "C. It may seem plausible, but it is not supported by the research team’s findings. ’",
       "D. It probably holds true only in conditions like those in the research team’s study."
     ],
     "answer": "C",
@@ -1463,12 +1463,12 @@ const questionBank_CS = [
     "id": "7946351d",
     "skill": "Text Structure and Purpose",
     "difficulty": "Hard",
-    "passage": "The following text is from George Marion McClellan’s 1895 poem Eternity.\n\nMy spirit swoons, and all my senses cry\n\nFor Ocean’s breast and covering of the sky.\n\nRock me to sleep, ye waves, and outward bound,\n\nJust let me drift far out from toil and care,\n\nWhere lapping of the waves shall be the sound,\n\nWhich mingled with the winds that gently bear\n\nMe on between a peaceful sea and sky,\n\nTo make my soothing slumberous lullaby.",
+    "passage": "The following text is from George Marion McClellan’s 1895 poem “” Eternity.\n\nMy spirit swoons, and all my senses cry\n\nFor Ocean’s breast and covering of the sky.\n\nRock me to sleep, ye waves, and outward bound,\n\nJust let me drift far out from toil and care,\n\nWhere lapping of the waves shall be the sound,\n\nWhich mingled with the winds that gently bear\n\nMe on between a peaceful sea and sky,\n\nTo make my soothing slumberous lullaby.",
     "question": "Which choice best states the main purpose of the text?",
     "options": [
-      "A. To illustrate the increasing intensity of the speaker’s desire to escape ongoing hardship by gliding on the ocean",
-      "B. To contrast the demands of the speaker’s everyday life with the serenity of being rocked to sleep by the ocean",
-      "C. To convey the speaker’s longing for the ocean to impart a sense of inner tranquility",
+      "A. To illustrate the increasing intensity of the speaker’s desire to escape ongoing hardship by gliding on the ocean ’",
+      "B. To contrast the demands of the speaker’s everyday life with the serenity of being rocked to sleep by the ocean ’",
+      "C. To convey the speaker’s longing for the ocean to impart a sense of inner tranquility ’",
       "D. To justify the speaker’s qualms about being transported by the ocean to a quiet destination"
     ],
     "answer": "C",
@@ -1502,7 +1502,7 @@ const questionBank_CS = [
       "D. It describes two influential works and then explains why one is more widely read than the other."
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. The text starts by stating what moral philosophy is concerned with and naming two examples of works in the field. Then it describes a shortcoming of some works in that field (they say how but not why), and finally it states that other works try to avoid that shortcoming (by including both how and why to live a morally good life).\n\nChoice B is incorrect. This is too extreme. The text never mentions whether the two works are popular or not, and it never argues that these works don’t serve their intended purpose of describing how to live a morally good life. Rather, the text claims that works of moral philosophy that don’t include both how and why to be moral are not useful to readers who don’t already want to be moral. Choice C is incorrect. This isn’t the overall structure. The text never discusses the history of moral philosophy at all, and it doesn’t propose any topic for further research. Choice D is incorrect. This isn’t the overall structure. The text never discusses which of the two works is more widely read."
+    "explanation": "Choice A is the best answer. The text starts by stating what moral philosophy is concerned with and naming two examples of works in the field. Then it describes a shortcoming of some works in that field (they say how but not why), and finally it states that other works try to avoid that shortcoming (by including both how and why to live a morally good life).\n\nChoice B is incorrect. This is too extreme. The text never mentions whether the two works are popular or not, and it never argues that these works don’t serve their intended purpose of describing how to live a morally good life. Rather, the text claims that works of moral philosophy that don’t include both how and why to be moral are not useful to readers who don’t already want to be moral. Choice C is incorrect. This isn’t the overall structure. The text never discusses the history of moral philosophy at all, and it doesn’t propose any topic for further research. Choice D is’ incorrect. This isn’t the overall structure. The text never discusses which of the two works is more widely read."
   },
   {
     "id": "95ec2a87",
@@ -1583,12 +1583,12 @@ const questionBank_CS = [
     "id": "30776e6c",
     "skill": "Cross-Text Connections",
     "difficulty": "Hard",
-    "passage": "Text 1\n\nWhen the 50-second-long film Arrival of the Train —which depicts what its title says, a train pulling into a station — was first shown publicly in 1896, spectators, naïve to the new medium of film and seeing a train appearing to come directly at them, leaped from their seats and fled the room. This moment marks a major cultural shift: a new way of representing and seeing the world had arrived with that train, and nothing would ever be the same.\n\nText 2\n\nThe fact that there is no contemporary evidence that the first audience of Arrival of the Train was alarmed has not stopped the story from becoming canonical, even among film historians. But that phenomenon itself is highly revealing. Our belief that the coming of film was transformative is so strong that we invented and keep retelling a founding myth that divides cultural history into a (naïve) “before” and (sophisticated) after.",
+    "passage": "Text 1\n\nWhen the 50-second-long film Arrival of the Train —which depicts what its title says, a train pulling into a station — was first shown publicly in 1896, spectators, naïve to the new medium of film and seeing a train appearing to come directly at them, leaped from their seats and fled the room. This moment marks a major cultural shift: a new way of representing and seeing the world had arrived with that train, and nothing would ever be the same.\n\nText 2\n\nThe fact that there is no contemporary evidence that the first audience of Arrival of the Train was alarmed has not stopped the story from becoming canonical, even among film historians. But that phenomenon itself is highly revealing. Our belief that the coming of film was transformative is so strong that we invented and keep retelling a founding myth that divides cultural history into a (naïve) “before” and (sophisticated) “” after.",
     "question": "Based on the texts, the author of Text 2 would most likely agree with which statement about the description of the first showing of Arrival of the Train in Text 1?",
     "options": [
       "A. It is more motivated by a perception of the significance of the invention of film than by facts.",
-      "B. It expresses a view about the transformative nature of film that film historians tend to regard as naïve.",
-      "C. It is not based on evidence and reflects film historians belief that they are more sophisticated than today’s audiences.",
+      "B. It expresses a view about the transformative nature of film that film historians tend to regard as naïve. ’",
+      "C. It is not based on evidence and reflects film historians belief that they are more sophisticated than today’s audiences. ’",
       "D. It reflects a misconception that is widely believed because it captures early film audiences sense that the new medium was alarming."
     ],
     "answer": "A",
@@ -1658,16 +1658,16 @@ const questionBank_CS = [
     "id": "da12a78d",
     "skill": "Cross-Text Connections",
     "difficulty": "Hard",
-    "passage": "Text 1\n\nPhilosopher G.E. Moore’s most influential work entails the concept of common sense. He asserts that there are certain beliefs that all people, including philosophers, know instinctively to be true, whether or not they profess otherwise: among them, that they have bodies, or that they exist in a world with other objects that have three dimensions. Moore’s careful work on common sense may seem obvious but was in fact groundbreaking.\n\nText 2\n\nExternal world skepticism is a philosophical stance supposing that we cannot be sure of the existence of anything outside our own minds. During a lecture, G.E. Moore once offered a proof refuting this stance by holding out his hands and saying, “Here is one hand, and here is another.” Many philosophers reflexively reject this proof (Annalisa Coliva called it an obviously annoying failure ) but have found it a challenge to articulate exactly why the proof fails.",
+    "passage": "Text 1\n\nPhilosopher G.E. Moore’s most influential work entails the concept of common sense. He asserts that there are certain beliefs that all people, including philosophers, know instinctively to be true, whether or not they profess otherwise: among them, that they have bodies, or that they exist in a world with other objects that have three dimensions. Moore’s careful work on common sense may seem obvious but was in fact groundbreaking.\n\nText 2\n\nExternal world skepticism is a philosophical stance supposing that we cannot be sure of the existence of anything outside our own minds. During a lecture, G.E. Moore once offered a proof refuting this stance by holding out his hands and saying, “Here is one hand, and here is another.” Many philosophers reflexively reject this proof (Annalisa Coliva called it “” an obviously annoying failure ) but have found it a challenge to articulate exactly why the proof fails.",
     "question": "Based on the texts, how would the author of Text 1 most likely respond to proponents of the philosophical stance outlined in Text 2?",
     "options": [
-      "A. By agreeing with those proponents that Moore’s treatment of positions that contradict his own is fundamentally unserious",
+      "A. By agreeing with those proponents that Moore’s treatment of positions that contradict his own is fundamentally unserious ’",
       "B. By suggesting that an instinctive distaste for Moore’s position is preventing external world skeptics from constructing a sufficiently rigorous refutation of Moore",
       "C. By arguing that if it is valid to assert that some facts are true based on instinct, it is also valid to assert that some proofs are inadequate based on instinct",
       "D. By pointing out that Moore would assert that external world skepticism is at odds with other beliefs those proponents must unavoidably hold"
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. According to the author of Text 1, Moore’s definition of common sense —things we instinctively know are true — includes the belief that we all “exist in a world with other objects.” The author of Text 1 describes this notion as both “obvious” and “groundbreaking.” So it’s safe to infer that the author would observe that Moore would respond to external world skeptics by arguing that since everyone instinctively knows that things exist outside of their own minds, then external world skepticism must be wrong.\n\nChoice A is incorrect. We can’t infer that the author of Text 1 would respond this way to external world skeptics. If anything, the author of Text 1 seems to agree with Moore. Choice B is incorrect. We can’t infer that the author of Text 1 would respond this way to external world skeptics. The author of Text 1 never mentions external world skeptics directly, let alone why they have a hard time refuting Moore’s position. Choice C is incorrect. We can’t infer that the author of Text 1 would respond this way to external world skeptics. Text 1 s presentation of Moore’s concept of common sense only includes the idea that some facts are true based on instinct — it doesn’t mention the idea that some proofs are inadequate based on instinct."
+    "explanation": "Choice D is the best answer. According to the author of Text 1, Moore’s definition of common sense —things we instinctively know are true — includes the belief that we all “exist in a world with other objects.” The author of Text 1 describes this notion as both “obvious” and “groundbreaking.” So it’s safe to infer that the author would observe that Moore would respond to external world skeptics by arguing that since everyone instinctively knows that things exist outside of their own minds, then external world skepticism must be wrong.\n\nChoice A is incorrect. We can’t infer that the author of Text 1 would respond this way to external world skeptics. If anything, the author of Text 1 seems to agree with Moore. Choice B is incorrect. We can’t infer that the author of Text 1 would respond this way to external world skeptics. The author of Text 1 never mentions external world skeptics directly, let alone why they have a hard time refuting Moore’s position. Choice C is’ incorrect. We can’t infer that the author of Text 1 would respond this way to external world skeptics. Text 1 s presentation of Moore’s concept of common sense only includes the idea that some facts are true based on instinct — it doesn’t mention the idea that some proofs are inadequate based on instinct."
   },
   {
     "id": "58cf7eb7",

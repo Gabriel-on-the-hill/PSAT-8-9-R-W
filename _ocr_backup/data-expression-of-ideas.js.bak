@@ -148,7 +148,7 @@ const questionBank_EOI = [
       "D. Similarly,"
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. \"However\" is used to indicate a contrast between two ideas. The first sentence describes how Still used to be famous. This sentence describes how Still is not very famous today, so the transition \"however\" fits perfectly.\n\nChoice A is incorrect. This choice uses a transition that introduces an example. But the second sentence doesn’t provide a specific example of Still’s famous contributions to the Underground Railroad. Instead, it changes the subject to how his fame has faded over time. Choice C is incorrect. This choice uses a transition that introduces an example or continuation of a previous idea. But the second sentence doesn’t provide a specific example of Still’s famous contributions to the Underground Railroad. Instead, it changes the subject to how his fame has faded over time. Choice D is incorrect. This choice uses a transition that indicates the agreement between two ideas. But this sentence shows a contrast — with the first sentence namely, that Still used to be very famous but now isn’t very famous."
+    "explanation": "Choice B is the best answer. \"However\" is used to indicate a contrast between two ideas. The first sentence describes how Still used to be famous. This sentence describes how Still is not very famous today, so the transition \"however\" fits perfectly.\n\nChoice A is incorrect. This choice uses a transition that introduces an example. But the second sentence doesn’t provide a specific example of Still’s famous contributions to the Underground Railroad. Instead, it changes the subject to how his fame has faded over time. Choice C is’ incorrect. This choice uses a transition that introduces an example or continuation of a previous idea. But the second sentence doesn’t provide a specific example of Still’s famous contributions to the Underground Railroad. Instead, it changes the subject to how his fame has faded over time. Choice D is incorrect. This choice uses a transition that indicates the agreement between two ideas. But this sentence shows a contrast — with the first sentence namely, that Still used to be very famous but now isn’t very famous."
   },
   {
     "id": "967a29a9",
@@ -187,7 +187,7 @@ const questionBank_EOI = [
     "passage": "While researching a topic, a student has taken the following notes:\n\nA wok is a cooking pan that originated in China during the Han dynasty (206 BCE –220 CE). The wok’s round, wide base helps to cook food evenly. The wok’s high, angled sides help to contain oil splatters. Grace Young is a cook and culinary historian. Her book The Breath of a Wok (2004) traces the history of the wok.\n\nThe student wants to describe the wok’s shape.",
     "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
     "options": [
-      "A. Grace Young’s 2004 book, The Breath of a Wok, traces the history of the cooking pan.",
+      "A. Grace Young’s 2004 book, The Breath of a Wok, traces the history of the cooking pan. ’",
       "B. Able to cook food evenly and contain oil splatters, the wok is the subject of Grace Young’s 2004 book.",
       "C. A wok is a cooking pan with a round, wide base and high, angled sides.",
       "D. The design of a wok, a type of cooking pan that originated in China during the Han dynasty, helps the pan cook food evenly and contain oil splatters."
@@ -259,7 +259,7 @@ const questionBank_EOI = [
     "id": "3e75bfa7",
     "skill": "Transitions",
     "difficulty": "Medium",
-    "passage": "In 1891, dancer and choreographer Loie Fuller first performed her celebrated Serpentine Dance, artfully twirling her long, flowing skirt to create striking visual effects. ______ in 1896, cinema pioneers Auguste and Louis Lumière made a groundbreaking short film of Fuller’s dance.",
+    "passage": "In 1891, dancer and choreographer Loie Fuller first performed her celebrated Serpentine Dance, artfully twirling her long, flowing skirt to create striking visual effects. ______ in 1896, cinema pioneers Auguste and Louis Lumière made a groundbreaking short film of Fuller’s dance. ’",
     "question": "Which choice completes the text with the most logical transition?",
     "options": [
       "A. However,",
@@ -343,7 +343,7 @@ const questionBank_EOI = [
       "D. In conclusion,"
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. “However” logically signals that the theory discussed in this sentence — that humans may have arrived in the Americas over 30,000 years ago — contrasts with the previously discussed theory that humans arrived around 13,000 years ago.\n\nChoice A is incorrect because “as a result” illogically signals that the theory in this sentence is the result of the theory discussed in the previous sentence. Instead, this theory contrasts with the previous one. Choice B is incorrect because “similarly” illogically signals that the theory in this sentence is similar to the theory discussed in the previous sentence. Instead, this theory contrasts with the previous one. Choice D is incorrect because in conclusion illogically signals that the theory in this sentence concludes or summarizes the discussion of the previous theory. Instead, this theory contrasts with the previous one."
+    "explanation": "Choice C is the best answer. “However” logically signals that the theory discussed in this sentence — that humans may have arrived in the Americas over 30,000 years ago — contrasts with the previously discussed theory that humans arrived around 13,000 years ago.\n\nChoice A is incorrect because “as a result” illogically signals that the theory in this sentence is the result of the theory discussed in the previous sentence. Instead, this theory contrasts with the previous one. Choice B is incorrect because “similarly” illogically signals that the theory in this sentence is similar to the theory discussed in the previous sentence. Instead, this theory contrasts with the previous one. Choice D is incorrect because “” in conclusion illogically signals that the theory in this sentence concludes or summarizes the discussion of the previous theory. Instead, this theory contrasts with the previous one."
   },
   {
     "id": "d314192e",
@@ -444,7 +444,7 @@ const questionBank_EOI = [
     "options": [
       "A. Annie Wu, who has won multiple national flute competitions, has also combined flute playing and beatboxing.",
       "B. Among her many achievements, prominent American flutist Annie Wu graduated from the New England Conservatory and has won multiple national flute competitions.",
-      "C. Annie Wu is best known for a 2011 YouTube video performance of Three Beats for Beatbox Flute that has been viewed over two million times.",
+      "C. Annie Wu is best known for a 2011 YouTube video performance of Three Beats for Beatbox Flute that has been viewed over two million times. ’",
       "D. Composer Greg Pattillo’s original work Three Beats for Beatbox Flute combines flute playing and beatboxing."
     ],
     "answer": "C",
@@ -559,7 +559,7 @@ const questionBank_EOI = [
     "id": "36246bab",
     "skill": "Rhetorical Synthesis",
     "difficulty": "Hard",
-    "passage": "While researching a topic, a student has taken the following notes:\n\nDigital Light Synthesis (DLS) is a form of additive manufacturing that utilizes light to rapidly cure liquid resin into high-quality, 3D objects. Step 1: Ultraviolet (UV) light images are projected up into a pool of liquid resin, where the object’s first layer takes shape. Step 2: The partially cured resin object is raised, leaving a thin space (a dead zone ) beneath it for oxygen and liquid resin to flow through. Step 3: The UV light passes through the dead zone — maintaining the flow of resin — and partially cures additional layers of the object. Step 4: When the resin object is complete, it is baked in an oven to complete the curing.\n\nThe student wants to describe how DLS cures 3D objects.",
+    "passage": "While researching a topic, a student has taken the following notes:\n\nDigital Light Synthesis (DLS) is a form of additive manufacturing that utilizes light to rapidly cure liquid resin into high-quality, 3D objects. Step 1: Ultraviolet (UV) light images are projected up into a pool of liquid resin, where the object’s first layer takes shape. Step 2: The partially cured resin object is raised, leaving a thin space (a “” dead zone ) beneath it for oxygen and liquid resin to flow through. Step 3: The UV light passes through the dead zone — maintaining the flow of resin — and partially cures additional layers of the object. Step 4: When the resin object is complete, it is baked in an oven to complete the curing.\n\nThe student wants to describe how DLS cures 3D objects.",
     "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
     "options": [
       "A. DLS is a form of additive manufacturing that creates a “dead zone” in which UV light solidifies layer by layer before being baked in an oven, creating a high-quality, 3D object.",
@@ -583,7 +583,7 @@ const questionBank_EOI = [
       "D. Established in 1841, Brook Farm was a utopian community created to “guarantee the highest mental freedom, by providing all with labor...” [and] the fruits of their industry, according to founder George Ripley."
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. This choice explains the goal of Brook Farm — to provide mental freedom to all by engaging individuals in labor — suited to their interests using a quotation from George Ripley.\n Choice A is incorrect. This choice only mentions part of Ripley’s goal, and it doesn’t mention Brook Farm at all. Choice B is incorrect. This choice defines what a utopia is but doesn’t use Ripley’s words to describe his vision for Brook Farm. Choice C is incorrect. This choice provides some background information about Brook Farm, but it doesn’t explain its goals or include Ripley’s words."
+    "explanation": "Choice D is the best answer. This choice explains the goal of Brook Farm — to provide mental freedom to all by engaging individuals in labor — suited to their interests using a quotation from George Ripley.\n Choice A is incorrect. This choice only mentions part of Ripley’s goal, and it doesn’t mention Brook Farm at all. Choice B is incorrect. This choice defines what a utopia is but doesn’t use Ripley’s words to describe his vision for Brook Farm. Choice C is incorrect. This choice provides some background information about Brook Farm, but it doesn’t explain its goals or include Ripley’s words. ’"
   },
   {
     "id": "4079ff52",
@@ -669,11 +669,11 @@ const questionBank_EOI = [
     "options": [
       "A. Sara Oyler-McCance’s researchers analyzed eDNA in water samples from the Florida Everglades for evidence of invasive constrictor snakes, which are difficult to observe.",
       "B. An analysis of eDNA can detect the presence of invasive species that are difficult to observe, such as constrictor snakes.",
-      "C. Researchers found Burmese python eDNA, or environmental DNA, in water samples; eDNA is the DNA in released cellular materials, such as shed skin cells.",
+      "C. Researchers found Burmese python eDNA, or environmental DNA, in water samples; eDNA is the DNA in released cellular materials, such as shed skin cells. ’",
       "D. Sara Oyler-McCance’s researchers analyzed environmental DNA (eDNA) — that is, DNA from cellular materials released by organisms — in water samples from the Florida Everglades."
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. This choice presents the study in a way that assumes the audience is already familiar with eDNA.\n\nChoice B is incorrect. This choice doesn’t present the study. It only states a general fact about eDNA analysis. Choice C is incorrect. This choice isn’t suited for an audience already familiar with eDNA. A familiar audience wouldn’t need to have the term defined or explained. Choice D is incorrect. This choice isn’t suited for an audience already familiar with eDNA. A familiar audience wouldn’t need to have the term defined or explained. It also doesn’t present the study."
+    "explanation": "Choice A is the best answer. This choice presents the study in a way that assumes the audience is already familiar with eDNA.\n\nChoice B is incorrect. This choice doesn’t present the study. It only states a general fact about eDNA analysis. Choice C is incorrect. This choice isn’t suited for an audience already familiar with eDNA. A familiar audience wouldn’t need to have the term defined or explained. Choice D is’ incorrect. This choice isn’t suited for an audience already familiar with eDNA. A familiar audience wouldn’t need to have the term defined or explained. It also doesn’t present the study."
   },
   {
     "id": "a94d75c0",
@@ -688,7 +688,7 @@ const questionBank_EOI = [
       "D. The Alta conflict had a lasting impact, resulting in international attention and legal protections for Sámi rights to lands, waters, and resources."
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. It makes a generalization — the conflict had a lasting impact— and then supports it with evidence — the attention and protections were results of the conflict.\n\nChoice A is incorrect. This choice doesn’t make a generalization about the conflict. It describes a specific event from the conflict. Choice B is incorrect. This choice makes a generalization about the Alta conflict, but doesn’t support it. Choice C is incorrect. This choice makes a statement about the aftermath of the conflict, but doesn’t support it. The statement is also a little too specific to be a generalization."
+    "explanation": "Choice D is the best answer. It makes a generalization — the conflict had a lasting impact— and then supports it with evidence — the attention and protections were results of the conflict.\n\nChoice A is incorrect. This choice doesn’t make a generalization about the conflict. It describes a specific event from the conflict. Choice B is’ incorrect. This choice makes a generalization about the Alta conflict, but doesn’t support it. Choice C is incorrect. This choice makes a statement about the aftermath of the conflict, but doesn’t support it. The statement is also a little too specific to be a generalization."
   },
   {
     "id": "69abb48d",
@@ -804,7 +804,7 @@ const questionBank_EOI = [
     "options": [
       "A. Bhosale’s team wanted to better understand the mechanics behind bird nests uniquely flexible yet cohesive structural properties.",
       "B. The researchers used laboratory models that simulated the arrangement of flexible sticks and analyzed the points where sticks touched one another.",
-      "C. After analyzing the points where sticks touched, the researchers found that the structures became stiffer when pressure was applied.",
+      "C. After analyzing the points where sticks touched, the researchers found that the structures became stiffer when pressure was applied. ’",
       "D. As analyzed by Bhosale’s team, bird nests are uniquely flexible yet cohesive engineered structures."
     ],
     "answer": "A",
@@ -853,7 +853,7 @@ const questionBank_EOI = [
       "D. In 2012, Video Game High School premiered on RocketJump; it would later be nominated for an award."
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. This choice introduces Wong and VGHS in an active and specific way, as if to an audience unfamiliar with the series. It also sets up the time and genre of the web series, which are useful ways to introduce the series of events in a narrative.\n\nChoice B is incorrect. This choice isn’t suited for beginning a narrative. A narrative is a story that follows a sequence of events and creates interest and suspense for the reader. This choice jumps to the end, explaining the success of VGHS without explaining what it is. Choice C is incorrect. This choice isn’t suited for beginning a narrative. It doesn’t actually introduce the web series by name. It just jumps to later in the story without sufficient explanation. Choice D is incorrect. This choice is not very effective for beginning a narrative. It doesn’t explain what VGHS is, and it doesn’t mention Wong."
+    "explanation": "Choice A is the best answer. This choice introduces Wong and VGHS in an active and specific way, as if to an audience unfamiliar with the series. It also sets up the time and genre of the web series, which are useful ways to introduce the series of events in a narrative.\n\nChoice B is incorrect. This choice isn’t suited for beginning a narrative. A narrative is a story that follows a sequence of events and creates interest and suspense for the reader. This choice jumps to the end, explaining the success of VGHS without explaining what it is. Choice C is’ incorrect. This choice isn’t suited for beginning a narrative. It doesn’t actually introduce the web series by name. It just jumps to later in the story without sufficient explanation. Choice D is incorrect. This choice is not very effective for beginning a narrative. It doesn’t explain what VGHS is, and it doesn’t mention Wong."
   },
   {
     "id": "6ab314a3",
@@ -964,7 +964,7 @@ const questionBank_EOI = [
     "id": "332ee132",
     "skill": "Rhetorical Synthesis",
     "difficulty": "Hard",
-    "passage": "While researching a topic, a student has taken the following notes:\n\nSam Maloof (1916 – 2009) was an American woodworker and furniture designer. He was the son of Lebanese immigrants. He received a genius grant from the John D. and Catherine T. MacArthur Foundation in 1985. The Museum of Fine Arts in Boston, Massachusetts, owns a rocking chair that Maloof made from walnut wood. The armrests and the seat of the chair are sleek and contoured, and the back consists of seven spindle-like slats.\n\nThe student wants to describe the rocking chair to an audience unfamiliar with Sam Maloof.",
+    "passage": "While researching a topic, a student has taken the following notes:\n\nSam Maloof (1916 – 2009) was an American woodworker and furniture designer. He was the son of Lebanese immigrants. He received a “” genius grant from the John D. and Catherine T. MacArthur Foundation in 1985. The Museum of Fine Arts in Boston, Massachusetts, owns a rocking chair that Maloof made from walnut wood. The armrests and the seat of the chair are sleek and contoured, and the back consists of seven spindle-like slats.\n\nThe student wants to describe the rocking chair to an audience unfamiliar with Sam Maloof.",
     "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
     "options": [
       "A. With its sleek, contoured armrests and seat, the walnut rocking chair in Boston’s Museum of Fine Arts is just one piece of furniture created by American woodworker Sam Maloof.",
@@ -1117,9 +1117,9 @@ const questionBank_EOI = [
     "passage": "While researching a topic, a student has taken the following notes:\n\nEtel Adnan was a Lebanese American poet and artist known for making many leporellos. A leporello is an artist’s book that is folded accordion style. When the book is expanded, the artist’s work is revealed, and its zigzag shape allows it to stand on its own. Her leporello December from My Window (1993) features a panoramic landscape. It is painted using ink and watercolor.\n\nThe student wants to describe Adnan’s December from My Window to an audience already familiar with leporellos.",
     "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
     "options": [
-      "A. Featuring a panoramic landscape, the 1993 work is one of Adnan’s many leporellos, which are accordion-style folded books that when expanded reveal the artist’s work.",
+      "A. Featuring a panoramic landscape, the 1993 work is one of Adnan’s many leporellos, which are accordion-style folded books that when expanded reveal the artist’s work. ’",
       "B. When expanded, Adnan’s 1993 leporello December from My Window reveals a panoramic landscape painted in ink and watercolor.",
-      "C. Known for making many other accordion-style folded books called leporellos, Adnan created December from My Window in 1993.",
+      "C. Known for making many other accordion-style folded books called leporellos, Adnan created December from My Window in 1993. ’",
       "D. A leporello, such as Adnan’s December from My Window, is folded accordion style, and due to its zigzag shape it is able to stand on its own when fully expanded."
     ],
     "answer": "B",
@@ -1153,7 +1153,7 @@ const questionBank_EOI = [
       "D. Before moving to Harlem, Claude McKay — — author of the poetry collection Harlem Shadows (1922) and the novel Home to Harlem (1928) lived in Jamaica."
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. This choice contrasts McKay’s fame as a Harlem Renaissance writer with his earlier achievements as a Jamaican poet, and it names the two collections he published before moving to Harlem.\n Choice A is incorrect. This choice doesn’t emphasize McKay’s accomplishments before moving to Harlem. It lists some of his works but doesn’t distinguish between those he wrote in Jamaica and those he wrote in Harlem. Choice C is incorrect. This choice doesn’t emphasize McKay’s accomplishments before moving to Harlem. It only mentions the year he moved and what he would become known for afterwards. Choice D is incorrect. This choice doesn’t emphasize McKay’s accomplishments before moving to Harlem. It mentions that he lived in Jamaica, but it doesn’t name any of the works he published there."
+    "explanation": "Choice B is the best answer. This choice contrasts McKay’s fame as a Harlem Renaissance writer with his earlier achievements as a Jamaican poet, and it names the two collections he published before moving to Harlem.\n Choice A is incorrect. This choice doesn’t emphasize McKay’s accomplishments before moving to Harlem. It lists some of his works but doesn’t distinguish between those he wrote in Jamaica and those he wrote in Harlem. Choice C is incorrect. This choice doesn’t emphasize McKay’s accomplishments before moving to Harlem. It only mentions the year he moved and what he would become known for afterwards. Choice D is’ incorrect. This choice doesn’t emphasize McKay’s accomplishments before moving to Harlem. It mentions that he lived in Jamaica, but it doesn’t name any of the works he published there."
   },
   {
     "id": "6b02deb3",
@@ -1207,7 +1207,7 @@ const questionBank_EOI = [
     "passage": "While researching a topic, a student has taken the following notes:\n\nGrimanesa Amoros is a Peruvian American artist well known for her LED light sculptures. Her sculpture Uros Island is made of smooth multicolored LED domes. It occupies 335 cubic feet of space. Her sculpture Fortuna is made of entangled blue and white LED tubes. It occupies 19,950 cubic feet of space.\n\nThe student wants to emphasize a similarity between Uros Island and Fortuna.",
     "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
     "options": [
-      "A. The smooth LED domes of Grimanesa Amoros’s Uros Island stand in contrast to the tangled LED tubes of Fortuna.",
+      "A. The smooth LED domes of Grimanesa Amoros’s Uros Island stand in contrast to the tangled LED tubes of Fortuna. ’",
       "B. At 19,950 cubic feet in size, Grimanesa Amoros’s Fortuna cuts a larger figure than the 335-cubic-foot Uros Island.",
       "C. Grimanesa Amoros is the artist behind Uros Island — a sculpture made of smooth multicolored LED domes.",
       "D. Uros Island is an LED light sculpture made by Grimanesa Amoros, as is Fortuna."
@@ -1288,7 +1288,7 @@ const questionBank_EOI = [
       "D. by contrast,"
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. This sentence compares two examples of Posey’s tone: the heartfelt language he used in his poetry versus the “humor and satire” he used in his journalism. We know from these descriptions and from the claim in the previous sentence that the two tones are very different from each other. So the transition “by contrast” fits the context perfectly.\n\nChoice A is incorrect. This choice uses a transition that indicates a restatement of the same idea in other words. But the text isn’t restating the first example here. Instead, it’s offering a second, totally different example. Choice B is incorrect. This choice uses a transition that means “admittedly.” But the text isn’t admitting or conceding anything here. Instead, these two examples work together to support the claim made in the first sentence. Choice C is incorrect. This choice uses a transition that indicates the addition of an agreeing idea. But these two examples are intentionally very different from each other, so “similarly” doesn’t make sense here."
+    "explanation": "Choice D is the best answer. This sentence compares two examples of Posey’s tone: the “” heartfelt language he used in his poetry versus the “humor and satire” he used in his journalism. We know from these descriptions and from the claim in the previous sentence that the two tones are very different from each other. So the transition “by contrast” fits the context perfectly.\n\nChoice A is incorrect. This choice uses a transition that indicates a restatement of the same idea in other words. But the text isn’t restating the first example here. Instead, it’s offering a second, totally different example. Choice B is incorrect. This choice uses a transition that means “admittedly.” But the text isn’t admitting or conceding anything here. Instead, these two examples work together to support the claim made in the first sentence. Choice C is incorrect. This choice uses a transition that indicates the addition of an agreeing idea. But these two examples are intentionally very different from each other, so “similarly” doesn’t make sense here."
   },
   {
     "id": "499c10c0",
@@ -1298,7 +1298,7 @@ const questionBank_EOI = [
     "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
     "options": [
       "A. Park’s 2013 installation Unwoven Light, which included a chain-link fence and iridescent tiles made from plexiglass, featured light as its primary medium of expression.",
-      "B. Korean American light artist Soo Sunny Park created Unwoven Light in 2013.",
+      "B. Korean American light artist Soo Sunny Park created Unwoven Light in 2013. ’",
       "C. The chain-link fence in Soo Sunny Park’s Unwoven Light was fitted with tiles made from iridescent plexiglass.",
       "D. In Unwoven Light, a 2013 work by Korean American artist Soo Sunny Park, light formed colorful prisms as it passed through a fence Park had fitted with iridescent tiles."
     ],
@@ -1309,7 +1309,7 @@ const questionBank_EOI = [
     "id": "d8594b7f",
     "skill": "Transitions",
     "difficulty": "Hard",
-    "passage": "In a 2022 analysis of 200 terms, researchers found a broad pattern of valence-dependent mutation for which negative words saw a faster rate of cognate replacement — ______ the rate at which a word will be replaced over time with a noncognate form. Adjectives (e.g., afraid ) saw the largest effect; nouns (e.g., attack ), meanwhile, saw the smallest.",
+    "passage": "In a 2022 analysis of 200 terms, researchers found a broad pattern of valence-dependent mutation for which negative words saw a faster rate of cognate replacement — ______ the rate at which a word will be replaced over time with a noncognate form. Adjectives (e.g., “” afraid ) saw the largest effect; nouns (e.g., “” attack ), meanwhile, saw the smallest.",
     "question": "Which choice completes the text with the most logical transition?",
     "options": [
       "A. for example,",
@@ -1327,9 +1327,9 @@ const questionBank_EOI = [
     "passage": "While researching a topic, a student has taken the following notes:\n\nNissologists are scientists who study islands. Some nissologists define an island as any piece of land surrounded by water. Using that definition, they determined that Sweden has 221,000 islands. Other nissologists define an island as being 1 kilometer square, a certain distance from the mainland, and having at least 50 permanent residents. Using that definition, they determined that Sweden has 24 islands.\n\nThe student wants to make and support a generalization about nissologists definition of an island.",
     "question": "Which choice most effectively uses relevant information from the notes to accomplish these goals?",
     "options": [
-      "A. The definition of an island as any piece of land surrounded by water is supported by some nissologists, scientists who study islands.",
+      "A. The definition of an island as any piece of land surrounded by water is supported by some nissologists, scientists who study islands. ’",
       "B. Multiple counts of Sweden’s islands have been based on different definitions of an island.",
-      "C. Based on a recent count, Sweden has a relatively small number of islands with at least 50 permanent residents.",
+      "C. Based on a recent count, Sweden has a relatively small number of islands with at least 50 permanent residents. ’",
       "D. Nissologists different definitions can result in huge disparities in counts of islands, as the example of Sweden shows."
     ],
     "answer": "D",

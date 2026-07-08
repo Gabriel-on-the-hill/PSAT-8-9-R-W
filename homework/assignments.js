@@ -7,24 +7,23 @@
 // ══════════════════════════════════════════════════════════════════
 
 const HOMEWORK = {
-  // Maysa — week after a 16/18 baseline; focus Words in Context, then Rhetorical Synthesis.
+  // Maysa — after 7/3: WiC(Hard) & Rhetorical Synthesis(Hard) mastered; Info&Ideas 9/10 at Medium.
+  // 3 sets: step Info&Ideas up to Hard → introduce Command of Evidence — Quantitative at Medium → mixed-Hard retention.
+  // Times = PSAT 8/9 standard 71 sec/question (32 min ÷ 27 q), summed per set and rounded to the minute.
   "Maysa": {
-    title: "Words in Context",
-    start: "2026-06-20",      // YYYY-MM-DD: the day Day 1 becomes available
+    title: "Information & Ideas → Command of Evidence → Mixed (Hard)",
+    start: "2026-07-08",      // YYYY-MM-DD: the day Set 1 becomes available
     unlock: "cumulative",     // "cumulative" = missed days stay open · "strict" = one at a time
     days: [
-      { n:1, focus:"Words in Context", skills:["Words in Context"], diffs:["Easy","Medium"], count:5, minutes:5,
-        tip:"Cover the word, predict your own word then pick the correct choice." },
-      { n:2, focus:"Words in Context", skills:["Words in Context"], diffs:["Medium"], count:8, minutes:8,
-        tip:"Cover the word, predict your own word then pick the correct choice." },
-      { n:3, focus:"Words in Context", skills:["Words in Context"], diffs:["Easy","Medium"], count:5, minutes:5,
-        tip:"Cover the word, predict your own word then pick the correct choice." },
-      { n:4, focus:"Words in Context", skills:["Words in Context"], diffs:["Medium","Hard"], count:10, minutes:10,
-        tip:"Read the text carefully, cover the word, predict your own word then pick the correct choice." },
-      { n:5, focus:"Words in Context", skills:["Words in Context"], diffs:["Medium"], count:9, minutes:9,
-        tip:"Cover the word, predict your own word then pick the correct choice." },
-      { n:6, focus:"Words in Context", skills:["Words in Context"], diffs:["Easy","Medium","Hard"], count:9, minutes:9,
-        tip:"Read the question carefully, cover the word, predict your own word then pick the correct choice." },
+      { n:1, focus:"Information & Ideas (Hard)",
+        skills:["Command of Evidence — Textual","Inferences","Central Ideas and Details"], diffs:["Hard"], count:8, minutes:9,
+        tip:"Step up from your 9/10 Medium set. Read the whole text and predict before the options — the one you missed was evidence-matching, so check the choice supports the FULL claim. PSAT pace: 8 × 71s ≈ 9 min." },
+      { n:2, focus:"Command of Evidence — Quantitative (new)",
+        skills:["Command of Evidence — Quantitative","Command of Evidence — Textual"], diffs:["Medium"], count:8, minutes:9,
+        tip:"New skill: reading data. Read the figure — axes, units, trend — BEFORE the choices, then match the data to the whole statement. Start at Medium. PSAT pace: 8 × 71s ≈ 9 min." },
+      { n:3, focus:"Mixed retention (Hard)",
+        skills:["Words in Context","Rhetorical Synthesis","Inferences","Central Ideas and Details"], diffs:["Hard"], count:6, minutes:7,
+        tip:"Quick check that your Hard mastery holds. Same habit every question: read fully, predict, then choose. PSAT pace: 6 × 71s ≈ 7 min." },
     ]
   },
 
