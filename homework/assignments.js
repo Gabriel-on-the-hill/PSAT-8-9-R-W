@@ -123,9 +123,29 @@ const HOMEWORK = {
       { n:1, focus:"Transitions",          skills:["Transitions"], diffs:["Easy","Medium"], count:6, tip:"Name the connection between the two sentences before looking at the words." },
       { n:2, focus:"Boundaries",           skills:["Boundaries"], diffs:["Easy","Medium"], count:6, tip:"Decide if each part is a complete sentence, then walk the punctuation guide." },
       { n:3, focus:"Light review",          skills:["Words in Context"], diffs:["Easy","Medium"], count:5, tip:"Short set. Predict, then check." },
-      { n:4, focus:"Information & Ideas",   skills:["Central Ideas and Details","Inferences"], diffs:["Medium"], count:8, tip:"For the main idea, cover the whole text. For inferences, stay close to what the text says." },
-      { n:5, focus:"Command of Evidence",  skills:["Command of Evidence — Textual","Command of Evidence — Quantitative"], diffs:["Medium"], count:8, tip:"Match the evidence to the whole claim. Read the figure before the choices." },
-      { n:6, focus:"Mixed review",          skills:["Transitions","Boundaries","Words in Context"], diffs:["Easy","Medium","Hard"], count:6, tip:"A short mix before our session." },
+      // Days 4-6 name more than one skill, so they MUST use sections. A plain
+      // skills/diffs/count day draws from one ordered pool and takes the top N, which
+      // clusters — day 6 was serving six questions of a single skill, not a mix.
+      // Same skills, same difficulties, same totals; sections just make the mix real.
+      { n:4, focus:"Information & Ideas",
+        sections:[
+          { skills:["Central Ideas and Details"], diffs:["Medium"], count:4 },
+          { skills:["Inferences"],                diffs:["Medium"], count:4 },
+        ],
+        tip:"For the main idea, cover the whole text. For inferences, stay close to what the text says." },
+      { n:5, focus:"Command of Evidence",
+        sections:[
+          { skills:["Command of Evidence — Textual"],      diffs:["Medium"], count:4 },
+          { skills:["Command of Evidence — Quantitative"], diffs:["Medium"], count:4 },
+        ],
+        tip:"Match the evidence to the whole claim. Read the figure before the choices." },
+      { n:6, focus:"Mixed review",
+        sections:[
+          { skills:["Transitions"],      diffs:["Easy","Medium","Hard"], count:2 },
+          { skills:["Boundaries"],       diffs:["Easy","Medium","Hard"], count:2 },
+          { skills:["Words in Context"], diffs:["Easy","Medium","Hard"], count:2 },
+        ],
+        tip:"A short mix before our session." },
     ]
   }
 };
