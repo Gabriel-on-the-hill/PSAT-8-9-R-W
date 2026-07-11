@@ -7,23 +7,110 @@
 // ══════════════════════════════════════════════════════════════════
 
 const HOMEWORK = {
-  // Maysa — after 7/3: WiC(Hard) & Rhetorical Synthesis(Hard) mastered; Info&Ideas 9/10 at Medium.
-  // 3 sets: step Info&Ideas up to Hard → introduce Command of Evidence — Quantitative at Medium → mixed-Hard retention.
-  // Times = PSAT 8/9 standard 71 sec/question (32 min ÷ 27 q), summed per set and rounded to the minute.
+  // Maysa — week of 7/11. Last week's 3 big sets went undone: she opened them late,
+  // answered one question, and ran out of time. So this week is six short sets, not
+  // three long ones — a set she finishes teaches more than a set she abandons.
+  //
+  // Where she is: WiC + Rhetorical Synthesis mastered at Hard. Info & Ideas strong at
+  // Medium. Text Structure & Purpose taught 7/10 but only ever practised untimed.
+  // Command of Evidence — Quantitative assigned 7/8 and never attempted.
+  //
+  // minutes:0 = untimed, and the runner then asks her to TYPE her prediction — the full
+  // scaffold, for skills she is still learning. minutes>0 = timed, and the runner shows a
+  // one-click commit gate instead: same predict-first habit, but she can't type on test
+  // day and typing would corrupt the timing. New skill → untimed. Known skill → clock.
+  //
+  // Days 4 and 6 deliberately list Medium *and* Hard: prioritizePool() draws missed
+  // questions first, but only from a pool matching the set's skill AND difficulty. Keeping
+  // Medium in scope is what lets this week's misses come back around before class.
+  //
+  // Pace: PSAT 8/9 is 71 sec/question (32 min ÷ 27 q). Day 3-4 give her ~80s of cushion;
+  // Days 5-6 are at the real thing.
   "Maysa": {
-    title: "Information & Ideas → Command of Evidence → Mixed (Hard)",
-    start: "2026-07-08",      // YYYY-MM-DD: the day Set 1 becomes available
+    title: "Predict-first: new skills untimed → known skills on the clock",
+    start: "2026-07-11",      // YYYY-MM-DD: the day Set 1 becomes available
     unlock: "cumulative",     // "cumulative" = missed days stay open · "strict" = one at a time
     days: [
-      { n:1, focus:"Information & Ideas (Hard)",
-        skills:["Command of Evidence — Textual","Inferences","Central Ideas and Details"], diffs:["Hard"], count:8, minutes:9,
-        tip:"Step up from your 9/10 Medium set. Read the whole text and predict before the options — the one you missed was evidence-matching, so check the choice supports the FULL claim. PSAT pace: 8 × 71s ≈ 9 min." },
+      { n:1, focus:"Text Structure & Purpose (Medium)",
+        skills:["Text Structure and Purpose"], diffs:["Medium"], count:6, minutes:0,
+        tip:"Straight from Friday's class, while it's fresh. No clock — type your prediction every time. Ask what the text is DOING, not just what it says, then find the choice that matches." },
       { n:2, focus:"Command of Evidence — Quantitative (new)",
-        skills:["Command of Evidence — Quantitative","Command of Evidence — Textual"], diffs:["Medium"], count:8, minutes:9,
-        tip:"New skill: reading data. Read the figure — axes, units, trend — BEFORE the choices, then match the data to the whole statement. Start at Medium. PSAT pace: 8 × 71s ≈ 9 min." },
-      { n:3, focus:"Mixed retention (Hard)",
-        skills:["Words in Context","Rhetorical Synthesis","Inferences","Central Ideas and Details"], diffs:["Hard"], count:6, minutes:7,
-        tip:"Quick check that your Hard mastery holds. Same habit every question: read fully, predict, then choose. PSAT pace: 6 × 71s ≈ 7 min." },
+        skills:["Command of Evidence — Quantitative"], diffs:["Medium"], count:6, minutes:0,
+        tip:"You haven't attempted this one yet. Read the figure first — axes, units, direction of the trend — and predict what it shows BEFORE the choices. Then check the data supports the whole statement, not half of it." },
+      // From here on the days use `sections` — an exact draw per skill. A plain
+      // skills/diffs/count day pulls from one ordered pool and takes the top N, which
+      // clusters: a 7-question "mixed" set came out as 7 questions of a single skill.
+      // Sections are the only way to guarantee a set is actually mixed.
+      { n:3, focus:"Information & Ideas (Hard)", minutes:8,
+        sections:[
+          { skills:["Central Ideas and Details"],        diffs:["Hard"], count:2 },
+          { skills:["Inferences"],                       diffs:["Hard"], count:2 },
+          { skills:["Command of Evidence — Textual"],    diffs:["Hard"], count:2 },
+        ],
+        tip:"First set on the clock. Read the whole text, commit to your prediction, then look. Your misses come from choosing before you've finished reading — the timer is not the reason to skim." },
+      { n:4, focus:"The two new skills, stepped up", minutes:8,
+        sections:[
+          { skills:["Text Structure and Purpose"],           diffs:["Medium","Hard"], count:3 },
+          { skills:["Command of Evidence — Quantitative"],   diffs:["Medium","Hard"], count:3 },
+        ],
+        tip:"Days 1 and 2 at a harder level — and anything you missed then will come back here. Same habit under time: read fully, predict, then choose." },
+      { n:5, focus:"Words in Context + Rhetorical Synthesis (Hard)", minutes:7,
+        sections:[
+          { skills:["Words in Context"],       diffs:["Hard"], count:3 },
+          { skills:["Rhetorical Synthesis"],   diffs:["Hard"], count:3 },
+        ],
+        tip:"Your two strongest skills, now at full PSAT pace — 71 seconds a question. Watch the traps: the familiar meaning of the word, and the choice that's true but doesn't serve the goal." },
+      { n:6, focus:"Mixed — everything, on the clock", minutes:8,
+        sections:[
+          { skills:["Words in Context"],                     diffs:["Medium","Hard"], count:1 },
+          { skills:["Rhetorical Synthesis"],                 diffs:["Medium","Hard"], count:1 },
+          { skills:["Inferences"],                           diffs:["Medium","Hard"], count:1 },
+          { skills:["Central Ideas and Details"],            diffs:["Medium","Hard"], count:1 },
+          { skills:["Text Structure and Purpose"],           diffs:["Medium","Hard"], count:2 },
+          { skills:["Command of Evidence — Quantitative"],   diffs:["Medium","Hard"], count:1 },
+        ],
+        tip:"Dress rehearsal for class. Every skill mixed, real pace, and this week's misses folded back in. One habit, every single question: read it all, predict, then choose." },
+    ]
+  },
+
+  // Faith — 11–13 July, three days, because that is all there is: her class is
+  // Tue 14 July and today is Sat the 11th. Three sets she finishes beat six she
+  // never opens.
+  //
+  // Her diagnostic: 16/18. Craft & Structure 5/5, Conventions 4/4. Both misses —
+  // one Command of Evidence, one Rhetorical Synthesis — came from the SAME habit:
+  // she chose an option that was true in itself without checking it did the job the
+  // question actually set. So the target this week is not coverage, it is one
+  // decision habit: name the claim first, then test each option against it.
+  //
+  // Rhetorical Synthesis is the other half of that gap, but it has not been taught
+  // yet — her only teaching session (7 Jul) covered Information & Ideas. Assigning it
+  // cold would hand her her known weak spot with no strategy to meet it. It belongs in
+  // the 14 July class, then in homework the week after.
+  //
+  // Day 1 is untimed on purpose: untimed means the runner asks her to TYPE her
+  // prediction, which is what forces her to state the claim before she sees the
+  // options. Under a clock she would skip exactly that step. Then 90s, then 80s a
+  // question. Full PSAT pace (71s) is next week's target, once RS is taught.
+  "Faith": {
+    title: "One habit: name the task, then test every option against it",
+    start: "2026-07-11",
+    unlock: "cumulative",
+    days: [
+      { n:1, focus:"Command of Evidence — Textual (Medium)",
+        skills:["Command of Evidence — Textual"], diffs:["Medium"], count:6, minutes:0,
+        tip:"No clock today — so take the time to do this properly. Before you look at the choices, write down the claim the question is asking you to support, in your own words. Then check each quotation against THAT claim. In your diagnostic you picked an answer that was true but didn't back the actual conclusion — this is the step that stops it." },
+      { n:2, focus:"Command of Evidence — Quantitative (Medium)",
+        skills:["Command of Evidence — Quantitative"], diffs:["Medium"], count:6, minutes:9,
+        tip:"The tables and graphs we did in class. Read the heading, the axes and the units FIRST, and say what the data shows before you look at the choices. Then check the option matches the whole statement, not just part of it." },
+      { n:3, focus:"Information & Ideas — mixed", minutes:8,
+        sections:[
+          { skills:["Command of Evidence — Textual"],      diffs:["Medium","Hard"], count:2 },
+          { skills:["Command of Evidence — Quantitative"], diffs:["Medium","Hard"], count:1 },
+          { skills:["Inferences"],                         diffs:["Medium","Hard"], count:2 },
+          { skills:["Central Ideas and Details"],          diffs:["Medium","Hard"], count:1 },
+        ],
+        tip:"Everything from Tuesday's class, mixed, before we meet again. Same one habit on every question: what exactly is this question asking me to do? Then reject any choice that is true but doesn't do that job." },
     ]
   },
 
