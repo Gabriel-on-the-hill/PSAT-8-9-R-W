@@ -4,6 +4,31 @@
 // (keyed by the name their password maps to in gate.js), a start date,
 // and a day-by-day plan. Days unlock by date so the student gets a new
 // task each day. No server needed for the plan itself.
+//
+// ── SPACED REVIEW: read this before you write the next plan ────────
+//
+// Every day now serves up to 2 REVIEW questions on top of its own draw, pulled by
+// dueForReview() from the WHOLE bank — across skills and across difficulties. It is
+// the only draw that can do that. A day narrows the bank to (say) "Words in Context
+// / Hard" before prioritizePool() ever sees the pool, so a due Text Structure
+// question, or a Medium miss on a Hard-only day, cannot surface there at any sort
+// order. Without this, nothing taught a month ago ever came back. It didn't.
+//
+// It only ever returns questions the student has ALREADY attempted and that the
+// ladder in progress.js says are genuinely overdue. It never serves an unseen
+// question, so it can't hand anyone an untaught skill cold.
+//
+// THE DOSE resolves day → plan → 2 (the default).
+//   • Write a new plan and do nothing: it gets review. That is deliberate. Spacing
+//     should be what happens when the tutor forgets, not a thing to remember.
+//   • `review: 0` on a DAY whose job is to teach one brand-new skill and needs the
+//     full dose on it.
+//   • `review: 0` on a PLAN freezes it entirely — which is why the plans below carry
+//     it. They were mid-week when the ladder landed and nobody's homework should
+//     grow by two questions overnight. **Drop the line when you next re-assign.**
+//
+// AUTHOR THE COUNTS AROUND IT. A six-question day is now 4 new + 2 review, not 6 + 2.
+// Short sets she finishes still beat long sets she abandons.
 // ══════════════════════════════════════════════════════════════════
 
 const HOMEWORK = {
@@ -30,6 +55,7 @@ const HOMEWORK = {
     title: "Predict-first: new skills untimed → known skills on the clock",
     start: "2026-07-11",      // YYYY-MM-DD: the day Set 1 becomes available
     unlock: "cumulative",     // "cumulative" = missed days stay open · "strict" = one at a time
+    review: 0,                // ← FROZEN. See the note at the top of the file.
     days: [
       { n:1, focus:"Text Structure & Purpose (Medium)",
         skills:["Text Structure and Purpose"], diffs:["Medium"], count:6, minutes:0,
@@ -96,6 +122,7 @@ const HOMEWORK = {
     title: "One habit: name the task, then test every option against it",
     start: "2026-07-11",
     unlock: "cumulative",
+    review: 0,                // ← FROZEN. See the note at the top of the file.
     days: [
       { n:1, focus:"Command of Evidence — Textual (Medium)",
         skills:["Command of Evidence — Textual"], diffs:["Medium"], count:6, minutes:0,
@@ -119,6 +146,7 @@ const HOMEWORK = {
     title: "This week — mixed Reading & Writing review",
     start: "2026-06-20",
     unlock: "cumulative",
+    review: 0,                // ← FROZEN (predates the ladder). Drop this line when you re-assign.
     days: [
       { n:1, focus:"Transitions",          skills:["Transitions"], diffs:["Easy","Medium"], count:6, tip:"Name the connection between the two sentences before looking at the words." },
       { n:2, focus:"Boundaries",           skills:["Boundaries"], diffs:["Easy","Medium"], count:6, tip:"Decide if each part is a complete sentence, then walk the punctuation guide." },
