@@ -234,7 +234,7 @@ section('Live plans authored before the ladder are frozen');
     s.textContent = fs.readFileSync(path.join(APP, 'homework/assignments.js'), 'utf8');
     w.document.body.appendChild(s);
 
-    const FROZEN = ['Maysa', 'Faith', 'Gabe'];
+    const FROZEN = ['Maysa', 'Gabe'];
     for (const name of FROZEN) {
         const plan = w.HOMEWORK[name];
         if (!plan) { ok(`${name} is frozen`, true, 'plan is gone — re-assigned, presumably'); continue; }

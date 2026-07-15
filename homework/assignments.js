@@ -99,45 +99,63 @@ const HOMEWORK = {
     ]
   },
 
-  // Faith — 11–13 July, three days, because that is all there is: her class is
-  // Tue 14 July and today is Sat the 11th. Three sets she finishes beat six she
-  // never opens.
+  // Faith — week of 15–20 July (class Tue 21 July). Six short sets. Review dose
+  // UN-FROZEN: the plan-level `review: 0` is gone, so every day gets the default 2,
+  // and the counts below are authored as 4 new + 2 review. Day 1 keeps a day-level
+  // `review: 0` because its job is the full first dose of a brand-new skill.
+  // NOTE: also remove 'Faith' from the FROZEN list in review-ladder.test.js, or the
+  // freeze-guard test fails.
   //
-  // Her diagnostic: 16/18. Craft & Structure 5/5, Conventions 4/4. Both misses —
-  // one Command of Evidence, one Rhetorical Synthesis — came from the SAME habit:
-  // she chose an option that was true in itself without checking it did the job the
-  // question actually set. So the target this week is not coverage, it is one
-  // decision habit: name the claim first, then test each option against it.
+  // Where she is, from the 13–14 July homework + 14 July session (independent data):
+  //   • CoE-Textual, CoE-Quantitative, Inferences — strong, incl. ~75–80% at HARD.
+  //   • Central Ideas at HARD is the one soft spot (0/2, small n) — keep it a
+  //     Medium/Hard MIX, never Hard-only.
+  //   • Rhetorical Synthesis — taught 14 July, so it finally enters homework. Method
+  //     she was taught: GOAL FIRST from the keywords (difference, similarity…); the
+  //     notes are a tiebreaker only. Never tell her to "read the passage first" on RS.
+  //   • A "time-on-text" theory did NOT hold up: she is 15/18 correct at ≤6s on the
+  //     passage. Don't coach reading time; difficulty on specific skills is the driver.
   //
-  // Rhetorical Synthesis is the other half of that gap, but it has not been taught
-  // yet — her only teaching session (7 Jul) covered Information & Ideas. Assigning it
-  // cold would hand her her known weak spot with no strategy to meet it. It belongs in
-  // the 14 July class, then in homework the week after.
-  //
-  // Day 1 is untimed on purpose: untimed means the runner asks her to TYPE her
-  // prediction, which is what forces her to state the claim before she sees the
-  // options. Under a clock she would skip exactly that step. Then 90s, then 80s a
-  // question. Full PSAT pace (71s) is next week's target, once RS is taught.
+  // Untimed (minutes:0) → the runner makes her TYPE the goal/claim. New or shaky skill
+  // untimed first (Days 1–2), then on the clock, ramping 90s → 80s → ~70s (real PSAT
+  // pace) by the Day 6 rehearsal. RS stays Medium this week; push it to Hard in the
+  // 21 July class, then assign Hard RS the week after.
   "Faith": {
-    title: "One habit: name the task, then test every option against it",
-    start: "2026-07-11",
+    title: "One habit: name the task, then reject anything merely true",
+    start: "2026-07-15",
     unlock: "cumulative",
-    review: 0,                // ← FROZEN. See the note at the top of the file.
     days: [
-      { n:1, focus:"Command of Evidence — Textual (Medium)",
-        skills:["Command of Evidence — Textual"], diffs:["Medium"], count:6, minutes:0,
-        tip:"No clock today — so take the time to do this properly. Before you look at the choices, write down the claim the question is asking you to support, in your own words. Then check each quotation against THAT claim. In your diagnostic you picked an answer that was true but didn't back the actual conclusion — this is the step that stops it." },
-      { n:2, focus:"Command of Evidence — Quantitative (Medium)",
-        skills:["Command of Evidence — Quantitative"], diffs:["Medium"], count:6, minutes:9,
-        tip:"The tables and graphs we did in class. Read the heading, the axes and the units FIRST, and say what the data shows before you look at the choices. Then check the option matches the whole statement, not just part of it." },
-      { n:3, focus:"Information & Ideas — mixed", minutes:8,
+      { n:1, focus:"Rhetorical Synthesis (Medium) — new", review:0,
+        skills:["Rhetorical Synthesis"], diffs:["Medium"], count:6, minutes:0,
+        tip:"Synthesis — goal first. Name what the sentence must DO from the keywords (difference, similarity, emphasize). → Type that goal, then pick the one option that does it and cut the rest. → Two options fit? Now check the notes." },
+      { n:2, focus:"Inferences + Central Ideas (untimed)", minutes:0,
         sections:[
-          { skills:["Command of Evidence — Textual"],      diffs:["Medium","Hard"], count:2 },
+          { skills:["Central Ideas and Details"], diffs:["Medium","Hard"], count:2 },
+          { skills:["Inferences"],                diffs:["Medium","Hard"], count:2 },
+        ],
+        tip:"No clock — read the whole passage, then type your prediction before the choices. → Inference: stay inside what the text actually says. → Main idea: cover the whole passage, not one line." },
+      { n:3, focus:"Command of Evidence — Textual", minutes:8,
+        skills:["Command of Evidence — Textual"], diffs:["Medium","Hard"], count:4,
+        tip:"Name the claim in your own words first. → Match each quote to the WHOLE claim, not just part of it. → Trap: a quote can be true and still not back that claim." },
+      { n:4, focus:"Rhetorical Synthesis (Medium) — timed", minutes:9,
+        skills:["Rhetorical Synthesis"], diffs:["Medium"], count:4,
+        tip:"Synthesis on the clock. → Goal first, from the keywords, then the option that serves it. → Two fit? Check the notes. → Trap: accurate, but answers a different goal." },
+      { n:5, focus:"Information & Ideas — mixed", minutes:8,
+        sections:[
+          { skills:["Command of Evidence — Textual"],      diffs:["Medium","Hard"], count:1 },
           { skills:["Command of Evidence — Quantitative"], diffs:["Medium","Hard"], count:1 },
-          { skills:["Inferences"],                         diffs:["Medium","Hard"], count:2 },
+          { skills:["Inferences"],                         diffs:["Medium","Hard"], count:1 },
           { skills:["Central Ideas and Details"],          diffs:["Medium","Hard"], count:1 },
         ],
-        tip:"Everything from Tuesday's class, mixed, before we meet again. Same one habit on every question: what exactly is this question asking me to do? Then reject any choice that is true but doesn't do that job." },
+        tip:"Mixed Information & Ideas, timed. → Read the passage, predict, then choose. → One rule: name the task, then reject any option that is true but off-task." },
+      { n:6, focus:"Mixed — dress rehearsal", minutes:7,
+        sections:[
+          { skills:["Rhetorical Synthesis"],          diffs:["Medium"],        count:1 },
+          { skills:["Command of Evidence — Textual"], diffs:["Medium","Hard"], count:1 },
+          { skills:["Inferences"],                    diffs:["Medium","Hard"], count:1 },
+          { skills:["Central Ideas and Details"],     diffs:["Medium","Hard"], count:1 },
+        ],
+        tip:"Dress rehearsal — full PSAT pace. → Every question: name the task, predict, choose. → Reject anything merely true." },
     ]
   },
 
