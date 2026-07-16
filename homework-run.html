@@ -621,6 +621,29 @@
   // blank while practice rows were full. The predictions are the reasoning the class
   // reviews together, and they were going nowhere. Key and names now match the
   // contract in the Apps Script — change them together or this silently breaks again.
+  // This session's DELAYED RETRIEVALS, per skill — the durable-learning number, sent
+  // so the tutor can see it without the student's device in front of them. That is
+  // the whole point: the monthly report is written away from this browser, and a
+  // retention claim nobody can check is exactly the line that reads as diligence
+  // while being false.
+  //
+  // The rules match the ledger's own counter in progress.js exactly, and they must:
+  // two numbers for the same thing that disagree are worse than one.
+  //   • only questions the ladder chose (`_isReviewQ`) — a first meeting is acquisition;
+  //   • only questions actually REACHED. finish() backfills not-reached questions with
+  //     ok:false so the review screen can show them, and counting those as retention
+  //     misses would report a student as forgetting work they never saw.
+  function sessionRetention(){
+    var ret={};
+    records.forEach(function(r){
+      if(!r || !r.chosen || !r.skill || !_isReviewQ[r.id]) return;
+      if(!ret[r.skill]) ret[r.skill]={correct:0,total:0};
+      ret[r.skill].total++;
+      if(r.ok) ret[r.skill].correct++;
+    });
+    return ret;
+  }
+
   function postLog(secs){
     try{
       if(typeof SHEET_SYNC_ENDPOINT==='string' && SHEET_SYNC_ENDPOINT){
@@ -629,6 +652,7 @@
           body:JSON.stringify({
             type:'homework', student:student, day:dayN, focus:spec.focus,
             score:got, total:records.length, seconds:secs, at:new Date().toISOString(),
+            retention:sessionRetention(),
             questions:records.map(function(r){
               return {id:r.id, skill:r.skill, difficulty:r.difficulty,
                       chosen:r.chosen, correct:r.answer, isCorrect:r.ok,

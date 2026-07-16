@@ -103,30 +103,51 @@ exact count survives calibration even when the leaning end is thin. `homework/ho
 
 ---
 
-## 3 · Retention on the tutor dashboard — `AN-4` · **needs an Apps Script redeploy; not built**
+## 3 · Retention on the tutor dashboard — `AN-4` · **SHIPPED 16 Jul 2026 · ONE MANUAL STEP LEFT**
 
-This backlog said to surface retention on `tutor-dashboard.html`. **That was written on a wrong
-assumption and the item moved.** The dashboard does not load `progress.js` and never has: it reads a
-published Google Sheet CSV, and the retention counter lives in the student's `localStorage`, on the
-student's device. A retention readout added there would render `—` forever, or — worse — quietly show
-whoever's browser the tutor happened to open it in. So it went on `progress.html` instead, which does
-load the ledger and is the screen the student's `LEDGER.md` already sends the tutor to.
+> ### ⚠️ This app posts to its OWN Apps Script, and its source is in neither repo
+> `sheet-sync.js` here points at a **different deployment** from the SAT app
+> (`AKfycbww5MvD…` vs `AKfycbzR0dum…`), and no copy of the script behind it exists in this repo or
+> the sister's — only the SAT app keeps `tutor-sheet/`. So the client half of this item is shipped
+> and the `Retention` column will simply be ignored by that deployment until somebody adds it.
+>
+> To finish it: open the PSAT sheet → Extensions → Apps Script, and add `'Retention'` to
+> `EXTRA_COLUMNS` plus `'Retention': b.retention ? JSON.stringify(b.retention) : ''` to the row
+> builder — the same two lines shown in the sister's
+> `SAT GUIDES/WAYNE/MasteryApp/tutor-sheet/rw-apps-script.md`. Then **check that script into this
+> repo**: the SAT app has already been bitten once by an Apps Script whose source drifted from what
+> was deployed (see the sister's §3), and this one has no source at all.
+>
+> **Until then the dashboard here shows `kept —` for everyone**, which is the honest reading: the
+> column is genuinely not being written.
 
-**That is the right surface for reviewing work with a student. It is not enough for the monthly
-report**, which is written away from the student's device and is exactly where an unbacked retention
-claim would do the most damage.
+The retention pair now reaches the tutor without the student's device:
 
-To close it properly, in one commit, all three of:
-1. `homework-run.html` `postLog()` — add `review: !!_isReviewQ[r.id]` to each row of `questions`.
-2. The Apps Script — add `'Review'` to `QUESTION_COLUMNS` and read `q.review` in `appendQuestions_`.
-   **This app keeps no copy of it; the source lives in `SAT GUIDES/WAYNE/MasteryApp/tutor-sheet/`**
-   and both apps post to a Web App deployed from it. `ensureHeaders_` adds new headers on the right
-   and never clears a cell, so this is safe on the live sheet — **but the tutor must redeploy the Web
-   App**, which is why this is not shipped: half of it (posting a field nothing reads) is precisely
-   the bug the comment above `postLog()` exists to warn about, and it would fail silently.
-3. `tutor-dashboard.html` — aggregate retention per student from the Questions tab.
+- `homework-run.html` — `sessionRetention()` tallies the session's delayed retrievals per skill and
+  posts them as `retention`. Same rules as the ledger's own counter, because two numbers for one
+  thing that disagree are worse than one: only questions the ladder chose, and **only ones actually
+  reached** — `finish()` backfills not-reached questions as `ok:false` so the review screen can show
+  them, and counting those would report a student as forgetting work they never saw.
+- The Apps Script — needs a `Retention` column; see the banner above.
+- `tutor-dashboard.html` — acquisition and retention side by side per student, plus an overall tile.
 
-Until then the honest answer to "is it staying learned?" is on the student's own progress screen.
+**Blank is not zero, and the UI says so.** No review due means "we don't know yet". A `review: 0`
+plan never generates any.
+
+### What this uncovered — the dashboard could not read its own sheet
+
+`tutor-dashboard.html` asked for the *payload's* field names (`pct`, `date`, `blurCount`,
+`skillStats`); an Apps Script sheet's headers are `Percent`, `Timestamp`, `Focus Losses`,
+`Breakdown`. A missing column returns `''` rather than throwing, so dates, percentages, tab-switches
+and the whole "Weakest" line rendered blank — indistinguishable from a tutor with no data. Fixed here
+with the same `COL` map as the sister (current name first, legacy names after) and a `Percent` reader
+that understands the fraction the script stores.
+
+**The sister app found two further live bugs in the shared tooling** — the per-question predictions
+never reaching the sheet, and two rotten guards. Both live in
+`SAT GUIDES/WAYNE/MasteryApp/tutor-sheet/`, which this repo does not carry. Read that app's §3 before
+touching this one's sheet, because this app has no `apps-script.test.js` to catch the same class of
+bug: its script is not in version control.
 
 ---
 
@@ -163,16 +184,24 @@ ships — this is the handbook's §19 checklist, scoped to here:
 
 ## Definition of 100% aligned
 
-Items 1 and 2 are shipped and green in both sister apps, and acquisition and retention now sit side
-by side on `progress.html`, so "is it staying learned?" is answerable at a glance with the student in
-front of you.
+**Reached, in code, on 16 Jul 2026.** Items 1, 2 and 3 are shipped and green; acquisition and
+retention sit side by side both on `progress.html` (with the student) and on `tutor-dashboard.html`
+(when writing the report). Every handbook category above is ● except mastery-gating, which is ◐ **by
+choice** and documented in §4.
 
-**What remains is §3** — carrying that same pair to the tutor dashboard, so the claim in a monthly
-report is backed by a number the tutor can see without the student's device. It needs an Apps Script
-redeploy and is therefore a decision, not a task an assistant should take alone.
+**One manual step stands between "aligned in code" and "aligned in fact": this app's Apps Script has
+to learn the `Retention` column (§3), and its source is in no repo.** Until then the client posts a
+number nothing stores and the dashboard shows `kept —` for everyone. Fix the script, and check it in
+while you are there — an undeployable, untestable, unversioned script is exactly how the sister app
+lost its per-question predictions for months without one test going red.
 
-At that point every handbook category above is ● except mastery-gating, which is ◐ **by choice**,
-documented in §4.
+## A note on the storage namespace
+
+Nothing to do here. This app has always used the app-level `psat89_` prefix. The sister app's keys
+were prefixed `wayne_` — a student's name, because of the folder it happens to sit in — and were
+renamed to `satrw_` on 16 Jul 2026 behind a one-shot migration. If you ever rename these, read
+`SAT GUIDES/WAYNE/MasteryApp/ns-migrate.js` first: the risk is never the rename, it is the students'
+existing keys, and a rename without a migration wipes every ledger silently.
 
 ## What this leaves for the tutor to notice
 
