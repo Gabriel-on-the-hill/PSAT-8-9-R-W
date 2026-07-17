@@ -19,7 +19,8 @@
   .sub{color:var(--muted);font-size:0.9rem;margin-bottom:1.5rem}
   .card{background:var(--surface);border:1px solid var(--border);border-radius:0.85rem;padding:1rem 1.15rem;box-shadow:0 1px 3px rgba(0,0,0,.06);margin-bottom:1.25rem}
   label{font-size:0.8rem;font-weight:700;color:var(--muted);display:block;margin-bottom:0.35rem}
-  input[type=url]{width:100%;padding:0.55rem 0.7rem;border:1px solid var(--border);border-radius:0.5rem;font-size:0.9rem;font-family:inherit}
+  input[type=url],textarea{width:100%;padding:0.55rem 0.7rem;border:1px solid var(--border);border-radius:0.5rem;font-size:0.85rem;font-family:inherit;resize:vertical;line-height:1.6}
+  input[type=url]:focus,textarea:focus{outline:2px solid var(--primary);outline-offset:1px;border-color:var(--primary)}
   .row{display:flex;gap:0.6rem;flex-wrap:wrap;align-items:center;margin-top:0.6rem}
   button{padding:0.5rem 0.95rem;border-radius:0.5rem;border:1px solid var(--border);background:#fff;font-weight:600;font-size:0.85rem;cursor:pointer;font-family:inherit}
   button.primary{background:var(--primary);color:#fff;border-color:var(--primary)}
@@ -27,13 +28,45 @@
   .hint a{color:var(--primary)}
   .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:0.75rem}
   .stat{background:var(--surface2);border:1px solid var(--border);border-radius:0.6rem;padding:0.7rem;text-align:center}
-  .stat .n{font-size:1.5rem;font-weight:800}
+  .stat .n{font-size:1.5rem;font-weight:800;font-variant-numeric:tabular-nums}
   .stat .l{font-size:0.72rem;color:var(--muted);font-weight:600}
+
+  /* The pair — accuracy beside retention. They are one reading, so they sit in one
+     frame with the comparison ("vs") drawn between them rather than two loose tiles
+     the eye has to associate on its own. */
+  .pair{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:0.5rem}
+  .pair-half{background:var(--surface2);border:1px solid var(--border);border-radius:0.7rem;padding:0.9rem 1rem;min-width:0}
+  .pair-l{font-size:0.74rem;font-weight:800;text-transform:uppercase;letter-spacing:0.04em;color:var(--text)}
+  .pair-sub{display:block;font-weight:500;text-transform:none;letter-spacing:0;color:var(--muted);font-size:0.72rem;margin-top:0.1rem}
+  .pair-n{font-size:2.1rem;font-weight:800;line-height:1.1;margin:0.35rem 0 0.1rem;font-variant-numeric:tabular-nums}
+  /* pass/warn/fail are shared with .pill, which carries a background tint. At pill size
+     that tint reads as a badge; behind a 2rem number it reads as a stray highlighter
+     bar. Take the colour, drop the fill. */
+  .pair-n.pass,.pair-n.warn,.pair-n.fail{background:none}
+  .pair-n.muted{color:var(--muted)}
+  .pair-c{font-size:0.72rem;color:var(--muted);font-variant-numeric:tabular-nums}
+  .pair-vs{font-size:0.7rem;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:0.06em}
+  @media(max-width:560px){
+    .pair{grid-template-columns:1fr}
+    .pair-vs{text-align:center;padding:0.1rem 0}
+  }
+
+  /* The sentence a tutor reads first. Colour carries the same meaning as the pills. */
+  .note{margin-top:0.85rem;padding:0.6rem 0.8rem;border-radius:0.5rem;font-size:0.82rem;line-height:1.5;border-left:3px solid}
+  .note-pass{background:#f0fdf4;border-color:var(--pass);color:#14532d}
+  .note-warn{background:#fffbeb;border-color:var(--warn);color:#713f12}
+  .note-fail{background:#fef2f2;border-color:var(--fail);color:#7f1d1d}
+
   table{width:100%;border-collapse:collapse;font-size:0.82rem}
   th,td{text-align:left;padding:0.45rem 0.55rem;border-bottom:1px solid var(--border);white-space:nowrap}
   th{font-size:0.72rem;text-transform:uppercase;letter-spacing:0.03em;color:var(--muted);cursor:pointer;user-select:none}
+  td.num{font-variant-numeric:tabular-nums}
   tbody tr:hover{background:var(--surface2)}
-  .pill{display:inline-block;padding:0.1rem 0.5rem;border-radius:9999px;font-size:0.72rem;font-weight:700}
+  tbody tr:last-child td{border-bottom:none}
+  .student-row{display:flex;flex-wrap:wrap;align-items:center;gap:0.4rem;padding:0.55rem 0;border-bottom:1px solid var(--border)}
+  .student-row:last-child{border-bottom:none}
+  .weak-line{flex-basis:100%;margin-top:0.1rem}
+  .pill{display:inline-block;padding:0.1rem 0.5rem;border-radius:9999px;font-size:0.72rem;font-weight:700;font-variant-numeric:tabular-nums}
   .pass{color:var(--pass);background:#f0fdf4}.warn{color:var(--warn);background:#fffbeb}.fail{color:var(--fail);background:#fef2f2}
   .tag-practice{color:var(--primary);background:#eff6ff}.tag-homework{color:#7c3aed;background:#f5f3ff}.tag-other{color:var(--muted);background:var(--surface2)}
   .flag{color:var(--fail);font-weight:800}
@@ -47,26 +80,33 @@
 </head>
 <body>
 <div class="wrap">
-  <h1>Tutor Dashboard</h1>
-  <p class="sub">Live view of every student's sessions, pulled from your published Google Sheet.</p>
+  <h1>PSAT 8/9 R&amp;W — Tutor Dashboard</h1>
+  <p class="sub">Every student's sessions, pulled from your published Google Sheet. Accuracy beside retention, because accuracy on its own always flatters.</p>
 
   <div class="card">
-    <label for="csvUrl">Published Sheet CSV URL</label>
-    <input id="csvUrl" type="url" placeholder="https://docs.google.com/spreadsheets/d/e/.../pub?output=csv">
+    <label for="csvUrl">Published Sheet CSV URL<span style="font-weight:500;text-transform:none"> — one per line (the backend writes a <b>Homework</b> tab and a <b>Sessions</b> tab; add both)</span></label>
+    <textarea id="csvUrl" rows="2" placeholder="https://docs.google.com/spreadsheets/d/e/.../pub?gid=0&single=true&output=csv"></textarea>
     <div class="row">
       <button class="primary" id="loadBtn">Load data</button>
-      <button id="saveBtn">Save URL</button>
+      <button id="saveBtn">Save URLs</button>
       <span id="status" class="hint"></span>
     </div>
     <details>
-      <summary>How do I get this URL?</summary>
+      <summary>How do I get these URLs?</summary>
       <div class="hint">
-        In your Google Sheet: <b>File → Share → Publish to web</b> → choose the responses sheet →
-        format <b>Comma-separated values (.csv)</b> → <b>Publish</b> → copy the link and paste it above.
-        The dashboard reads it directly (Google serves published CSVs with CORS, so no Apps Script change is needed).
-        It maps columns by header name — it expects headers like
-        <code>date, student, type, score, total, pct, avgSecs, blurCount, skillStats</code>,
-        and shows whatever it finds.
+        In your Google Sheet: <b>File → Share → Publish to web</b> → pick the <b>Homework</b> tab →
+        format <b>Comma-separated values (.csv)</b> → <b>Publish</b> → copy the link. Repeat for the
+        <b>Sessions</b> tab and paste each on its own line. Google serves published CSVs with CORS,
+        so nothing on the Apps Script side needs changing.
+        <br><br>
+        Both tabs matter and they carry different halves of the picture: <b>retention</b> is only ever
+        posted by homework, while <b>tab-switches</b> and the practice breakdown only come from
+        sessions. With one tab you get a real but partial read.
+        <br><br>
+        Columns are matched by header name against what the backend writes —
+        <code>Logged at, Student, Type, Day / Focus / Skills, Score, Total, Seconds, Raw payload</code>
+        — and anything without a column of its own is read out of <code>Raw payload</code>, which is
+        where retention has quietly been all along.
       </div>
     </details>
   </div>
@@ -87,20 +127,30 @@ window.addEventListener('DOMContentLoaded', () => {
 
 function setStatus(msg, isErr){ const s=$('status'); s.textContent=msg; s.className = isErr ? 'err' : 'hint'; }
 
-async function load(url){
+// The backend splits homework and practice across two tabs, and one published CSV URL
+// can only ever be one tab. So take a list, and merge. A tab that fails to load is
+// reported rather than swallowed: half the data rendered silently as if it were all of
+// it is how a tutor reads a partial week as a quiet one.
+async function load(raw){
+  const urls = String(raw||'').split(/\s+/).map(s=>s.trim()).filter(Boolean);
+  if(!urls.length){ setStatus('Paste at least one published CSV URL.', true); return; }
   setStatus('Loading…');
-  try{
-    const res = await fetch(url, { cache:'no-store' });
-    if(!res.ok) throw new Error('HTTP '+res.status);
-    const text = await res.text();
-    const rows = parseCSV(text);
-    if(!rows.length){ $('output').innerHTML = '<div class="card empty">No rows found in that sheet.</div>'; setStatus(''); return; }
-    render(rows);
-    setStatus('Loaded '+rows.length+' sessions · '+new Date().toLocaleString());
-  }catch(e){
-    setStatus('Could not load: '+e.message+'. Check the URL is a published CSV.', true);
-    $('output').innerHTML='';
+  const rows=[], failed=[];
+  await Promise.all(urls.map(async u=>{
+    try{
+      const res = await fetch(u, { cache:'no-store' });
+      if(!res.ok) throw new Error('HTTP '+res.status);
+      rows.push(...parseCSV(await res.text()));
+    }catch(e){ failed.push(e.message); }
+  }));
+  if(failed.length===urls.length){
+    setStatus('Could not load: '+failed[0]+'. Check the URL is a published CSV.', true);
+    $('output').innerHTML=''; return;
   }
+  if(!rows.length){ $('output').innerHTML = '<div class="card empty">No rows found in that sheet.</div>'; setStatus(''); return; }
+  render(rows);
+  setStatus('Loaded '+rows.length+' sessions from '+(urls.length-failed.length)+' of '+urls.length+' tab'+(urls.length!==1?'s':'')
+    + ' · '+new Date().toLocaleString() + (failed.length?' · '+failed.length+' tab failed: '+failed[0]:''), failed.length>0);
 }
 
 // ── Robust CSV parser (handles quotes, escaped quotes, newlines in cells) ──
@@ -127,31 +177,36 @@ function parseCSV(text){
 }
 
 // ── The column map ────────────────────────────────────────────────────────────
-// The sheet's headers are the APPS SCRIPT's (the source lives in
-// SAT GUIDES/WAYNE/MasteryApp/tutor-sheet/rw-apps-script.md). They are not the
-// payload's field names, and this file used to ask for the payload's: `pct` where
-// the sheet says `Percent`, `date` where it says `Timestamp`, `blurCount` where it
-// says `Focus Losses`, `skillStats` where it says `Breakdown`. A miss returns ''
-// rather than throwing, so every one of those columns rendered blank or NaN and the
-// dashboard looked like a tutor with no data instead of a bug.
+// THIS APP'S SHEET IS WRITTEN BY `tutor-sheet/psat-apps-script.md`. It is NOT the
+// sister app's script, and that mistake is the whole history of this file.
+// It used to ask for the *payload's* field names
+// (`pct`, `date`, `blurCount`); that was then "fixed" by copying the sister app's
+// headers (`Percent`, `Timestamp`, `Focus Losses`, `Breakdown`) — which this sheet
+// has never had either. A miss returns '' rather than throwing, so both times every
+// column rendered blank and the dashboard looked like a tutor with no data.
+//
+// What the PSAT backend actually writes, on both the Homework and Sessions tabs:
+//   Logged at · Student · Type · Day / Focus / Skills · Score · Total · Seconds · Raw payload
 //
 // So: name every column by its logical role, list the headers that can carry it —
-// current name first, legacy names after — and take the first that exists. That
-// keeps a sheet written by an older script readable, and it is why a rename in the
-// Apps Script must add a name here rather than replace one.
+// this sheet's name first, the sister's and the legacy payload names after — and take
+// the first that exists. A rename in the Apps Script adds a name here, never replaces
+// one, or the tutor's back-history stops being readable.
 const COL = {
-  date:      ['Timestamp', 'date'],
+  date:      ['Logged at', 'Timestamp', 'date'],
   student:   ['Student', 'student'],
   type:      ['Type', 'type'],
   score:     ['Score', 'score'],
-  total:     ['Max', 'Total', 'total'],
+  total:     ['Total', 'Max', 'total'],
   pct:       ['Percent', '%', 'pct'],
+  seconds:   ['Seconds', 'Duration (sec)', 'duration'],
   avgSecs:   ['Avg/Q (sec)', 'avgSecs'],
   blur:      ['Focus Losses', 'blurCount'],
   breakdown: ['Breakdown', 'Skill Stats', 'skillStats'],
   retention: ['Retention', 'retention'],
-  title:     ['Assignment', 'assignmentTitle'],
+  title:     ['Assignment', 'Day / Focus / Skills', 'assignmentTitle'],
   skills:    ['Skills', 'skills'],
+  raw:       ['Raw payload', 'raw'],
 };
 
 // Case-insensitive lookup of a logical column by any of its known headers.
@@ -165,9 +220,61 @@ function col(obj,key){
   return '';
 }
 
-// The Apps Script stores Percent as a FRACTION (score/max), and Sheets may publish
-// it as "0.7" or as "70%" depending on the cell format. Both mean the same thing,
-// and reading 0.7 as "0.7%" would report a strong session as a failing one.
+// ── The `Raw payload` column is why nothing had to be redeployed ───────────────
+// The PSAT backend stores the ENTIRE posted JSON in one cell. It has no Retention
+// column and never had one — but the client has been posting `retention` all along,
+// so the durable-learning number is already sitting in every homework row the sheet
+// has ever logged, including rows from before that metric had a name. Reading it here
+// costs nothing and works retroactively; a schema change to the script would only
+// ever start collecting from the day it was deployed.
+const _payloadCache = new WeakMap();
+function payload(row){
+  if(_payloadCache.has(row)) return _payloadCache.get(row);
+  let obj = {};
+  const raw = col(row,'raw');
+  if(raw){ try{ obj = JSON.parse(raw) || {}; }catch(e){ obj = {}; } }
+  _payloadCache.set(row, obj);
+  return obj;
+}
+
+// Where each logical field hides inside the payload, when the sheet has no column
+// for it. Homework and practice rows post different shapes — homework carries
+// `retention` and no `pct`; practice carries `skillStats`/`blurCount` and no
+// `retention` — so a field missing here is normal, not a fault.
+const PAYLOAD_KEYS = {
+  date:      ['at', 'date'],
+  student:   ['student'],
+  type:      ['type'],
+  score:     ['score'],
+  total:     ['total'],
+  pct:       ['pct'],
+  seconds:   ['seconds', 'duration'],
+  avgSecs:   ['avgSecs'],
+  blur:      ['blurCount'],
+  breakdown: ['skillStats'],
+  retention: ['retention'],
+  title:     ['assignmentTitle', 'focus'],
+  skills:    ['skills'],
+};
+
+// Resolve a logical field: the sheet's own column first, then the raw payload.
+function val(row, key){
+  const direct = col(row, key);
+  if(direct !== '') return direct;
+  const p = payload(row);
+  for(const k of (PAYLOAD_KEYS[key] || [])){
+    const v = p[k];
+    if(v === undefined || v === null || v === '') continue;
+    if(Array.isArray(v)) return v.join(', ');
+    if(typeof v === 'object') return JSON.stringify(v);   // retention/skillStats stay JSON
+    return String(v);
+  }
+  return '';
+}
+
+// A Percent column, where one exists, may be a FRACTION (score/max) or already 0–100,
+// and Sheets may publish it as "0.7" or "70%" depending on the cell format. All mean
+// the same thing, and reading 0.7 as "0.7%" would report a strong session as failing.
 function pctOf(raw){
   if(raw===''||raw==null) return NaN;
   const s=String(raw).trim();
@@ -177,31 +284,74 @@ function pctOf(raw){
   return n<=1 ? n*100 : n;   // a fraction, or already 0–100
 }
 
+// This sheet has no Percent column at all, and homework rows never post `pct` — the
+// client sends score and total and nothing else. Deriving the percent from the two
+// numbers the row does hold is not an invented score: it is the same arithmetic the
+// student's own review screen shows them. Without it every homework row reads '—'.
+function pctRow(row){
+  const direct = pctOf(val(row,'pct'));
+  if(!isNaN(direct)) return direct;
+  const s = parseFloat(val(row,'score')), t = parseFloat(val(row,'total'));
+  return (!isNaN(s) && !isNaN(t) && t > 0) ? (s/t)*100 : NaN;
+}
+
+// Same story for pace: practice posts `avgSecs`, homework posts whole-session
+// `seconds`. Per-question is the comparable figure, so derive it when it is absent.
+function avgSecsRow(row){
+  const direct = parseFloat(val(row,'avgSecs'));
+  if(!isNaN(direct)) return direct;
+  const sec = parseFloat(val(row,'seconds')), t = parseFloat(val(row,'total'));
+  return (!isNaN(sec) && !isNaN(t) && t > 0) ? sec/t : NaN;
+}
+
 function pctClass(p){ p=+p; return p>=80?'pass':p>=60?'warn':'fail'; }
 function typeClass(t){ t=(t||'').toLowerCase(); return t==='practice'?'tag-practice':t==='homework'?'tag-homework':'tag-other'; }
 
+// Practice rows post `skillStats`; homework rows do not — but they post the whole
+// `questions` array, which carries every question's skill and whether it was right.
+// Deriving the breakdown from it is what lets "Weakest" see homework at all, and
+// homework is most of the work these students actually do. This is the same blind
+// spot the app itself had until recordTrapOutcome() was added to the runner: the
+// per-skill picture was built only from practice, and practice is the smaller half.
+function breakdownOf(row){
+  const raw = val(row,'breakdown');
+  if(raw){ try{ const js = JSON.parse(raw); if(js && Object.keys(js).length) return js; }catch(e){} }
+  const qs = payload(row).questions;
+  if(!Array.isArray(qs)) return null;
+  const out = {};
+  qs.forEach(q=>{
+    if(!q || !q.skill) return;
+    if(!out[q.skill]) out[q.skill] = {correct:0, total:0};
+    out[q.skill].total++;
+    if(q.isCorrect) out[q.skill].correct++;
+  });
+  return Object.keys(out).length ? out : null;
+}
+
 function render(rows){
   // Sort newest first by date when available
-  rows.sort((a,b)=> new Date(col(b,'date')) - new Date(col(a,'date')) );
+  rows.sort((a,b)=> new Date(val(b,'date')) - new Date(val(a,'date')) );
 
   // ── Per-student aggregates ──
   const students={};
   rows.forEach(r=>{
-    const name=col(r,'student')||'(unknown)';
-    if(!students[name]) students[name]={n:0,pctSum:0,pctN:0,blur:0,skill:{},ret:{c:0,t:0}};
+    const name=val(r,'student')||'(unknown)';
+    if(!students[name]) students[name]={n:0,score:0,max:0,blur:0,skill:{},ret:{c:0,t:0}};
     const s=students[name]; s.n++;
-    const p=pctOf(col(r,'pct')); if(!isNaN(p)){ s.pctSum+=p; s.pctN++; }
-    const b=parseInt(col(r,'blur'),10); if(!isNaN(b)) s.blur+=b;
-    // Breakdown is JSON: {"Skill":{"correct":x,"total":y}} — acquisition.
-    const raw=col(r,'breakdown');
-    if(raw){ try{ const js=JSON.parse(raw);
-      Object.entries(js).forEach(([sk,v])=>{ if(!s.skill[sk])s.skill[sk]={c:0,t:0}; s.skill[sk].c+=(v.correct||0); s.skill[sk].t+=(v.total||0); });
-    }catch(e){} }
+    // Accuracy is summed as marks over marks, not averaged across sessions. A mean of
+    // session percentages lets a 1-question day weigh as much as a 20-question mock,
+    // and it would not be comparable with retention below, which is a true c/t ratio.
+    const sc=parseFloat(val(r,'score')), mx=parseFloat(val(r,'total'));
+    if(!isNaN(sc)&&!isNaN(mx)&&mx>0){ s.score+=sc; s.max+=mx; }
+    const b=parseInt(val(r,'blur'),10); if(!isNaN(b)) s.blur+=b;
+    // Acquisition: {"Skill":{"correct":x,"total":y}} — from the column or the questions.
+    const bd=breakdownOf(r);
+    if(bd){ Object.entries(bd).forEach(([sk,v])=>{ if(!s.skill[sk])s.skill[sk]={c:0,t:0}; s.skill[sk].c+=(v.correct||0); s.skill[sk].t+=(v.total||0); }); }
     // Retention, same shape — but counted ONLY on questions the review ladder brought
     // back after a delay. This is the durable-learning number: accuracy says they got
     // it right, this says they still had it weeks later. Blank means no review was due
     // in that session, which is "we don't know yet" — never a zero.
-    const ret=col(r,'retention');
+    const ret=val(r,'retention');
     if(ret){ try{ const js=JSON.parse(ret);
       Object.values(js).forEach(v=>{ s.ret.c+=(v.correct||0); s.ret.t+=(v.total||0); });
     }catch(e){} }
@@ -211,37 +361,57 @@ function render(rows){
   const totalStudents=Object.keys(students).length;
   const totalBlur=Object.values(students).reduce((n,s)=>n+s.blur,0);
   const allRet=Object.values(students).reduce((a,s)=>({c:a.c+s.ret.c,t:a.t+s.ret.t}),{c:0,t:0});
+  const allAcq=Object.values(students).reduce((a,s)=>({c:a.c+s.score,t:a.t+s.max}),{c:0,t:0});
+  const acqPct=allAcq.t?Math.round(allAcq.c/allAcq.t*100):null;
+  const retPct=allRet.t?Math.round(allRet.c/allRet.t*100):null;
 
-  let html = `<div class="card"><div class="stat-grid">
-    <div class="stat"><div class="n">${totalStudents}</div><div class="l">Students</div></div>
-    <div class="stat"><div class="n">${totalSessions}</div><div class="l">Sessions</div></div>
-    <div class="stat"><div class="n">${allRet.t?Math.round(allRet.c/allRet.t*100)+'%':'—'}</div>
-      <div class="l">${allRet.t?`Retained (${allRet.c}/${allRet.t})`:'No reviews due yet'}</div></div>
-    <div class="stat"><div class="n">${totalBlur}</div><div class="l">Tab-switches</div></div>
-  </div></div>`;
+  // ── The pair, up top ──
+  // Accuracy and retention are one reading, not two statistics, so they share a tile
+  // and the gap between them is spelled out in words. Accuracy alone always flatters:
+  // a student sits at 90% on the work in front of them and 50% on the same skill three
+  // weeks later, and only the pair shows it. That gap is the entire point of the app.
+  let html = `<div class="card">
+    <div class="pair">
+      <div class="pair-half">
+        <div class="pair-l">Accuracy <span class="pair-sub">on the work in front of them</span></div>
+        <div class="pair-n ${acqPct===null?'muted':pctClass(acqPct)}">${acqPct===null?'—':acqPct+'%'}</div>
+        <div class="pair-c">${allAcq.t?`${allAcq.c} of ${allAcq.t} marks`:'no scored sessions yet'}</div>
+      </div>
+      <div class="pair-vs">vs</div>
+      <div class="pair-half">
+        <div class="pair-l">Retained <span class="pair-sub">still right after a delay</span></div>
+        <div class="pair-n ${retPct===null?'muted':pctClass(retPct)}">${retPct===null?'—':retPct+'%'}</div>
+        <div class="pair-c">${allRet.t?`${allRet.c} of ${allRet.t} spaced reviews`:'no reviews due yet — not a zero'}</div>
+      </div>
+    </div>
+    ${gapNote(acqPct, retPct, allRet.t)}
+    <div class="stat-grid" style="margin-top:1rem">
+      <div class="stat"><div class="n">${totalStudents}</div><div class="l">Students</div></div>
+      <div class="stat"><div class="n">${totalSessions}</div><div class="l">Sessions</div></div>
+      <div class="stat"><div class="n">${totalBlur}</div><div class="l">Tab-switches</div></div>
+    </div>
+  </div>`;
 
   // ── Per-student cards ──
   html += '<div class="card"><div class="student-head">By student</div>';
   Object.entries(students).sort((a,b)=>b[1].n-a[1].n).forEach(([name,s])=>{
-    const avg=s.pctN?Math.round(s.pctSum/s.pctN):0;
+    const avg=s.max?Math.round(s.score/s.max*100):null;
     const weak=Object.entries(s.skill).filter(([,v])=>v.t>=3)
       .map(([sk,v])=>({sk,rate:v.c/v.t,c:v.c,t:v.t}))
       .sort((a,b)=>a.rate-b.rate).slice(0,3)
       .map(w=>`${w.sk} ${Math.round(w.rate*100)}%`).join(' · ');
-    // Accuracy and retention next to each other, always. Accuracy alone always
-    // flatters — a student can sit at 90% on the work in front of them and 50% on
-    // the same skill three weeks later, and only the pair shows it. The count rides
-    // along because "100%" off one delayed retrieval is not a retention claim.
+    // The count rides along because "100%" off one delayed retrieval is not a
+    // retention claim, and a figure that cannot say 1/1 will imply it was more.
     const rp = s.ret.t ? Math.round(s.ret.c/s.ret.t*100) : null;
-    html+=`<div style="padding:0.5rem 0;border-bottom:1px solid var(--border)">
+    html+=`<div class="student-row">
       <b>${esc(name)}</b>
-      <span class="pill ${pctClass(avg)}" style="margin-left:0.4rem">${avg}% avg</span>
+      <span class="pill ${avg===null?'tag-other':pctClass(avg)}" title="Accuracy: ${s.score} of ${s.max} marks across every logged session.">${avg===null?'— avg':avg+'% avg'}</span>
       ${rp!==null
-        ? `<span class="pill ${pctClass(rp)}" style="margin-left:0.4rem" title="Retention: ${s.ret.c} of ${s.ret.t} spaced reviews correct. Only questions the ladder brought back after a delay.">${rp}% kept (${s.ret.c}/${s.ret.t})</span>`
-        : `<span class="pill tag-other" style="margin-left:0.4rem" title="No spaced reviews have come due yet, so there is nothing to measure retention on. This is not a zero.">kept —</span>`}
-      <span class="weak" style="margin-left:0.4rem">${s.n} sessions</span>
-      ${s.blur>0?`<span class="flag" style="margin-left:0.4rem">⚑ ${s.blur} tab-switch${s.blur!==1?'es':''}</span>`:''}
-      ${weak?`<div class="weak" style="margin-top:0.2rem">Weakest: ${esc(weak)}</div>`:''}
+        ? `<span class="pill ${pctClass(rp)}" title="Retention: ${s.ret.c} of ${s.ret.t} spaced reviews correct. Only questions the ladder brought back after a delay.">${rp}% kept (${s.ret.c}/${s.ret.t})</span>`
+        : `<span class="pill tag-other" title="No spaced reviews have come due yet, so there is nothing to measure retention on. This is not a zero.">kept —</span>`}
+      <span class="weak">${s.n} session${s.n!==1?'s':''}</span>
+      ${s.blur>0?`<span class="flag">⚑ ${s.blur} tab-switch${s.blur!==1?'es':''}</span>`:''}
+      ${weak?`<div class="weak weak-line">Weakest: ${esc(weak)}</div>`:''}
     </div>`;
   });
   html+='</div>';
@@ -251,24 +421,38 @@ function render(rows){
     + ['Date','Student','Type','Score','%','Avg/q','Tab-switches','Detail'].map(h=>`<th>${h}</th>`).join('')
     + '</tr></thead><tbody>';
   rows.slice(0,150).forEach(r=>{
-    const d=col(r,'date'); const dd=d?new Date(d):null;
+    const d=val(r,'date'); const dd=d?new Date(d):null;
     const dateStr= dd&&!isNaN(dd)? dd.toLocaleDateString('en-GB',{day:'numeric',month:'short'})+' '+dd.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'}) : esc(d);
-    const type=col(r,'type'); const pct=pctOf(col(r,'pct')); const blur=parseInt(col(r,'blur'),10)||0;
-    const detail = col(r,'title') || (col(r,'skills')||'').slice(0,40);
+    const type=val(r,'type'); const pct=pctRow(r); const blur=parseInt(val(r,'blur'),10)||0;
+    const aq=avgSecsRow(r);
+    const detail = val(r,'title') || (val(r,'skills')||'').slice(0,40);
     html+=`<tr>
-      <td>${dateStr}</td>
-      <td>${esc(col(r,'student')||'—')}</td>
+      <td>${dateStr||'—'}</td>
+      <td>${esc(val(r,'student')||'—')}</td>
       <td><span class="pill ${typeClass(type)}">${esc(type||'—')}</span></td>
-      <td>${esc(col(r,'score'))}/${esc(col(r,'total'))}</td>
-      <td>${isNaN(pct)?'—':`<span class="pill ${pctClass(pct)}">${Math.round(pct)}%</span>`}</td>
-      <td>${esc(col(r,'avgSecs'))}s</td>
-      <td>${blur>0?`<span class="flag">${blur}</span>`:'0'}</td>
-      <td>${esc(detail)}</td>
+      <td class="num">${esc(val(r,'score'))}/${esc(val(r,'total'))}</td>
+      <td class="num">${isNaN(pct)?'—':`<span class="pill ${pctClass(pct)}">${Math.round(pct)}%</span>`}</td>
+      <td class="num">${isNaN(aq)?'—':Math.round(aq)+'s'}</td>
+      <td class="num">${blur>0?`<span class="flag">${blur}</span>`:'0'}</td>
+      <td>${esc(detail)||'—'}</td>
     </tr>`;
   });
   html+='</tbody></table></div></div>';
 
   $('output').innerHTML=html;
+}
+
+// The one line a tutor should read first. It only speaks when the comparison is real:
+// retention needs a floor of attempts before a gap means anything (a 1/2 is noise, and
+// a confident sentence about noise is exactly the "reads as diligence while being
+// false" line the house rules forbid), and silence here is the honest default.
+function gapNote(acq, ret, retTotal){
+  if(acq===null || ret===null || retTotal < 5) return '';
+  const gap = acq - ret;
+  if(gap >= 20) return `<div class="note note-fail">Practice is landing but memory is not — ${gap} points of it. The work in front of them is going in; it is gone by the time it comes back. That is a spacing problem, not an effort problem.</div>`;
+  if(gap >= 10) return `<div class="note note-warn">A ${gap}-point gap between getting it right today and still having it weeks later. Worth watching before it widens.</div>`;
+  if(gap <= -5)  return `<div class="note note-pass">Retention is running ahead of accuracy — the older material is the solid part. New work is where the difficulty is.</div>`;
+  return `<div class="note note-pass">Accuracy and retention are tracking together. What is being learned is staying learned.</div>`;
 }
 
 function esc(s){ return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }

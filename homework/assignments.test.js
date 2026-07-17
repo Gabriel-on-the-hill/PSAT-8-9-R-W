@@ -134,6 +134,38 @@ for (const [student, plan] of Object.entries(HOMEWORK)) {
     }
 }
 
+// ── A plan that came from the SHEET cannot say `sections` — so we add them ────────
+// The tutor backend's buildPlan() only understands skills/diffs/count. A sheet day
+// naming three skills would arrive as one three-skill pool, and the runner takes the
+// top N of an ordered pool — a block of one skill, looking fine. Every rule above is
+// enforced on `assignments.js`, which the sheet path bypasses entirely, so this is the
+// one door left open. hwNormalizeSheetPlan() closes it on the client, where no
+// redeploy is needed and this assertion can watch it.
+console.log('\nA sheet-authored plan is normalised before it can collapse');
+{
+    const N = w.hwNormalizeSheetPlan;
+    const day = p => N({ days: [p] }).days[0];
+
+    const three = day({ n: 1, skills: ['Inferences', 'Transitions', 'Boundaries'], diffs: ['Medium'], count: 6 });
+    ok('a multi-skill sheet day gains sections', !!three.sections, 'none added');
+    ok('one section per skill', three.sections && three.sections.length === 3);
+    ok('the exact count survives the split', three.sections && three.sections.reduce((a, s) => a + s.count, 0) === 6);
+    ok('each skill gets its own share', three.sections && three.sections.every(s => s.count === 2));
+    ok('the difficulties carry through', three.sections && three.sections.every(s => s.diffs.includes('Medium')));
+
+    const rem = day({ n: 2, skills: ['Inferences', 'Transitions'], diffs: ['Hard'], count: 5 });
+    ok('an uneven split still draws the full count', rem.sections.reduce((a, s) => a + s.count, 0) === 5, 'questions were dropped');
+    ok('and the remainder goes to the first skill', rem.sections[0].count === 3 && rem.sections[1].count === 2);
+
+    const one = day({ n: 3, skills: ['Inferences'], diffs: ['Medium'], count: 4 });
+    ok('a single-skill day is left alone', !one.sections, 'sections were invented for one skill');
+
+    const authored = day({ n: 4, sections: [{ skills: ['Inferences'], diffs: ['Medium'], count: 2 }] });
+    ok('a day that already has sections is untouched', authored.sections.length === 1);
+
+    ok('a null plan does not throw', N(null) === null);
+}
+
 console.log('\n' + '─'.repeat(64));
 if (fail) { console.log(`${fail} FAILED:\n  · ` + fails.join('\n  · ')); process.exit(1); }
 console.log(`ALL ${pass} ASSERTIONS PASSED`);

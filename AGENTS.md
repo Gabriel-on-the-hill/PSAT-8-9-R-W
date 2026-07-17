@@ -10,13 +10,35 @@ there. **Change one, change both, and run both test suites.**
 
 ```
 npm install jsdom --prefix /tmp/j
-NODE_PATH=/tmp/j/node_modules node homework/homework-run.test.js   # the learning loop
-NODE_PATH=/tmp/j/node_modules node homework/assignments.test.js    # the plans are sane
-NODE_PATH=/tmp/j/node_modules node homework/bank.test.js           # the bank is classified right
+NODE_PATH=/tmp/j/node_modules node homework/homework-run.test.js      # the learning loop
+NODE_PATH=/tmp/j/node_modules node homework/assignments.test.js       # the plans are sane
+NODE_PATH=/tmp/j/node_modules node homework/bank.test.js              # the bank is classified right
+NODE_PATH=/tmp/j/node_modules node homework/review-ladder.test.js     # spacing + calibration
+NODE_PATH=/tmp/j/node_modules node tutor-sheet/tutor-dashboard.test.js # the dashboard can read the sheet
 ```
 
 They skip cleanly without jsdom. Every one of them exists because something was silently
 broken and nothing failed. Read a test's header before you change what it guards.
+
+**`SKIP` is not a pass, and it looks like one.** Without jsdom every suite above prints
+`SKIP` and exits 0. On 17 Jul 2026 all five had been skipping while a doc asserted they
+were green. Check the last line says `ALL n ASSERTIONS PASSED`.
+
+## The tutor sheet is NOT shared with the sister app
+
+`tutor-sheet/psat-apps-script.md` is the source of **this** app's deployed backend — eight fixed
+columns (`Logged at · Student · Type · Day / Focus / Skills · Score · Total · Seconds · Raw payload`)
+plus a JSONP `action=plan`. The sister's `rw-apps-script.md` is a **different script for a different
+sheet** with named columns and a `Questions` tab.
+
+So `tutor-dashboard.html` and `tutor-sheet/` are the one exception to "change one, change both."
+Copying the sister's column map onto this app is a real bug that has already shipped once: it made
+every figure render blank, which looks identical to a tutor with no data. `tutor-dashboard.test.js`
+parses the header row out of the checked-in script so that drift fails loudly.
+
+**`Raw payload` is load-bearing.** It holds the entire posted JSON, which is why the dashboard can
+read retention with no redeploy and across the whole back-history. Anything the sheet has no column
+for is read from there.
 
 ## Assigning homework
 

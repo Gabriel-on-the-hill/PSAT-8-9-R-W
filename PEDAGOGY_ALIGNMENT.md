@@ -12,6 +12,13 @@ full evaluation this backlog comes from is the "app-pedagogy-eval" artifact.
 > **Sister app:** `SAT GUIDES/WAYNE/MasteryApp` runs the same engine from separate files and carries
 > an identical copy of this backlog. **Every change here is a change there. Do both, keep both files
 > in sync, run both test suites.**
+>
+> **The one standing exception is the tutor sheet** (§3). The two apps post to *different Apps
+> Scripts with different schemas*: this one writes eight fixed columns with a `Raw payload` catch-all,
+> the sister writes named columns with a `Questions` tab. **`tutor-dashboard.html` and `tutor-sheet/`
+> must NOT be mirrored between them** — copying the sister's column map onto this app is exactly the
+> bug §3 documents, and it has already happened once. Everything else (the runner, the ladder,
+> `progress.js`) still moves in lockstep.
 
 ---
 
@@ -103,23 +110,27 @@ exact count survives calibration even when the leaning end is thin. `homework/ho
 
 ---
 
-## 3 · Retention on the tutor dashboard — `AN-4` · **SHIPPED 16 Jul 2026 · ONE MANUAL STEP LEFT**
+## 3 · Retention on the tutor dashboard — `AN-4` · **SHIPPED 17 Jul 2026 · NOTHING LEFT TO DO**
 
-> ### ⚠️ This app posts to its OWN Apps Script, and its source is in neither repo
-> `sheet-sync.js` here points at a **different deployment** from the SAT app
-> (`AKfycbww5MvD…` vs `AKfycbzR0dum…`), and no copy of the script behind it exists in this repo or
-> the sister's — only the SAT app keeps `tutor-sheet/`. So the client half of this item is shipped
-> and the `Retention` column will simply be ignored by that deployment until somebody adds it.
+> ### ✅ No redeploy. No manual step. It reads your back-history.
+> **The 16 Jul entry that stood here was wrong on both of its claims, and acting on it would have
+> wasted an afternoon.** It said this app's Apps Script source "exists in neither repo" and told the
+> tutor to add `'Retention'` to `EXTRA_COLUMNS` plus a row-builder line, copying the sister app.
 >
-> To finish it: open the PSAT sheet → Extensions → Apps Script, and add `'Retention'` to
-> `EXTRA_COLUMNS` plus `'Retention': b.retention ? JSON.stringify(b.retention) : ''` to the row
-> builder — the same two lines shown in the sister's
-> `SAT GUIDES/WAYNE/MasteryApp/tutor-sheet/rw-apps-script.md`. Then **check that script into this
-> repo**: the SAT app has already been bitten once by an Apps Script whose source drifted from what
-> was deployed (see the sister's §3), and this one has no source at all.
+> - **The source was never missing.** It was `PSAT 8-9/Tutor Backend (Apps Script).gs` — one directory
+>   *above* the `app/` git repo, which is why a search inside the repo concluded it did not exist. It
+>   is now checked in at [`tutor-sheet/psat-apps-script.md`](tutor-sheet/psat-apps-script.md), verified
+>   against the live endpoint (its `doGet` reply is byte-identical, and it answers `?action=plan`), and
+>   the loose root copy was deleted on 17 Jul 2026 so the two can never drift.
+> - **The prescription was for a different script.** There is no `EXTRA_COLUMNS` here, no
+>   `ensureHeaders_`, no named-column row builder. Those two lines have nothing to attach to. This
+>   backend writes eight fixed columns:
+>   `Logged at · Student · Type · Day / Focus / Skills · Score · Total · Seconds · Raw payload`.
 >
-> **Until then the dashboard here shows `kept —` for everyone**, which is the honest reading: the
-> column is genuinely not being written.
+> **And the data was never missing either.** `Raw payload` holds the entire posted JSON, so
+> `retention` has been landing in the sheet since the day the client started posting it. The fix was
+> to *read* it. That is why this needs no redeploy and works on every row already logged — a schema
+> change to the script could only ever have started collecting from deploy day.
 
 The retention pair now reaches the tutor without the student's device:
 
@@ -128,20 +139,44 @@ The retention pair now reaches the tutor without the student's device:
   thing that disagree are worse than one: only questions the ladder chose, and **only ones actually
   reached** — `finish()` backfills not-reached questions as `ok:false` so the review screen can show
   them, and counting those would report a student as forgetting work they never saw.
-- The Apps Script — needs a `Retention` column; see the banner above.
-- `tutor-dashboard.html` — acquisition and retention side by side per student, plus an overall tile.
+- The Apps Script — **unchanged, and deliberately so.** It already stores everything.
+- `tutor-dashboard.html` — accuracy and retention as one framed reading, per student and overall.
 
 **Blank is not zero, and the UI says so.** No review due means "we don't know yet". A `review: 0`
 plan never generates any.
 
-### What this uncovered — the dashboard could not read its own sheet
+### What this uncovered — the dashboard has been wrong about its own sheet TWICE
 
-`tutor-dashboard.html` asked for the *payload's* field names (`pct`, `date`, `blurCount`,
-`skillStats`); an Apps Script sheet's headers are `Percent`, `Timestamp`, `Focus Losses`,
-`Breakdown`. A missing column returns `''` rather than throwing, so dates, percentages, tab-switches
-and the whole "Weakest" line rendered blank — indistinguishable from a tutor with no data. Fixed here
-with the same `COL` map as the sister (current name first, legacy names after) and a `Percent` reader
-that understands the fraction the script stores.
+Both times it rendered blanks rather than failing, because a missing column returns `''` instead of
+throwing — so it looked exactly like a tutor with no data.
+
+1. **It asked for the *payload's* field names** (`pct`, `date`, `blurCount`, `skillStats`) when a
+   sheet's headers are the Apps Script's.
+2. **The 16 Jul "fix" copied the sister app's headers** (`Percent`, `Timestamp`, `Focus Losses`,
+   `Breakdown`) — which **this sheet has never had either**. The map was corrected onto the wrong
+   sheet. Only `Student`, `Type`, `Score` and `Total` ever matched by luck; date, percent,
+   tab-switches, "Weakest" and retention all still rendered blank.
+
+Fixed properly on 17 Jul: `COL` now lists **this** sheet's names first, and anything without a column
+of its own is read out of `Raw payload`. Three readings are derived rather than shown as `—`, and
+each is arithmetic on real numbers, never an invented one:
+
+- **Percent** — homework posts `score`/`total` and no `pct`, so every homework row read `—`.
+- **Pace** — practice posts `avgSecs`, homework posts whole-session `seconds`.
+- **The per-skill breakdown** — practice posts `skillStats`; homework posts none, but its `questions`
+  array carries every question's skill and outcome. Deriving it is what lets **"Weakest" see homework
+  at all**, and homework is most of the work the students actually do. (Precisely the blind spot §2
+  found in the app itself: the per-skill picture was built only from practice, the smaller half.)
+
+**Accuracy is now summed as marks over marks, not averaged across sessions.** A mean of session
+percentages lets a 6-question day weigh as much as a 20-question mock, and it was not comparable with
+retention beside it, which is a true `c/t` ratio. Comparing two differently-computed numbers and
+calling the difference a finding is how a report says something false while looking careful.
+
+**`tutor-sheet/tutor-dashboard.test.js` (31 assertions) now guards all of it, and it does not trust
+this document**: it parses the header row **out of the checked-in script** and fails if the dashboard
+stops being able to read what the backend writes. That is the guard whose absence let this file
+assert a fix that had never worked.
 
 **The sister app found two further live bugs in the shared tooling** — the per-question predictions
 never reaching the sheet, and two rotten guards. Both live in
@@ -184,16 +219,23 @@ ships — this is the handbook's §19 checklist, scoped to here:
 
 ## Definition of 100% aligned
 
-**Reached, in code, on 16 Jul 2026.** Items 1, 2 and 3 are shipped and green; acquisition and
-retention sit side by side both on `progress.html` (with the student) and on `tutor-dashboard.html`
-(when writing the report). Every handbook category above is ● except mastery-gating, which is ◐ **by
-choice** and documented in §4.
+**Reached, in code *and* in fact, on 17 Jul 2026.** Items 1, 2 and 3 are shipped and green;
+acquisition and retention sit side by side both on `progress.html` (with the student) and on
+`tutor-dashboard.html` (when writing the report). Every handbook category above is ● except
+mastery-gating, which is ◐ **by choice** and documented in §4.
 
-**One manual step stands between "aligned in code" and "aligned in fact": this app's Apps Script has
-to learn the `Retention` column (§3), and its source is in no repo.** Until then the client posts a
-number nothing stores and the dashboard shows `kept —` for everyone. Fix the script, and check it in
-while you are there — an undeployable, untestable, unversioned script is exactly how the sister app
-lost its per-question predictions for months without one test going red.
+**Nothing is outstanding on the tutor's side.** The 16 Jul claim that a manual Apps Script edit stood
+between this app and alignment was a misdiagnosis (§3): the script was never missing, it never needed
+the column, and the retention data was already in the sheet. It is now checked in at
+`tutor-sheet/psat-apps-script.md` and a test parses its headers — an unversioned script is exactly how
+the sister app lost its per-question predictions for months without one test going red, and how this
+file came to assert a fix that had never worked.
+
+**Verification, 17 Jul 2026** — all five suites green, 277 assertions:
+`assignments` 116 · `bank` 6 · `review-ladder` 51 · `homework-run` 73 · `tutor-dashboard` 31.
+Note that they **skip silently without jsdom**, and a `SKIP` reads a great deal like a pass in a
+terminal. Install it before you believe them — on 17 Jul all five had been skipping while this file
+asserted they were green.
 
 ## A note on the storage namespace
 
@@ -205,12 +247,36 @@ existing keys, and a rename without a migration wipes every ledger silently.
 
 ## What this leaves for the tutor to notice
 
+**Nothing is required to make the dashboard work — but publish BOTH tabs to it.** The backend writes
+homework to a `Homework` tab and practice/mocks to a `Sessions` tab, and one published CSV URL is one
+tab. The dashboard now takes a list (one URL per line). It matters which you give it, because the two
+tabs carry different halves of the picture: **retention is only ever posted by homework**, while
+tab-switches and the practice breakdown only come from sessions. One tab gives a real but partial
+read — and a partial read that looks complete is the thing this file keeps having to apologise for.
+
 Retention starts at `—` and stays there for days: it can only count questions the ladder brings
 *back*, so it earns its first data point one rung after a question is first answered. **An empty
 retention figure is not a bug and not a zero.** It is the honest state of "we do not know yet", which
 is the state the app was silently asserting an answer to before this.
 
+The gap sentence under the pair **stays silent below 5 spaced reviews.** A confident sentence about
+a 1-of-2 sample is noise wearing a lab coat, and it is exactly the "reads as diligence while being
+false" line the house rules forbid.
+
 Calibration is quieter still. It does nothing until a skill has 8 attempts, and nothing at all on a
 day that pins one difficulty — which, today, is nearly every day in `assignments.js`. **To actually
 use it, author a day with a range** (`diffs:["Medium","Hard"]`) and let the student's record pick the
 end.
+
+**The `HW_USE_SHEET` landmine is defused** (17 Jul 2026). Found while reading the backend for §3:
+`buildPlan()` understands `skills/diffs/count/minutes/tip` and **not `sections`**, so a sheet-authored
+day naming more than one skill would have arrived as one pool and silently collapsed to a single
+skill — the failure `AGENTS.md` calls the one that bites hardest. Every rule protecting against that
+is enforced on `assignments.js`, which the sheet path bypasses entirely; it was the one door left
+open, and the flag being `false` was all that stood in front of it.
+
+`hwNormalizeSheetPlan()` now splits any multi-skill sheet day into an exact count per skill before
+the runner ever sees it. It is on the **client** on purpose: no redeploy, and `assignments.test.js`
+can watch it — a fix living only in an Apps Script is a fix nothing tests, which is the whole of §3.
+The flag stays `false` (the file plans are what the tutor actually writes), but flipping it is no
+longer dangerous. A sheet day still cannot say `review:`, so it takes the default dose of 2.

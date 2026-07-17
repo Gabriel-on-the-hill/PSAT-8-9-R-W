@@ -226,6 +226,32 @@ function hwDaysAvailable(startStr) {
 // The homework/session LOG to your sheet works either way.
 var HW_USE_SHEET = false;
 
+// A sheet-authored day cannot say `sections`, and that is a silent collapse waiting.
+//
+// The tutor backend's buildPlan() (tutor-sheet/psat-apps-script.md) reads
+// skills/diffs/count/minutes/tip and nothing else. So a sheet day naming three skills
+// arrives as ONE pool of three skills — and the runner takes the top N of an ordered
+// pool, which serves a block of one skill while looking perfectly fine. That is the
+// exact failure AGENTS.md calls the one that bites hardest, and the reason a plain
+// multi-skill day is banned in this file.
+//
+// Splitting it here, on the client, is what makes the sheet path safe: it needs no
+// redeploy, it cannot be forgotten in a script nobody runs tests against, and an
+// assertion can see it. An even split is what "3 skills, 6 questions" means; the
+// remainder goes to the earliest skills rather than being dropped.
+function hwNormalizeSheetPlan(plan) {
+  if (!plan || !plan.days) return plan;
+  plan.days.forEach(function (d) {
+    if (!d || d.sections || !d.skills || d.skills.length < 2) return;
+    var count = Number(d.count) || 5, k = d.skills.length;
+    var base = Math.floor(count / k), extra = count % k;
+    d.sections = d.skills.map(function (s, i) {
+      return { skills: [s], diffs: (d.diffs || []).slice(), count: base + (i < extra ? 1 : 0) };
+    }).filter(function (s) { return s.count > 0; });
+  });
+  return plan;
+}
+
 function hwLoadPlan(student, cb) {
   var local = (typeof HOMEWORK !== "undefined" && HOMEWORK[student]) ? HOMEWORK[student] : null;
   var ep = (typeof SHEET_SYNC_ENDPOINT === "string") ? SHEET_SYNC_ENDPOINT : "";
@@ -235,7 +261,7 @@ function hwLoadPlan(student, cb) {
     try { delete window[name]; } catch (e) {}
     if (sc && sc.parentNode) sc.parentNode.removeChild(sc);
     var ok = plan && plan.days && plan.days.length;
-    cb(ok ? plan : local, ok ? "sheet" : "default"); }
+    cb(ok ? hwNormalizeSheetPlan(plan) : local, ok ? "sheet" : "default"); }
   var timer = setTimeout(function(){ finish(null); }, 9000);
   window[name] = function(data){ clearTimeout(timer); finish(data); };
   sc = document.createElement("script");
@@ -244,4 +270,4 @@ function hwLoadPlan(student, cb) {
   document.body.appendChild(sc);
 }
 
-if (typeof window !== "undefined") { window.HOMEWORK = HOMEWORK; window.hwDaysAvailable = hwDaysAvailable; window.hwLoadPlan = hwLoadPlan; window.hwParseDate = hwParseDate; }
+if (typeof window !== "undefined") { window.HOMEWORK = HOMEWORK; window.hwDaysAvailable = hwDaysAvailable; window.hwLoadPlan = hwLoadPlan; window.hwParseDate = hwParseDate; window.hwNormalizeSheetPlan = hwNormalizeSheetPlan; }
