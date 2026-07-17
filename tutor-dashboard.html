@@ -3,8 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SAT Mastery — Tutor Dashboard</title>
-<script src="gate.js?v=20260703"></script>
+<title>PSAT 8/9 R&amp;W — Tutor Dashboard</title>
+<!-- Tutor-only. This page shows every student's accuracy, retention and weakest
+     skills — an assessment, which root AGENTS.md rule 6 says a student never reads.
+     Without this line it loaded the same gate as the app and any student's own
+     password opened it. Must come BEFORE gate.js. -->
+<script>window.GATE_REQUIRE = 'tutor';</script>
+<script src="gate.js?v=20260717"></script>
 <style>
   :root{
     --bg:#f1f5f9; --surface:#fff; --surface2:#f8fafc; --border:#e2e8f0;
@@ -26,6 +31,13 @@
   button.primary{background:var(--primary);color:#fff;border-color:var(--primary)}
   .hint{font-size:0.76rem;color:var(--muted);margin-top:0.5rem;line-height:1.5}
   .hint a{color:var(--primary)}
+  input[type=file]{font-size:0.82rem;font-family:inherit;padding:0.5rem 0.6rem;border:1px dashed var(--border);border-radius:0.5rem;width:100%;background:var(--surface2);cursor:pointer}
+  input[type=file]::file-selector-button{font-family:inherit;font-weight:600;font-size:0.8rem;padding:0.35rem 0.7rem;margin-right:0.6rem;border:1px solid var(--border);border-radius:0.4rem;background:#fff;cursor:pointer}
+  .badge{display:inline-block;margin-left:0.4rem;padding:0.05rem 0.45rem;border-radius:9999px;font-size:0.65rem;font-weight:700;color:var(--pass);background:#f0fdf4;text-transform:none;letter-spacing:0}
+  /* Separates the private path from the published one — they are alternatives, and the
+     eye should not read the URL box as a second required step. */
+  .or{display:flex;align-items:center;gap:0.6rem;margin:1rem 0 0.85rem;color:var(--muted);font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em}
+  .or::before,.or::after{content:"";flex:1;height:1px;background:var(--border)}
   .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:0.75rem}
   .stat{background:var(--surface2);border:1px solid var(--border);border-radius:0.6rem;padding:0.7rem;text-align:center}
   .stat .n{font-size:1.5rem;font-weight:800;font-variant-numeric:tabular-nums}
@@ -84,24 +96,41 @@
   <p class="sub">Every student's sessions, pulled from your published Google Sheet. Accuracy beside retention, because accuracy on its own always flatters.</p>
 
   <div class="card">
+    <label for="csvFile">Open a downloaded CSV <span class="badge">private — nothing leaves this machine</span></label>
+    <input type="file" id="csvFile" accept=".csv,text/csv" multiple>
+    <div class="hint" style="margin-top:0.4rem">
+      In your Sheet: <b>File → Download → Comma-separated values</b>, once per tab, then pick the
+      file(s) here. Nothing is published, no link exists to leak, and it works offline.
+      <b>This is the recommended way</b> — the sheet holds students' names and scores.
+    </div>
+
+    <div class="or"><span>or</span></div>
+
     <label for="csvUrl">Published Sheet CSV URL<span style="font-weight:500;text-transform:none"> — one per line (the backend writes a <b>Homework</b> tab and a <b>Sessions</b> tab; add both)</span></label>
     <textarea id="csvUrl" rows="2" placeholder="https://docs.google.com/spreadsheets/d/e/.../pub?gid=0&single=true&output=csv"></textarea>
     <div class="row">
-      <button class="primary" id="loadBtn">Load data</button>
+      <button class="primary" id="loadBtn">Load from URLs</button>
       <button id="saveBtn">Save URLs</button>
       <span id="status" class="hint"></span>
     </div>
     <details>
-      <summary>How do I get these URLs?</summary>
+      <summary>How do I get these URLs — and should I?</summary>
       <div class="hint">
-        In your Google Sheet: <b>File → Share → Publish to web</b> → pick the <b>Homework</b> tab →
+        <b>Publishing makes the sheet readable by anyone who has the link.</b> It is an unlisted URL,
+        not a private one, and the sheet carries students' names, scores and per-question history. The
+        file option above avoids that entirely; prefer it unless you specifically want the dashboard
+        to refresh without a download.
+        <br><br>
+        If you do: <b>File → Share → Publish to web</b> → pick the <b>Homework</b> tab →
         format <b>Comma-separated values (.csv)</b> → <b>Publish</b> → copy the link. Repeat for the
-        <b>Sessions</b> tab and paste each on its own line. Google serves published CSVs with CORS,
-        so nothing on the Apps Script side needs changing.
+        <b>Sessions</b> tab and paste each on its own line. (Pick the tab, not "Entire document" —
+        that will not give you CSV.) Google serves published CSVs with CORS, so nothing on the Apps
+        Script side needs changing.
         <br><br>
         Both tabs matter and they carry different halves of the picture: <b>retention</b> is only ever
         posted by homework, while <b>tab-switches</b> and the practice breakdown only come from
-        sessions. With one tab you get a real but partial read.
+        sessions. With one tab you get a real but partial read. The tabs are created on first use, so
+        a tab nobody has posted to yet will not exist.
         <br><br>
         Columns are matched by header name against what the backend writes —
         <code>Logged at, Student, Type, Day / Focus / Skills, Score, Total, Seconds, Raw payload</code>
@@ -123,7 +152,34 @@ window.addEventListener('DOMContentLoaded', () => {
   if (saved) { $('csvUrl').value = saved; load(saved); }
   $('saveBtn').onclick = () => { localStorage.setItem(URL_KEY, $('csvUrl').value.trim()); setStatus('Saved.'); };
   $('loadBtn').onclick = () => { const u = $('csvUrl').value.trim(); if (u){ localStorage.setItem(URL_KEY,u); load(u);} };
+  $('csvFile').onchange = e => loadFiles(e.target.files);
 });
+
+// Reading downloaded files is the private path, and the preferred one: the sheet names
+// minors and holds their scores, and "Publish to web" is an unlisted URL, not a private
+// one. Nothing here is uploaded — FileReader is local to the browser. The URL is not
+// remembered either, because there is nothing to remember.
+async function loadFiles(files){
+  const list = Array.from(files || []);
+  if(!list.length) return;
+  setStatus('Reading…');
+  const rows = [], failed = [];
+  await Promise.all(list.map(f => new Promise(res => {
+    const r = new FileReader();
+    r.onload  = () => { try{ rows.push(...parseCSV(String(r.result))); }catch(e){ failed.push(f.name); } res(); };
+    r.onerror = () => { failed.push(f.name); res(); };
+    r.readAsText(f);
+  })));
+  if(!rows.length){
+    $('output').innerHTML = '<div class="card empty">No rows found in ' + (failed.length ? 'those files.' : 'that file. Is it the CSV of a tab the app has posted to?') + '</div>';
+    setStatus(failed.length ? 'Could not read: ' + failed.join(', ') : '', failed.length > 0);
+    return;
+  }
+  render(rows);
+  setStatus('Loaded ' + rows.length + ' sessions from ' + (list.length - failed.length) + ' file'
+    + (list.length - failed.length !== 1 ? 's' : '') + ' · ' + new Date().toLocaleString()
+    + (failed.length ? ' · could not read ' + failed.join(', ') : ''), failed.length > 0);
+}
 
 function setStatus(msg, isErr){ const s=$('status'); s.textContent=msg; s.className = isErr ? 'err' : 'hint'; }
 

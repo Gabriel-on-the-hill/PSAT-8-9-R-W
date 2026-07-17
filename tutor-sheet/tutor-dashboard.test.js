@@ -186,6 +186,96 @@ const SESS_URL = 'http://sheet/sessions.csv';
   ok('and is never reported as 0% retained', !/0% kept/.test(h3));
   ok('the gap sentence stays silent on a thin sample', !/spacing problem/.test(h3));
 
+  // ── §8 · A student cannot open this page ──────────────────────────────────────
+  // This page lists every student's accuracy, retention, weakest skills and
+  // tab-switches. It is an assessment, and root AGENTS.md rule 6 says a student never
+  // reads one — about themselves or anyone else. It used to load the same gate as the
+  // app, whose passwords are the students' own first names, in a PUBLIC repo.
+  //
+  // The subtle half is the session flag: `mastery_unlocked` only ever meant "somebody
+  // typed a valid password", so a student who had unlocked the app walked into this
+  // page without being asked anything at all. The ROLE is what closes that.
+  section('8 · The tutor dashboard is tutor-only, session flag included');
+  const GATE = read('gate.js');
+
+  ok('the page declares GATE_REQUIRE', /GATE_REQUIRE\s*=\s*'tutor'/.test(RAW));
+  // Compare against the <script src> itself, not the string "gate.js" — the comment
+  // above the declaration names gate.js too, and matching that made this pass on a
+  // page where the flag was set too late to be read.
+  ok('and declares it BEFORE gate.js loads, or the gate reads it too late',
+     RAW.indexOf('GATE_REQUIRE') < RAW.indexOf('src="gate.js'));
+  ok('the tutor password is not a student first name',
+     !/'(gabe|maysa|faith|tutor)'\s*:/i.test(GATE.match(/TUTOR_HASHES\s*=\s*\{[^}]*\}/)[0]));
+
+  // The session must be seeded by a script INSIDE the document, ordered before gate.js.
+  // Seeding it from beforeParse silently did nothing, and every assertion here still
+  // "passed" — because an unseeded session gates too, for the wrong reason.
+  //
+  // And gate.js must be escaped before it is inlined: its own comments contain a
+  // literal </script> (the usage example). Inlined raw, that closes the tag early and
+  // the HTML parser turns the REST OF THE FILE — including the overlay's markup — into
+  // real DOM. The gate then looks mounted when it never ran, which is a false FAILURE
+  // here and would be a false PASS in any test asserting the overlay appears.
+  // Harmless on the real pages: they load it with <script src>, which never re-parses.
+  const INLINE_GATE = GATE.replace(/<\/script>/gi, '<\\/script>');
+  // The overlay is appended from the DOMContentLoaded handler, which has NOT run when
+  // the JSDOM constructor returns. Checking synchronously reports "no overlay" for
+  // every case — which reads as a pass on the two assertions that matter most here.
+  // So wait for the document to be ready, then one more tick for the handler itself.
+  async function gated(role, require) {
+    const seed = `sessionStorage.setItem('mastery_unlocked','1');`
+      + (role ? `sessionStorage.setItem('mastery_role','${role}');` : '');
+    const req = require ? `window.GATE_REQUIRE='${require}';` : '';
+    const w = new JSDOM(
+      `<!DOCTYPE html><html><head><script>${seed}${req}</script>` +
+      `<script>${INLINE_GATE}</script></head><body><p>secret</p></body></html>`,
+      { runScripts: 'dangerously', url: 'http://localhost/p.html' }).window;
+    await new Promise(res => {
+      if (w.document.readyState === 'loading') w.document.addEventListener('DOMContentLoaded', res, { once: true });
+      else res();
+    });
+    await new Promise(res => setTimeout(res, 0));
+    return w;
+  }
+  // If the escaping ever regresses, everything below silently measures the HTML parser
+  // instead of the gate. The tell: the tag closes at the </script> in gate.js's comment,
+  // so the remainder of the FILE lands in the document as text. If the body contains
+  // gate.js's own source, nothing below this line is testing what it claims to.
+  ok('gate.js inlines without its own </script> closing the tag early',
+     !/ACCEPTED_HASHES/.test((await gated('tutor', 'tutor')).document.body.textContent));
+  ok('the seed actually lands (or every check below is a false pass)',
+     (await gated('tutor', 'tutor')).sessionStorage.getItem('mastery_role') === 'tutor');
+  ok('an unlocked STUDENT session is still challenged',
+     !!(await gated('student', 'tutor')).document.getElementById('__gateInput'));
+  ok('an unlocked TUTOR session passes through',
+     !(await gated('tutor', 'tutor')).document.getElementById('__gateInput'));
+  ok('a session flag with no role at all is challenged',
+     !!(await gated(null, 'tutor')).document.getElementById('__gateInput'));
+  // The student pages must not have been broken in the process.
+  ok('a student is still let into the app itself',
+     !(await gated('student', null)).document.getElementById('__gateInput'));
+
+  // ── §9 · The private path ─────────────────────────────────────────────────────
+  // "Publish to web" is an unlisted URL, not a private one, and the sheet carries
+  // minors' names, scores and per-question history. Reading a downloaded file keeps all
+  // of that on the tutor's machine, so it is the recommended path — and therefore the
+  // one that must not rot. It has to reach the same render as the URL path, or the
+  // safe option becomes the worse option and nobody uses it.
+  section('9 · A downloaded CSV loads without publishing anything');
+  const w9 = build({});
+  const file = new w9.File([csv([HW_ROW, SESS_ROW])], 'Homework.csv', { type: 'text/csv' });
+  await w9.loadFiles([file]);
+  const h9 = w9.document.getElementById('output').innerHTML;
+  ok('the page offers a file input at all', !!w9.document.getElementById('csvFile'));
+  ok('rows render from a file, with no fetch involved', /TestStudent/.test(h9));
+  ok('retention survives the file path too', /50% kept \(1\/2\)/.test(h9));
+  ok('and the status says where it came from', /from 1 file/.test(w9.document.getElementById('status').textContent));
+  ok('an unreadable file is reported, not silently empty', await (async () => {
+    const bad = new w9.File([''], 'empty.csv', { type: 'text/csv' });
+    await w9.loadFiles([bad]);
+    return /No rows found/.test(w9.document.getElementById('output').innerHTML);
+  })());
+
   console.log('\n' + '─'.repeat(64));
   console.log(fail ? `${fail} ASSERTION${fail !== 1 ? 'S' : ''} FAILED (${pass} passed)` : `ALL ${pass} ASSERTIONS PASSED`);
   process.exit(fail ? 1 : 0);

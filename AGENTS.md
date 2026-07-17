@@ -40,6 +40,21 @@ parses the header row out of the checked-in script so that drift fails loudly.
 read retention with no redeploy and across the whole back-history. Anything the sheet has no column
 for is read from there.
 
+### The dashboard is tutor-only, and it is not a place to put secrets
+
+It lists every student's accuracy, retention, weakest skills and tab-switches — an assessment, and
+root rule 6 says a student never reads one, about themselves or anyone else. It declares
+`window.GATE_REQUIRE = 'tutor'` **before** `gate.js`; the gate then accepts only the tutor passphrase
+and, critically, re-prompts a session that is unlocked as a *student*. Before that, `mastery_unlocked`
+just meant "somebody typed a valid password", so a student who had opened the app walked straight in.
+
+**This gate is a deterrent, not security.** It is a public repo serving a static site: every hash in
+`gate.js` is readable, and the student passwords are their own first names. The real protection is
+that no student data is published — the dashboard ships with no data in it, and its preferred input
+is a CSV file the tutor downloads, which never leaves their machine. "Publish to web" produces an
+*unlisted* URL, not a private one. Do not put anything behind this gate that would harm someone if
+opened, and do not add a student's name or result to a file in this repo.
+
 ## Assigning homework
 
 **Edit `homework/assignments.js`. That is the only file.** The runner, the hub and the

@@ -231,8 +231,8 @@ the column, and the retention data was already in the sheet. It is now checked i
 the sister app lost its per-question predictions for months without one test going red, and how this
 file came to assert a fix that had never worked.
 
-**Verification, 17 Jul 2026** — all five suites green, 277 assertions:
-`assignments` 116 · `bank` 6 · `review-ladder` 51 · `homework-run` 73 · `tutor-dashboard` 31.
+**Verification, 17 Jul 2026** — all five suites green, 291 assertions:
+`assignments` 116 · `bank` 6 · `review-ladder` 51 · `homework-run` 73 · `tutor-dashboard` 45.
 Note that they **skip silently without jsdom**, and a `SKIP` reads a great deal like a pass in a
 terminal. Install it before you believe them — on 17 Jul all five had been skipping while this file
 asserted they were green.
@@ -247,12 +247,25 @@ existing keys, and a rename without a migration wipes every ledger silently.
 
 ## What this leaves for the tutor to notice
 
-**Nothing is required to make the dashboard work — but publish BOTH tabs to it.** The backend writes
-homework to a `Homework` tab and practice/mocks to a `Sessions` tab, and one published CSV URL is one
-tab. The dashboard now takes a list (one URL per line). It matters which you give it, because the two
-tabs carry different halves of the picture: **retention is only ever posted by homework**, while
-tab-switches and the practice breakdown only come from sessions. One tab gives a real but partial
-read — and a partial read that looks complete is the thing this file keeps having to apologise for.
+**The dashboard is at `tutor-dashboard.html`, and nothing links to it** — it was built and never put
+in any nav, which is why it went unnoticed long enough to be wrong twice. Open it directly, locally or
+at the Pages URL.
+
+**Feed it a downloaded CSV, not a published one.** `File → Download → CSV`, once per tab, then pick
+the files. The backend writes homework to a `Homework` tab and practice/mocks to a `Sessions` tab, and
+both matter: **retention is only ever posted by homework**, while tab-switches and the practice
+breakdown only come from sessions. One tab gives a real but partial read — and a partial read that
+looks complete is the thing this file keeps having to apologise for.
+
+The URL path still works and auto-refreshes, but **"Publish to web" is an unlisted URL, not a private
+one**, and that sheet carries minors' names, scores and per-question history. The file path was added
+17 Jul 2026 so the convenient option is not the only option. Nothing is uploaded; the read is local.
+
+**The dashboard is tutor-only as of 17 Jul 2026** (`GATE_REQUIRE = 'tutor'`). It previously loaded the
+same gate as the app, whose passwords are the students' own first names — so any student could open a
+page showing every student's record, which is rule 6 exactly. Note what this gate is: a **deterrent**.
+The repo is public, so every hash in `gate.js` is readable. The protection that actually holds is that
+no student data is published in the first place.
 
 Retention starts at `—` and stays there for days: it can only count questions the ladder brings
 *back*, so it earns its first data point one rung after a question is first answered. **An empty
