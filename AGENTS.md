@@ -49,7 +49,15 @@ and, critically, re-prompts a session that is unlocked as a *student*. Before th
 just meant "somebody typed a valid password", so a student who had opened the app walked straight in.
 
 **This gate is a deterrent, not security.** It is a public repo serving a static site: every hash in
-`gate.js` is readable, and the student passwords are their own first names. The real protection is
+`gate.js` is readable, and the student passwords are their own first names.
+
+**Which makes the gate names the complete list of personal names this repo may contain.** Never add
+another — not in code, a comment, a doc, a test fixture, or a **commit message**, which is as public
+as the code and cannot be taken back. Never explain where a gate name came from, and do not
+enumerate who the others are while discussing one: in the sister app at least one gate name is
+deliberately *not* a real one, and subtracting the named from a known list is how the unnamed one
+gets identified. The same discipline belongs here. Parts of both histories predate this rule and are
+not precedent — the fix is to stop repeating a name, never to add a note pointing at it. The real protection is
 that no student data is published — the dashboard ships with no data in it, and its preferred input
 is a CSV file the tutor downloads, which never leaves their machine. "Publish to web" produces an
 *unlisted* URL, not a private one. Do not put anything behind this gate that would harm someone if
