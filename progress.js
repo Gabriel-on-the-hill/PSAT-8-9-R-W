@@ -1,4 +1,4 @@
-// ── Wayne's SAT — shared progress ledger ──────────────────────────
+// ── PSAT 8/9 R&W — shared progress ledger ─────────────────────────
 // Storage key: 'psat89_progress'
 // Shape: { [questionId]: { correct: number, wrong: number, lastSeen: number } }
 
@@ -306,7 +306,7 @@ function mergeProgress(incoming) {
     _saveProgress(existing);
 }
 
-// Clear the entire ledger (use when Wayne wants a fresh start).
+// Clear the entire ledger (use when a student wants a fresh start).
 function resetLedger() {
     localStorage.removeItem(('psat89_progress_' + _hwUser()));
     try { localStorage.removeItem(('psat89_trap_stats_' + _hwUser())); } catch (e) {}

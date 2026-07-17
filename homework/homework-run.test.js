@@ -37,7 +37,7 @@ let JSDOM;
 try { ({ JSDOM } = require('jsdom')); }
 catch (e) { console.log('SKIP — jsdom not installed (see header).'); process.exit(0); }
 
-// ── The only lines that differ between this app and Wayne's MasteryApp. ───────
+// ── The only lines that differ between this app and the SAT R&W app. ──────────
 // The two apps run the same homework engine from separate files. If you change one
 // runner, change the other, and run BOTH suites. See AGENTS.md.
 const CFG = {

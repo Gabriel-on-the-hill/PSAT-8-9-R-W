@@ -240,7 +240,8 @@ asserted they were green.
 ## A note on the storage namespace
 
 Nothing to do here. This app has always used the app-level `psat89_` prefix. The sister app's keys
-were prefixed `wayne_` — a student's name, because of the folder it happens to sit in — and were
+carried a legacy `wayne_` prefix, inherited from the directory that app was first built in and
+belonging to nobody. They were
 renamed to `satrw_` on 16 Jul 2026 behind a one-shot migration. If you ever rename these, read
 `SAT GUIDES/WAYNE/MasteryApp/ns-migrate.js` first: the risk is never the rename, it is the students'
 existing keys, and a rename without a migration wipes every ledger silently.
