@@ -32,70 +32,84 @@
 // ══════════════════════════════════════════════════════════════════
 
 const HOMEWORK = {
-  // Maysa — week of 7/11. Last week's 3 big sets went undone: she opened them late,
-  // answered one question, and ran out of time. So this week is six short sets, not
-  // three long ones — a set she finishes teaches more than a set she abandons.
+  // Maysa — week of 17 Jul (class Thu 23 Jul; a full-length Bluebook mock also runs this
+  // window, 18 Jul → early next week). Back-dated one day so BOTH untimed rebuild sets open
+  // on the 18th and the Day-6 rehearsal lands the 22nd, before class. Six short sets — she
+  // abandons long ones.
   //
-  // Where she is: WiC + Rhetorical Synthesis mastered at Hard. Info & Ideas strong at
-  // Medium. Text Structure & Purpose taught 7/10 but only ever practised untimed.
-  // Command of Evidence — Quantitative assigned 7/8 and never attempted.
+  // Where she is, from the 17 Jul class + homework scores (live per-question data is in
+  // progress.html; these are the reported set scores):
+  //   • Text Structure & Purpose — 2/6. Re-taught 17 Jul. Weakest; rebuild untimed → timed.
+  //   • Words in Context — 3/6 at Hard (slipped from "mastered"). Re-taught 17 Jul; rebuild
+  //     at Medium/Hard, NOT Hard-only.
+  //   • Command of Evidence — Quantitative — 6/6 at Medium, her first-ever attempt. Proven;
+  //     push up and fold into the mix.
+  //   • Information & Ideas (Central / Inferences / CoE-Textual) — 4/6 at Hard → ease to Med/Hard.
+  //   • Rhetorical Synthesis — held at Hard in June; maintenance.
+  // Her live constraint, reaffirmed 17 Jul: she chooses before finishing the passage and runs
+  // out of time. So rebuild the habit UNTIMED first, then reintroduce the clock with cushion
+  // and ramp to real pace — don't start there.
   //
-  // minutes:0 = untimed, and the runner then asks her to TYPE her prediction — the full
-  // scaffold, for skills she is still learning. minutes>0 = timed, and the runner shows a
-  // one-click commit gate instead: same predict-first habit, but she can't type on test
-  // day and typing would corrupt the timing. New skill → untimed. Known skill → clock.
+  // minutes:0 = untimed, and the runner asks her to TYPE her prediction — the full scaffold,
+  // for the two skills she is rebuilding. minutes>0 = timed, one-click commit gate instead:
+  // same predict-first habit, but she can't type on test day and typing corrupts the timing.
   //
-  // Days 4 and 6 deliberately list Medium *and* Hard: prioritizePool() draws missed
-  // questions first, but only from a pool matching the set's skill AND difficulty. Keeping
-  // Medium in scope is what lets this week's misses come back around before class.
+  // Difficulty is per-skill, aimed at ~85%: the two crashed skills drop to a level she can
+  // rebuild from; Quant is pushed up; Info & Ideas eased to a mix. Listing Medium *and* Hard
+  // on a skill lets prioritizePool() resurface last week's misses at the level she missed them.
   //
-  // Pace: PSAT 8/9 is 71 sec/question (32 min ÷ 27 q). Day 3-4 give her ~80s of cushion;
-  // Days 5-6 are at the real thing.
+  // Pace ramp: untimed → untimed → 90s → 80s → 70s → real pace (71s) by the Day-6 rehearsal.
+  //
+  // REVIEW UN-FROZEN: last week's plan-level `review: 0` is gone, so every day serves the
+  // default 2 due questions pulled from the whole bank. Counts on Days 3–5 are authored as
+  // 4 new + 2 review; Day 6 is the fuller 6-skill rehearsal (6 new + 2 review). Days 1–2 keep
+  // a day-level `review: 0` — their whole job is the untimed rebuild of one skill, and a typed
+  // cross-skill review question does not belong in that set. NOTE: 'Maysa' has been removed
+  // from the FROZEN list in review-ladder.test.js, or the freeze-guard test fails.
   "Maysa": {
-    title: "Predict-first: new skills untimed → known skills on the clock",
-    start: "2026-07-11",      // YYYY-MM-DD: the day Set 1 becomes available
+    title: "Rebuild the two weak skills untimed, then earn the clock back",
+    start: "2026-07-17",      // back-dated 1 day: both untimed sets open the 18th, Day 6 lands the 22nd
     unlock: "cumulative",     // "cumulative" = missed days stay open · "strict" = one at a time
-    review: 0,                // ← FROZEN. See the note at the top of the file.
     days: [
-      { n:1, focus:"Text Structure & Purpose (Medium)",
+      { n:1, focus:"Text Structure & Purpose (Medium) — rebuild", review:0,
         skills:["Text Structure and Purpose"], diffs:["Medium"], count:6, minutes:0,
-        tip:"Straight from Friday's class, while it's fresh. No clock — type your prediction every time. Ask what the text is DOING, not just what it says, then find the choice that matches." },
-      { n:2, focus:"Command of Evidence — Quantitative (new)",
-        skills:["Command of Evidence — Quantitative"], diffs:["Medium"], count:6, minutes:0,
-        tip:"You haven't attempted this one yet. Read the figure first — axes, units, direction of the trend — and predict what it shows BEFORE the choices. Then check the data supports the whole statement, not half of it." },
-      // From here on the days use `sections` — an exact draw per skill. A plain
+        tip:"Straight from Friday. No clock — type your prediction every time. Ask what the text is DOING, not just what it says: overall structure is the sequence of ideas; purpose is the job of the underlined part. Predict, then find the choice that matches." },
+      { n:2, focus:"Words in Context (Medium/Hard) — rebuild", review:0,
+        skills:["Words in Context"], diffs:["Medium","Hard"], count:6, minutes:0,
+        tip:"No clock — cover the word and predict your own before you look. Use the sentence around it, not the word's most familiar meaning. Type your prediction, then match the closest choice and cut the rest." },
+      // From here the days use `sections` — an exact draw per skill. A plain
       // skills/diffs/count day pulls from one ordered pool and takes the top N, which
       // clusters: a 7-question "mixed" set came out as 7 questions of a single skill.
       // Sections are the only way to guarantee a set is actually mixed.
-      { n:3, focus:"Information & Ideas (Hard)", minutes:8,
+      { n:3, focus:"Information & Ideas (Medium/Hard) — first on the clock, generous", minutes:9,
         sections:[
-          { skills:["Central Ideas and Details"],        diffs:["Hard"], count:2 },
-          { skills:["Inferences"],                       diffs:["Hard"], count:2 },
-          { skills:["Command of Evidence — Textual"],    diffs:["Hard"], count:2 },
+          { skills:["Central Ideas and Details"],        diffs:["Medium","Hard"], count:2 },
+          { skills:["Inferences"],                       diffs:["Medium","Hard"], count:1 },
+          { skills:["Command of Evidence — Textual"],    diffs:["Medium","Hard"], count:1 },
         ],
-        tip:"First set on the clock. Read the whole text, commit to your prediction, then look. Your misses come from choosing before you've finished reading — the timer is not the reason to skim." },
-      { n:4, focus:"The two new skills, stepped up", minutes:8,
+        tip:"First set back on the clock — but you've got room, ~90 seconds a question. Read the WHOLE passage before you choose; your misses come from picking early, not from the timer. Predict, then look." },
+      { n:4, focus:"The two rebuilt skills, on the clock", minutes:8,
         sections:[
-          { skills:["Text Structure and Purpose"],           diffs:["Medium","Hard"], count:3 },
-          { skills:["Command of Evidence — Quantitative"],   diffs:["Medium","Hard"], count:3 },
+          { skills:["Text Structure and Purpose"],           diffs:["Medium"],        count:2 },
+          { skills:["Words in Context"],                     diffs:["Medium","Hard"], count:2 },
         ],
-        tip:"Days 1 and 2 at a harder level — and anything you missed then will come back here. Same habit under time: read fully, predict, then choose." },
-      { n:5, focus:"Words in Context + Rhetorical Synthesis (Hard)", minutes:7,
+        tip:"Friday's two skills, now under time. Same habit: read fully, predict, then choose. Anything you missed on Days 1–2 comes back here — your chance to get it right." },
+      { n:5, focus:"Strengths at pace + quantitative pushed up", minutes:7,
         sections:[
-          { skills:["Words in Context"],       diffs:["Hard"], count:3 },
-          { skills:["Rhetorical Synthesis"],   diffs:["Hard"], count:3 },
+          { skills:["Rhetorical Synthesis"],                 diffs:["Medium","Hard"], count:2 },
+          { skills:["Command of Evidence — Quantitative"],   diffs:["Medium","Hard"], count:2 },
         ],
-        tip:"Your two strongest skills, now at full PSAT pace — 71 seconds a question. Watch the traps: the familiar meaning of the word, and the choice that's true but doesn't serve the goal." },
-      { n:6, focus:"Mixed — everything, on the clock", minutes:8,
+        tip:"Your strong skills at near-real pace. Synthesis: name the goal first, then the option that serves it — skip the one that's true but off-goal. Charts: read the axes and units, predict the trend, check the data backs the WHOLE statement." },
+      { n:6, focus:"Mixed — everything, real PSAT pace", minutes:9,
         sections:[
+          { skills:["Text Structure and Purpose"],           diffs:["Medium"],        count:1 },
           { skills:["Words in Context"],                     diffs:["Medium","Hard"], count:1 },
           { skills:["Rhetorical Synthesis"],                 diffs:["Medium","Hard"], count:1 },
           { skills:["Inferences"],                           diffs:["Medium","Hard"], count:1 },
-          { skills:["Central Ideas and Details"],            diffs:["Medium","Hard"], count:1 },
-          { skills:["Text Structure and Purpose"],           diffs:["Medium","Hard"], count:2 },
           { skills:["Command of Evidence — Quantitative"],   diffs:["Medium","Hard"], count:1 },
+          { skills:["Central Ideas and Details"],            diffs:["Medium","Hard"], count:1 },
         ],
-        tip:"Dress rehearsal for class. Every skill mixed, real pace, and this week's misses folded back in. One habit, every single question: read it all, predict, then choose." },
+        tip:"Dress rehearsal for class — every skill mixed, real PSAT pace. One habit on every single question: read it all, predict, then choose. This week's misses are folded in." },
     ]
   },
 
@@ -208,7 +222,42 @@ function hwParseDate(s) {
   return isNaN(d) ? null : new Date(d.getFullYear(), d.getMonth(), d.getDate());
 }
 
+// Is set `n` open to this student yet?
+//
+// THE DEFAULT IS `sequential`: set 1 is always open, and each later set opens
+// when the one before it is SUBMITTED. A set is earned, not waited for. This
+// replaced `cumulative` (one per calendar day) because a student who sat down
+// on a free Saturday could only ever reach that day's set, and a student who
+// fell behind was met by a wall of everything at once.
+//
+// The trade sequential makes is that it stops enforcing SPACING — nothing now
+// prevents the whole week in one evening, which is the one thing the design
+// cannot afford. So a sequential plan should also carry `through`, and the hub
+// shows the student the window the sets are meant to be spread across. The
+// pacing is asked for honestly rather than imposed by a lock.
+//
+// If localStorage cannot be read we OPEN the set rather than strand the
+// student. Broken storage must never be able to lock someone out of homework.
+//
+// Plans already running under `cumulative` stay on it until they are next
+// re-authored — same rule as the review freeze. Do not flip a live plan
+// mid-week; it changes what the student sees halfway through.
+function hwDayOpen(student, plan, n) {
+  if (!plan) return n === 1;
+  if (plan.unlock === 'sequential') {
+    if (n <= 1) return true;
+    try {
+      for (var i = 1; i < n; i++) {
+        if (localStorage.getItem('psat89_hw_' + student + '_' + plan.start + '_' + i) !== '1') return false;
+      }
+      return true;
+    } catch (e) { return true; }
+  }
+  return n <= hwDaysAvailable(plan.start);
+}
+
 // Days available so far, given a start date (cumulative unlock by calendar day).
+// Only `unlock: "cumulative"` plans use this now — see hwDayOpen above.
 function hwDaysAvailable(startStr) {
   var start = hwParseDate(startStr);
   if (!start) return 1;   // if the date is missing/odd, open Day 1 rather than lock everything
@@ -270,4 +319,4 @@ function hwLoadPlan(student, cb) {
   document.body.appendChild(sc);
 }
 
-if (typeof window !== "undefined") { window.HOMEWORK = HOMEWORK; window.hwDaysAvailable = hwDaysAvailable; window.hwLoadPlan = hwLoadPlan; window.hwParseDate = hwParseDate; window.hwNormalizeSheetPlan = hwNormalizeSheetPlan; }
+if (typeof window !== "undefined") { window.HOMEWORK = HOMEWORK; window.hwDaysAvailable = hwDaysAvailable; window.hwDayOpen = hwDayOpen; window.hwLoadPlan = hwLoadPlan; window.hwParseDate = hwParseDate; window.hwNormalizeSheetPlan = hwNormalizeSheetPlan; }
