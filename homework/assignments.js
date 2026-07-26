@@ -113,63 +113,52 @@ const HOMEWORK = {
     ]
   },
 
-  // Faith — week of 15–20 July (class Tue 21 July). Six short sets. Review dose
-  // UN-FROZEN: the plan-level `review: 0` is gone, so every day gets the default 2,
-  // and the counts below are authored as 4 new + 2 review. Day 1 keeps a day-level
-  // `review: 0` because its job is the full first dose of a brand-new skill.
-  // NOTE: also remove 'Faith' from the FROZEN list in review-ladder.test.js, or the
-  // freeze-guard test fails.
+  // Faith — bridge week of 26 Jul → follow-up class Tue 28 July. FOUR short sets,
+  // ALL untimed (minutes:0 → the runner makes her TYPE the reasoning). Sequential
+  // unlock (day N opens when N-1 is done). Review dose is the default 2; Day 1 keeps
+  // a day-level `review: 0` because its job is the full first dose of a brand-new
+  // skill. Counts are authored around the dose: Days 2-4 are 4 new + 2 review.
   //
-  // Where she is, from the 13–14 July homework + 14 July session (independent data):
-  //   • CoE-Textual, CoE-Quantitative, Inferences — strong, incl. ~75–80% at HARD.
-  //   • Central Ideas at HARD is the one soft spot (0/2, small n) — keep it a
-  //     Medium/Hard MIX, never Hard-only.
-  //   • Rhetorical Synthesis — taught 14 July, so it finally enters homework. Method
-  //     she was taught: GOAL FIRST from the keywords (difference, similarity…); the
-  //     notes are a tiebreaker only. Never tell her to "read the passage first" on RS.
-  //   • A "time-on-text" theory did NOT hold up: she is 15/18 correct at ≤6s on the
-  //     passage. Don't coach reading time; difficulty on specific skills is the driver.
-  //
-  // Untimed (minutes:0) → the runner makes her TYPE the goal/claim. New or shaky skill
-  // untimed first (Days 1–2), then on the clock, ramping 90s → 80s → ~70s (real PSAT
-  // pace) by the Day 6 rehearsal. RS stays Medium this week; push it to Hard in the
-  // 21 July class, then assign Hard RS the week after.
+  // Shape only. The student data behind these choices is TUTOR-ONLY and lives in the
+  // gitignored LEDGER — it must never be written into this public, student-downloaded
+  // file (root rule: no assessment of a student where the student can read it).
+  //   • Boundaries was introduced in the 24 July makeup and is the newest skill, so it
+  //     leads (Days 1-2) and returns in the Day-4 mix. New skill → untimed first (AS-5):
+  //     every set this week is untimed, and the clock returns after the 28th.
+  //   • Rhetorical Synthesis was reinforced at Hard on 24 July, so it enters homework
+  //     here (a Day-3 block + a Day-4 rep). Method taught: GOAL FIRST from the keywords
+  //     (difference, similarity, emphasize…); the notes are a tiebreaker only. Never
+  //     tell her to "read the passage first" on RS.
+  //   • Day 4 interleaves Boundaries + RS Hard + Central Ideas + Inferences. Keep
+  //     Central Ideas a Medium/Hard MIX, never Hard-only.
+  //   • Four sets, not six: short sets get finished, long ones get abandoned, and with
+  //     a class ~3 days out under sequential unlock (no calendar pacing) that matters.
+  //     Timed work and the next Craft skill are the post-28th plan's job.
+  //   • The bank's four mis-split "unanswerable" items were repaired 26 July from the
+  //     source PDFs; homework-run.html keeps a (now empty) quarantine hook and
+  //     bank.test.js guards against any recurrence.
   "Faith": {
     title: "One habit: name the task, then reject anything merely true",
-    start: "2026-07-15",
-    unlock: "cumulative",
+    start: "2026-07-26",
+    unlock: "sequential",
     days: [
-      { n:1, focus:"Rhetorical Synthesis (Medium) — new", review:0,
-        skills:["Rhetorical Synthesis"], diffs:["Medium"], count:6, minutes:0,
-        tip:"Synthesis — goal first. Name what the sentence must DO from the keywords (difference, similarity, emphasize). → Type that goal, then pick the one option that does it and cut the rest. → Two options fit? Now check the notes." },
-      { n:2, focus:"Inferences + Central Ideas (untimed)", minutes:0,
+      { n:1, focus:"Boundaries (Easy → Medium) — new", review:0,
+        skills:["Boundaries"], diffs:["Easy","Medium"], count:6, minutes:0,
+        tip:"New skill: boundaries. For each blank, first ask — is what's on EACH side a complete sentence? → Two complete sentences → period or semicolon. One complete + a fragment → comma, colon, or dash. → Type WHY before you pick, don't go by ear." },
+      { n:2, focus:"Boundaries (Medium) — untimed", minutes:0,
+        skills:["Boundaries"], diffs:["Medium"], count:4,
+        tip:"Boundaries again, no clock. → Test each side: could it stand alone as a sentence? → Then let the rule pick the punctuation, not your ear. → Classic trap: two full sentences joined by only a comma (a comma splice)." },
+      { n:3, focus:"Rhetorical Synthesis (Hard) — reinforced", minutes:0,
+        skills:["Rhetorical Synthesis"], diffs:["Hard"], count:4,
+        tip:"Synthesis with harder notes — same method. → Name the GOAL from the keywords first (difference, emphasize, support…). → Type the goal, then keep only the option that does THAT. → Every option may be true; reject the ones that are true but off-goal." },
+      { n:4, focus:"Mixed — integrate (untimed)", minutes:0,
         sections:[
-          { skills:["Central Ideas and Details"], diffs:["Medium","Hard"], count:2 },
-          { skills:["Inferences"],                diffs:["Medium","Hard"], count:2 },
+          { skills:["Boundaries"],                diffs:["Medium","Hard"], count:1 },
+          { skills:["Rhetorical Synthesis"],      diffs:["Hard"],          count:1 },
+          { skills:["Central Ideas and Details"], diffs:["Medium","Hard"], count:1 },
+          { skills:["Inferences"],                diffs:["Medium","Hard"], count:1 },
         ],
-        tip:"No clock — read the whole passage, then type your prediction before the choices. → Inference: stay inside what the text actually says. → Main idea: cover the whole passage, not one line." },
-      { n:3, focus:"Command of Evidence — Textual", minutes:8,
-        skills:["Command of Evidence — Textual"], diffs:["Medium","Hard"], count:4,
-        tip:"Name the claim in your own words first. → Match each quote to the WHOLE claim, not just part of it. → Trap: a quote can be true and still not back that claim." },
-      { n:4, focus:"Rhetorical Synthesis (Medium) — timed", minutes:9,
-        skills:["Rhetorical Synthesis"], diffs:["Medium"], count:4,
-        tip:"Synthesis on the clock. → Goal first, from the keywords, then the option that serves it. → Two fit? Check the notes. → Trap: accurate, but answers a different goal." },
-      { n:5, focus:"Information & Ideas — mixed", minutes:8,
-        sections:[
-          { skills:["Command of Evidence — Textual"],      diffs:["Medium","Hard"], count:1 },
-          { skills:["Command of Evidence — Quantitative"], diffs:["Medium","Hard"], count:1 },
-          { skills:["Inferences"],                         diffs:["Medium","Hard"], count:1 },
-          { skills:["Central Ideas and Details"],          diffs:["Medium","Hard"], count:1 },
-        ],
-        tip:"Mixed Information & Ideas, timed. → Read the passage, predict, then choose. → One rule: name the task, then reject any option that is true but off-task." },
-      { n:6, focus:"Mixed — dress rehearsal", minutes:7,
-        sections:[
-          { skills:["Rhetorical Synthesis"],          diffs:["Medium"],        count:1 },
-          { skills:["Command of Evidence — Textual"], diffs:["Medium","Hard"], count:1 },
-          { skills:["Inferences"],                    diffs:["Medium","Hard"], count:1 },
-          { skills:["Central Ideas and Details"],     diffs:["Medium","Hard"], count:1 },
-        ],
-        tip:"Dress rehearsal — full PSAT pace. → Every question: name the task, predict, choose. → Reject anything merely true." },
+        tip:"A mix of everything, no clock. → One habit on every question: name the exact task, predict, then choose. → Reject any option that is accurate but doesn't do the job the question actually asked." },
     ]
   },
 
