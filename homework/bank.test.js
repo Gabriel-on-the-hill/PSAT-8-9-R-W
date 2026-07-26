@@ -66,6 +66,15 @@ const QUANT = 'Command of Evidence — Quantitative';
 const asksAboutData = q => /\b(?:data|information)\b[^.?]*\bfrom the\s+(?:graph|table|chart|figure)|\bdata in the\s+(?:graph|table|chart|figure)|\baccording to the\s+(?:graph|table|chart|figure)/i
     .test(q.question || '');
 
+// The extractor sometimes reads a species abbreviation or an initial at the START
+// of a choice ("C. olivacea", "A. thaliana", "E. coli", "B. Johnson") as an
+// "A./B./C." option LABEL, and re-cuts the four real choices into four fragments.
+// The signature: the leading labels across the four options are neither absent nor
+// a clean A,B,C,D. Such an item is unanswerable and its answer key points at a
+// fragment. This detects the bug on ANY future rebuild, not just today's four ids.
+const labelSeq = q => (q.options || []).map(o => { const m = String(o).match(/^([A-D])[.)]\s/); return m ? m[1] : '·'; });
+const cleanLabels = q => { const s = labelSeq(q).join(''); return s === '····' || s === 'ABCD'; };
+
 section('The bank loaded');
 ok('there are questions', QB.length > 0, `${QB.length} questions`);
 ok('every question has a skill', QB.every(q => !!q.skill));
@@ -98,6 +107,25 @@ section('The Quantitative pool can actually support a homework set');
     ok('Quantitative has a workable pool at every difficulty',
         by('Easy') >= 4 && by('Medium') >= 4 && by('Hard') >= 4,
         'too thin to draw a homework section from — check the classifier in parse_new_banks.py');
+}
+
+section('Malformed option-label items are quarantined from the homework draw');
+{
+    // homework-run.html filters QB by an HW_QUARANTINE id-set before any draw.
+    // Property under test: every item with the mis-split-label signature is in
+    // that set, so none can be served. Repairing an item (labels become clean)
+    // lets it leave the quarantine and this test still passes — repair, then
+    // delete the id. See homework-run.html and the 26 Jul ledger note.
+    const runSrc = read('homework-run.html');
+    const qm = runSrc.match(/HW_QUARANTINE\s*=\s*\{([^}]*)\}/);
+    const quarantined = new Set((qm ? qm[1].match(/[0-9a-f]{6,}/g) : null) || []);
+    const corrupt = QB.filter(q => !cleanLabels(q));
+    console.log(`      corrupt in bank: ${corrupt.map(q => q.id).join(', ') || 'none'}`);
+    console.log(`      quarantined:     ${[...quarantined].join(', ') || 'none'}`);
+    const servable = corrupt.filter(q => !quarantined.has(q.id));
+    ok('no item with mis-ordered A/B/C/D option labels can reach the draw',
+        servable.length === 0,
+        servable.map(q => `${q.id} [${q.skill} · ${q.difficulty}] labels=${labelSeq(q).join('/')}`).join('\n      '));
 }
 
 console.log('\n' + '─'.repeat(64));

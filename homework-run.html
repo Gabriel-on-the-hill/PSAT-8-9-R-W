@@ -146,6 +146,24 @@
     typeof questionBank_EOI!=='undefined'?questionBank_EOI:[],
     typeof questionBank_II!=='undefined'?questionBank_II:[],
     typeof questionBank_CON!=='undefined'?questionBank_CON:[]);
+
+  // ── Quarantine: unanswerable items (enforcement point) ──────────────────────
+  // When the PDF extractor reads a species abbreviation or an initial at the START
+  // of a choice — "C. olivacea", "A. thaliana", "E. coli", "B. Johnson" — as an
+  // "A./B./C." option label, it re-cuts the four real choices into fragments and the
+  // answer key ends up pointing at a fragment. Such an item is unanswerable, and a
+  // wrong "miss" also knocks the skill down a rung in progress.js on false evidence.
+  // List any such id here to drop it from EVERY draw (sections, calibration, review).
+  //
+  // The four found on 26 Jul 2026 (e4b051ed, 8dcc0b25, f2bc29cb, a7395620) were
+  // REPAIRED the same day from the source PDFs (R&W Medium/Hard.pdf), so the list is
+  // empty. bank.test.js re-derives the corruption signature and fails if any live
+  // item carries it and is NOT listed here — so this stays the place to exclude a
+  // future regression. Repair from the PDFs; never reconstruct options from the
+  // explanation text.
+  var HW_QUARANTINE = {};
+  QB = QB.filter(function(q){ return q && !HW_QUARANTINE[q.id]; });
+
   function byId(id){ for(var i=0;i<QB.length;i++) if(QB[i].id===id) return QB[i]; return null; }
 
   // ── The record of what she actually did. This is what makes review possible:

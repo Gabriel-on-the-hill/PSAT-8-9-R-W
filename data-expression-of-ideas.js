@@ -367,10 +367,10 @@ const questionBank_EOI = [
     "passage": "While researching a topic, a student has taken the following notes:\n\nCerthidea olivacea is a perching bird that can be found on the Galápagos Island of Pinzón. Creagrus furcatus is a seabird that can be found on the Galápagos Island of Darwin. Conservation organizations evaluate the risk that species will become extinct in the near future. C. olivacea faces a high risk of extinction. C. furcatus faces little risk of becoming extinct in the near future.\n\nThe student wants to compare the extinction risk faced by C. olivacea with that faced by C. furcatus.",
     "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
     "options": [
-      "A. According to conservation organizations,",
-      "C. olivacea has a higher risk of becoming extinct in the near future than",
-      "C. furcatus.",
-      "B. C. furcatus faces a high risk of extinction, while"
+      "A. According to conservation organizations, C. olivacea has a higher risk of becoming extinct in the near future than C. furcatus.",
+      "B. C. furcatus faces a high risk of extinction, while C. olivacea faces little risk of becoming extinct in the near future.",
+      "C. Conservation organizations have evaluated both C. furcatus’s and C. olivacea’s risk of becoming extinct in the near future.",
+      "D. C. olivacea is a perching bird that faces a high risk of extinction."
     ],
     "answer": "A",
     "explanation": "Choice A is the best answer. The sentence compares the extinction risks of the two species, noting that C. olivacea has a higher risk of becoming extinct in the near future than C. furcatus.\n\nChoice B is incorrect. While the sentence does compare the extinction risks of the two species, it misrepresents information from the notes; C. olivacea faces a higher risk of becoming extinct in the near future than C. furcatus, not the other way around. Choice C is incorrect. While the sentence mentions that conservation organizations have evaluated both species for extinction risk, it doesn’t compare the extinction risks of the two species. Choice D is incorrect. While the sentence states that C. olivacea faces a high risk of extinction, it doesn’t mention C. furcatus or compare the extinction risks of the two species."
@@ -1072,10 +1072,10 @@ const questionBank_EOI = [
     "passage": "While researching a topic, a student has taken the following notes:\n\nThe National Congress of American Indians (NCAI) was founded in 1944 by representatives of fifty tribal governments. The NCAI was created to protect the sovereignty of Indigenous tribes. Napoleon B. Johnson (Cherokee) was the NCAI’s first president. In 1975, the US Congress passed the Indian Self-Determination and Education Assistance Act (Public Law 96-638). This legislation formally acknowledged tribes’ right to self-governance. The advocacy of the NCAI was a key factor in the law’s passing.\n\nThe student wants to identify an accomplishment of the NCAI.",
     "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
     "options": [
-      "A. The NCAI, founded by representatives of fifty tribal governments, had Napoleon",
-      "B. Johnson (Cherokee) as its first president.",
+      "A. The NCAI, founded by representatives of fifty tribal governments, had Napoleon B. Johnson (Cherokee) as its first president.",
       "B. Founded in 1944, the NCAI was created by representatives of tribal governments from fifty sovereign Indigenous tribes.",
-      "C. The NCAI’s advocacy was key to the passing of Public Law 96-638, legislation formally acknowledging Indigenous tribes’ right to self- governance."
+      "C. The NCAI’s advocacy was key to the passing of Public Law 96-638, legislation formally acknowledging Indigenous tribes’ right to self-governance.",
+      "D. In 1975, the NCAI passed the Indian Self-Determination and Education Assistance Act, which was created to protect the sovereignty of Indigenous tribes."
     ],
     "answer": "C",
     "explanation": "Choice C is the best answer. The sentence directly identifies an accomplishment of the NCAI: that its advocacy was key to the passing of Public Law 96-638, which formally acknowledged Indigenous tribes’ right to self-governance.\n\nChoice A is incorrect. The sentence provides information about the NCAI’s founding and its first president, but it doesn’t identify an accomplishment of the organization. Choice B is incorrect. The sentence describes the NCAI’s founding, but it doesn’t identify an accomplishment of the organization. Choice D is incorrect. The sentence misrepresents the information in the notes: the US Congress, not the NCAI, passed the Indian Self-Determination and Education Assistance Act."
