@@ -72,7 +72,7 @@ function restoreSession(state) {
     currentQuestionIndex = Math.min(state.index, activeQuestions.length - 1);
     score                = state.score          || 0;
     secondsElapsed       = state.secondsElapsed || 0;
-    userMode             = state.mode           || 'assisted';
+    userMode             = state.mode           || 'standard';
     timerMode            = state.timerMode      || 'off';
     countdownTotal       = state.countdownTotal || 0;
     countdownRemaining   = state.countdownRemaining != null

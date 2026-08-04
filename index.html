@@ -271,8 +271,14 @@
             <div class="setup-section">
                 <h3>Mode</h3>
                 <select id="setupModeSelect">
-                    <option value="assisted">Assisted — strategy hints + predict before choices</option>
+                    <!-- Standard is FIRST on purpose: the first <option> is what a fresh page
+                         selects, and that is the app's real default. Assisted puts a strategy
+                         hint on screen and, on Rhetorical Synthesis, highlights the writing goal
+                         inside the question — which is the step the student is meant to perform.
+                         It is right while a skill is brand new and wrong everywhere else, because
+                         accuracy measured with it on is not accuracy. Choose it deliberately. -->
                     <option value="standard">Standard — straight to the choices</option>
+                    <option value="assisted">Assisted — strategy hints + predict before choices</option>
                     <option value="exam">Exam — no hints or feedback; score &amp; review at the end</option>
                 </select>
             </div>
@@ -490,8 +496,8 @@
             <div class="controls">
                 <button id="changeSessionBtn" class="btn">&#8592; Session</button>
                 <select id="modeSelect" class="btn">
-                    <option value="assisted">Assisted</option>
                     <option value="standard">Standard</option>
+                    <option value="assisted">Assisted</option>
                     <option value="exam">Exam</option>
                 </select>
                 <div id="timerDisplay" class="timer hidden">00:00</div>

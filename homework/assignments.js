@@ -114,8 +114,18 @@ const HOMEWORK = {
   },
 
   // Faith — bridge week of 26 Jul → follow-up class Tue 28 July. FOUR short sets,
-  // ALL untimed (minutes:0 → the runner makes her TYPE the reasoning). Sequential
-  // unlock (day N opens when N-1 is done). Review dose is the default 2; Day 1 keeps
+  // ALL untimed (minutes:0 → the runner makes her TYPE the reasoning).
+  //
+  // UNLOCK: `cumulative` — one set per calendar day, and a missed day stays open.
+  // This plan was authored `sequential`, which opens day N the moment N-1 is submitted
+  // and therefore places no floor at all under the spacing: a whole week's sets can be
+  // worked in one evening, and then the "spaced" review the ladder serves is not spaced.
+  // Spacing is the largest effect the design leans on (`MR-1`, `MR-3`), so it should not
+  // depend on the student choosing to wait. Cumulative is the standing choice for this
+  // plan and for the ones that follow it. Changed 4 Aug 2026, after the plan had run,
+  // so nothing a student had already seen changed underneath them.
+  //
+  // Review dose is the default 2; Day 1 keeps
   // a day-level `review: 0` because its job is the full first dose of a brand-new
   // skill. Counts are authored around the dose: Days 2-4 are 4 new + 2 review.
   //
@@ -140,7 +150,7 @@ const HOMEWORK = {
   "Faith": {
     title: "One habit: name the task, then reject anything merely true",
     start: "2026-07-26",
-    unlock: "sequential",
+    unlock: "cumulative",
     days: [
       { n:1, focus:"Boundaries (Easy → Medium) — new", review:0,
         skills:["Boundaries"], diffs:["Easy","Medium"], count:6, minutes:0,

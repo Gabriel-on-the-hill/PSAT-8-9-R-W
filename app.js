@@ -113,7 +113,7 @@ const SKILL_COUNT_IDS = {
 // ── State ─────────────────────────────────────────────────────────
 let currentQuestionIndex = 0;
 let score                = 0;
-let userMode             = 'assisted';
+let userMode             = 'standard';   // default mode; see the <option> order in index.html
 let timerInterval        = null;
 let secondsElapsed       = 0;
 let timerMode            = 'off';   // 'off' | 'stopwatch' | 'countdown'
@@ -212,7 +212,7 @@ function buildActiveQuestions() {
 // wants an extra pass right now.
 function startPracticeAnyway() {
     const setupModeEl = document.getElementById('setupModeSelect');
-    const mode  = setupModeEl ? setupModeEl.value : 'assisted';
+    const mode  = setupModeEl ? setupModeEl.value : 'standard';
     const tModeEl = document.getElementById('timerModeSelect');
     const tmode = tModeEl ? tModeEl.value : 'off';
     let total = 600;
@@ -237,7 +237,7 @@ function launchSession(questions, mode, timer) {
     missedQuestions = [];
     sessionResults  = [];
     mockExam        = false;
-    userMode        = mode || 'assisted';
+    userMode        = mode || 'standard';
     const headerModeEl = document.getElementById('modeSelect');
     if (headerModeEl) headerModeEl.value = userMode;
     resetProgress();
@@ -1443,7 +1443,7 @@ function init() {
 
     document.getElementById('startSessionBtn').addEventListener('click', () => {
         const setupModeEl = document.getElementById('setupModeSelect');
-        const mode  = setupModeEl ? setupModeEl.value : 'assisted';
+        const mode  = setupModeEl ? setupModeEl.value : 'standard';
         const tModeEl = document.getElementById('timerModeSelect');
         const tmode = tModeEl ? tModeEl.value : 'off';
         let total = 600;
