@@ -14,7 +14,9 @@ NODE_PATH=/tmp/j/node_modules node homework/homework-run.test.js      # the lear
 NODE_PATH=/tmp/j/node_modules node homework/assignments.test.js       # the plans are sane
 NODE_PATH=/tmp/j/node_modules node homework/bank.test.js              # the bank is classified right
 NODE_PATH=/tmp/j/node_modules node homework/review-ladder.test.js     # spacing + calibration
+NODE_PATH=/tmp/j/node_modules node ratio-mix.test.js                 # custom practice in a ratio
 NODE_PATH=/tmp/j/node_modules node tutor-sheet/tutor-dashboard.test.js # the dashboard can read the sheet
+node cache-tags.test.js                                              # students get the CURRENT files
 ```
 
 They skip cleanly without jsdom. Every one of them exists because something was silently
@@ -150,6 +152,68 @@ mechanism, not a bug in it.
 - **A redo never rewrites the first attempt.** What she did under the clock is the honest
   record. The redo only adds "put right on the redo".
 - **Running out of time must not destroy the set.** Submit what she has; show the review.
+
+## Custom practice in a ratio
+
+The setup screen can divide a sitting between skills in a proportion — "five Transitions, three
+Boundaries, two Words in Context" is the ratio toggle plus shares of 3 / 2 / 1 and a limit of 10.
+Ported from the sister SAT app (`app.js`, `allocateByRatio` / `apportion`). Guarded by
+`ratio-mix.test.js`.
+
+**The toggle decides whether a ratio applies. Not whether the numbers differ.** Inferring intent
+from unequal shares costs you the even split: 1-and-1 is how you would ask for a five-and-five
+split, and it is also exactly what an untouched screen looks like — so that request becomes
+unaskable, and fails silently as "whatever the queue had", which for two skills is frequently ten
+of one and none of the other. The switch says it out loud. Do not replace it with a heuristic.
+
+With the toggle off, `buildActiveQuestions` returns precisely the slice it returned before any of
+this existed. That is the property everything rests on: the default screen, every Quick Preset, the
+weak-area drill and the homework runner never turn it on, so if the allocator ever started
+constraining an un-toggled draw it would quietly change every set the app has ever built, with no
+error and no symptom. §5 of `ratio-mix.test.js` is the tripwire, and it pins `Math.random` because
+`prioritizePool` shuffles.
+
+Three things the allocator must keep doing:
+
+- **The difficulty split is PER SKILL, not across the set.** Apportion by skill, then apportion each
+  skill's quota by difficulty. Treating the two as independent marginals is the obvious
+  implementation and it is wrong in a way only the interior shows: Cross-Text 1 : Transitions 1
+  crossed with Medium 1 : Hard 1 at a limit of 10 gives five of each skill and five of each
+  difficulty — both sets of totals exactly right — with **four of the five Hard on one skill.** A
+  tutor who sets both dimensions means "half of *each* skill hard", which is a claim about cells,
+  and marginals prove nothing about cells. The cost is that per-skill rounding makes the overall
+  difficulty totals drift off the stated ratio (1:3 over 12 lands 4/8, not 3/9). That is the right
+  trade. §3 of `ratio-mix.test.js` holds it.
+- **A quota the pool cannot fill bends; the set does not shrink.** Ask for five Hard Cross-Text when
+  none exist and you still get a full-length sitting: the shortfall is spent on that skill's other
+  difficulties first, because **the skill split is the stronger promise** — it is the one the tutor
+  states first — and only then on raw queue order. A short session is indistinguishable, to the
+  student, from having finished.
+- **The ratio picks how MANY, the queue picks WHICH.** Every pass walks the already-prioritised
+  pool in order and only filters, so inside a quota the weakest questions still come first.
+
+**R&W orders the result in domain blocks, easy → hard — `orderSATStyle`, keyed to `RW_DOMAIN_ORDER`.
+A Math app shuffles its custom set; do not copy that here.** Math genuinely is presented mixed and
+R&W is not: the real module runs Craft & Structure → Information & Ideas → Standard English
+Conventions → Expression of Ideas. Shuffling would drill a question order the student never meets.
+`buildMockModule` uses the same function, so the two cannot drift — `MOCK_DOMAIN_MIX` says only how
+many per domain, never in what order.
+
+## Shipping a change: bump the file's `?v=` tag in the same commit
+
+There is no build step. The `?v=YYYYMMDD` on every `<script>` and `<link>` is the whole
+cache-busting mechanism, and **the tag is the date that file last changed**. Edit a file
+without bumping its tag and every browser holding the old copy keeps it — no error, no
+symptom, the app simply runs last month's code for the students who use it most.
+
+That had happened here to 28 references at once: `data-info-ideas.js` and
+`data-expression-of-ideas.js` tagged 3 July after changing on 26 July, so students were
+served the bank without the late-July questions; `homework/assignments.js` tagged 3 July
+after changing on 4 August, so `homework-hub.html` handed out a month-old plan. The tutor
+was reading those results as if they came from the current app.
+
+`cache-tags.test.js` fails on a stale tag and on a `?v=` pointing at a file that does not
+exist. Run it before you claim a change is live.
 
 ## Writing a week of homework
 
