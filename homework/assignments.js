@@ -113,62 +113,52 @@ const HOMEWORK = {
     ]
   },
 
-  // Faith — bridge week of 26 Jul → follow-up class Tue 28 July. FOUR short sets,
-  // ALL untimed (minutes:0 → the runner makes her TYPE the reasoning).
+  // Faith — re-entry, 10 Aug, ahead of the 11 Aug class. ONE set, and it is a
+  // DIAGNOSTIC rather than a teaching day: the 26 Jul plan was finished on ~29 Jul
+  // and nothing has been assigned since, so the only question worth asking before
+  // class is whether Boundaries survived the gap.
   //
-  // UNLOCK: `cumulative` — one set per calendar day, and a missed day stays open.
-  // This plan was authored `sequential`, which opens day N the moment N-1 is submitted
-  // and therefore places no floor at all under the spacing: a whole week's sets can be
-  // worked in one evening, and then the "spaced" review the ladder serves is not spaced.
-  // Spacing is the largest effect the design leans on (`MR-1`, `MR-3`), so it should not
-  // depend on the student choosing to wait. Cumulative is the standing choice for this
-  // plan and for the ones that follow it. Changed 4 Aug 2026, after the plan had run,
-  // so nothing a student had already seen changed underneath them.
+  // TWO SECTIONS FOR ONE SKILL — this is the point of the day, not a quirk.
+  // `diffs:["Medium","Hard"], count:10` does NOT yield four Medium and six Hard. It
+  // orders one pool through prioritizePool() and slices the top ten, so the split
+  // falls out however that sort happens to land — the same silent collapse that
+  // turned a "mixed" day into one skill. Sections are the only construction that
+  // fixes an exact count per difficulty. Each section here names exactly ONE
+  // difficulty, which also keeps _calibratedPick out of the draw (it needs two or
+  // more diffs before it leans), so 4/6 is exact rather than nudged.
   //
-  // Review dose is the default 2; Day 1 keeps
-  // a day-level `review: 0` because its job is the full first dose of a brand-new
-  // skill. Counts are authored around the dose: Days 2-4 are 4 new + 2 review.
+  // The Medium four are a CONTROL, not filler. Hard on its own cannot separate
+  // "the Hard application slipped" from "the whole skill went", and those two
+  // readings call for different classes the next day.
+  //
+  // UNTIMED on purpose. minutes:0 puts the runner in typed mode, so she answers the
+  // Boundaries predict prompt — "Does each side stand alone as a sentence? Then say
+  // which mark that forces." That verdict IS the diagnostic: a score alone cannot
+  // tell "knew the rule, misapplied it" from "does not know the rule".
+  //
+  // review:0 — the ladder's two due questions come from the whole bank by design, and
+  // on a day built around one skill they would dilute the only reading being taken.
+  // Spacing resumes on Day 2, which is where the dose belongs.
+  //
+  // DAYS 2+ APPEND TO THIS PLAN AFTER THE 11 AUG CLASS. Leave `start` at 2026-08-10
+  // when they land: completion is stored per plan as psat89_hw_<student>_<start>_<n>,
+  // so a new start date orphans anything she has already finished and re-serves it.
+  // Under `cumulative` the appended days unlock on their own calendar schedule.
   //
   // Shape only. The student data behind these choices is TUTOR-ONLY and lives in the
   // gitignored LEDGER — it must never be written into this public, student-downloaded
   // file (root rule: no assessment of a student where the student can read it).
-  //   • Boundaries was introduced in the 24 July makeup and is the newest skill, so it
-  //     leads (Days 1-2) and returns in the Day-4 mix. New skill → untimed first (AS-5):
-  //     every set this week is untimed, and the clock returns after the 28th.
-  //   • Rhetorical Synthesis was reinforced at Hard on 24 July, so it enters homework
-  //     here (a Day-3 block + a Day-4 rep). Method taught: GOAL FIRST from the keywords
-  //     (difference, similarity, emphasize…); the notes are a tiebreaker only. Never
-  //     tell her to "read the passage first" on RS.
-  //   • Day 4 interleaves Boundaries + RS Hard + Central Ideas + Inferences. Keep
-  //     Central Ideas a Medium/Hard MIX, never Hard-only.
-  //   • Four sets, not six: short sets get finished, long ones get abandoned, and with
-  //     a class ~3 days out under sequential unlock (no calendar pacing) that matters.
-  //     Timed work and the next Craft skill are the post-28th plan's job.
-  //   • The bank's four mis-split "unanswerable" items were repaired 26 July from the
-  //     source PDFs; homework-run.html keeps a (now empty) quarantine hook and
-  //     bank.test.js guards against any recurrence.
   "Faith": {
-    title: "One habit: name the task, then reject anything merely true",
-    start: "2026-07-26",
+    title: "Where Boundaries actually stands — a check, not a test",
+    start: "2026-08-10",
     unlock: "cumulative",
     days: [
-      { n:1, focus:"Boundaries (Easy → Medium) — new", review:0,
-        skills:["Boundaries"], diffs:["Easy","Medium"], count:6, minutes:0,
-        tip:"New skill: boundaries. For each blank, first ask — is what's on EACH side a complete sentence? → Two complete sentences → period or semicolon. One complete + a fragment → comma, colon, or dash. → Type WHY before you pick, don't go by ear." },
-      { n:2, focus:"Boundaries (Medium) — untimed", minutes:0,
-        skills:["Boundaries"], diffs:["Medium"], count:4,
-        tip:"Boundaries again, no clock. → Test each side: could it stand alone as a sentence? → Then let the rule pick the punctuation, not your ear. → Classic trap: two full sentences joined by only a comma (a comma splice)." },
-      { n:3, focus:"Rhetorical Synthesis (Hard) — reinforced", minutes:0,
-        skills:["Rhetorical Synthesis"], diffs:["Hard"], count:4,
-        tip:"Synthesis with harder notes — same method. → Name the GOAL from the keywords first (difference, emphasize, support…). → Type the goal, then keep only the option that does THAT. → Every option may be true; reject the ones that are true but off-goal." },
-      { n:4, focus:"Mixed — integrate (untimed)", minutes:0,
+      { n:1, focus:"Boundaries (Medium + Hard) — untimed check-in", review:0, minutes:0,
         sections:[
-          { skills:["Boundaries"],                diffs:["Medium","Hard"], count:1 },
-          { skills:["Rhetorical Synthesis"],      diffs:["Hard"],          count:1 },
-          { skills:["Central Ideas and Details"], diffs:["Medium","Hard"], count:1 },
-          { skills:["Inferences"],                diffs:["Medium","Hard"], count:1 },
+          { skills:["Boundaries"], diffs:["Medium"], count:4 },
+          { skills:["Boundaries"], diffs:["Hard"],   count:6 },
         ],
-        tip:"A mix of everything, no clock. → One habit on every question: name the exact task, predict, then choose. → Reject any option that is accurate but doesn't do the job the question actually asked." },
+        tip:"No clock. This is a check on where you are — answer the way you would on the day. → For every blank, first ask: is what's on EACH side a complete sentence? → Two complete → period or semicolon. One complete + a fragment → comma, colon, or dash. Joining two complete ones → comma + a FANBOYS word. → Type the verdict and the mark it forces BEFORE you look at the choices. → If you are not sure, say so in the box and pick anyway; that is far more useful to us than a lucky guess." },
     ]
   },
 
