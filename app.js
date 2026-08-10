@@ -10,7 +10,12 @@ const questionBank = [
 // The countdown on the home screen. It is one date for the whole app, not a
 // per-student one — everyone who signs in shares this build, so it can only be
 // the nearest sitting they are all working toward. Update it when that changes.
-const EXAM_DATE = new Date('2026-08-23');
+//
+// The PSAT 8/9 is administered in a WINDOW (1–30 Oct 2026), not on a single day,
+// and a school fixes its own date inside it. So this is the FIRST day of the
+// window: a countdown may understate the time left, never overstate it. Replace
+// it with the actual sitting as soon as the school names one.
+const EXAM_DATE = new Date('2026-10-01');
 
 const TRAP_SETS = {
     'Words in Context':

@@ -16,8 +16,14 @@ const CFG_KEYS = {
     RELAX:     'psat89_cfg_relax',      // '1' = relaxed
 };
 
+// EXAM_DATE is the FIRST day of the PSAT 8/9 window (1–30 Oct 2026), not a
+// sitting. The window is a month long and each school picks its own date inside
+// it, so the default understates the time remaining rather than overstating it.
+// NOTE: this is only the DEFAULT. getExamDateStr() prefers whatever is in
+// localStorage, so a browser where the tutor once set a date keeps that date and
+// changing this line will not reach it — clear or re-set it from the progress panel.
 const CFG_DEFAULTS = {
-    EXAM_DATE: '2026-08-23',
+    EXAM_DATE: '2026-10-01',
     Q_BUDGET:  100,
 };
 
