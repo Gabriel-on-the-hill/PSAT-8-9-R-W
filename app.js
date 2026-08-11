@@ -450,7 +450,7 @@ function buildActiveQuestions() {
     const skillW  = getSkillWeights();
     const ratioOn = isRatioOn() && (hasShares(diffW) || hasShares(skillW));
     const { fresh, parked } = splitPoolByFreshness(getFilteredPool());
-    const orderedFresh = prioritizePool(fresh);   // missed first, then unseen
+    const orderedFresh = prioritizePool(fresh);   // unseen first, then misses
 
     if (limit > 0) {
         // Not enough due questions to fill the requested count — top up with

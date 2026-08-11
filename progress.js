@@ -244,7 +244,30 @@ function _isResting(record) {
 // teach it. Review gets its own dose instead, drawn against the whole bank by
 // dueForReview(), because that is the only draw that can reach a due question the
 // day's skill/difficulty filter has already excluded.
-function prioritizePool(pool) {
+// UNSEEN FIRST, then misses. Ported from the sister app 10 Aug 2026; it had run
+// there since 22 Jul and never crossed over, which is the engine-duplication
+// drift AGENTS.md warns about rather than any decision.
+//
+// This led with `needsWork`, so a day's own draw re-served misses ON TOP of the
+// spaced-review dose dueForReview() already splices in. Review arrived through
+// two channels and only one of them had any spacing.
+//
+// The cost lands on NARROW POOLS, which this bank is now full of: tag the
+// Conventions bank by ruleType and `Colon` holds three questions and `Dash`
+// three. A misses-first draw re-serves the same one or two every time and the
+// rest are never met — training recall of those particular answers rather than
+// the rule behind them, and a score cannot tell those two apart.
+//
+// `opts.missesFirst` restores the old order for the two callers that want it:
+//   • a Challenge set — a closed, frozen list where there is no coverage to win
+//     and the only goal is mastering those exact items. challenge-core.js
+//     documents its SERVE_ORDER as "exactly prioritizePool(pool,
+//     { missesFirst: true })" and passes it. Before the opts parameter existed
+//     here, that argument was silently DROPPED and the Challenge got the order
+//     it wanted only by coincidence.
+//   • a homework day where the ladder turns out to have nothing due, so misses
+//     would otherwise get no channel at all that day. See homework-run.html.
+function prioritizePool(pool, opts) {
     const ledger    = getProgress();
     const needsWork = [];
     const unseen    = [];
@@ -263,9 +286,13 @@ function prioritizePool(pool) {
 
     resting.sort((a, b) => _overdueBy(ledger[b.id]) - _overdueBy(ledger[a.id]));
 
+    const missesFirst = !!(opts && opts.missesFirst);
+    const lead = missesFirst ? needsWork : unseen;
+    const next = missesFirst ? unseen    : needsWork;
+
     return [
-        ..._fyShuffle(needsWork),
-        ..._fyShuffle(unseen),
+        ..._fyShuffle(lead),
+        ..._fyShuffle(next),
         ...resting,
     ];
 }
