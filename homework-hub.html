@@ -38,10 +38,30 @@
   .btn.sec{background:var(--surface);color:var(--text);border:1px solid var(--border)}
   .empty{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.4rem;color:var(--muted)}
   .note{color:var(--muted);font-size:.88rem;margin-top:1.3rem}
+  /* ── Challenge card ─────────────────────────────────────────────
+     A challenge is not a homework day and must not look like one: it has no
+     tick, it is never "done" after one pass, and its state lives in the
+     mastery ledger rather than in a completion flag. Hence a progress bar and
+     a four-way tally instead of an Available/Done badge. */
+  .day .num.ch{background:#7c3aed;font-size:1rem}
+  .cbar{height:8px;border-radius:99px;background:var(--surface2);overflow:hidden;margin:.15rem 0 .55rem 2.6rem}
+  .cbar i{display:block;height:100%;background:#7c3aed}
+  .cchips{display:flex;flex-wrap:wrap;gap:.35rem;margin:0 0 .65rem 2.6rem}
+  .cchip{font-size:.72rem;font-weight:600;padding:.15rem .5rem;border-radius:99px;background:var(--surface2);color:var(--muted)}
+  .cchip.w{background:#fdeced;color:#b91c1c}
+  .cchip.c{background:#fef3c7;color:#92400e}
+  .cchip.m{background:var(--good-soft);color:var(--good)}
+  .chdiv{margin:1.6rem 0 .7rem;font-size:.82rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
 </style>
 <script src="gate.js?v=20260717"></script>
 <script src="sheet-sync.js?v=20260703"></script>
-<script src="homework/assignments.js?v=20260810"></script>
+<script src="homework/assignments.js?v=20260811"></script>
+<!-- progress.js supplies getProgress(), which is where the challenge's tally
+     comes from. challenge.js (the runner) is NOT loaded here: this page only
+     ever renders the card and links into index.html. -->
+<script src="progress.js?v=20260810"></script>
+<script src="challenge/sets.js?v=20260810"></script>
+<script src="challenge/challenge-core.js?v=20260810"></script>
 </head>
 <body>
 <div class="wrap">
@@ -66,6 +86,92 @@
   document.getElementById('who').textContent = 'For ' + student + (source==='sheet' ? ' · from your sheet' : '');
   if (!plan) { list.innerHTML='<div class="empty">No homework is assigned for '+student+' yet.</div>'; return; }
   document.getElementById('title').textContent = plan.title || 'Homework';
+
+  // The set title and source come from a checked-in file, not from a student, so
+  // this is belt-and-braces rather than a live XSS route. It costs one line, and
+  // the sheet-plan path means a title can one day arrive from outside this repo.
+  function esc(s){
+    return String(s == null ? '' : s)
+      .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+      .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
+  // ── Challenge ────────────────────────────────────────────────────────────
+  // A challenge is NOT a homework day. It has no completion flag, it is never
+  // finished after one pass, and its state is derived from the mastery ledger:
+  // each question needs two clean correct answers, and mastery lapses. So this
+  // card reports counts and defers to progress.js rather than tracking "done".
+
+  // Every set this student has, newest last. Empty when the challenge scripts
+  // are absent or nothing is committed yet — a student with no set sees exactly
+  // the page they saw before.
+  function challengeSets(){
+    if (typeof ChallengeCore === 'undefined' || !window.CHALLENGE_SETS) return [];
+    return ChallengeCore.setsFor(student, window.CHALLENGE_SETS)
+                        .filter(function(s){ return s.ids && s.ids.length; });
+  }
+
+  function challengeCardHTML(set){
+    // segmentOf() only ever reads q.id, so id stubs are enough for the tally —
+    // this page never loads the question banks.
+    var stubs = set.ids.map(function(id){ return { id: id }; });
+    var c     = ChallengeCore.counts(stubs, getProgress());
+    var gate  = ChallengeCore.gate(c);
+    var pct   = c.total ? Math.round(c.mastered / c.total * 100) : 0;
+
+    var tip = gate === 'done'
+      ? 'Every question is mastered. Well done — come back to it any time to keep it fresh.'
+      : gate === 'confirm'
+        ? 'Nothing is left unattempted or wrong. Answer the ' + c.correctOnce +
+          ' you have only got right once a second time to master them.'
+        : 'Mastered ' + c.mastered + ' of ' + c.total + '. This is not finished until all ' + c.total +
+          ' are mastered, and each one needs two clean correct answers on separate goes.';
+
+    return '<div class="day' + (gate === 'done' ? ' done' : '') + '">' +
+        '<div class="top">' +
+          '<span class="num ch">&#9876;</span>' +
+          '<span class="focus">' + esc(set.title) + '</span>' +
+          (gate === 'done' ? '<span class="state done">Mastered</span>'
+                           : '<span class="state open">' + pct + '%</span>') +
+        '</div>' +
+        '<div class="meta">' + c.total + ' questions &middot; ' + esc(set.source) + '</div>' +
+        '<div class="cbar"><i style="width:' + pct + '%"></i></div>' +
+        '<div class="cchips">' +
+          '<span class="cchip m">mastered ' + c.mastered + '</span>' +
+          '<span class="cchip w">to fix ' + c.wrong + '</span>' +
+          '<span class="cchip c">correct once ' + c.correctOnce + '</span>' +
+          '<span class="cchip">not attempted ' + c.notAttempted + '</span>' +
+        '</div>' +
+        '<div class="tip">' + tip + '</div>' +
+        '<div class="go"><a class="btn" href="index.html?challenge=1">Open the Challenge &rarr;</a></div>' +
+      '</div>';
+  }
+
+  // Appended UNDER the day cards, not instead of them: a student can have both a
+  // week of sets and a standing challenge. Newest set only — sets are append-only
+  // and the newest is the live one.
+  function challengeTailHTML(){
+    var sets = challengeSets();
+    if (!sets.length) return '';
+    return '<div class="chdiv">Your challenge &mdash; separate from the sets above, and never finished in one pass</div>'
+         + challengeCardHTML(sets[sets.length - 1]);
+  }
+
+  // A plan carrying a `challenge` key has no days at all: the card is the page.
+  function renderChallengeCard(plan){
+    var note = document.getElementById('note');
+    if (typeof ChallengeCore === 'undefined' || !window.CHALLENGE_SETS) {
+      list.innerHTML = '<div class="empty">Your challenge is not available on this device.</div>'; return;
+    }
+    var set = challengeSets().filter(function(s){ return s.setId === plan.challenge; })[0];
+    if (!set) { list.innerHTML = '<div class="empty">Your challenge set is not ready yet.</div>'; return; }
+    list.innerHTML = challengeCardHTML(set);
+    if (note) note.textContent = 'There are no daily sets this week. Work through the challenge whenever you like, ' +
+      'as often as you like. It is done when every question is mastered — not when you have been through it once.';
+  }
+
+  if (plan.challenge) { renderChallengeCard(plan); return; }
+
   var seq = plan.unlock === 'sequential';
   function fmtDate(start, offset){ var d=hwParseDate(start); if(!d) return 'soon'; d.setDate(d.getDate()+offset); return d.toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'}); }
   function fmtOn(s){ var d=hwParseDate(s); return d? d.toLocaleDateString(undefined,{weekday:'long',month:'short',day:'numeric'}) : null; }
@@ -107,7 +213,7 @@
           + '</div>' : '')
       + '</div>';
   });
-  list.innerHTML = html;
+  list.innerHTML = html + challengeTailHTML();
   });
 })();
 </script>
