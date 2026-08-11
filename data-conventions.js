@@ -4,6 +4,7 @@ const questionBank_CON = [
     "id": "7944e9f4",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "VForm",
     "passage": "",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -21,6 +22,7 @@ const questionBank_CON = [
     "id": "3269925f",
     "skill": "Boundaries",
     "difficulty": "Easy",
+    "ruleType": "Commas",
     "passage": "About 70,000 meteorites have been found on Earth. Although most meteorites are fragments of ______ hundred have been identified as being from the Moon or Mars.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -36,6 +38,7 @@ const questionBank_CON = [
     "id": "efb9b6d4",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Easy",
+    "ruleType": "Pron",
     "passage": "American poet Emily Dickinson wrote many of her poems on scraps of paper, but she also took steps to collect these works. From 1858 to around 1864, for example, she copied more than 800 of ______ into forty homemade booklets (known as fascicles).",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -51,6 +54,7 @@ const questionBank_CON = [
     "id": "8de2ee41",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Easy",
+    "ruleType": "VForm",
     "passage": "In 1990, California native and researcher Ellen Ochoa left her position as chief of the Intelligent Systems Technology Branch at a NASA research center ______ the space agency’s astronaut training program.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -66,6 +70,7 @@ const questionBank_CON = [
     "id": "78cef1d4",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Easy",
+    "ruleType": "SVA",
     "passage": "Wanda Diaz-Merced is an astrophysicist who lost her sight when she was young. Diaz-Merced’s condition inspired her to develop software that can translate scientific data into sound. Sound-based tools ______ scientists to detect subtle patterns in data. Such patterns may not be evident in traditional graphs.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -81,6 +86,7 @@ const questionBank_CON = [
     "id": "91d28dac",
     "skill": "Boundaries",
     "difficulty": "Easy",
+    "ruleType": "NoPunct",
     "passage": "After the printing press was introduced in 1440, handwritten manuscripts from Europe’s medieval period were often destroyed and the paper used for other purposes. In one instance, pages ______ a collection of Norse tales dating to 1270 were discovered lining a bishop’s miter (hat).",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -96,6 +102,7 @@ const questionBank_CON = [
     "id": "62e13c74",
     "skill": "Boundaries",
     "difficulty": "Easy",
+    "ruleType": "Colon",
     "passage": "In the novel Things Fall Apart by Chinua Achebe, Okonkwo is a leader of Umuofia (a fictional Nigerian clan) and takes pride in his culture’s traditions. However, when the arrival of European missionaries brings changes to Umuofia, the novel asks a central question: How ______",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -111,6 +118,7 @@ const questionBank_CON = [
     "id": "5e5fb74a",
     "skill": "Boundaries",
     "difficulty": "Easy",
+    "ruleType": "Commas",
     "passage": "Emperor Ashoka ruled the Maurya Empire in South Asia from roughly 270 to 232 BCE. He is known for enforcing a moral code called the Law of Piety, which established the sanctity of animal ______ the just treatment of the elderly, and the abolition of the slave trade.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -126,6 +134,7 @@ const questionBank_CON = [
     "id": "69556476",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Easy",
+    "ruleType": "VTense",
     "passage": "In recent years, economists around the world have created new tools that quantify the overall well-being of a country’s citizens. Economists in India, for example, use an Ease of Living Index. This tool ______ economic potential, sustainability, and citizens’ quality of life.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -141,6 +150,7 @@ const questionBank_CON = [
     "id": "7c30c345",
     "skill": "Boundaries",
     "difficulty": "Medium",
+    "ruleType": "Commas",
     "passage": "In 2000, Nora de Hoyos Comstock, herself an owner of a successful consulting firm, sought to increase Latina representation in corporate ______ founded Las Comadres para las Americas, an international community that for over two decades has served as a resource and information network for Latina business professionals.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -156,6 +166,7 @@ const questionBank_CON = [
     "id": "81f2bac8",
     "skill": "Boundaries",
     "difficulty": "Medium",
+    "ruleType": "Commas",
     "passage": "Where ______ Interestingly, it was invented by an author. It first appears in the novel Through the Looking Glass by English author Lewis Carroll.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -171,6 +182,7 @@ const questionBank_CON = [
     "id": "e9a761e7",
     "skill": "Boundaries",
     "difficulty": "Medium",
+    "ruleType": "Commas",
     "passage": "At 1,377 meters, the Tsing Ma Bridge in China is one of the longest suspension bridges in the ______ the Golden Gate Bridge in the United States, at 1,280 meters, is even longer.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -186,6 +198,7 @@ const questionBank_CON = [
     "id": "02c22816",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Medium",
+    "ruleType": "Poss",
     "passage": "Earth is not a perfect sphere. Due to the ______ gravitational pull, Earth bulges out on the sides closest to and farthest from the Moon. This distorting pull is known as a tidal force, and it is responsible for the changes in water levels that are called high and low tides.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -201,6 +214,7 @@ const questionBank_CON = [
     "id": "cf881255",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Medium",
+    "ruleType": "Pron",
     "passage": "Unsupervised machine learning is an approach that computer scientists like Nina Miolane use to engineer artificial intelligence technologies. It involves training computer algorithms to organize unlabeled data sets. Multitask learning is another approach. ______ involves training computer models to perform multiple tasks at the same time.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -216,6 +230,7 @@ const questionBank_CON = [
     "id": "7f8f0f5d",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Medium",
+    "ruleType": "SVA",
     "passage": "Mary Madden of Ohio ______ a fierce advocate of women’s voting rights in the late 1800s. The dedication of Madden and her fellow activists was rewarded in 1920, when the Nineteenth Amendment to the US Constitution guaranteed American women the right to vote.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -231,6 +246,7 @@ const questionBank_CON = [
     "id": "cc0dcd9a",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Medium",
+    "ruleType": "VForm",
     "passage": "While exploring Nevada’s Gypsum Cave in 1930, Seneca and Abenaki archaeologist Bertha Parker made her most famous discovery: the skull of a now-extinct ground sloth (Nothrotheriops shastensis) alongside human-made tools. Parker’s crucial finding was the first ______ humans in North America as far back as 10,000 years ago.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -246,6 +262,7 @@ const questionBank_CON = [
     "id": "9c4892e3",
     "skill": "Boundaries",
     "difficulty": "Medium",
+    "ruleType": "Commas",
     "passage": "In early 1700s England, it was legal for shops to sell prints of artists’ engravings without the artists’ permission. This changed in 1735 with the passage of the Engravers’ Copyright ______ gave engravers control over the distribution and sale of all prints made from their designs.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -261,6 +278,7 @@ const questionBank_CON = [
     "id": "87b8696b",
     "skill": "Boundaries",
     "difficulty": "Medium",
+    "ruleType": "NoPunct",
     "passage": "In her book The Woman Warrior: Memoirs of a Girlhood Among Ghosts, author Maxine Hong Kingston examines themes ______ childhood, womanhood, and Chinese American identity by intertwining autobiography and mythology.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -276,6 +294,7 @@ const questionBank_CON = [
     "id": "6b2a1288",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Medium",
+    "ruleType": "SVA",
     "passage": "In 1899, Swedish chemist Svante Arrhenius developed an equation to answer a long-standing question: why do chemical reactions speed up at higher temperatures? The Arrhenius equation, named for its creator, ______ an important concept in modern chemistry.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -291,6 +310,7 @@ const questionBank_CON = [
     "id": "9ab0c766",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Medium",
+    "ruleType": "VTense",
     "passage": "Occupying a significant part of modern-day Nigeria, the Kingdom of Benin was one of the major powers in West Africa between the thirteenth and nineteenth centuries. It ______ ruled by Oba Ewuare I from 1440 to 1473.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -306,6 +326,7 @@ const questionBank_CON = [
     "id": "f2af7072",
     "skill": "Boundaries",
     "difficulty": "Medium",
+    "ruleType": "Commas",
     "passage": "While one requires oxygen and one does ______ and anaerobic respiration are both forms of cellular respiration — that is, they are processes by which cells break down glucose to use as energy.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -321,6 +342,7 @@ const questionBank_CON = [
     "id": "81000f32",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Medium",
+    "ruleType": "SVA",
     "passage": "The African Games Co-production Market, one of over 180 annual international conferences supporting video game development, ______ the growth of the African gaming industry by helping start-up studios in Africa find partners.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -336,6 +358,7 @@ const questionBank_CON = [
     "id": "566fac8d",
     "skill": "Boundaries",
     "difficulty": "Medium",
+    "ruleType": "NoPunct",
     "passage": "Winding through the ice atop Norway’s Jotunheim Mountains is the Lendbreen pass, an ancient route that was used by hunters, farmers, traders, and travelers in the Middle Ages before eventually falling into disuse. Recently, archeologists have ______ knives, horseshoes, wool tunics, and thousands of other artifacts from the icy pass.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -351,6 +374,7 @@ const questionBank_CON = [
     "id": "f09186ab",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Medium",
+    "ruleType": "Poss",
     "passage": "Photographer Ansel Adams’s landscape portraits are iconic pieces of American art. However, many of the ______ of landscapes were intended not as art but as marketing; a concessions company at Yosemite National Park had hired Adams to take pictures of the park for restaurant menus and brochures.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -366,6 +390,7 @@ const questionBank_CON = [
     "id": "0cdbfd0f",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Medium",
+    "ruleType": "VForm",
     "passage": "In the late 1960s, inspired in part by the sight of laundry hanging on a clothesline, African American abstract painter Sam Gilliam began to create his iconic “Drape” paintings. He applied bold, saturated hues to large canvases and ______ them from ceilings or walls, causing the drooping fabric to cascade in dramatic loops and curves.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -381,6 +406,7 @@ const questionBank_CON = [
     "id": "5a4e7f5f",
     "skill": "Boundaries",
     "difficulty": "Medium",
+    "ruleType": "Commas",
     "passage": "In 1959, the film industry debuted Smell-O-Vision. Theaters were fitted with specialized vents that emitted odors at specific points in a ______ as the scent of roses when roses appeared in a scene. Smell-O-Vision failed to impress, however, with one reviewer declaring it “briefly weird and not very interesting.”",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -396,6 +422,7 @@ const questionBank_CON = [
     "id": "ce694afe",
     "skill": "Boundaries",
     "difficulty": "Medium",
+    "ruleType": "Commas",
     "passage": "Psychophysicist Howard Moskowitz was hired by a soda company to determine how much artificial sweetener ______ After conducting consumer taste tests, he found that no such ideal existed: participants expressed a wide range of preferences for different blends of sweetener, carbonization, and flavoring.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -411,6 +438,7 @@ const questionBank_CON = [
     "id": "edbbeca3",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Medium",
+    "ruleType": "VTense",
     "passage": "In 1881, French chemist Camille Faure redesigned the rechargeable lead-acid battery. Faure’s design greatly increased the amount of electricity that the original battery, which the French physicist Gaston Planté ______ fifteen years earlier, could hold.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -426,6 +454,7 @@ const questionBank_CON = [
     "id": "f0124561",
     "skill": "Boundaries",
     "difficulty": "Medium",
+    "ruleType": "Semi",
     "passage": "A subseasonal weather forecast attempts to predict weather conditions three to four weeks in ______ its predictions are therefore more short- term than those of the seasonal forecast, which attempts to predict the weather more than a month in advance.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -441,6 +470,7 @@ const questionBank_CON = [
     "id": "97572753",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Medium",
+    "ruleType": "SVA",
     "passage": "The village of Panduyacu in Ecuador ______ one of the rare places in the world located almost directly on the equator.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -456,6 +486,7 @@ const questionBank_CON = [
     "id": "491a17a7",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Medium",
+    "ruleType": "VForm",
     "passage": "Botanists recognize over fifty different species of sunflower. One species, the silverleaf sunflower, ______ both an early-flowering ecotype that tends to grow in coastal areas and a late-flowering ecotype that grows inland.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -471,6 +502,7 @@ const questionBank_CON = [
     "id": "312bfabb",
     "skill": "Boundaries",
     "difficulty": "Medium",
+    "ruleType": "Commas",
     "passage": "When particles are suspended in liquid (like pollen in a water glass), they will zigzag randomly through the liquid and collide with one another in perpetuity. This type of random, continuous ______ is known as Brownian motion, can be observed throughout the natural world.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -486,6 +518,7 @@ const questionBank_CON = [
     "id": "f60f2482",
     "skill": "Boundaries",
     "difficulty": "Medium",
+    "ruleType": "NoPunct",
     "passage": "In 1959, marine biologist Dr. Albert Jones founded the Underwater Adventure Seekers, a scuba diving ______ that is the oldest club for Black divers in the United States and that has helped thousands of diving enthusiasts become certified in the field.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -501,6 +534,7 @@ const questionBank_CON = [
     "id": "a0946a9f",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "During the decades-long movement to codify the rights of Latinos in the US, certain events were pivotal: the founding of social justice group the League of United Latin American Citizens in ______ Katzenbach v. Morgan court decision in 1966, which affirmed the rights of Latino voters, is another such event.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -516,6 +550,7 @@ const questionBank_CON = [
     "id": "f859d049",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "SVA",
     "passage": "Legal scholars James Melton and Tom Ginsburg’s analysis of de jure judicial independence and its growth over decades ______ six constitutional features that enhance such independence, including judicial tenure and selection procedure. Albania’s constitution contains five of these features.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -531,6 +566,7 @@ const questionBank_CON = [
     "id": "67165318",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "SVA",
     "passage": "Josephine Paddock and Florence Esté were among the 300 artists who exhibited at the 1913 Armory Show, a groundbreaking New York City art exhibition that introduced modernism to American audiences. Though shocking at the time, an abstract cubist painting exhibited by Marcel Duchamp — one of several works that received scorn from critics — ______ the Western art canon more than a century later.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -546,6 +582,7 @@ const questionBank_CON = [
     "id": "45f188bf",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "The first computerized spreadsheet, Dan Bricklin’s VisiCalc, improved financial recordkeeping not only by providing users with an easy means of adjusting data in spreadsheets but also by automatically updating all calculations that were dependent on these ______ to VisiCalc’s release, changing a paper spreadsheet often required redoing the entire sheet by hand, a process that could take days.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -561,6 +598,7 @@ const questionBank_CON = [
     "id": "a481fe22",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "In paleontology, the term “Elvis taxon” gets applied to a newly identified living species that was once presumed to be extinct. Like an Elvis impersonator who might bear a striking resemblance to the late musical icon Elvis Presley himself, an Elvis taxon is not the real thing, ______ is a misidentified look-alike.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -576,6 +614,7 @@ const questionBank_CON = [
     "id": "4bd2fb5a",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "NoPunct",
     "passage": "The Organisation for Economic Co-operation and Development (OECD) tracks comparative price list data for its thirty-eight member countries. For instance, in July 2021, a hypothetical basket of goods priced at 100 US dollars (USD) in the United States would have cost 62 USD and 110 USD in fellow OECD ______ and Luxembourg, respectively.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -591,6 +630,7 @@ const questionBank_CON = [
     "id": "11add1e8",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "SVA",
     "passage": "Anthropologist Lívia Barbosa, of the Universidade Federal Fluminense in Brazil, ______ food and sociability in contemporary Brazil —specifically, how foods such as cabidela (a rice and rabbit dish) and churrasco (a barbeque dish) function as central mechanisms in building social relationships, values, and identities.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -606,6 +646,7 @@ const questionBank_CON = [
     "id": "47eab054",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "In 2021, Mexican biologist Martha Lydia Macías-Rubalcava led a review of the scientific literature related to endophytic fungi (i.e., fungi that live inside a host ______ researching 120 endophytic fungi – produced compounds, she found that their phytotoxicity can make them viable alternatives to chemical herbicides for controlling weeds.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -621,6 +662,7 @@ const questionBank_CON = [
     "id": "ca1a7097",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "SVA",
     "passage": "Professional American football player Fred Cox invented one of the world’s most popular toys. In the 1970s, he came up with the idea for the Nerf football, which ______ of the harder and heavier regulation football.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -636,6 +678,7 @@ const questionBank_CON = [
     "id": "2ff2efad",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "Mod",
     "passage": "Rabinal Achí is a precolonial Maya dance drama performed annually in Rabinal, a town in the Guatemalan highlands. Based on events that occurred when Rabinal was a city-state ruled by a king, ______ had once been an ally of the king but was later captured while leading an invading force against him.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -651,6 +694,7 @@ const questionBank_CON = [
     "id": "139f1b75",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Dash",
     "passage": "The Mesoamerican city of Teotihuacan featured a uniquely egalitarian urban housing infrastructure. Built between the first and seventh centuries CE, Teotihuacan housed its residents (as many as 200,000, by some ______ in a complex of comfortable apartments of comparable size.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -666,6 +710,7 @@ const questionBank_CON = [
     "id": "580e1a4a",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "The Tantaquidgeon Museum in Uncasville, Connecticut, was founded in 1931 with the goal of showcasing the culture and history of the Mohegan ______ today, nearly a century later, it is the oldest Native-owned and -operated museum in the country.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -681,6 +726,7 @@ const questionBank_CON = [
     "id": "508ab5ba",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "NoPunct",
     "passage": "In 2008, two years after the death of science fiction writer Octavia Butler, the Huntington Library in ______ received a collection of more than 8,000 items, including Butler’s private notes, research materials, manuscripts, photos, and drawings. Today, the Octavia E. Butler Collection is one of the most researched archives at the library.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -696,6 +742,7 @@ const questionBank_CON = [
     "id": "9436c09a",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "SVA",
     "passage": "The Proto-Nilotic language, common ancestor of fifty-five African languages with similar linguistic properties, ______ like all protolanguages, hypothetical: there’s no direct evidence these ancestral languages actually existed.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -711,6 +758,7 @@ const questionBank_CON = [
     "id": "680c128e",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "Poss",
     "passage": "Inventor John Friedman created a prototype of the first flexible straw by inserting a screw into a paper straw and, using dental floss, binding the straw tightly around the ______ When the floss and screw were removed, the resulting corrugations in the paper allowed the straw to bend easily over the edge of a glass.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -726,6 +774,7 @@ const questionBank_CON = [
     "id": "dd2822eb",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "Mod",
     "passage": "Forming extensive networks via mycorrhizal association — that is, a symbiotic relationship between plants and fungi — ______",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -741,6 +790,7 @@ const questionBank_CON = [
     "id": "9597885e",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "SVA",
     "passage": "ōnagon’s Pillow Book, the author delights in baby sparrows, a face drawn on a melon, and a young In the list “Adorable Things” from Sei Sh \ncourtier in ceremonial garb. So shrewd an observer is Shōnagon, a lady-in-waiting to Empress Teishi, that her book’s musings on tenth-century Japanese courtly life ______ readers a thousand years later.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -756,6 +806,7 @@ const questionBank_CON = [
     "id": "be6f3070",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Semi",
     "passage": "Recent analysis of 32532 Thereus — an outer solar system object orbiting the Sun between Jupiter and Saturn — has determined its color to be gray, suggesting an icy composition. Such interpretations are ultimately ______ the object’s gray coloration may be an incidental effect of radiation, solar wind, or collisions with other objects rather than evidence of its physical makeup.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -771,6 +822,7 @@ const questionBank_CON = [
     "id": "40ab858b",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "Pron",
     "passage": "The violins handmade in the seventeenth century by Italian craftsman Antonio Stradivari have been celebrated as some of the finest in the world. In close collaboration with musicians, Stradivari introduced changes to the shape of a traditional violin, flattening some of the instrument’s curves and making ______ lighter overall.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -786,6 +838,7 @@ const questionBank_CON = [
     "id": "83cc4b6e",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "Mod",
     "passage": "In 2015, a team led by materials scientists Anirudha Sumant and Diana Berman succeeded in reducing the coefficient of friction (COF) between two surfaces to the lowest possible level — superlubricity. A nearly frictionless (and, as its name suggests, extremely slippery) state, ______",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -801,6 +854,7 @@ const questionBank_CON = [
     "id": "a272d236",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "Poss",
     "passage": "To fully describe the motion of an object requires knowing each of five ______ movement: displacement, time, initial velocity, final velocity, and acceleration. These are called kinematic variables.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -816,6 +870,7 @@ const questionBank_CON = [
     "id": "ca19620e",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "Poss",
     "passage": "In a recent analysis of lyrical trends in 350,000 songs, researchers cite increases in certain measures, such as the ratio of choruses to verses, as evidence music lyrics are becoming more repetitive. For instance, from 1970 to 2020, ______ chorus-to-verse ratios trended similarly, with each genre’s data indicating that relative to the number of unique verses, the number of repeated choruses in songs increased.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -831,6 +886,7 @@ const questionBank_CON = [
     "id": "5e97e5a9",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "The Austronesian language family includes Tagalog, Malagasy, and some 1,200 other languages throughout the Pacific, making it one of the largest language families in the world and of keen interest to ______ of the University of Toronto.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -846,6 +902,7 @@ const questionBank_CON = [
     "id": "0ecf02c1",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "The pedagogy of the Suzuki method is rooted in several central ______ by Japanese violinist Shinichi Suzuki, who sought to parallel the linguistic learning environment, the method emphasizes playing instruments from a very young age and teaches students as young as three to play simple classical pieces such as “March in G.”",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -861,6 +918,7 @@ const questionBank_CON = [
     "id": "959f930d",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Dash",
     "passage": "As a behavioral economist, Katy Milkman of the University of Pennsylvania recognizes that people sometimes make irrational economic decisions. Milkman’s research can thus address anomalies that neoclassical economic ______ assume that people are consistently rational decision-makers — cannot explain.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -876,6 +934,7 @@ const questionBank_CON = [
     "id": "8f83075b",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "Researcher Lin Zhi developed a process for increasing the tensile strength — measured in gigapascals, or GPa — of silkworm ______ dissolving and reweaving the silk in a solution of iron metal ions, zinc, and sugar, Zhi increased the amount of force required to stretch it from approximately 0.5 GPa to 2 GPa.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -891,6 +950,7 @@ const questionBank_CON = [
     "id": "2fcd0070",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "Mod",
     "passage": "Supported by biochemical analyses of over 2,000 skeletons from the Middle Ages, ______",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -906,6 +966,7 @@ const questionBank_CON = [
     "id": "0b3c05ab",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "VTense",
     "passage": "By the time Hawaiian king Kamehameha III ______ the throne, the number of longhorn cattle, first introduced to the islands in 1793, had drastically increased, and so too had the need for paniolo (Hawaiian cowboys) to manage the wild herds that then roamed throughout the volcanic terrain.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -921,6 +982,7 @@ const questionBank_CON = [
     "id": "775aa448",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "Mod",
     "passage": "Based on genetic evidence, archaeologists have generally agreed that reindeer domestication began in the eleventh century CE. However, since uncovering fragments of a 2,000-year-old reindeer training harness in northern Siberia, ______ may have begun much earlier.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -936,6 +998,7 @@ const questionBank_CON = [
     "id": "2b9ce465",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "Pron",
     "passage": "The present-day city of Dushanbe, Tajikistan, was for years the capital of the Tajik Autonomous Soviet Socialist Republic, one of many nominally autonomous republics within the Soviet Union. Like ______ peer autonomous Soviet socialist republics, the Tajik Republic was established along ethnolinguistic lines: most of the republic’s residents spoke Persian.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -951,6 +1014,7 @@ const questionBank_CON = [
     "id": "6e103ce0",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "NoPunct",
     "passage": "According to Naomi Nakayama of the University of Edinburgh, the reason seeds from a dying dandelion appear to float in the air while ______ is that their porous plumes enhance drag, allowing the seeds to stay airborne long enough for the wind to disperse them throughout the surrounding area.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -966,6 +1030,7 @@ const questionBank_CON = [
     "id": "e3ac81a5",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "Nine months before Rosa Parks made history by refusing to comply with the segregated seating policy on a Montgomery, Alabama, bus, a fifteen-year-old Montgomery girl named Claudette Colvin was arrested for the same ______ to some historians, Colvin’s arrest led to Parks’s action and eventually to the desegregation of Montgomery’s bus system.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -981,6 +1046,7 @@ const questionBank_CON = [
     "id": "1fda4fb5",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "Mod",
     "passage": "Far from being modern inventions, ______ more than 5,000 years ago.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -996,6 +1062,7 @@ const questionBank_CON = [
     "id": "49fbe443",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "Mod",
     "passage": "Known as Earth’s “living skin,” biocrusts are thin layers of soil held together by surface-dwelling microorganisms such as fungi, lichens, and cyanobacteria. Fortifying soil in arid ecosystems against erosion, ______",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1011,6 +1078,7 @@ const questionBank_CON = [
     "id": "4ea959e8",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "SVA",
     "passage": "Unique among animal species, humans use our vocal apparatuses primarily for two separate communicative purposes: to talk and to sing. The question of what cross-cultural traits distinguish these distinct modes, and secondarily what pressures led humans to develop them in the first place, ______ neuropsychologist Daniela Sammler’s 2024 study “Signatures of Speech and Song: ‘Universal’ Links despite Cultural Diversity.”",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1026,6 +1094,7 @@ const questionBank_CON = [
     "id": "1d4540a3",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Dash",
     "passage": "Luci Tapahonso is the inaugural poet laureate of the Navajo Nation. Her book S áanii Dahataal/The Women Are Singing—a combination of fiction and memoir, poetry and ______ serves as a testament to her versatility as a writer.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1041,6 +1110,7 @@ const questionBank_CON = [
     "id": "bb804798",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "Pron",
     "passage": "Official measurements of the Mississippi River’s length vary: according to the US Geologic Survey, the river is 2,300 miles long, whereas the Environmental Protection Agency records its length as 2,320 miles. This disparity can be explained in part by the fact that rivers such as the Mississippi expand and contract as ______ sediment.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1056,6 +1126,7 @@ const questionBank_CON = [
     "id": "1d280f7b",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "Beatrix Potter is perhaps best known for writing and illustrating children’s books such as The Tale of Peter Rabbit (1902), but she also dedicated herself to mycology, the study of ______ more than 350 paintings of the fungal species she observed in nature and submitting her research on spore germination to the Linnean Society of London.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1071,6 +1142,7 @@ const questionBank_CON = [
     "id": "e758ffce",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "The 1977 play And the Soul Shall Dance depicts two Japanese American farming families in Depression-era Southern California. Critics have noted the way pioneering ______ compares the experiences of issei (Japanese nationals who emigrated to America) and nisei (their American- born children).",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1086,6 +1158,7 @@ const questionBank_CON = [
     "id": "5a44d1a5",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "Mod",
     "passage": "The Herfindahl-Hirschman Index (HHI), a commonly used measure of competition between companies in a particular market, ranges from a score of zero to 10,000 points. Compared with that of a highly concentrated market — that is, a market controlled by very few companies —______",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1101,6 +1174,7 @@ const questionBank_CON = [
     "id": "dea044f7",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "Poss",
     "passage": "In January 1776, Thomas Paine published Common Sense, an appeal for freedom from the British monarchy that famously helped ignite the desire for independence among the American colonists. After the colonies achieved their independence, Paine moved to Paris, where the provocative ______ would contribute to another revolution —the French Revolution.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1116,6 +1190,7 @@ const questionBank_CON = [
     "id": "1e5cd04d",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "In 1727, dramatist Lewis Theobald presented a new play, Double Falsehood, at a London theater. Theobald claimed that his drama was based on a little-known play by William Shakespeare, Cardenio. Many, including poet Alexander Pope, were ______ historians have determined that Shakespeare’s company did perform a play called Cardenio in 1613.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1131,6 +1206,7 @@ const questionBank_CON = [
     "id": "65439b1e",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Colon",
     "passage": "A group of ecologists led by Axel Mithöfer at the Max Planck Institute for Chemical Ecology in Germany examined the defensive responses of two varieties of the sweet potato ______ TN57, which is known for its insect resistance, and TN66, which is much more susceptible to pests.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1146,6 +1222,7 @@ const questionBank_CON = [
     "id": "377a2b12",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "SVA",
     "passage": "Ten of William Shakespeare’s plays are classified as histories. Although each one of these plays, which include Henry V and Richard III, ______ on a single historical figure (specifically, an English king), some, such as Henry VI Part One and Henry VI Part Two, feature different episodes from the same monarch’s life.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1161,6 +1238,7 @@ const questionBank_CON = [
     "id": "fa08b905",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "Humans were long thought to have begun occupying the Peruvian settlement of Machu Picchu between 1440 and 1450 CE. However, a team led by anthropologist Dr. Richard Burger used accelerator mass spectrometry to uncover evidence that it was occupied ______ 1420 CE, according to Burger, humans were likely inhabiting the area.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1176,6 +1254,7 @@ const questionBank_CON = [
     "id": "9e1567fe",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Colon",
     "passage": "How do scientists determine what foods were eaten by extinct hominins such as Neanderthals? In the past, researchers were limited to studying the marks found on the fossilized teeth of skeletons, but in 2017 a team led by Laura Weyrich of the Australian Centre for Ancient DNA tried something ______ the DNA found in Neanderthals’ fossilized dental plaque.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1191,6 +1270,7 @@ const questionBank_CON = [
     "id": "130d56e7",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "VTense",
     "passage": "In the canon of North African literature, Moroccan author Driss Chraïbi’s 1954 novel The Simple Past (Le Passé simple) looms large. A coming-of- age story, a social meditation, and a sober gaze into the dark maw of French colonialism, ______ interrogates systemic power with memorable intensity.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1206,6 +1286,7 @@ const questionBank_CON = [
     "id": "bdd3c593",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "NoPunct",
     "passage": "Gathering accurate data on water flow in the United States is challenging because of the country’s millions of miles of ______ the volume and speed of water at any given location can vary drastically over time.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1221,6 +1302,7 @@ const questionBank_CON = [
     "id": "ca73d064",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "Pron",
     "passage": "The human brain is primed to recognize faces — so much so that, due to a perceptual tendency called pareidolia, ______ will even find faces in clouds, wooden doors, pieces of fruit, and other faceless inanimate objects. Researcher Susan Magsamen has focused her work on better understanding this everyday phenomenon.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1236,6 +1318,7 @@ const questionBank_CON = [
     "id": "8dad1ce4",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "Santa Clara Pueblo artist Roxanne Swentzell’s sculpture Mud Woman Rolls On consists of five human figures made of clay and plant fiber and arranged in descending size; each figure holds the smaller one in front of it. The arrangement of the figures, according to ______ represents her idea that “we all come from the Earth, generation after generation.”",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1251,6 +1334,7 @@ const questionBank_CON = [
     "id": "54b5498e",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "Philosopher Peter Kivy was a leading figure in musical ______ evidenced by his belief that instead of evoking particular emotions, such as sadness or joy, compositions elicit a listener’s emotional response to the structure and artistry of the music itself, Kivy’s approach to the study of music was decidedly formalist.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1266,6 +1350,7 @@ const questionBank_CON = [
     "id": "f10d84ef",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Semi",
     "passage": "The 2022 Nobel Prize in Chemistry was awarded to three pioneers in the field of click chemistry: two-time Nobel laureate Barry Sharpless, who coined the term “click chemistry” in 1998; Carolyn Bertozzi, founder of the Bertozzi Group at ______ and Morten Meldal, a professor at the University of Copenhagen in Denmark.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1281,6 +1366,7 @@ const questionBank_CON = [
     "id": "d30b0424",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "In ancient Greece, an Epicurean was a follower of Epicurus, a philosopher whose beliefs revolved around the pursuit of pleasure. Epicurus defined pleasure as “the absence of pain in the body and of trouble in the ______ that all life’s virtues derived from this absence.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1296,6 +1382,7 @@ const questionBank_CON = [
     "id": "e9f4276d",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "A conceptual artist and designer embraced by both the art world and the fashion ______ Mary Ping was chosen to curate the exhibition Front Row: Chinese American Designers for the Museum of Chinese in America.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1311,6 +1398,7 @@ const questionBank_CON = [
     "id": "03ca25bb",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "Poss",
     "passage": "Slam poet Elizabeth Acevedo’s debut novel The Poet X, winner of the 2018 National Book Award for Young People’s Literature, is composed of ______ protagonist, fifteen-year-old Xiomara Batista.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1326,6 +1414,7 @@ const questionBank_CON = [
     "id": "54868589",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "Detroit natives Timothy Paule and Nicole Lindsey have combined their two passions, Detroit and beekeeping, to improve the health of their city’s flowers and other vegetation. In 2017, the couple converted a vacant lot in the city into an ______ in the years that followed they acquired nine additional lots and established more than 35 hives.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1341,6 +1430,7 @@ const questionBank_CON = [
     "id": "6722a82f",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "SVA",
     "passage": "Every last second of space shuttle mission STS-79, which lasted ten days and three hours, ______ carefully monitored by a team of experts.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1356,6 +1446,7 @@ const questionBank_CON = [
     "id": "8e23d0c7",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "Mod",
     "passage": "Despite being cheap, versatile, and easy to produce, ______ they are made from nonrenewable petroleum, and most do not biodegrade in landfills.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1371,6 +1462,7 @@ const questionBank_CON = [
     "id": "3d3d7b16",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "American writer Edwidge Danticat, who emigrated from Haiti in 1981, has won acclaim for her powerful short stories, novels, and ______ her lyrical yet unflinching depictions of her native country’s turbulent history, writer Robert Antoni has compared Danticat to Nobel Prize – winning novelist Toni Morrison.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1386,6 +1478,7 @@ const questionBank_CON = [
     "id": "278e3e3c",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "Featuring works by the photographers Lola Álvarez Bravo and Else “Yva” Neul ä nder-Simon, the 2021 exhibition The New Woman Behind the Camera set out to provide a wide-ranging overview of photography by women in the 1920s through the ______ given the collection’s breadth of more than 120 photos, its efforts were largely successful.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1401,6 +1494,7 @@ const questionBank_CON = [
     "id": "436cccf5",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "Swedish scientists Eva Engvall and Peter Perlmann developed a method for measuring the concentration of different proteins in a biological sample. Their ______ ELISA (enzyme-linked immunosorbent assay), is used to detect and measure proteins that indicate the presence of certain diseases.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1416,6 +1510,7 @@ const questionBank_CON = [
     "id": "d60b3de9",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "The Lion Light system, developed by Kenyan inventor Richard Turere, consists of LED lights installed around the perimeter of livestock pastures. Powered with ______ the blinking LEDs keep lions away at night, thus protecting the livestock without risking harm to the endangered lions.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1431,6 +1526,7 @@ const questionBank_CON = [
     "id": "a5da1629",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Semi",
     "passage": "In discussing Mary Shelley’s 1818 epistolary novel Frankenstein, literary theorist Gayatri Spivak directs the reader’s attention to the character of \nMargaret Saville. As Spivak points out, Saville is not the protagonist of Shelley’s ______ as the recipient of the letters that frame the book’s narrative, she’s the “occasion” of it.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1446,6 +1542,7 @@ const questionBank_CON = [
     "id": "ea3954b5",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "Pron",
     "passage": "Oglala Lakota poet Layli Long Soldier’s star quilt poems offer an unusually open-ended reading experience. With ______ eight panels of text stitched together in the shape of a traditional eight-pointed Lakota star quilt, the poems present viewers with a seemingly infinite number of ways to read them.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1461,6 +1558,7 @@ const questionBank_CON = [
     "id": "25121983",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "Mod",
     "passage": "In assessing the films of Japanese director Akira Kurosawa, ______ have missed his equally deep engagement with Japanese artistic traditions such as Noh theater.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1476,6 +1574,7 @@ const questionBank_CON = [
     "id": "b995581c",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "VTense",
     "passage": "A second-generation Japanese American, Wataru Misaka ______ in World War II (1941-45) and won two amateur national basketball championships at the University of Utah when he joined the New York Knicks for the 1947-48 season, becoming the first non-white basketball player in the US’s top professional league.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1491,6 +1590,7 @@ const questionBank_CON = [
     "id": "f4e0e75d",
     "skill": "Boundaries",
     "difficulty": "Hard",
+    "ruleType": "Commas",
     "passage": "Archaeologists have estimated that the pre-Columbian Native American city of Cahokia, located across the Mississippi River from modern-day St. Louis, Missouri, had as many as 20,000 inhabitants in the year 1150 ______ it one of the largest cities in North America at the time.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
@@ -1506,6 +1606,7 @@ const questionBank_CON = [
     "id": "4a1283fc",
     "skill": "Form, Structure, and Sense",
     "difficulty": "Hard",
+    "ruleType": "SVA",
     "passage": "Because a cycle of lunar phases ______ 29.5 days to complete, it’s possible to observe two full moons in a single month, one at the beginning and one at the end.",
     "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
     "options": [
