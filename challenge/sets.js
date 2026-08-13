@@ -137,4 +137,118 @@ window.CHALLENGE_SETS = {
         },
     ],
 
+    // ═════════════════════════════════════════════════════════════════
+    // HOW THIS SET WAS BUILT — Form, Structure and Sense, all six concepts
+    // ═════════════════════════════════════════════════════════════════
+    //
+    // Sat in class on the night of 13/14 Aug, after the Form/Structure/Sense teaching. FSS ONLY:
+    // Boundaries is not in scope for this class and is not in this set. When it is
+    // taught, it APPENDS a new set — it does not get edited into this one (rule 2).
+    //
+    // COMPOSITION — 15 questions, Medium 4 : Hard 11, no Easy. All six concepts.
+    //
+    //   VForm 3 — three of the four non-Easy VForm items in the bank, because the
+    //     finite/non-finite decision runs in BOTH directions and no single item
+    //     tests both. 7944e9f4 and cc0dcd9a need a non-finite form precisely
+    //     because the clause already carries its main verb; 491a17a7 needs the
+    //     conjugated one because the blank IS the main verb. A set holding only
+    //     the first kind teaches "pick the -ing", which is not the rule.
+    //
+    //   Mod 2 — Hard-only in this bank (10 items, none at Easy or Medium), so a
+    //     set without Hard slots cannot test modifier placement at all. All ten
+    //     are the same construction — leading modifier, choose the subject that
+    //     belongs next to it — so these two differ by DISTRACTOR strategy, not by
+    //     concept: 49fbe443 buries the true subject inside a possessive abstract
+    //     noun, 8e23d0c7 hides it behind an expletive "there are" and a passive.
+    //
+    //   SVA 3 — the core of the class it follows, and the concept where the trap
+    //     has a direction: 377a2b12 singular subject across an interrupting
+    //     relative clause, 9597885e PLURAL subject across an interrupter ringed by
+    //     singular nouns, 81000f32 (Medium) singular subject across a
+    //     prepositional phrase. A set of three singular-subject items would only
+    //     ever reward the guess "make it singular".
+    //
+    //   VTense 2 — the two directions of past against past perfect: b995581c needs
+    //     "had served" for the earlier of two past events; 0b3c05ab needs the plain
+    //     simple past inside a sentence whose other clause is ALREADY past perfect.
+    //
+    //   Pron 2 — bb804798 pronoun-antecedent agreement where the nearest noun is
+    //     the wrong number and person is a live distractor; 2b9ce465 possessive
+    //     determiner against contraction (its/it's, their/they're).
+    //
+    //   Poss 3 — every item here carries two decisions in one blank, which is what
+    //     separates the concept from a spelling check: 03ca25bb plain plural +
+    //     singular possessive, a272d236 plain plural + plural possessive,
+    //     f09186ab (Medium) singular possessive + plain plural.
+    //
+    // NO EASY, DELIBERATELY. Each concept sits at the difficulty where it
+    // discriminates. The Easy FSS items in this bank are single-decision blanks
+    // that restate the rule rather than test it, and Mod cannot be reached below
+    // Hard at all. The Medium four are the floor, not filler.
+    //
+    // SELECTION was deterministic and LEDGER-BLIND, as for con-concepts-1:
+    // candidates ordered by id within each ruleType/difficulty cell, never
+    // shuffled, and no progress ledger was consulted.
+    //
+    // FIVE TAGS WERE ON THE REVIEW LIST AND WERE READ BEFORE USE — 491a17a7
+    // (VForm), 0b3c05ab (VTense), 2b9ce465 (Pron), 49fbe443 and 8e23d0c7 (Mod).
+    // Each item's own explanation names the convention its tag claims, so all five
+    // are confirmed. That also settles the warning carried in con-concepts-1: every
+    // Mod explanation in this bank states subject-modifier placement outright.
+    //
+    // TWO TAGS LOOK WRONG AND ARE EXCLUDED — worth fixing in data-conventions.js
+    // whenever the review pass happens, but not fixed here, because this file must
+    // not be the place a bank correction hides:
+    //   • 0cdbfd0f — tagged VForm, but its explanation turns on matching the past
+    //     tense of "applied". That is VTense. It would have been the fourth VForm
+    //     slot; it is not in this set.
+    //   • 130d56e7 — tagged VTense, but its explanation is subject-modifier
+    //     placement verbatim. That is Mod.
+    //
+    // SCORED, not a debrief, for the reason given above con-concepts-1: mastery
+    // needs two clean corrects on separate goes and launchSession() cannot repeat a
+    // question inside one session, so a first pass sat with the tutor in the room
+    // cannot inflate anything. The uncoached reading is the second pass.
+    //
+    // Note 03ca25bb also appears in Faith's con-concepts-1. Rule 3 is per student —
+    // a set must not overlap that student's OWN earlier sets — and this is Maysa's
+    // first set, so there is nothing to exclude.
+    'Maysa': [
+        {
+            setId:  'fss-concepts-1',
+            title:  'Form, Structure and Sense: every form, every agreement',
+            source: 'Built from the bank by concept coverage, 14 Aug 2026',
+            date:   '2026-08-14',
+            ids: [
+                // ── Verb form · finite vs non-finite, both directions ──
+                '7944e9f4',   // VForm    · Hard   — -ing modifier, clause already has its verb
+                'cc0dcd9a',   // VForm    · Medium — infinitive as modifier
+                '491a17a7',   // VForm    · Medium — the blank IS the main verb, so conjugate it
+
+                // ── Modifier placement · Hard-only in the bank ─────────
+                '49fbe443',   // Mod      · Hard   — true subject buried in a possessive
+                '8e23d0c7',   // Mod      · Hard   — true subject behind "there are" + passive
+
+                // ── Subject-verb agreement · across interrupters ───────
+                '377a2b12',   // SVA      · Hard   — singular across a relative clause
+                '9597885e',   // SVA      · Hard   — plural subject, singular nouns around it
+                '81000f32',   // SVA      · Medium — singular across a prepositional phrase
+
+                // ── Verb tense · past against past perfect ─────────────
+                'b995581c',   // VTense   · Hard   — earlier of two past events
+                '0b3c05ab',   // VTense   · Hard   — plain past beside an existing past perfect
+
+                // ── Pronouns · agreement and the homophone pair ────────
+                'bb804798',   // Pron     · Hard   — nearest noun is the wrong number
+                '2b9ce465',   // Pron     · Hard   — its/it's, their/they're
+
+                // ── Possessives · two decisions in one blank ───────────
+                '03ca25bb',   // Poss     · Hard   — plain plural + singular possessive
+                'a272d236',   // Poss     · Hard   — plain plural + plural possessive
+                'f09186ab',   // Poss     · Medium — singular possessive + plain plural
+            ],
+        },
+    ],
+
+
 };
