@@ -25,7 +25,7 @@
 //      to first names by convention so they read cleanly across the page.
 //      No other code change needed.
 //
-// The student hashes here are for: "gabe", "maysa", "faith".
+// The student hashes here are for: "gabe", "maysa", "faith", "luke".
 //
 // ── Roles ────────────────────────────────────────────────────────
 // A page that must not be opened by a student declares, BEFORE loading this file:
@@ -55,6 +55,7 @@
         '72831924521887e6638e686d6d004cd6cefe48168d2d4e2c40d29115b9c611b9': 'Gabe',
         'e47c0980d3fb546a933d172c8ff1ce7ae2abbc93f5cfc883330e28f350c6b262': 'Maysa',
         '2b93b177b55445f513d73ff1f0f30376d6ec181bcc1bd5cd19cccb970f4ee0d2': 'Faith',
+        'cccf52f3d03c5072ee64a136f74fc56b27e04f15ffe5d1d277d58ab18d94b327': 'Luke',
     };
     // Tutor-only. A random passphrase, not a first name: the hash is public, so the
     // password's entropy is the only thing standing behind it. To change it, hash the
