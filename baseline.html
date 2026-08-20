@@ -62,6 +62,7 @@
 <script src="data-info-ideas.js?v=20260726"></script>
 <script src="data-conventions.js?v=20260810"></script>
 <script src="progress.js?v=20260820"></script>
+<script src="sheet-sync.js?v=20260820"></script>
 <script src="baseline-spec.js?v=20260820"></script>
 <script src="baseline-grade.js?v=20260820"></script>
 <script src="baseline-store.js?v=20260820"></script>
@@ -226,7 +227,79 @@ function finishScreener(){
     if (typeof recordAnswer === 'function' && i.chosen) recordAnswer(i.id, i.correct, 'baseline');
   });
 
+  // Report now, not after the optional follow-up. The follow-up may never
+  // happen, and a tutor should not have to wait on a stage the student can
+  // decline to see that the screener was sat at all.
+  reportBaseline('screener', projection, screenerItems);
+
   renderResults(projection, /*probesPending*/ true);
+}
+
+// ── report to the tutor sheet ─────────────────────────────────────
+// Practice reports through history.js -> syncSessionToSheet; homework has its
+// own postLog(). The baseline did neither, so a screener result lived in this
+// browser's localStorage and nowhere the tutor could see it — which defeats
+// most of the point of having a baseline at all.
+//
+// Fire-and-forget, exactly like the other two: a sync that fails must never
+// cost the student their result, which is already saved by this point.
+function reportBaseline(stage, projection, items){
+  if (typeof syncSessionToSheet !== 'function') return;
+
+  const skills = {};
+  items.filter(i => i.stage === 1).forEach(i => {
+    const s = skills[i.skill] || (skills[i.skill] = { correct:0, total:0 });
+    s.total++; if (i.correct) s.correct++;
+  });
+
+  const bands = {};
+  Object.values(profile).forEach(s => {
+    bands[s.skill] = {
+      band: s.band, confidence: s.confidence,
+      screener: s.screenCorrect + '/' + s.screenTotal,
+      probe: s.probeTier ? (s.probeTier + ':' + (s.probeCorrect ? 'passed' : 'missed')) : '',
+      note: s.note || '',
+    };
+  });
+
+  const correct = items.filter(i => i.stage === 1 && i.correct).length;
+  const total   = items.filter(i => i.stage === 1).length;
+
+  try {
+    syncSessionToSheet({
+      date: new Date().toISOString(),
+      source: 'baseline',
+      mode: stage,                        // 'screener' or 'complete'
+      assignmentTitle: 'Baseline Screener · Form ' + FORM,
+      score: correct,
+      total: total,
+      pct: total ? Math.round(correct / total * 100) : 0,
+      skills: Object.keys(skills),
+      diffs: [...new Set(items.map(i => i.difficulty))],
+      duration: items.reduce((s, i) => s + (i.seconds || 0), 0),
+      avgSecs: items.length
+        ? Math.round(items.reduce((s, i) => s + (i.seconds || 0), 0) / items.length) : 0,
+      skillStats: skills,
+      blurCount: (typeof getBlurCount === 'function') ? getBlurCount() : '',
+      questions: items.map(i => ({
+        id: i.id, skill: i.skill, difficulty: i.difficulty,
+        chosen: i.chosen, correct: (questionBank.find(q => q.id === i.id) || {}).answer,
+        isCorrect: i.correct, secs: i.seconds, stage: i.stage,
+        probeTier: i.probeTier || '',
+      })),
+      baseline: {
+        form: FORM,
+        stage: stage,
+        sitting: getBaselines().length,
+        projectionLow: projection.low,
+        projectionHigh: projection.high,
+        accuracy: projection.accuracy,
+        bands: bands,
+        focus: baselineFocusQueue(profile, 4, questionBank)
+          .map(w => w.skill + ' (' + w.band + ')'),
+      },
+    });
+  } catch (e) { console.warn('[baseline] sheet report failed (silent):', e); }
 }
 
 function _slimSkills(p){
@@ -292,6 +365,11 @@ function finishProbes(){
   probeItems.forEach(i => {
     if (typeof recordAnswer === 'function' && i.chosen) recordAnswer(i.id, i.correct, 'baseline');
   });
+
+  // A second row, with the bands now confirmed rather than provisional. Sent as
+  // its own row rather than an edit: the sheet is an append-only log, and the
+  // screener row is what the tutor may already have acted on.
+  reportBaseline('complete', projection, all);
 
   Q = all.map(i => questionBank.find(q => q.id === i.id) || i);
   renderResults(projection, /*probesPending*/ false, all);

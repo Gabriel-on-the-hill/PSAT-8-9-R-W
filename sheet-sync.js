@@ -32,6 +32,11 @@ function syncSessionToSheet(record) {
         blurCount: record.blurCount ?? '',
         questions: Array.isArray(record.questions) ? record.questions : [],
     };
+    // The baseline screener carries things a practice session has no concept of:
+    // a per-skill band, a projected score RANGE, and which parallel form was
+    // sat. This payload is built key by key, so anything not named here is
+    // dropped — which is why the baseline reached localStorage and nothing else.
+    if (record.baseline) payload.baseline = record.baseline;
     if (SHEET_SYNC_SECRET) payload.secret = SHEET_SYNC_SECRET;
 
     try {
