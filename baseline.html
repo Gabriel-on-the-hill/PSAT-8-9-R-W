@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>Baseline Screener — PSAT 8/9 R&W</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -57,6 +60,14 @@
   details.exp{margin-top:.35rem}
   details.exp summary{cursor:pointer;color:var(--accent);font-weight:600;font-size:.88rem}
 </style>
+<!-- gate.js FIRST, as on every other student page.
+     This page had no gate at all, which cost two things. It was open to anyone
+     with the URL — and, worse, sessionStorage's `psat89_user` was never set, so
+     a student who opened the screener directly sat it as "guest": the record
+     saved to psat89_baseline_guest, and the row posted to the tutor sheet was
+     attributed to "(unknown)". A baseline nobody can attribute to a student is
+     not a baseline. -->
+<script src="gate.js?v=20260820"></script>
 <script src="data-craft-structure.js?v=20260708"></script>
 <script src="data-expression-of-ideas.js?v=20260726"></script>
 <script src="data-info-ideas.js?v=20260726"></script>
@@ -277,6 +288,10 @@ function reportBaseline(stage, projection, items){
       skills: Object.keys(skills),
       diffs: [...new Set(items.map(i => i.difficulty))],
       duration: items.reduce((s, i) => s + (i.seconds || 0), 0),
+      // The Apps Script writes its Seconds column from `seconds`, not
+      // `duration` — homework posts that key and practice does not, which is
+      // why the Sessions tab has always had a blank Seconds column. Send both.
+      seconds: items.reduce((s, i) => s + (i.seconds || 0), 0),
       avgSecs: items.length
         ? Math.round(items.reduce((s, i) => s + (i.seconds || 0), 0) / items.length) : 0,
       skillStats: skills,

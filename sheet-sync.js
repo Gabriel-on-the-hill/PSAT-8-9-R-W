@@ -27,6 +27,11 @@ function syncSessionToSheet(record) {
         diffs: Array.isArray(record.diffs) ? record.diffs : [],
         mode: record.mode || '',
         duration: record.duration ?? '',
+        // The Apps Script's Seconds column reads `seconds`. Homework posts that
+        // key directly and has always filled the column; everything routed
+        // through here posted only `duration`, so the Sessions tab's Seconds
+        // column has been blank for every practice session ever logged.
+        seconds: record.seconds ?? record.duration ?? '',
         avgSecs: record.avgSecs ?? '',
         skillStats: record.skillStats || {},
         blurCount: record.blurCount ?? '',

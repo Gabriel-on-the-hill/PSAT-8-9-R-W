@@ -86,8 +86,24 @@ function waitFor(fn, ms) {
     });
     t('page boots clean', () => eq(pageErrors, []));
 
+    t('the screener is gated like every other student page', () => {
+        ok(inlined.includes('gate.js'),
+           'baseline.html does not load gate.js — it is open to anyone with the URL');
+    });
+
+    t('an unauthenticated visitor is stopped', () => {
+        ok(win.document.getElementById('__gateInput'),
+           'the gate did not mount — the screener rendered without a password');
+    });
+
     console.log('\nSITTING THE SCREENER\n--------------------');
+    // Unlock the way a real unlock does, so `psat89_user` is set by the gate
+    // rather than by the test reaching around it.
+    ev('sessionStorage.setItem("mastery_unlocked","1")');
     ev('sessionStorage.setItem("psat89_user","Luke")');
+    ev('sessionStorage.setItem("mastery_role","student")');
+    var _ov = win.document.getElementById('__gateOverlay');
+    if (_ov) _ov.remove();
     win.startTest();
     // Answer by DOMAIN, not alternately. The two items of a skill sit ~11 apart
     // after spreadBaseline, so an i%2 pattern gives every skill exactly 1/2 —
@@ -121,6 +137,16 @@ function waitFor(fn, ms) {
 
     t('the row is attributed to the signed-in student', () =>
         eq(p1.body.student, 'Luke'));
+
+    t('the row is NOT anonymous', () => {
+        ok(p1.body.student && p1.body.student !== '' && p1.body.student !== '(unknown)',
+           'the sheet would log this baseline against nobody');
+    });
+
+    t('the Seconds column the Apps Script reads is populated', () => {
+        ok(typeof p1.body.seconds === 'number' && p1.body.seconds > 0,
+           'seconds: ' + JSON.stringify(p1.body.seconds));
+    });
 
     t('the row is typed as a baseline, not a practice session', () => {
         eq(p1.body.type, 'baseline', 'the tutor cannot tell this apart from practice:');
