@@ -11,8 +11,15 @@ function syncSessionToSheet(record) {
     if (!SHEET_SYNC_ENDPOINT) return;
     if (!record) return;
 
+    // Whoever is signed in NOW is usually the right answer, but not always. A
+    // baseline recovered from this browser months later belongs to the student
+    // who sat it, not to whoever happens to be logged in while it is backfilled
+    // — and a record sat before the screener was gated is filed under "guest",
+    // so the caller is the only thing that knows the real name. An explicit
+    // record.student therefore wins.
     let student = '';
     try { student = sessionStorage.getItem('psat89_user') || ''; } catch (e) { }
+    if (record.student) student = record.student;
 
     const payload = {
         date: record.date || new Date().toISOString(),
@@ -42,6 +49,9 @@ function syncSessionToSheet(record) {
     // sat. This payload is built key by key, so anything not named here is
     // dropped — which is why the baseline reached localStorage and nothing else.
     if (record.baseline) payload.baseline = record.baseline;
+    // Marks a row backfilled from a device long after the fact, so a late
+    // arrival in the sheet is not read as a sitting that happened today.
+    if (record.recovered) payload.recovered = true;
     if (SHEET_SYNC_SECRET) payload.secret = SHEET_SYNC_SECRET;
 
     try {

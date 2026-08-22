@@ -262,6 +262,13 @@ function buildFullBackup() {
         // backup, a device change would silently reset the one number that says
         // whether any of this stuck.
         retention:  (typeof getRetentionStats === 'function') ? getRetentionStats() : {},
+        // The baseline is the anchor every later claim of progress is measured
+        // against, and it is the one record that cannot be reconstructed from
+        // anything else here — the ledger knows a question was answered, not
+        // what band a skill was in on day one. Left out, "Back Up Everything"
+        // quietly lost the starting point.
+        baselines:  (typeof getBaselines === 'function') ? getBaselines() : [],
+        focus:      (typeof getFocusQueue === 'function') ? getFocusQueue() : null,
     };
 }
 
@@ -347,6 +354,9 @@ function openRestoreAllModal() {
                 && typeof mergeTrapStats === 'function') { mergeTrapStats(incoming.trapStats); }
             if (incoming.retention && typeof incoming.retention === 'object'
                 && typeof mergeRetention === 'function') { mergeRetention(incoming.retention); }
+            if (Array.isArray(incoming.baselines) && typeof mergeBaselines === 'function') {
+                if (mergeBaselines(incoming.baselines)) restored++;
+            }
             if (restored === 0)
                 throw new Error('No history or progress found in this file.');
             modal.style.display = 'none';

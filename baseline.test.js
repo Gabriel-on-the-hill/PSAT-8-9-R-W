@@ -111,13 +111,63 @@ t('form build is deterministic across calls', () => {
     eq(a, b, 'form A drifted between builds:');
 });
 
+const DOMAIN_SEQ = ['Craft & Structure', 'Information & Ideas',
+                    'Expression of Ideas', 'Std. English Conv.'];
+
 t('items are presented in real domain order', () => {
-    const order = ['Craft & Structure', 'Information & Ideas',
-                   'Expression of Ideas', 'Std. English Conv.'];
     forms.forEach(f => {
-        const seq = f.questions.map(q => order.indexOf(ctx.SKILL_DOMAIN[q.skill]));
+        const seq = f.questions.map(q => DOMAIN_SEQ.indexOf(ctx.SKILL_DOMAIN[q.skill]));
         seq.forEach((v, i) => ok(i === 0 || seq[i - 1] <= v,
             'form ' + f.form + ' domain order broken at index ' + i));
+    });
+});
+
+// ── the three assertions below are about the order actually SERVED ──
+// The one above tests buildBaselineForm's output. The page does not serve that:
+// it serves spreadBaseline(built.questions), and for months the spread quietly
+// undid the domain blocking the test above had just confirmed. It round-robined
+// all eleven skill lanes across the whole set, so the student met C&S, I&I, EoI
+// and SEC, then met all four again in the same order — two identical sweeps,
+// period exactly eleven, which is the most learnable order there is. The unit
+// test checked the wrong array and the e2e test only checked non-adjacency, so
+// nothing failed. Test what is served.
+t('the SERVED order keeps the domain blocks', () => {
+    forms.forEach(f => {
+        const served = ctx.spreadBaseline(f.questions);
+        const seq = served.map(q => DOMAIN_SEQ.indexOf(ctx.SKILL_DOMAIN[q.skill]));
+        seq.forEach((v, i) => ok(i === 0 || seq[i - 1] <= v,
+            'form ' + f.form + ' leaves and re-enters a domain at index ' + i
+            + ' (' + served.map(q => ctx.SKILL_DOMAIN[q.skill][0]).join('') + ')'));
+    });
+});
+
+t('the SERVED order never puts a skill next to itself', () => {
+    forms.forEach(f => {
+        const served = ctx.spreadBaseline(f.questions).map(q => q.skill);
+        served.forEach((s, i) => ok(i === 0 || served[i - 1] !== s,
+            'form ' + f.form + ' repeats ' + s + ' at index ' + i));
+    });
+});
+
+t('the SERVED order is not one repeating cycle of every skill', () => {
+    // The specific regression: item n and item n+11 were always the same skill.
+    // Any fixed period over the skill sequence is learnable across three forms.
+    forms.forEach(f => {
+        const served = ctx.spreadBaseline(f.questions).map(q => q.skill);
+        const period = ctx.BASELINE_SKILLS.length;
+        const cyclic = served.every((s, i) =>
+            i + period >= served.length || served[i + period] === s);
+        ok(!cyclic, 'form ' + f.form + ' repeats the whole skill sequence every '
+            + period + ' items');
+    });
+});
+
+t('every item still survives the spread', () => {
+    forms.forEach(f => {
+        const served = ctx.spreadBaseline(f.questions);
+        eq(served.length, f.questions.length, 'form ' + f.form + ' lost items:');
+        eq(served.map(q => q.id).sort(), f.questions.map(q => q.id).sort(),
+            'form ' + f.form + ' changed which items it serves:');
     });
 });
 

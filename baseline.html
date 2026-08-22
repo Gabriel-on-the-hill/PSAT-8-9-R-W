@@ -71,12 +71,12 @@
 <script src="data-craft-structure.js?v=20260708"></script>
 <script src="data-expression-of-ideas.js?v=20260726"></script>
 <script src="data-info-ideas.js?v=20260726"></script>
-<script src="data-conventions.js?v=20260810"></script>
+<script src="data-conventions.js?v=20260811"></script>
 <script src="progress.js?v=20260820"></script>
 <script src="sheet-sync.js?v=20260820"></script>
-<script src="baseline-spec.js?v=20260820"></script>
+<script src="baseline-spec.js?v=20260822"></script>
 <script src="baseline-grade.js?v=20260820"></script>
-<script src="baseline-store.js?v=20260820"></script>
+<script src="baseline-store.js?v=20260822"></script>
 </head>
 <body>
 <div class="wrap">
@@ -224,24 +224,44 @@ function finishScreener(){
 
   // Write the record NOW. The follow-up is optional and the student may close
   // the tab; the screener result must not depend on a stage that may not happen.
+  // The plan goes INTO the record as well as into its own key: the key is what
+  // the app reads, the record is what gets reported and recovered, and a plan
+  // that lives only in the key never reaches the tutor.
+  const queue = baselineFocusQueue(profile, null, questionBank);
   saveBaseline({
     takenAt: Date.now(), form: FORM, stage: 'screener',
     durationSec: BASELINE_SECONDS - remaining,
     correct: screenerItems.filter(i => i.correct).length,
     total: screenerItems.length,
     projection, skills: _slimSkills(profile), items: screenerItems,
+    focus: slimFocusQueue(queue),
   });
-  saveFocusQueue(baselineFocusQueue(profile, null, questionBank));
+  saveFocusQueue(queue);
 
-  // Feed the mastery ledger, tagged so it is distinguishable from practice.
-  screenerItems.forEach(i => {
-    if (typeof recordAnswer === 'function' && i.chosen) recordAnswer(i.id, i.correct, 'baseline');
-  });
+  // ── the baseline does NOT write to the mastery ledger ─────────────
+  // It used to, tagged 'baseline'. That looked harmless and was not. A ledger
+  // row makes a question "seen", a miss puts it on rung zero of the review
+  // ladder — due again in ONE DAY — and dueForReview() draws from the whole
+  // bank filtered on nothing but "seen and overdue". So the morning after a
+  // baseline, homework-run.html started splicing review questions out of
+  // skills nobody had taught yet, which is the one thing the review block is
+  // not allowed to do:
+  //
+  //   "It never serves an unseen question — a 'review' block that hands a
+  //    student an untaught skill cold is not review."   — AGENTS.md
+  //
+  // And a baseline is DESIGNED to produce misses across all eleven skills, so
+  // this fired every time, on every student, silently.
+  //
+  // Nothing is lost by not writing: the baseline record already holds every
+  // item with the chosen letter, the correct letter and the elapsed seconds,
+  // which is strictly more than the ledger kept. The record is the right home
+  // for baseline data; the ledger is for questions that have been taught.
 
   // Report now, not after the optional follow-up. The follow-up may never
   // happen, and a tutor should not have to wait on a stage the student can
   // decline to see that the screener was sat at all.
-  reportBaseline('screener', projection, screenerItems);
+  reportBaseline();
 
   renderResults(projection, /*probesPending*/ true);
 }
@@ -254,66 +274,18 @@ function finishScreener(){
 //
 // Fire-and-forget, exactly like the other two: a sync that fails must never
 // cost the student their result, which is already saved by this point.
-function reportBaseline(stage, projection, items){
+function reportBaseline(){
   if (typeof syncSessionToSheet !== 'function') return;
-
-  const skills = {};
-  items.filter(i => i.stage === 1).forEach(i => {
-    const s = skills[i.skill] || (skills[i.skill] = { correct:0, total:0 });
-    s.total++; if (i.correct) s.correct++;
-  });
-
-  const bands = {};
-  Object.values(profile).forEach(s => {
-    bands[s.skill] = {
-      band: s.band, confidence: s.confidence,
-      screener: s.screenCorrect + '/' + s.screenTotal,
-      probe: s.probeTier ? (s.probeTier + ':' + (s.probeCorrect ? 'passed' : 'missed')) : '',
-      note: s.note || '',
-    };
-  });
-
-  const correct = items.filter(i => i.stage === 1 && i.correct).length;
-  const total   = items.filter(i => i.stage === 1).length;
-
+  // Report from the record that was just SAVED, not from live page state, so a
+  // row recovered from this browser months later is byte-identical to the one
+  // that goes up now. baseline-recover.html uses the same builder.
+  const rec = latestBaseline();
+  if (!rec) return;
+  let student = '';
+  try { student = sessionStorage.getItem('psat89_user') || ''; } catch (e) {}
   try {
-    syncSessionToSheet({
-      date: new Date().toISOString(),
-      source: 'baseline',
-      mode: stage,                        // 'screener' or 'complete'
-      assignmentTitle: 'Baseline Screener · Form ' + FORM,
-      score: correct,
-      total: total,
-      pct: total ? Math.round(correct / total * 100) : 0,
-      skills: Object.keys(skills),
-      diffs: [...new Set(items.map(i => i.difficulty))],
-      duration: items.reduce((s, i) => s + (i.seconds || 0), 0),
-      // The Apps Script writes its Seconds column from `seconds`, not
-      // `duration` — homework posts that key and practice does not, which is
-      // why the Sessions tab has always had a blank Seconds column. Send both.
-      seconds: items.reduce((s, i) => s + (i.seconds || 0), 0),
-      avgSecs: items.length
-        ? Math.round(items.reduce((s, i) => s + (i.seconds || 0), 0) / items.length) : 0,
-      skillStats: skills,
-      blurCount: (typeof getBlurCount === 'function') ? getBlurCount() : '',
-      questions: items.map(i => ({
-        id: i.id, skill: i.skill, difficulty: i.difficulty,
-        chosen: i.chosen, correct: (questionBank.find(q => q.id === i.id) || {}).answer,
-        isCorrect: i.correct, secs: i.seconds, stage: i.stage,
-        probeTier: i.probeTier || '',
-      })),
-      baseline: {
-        form: FORM,
-        stage: stage,
-        sitting: getBaselines().length,
-        projectionLow: projection.low,
-        projectionHigh: projection.high,
-        accuracy: projection.accuracy,
-        bands: bands,
-        focus: baselineFocusQueue(profile, 4, questionBank)
-          .map(w => w.skill + ' (' + w.band + ')'),
-      },
-    });
+    const payload = baselineSheetPayload(rec, student);
+    if (payload) syncSessionToSheet(payload);
   } catch (e) { console.warn('[baseline] sheet report failed (silent):', e); }
 }
 
@@ -371,20 +343,21 @@ function finishProbes(){
   profile = buildBaselineProfile(all);
   const projection = projectBaseline(all);   // still stage-1 only, by design
 
+  const queue2 = baselineFocusQueue(profile, null, questionBank);
   amendLatestBaseline({
     stage: 'complete', skills: _slimSkills(profile),
-    items: all, projection,
+    items: all, projection, focus: slimFocusQueue(queue2),
   });
-  saveFocusQueue(baselineFocusQueue(profile, null, questionBank));
+  saveFocusQueue(queue2);
 
-  probeItems.forEach(i => {
-    if (typeof recordAnswer === 'function' && i.chosen) recordAnswer(i.id, i.correct, 'baseline');
-  });
+  // No ledger write here either — see finishScreener(). Probes are the WORST
+  // candidates for the ladder: a Hard ceiling probe on a skill the student has
+  // never been taught is precisely the untaught-skill review the rule forbids.
 
   // A second row, with the bands now confirmed rather than provisional. Sent as
   // its own row rather than an edit: the sheet is an append-only log, and the
   // screener row is what the tutor may already have acted on.
-  reportBaseline('complete', projection, all);
+  reportBaseline();
 
   Q = all.map(i => questionBank.find(q => q.id === i.id) || i);
   renderResults(projection, /*probesPending*/ false, all);
@@ -503,18 +476,62 @@ function renderResults(projection, probesPending, allItems){
   }
 
   // ── review ──
-  const revItems = allItems || screenerItems;
+  // The whole question comes back, not just the letters. This panel used to
+  // print "Your answer: B · Correct: C" with the stem, the passage and the four
+  // options nowhere on the page — so a student sitting down to work through
+  // their baseline had two letters and a paragraph of rationale about text they
+  // could no longer see. A letter is not an answer you can learn from.
+  //
+  // The house rule is explicit: "Every question survives the set — passage, her
+  // answer, the right answer, the explanation — re-readable." The runner has
+  // always done this; the baseline never did, and the baseline is the one
+  // sitting a student is most likely to review with a tutor afterwards.
+  //
+  // Misses first, in the runner's order, because the review that matters is the
+  // one on what went wrong. Each item is collapsed by default — 22 to 30 full
+  // passages expanded at once is a wall nobody scrolls — but everything needed
+  // to redo the question is inside it.
+  const revItems = (allItems || screenerItems).slice().sort((a, b) =>
+    (a.correct === b.correct) ? 0 : (a.correct ? 1 : -1));
+  const nMiss = revItems.filter(i => !i.correct).length;
   h += '<div class="panel"><h2>Review</h2>';
+  h += '<p class="sub" style="font-size:.86rem;margin-bottom:.3rem">'
+    +  (nMiss ? 'The ' + nMiss + ' to look at first are at the top. ' : '')
+    +  'Open any one to see the passage, the options and why.</p>';
   revItems.forEach(i => {
     const q = questionBank.find(x => x.id === i.id);
     if (!q) return;
+
+    const media = q.image
+      ? '<div class="passage"><img src="' + q.image + '" alt="'
+        + String(q.alt || 'Question figure').replace(/"/g, '&quot;') + '"></div>'
+      : (q.passage ? '<div class="passage">' + esc(q.passage) + '</div>' : '');
+
+    // Options carry their own verdict, so the letters in the header mean
+    // something. The right one is always marked, including on a correct answer:
+    // confirming what you chose is part of reading it back.
+    const opts = (q.options || []).map(o => {
+      const letter = String(o).trim()[0];
+      const isRight = letter === q.answer;
+      const isMine  = letter === i.chosen;
+      const style = isRight
+        ? 'border-color:#bfe3c8;background:var(--good-soft)'
+        : (isMine ? 'border-color:#f3c0c0;background:var(--bad-soft)' : '');
+      const tag = isRight ? ' <b style="color:var(--good)">&larr; correct</b>'
+                : (isMine ? ' <b style="color:var(--bad)">&larr; you chose this</b>' : '');
+      return '<div class="opt" style="cursor:default;' + style + '">' + esc(o) + tag + '</div>';
+    }).join('');
+
     h += '<div class="rev"><span class="tag ' + (i.correct?'ok':'no') + '">'
       +  (i.correct ? 'Correct' : 'Review') + '</span> &middot; ' + esc(i.skill)
       +  ' <span class="sub">· ' + i.difficulty + (i.stage===2 ? ' · follow-up' : '') + '</span>'
-      +  '<br><span class="sub">Your answer: ' + (i.chosen || '—') + ' &middot; Correct: ' + q.answer
-      +  ' &middot; ' + i.seconds + 's</span>'
-      +  '<details class="exp"><summary>Why</summary><div style="margin-top:.3rem;font-size:.9rem">'
-      +  esc(q.explanation) + '</div></details></div>';
+      +  '<br><span class="sub">Your answer: ' + (i.chosen || 'left blank')
+      +  ' &middot; Correct: ' + q.answer + ' &middot; ' + i.seconds + 's</span>'
+      +  '<details class="exp"><summary>Show the question</summary>'
+      +  '<div style="margin-top:.5rem">' + media
+      +  '<div class="qtext">' + esc(q.question) + '</div>' + opts
+      +  '<div style="margin-top:.5rem;font-size:.9rem"><b>Why:</b> '
+      +  esc(q.explanation) + '</div></div></details></div>';
   });
   h += '</div>';
 

@@ -8,6 +8,14 @@ there. **Change one, change both, and run both test suites.**
 
 ## Run the tests before you claim anything works
 
+**This is the whole list. If a suite is not on it, it does not get run — and a suite nobody runs
+goes red and stays red.** The five `baseline*.test.js` suites were missing from this list from the
+day they were written. Three weeks later two of them were failing: the ranked focus queue the
+whole screener exists to produce was being written to `localStorage` and posted nowhere, and the
+sheet could not tell a first sitting from a retake. Both had been true since the module shipped,
+and a rebuild note in the project folder was still claiming "85 tests passing" — which was the
+count of the three suites that existed when it was written.
+
 ```
 npm install jsdom --prefix /tmp/j
 NODE_PATH=/tmp/j/node_modules node homework/homework-run.test.js      # the learning loop
@@ -15,12 +23,28 @@ NODE_PATH=/tmp/j/node_modules node homework/assignments.test.js       # the plan
 NODE_PATH=/tmp/j/node_modules node homework/bank.test.js              # the bank is classified right
 NODE_PATH=/tmp/j/node_modules node homework/review-ladder.test.js     # spacing + calibration
 NODE_PATH=/tmp/j/node_modules node ratio-mix.test.js                 # custom practice in a ratio
+NODE_PATH=/tmp/j/node_modules node ruletype.test.js                  # Conventions tagged by rule
+NODE_PATH=/tmp/j/node_modules node gate.test.js                      # tutor pages stay tutor-only
+NODE_PATH=/tmp/j/node_modules node session-responses.test.js         # moving between questions
+NODE_PATH=/tmp/j/node_modules node session-nav.e2e.test.js           # ... in the real runner
+NODE_PATH=/tmp/j/node_modules node baseline.test.js                  # forms, bands, routing, weights
+NODE_PATH=/tmp/j/node_modules node baseline-store.test.js            # the record survives the page
+NODE_PATH=/tmp/j/node_modules node baseline.e2e.test.js              # the screener, driven for real
+NODE_PATH=/tmp/j/node_modules node baseline-sync.test.js             # the tutor actually receives it
+NODE_PATH=/tmp/j/node_modules node baseline-recover.test.js          # a stranded baseline can be sent
 NODE_PATH=/tmp/j/node_modules node tutor-sheet/tutor-dashboard.test.js # the dashboard can read the sheet
 node cache-tags.test.js                                              # students get the CURRENT files
 ```
 
 They skip cleanly without jsdom. Every one of them exists because something was silently
 broken and nothing failed. Read a test's header before you change what it guards.
+
+**Put jsdom on a local disk, not in the repo folder.** The four `data-*.js` files are about a
+megabyte and jsdom itself is thousands of small files; loading either across a mounted or synced
+directory turns a three-second suite into a three-minute one. `--prefix /tmp/j` above is not
+decoration. The e2e suites are genuinely slow regardless — each stands up a fresh jsdom and parses
+the whole bank — and Node buffers to a pipe, so they print nothing until they finish. Slow, not
+hung.
 
 **`SKIP` is not a pass, and it looks like one.** Without jsdom every suite above prints
 `SKIP` and exits 0. On 17 Jul 2026 all five had been skipping while a doc asserted they
@@ -152,6 +176,68 @@ mechanism, not a bug in it.
 - **A redo never rewrites the first attempt.** What she did under the clock is the honest
   record. The redo only adds "put right on the redo".
 - **Running out of time must not destroy the set.** Submit what she has; show the review.
+
+## The baseline screener
+
+`baseline.html` plus `baseline-spec.js` (form construction), `baseline-grade.js` (routing,
+bands, projection, skill weights) and `baseline-store.js` (the durable record). Five suites,
+all on the list above. `baseline-recover.html` re-sends a sitting that was saved to a browser
+but never reached the sheet.
+
+**The anchor is Medium, and that is a data decision, not a preference.** The bank is 50 Easy /
+138 Medium / 276 Hard. Easy is the *scarce* tier — nine of eleven skills hold four or five Easy
+items in total, which cannot supply three parallel forms at two per skill. Easy is therefore
+spent only as a floor probe, where it is decisive. Anyone changing `BASELINE_ITEMS_PER_SKILL`
+or `BASELINE_FORMS` must re-run `baselinePreflight()` first: it is the thing that says out loud
+that the bank cannot do what the design just asked of it.
+
+### The baseline does NOT write to the mastery ledger
+
+It used to, tagged `'baseline'`, and that looked careful. It was the opposite. A ledger row makes
+a question *seen*; a miss puts it on rung zero of the review ladder, due again in one day; and
+`dueForReview()` draws from the whole bank filtered on nothing but "seen and overdue". A baseline
+is designed to produce misses across all eleven skills, so every sitting seeded the next
+morning's homework with review questions from skills nobody had taught — the one thing the review
+block must never do (see `review: N` above). Nothing is lost by not writing: the baseline record
+already stores every item with the chosen letter, the correct letter and the elapsed seconds,
+which is more than the ledger kept. Two assertions in `baseline.e2e.test.js` hold this.
+
+### Order: spread WITHIN a domain, never across the set
+
+`orderBaselineSAT` builds the real domain blocks and `spreadBaseline` keeps the two items of a
+skill apart. For months the spread round-robined all eleven skill lanes across the whole set,
+which destroyed the domain blocks *and* made the served sequence one repeating cycle — item *n*
+and item *n+11* were always the same skill, on every form. The unit test was checking
+`buildBaselineForm`'s output, which the page never serves, and the e2e test only checked
+non-adjacency. **Test the array that reaches the student.** §ORDER of `baseline.test.js` now does.
+
+### The review panel carries the whole question
+
+Same rule as the runner: passage, stem, every option with the chosen and correct ones marked,
+then the explanation. It used to print the skill, two letters and a rationale about a text that
+was no longer on the page, which is not something a student can work through — and the baseline
+is the sitting most likely to be reviewed with a tutor afterwards. Misses first.
+
+### The record, and what reaches the tutor
+
+`saveBaseline()` writes the instant the screener ends, before the optional probes, because the
+probes may never happen. It stamps `sitting`, and the focus queue goes *into* the record as well
+as into its own key — a plan that lives only in `psat89_focus_*` reaches nobody. Records append;
+a retake is a second data point, never a correction of the first. `baselineSheetPayload()` builds
+the sheet row from the **saved record**, not from live page state, so a row recovered months later
+is identical to the one that would have gone up at the time.
+
+### Known limits — say them, do not quietly fix them wrong
+
+- **Two items per skill is triage, not certification.** That is what the `provisional` /
+  `confirmed` / `not-measured` marker is for. Note that a 1/2 screener routes no probe and is
+  still labelled `confirmed`; it means "no further probe planned", not "measured reliably".
+- **The 120–720 projection is uncalibrated** — anchored to the range, not to score data. It is
+  reported as a 60-point band, and `baselineDelta()` refuses to call movement real unless two
+  bands fail to overlap. Do not turn it into a point estimate.
+- **Only three forms exist.** A fourth sitting re-serves Form A while the intro still says
+  "different questions from last time".
+- **Everything is device-local** — the record, the form rotation, the growth delta.
 
 ## Custom practice in a ratio
 

@@ -183,21 +183,55 @@ function orderBaselineSAT(questions) {
     });
 }
 
-// Interleave so the two items of any one skill never sit adjacent.
+// Interleave so the two items of any one skill never sit adjacent — WITHOUT
+// breaking the domain blocks orderBaselineSAT just built.
+//
+// This used to round-robin all eleven skill lanes across the whole set, and the
+// two goals were treated as if they conflicted. They do not, and the cost of
+// assuming they did was the worst of both:
+//
+//   1 C&S Cross-Text   2 C&S Text Structure   3 C&S Words in Context
+//   4 I&I Central Ideas … 11 SEC Form/Structure
+//  12 C&S Cross-Text  13 C&S Text Structure  14 C&S Words in Context …
+//
+// Two identical sweeps, period exactly eleven. The student crossed all four
+// domains twice — so the domain order this file goes to trouble to build was
+// gone — and the served sequence became the most predictable one available,
+// which is the defect ("item order is learnable across retakes") the spread was
+// added to fix.
+//
+// Spread INSIDE each domain instead. Three skills give A B C A B C, two give
+// A B A B: domain blocks intact, no skill adjacent to itself, and no repeating
+// whole-set cycle. Guarded by baseline.test.js §ORDER.
 function spreadBaseline(questions) {
-    const bySkill = new Map();
+    const domainOf = (q) =>
+        (typeof SKILL_DOMAIN !== 'undefined' && SKILL_DOMAIN[q.skill]) || 'Craft & Structure';
+
+    // Group by domain, keeping the domain order the questions arrive in — which
+    // is BASELINE_DOMAIN_ORDER, because orderBaselineSAT ran first.
+    const byDomain = new Map();
     questions.forEach(q => {
-        if (!bySkill.has(q.skill)) bySkill.set(q.skill, []);
-        bySkill.get(q.skill).push(q);
+        const d = domainOf(q);
+        if (!byDomain.has(d)) byDomain.set(d, []);
+        byDomain.get(d).push(q);
     });
-    const lanes = [...bySkill.values()];
+
     const out = [];
-    let n = 0;
-    while (out.length < questions.length) {
-        lanes.forEach(l => { if (l[n]) out.push(l[n]); });
-        n++;
-        if (n > 50) break;                        // paranoia guard
-    }
+    byDomain.forEach(group => {
+        const bySkill = new Map();
+        group.forEach(q => {
+            if (!bySkill.has(q.skill)) bySkill.set(q.skill, []);
+            bySkill.get(q.skill).push(q);
+        });
+        const lanes = [...bySkill.values()];
+        let n = 0, wrote = 0;
+        while (wrote < group.length) {
+            let any = false;
+            lanes.forEach(l => { if (l[n]) { out.push(l[n]); wrote++; any = true; } });
+            n++;
+            if (!any || n > 50) break;            // paranoia guard
+        }
+    });
     return out;
 }
 

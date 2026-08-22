@@ -191,12 +191,29 @@ t('the screener is persisted the moment it finishes', () => {
     ok(list[0].items.every(i => typeof i.seconds === 'number'), 'per-item timing not stored');
 });
 
-t('ledger writes are tagged baseline, not practice', () => {
+// This assertion used to read "ledger writes are tagged baseline, not practice"
+// and it guarded the wrong thing. Tagging the writes was never the problem; the
+// writes were. A ledger row makes a question "seen", a miss lands it on rung
+// zero of the review ladder — due in one day — and dueForReview() draws from
+// the whole bank on nothing but "seen and overdue". So a baseline, which is
+// designed to produce misses across all eleven skills, seeded the next morning's
+// homework with review questions from skills nobody had taught. AGENTS.md:
+// "a 'review' block that hands a student an untaught skill cold is not review."
+t('the baseline never touches the mastery ledger', () => {
     const ledger = JSON.parse(ev('JSON.stringify(getProgress())'));
-    const rows = Object.values(ledger);
-    ok(rows.length >= 22, 'only ' + rows.length + ' ledger rows');
-    ok(rows.every(r => r.lastSource === 'baseline'),
-        'some rows tagged: ' + [...new Set(rows.map(r => r.lastSource))].join(', '));
+    const rows = Object.entries(ledger);
+    eq(rows.length, 0,
+        'the baseline wrote ' + rows.length + ' ledger rows: '
+        + rows.slice(0, 3).map(([id]) => id).join(', '));
+});
+
+t('and so nothing it served can be drawn for review the next day', () => {
+    // The end-to-end statement of the rule above, made against the real draw
+    // rather than against the ledger it reads. If someone re-adds the write,
+    // this is the test that says what it costs.
+    const due = JSON.parse(ev(
+        'JSON.stringify((dueForReview(questionBank, 50, {})||[]).map(function(q){return q.id;}))'));
+    eq(due, [], 'the baseline made ' + due.length + ' questions due for review');
 });
 
 t('the focus queue is handed off to the app', () => {
@@ -263,6 +280,51 @@ t('review shows every item with its explanation', () => {
     const revs = doc.querySelectorAll('#results .rev');
     ok(revs.length >= 22, 'only ' + revs.length + ' review rows');
     ok(doc.querySelectorAll('#results details.exp').length >= 22, 'explanations missing');
+});
+
+// The review panel used to print the skill, two letters and the rationale — and
+// nothing else. No stem, no passage, no options. "Your answer: B · Correct: C"
+// is not something a student can work through, and the rationale referred to a
+// text that was no longer on the page. AGENTS.md: "Every question survives the
+// set — passage, her answer, the right answer, the explanation — re-readable."
+// The baseline is the sitting most likely to be reviewed with a tutor, and it
+// was the one sitting you could not review.
+t('the review carries the whole question, not just the letters', () => {
+    const revs = [...doc.querySelectorAll('#results .rev')];
+    ok(revs.length >= 22, 'only ' + revs.length + ' review rows');
+    // textContent walks a subtree that now holds a whole passage, so compute it
+    // once per row rather than once per row per lookup.
+    const revText = revs.map(r => r.textContent);
+
+    const served = JSON.parse(ev(
+        'JSON.stringify(screenerItems.map(function(i){'
+        + 'var q=questionBank.find(function(x){return x.id===i.id;});'
+        + 'return {stem:q.question, n:(q.options||[]).length};}))'));
+
+    served.forEach(s => {
+        const at = revText.findIndex(t => t.indexOf(s.stem.slice(0, 40)) !== -1);
+        ok(at !== -1, 'no review row carries the stem: ' + s.stem.slice(0, 60));
+        const opts = revs[at].querySelectorAll('.opt');
+        eq(opts.length, s.n, 'review row shows ' + opts.length
+            + ' of ' + s.n + ' options for: ' + s.stem.slice(0, 40));
+    });
+});
+
+t('the review marks the right answer and the one that was chosen', () => {
+    const html = doc.getElementById('results').innerHTML;
+    ok(/correct/i.test(html), 'nothing in the review is marked correct');
+    ok(/you chose this/i.test(html),
+       'a wrong answer is never pointed at, so the student cannot see what they did');
+});
+
+t('misses come first', () => {
+    // Same rule the runner follows: the review that matters is the one on what
+    // went wrong, and a student who stops scrolling should have met those first.
+    const tags = [...doc.querySelectorAll('#results .rev .tag')].map(e => e.textContent.trim());
+    const firstCorrect = tags.indexOf('Correct');
+    const lastMiss     = tags.lastIndexOf('Review');
+    ok(firstCorrect === -1 || lastMiss === -1 || lastMiss < firstCorrect,
+       'correct items are mixed in above misses: ' + tags.join(','));
 });
 
 t('no script errors across the entire session', () => eq(pageErrors, []));
