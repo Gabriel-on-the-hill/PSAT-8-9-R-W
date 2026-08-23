@@ -74,10 +74,10 @@ function sit(formId, isCorrect, seconds) {
     const slim = {};
     Object.values(profile).forEach(s => { slim[s.skill] = {
         band: s.band, confidence: s.confidence, screenCorrect: s.screenCorrect,
-        screenTotal: s.screenTotal, routedProbe: s.routedProbe,
+        screenTotal: s.screenTotal,
     }; });
     ctx.saveBaseline({
-        takenAt: Date.now(), form: formId, stage: 'screener',
+        takenAt: Date.now(), form: formId, stage: 'complete',
         correct: items.filter(i => i.correct).length, total: items.length,
         projection, skills: slim, items,
     });
@@ -208,75 +208,28 @@ t('a strong student produces an empty queue, not a fabricated one', () => {
     eq(ctx.getFocusQueue().skills.length, 0);
 });
 
-console.log('\nEND TO END — screener then probes\n---------------------------------');
+console.log('\nEND TO END - one sitting, one submit\n' + '-'.repeat(36));
 
-t('a mixed run completes both stages and amends one record', () => {
+t('a full sitting writes one complete record', () => {
     reset();
-    // Strong on Conventions, blank on Expression of Ideas, mixed elsewhere.
-    const { items, profile } = sit('A', (q) => {
-        if (ctx.SKILL_DOMAIN[q.skill] === 'Std. English Conv.')  return true;
-        if (ctx.SKILL_DOMAIN[q.skill] === 'Expression of Ideas') return false;
-        return q.skill.charCodeAt(0) % 2 === 0;
+    let flip = 0;
+    const { profile } = sit('A', () => (flip++ % 2 === 0));
+    const list = ctx.getBaselines();
+    eq(list.length, 1);
+    eq(list[0].stage, 'complete', 'a sitting is complete when it is submitted:');
+    eq(list[0].items.length, 22, 'the sitting is 22 questions and no more:');
+    eq(Object.keys(profile).length, 11);
+});
+
+// The follow-up is gone: once the student submits, that is the whole sitting.
+t('nothing routes or carries a probe any more', () => {
+    reset();
+    const { profile } = sit('A', () => false);
+    ok(typeof ctx.buildProbeSet === 'undefined', 'buildProbeSet still exists');
+    Object.values(profile).forEach(s => {
+        ok(!('routedProbe' in s), s.skill + ' still routes a probe');
+        ok(!('probeTier'  in s),  s.skill + ' still carries a probe tier');
     });
-
-    eq(ctx.getBaselines().length, 1, 'screener must be saved immediately:');
-    eq(ctx.latestBaseline().stage, 'screener');
-
-    const { probes, gaps } = ctx.buildProbeSet(bank, profile, items.map(i => i.id));
-    eq(gaps, [], 'unfillable probe slots:');
-
-    // Conventions skills routed to Hard, EoI skills routed to Easy.
-    const tiers = {};
-    probes.forEach(p => { tiers[p.skill] = p.difficulty; });
-    eq(tiers['Boundaries'], 'Hard');
-    eq(tiers['Form, Structure, and Sense'], 'Hard');
-    eq(tiers['Rhetorical Synthesis'], 'Easy');
-    eq(tiers['Transitions'], 'Easy');
-
-    // Sit the probes: pass the ceiling ones, fail the floor ones.
-    const probeItems = probes.map(p => ({
-        id: p.id, skill: p.skill, difficulty: p.difficulty, stage: 2,
-        probeTier: p.probeTier, chosen: 'A',
-        correct: p.probeTier === 'Hard', seconds: 70,
-    }));
-
-    const all = items.concat(probeItems);
-    const full = ctx.buildBaselineProfile(all);
-    ctx.amendLatestBaseline({ stage: 'complete', items: all });
-
-    eq(ctx.getBaselines().length, 1, 'amending must not create a second record:');
-    eq(ctx.latestBaseline().stage, 'complete');
-    ok(ctx.latestBaseline().amendedAt > 0, 'amendedAt not stamped');
-
-    // Bands resolved in both directions.
-    eq(full['Boundaries'].band, 'Secure');
-    eq(full['Boundaries'].confidence, 'confirmed');
-    eq(full['Rhetorical Synthesis'].band, 'Foundational');
-    eq(full['Transitions'].band, 'Foundational');
-});
-
-t('probes are never drawn from questions already served', () => {
-    reset();
-    const { items, profile } = sit('A', () => false);
-    const used = items.map(i => i.id);
-    const { probes } = ctx.buildProbeSet(bank, profile, used);
-    probes.forEach(p => ok(!used.includes(p.id), p.id + ' was reused'));
-    // and probes must not collide with each other
-    const ids = probes.map(p => p.id);
-    eq(ids.length, new Set(ids).size, 'duplicate probe ids');
-});
-
-t('amending with no prior record fails safely', () => {
-    reset();
-    eq(ctx.amendLatestBaseline({ stage: 'complete' }), false);
-});
-
-t('corrupt storage degrades to empty rather than throwing', () => {
-    reset();
-    ctx.localStorage.setItem('psat89_baseline_guest', '{not json');
-    eq(ctx.getBaselines(), []);
-    eq(ctx.latestBaseline(), null);
-    eq(ctx.baselineDelta(), null);
 });
 
 console.log('\n' + '='.repeat(46));

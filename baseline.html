@@ -40,11 +40,9 @@
   .sub{color:var(--muted)}
   .band{display:inline-block;font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;
     padding:.16rem .5rem;border-radius:99px;white-space:nowrap}
-  .b-Secure{background:var(--good-soft);color:var(--good)}
   .b-Proficient{background:#eef4ff;color:#1e40af}
   .b-Developing{background:var(--warn-soft);color:var(--warn)}
   .b-Priority{background:var(--bad-soft);color:var(--bad)}
-  .b-Foundational{background:#f3e8ff;color:#6b21a8}
   .b-none{background:var(--surface2);color:var(--muted)}
   table.diag{width:100%;border-collapse:collapse;font-size:.92rem;margin-top:.4rem}
   table.diag th,table.diag td{text-align:left;padding:.5rem .5rem;border-bottom:1px solid var(--border);vertical-align:top}
@@ -73,9 +71,9 @@
 <script src="data-info-ideas.js?v=20260726"></script>
 <script src="data-conventions.js?v=20260811"></script>
 <script src="progress.js?v=20260820"></script>
-<script src="sheet-sync.js?v=20260820"></script>
+<script src="sheet-sync.js?v=20260822"></script>
 <script src="baseline-spec.js?v=20260822"></script>
-<script src="baseline-grade.js?v=20260820"></script>
+<script src="baseline-grade.js?v=20260822"></script>
 <script src="baseline-store.js?v=20260822"></script>
 </head>
 <body>
@@ -87,7 +85,6 @@
     <div class="panel">
       <p><b>22 questions &middot; 22 minutes.</b></p>
       <p style="margin-top:.5rem;color:var(--muted)">Two questions on each of the eleven skills, all at the test's middle difficulty. Work at a steady pace — you won't see whether an answer was right until the end, which is normal for a check like this.</p>
-      <p style="margin-top:.5rem;color:var(--muted)">Afterwards there's an optional five-minute follow-up that pins down how far your strongest skills go and whether the weak ones need re-teaching or just practice.</p>
       <p id="formNote" class="sub" style="margin-top:.6rem;font-size:.88rem"></p>
     </div>
     <button class="btn" onclick="startTest()">Start</button>
@@ -121,7 +118,6 @@ const questionBank = [].concat(
 
 let FORM     = nextBaselineForm();
 let Q        = [];
-let stage    = 1;
 let idx      = 0;
 let answers  = [];
 let times    = [];        // seconds spent per item
@@ -183,7 +179,7 @@ function render(){
   document.getElementById('qbody').innerHTML = media + '<div class="qtext">'+esc(q.question)+'</div>' + opts;
   document.getElementById('backBtn').style.visibility = idx === 0 ? 'hidden' : 'visible';
   document.getElementById('nextBtn').textContent = idx === Q.length-1
-    ? (stage === 1 ? 'Finish' : 'See results') : 'Next';
+    ? 'Finish' : 'Next';
 }
 
 function choose(l){ answers[idx] = l; render(); }
@@ -196,7 +192,7 @@ function go(d){
       ? unanswered + ' question' + (unanswered>1?'s are':' is') + ' still blank. Finish anyway?'
       : 'Finish?';
     if (!confirm(msg)) return;
-    return stage === 1 ? finishScreener() : finishProbes();
+    return finishScreener();
   }
   idx = Math.max(0, Math.min(Q.length-1, idx + d));
   render();
@@ -229,7 +225,7 @@ function finishScreener(){
   // that lives only in the key never reaches the tutor.
   const queue = baselineFocusQueue(profile, null, questionBank);
   saveBaseline({
-    takenAt: Date.now(), form: FORM, stage: 'screener',
+    takenAt: Date.now(), form: FORM, stage: 'complete',
     durationSec: BASELINE_SECONDS - remaining,
     correct: screenerItems.filter(i => i.correct).length,
     total: screenerItems.length,
@@ -263,7 +259,7 @@ function finishScreener(){
   // decline to see that the screener was sat at all.
   reportBaseline();
 
-  renderResults(projection, /*probesPending*/ true);
+  renderResults(projection);
 }
 
 // ── report to the tutor sheet ─────────────────────────────────────
@@ -295,73 +291,20 @@ function _slimSkills(p){
     out[s.skill] = {
       band: s.band, confidence: s.confidence,
       screenCorrect: s.screenCorrect, screenTotal: s.screenTotal,
-      probeTier: s.probeTier, probeCorrect: s.probeCorrect,
-      routedProbe: s.routedProbe, flags: s.flags, note: s.note || null,
+      flags: s.flags, note: s.note || null,
     };
   });
   return out;
 }
 
-// ══════════════════════════════════════════════════════════════════
-// STAGE 2 — probes
-// ══════════════════════════════════════════════════════════════════
-let probeSet = [];
-
-function startProbes(){
-  const used = screenerItems.map(i => i.id);
-  const built = buildProbeSet(questionBank, profile, used);
-  probeSet = built.probes;
-  if (!probeSet.length){ alert('No follow-up needed — every skill already has a clear reading.'); return; }
-  if (built.gaps.length) console.warn('baseline: unfillable probe slots', built.gaps);
-
-  Q = probeSet;
-  stage = 2;
-  idx = 0;
-  answers = new Array(Q.length).fill(null);
-  times   = new Array(Q.length).fill(0);
-  remaining = Q.length * 75;                 // ~75 s per probe, they are harder
-  document.getElementById('results').classList.add('hidden');
-  document.getElementById('test').classList.remove('hidden');
-  document.getElementById('timer').classList.remove('low');
-  timer = setInterval(tick, 1000);
-  shownAt = Date.now();
-  render();
-  window.scrollTo(0,0);
-}
-
-function finishProbes(){
-  clearInterval(timer);
-  bankTime();
-
-  const probeItems = Q.map((q,k) => ({
-    id: q.id, skill: q.skill, difficulty: q.difficulty, stage: 2,
-    probeTier: q.probeTier, chosen: answers[k],
-    correct: answers[k] === q.answer, seconds: times[k],
-  }));
-
-  const all = screenerItems.concat(probeItems);
-  profile = buildBaselineProfile(all);
-  const projection = projectBaseline(all);   // still stage-1 only, by design
-
-  const queue2 = baselineFocusQueue(profile, null, questionBank);
-  amendLatestBaseline({
-    stage: 'complete', skills: _slimSkills(profile),
-    items: all, projection, focus: slimFocusQueue(queue2),
-  });
-  saveFocusQueue(queue2);
-
-  // No ledger write here either — see finishScreener(). Probes are the WORST
-  // candidates for the ladder: a Hard ceiling probe on a skill the student has
-  // never been taught is precisely the untaught-skill review the rule forbids.
-
-  // A second row, with the bands now confirmed rather than provisional. Sent as
-  // its own row rather than an edit: the sheet is an append-only log, and the
-  // screener row is what the tutor may already have acted on.
-  reportBaseline();
-
-  Q = all.map(i => questionBank.find(q => q.id === i.id) || i);
-  renderResults(projection, /*probesPending*/ false, all);
-}
+// ── there is no stage two ─────────────────────────────────────────
+// The screener used to offer a follow-up here: one Hard item at every skill
+// scored 2/2 to find the ceiling, one Easy item at every 0/2 to find the floor,
+// served on the results screen after the student had already finished. That is
+// removed. Twenty-two questions, one submit, and the sitting is over.
+//
+// It is why the band ladder is three rungs and not five — Secure and
+// Foundational were only ever readable from a probe. See baseline-grade.js.
 
 // ══════════════════════════════════════════════════════════════════
 // RESULTS
@@ -373,9 +316,9 @@ const GUIDE = {
   'Command of Evidence — Quantitative':'ii.html','Inferences':'ii.html',
   'Boundaries':'sec.html','Form, Structure, and Sense':'sec.html'
 };
-const BAND_ORDER = ['Secure','Proficient','Developing','Priority','Foundational'];
+const BAND_ORDER = ['Proficient','Developing','Priority'];
 
-function renderResults(projection, probesPending, allItems){
+function renderResults(projection){
   const rows = Object.values(profile);
   const measured = rows.filter(r => r.band);
   let h = '<h1>Your baseline</h1>';
@@ -403,24 +346,6 @@ function renderResults(projection, probesPending, allItems){
   }
   h += '</div>';
 
-  // ── follow-up offer ──
-  if (probesPending){
-    const nProbe = rows.filter(r => r.routedProbe).length;
-    if (nProbe){
-      const nCeil = rows.filter(r => r.routedProbe === 'Hard').length;
-      const nFloor = rows.filter(r => r.routedProbe === 'Easy').length;
-      h += '<div class="panel" style="border-color:#cfe0fb;background:var(--accent-soft)">';
-      h += '<h2>Optional follow-up · ' + nProbe + ' question' + (nProbe>1?'s':'') + ' · about ' + Math.ceil(nProbe*75/60) + ' minutes</h2>';
-      h += '<p class="sub">' + nProbe + ' skill' + (nProbe>1?'s':'') + ' still ' + (nProbe>1?'have':'has') + ' an open question. ';
-      if (nCeil) h += nCeil + ' need a harder question to find the ceiling. ';
-      if (nFloor) h += nFloor + ' need an easier one to tell "needs re-teaching" from "needs practice". ';
-      h += 'Your results are already saved — you can do this now or later.</p>';
-      h += '<div style="margin-top:.7rem"><button class="btn" onclick="startProbes()">Continue</button> '
-        +  '<a class="btn sec" href="index.html">Stop here</a></div>';
-      h += '</div>';
-    }
-  }
-
   // ── every skill ──
   h += '<div class="panel"><h2>Every skill</h2>';
   h += '<table class="diag"><tr><th>Skill</th><th>Screener</th><th>Level</th></tr>';
@@ -433,17 +358,12 @@ function renderResults(projection, probesPending, allItems){
     h += '<tr><td>' + esc(s.skill)
       + (s.note ? '<div class="flagnote">' + esc(s.note) + '</div>' : '')
       + '</td><td>' + s.screenCorrect + '/' + s.screenTotal
-      + (s.probeTier ? '<div class="sub" style="font-size:.8rem">' + s.probeTier + ' probe: '
-          + (s.probeCorrect ? 'passed' : 'missed') + '</div>' : '')
-      + '</td><td><span class="band ' + cls + '">' + lbl + '</span>'
-      + (s.confidence === 'provisional' ? '<div class="sub" style="font-size:.78rem">provisional</div>' : '')
-      + '</td></tr>';
+      + '</td><td><span class="band ' + cls + '">' + lbl + '</span></td></tr>';
   });
   h += '</table>';
   h += '<p class="sub" style="font-size:.82rem;margin-top:.6rem">'
-    +  '<b>Secure</b> handles the hardest level &middot; <b>Proficient</b> solid at test level &middot; '
-    +  '<b>Developing</b> inconsistent &middot; <b>Priority</b> knows the idea, not the method &middot; '
-    +  '<b>Foundational</b> needs teaching before practice.</p>';
+    +  '<b>Proficient</b> solid at test level &middot; <b>Developing</b> inconsistent &middot; '
+    +  '<b>Priority</b> not working at test level yet.</p>';
   h += '</div>';
 
   // ── by domain ──
@@ -491,7 +411,7 @@ function renderResults(projection, probesPending, allItems){
   // one on what went wrong. Each item is collapsed by default — 22 to 30 full
   // passages expanded at once is a wall nobody scrolls — but everything needed
   // to redo the question is inside it.
-  const revItems = (allItems || screenerItems).slice().sort((a, b) =>
+  const revItems = screenerItems.slice().sort((a, b) =>
     (a.correct === b.correct) ? 0 : (a.correct ? 1 : -1));
   const nMiss = revItems.filter(i => !i.correct).length;
   h += '<div class="panel"><h2>Review</h2>';
@@ -524,7 +444,7 @@ function renderResults(projection, probesPending, allItems){
 
     h += '<div class="rev"><span class="tag ' + (i.correct?'ok':'no') + '">'
       +  (i.correct ? 'Correct' : 'Review') + '</span> &middot; ' + esc(i.skill)
-      +  ' <span class="sub">· ' + i.difficulty + (i.stage===2 ? ' · follow-up' : '') + '</span>'
+      +  ' <span class="sub">· ' + i.difficulty + '</span>'
       +  '<br><span class="sub">Your answer: ' + (i.chosen || 'left blank')
       +  ' &middot; Correct: ' + q.answer + ' &middot; ' + i.seconds + 's</span>'
       +  '<details class="exp"><summary>Show the question</summary>'

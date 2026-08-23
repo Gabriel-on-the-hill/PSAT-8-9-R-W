@@ -229,9 +229,9 @@ is identical to the one that would have gone up at the time.
 
 ### Known limits — say them, do not quietly fix them wrong
 
-- **Two items per skill is triage, not certification.** That is what the `provisional` /
-  `confirmed` / `not-measured` marker is for. Note that a 1/2 screener routes no probe and is
-  still labelled `confirmed`; it means "no further probe planned", not "measured reliably".
+- **Two items per skill is triage, not certification.** That is what the `measured` / `low` /
+  `not-measured` marker is for. `measured` means only "these two items were genuinely attempted" —
+  never that the skill is settled.
 - **The 120–720 projection is uncalibrated** — anchored to the range, not to score data. It is
   reported as a 60-point band, and `baselineDelta()` refuses to call movement real unless two
   bands fail to overlap. Do not turn it into a point estimate.

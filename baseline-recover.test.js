@@ -27,17 +27,17 @@ const eq = (a, b, m) => { if (JSON.stringify(a) !== JSON.stringify(b))
 const REC = {
     takenAt: 1755640000000,
     form: 'A',
-    stage: 'screener',
+    stage: 'complete',
     correct: 14,
     total: 22,
     projection: { low: 480, high: 540, accuracy: 64, domains: {}, caveat: 'x' },
     skills: {
-        'Inferences':   { band: 'Priority',   confidence: 'provisional',
-                          screenCorrect: 0, screenTotal: 2, routedProbe: 'Easy' },
-        'Boundaries':   { band: 'Proficient', confidence: 'provisional',
-                          screenCorrect: 2, screenTotal: 2, routedProbe: 'Hard' },
-        'Transitions':  { band: 'Developing', confidence: 'confirmed',
-                          screenCorrect: 1, screenTotal: 2, routedProbe: null },
+        'Inferences':   { band: 'Priority',   confidence: 'measured',
+                          screenCorrect: 0, screenTotal: 2 },
+        'Boundaries':   { band: 'Proficient', confidence: 'measured',
+                          screenCorrect: 2, screenTotal: 2 },
+        'Transitions':  { band: 'Developing', confidence: 'measured',
+                          screenCorrect: 1, screenTotal: 2 },
     },
     items: [
         { id: 'a1', skill: 'Inferences',  difficulty: 'Medium', stage: 1, chosen: 'B', correct: false, seconds: 40 },
@@ -162,7 +162,7 @@ function waitFor(fn, ms) {
 
     t('it is typed as a baseline', () => {
         eq(p.body.type, 'baseline');
-        eq(p.body.mode, 'screener');
+        eq(p.body.mode, 'complete');
     });
 
     t('the ORIGINAL sitting date is preserved, not today', () => {
@@ -185,7 +185,7 @@ function waitFor(fn, ms) {
         eq(Object.keys(b).length, 3);
         eq(b['Inferences'].band, 'Priority');
         eq(b['Inferences'].screener, '0/2');
-        eq(b['Boundaries'].confidence, 'provisional');
+        eq(b['Boundaries'].confidence, 'measured');
         eq(b['Transitions'].band, 'Developing');
     });
 

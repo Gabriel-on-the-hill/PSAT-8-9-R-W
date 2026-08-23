@@ -150,7 +150,7 @@ function waitFor(fn, ms) {
 
     t('the row is typed as a baseline, not a practice session', () => {
         eq(p1.body.type, 'baseline', 'the tutor cannot tell this apart from practice:');
-        eq(p1.body.mode, 'screener');
+        eq(p1.body.mode, 'complete');
     });
 
     t('score, total and percentage are present', () => {
@@ -197,10 +197,16 @@ function waitFor(fn, ms) {
         });
     });
 
-    t('bands are marked provisional before the follow-up', () => {
+    // `measured` means the two items were genuinely attempted, and nothing more.
+    // It must never read as "settled": two questions sort a skill, they do not
+    // certify one, and a tutor who sees a word like "confirmed" beside a
+    // two-item result will act on it as though they had more evidence.
+    t('bands are marked measured, never confirmed', () => {
         const bands = p1.body.baseline.bands;
-        const provisional = Object.values(bands).filter(v => v.confidence === 'provisional');
-        ok(provisional.length > 0, 'nothing marked provisional after a screener-only sitting');
+        eq(Object.keys(bands).length, 11);
+        Object.entries(bands).forEach(([skill, v]) => {
+            eq(v.confidence, 'measured', skill + ':');
+        });
     });
 
     t('it carries the ranked focus queue the tutor should act on', () => {
@@ -208,47 +214,17 @@ function waitFor(fn, ms) {
         ok(p1.body.baseline.focus.length > 0, 'focus list is empty');
     });
 
-    console.log('\nAFTER THE FOLLOW-UP\n-------------------');
-    const beforeProbe = posts.length;
-    win.startProbes();
-    ev(`
-      Q.forEach(function(q,i){
-        answers[i] = q.probeTier === 'Hard' ? q.answer
-          : q.options.map(function(o){return o.trim()[0];})
-                     .filter(function(l){return l !== q.answer;})[0];
-        times[i] = 65;
-      });
-    `);
-    win.finishProbes();
+    console.log('\nONE SITTING, ONE ROW\n' + '-'.repeat(20));
 
-    t('the follow-up posts a second row', () =>
-        eq(posts.length - beforeProbe, 1));
+// There used to be two rows: the screener, then the completed sitting once the
+// follow-up probes came back. The follow-up is gone, so a sitting posts once.
+t('the sitting posts exactly one row', () => eq(posts.length, 1));
+t('and it is marked complete, not screener', () =>
+    eq(p1.body.baseline.stage, 'complete'));
+t('nothing is left to post a second row with', () =>
+    eq(ev('typeof startProbes'), 'undefined', 'startProbes still exists'));
 
-    const p2 = posts[posts.length - 1];
-
-    t('the second row is marked complete, not screener', () => {
-        eq(p2.body.mode, 'complete');
-        eq(p2.body.type, 'baseline');
-    });
-
-    t('its bands are confirmed rather than provisional', () => {
-        const confirmed = Object.values(p2.body.baseline.bands)
-            .filter(v => v.confidence === 'confirmed');
-        ok(confirmed.length > 0, 'no bands confirmed after the probes');
-    });
-
-    t('probe results are reported with their tier', () => {
-        const probes = p2.body.questions.filter(q => q.stage === 2);
-        ok(probes.length > 0, 'no probe questions in the payload');
-        probes.forEach(q => ok(['Easy','Hard'].includes(q.probeTier),
-            'probe tier missing: ' + JSON.stringify(q.probeTier)));
-    });
-
-    t('the screener row is not overwritten — both rows stand', () => {
-        eq(posts.filter(p => p.body && p.body.type === 'baseline').length, 2);
-    });
-
-    console.log('\nFAILURE IS SILENT\n-----------------');
+console.log('\nFAILURE IS SILENT\n-----------------');
 
     t('a failing upload never costs the student their result', () => {
         // The record is already in localStorage before any network call.

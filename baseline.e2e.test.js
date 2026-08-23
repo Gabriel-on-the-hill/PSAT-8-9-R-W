@@ -175,16 +175,10 @@ t('a ranked plan is rendered', () => {
     ok(/Start here/.test(html()), 'no plan heading');
 });
 
-t('the follow-up is offered with a real count', () => {
-    ok(/Optional follow-up/.test(html()), 'no follow-up offer');
-    const m = html().match(/Optional follow-up · (\d+) question/);
-    ok(m && Number(m[1]) > 0, 'follow-up count missing or zero');
-});
-
 t('the screener is persisted the moment it finishes', () => {
     const list = JSON.parse(ev('JSON.stringify(getBaselines())'));
     eq(list.length, 1);
-    eq(list[0].stage, 'screener');
+    eq(list[0].stage, 'complete');
     eq(list[0].total, 22);
     ok(list[0].projection.low > 0, 'no projection stored');
     eq(Object.keys(list[0].skills).length, 11);
@@ -222,58 +216,36 @@ t('the focus queue is handed off to the app', () => {
     ok(fq.skills[0].score >= fq.skills[fq.skills.length-1].score, 'queue unsorted');
 });
 
-t('conventions routed to a ceiling probe, expression to a floor probe', () => {
-    eq(ev('profile["Boundaries"].routedProbe'), 'Hard');
-    eq(ev('profile["Rhetorical Synthesis"].routedProbe'), 'Easy');
-    eq(ev('profile["Transitions"].routedProbe'), 'Easy');
+t('the bands read straight off the screener', () => {
+    eq(ev('profile["Boundaries"].band'), 'Proficient', '2/2:');
+    eq(ev('profile["Rhetorical Synthesis"].band'), 'Priority', '0/2:');
+    eq(ev('profile["Boundaries"].confidence'), 'measured');
 });
 
-console.log('\nDRIVING THE FOLLOW-UP\n---------------------');
+console.log('\nTHE SITTING ENDS AT SUBMIT\n' + '-'.repeat(26));
 
-t('the follow-up starts and serves only routed skills at the right tier', () => {
-    const before = pageErrors.length;
-    win.startProbes();
-    eq(pageErrors.slice(before), [], 'errors starting probes:');
-    eq(ev('stage'), 2);
-    ok(ev('Q.length') > 0, 'no probes served');
-    JSON.parse(ev('JSON.stringify(Q.map(q=>q.difficulty))'))
-        .forEach(d => ok(['Easy','Hard'].includes(d), 'probe at wrong tier: ' + d));
+// The screener used to offer a follow-up here — a Hard item at every 2/2 skill
+// and an Easy one at every 0/2, served after the student had already finished.
+// It is removed. Once a student submits, that is the whole sitting.
+t('no follow-up is offered', () => {
+    const html = doc.getElementById('results').innerHTML;
+    ok(!/follow-up/i.test(html), 'the results screen still offers a follow-up');
 });
 
-t('probes never reuse a screener question', () => {
-    const probeIds  = JSON.parse(ev('JSON.stringify(Q.map(q=>q.id))'));
-    const screenIds = JSON.parse(ev('JSON.stringify(screenerItems.map(i=>i.id))'));
-    probeIds.forEach(id => ok(!screenIds.includes(id), id + ' reused from screener'));
+t('and there is nothing left to drive it with', () => {
+    eq(ev('typeof startProbes'), 'undefined', 'startProbes still exists');
+    eq(ev('typeof finishProbes'), 'undefined', 'finishProbes still exists');
 });
 
-t('finishing the follow-up amends the same record', () => {
-    ev(`
-      Q.forEach(function(q,i){
-        var wrong = q.options.map(function(o){return o.trim()[0];})
-                             .filter(function(l){return l !== q.answer;})[0];
-        answers[i] = q.probeTier === 'Hard' ? q.answer : wrong;
-        times[i]   = 70;
-      });
-    `);
-    const before = pageErrors.length;
-    win.finishProbes();
-    eq(pageErrors.slice(before), [], 'errors finishing probes:');
+t('the record is complete the moment it is written', () => {
     const list = JSON.parse(ev('JSON.stringify(getBaselines())'));
-    eq(list.length, 1, 'a second record was created instead of amending:');
+    eq(list.length, 1);
     eq(list[0].stage, 'complete');
-    ok(list[0].amendedAt > 0, 'amendedAt not stamped');
+    eq(list[0].items.length, 22, 'the sitting is 22 questions and no more:');
 });
 
-t('bands resolve in both directions after the probes', () => {
-    eq(ev('profile["Boundaries"].band'), 'Secure');
-    eq(ev('profile["Boundaries"].confidence'), 'confirmed');
-    eq(ev('profile["Rhetorical Synthesis"].band'), 'Foundational');
-    ok(/Secure/.test(html()) && /Foundational/.test(html()),
-        'bands not shown in the results table');
-});
-
-t('the follow-up offer disappears once it is done', () => {
-    ok(!/Optional follow-up/.test(html()), 'stale follow-up offer still showing');
+t('the ledger is still untouched', () => {
+    eq(Object.keys(JSON.parse(ev('JSON.stringify(getProgress())'))).length, 0);
 });
 
 t('review shows every item with its explanation', () => {
