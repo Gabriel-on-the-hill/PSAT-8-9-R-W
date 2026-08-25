@@ -27,6 +27,7 @@ NODE_PATH=/tmp/j/node_modules node ruletype.test.js                  # Conventio
 NODE_PATH=/tmp/j/node_modules node gate.test.js                      # tutor pages stay tutor-only
 NODE_PATH=/tmp/j/node_modules node session-responses.test.js         # moving between questions
 NODE_PATH=/tmp/j/node_modules node session-nav.e2e.test.js           # ... in the real runner
+node session-flush.test.js                                           # an unfinished sitting still reports
 NODE_PATH=/tmp/j/node_modules node baseline.test.js                  # forms, bands, routing, weights
 NODE_PATH=/tmp/j/node_modules node baseline-store.test.js            # the record survives the page
 NODE_PATH=/tmp/j/node_modules node baseline.e2e.test.js              # the screener, driven for real
@@ -176,6 +177,15 @@ mechanism, not a bug in it.
 - **A redo never rewrites the first attempt.** What she did under the clock is the honest
   record. The redo only adds "put right on the redo".
 - **Running out of time must not destroy the set.** Submit what she has; show the review.
+- **Walking away must not destroy the set either.** The ledger is written per question; the
+  sheet was written only from the end of a set, which practice mode and untimed homework reach
+  only by advancing PAST the last question — neither has a Submit button. A set answered and
+  then navigated away from wrote everything locally and sent the tutor nothing, and
+  `mode:'no-cors'` meant nothing could tell. A `pagehide` flush now posts what was committed,
+  marked `— INCOMPLETE (n of m answered)` in the focus cell. `session-flush.test.js` holds it.
+  **Use `pagehide`, never `visibilitychange`** — these sessions are screen-shared and
+  tab-switched constantly, and visibilitychange would post a row on every alt-tab. And
+  **keepalive must stay on both fetches**, or the browser cancels the request mid-unload.
 
 ## The baseline screener
 

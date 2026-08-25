@@ -25,6 +25,17 @@ function syncSessionToSheet(record) {
         date: record.date || new Date().toISOString(),
         student,
         type: record.source || 'practice',
+        // The script derives the "Day / Focus / Skills" cell as
+        // `data.focus || skills.join(', ')`, so `focus` was never sent from here
+        // and the column always fell back to the skill list. It is named now
+        // because logPartialSession() marks an unfinished sitting there — the
+        // only place a marker can land without a ninth column and a redeploy.
+        focus: record.focus || '',
+        // An unfinished sitting flushed by pagehide. Rides in Raw payload as
+        // well as in the focus cell, so a script that later learns to read it
+        // can supersede the partial row using the shared sessionId.
+        partial: !!record.partial,
+        sessionId: record.sessionId || '',
         assignmentId: record.assignmentId || '',
         assignmentTitle: record.assignmentTitle || '',
         score: record.score ?? '',

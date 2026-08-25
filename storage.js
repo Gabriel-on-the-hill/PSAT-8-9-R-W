@@ -53,6 +53,12 @@ function saveSessionState() {
         timerMode,
         countdownTotal,
         countdownRemaining,
+        // Carried so a RESUMED session keeps the identity of the sitting it
+        // continues, and so it does not re-post a partial the pagehide flush
+        // already sent. Without these, resuming produced a second INCOMPLETE
+        // row under a new id and the two could not be told apart.
+        sessionId:      (typeof getSessionId === 'function') ? getSessionId() : '',
+        partialLogged:  (typeof wasPartialLogged === 'function') ? wasPartialLogged() : false,
         savedAt:        Date.now(),
     };
     safeSet(STORAGE.SESSION, JSON.stringify(state));
@@ -89,6 +95,11 @@ function restoreSession(state) {
     responses            = (typeof unpackResponses === 'function')
         ? unpackResponses(state.responses, activeQuestions.length)
         : [];
+    // Same sitting, same id. A session saved before this existed has neither
+    // field; setSessionId mints a fresh id in that case rather than throwing.
+    if (typeof setSessionId === 'function') {
+        setSessionId(state.sessionId, { partial: !!state.partialLogged });
+    }
     return true;
 }
 

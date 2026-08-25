@@ -4,6 +4,48 @@
 // Uses shared globals from app.js (SKILL_ABBR, sessionResults, secondsElapsed,
 // userMode) and storage.js (STORAGE). Persistence is read/written through the
 // safe* helpers in storage.js so a full localStorage never throws.
+//
+// ── THE LEDGER AND THE SHEET USED TO DISAGREE. Read this before changing it. ──
+//
+// The mastery ledger is written PER QUESTION, the moment an answer is committed
+// (app.js submitAnswer -> commitOne -> recordAnswer). The sheet was written ONCE,
+// from finalizeSession(), which in practice mode is reachable only by pressing
+// Next PAST the last question. There is no Submit button in that mode.
+//
+// So a session where every question was answered, but which was walked away from
+// on the final question, wrote everything to the ledger and NOTHING to the sheet.
+// It happened in a real lesson: two full sessions sat, one reached the tutor.
+// The tutor had no way to know — `mode:'no-cors'` makes the response opaque, so a
+// post that never happens looks exactly like one that succeeded.
+//
+// logPartialSession() below closes it: `pagehide` posts whatever has been
+// committed so far, once, flagged INCOMPLETE. Two rules it must keep:
+//   1. It only fires when there is something unlogged to send. A session already
+//      finalised has set _sessionLogged and is skipped.
+//   2. It marks itself. A partial row that looks like a complete one is worse
+//      than no row, because it under-reports a set the student may yet finish.
+// Both rows carry the same `sessionId`, so a partial followed by a real finish is
+// resolvable rather than a mystery — see the duplicate note on logPartialSession.
+
+// Identifies one sitting across a partial post and the complete post that may
+// follow it. Survives resume via saveSessionState/restoreSession in storage.js.
+let _sessionId     = '';
+let _sessionLogged = false;   // a COMPLETE row has gone up for this session
+let _partialLogged = false;   // an INCOMPLETE row has gone up for this session
+
+function newSessionId() {
+    return Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 8);
+}
+
+// Called by launchSession() (new sitting) and restoreSession() (resumed one).
+function setSessionId(id, opts) {
+    _sessionId     = id || newSessionId();
+    _sessionLogged = !!(opts && opts.logged);
+    _partialLogged = !!(opts && opts.partial);
+    return _sessionId;
+}
+function getSessionId()     { return _sessionId; }
+function wasPartialLogged() { return _partialLogged; }
 
 function logSession(skills, diffs, sessionScore, total) {
     // Prefer per-question times (tracked in all modes); fall back to exam-timer total
@@ -43,6 +85,7 @@ function logSession(skills, diffs, sessionScore, total) {
         blurCount,
         source: 'practice',
         mode:   userMode,
+        sessionId: _sessionId,
     };
     let history = safeGetJSON(STORAGE.HISTORY, []);
     history.unshift(record);
@@ -55,6 +98,86 @@ function logSession(skills, diffs, sessionScore, total) {
     if (typeof syncSessionToSheet === 'function') {
         syncSessionToSheet({ ...record, questions });
     }
+    // From here on, pagehide has nothing to add: the complete row is up.
+    _sessionLogged = true;
+    if (typeof saveSessionState === 'function') { try { saveSessionState(); } catch (e) {} }
+}
+
+// ── The pagehide flush ────────────────────────────────────────────
+// Posts the committed part of a session that is being walked away from. Local
+// history is deliberately NOT touched: an unfinished sitting is not a result,
+// and the hub's history list should not fill up with fragments. This exists so
+// the tutor sees the work, nothing more.
+//
+// PAGEHIDE ONLY, NOT visibilitychange. A tutoring session is screen-shared and
+// tab-switched constantly; visibilitychange would post a row every time the
+// student alt-tabs. `pagehide` fires on navigate-away and on close, which is the
+// case that actually loses data.
+//
+// DUPLICATES: if a student walks away, comes back within the 24h resume window
+// and finishes, the sheet gets an INCOMPLETE row and then a complete one. They
+// share `sessionId`, and only the second carries the full count. That is the
+// right trade — a visible, resolvable duplicate beats silent loss, which is what
+// this replaces. Prefer the row without "— INCOMPLETE" in its focus cell.
+function logPartialSession() {
+    if (_sessionLogged || _partialLogged) return false;
+    if (typeof syncSessionToSheet !== 'function') return false;
+    if (!Array.isArray(activeQuestions) || !activeQuestions.length) return false;
+    if (typeof buildResults !== 'function' || !Array.isArray(responses)) return false;
+
+    // Only questions actually committed to the ledger. A blank is not a result,
+    // and an uncommitted selection is not an answer — same rule the ledger keeps.
+    const rows = buildResults(responses, activeQuestions)
+        .filter((r, i) => responses[i] && responses[i].committed && r.answered);
+    if (!rows.length) return false;
+
+    const done     = rows.length;
+    const correct  = rows.filter(r => r.isCorrect).length;
+    const duration = rows.reduce((sum, r) => sum + (r.secs || 0), 0) || secondsElapsed;
+
+    const skillStats = {};
+    rows.forEach(r => {
+        if (!skillStats[r.q.skill]) skillStats[r.q.skill] = { correct: 0, total: 0 };
+        skillStats[r.q.skill].total++;
+        if (r.isCorrect) skillStats[r.q.skill].correct++;
+    });
+
+    const skills = [...new Set(activeQuestions.map(q => q.skill))];
+    const diffs  = [...new Set(activeQuestions.map(q => q.difficulty))];
+
+    // The marker rides in `focus`, which lands in the "Day / Focus / Skills"
+    // column on the Sessions tab. Deliberately NOT a new column and NOT a new
+    // `type`: the tabs are eight FIXED columns whose headers are only written
+    // when the sheet is empty, and `type` is what routes Homework vs Sessions.
+    // A ninth column would need a script change and a redeploy to be visible.
+    syncSessionToSheet({
+        date:  new Date().toISOString(),
+        skills, diffs,
+        focus: skills.join(', ') + ' — INCOMPLETE (' + done + ' of ' +
+               activeQuestions.length + ' answered)',
+        score: correct,
+        total: done,
+        pct:   Math.round((correct / done) * 100),
+        duration,
+        avgSecs: Math.round(duration / done),
+        skillStats,
+        blurCount: (typeof getBlurCount === 'function') ? getBlurCount() : 0,
+        source: 'practice',
+        mode:   userMode,
+        sessionId: _sessionId,
+        partial:   true,
+        answered:  done,
+        planned:   activeQuestions.length,
+        questions: rows.map(r => ({
+            id: r.q.id, skill: r.q.skill, difficulty: r.q.difficulty,
+            chosen: r.selected, correct: r.correct, isCorrect: r.isCorrect,
+            secs: r.secs || 0, trap: r.q.trapName || '',
+        })),
+    });
+
+    _partialLogged = true;
+    if (typeof saveSessionState === 'function') { try { saveSessionState(); } catch (e) {} }
+    return true;
 }
 
 function renderHistory() {
