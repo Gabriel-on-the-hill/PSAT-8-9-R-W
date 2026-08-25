@@ -257,6 +257,97 @@ const HOMEWORK = {
         ],
         tip:"A short mix before our session." },
     ]
+  },
+
+  // Luke — first assignment. Two skills were taught in the first class and are the
+  // only two that appear here; nothing else has been taught, and the ledger rule is
+  // that an untaught skill is never assigned cold.
+  //
+  // BANK SUPPLY IS THE TIGHTEST CONSTRAINT ON THIS WEEK, and it is why the
+  // difficulties look lopsided. Both skills had a full class session worked inside
+  // the app, so a chunk of each Medium pool is already spent and — because those
+  // sessions DID reach progress.js — the runner correctly ranks them resting, below
+  // unseen. What is left:
+  //   Inferences / Medium   9 in bank, 5 spent, 4 unseen  → SPENT NOWHERE THIS WEEK
+  //   Central Ideas / Medium 12 in bank, 5 spent, 7 unseen → 3 + 2 + 2 = all 7
+  // Inferences Medium is deliberately held at zero new draws. Its five worked items
+  // are on the ladder and already overdue, so the review dose on days 3 and 4 brings
+  // them back at the 1→3→7-day rungs — delayed retrieval of what was actually taught
+  // beats four fresh items, and it keeps a reserve for next week. Inferences instead
+  // runs Easy (4, untouched) and Hard (25, untouched).
+  //
+  // ⚠ EVERY DIFFICULTY IS PINNED, ON PURPOSE. The class practice fed
+  // recordTrapOutcome, so both skills carry a COACHED accuracy near the top of the
+  // scale, and recommendDifficulty() would read that as permission to lean Hard. A
+  // section pinning ONE difficulty is an explicit tutor choice and calibration is
+  // forbidden from touching it. Do not author a ranged diffs:["Medium","Hard"] on
+  // either skill until a mock has produced a number earned without a tutor present.
+  //
+  // THE LADDER IS THE CLOCK, and it is slow:
+  //   Day 1  untimed, typed   — procedure rehearsal at Easy, both skills, low load
+  //   Day 2  untimed, typed   — one skill alone, difficulty steps to Medium
+  //   Day 3  untimed, typed   — difficulty steps to Hard on a PAIR, with a control
+  //   Day 4  ~80s a question  — day 3's exact composition, so the CLOCK is the only
+  //                             thing that moved and a drop reads as pace, not difficulty
+  // Two rungs at once is the failure mode: difficulty moves on day 3, time on day 4.
+  // Real pace (~71s) is not in this week at all.
+  //
+  // minutes:0 puts the runner in typed mode. That typed prediction is the only
+  // instrument that tests the habit this plan is built around, so three of four days
+  // keep it; day 4 spends it for pace data.
+  //
+  // ⚠ AN UNTIMED SET ONLY REACHES THE TUTOR IF IT IS FINISHED. In practice-nav mode
+  // the ledger is written per question but postLog fires from finish(), which
+  // advance() reaches by moving PAST the last question — there is no Submit button in
+  // this mode. Day 1's tip says so in plain words. Sequential unlock is the safety
+  // net: the completion flag and postLog are written together, so if the next set has
+  // not opened, the previous one did not finish. Check the hub, not the sheet.
+  //
+  // review:0 on days 1 and 2 — day 1 because it is the first dose of the procedure
+  // itself, day 2 because its whole job is one skill and the ladder draws from the
+  // WHOLE bank. From day 3 the default 2 resumes and days are authored as 4 new + 2
+  // review = 6, never 6 new plus review on top.
+  //
+  // SECTIONS ON EVERY MULTI-SKILL DAY. A plain skills/diffs/count day orders one pool
+  // and slices the top N, so a "mixed" set silently collapses to one skill.
+  //
+  // Shape only. The student data behind these choices is TUTOR-ONLY and lives in the
+  // gitignored notes — it must never be written into this public, student-downloaded
+  // file (root rule: no assessment of a student where the student can read it).
+  "Luke": {
+    title: "Two skills, one habit — predict before you look",
+    start: "2026-08-25",
+    through: "2026-08-30",    // required: sequential unlock stops enforcing spacing, so we ask
+    unlock: "sequential",     // set 1 open now; each later set opens when the one before is submitted
+    days: [
+      { n:1, focus:"Inferences and main idea — no clock, type your prediction first", review:0, minutes:0,
+        sections:[
+          { skills:["Inferences"],                diffs:["Easy"], count:4 },
+          { skills:["Central Ideas and Details"], diffs:["Easy"], count:2 },
+        ],
+        tip:"Keep going until you reach the results screen at the end — a set you stop halfway through does not get saved for me to read.\nNo clock at all on this one. Take as long as you want — the typing IS the assignment, and the questions are the excuse for it.\nCover the choices. Read to the end. Then write the claim in ONE sentence of your own: what is this text actually saying?\nIf the text turns — but, however, regardless, although — your claim has to carry the turn. A claim that drops the \"but\" will match a wrong answer perfectly.\nOnly then look at the options, and take the one that matches your sentence.\nLast step every time, and it is the whole point: does the text SAY this, or does it just sound sensible? Reasonable and supported are not the same thing." },
+
+      { n:2, focus:"Main idea on its own — still no clock", review:0, minutes:0,
+        sections:[
+          { skills:["Central Ideas and Details"], diffs:["Easy"],   count:2 },
+          { skills:["Central Ideas and Details"], diffs:["Medium"], count:3 },
+        ],
+        tip:"Still no clock, and a short set on purpose. One skill today, and the texts get longer partway through — the method does not change.\nWrite the claim before you look, every single question.\nHere is the trap at this level, and it catches almost everyone: on a main-idea question, MOST of the wrong choices are true. They are real statements about the passage. They are just too small.\nSo \"is it true?\" is the wrong test. The test is: does it cover the WHOLE text, or only one corner of it?\nToo narrow is one detail wearing a main-idea costume. Too broad is a claim the text never grew big enough to make. Name which one each wrong option is before you move on." },
+
+      { n:3, focus:"Harder inferences, mixed with main idea — no clock", minutes:0,
+        sections:[
+          { skills:["Inferences"],                diffs:["Hard"],   count:2 },
+          { skills:["Central Ideas and Details"], diffs:["Medium"], count:2 },
+        ],
+        tip:"The step up you were told about — and still no clock, on purpose. Harder texts and a timer at once would measure neither.\nTwo of these are harder inference questions. The passages are denser; the method is identical. Claim first, in your own words, before the choices.\nAt this level the wrong answers stop being obviously wrong. Watch for four of them: something true-sounding about a topic the text never raised; a real finding widened into a sweeping claim; a cause the passage never mentioned; and an option that is perfectly accurate but does not finish THIS sentence.\nIf you cannot point at the words that force your answer, it is not your answer yet.\nSome questions from earlier this week will come back in here. That is deliberate — getting one right a second time, days later, is the only thing that proves it stuck." },
+
+      { n:4, focus:"Same mix, now against a clock — about 80 seconds a question", minutes:8,
+        sections:[
+          { skills:["Inferences"],                diffs:["Hard"],   count:2 },
+          { skills:["Central Ideas and Details"], diffs:["Medium"], count:2 },
+        ],
+        tip:"Same kind of set as last time — the only thing that changed is the clock. About 80 seconds a question, and the real test gives you around 71, so there is room in it.\nYou will not type your prediction this time; you commit with a click instead. Say the claim in your head anyway. That step is the one that goes first under time, and it is the only thing holding everything else up.\nMost of your time belongs to the passage, not the options. If you are still circling the choices after a minute, you did not read hard enough the first time.\nIf a question will not come, choose and move. One you never reach scores the same as one you get wrong, and it costs you the next two.\nPacing has never been your problem. Do not let the clock talk you out of the method." },
+    ]
   }
 };
 
