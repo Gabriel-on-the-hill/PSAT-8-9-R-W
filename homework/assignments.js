@@ -32,76 +32,87 @@
 // ══════════════════════════════════════════════════════════════════
 
 const HOMEWORK = {
-  // Maysa — 21 Aug class → the full-length Bluebook mock on Sun 23 Aug, then the week after it.
-  // Six short sets, six questions each (4 new + 2 review), the window printed 21–27 Aug.
+  // Maysa — 27 Aug class → the week to the 3 Sep class. THREE sets, not six.
+  // Six questions each, the window printed 27 Aug – 3 Sep.
   //
   // SHAPE ONLY BELOW THIS LINE. The student data behind these choices is TUTOR-ONLY and lives in
   // the gitignored LEDGER — it must never be written into this public, student-downloaded file
   // (root rule: no assessment of a student where the student can read it). The previous version
   // of this block carried per-skill scores and pacing judgements and should not be copied from.
   //
+  // WHY THREE AND NOT SIX. The 21 Aug plan authored six and three were worked. Author what gets
+  // finished. Short sets she completes have beaten long sets every week this file has existed.
+  //
   // NEW `start` IS SAFE HERE. Completion is keyed psat89_hw_<student>_<start>_<n>, so a new start
-  // date orphans any set already submitted under the old one. Nothing was submitted under the
-  // 2026-08-11 plan, so there is nothing to orphan and the four sets are simply replaced.
+  // date orphans any set already submitted under the old one. Sets 1–3 of the 2026-08-21 plan
+  // were submitted and stay in the ledger under that key; sets 4–6 were never submitted, so
+  // replacing them orphans nothing.
   //
   // ORDER IS THE TEACHING SEQUENCE (sequential unlock — set N opens when N-1 is submitted):
-  // Sets 1–3 land before the mock. Set 1 is one brand-new skill, so it is untimed with typed
-  // predictions and `review: 0` — the full dose. Set 2 is a reading set with a deliberately
-  // generous clock (~110s against the real ~71s): cushion is the teaching instrument, because the
-  // habit it asks for cannot be practised at twenty seconds. Set 3 is the dress rehearsal at true
-  // pace the day before the mock. Sets 4–6 run after the mock and take three already-taught
-  // skills from their untimed rep to a clock.
+  // ONE IDEA RUNS THROUGH ALL THREE — the uneven budget. Every set spends a single clock across
+  // questions that are deliberately not worth the same amount of time, and every tip states the
+  // split before she starts. Cheap questions bank time for expensive ones; that is what the real
+  // test rewards and it is the only way to practise a ~71s average without practising 71s on
+  // everything. Set 1 is sat IN CLASS with the clock visible. Set 2 puts the widest split in the
+  // plan on the two conventions skills. Set 3 removes the cushion entirely and asks whether the
+  // reading habit survives at true pace — that is the question of the week, and it is why Set 3
+  // is last rather than first.
   //
   // BANK SUPPLY — read this before writing the next plan, it constrains what can be asked:
   // Words in Context / Hard is down to 3 unseen of 29 and Text Structure & Purpose / Medium to
-  // 0 unseen of 13, so neither can function as a cold read any more — only as retention. Set 3
-  // spends one of the three remaining WiC Hard items deliberately. Boundaries is untouched
-  // (4 Easy / 12 Medium / 35 Hard, all unseen), which is why Set 1 can be built at Easy at all.
+  // 0 unseen of 13; neither can function as a cold read any more, and both are out of this plan.
+  // BOUNDARIES IS NO LONGER UNTOUCHED — the note above this line in the 21 Aug plan is stale.
+  // Easy is at 0 unseen of 4 and Medium at 2 unseen of 12. Set 2 spends both remaining Mediums,
+  // which empties the pool: after this plan, Boundaries can only be asked at Hard (35 unseen).
+  // That is deliberate and it is the right last use of them — it lands the pace rung at a
+  // difficulty she has already proved, so next week's step to Hard moves difficulty alone.
+  // Healthy for this plan: Cross-Text Medium 7 unseen, Transitions Medium 10 / Hard 12,
+  // Form Structure & Sense Hard 23, Command of Evidence — Textual Hard 23, Inferences Hard 17,
+  // Central Ideas Hard 14.
   "Maysa": {
-    title: "Boundaries, a reading repair, and a dress rehearsal — then the mock",
-    start: "2026-08-21",
-    through: "2026-08-27",    // required: sequential unlock stops enforcing spacing, so we ask
+    title: "The uneven budget — three sets, one clock each",
+    start: "2026-08-27",
+    through: "2026-09-03",    // required: sequential unlock stops enforcing spacing, so we ask
     unlock: "sequential",     // set 1 open now; each later set opens when the one before is submitted
     days: [
-      { n:1, focus:"Boundaries — the first look, no clock, type your prediction", review:0, minutes:0,
-        sections:[
-          { skills:["Boundaries"], diffs:["Easy"],   count:3 },
-          { skills:["Boundaries"], diffs:["Medium"], count:3 },
-        ],
-        tip:"No clock on this one. Type what you think the answer is before you look at the choices.\nEvery Boundaries question is the same question: is each side of the punctuation a complete sentence?\nTwo complete sentences need a period, a semicolon, or a comma plus and/but/or/so. A comma alone never joins two complete sentences.\nIf one side is not a complete sentence, a comma is usually right and a semicolon is always wrong.\nExtra information dropped into the middle needs the SAME mark at both ends — two commas, two dashes, or two brackets. Never one of each." },
-      { n:2, focus:"Information & Ideas (Hard) — read first, with room on the clock", minutes:11,
-        sections:[
-          { skills:["Command of Evidence — Textual"], diffs:["Hard"], count:2 },
-          { skills:["Inferences"],                     diffs:["Hard"], count:1 },
-          { skills:["Central Ideas and Details"],      diffs:["Hard"], count:1 },
-        ],
-        tip:"About 110 seconds a question — far more than the real test gives you. Spend it on the passage.\nThe rule for this set: most of your time goes on the text, not on the choices. If you are still in the options after a minute, you did not read hard enough the first time.\nBefore you look at a single choice, say what the passage claims in one sentence of your own.\nThen take the choice that matches your sentence. Reading four choices to see which one feels right is the slowest way to get it wrong." },
-      { n:3, focus:"Mixed at real PSAT pace — dress rehearsal for the mock", minutes:7,
-        sections:[
-          { skills:["Words in Context"],           diffs:["Hard"], count:1 },
-          { skills:["Rhetorical Synthesis"],       diffs:["Hard"], count:1 },
-          { skills:["Form, Structure, and Sense"], diffs:["Hard"], count:1 },
-          { skills:["Transitions"],                diffs:["Hard"], count:1 },
-        ],
-        tip:"Real pace now — about 71 seconds a question, which is what the test actually gives you.\nThe rehearsal is not for the questions, it is for the budget: when one is taking too long, choose and move. A question you never reach scores the same as one you got wrong, and it costs you the two after it.\nRead it all, predict, then choose." },
-      { n:4, focus:"Transitions — first time under a clock", minutes:8,
-        sections:[
-          { skills:["Transitions"], diffs:["Medium"], count:2 },
-          { skills:["Transitions"], diffs:["Hard"],   count:2 },
-        ],
-        tip:"About 80 seconds a question, a little more than the real test gives you.\nName the relationship between the two sentences BEFORE you read the options: same direction, opposite direction, cause, example, or sequence.\nSame-direction is the one that catches people. A sentence that restates or narrows the one before it wants \"specifically\", \"in fact\", \"indeed\" — not \"however\".\nIf two options mean the same thing, neither one is the answer." },
-      { n:5, focus:"Cross-Text at pace, and the synthesis goal", minutes:8,
+      // SAT IN CLASS, 27 Aug, clock visible. `review: 0` because the budget IS the instrument here:
+      // the ladder draws its two from the whole bank, and a question of unknown skill and unknown
+      // cost would break the split this set exists to teach. Spacing resumes on set 2.
+      // Both skills are chosen because accuracy on them is not in question — so anything that
+      // goes wrong in this set is pace, and only pace.
+      { n:1, focus:"Cross-Text and Transitions — one clock, two budgets", review:0, minutes:8,
         sections:[
           { skills:["Cross-Text Connections"], diffs:["Medium"], count:2 },
-          { skills:["Rhetorical Synthesis"],   diffs:["Hard"],   count:2 },
+          { skills:["Transitions"],            diffs:["Medium"], count:2 },
+          { skills:["Transitions"],            diffs:["Hard"],   count:2 },
         ],
-        tip:"One clock for two very different jobs — that is the point of this set. The Cross-Text pair needs about two minutes each; the synthesis pair needs about one. Budget it that way on purpose.\nCross-Text: settle what EACH author actually claims before you read a single choice. Then ask what the second one would say about the first.\nSynthesis: read the goal in the question and say it back in your own words first. Then take the choice that does that job, not the one that is simply true. A choice can be perfectly accurate and still be the wrong answer, because it does not do what the question asked for." },
-      { n:6, focus:"Conventions together — Boundaries steps up, form and structure comes back", minutes:8,
+        tip:"Eight minutes for six questions, and they are NOT worth the same amount of time.\nThe split, before you start: about two minutes each on the two Cross-Text questions, about one minute each on the four Transitions.\nThat is the whole exercise. The cheap questions are supposed to bank time for the expensive ones — that is what the real test rewards.\nAt sixty seconds on any question you say one of two things out loud: \"I have it\" or \"I'm choosing and moving.\" There is no third option and there is no going back.\nCross-Text: settle what EACH author actually claims before you read a single choice. Then ask what the second one would say about the first.\nTransitions: name the relationship between the two sentences BEFORE you read the options — same direction, opposite, cause, example, or sequence. Same-direction is the one that catches people: a sentence that restates or narrows the one before it wants \"specifically\", \"in fact\", \"indeed\", not \"however\". If two options mean the same thing, neither one is the answer." },
+
+      // The widest split in the plan — 45s against 2 min inside one clock. Boundaries is the
+      // cheapest content on the test and has been costing far more than it is worth; Form &
+      // Structure is solid enough not to need teaching and shaky enough to deserve the two minutes.
+      // DIFFICULTY DOES NOT MOVE HERE. Boundaries stays at Medium while the clock moves, per the
+      // house ladder — and this spends the last two unseen Medium items, by design. See the bank
+      // supply note above before touching the counts.
+      { n:2, focus:"Boundaries at speed, form and structure at pace", minutes:8,
         sections:[
           { skills:["Boundaries"],                 diffs:["Medium"], count:2 },
           { skills:["Form, Structure, and Sense"], diffs:["Hard"],   count:2 },
         ],
-        tip:"About 80 seconds a question. These two skills are the whole punctuation-and-grammar side of the test, and they are quick marks once the rule is automatic.\nBoundaries: is each side a complete sentence? Answer that first, every time.\nForm and structure: find the main verb of the sentence before you choose. If the sentence already has one, the blank is not another one.\nRead the whole sentence back with your choice in it before you commit." },
+        tip:"One clock, two very uneven budgets — that is the point of this set.\nAbout FORTY-FIVE SECONDS each on the two Boundaries questions. About TWO MINUTES each on the two form-and-structure ones. Budget it that way on purpose.\nBoundaries is quick marks once the rule is automatic: is each side of the punctuation a complete sentence? Answer that first, every time. Two complete sentences need a period, a semicolon, or a comma plus and/but/or/so — a comma alone never joins them. If one side is not complete, a comma is usually right and a semicolon is always wrong.\nForm and structure: find the main verb of the sentence before you choose. If the sentence already has one, the blank is not another one. Read the whole sentence back with your choice in it before you commit.\nThe two review questions at the end are on the same clock. Leave yourself something for them." },
+
+      // THE QUESTION OF THE WEEK. Set 2 of the last plan proved she can read Information & Ideas
+      // Hard correctly when the clock is generous. This removes the cushion and asks whether the
+      // habit survives at the pace the test actually gives. It is last because it is the test of
+      // the other two, not a warm-up for them.
+      { n:3, focus:"Information and Ideas at real pace — no cushion", minutes:7,
+        sections:[
+          { skills:["Command of Evidence — Textual"], diffs:["Hard"], count:1 },
+          { skills:["Inferences"],                     diffs:["Hard"], count:1 },
+          { skills:["Central Ideas and Details"],      diffs:["Hard"], count:1 },
+          { skills:["Form, Structure, and Sense"],     diffs:["Hard"], count:1 },
+        ],
+        tip:"Real pace now — about seventy seconds a question, which is what the test actually gives you. No cushion this time.\nRead first, but read ONCE. The depth goes in the first pass, not in going back. If you are re-reading the passage, you are not being careful, you are being slow.\nBefore you look at a single choice, say what the passage claims in one sentence of your own. Then take the choice that matches your sentence.\nThe conventions question is the cheap one in this set — take it fast and give the time to the three reading questions.\nA question you never reach scores exactly the same as one you got wrong, and it costs you the ones after it. When something is running long, choose and move." },
     ]
   },
 
