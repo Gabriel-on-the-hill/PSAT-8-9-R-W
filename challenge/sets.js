@@ -250,5 +250,94 @@ window.CHALLENGE_SETS = {
         },
     ],
 
+    // ═════════════════════════════════════════════════════════════════
+    // con-taught-1 — built to match a lesson, not to survey a domain
+    // ═════════════════════════════════════════════════════════════════
+    //
+    // The two sets above ask "does the whole concept axis hold?" and are built
+    // for coverage. This one is built for the opposite reason: it carries the
+    // 31 Aug class and nothing else. Every question in it is a question the two
+    // rules taught that hour will answer, and every rule NOT taught that hour is
+    // absent, however cheap it would have been to include.
+    //
+    // That is why there is no colon, no dash, no pronoun and no modifier item
+    // here. A challenge set is served until every question is mastered; a
+    // question whose rule was never taught cannot be mastered by practice, only
+    // by guessing until the tally moves. Coverage is next month's set.
+    //
+    // WHAT THE HOUR TAUGHT, and the whole set maps onto it:
+    //
+    //   Form, Structure and Sense —
+    //     "Find the subject. Cross out everything between it and the verb."
+    //     SVA ×2, verb tense ×2, verb form ×1, possessive ×1.
+    //
+    //   Boundaries —
+    //     "Cover the mark. Is each side a whole sentence?"
+    //     Three items where the answer is YES and the mark differs (period,
+    //     comma + but, and the dependent-clause comma where the answer is NO),
+    //     and three where the right move is a mark the ear does not expect —
+    //     including two where the right move is NO MARK AT ALL.
+    //
+    // EASY AND MEDIUM ONLY, DELIBERATELY. Both skills are one hour old. The
+    // Hard tiers are the deepest in the bank (34 and 35 items) and are the
+    // September step; putting them here would spend them before the mock and
+    // make the set unmasterable in the week it is set. The two Easy items are
+    // load-bearing rather than filler: they are the cleanest statement of each
+    // rule, and the set is served wrong-first, so they are what a miss falls
+    // back onto.
+    //
+    // SIX ITEMS ARE HELD OUT, on purpose. The six worked aloud in class, with
+    // the answers given, are NOT in this set: 6b2a1288, edbbeca3, f09186ab
+    // (FSS) and f0124561, 566fac8d, 312bfabb (Boundaries). Mastery needs two
+    // clean corrects on separate goes, so a coached item could not inflate the
+    // tally on its own — but it would still be the first thing he met, and the
+    // set would open by asking him to remember rather than to decide. They come
+    // back through the review ladder instead.
+    //
+    // OVERLAP WITH OTHER STUDENTS IS FINE and is not rule 3. Rule 3 forbids a
+    // set overlapping that SAME student's earlier sets; this is his first, so
+    // there is nothing to exclude. 78cef1d4, 91d28dac and 312bfabb also sit in
+    // Faith's con-concepts-1, exactly as 03ca25bb sits in two sets already.
+    //
+    // The hub appends the newest set for any student who has one, so this needs
+    // no `challenge:` key in assignments.js and does not disturb his day cards.
+    'Luke': [
+        {
+            setId:  'con-taught-1',
+            title:  'Conventions: find the subject, cover the mark',
+            source: 'Built from the bank to match the 31 Aug class, by rule',
+            date:   '2026-08-31',
+            ids: [
+                // ── Form, Structure & Sense ────────────────────────────
+                // Subject-verb agreement · the trap is always distance
+                '78cef1d4',   // SVA      · Easy   — plural subject, singular verbs offered
+                '81000f32',   // SVA      · Medium — subject across a long appositive
+
+                // Verb tense · the sentence states the time, the ear does not
+                '69556476',   // VTense   · Easy   — general facts take the present
+                '9ab0c766',   // VTense   · Medium — a stated date forces the past
+
+                // Verb form · is the blank the main verb, or a modifier?
+                '491a17a7',   // VForm    · Medium — the blank IS the main verb, so conjugate it
+
+                // Possessive · one apostrophe decision, two nouns
+                '02c22816',   // Poss     · Medium — singular possessive
+
+                // ── Boundaries · cover the mark, count the sentences ───
+                // Both sides whole — and the mark is not always the same one
+                '7c30c345',   // Commas   · Medium — two independent clauses, take the period
+                'e9a761e7',   // Commas   · Medium — two independent clauses, comma + "but"
+                '3269925f',   // Commas   · Easy   — NOT two: dependent "although" clause
+
+                // Supplements · essential takes nothing, non-essential takes commas
+                '5a4e7f5f',   // Commas   · Medium — non-essential "such as" aside
+                'f60f2482',   // NoPunct  · Medium — essential "that" clause takes no mark
+
+                // The one the ear gets wrong most: no mark belongs at all
+                '91d28dac',   // NoPunct  · Easy   — preposition and its object, never split
+            ],
+        },
+    ],
+
 
 };
