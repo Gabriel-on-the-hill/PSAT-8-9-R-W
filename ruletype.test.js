@@ -33,7 +33,7 @@ const vm = require('vm');
 const path = require('path');
 
 function load(file, varName) {
-    const src = fs.readFileSync(path.join(__dirname, file), 'utf8');
+    const src = fs.readFileSync(path.resolve(__dirname, file), 'utf8');
     const ctx = { window: {}, out: null };
     vm.createContext(ctx);
     vm.runInContext(src + '\n;out = typeof ' + varName + " !== 'undefined' ? " + varName + ' : null;', ctx);
