@@ -1487,7 +1487,7 @@ function submitAnswer() {
     bankTimeOnCurrent();
     const isCorrect = r.chosen === q.answer;
     commitOne(responses, i, q, 'practice', recordAnswer);
-    recordTrapOutcome(q.skill, q.trapName, isCorrect);
+    recordTrapOutcome(q.skill, q.trapName, isCorrect, q.difficultyStatus !== 'provisional');
     if (isCorrect) score++;
     document.getElementById('currentScore').textContent = score;
 
@@ -1662,7 +1662,8 @@ function submitModule() {
     activeQuestions.forEach((q, i) => {
         const r = responses[i];
         if (r && r.chosen !== null) {
-            recordTrapOutcome(q.skill, q.trapName, r.chosen === q.answer);
+            recordTrapOutcome(q.skill, q.trapName, r.chosen === q.answer,
+                q.difficultyStatus !== 'provisional');
         }
     });
     finalizeSession();

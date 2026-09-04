@@ -32,87 +32,120 @@
 // ══════════════════════════════════════════════════════════════════
 
 const HOMEWORK = {
-  // Maysa — 27 Aug class → the week to the 3 Sep class. THREE sets, not six.
-  // Six questions each, the window printed 27 Aug – 3 Sep.
+  // Maysa — 3 Sep class → the week to the 10 Sep class. THREE sets.
+  //
+  // ⚠ THE CLASS IS THE 3 SEP ONE; THE PLAN IS DATED THE 4th, AND THAT IS NOT A TYPO.
+  // Her sessions run late and cross midnight — the 27 Aug class logged its three sittings at
+  // 00:27, 00:40 and 01:06 on the 28th. `start` has to be the date the BROWSER will be on when
+  // she opens the hub, because hwDaysAvailable() compares against local midnight. Date this the
+  // 3rd and cumulative opens sets 1 AND 2 the moment the clock ticks over, which collapses the
+  // whole with-help / on-your-own sequence into one night. The tutor note for this class is
+  // filed under 3 Sep; the plan is dated for the clock, not for the lesson.
   //
   // SHAPE ONLY BELOW THIS LINE. The student data behind these choices is TUTOR-ONLY and lives in
-  // the gitignored LEDGER — it must never be written into this public, student-downloaded file
-  // (root rule: no assessment of a student where the student can read it). The previous version
-  // of this block carried per-skill scores and pacing judgements and should not be copied from.
+  // the gitignored notes — it must never be written into this public, student-downloaded file
+  // (root rule: no assessment of a student where the student can read it).
   //
-  // WHY THREE AND NOT SIX. The 21 Aug plan authored six and three were worked. Author what gets
-  // finished. Short sets she completes have beaten long sets every week this file has existed.
+  // ⚠ UNLOCK IS `cumulative`, AND THAT IS THE WHOLE POINT OF THIS RE-AUTHORING.
+  // Sequential has now cost two consecutive weeks. The first was a bug: an untimed set wrote to
+  // localStorage and posted nothing, so set 1 never registered as finished and sets 2–6 never
+  // opened. logPartialSession() fixed that. The second was OUR DESIGN, and worse: the 27 Aug plan
+  // made set 1 a set to be SAT IN CLASS, the class ran different content, and so sets 2 and 3
+  // stayed locked behind a set nobody remembered to open. Eleven of fourteen days with nothing
+  // reachable, and no symptom anywhere — the hub looked exactly as it should.
   //
-  // NEW `start` IS SAFE HERE. Completion is keyed psat89_hw_<student>_<start>_<n>, so a new start
-  // date orphans any set already submitted under the old one. Sets 1–3 of the 2026-08-21 plan
-  // were submitted and stay in the ledger under that key; sets 4–6 were never submitted, so
-  // replacing them orphans nothing.
+  // Cumulative opens set N on start + (N-1) days. It cannot lock her out: a set she skips does
+  // not hold up the ones behind it, and a set she never opens costs only itself. Three sets over
+  // seven days still spaces properly. The trade sequential was making — earned rather than waited
+  // for — is not worth a third week.
   //
-  // ORDER IS THE TEACHING SEQUENCE (sequential unlock — set N opens when N-1 is submitted):
-  // ONE IDEA RUNS THROUGH ALL THREE — the uneven budget. Every set spends a single clock across
-  // questions that are deliberately not worth the same amount of time, and every tip states the
-  // split before she starts. Cheap questions bank time for expensive ones; that is what the real
-  // test rewards and it is the only way to practise a ~71s average without practising 71s on
-  // everything. Set 1 is sat IN CLASS with the clock visible. Set 2 puts the widest split in the
-  // plan on the two conventions skills. Set 3 removes the cushion entirely and asks whether the
-  // reading habit survives at true pace — that is the question of the week, and it is why Set 3
-  // is last rather than first.
+  // THE RULE THAT FOLLOWS, AND IT IS NOT NEGOTIABLE: no set that gates another set is ever
+  // assigned to be sat in class. Set 1 below IS sat in class, which is exactly why this plan
+  // cannot be sequential.
+  //
+  // `start` IS TODAY, AND THAT IS DELIBERATE. Under cumulative, day 1 opens on the start date, so
+  // dating this 3 Sep is what makes set 1 reachable during the class rather than tomorrow.
+  // Completion is keyed psat89_hw_<student>_<start>_<n>; nothing was ever submitted under
+  // 2026-08-27, so replacing that plan orphans nothing.
+  //
+  // ORDER IS THE TEACHING SEQUENCE, and this week it is a MEASUREMENT sequence:
+  //   Set 1  in class, supervised   — the domain at true pace, with a tutor in the room
+  //   Set 2  the next day, alone    — the same shape on unseen items, cold
+  //   Set 3  the conventions rung   — the uneven budget, on what the class taught
+  // Sets 1 and 2 are the same instrument run twice on purpose. A score earned with a tutor
+  // present and a score earned alone are different measurements, and folding them together is a
+  // mistake this file has made before. Set 2 is the one that counts.
+  //
+  // ⚠ SET 1 CARRIES `review: 0` AND SET 2 DOES NOT — read this before "fixing" the asymmetry.
+  // Set 1 is a clean six-question read of ONE domain at a fixed per-question cost. The ladder
+  // draws its two from the WHOLE bank, so a review question of unknown skill and unknown cost
+  // would put two questions of something else inside the only domain measurement of the week.
+  // Set 2 keeps the default 2 because spacing has to resume somewhere and its four new items are
+  // still directly comparable to set 1's, question for question. Do not author six new and let
+  // review push it to eight; short sets she finishes beat long sets she abandons.
+  //
+  // EVERY SET STATES ITS PER-QUESTION BUDGET IN ITS TIP, and every tip that carries a review dose
+  // says SIX rather than four and says the two can appear ANYWHERE — the runner splices them at
+  // random positions, not at the end. A tip that promises four questions and delivers six breaks
+  // the one habit this whole month is building.
+  //
+  // SECTIONS ON EVERY MULTI-SKILL SET. A plain skills/diffs/count day orders one pool and slices
+  // the top N, so a "mixed" set silently collapses to one skill. One difficulty per section is
+  // also the only construction that makes a count exact, and it keeps _calibratedPick() out of
+  // the draw entirely — which matters here, because in-class work feeds recordTrapOutcome and
+  // would otherwise read as permission to lean Hard.
   //
   // BANK SUPPLY — read this before writing the next plan, it constrains what can be asked:
-  // Words in Context / Hard is down to 3 unseen of 29 and Text Structure & Purpose / Medium to
-  // 0 unseen of 13; neither can function as a cold read any more, and both are out of this plan.
-  // BOUNDARIES IS NO LONGER UNTOUCHED — the note above this line in the 21 Aug plan is stale.
-  // Easy is at 0 unseen of 4 and Medium at 2 unseen of 12. Set 2 spends both remaining Mediums,
-  // which empties the pool: after this plan, Boundaries can only be asked at Hard (35 unseen).
-  // That is deliberate and it is the right last use of them — it lands the pace rung at a
-  // difficulty she has already proved, so next week's step to Hard moves difficulty alone.
-  // Healthy for this plan: Cross-Text Medium 7 unseen, Transitions Medium 10 / Hard 12,
-  // Form Structure & Sense Hard 23, Command of Evidence — Textual Hard 23, Inferences Hard 17,
-  // Central Ideas Hard 14.
+  // SPENT, and not askable cold again: Boundaries Medium (2 unseen), Cross-Text Medium (2),
+  // Text Structure & Purpose Medium (2), Words in Context Hard (6). None of them are in this plan.
+  // Boundaries can only be asked at HARD from here — the Medium rung is gone, which is why set 3
+  // steps it. DEEP, and where this plan spends: Command of Evidence — Textual Hard 23, Inferences
+  // Hard 18, Command of Evidence — Quantitative Hard 17, Central Ideas Hard 15, Boundaries Hard 29
+  // (less whatever the class block spends), Form Structure & Sense Hard 19, Rhetorical Synthesis
+  // Hard 30, Transitions Hard 10 / Medium 8.
+  //
+  // WHAT IS NOT IN THIS PLAN AND SHOULD BE NEXT: Expression of Ideas cold — Rhetorical Synthesis
+  // and Transitions, at pace, with nobody naming the writing goal for her. Three slots, four
+  // candidates; the conventions rung won the third because it is what the class taught and a rung
+  // taught without follow-up does not land. If a full-length lands this week it tests Expression
+  // of Ideas for free and this stays deferred.
   "Maysa": {
-    title: "The uneven budget — three sets, one clock each",
-    start: "2026-08-27",
-    through: "2026-09-03",    // required: sequential unlock stops enforcing spacing, so we ask
-    unlock: "sequential",     // set 1 open now; each later set opens when the one before is submitted
+    title: "The same question twice — with help, then without",
+    start: "2026-09-04",
+    through: "2026-09-11",
+    unlock: "cumulative",     // set N opens on start + (N-1) days; a skipped set blocks nothing
     days: [
-      // SAT IN CLASS, 27 Aug, clock visible. `review: 0` because the budget IS the instrument here:
-      // the ladder draws its two from the whole bank, and a question of unknown skill and unknown
-      // cost would break the split this set exists to teach. Spacing resumes on set 2.
-      // Both skills are chosen because accuracy on them is not in question — so anything that
-      // goes wrong in this set is pace, and only pace.
-      { n:1, focus:"Cross-Text and Transitions — one clock, two budgets", review:0, minutes:8,
+      // SAT IN CLASS, the 3 Sep class, clock visible, tutor not speaking. `review: 0` — see the note above.
+      // Six questions of one domain at a fixed cost is the instrument; anything else in the set
+      // dilutes it.
+      { n:1, focus:"Information and Ideas at real pace — no cushion", review:0, minutes:7,
         sections:[
-          { skills:["Cross-Text Connections"], diffs:["Medium"], count:2 },
-          { skills:["Transitions"],            diffs:["Medium"], count:2 },
-          { skills:["Transitions"],            diffs:["Hard"],   count:2 },
+          { skills:["Command of Evidence — Textual"], diffs:["Hard"], count:2 },
+          { skills:["Inferences"],                     diffs:["Hard"], count:2 },
+          { skills:["Central Ideas and Details"],      diffs:["Hard"], count:2 },
         ],
-        tip:"Eight minutes for six questions, and they are NOT worth the same amount of time.\nThe split, before you start: about two minutes each on the two Cross-Text questions, about one minute each on the four Transitions.\nThat is the whole exercise. The cheap questions are supposed to bank time for the expensive ones — that is what the real test rewards.\nAt sixty seconds on any question you say one of two things out loud: \"I have it\" or \"I'm choosing and moving.\" There is no third option and there is no going back.\nCross-Text: settle what EACH author actually claims before you read a single choice. Then ask what the second one would say about the first.\nTransitions: name the relationship between the two sentences BEFORE you read the options — same direction, opposite, cause, example, or sequence. Same-direction is the one that catches people: a sentence that restates or narrows the one before it wants \"specifically\", \"in fact\", \"indeed\", not \"however\". If two options mean the same thing, neither one is the answer." },
+        tip:"Seventy seconds a question — what the real test gives you. No cushion this time, and six questions that are all the same kind of work: what does this text say, and where does it say it.\nRead first, but read ONCE. The depth goes in the first pass, not in going back. If you are re-reading the passage, you are not being careful, you are being slow.\nBefore you look at a single choice, say what the passage claims in one sentence of your own. Then take the choice that matches your sentence.\nWhen you are short of time, the thing you cut is NEVER the passage. Cutting the read is not speed — it is guessing with extra steps.\nAt sixty seconds on any question you say one of two things out loud: \"I have it\" or \"I'm choosing and moving.\" There is no third option and there is no going back." },
 
-      // The widest split in the plan — 45s against 2 min inside one clock. Boundaries is the
-      // cheapest content on the test and has been costing far more than it is worth; Form &
-      // Structure is solid enough not to need teaching and shaky enough to deserve the two minutes.
-      // DIFFICULTY DOES NOT MOVE HERE. Boundaries stays at Medium while the clock moves, per the
-      // house ladder — and this spends the last two unseen Medium items, by design. See the bank
-      // supply note above before touching the counts.
-      { n:2, focus:"Boundaries at speed, form and structure at pace", minutes:8,
+      // THE ONE THAT COUNTS. Same composition, unseen items, no tutor in the room. Set 1 measures
+      // the habit with help available; this measures whether it survives without. Do not read
+      // set 1's number as transfer — that mistake has already been made once on this student.
+      { n:2, focus:"The same thing again, on your own", minutes:7,
         sections:[
-          { skills:["Boundaries"],                 diffs:["Medium"], count:2 },
-          { skills:["Form, Structure, and Sense"], diffs:["Hard"],   count:2 },
-        ],
-        tip:"One clock, two very uneven budgets — that is the point of this set.\nAbout FORTY-FIVE SECONDS each on the two Boundaries questions. About TWO MINUTES each on the two form-and-structure ones. Budget it that way on purpose.\nBoundaries is quick marks once the rule is automatic: is each side of the punctuation a complete sentence? Answer that first, every time. Two complete sentences need a period, a semicolon, or a comma plus and/but/or/so — a comma alone never joins them. If one side is not complete, a comma is usually right and a semicolon is always wrong.\nForm and structure: find the main verb of the sentence before you choose. If the sentence already has one, the blank is not another one. Read the whole sentence back with your choice in it before you commit.\nThe two review questions at the end are on the same clock. Leave yourself something for them." },
-
-      // THE QUESTION OF THE WEEK. Set 2 of the last plan proved she can read Information & Ideas
-      // Hard correctly when the clock is generous. This removes the cushion and asks whether the
-      // habit survives at the pace the test actually gives. It is last because it is the test of
-      // the other two, not a warm-up for them.
-      { n:3, focus:"Information and Ideas at real pace — no cushion", minutes:7,
-        sections:[
-          { skills:["Command of Evidence — Textual"], diffs:["Hard"], count:1 },
+          { skills:["Command of Evidence — Textual"], diffs:["Hard"], count:2 },
           { skills:["Inferences"],                     diffs:["Hard"], count:1 },
           { skills:["Central Ideas and Details"],      diffs:["Hard"], count:1 },
-          { skills:["Form, Structure, and Sense"],     diffs:["Hard"], count:1 },
         ],
-        tip:"Real pace now — about seventy seconds a question, which is what the test actually gives you. No cushion this time.\nRead first, but read ONCE. The depth goes in the first pass, not in going back. If you are re-reading the passage, you are not being careful, you are being slow.\nBefore you look at a single choice, say what the passage claims in one sentence of your own. Then take the choice that matches your sentence.\nThe conventions question is the cheap one in this set — take it fast and give the time to the three reading questions.\nA question you never reach scores exactly the same as one you got wrong, and it costs you the ones after it. When something is running long, choose and move." },
+        tip:"The same set as in class, on questions you have not seen, and this time nobody is sitting next to you. That is the entire point of it: yesterday showed what you can do with help in the room, today shows what you can do without. Today is the one that counts.\nSeventy seconds a question. Same method, in the same order: read once, say the claim in your own words, then look at the choices.\nSIX questions, not four. Two of them come back from earlier weeks and can turn up ANYWHERE in the set, not at the end. They are on the same clock.\nIf a question will not come, choose and move. One you never reach scores exactly the same as one you got wrong, and it costs you the ones after it." },
+
+      // THE CONVENTIONS RUNG, and the follow-up to the class teaching block. Boundaries steps to
+      // HARD because Medium is spent — difficulty moves here because the bank forces it, not
+      // because the ladder chose it, and the 45-second budget is what keeps that honest.
+      { n:3, focus:"Punctuation fast, data slow — one clock, two budgets", minutes:8,
+        sections:[
+          { skills:["Boundaries"],                          diffs:["Hard"], count:2 },
+          { skills:["Command of Evidence — Quantitative"],  diffs:["Hard"], count:2 },
+        ],
+        tip:"One clock, two very uneven budgets — that is the point of this set.\nAbout FORTY-FIVE SECONDS each on the two punctuation questions. About TWO MINUTES each on the two data questions. Budget it that way on purpose: the cheap questions are supposed to bank time for the expensive ones, and that is exactly what the real test rewards.\nPunctuation — use the procedure from class, in this order. First cover everything between commas that could come out: the extra description, the who/which clause. What is left is the spine. Now look for a subject and a verb on each side of the mark. Two complete sides need a full stop, a semicolon, or a comma plus and/but/or/so. One complete side and a fragment takes a comma, a colon or a dash, and a semicolon is always wrong there.\nThe trap at this level: however, therefore, moreover and consequently are NOT joining words. A comma before one of them, with a whole sentence on each side, is always wrong — it wants a semicolon or a full stop.\nThe data questions — read the axis labels and the units BEFORE you read a single choice. Then take the sentence the graph actually supports, not the one that sounds most like the passage.\nSIX questions, not four. Two come back from earlier weeks and can appear anywhere. That leaves about seventy-five seconds each for those two, so count them in from the start rather than meeting them with a minute left." },
     ]
   },
 

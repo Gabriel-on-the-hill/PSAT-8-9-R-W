@@ -109,9 +109,9 @@
 <script src="data-expression-of-ideas.js?v=20260726"></script>
 <script src="data-info-ideas.js?v=20260726"></script>
 <script src="data-conventions.js?v=20260811"></script>
-<script src="progress.js?v=20260811"></script>
+<script src="progress.js?v=20260904"></script>
 <script src="sheet-sync.js?v=20260825"></script>
-<script src="homework/assignments.js?v=20260828"></script>
+<script src="homework/assignments.js?v=20260904"></script>
 </head>
 <body>
 <div class="wrap">
@@ -706,7 +706,8 @@
     }
     if(typeof recordAnswer==='function')
       recordAnswer(q.id, okk, 'homework', { skill:q.skill, review: !isRedo && !!_isReviewQ[q.id] });
-    if(!isRedo && typeof recordTrapOutcome==='function') recordTrapOutcome(q.skill, q.trapName, okk);
+    if(!isRedo && typeof recordTrapOutcome==='function')
+      recordTrapOutcome(q.skill, q.trapName, okk, q.difficultyStatus!=='provisional');
     paintHwChoice(q);
     showHwFeedback(q, {ok:okk});
     syncHwNav();
@@ -767,7 +768,8 @@
       if(r){ r.ok=okk; r.chosen=n.chosen; r.secs=n.secs; }
       if(typeof recordAnswer==='function')
         recordAnswer(q.id, okk, 'homework', { skill:q.skill, review: !!_isReviewQ[q.id] });
-      if(typeof recordTrapOutcome==='function') recordTrapOutcome(q.skill, q.trapName, okk);
+      if(typeof recordTrapOutcome==='function')
+        recordTrapOutcome(q.skill, q.trapName, okk, q.difficultyStatus!=='provisional');
     }
     saveRecs();
     finish(false);
@@ -787,7 +789,8 @@
         if(gr){ gr.ok=gok; gr.chosen=gn.chosen; gr.secs=gn.secs; }
         if(typeof recordAnswer==='function')
           recordAnswer(gq.id, gok, 'homework', { skill:gq.skill, review: !!_isReviewQ[gq.id] });
-        if(typeof recordTrapOutcome==='function') recordTrapOutcome(gq.skill, gq.trapName, gok);
+        if(typeof recordTrapOutcome==='function')
+          recordTrapOutcome(gq.skill, gq.trapName, gok, gq.difficultyStatus!=='provisional');
       }
       saveRecs();
     }

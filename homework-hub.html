@@ -55,11 +55,11 @@
 </style>
 <script src="gate.js?v=20260820"></script>
 <script src="sheet-sync.js?v=20260825"></script>
-<script src="homework/assignments.js?v=20260828"></script>
+<script src="homework/assignments.js?v=20260904"></script>
 <!-- progress.js supplies getProgress(), which is where the challenge's tally
      comes from. challenge.js (the runner) is NOT loaded here: this page only
      ever renders the card and links into index.html. -->
-<script src="progress.js?v=20260811"></script>
+<script src="progress.js?v=20260904"></script>
 <script src="challenge/sets.js?v=20260831"></script>
 <script src="challenge/challenge-core.js?v=20260811"></script>
 </head>
@@ -193,6 +193,22 @@
   // A finished day keeps its questions, answers and explanations, so it can be
   // reopened for review — that is where the misses get worked, not in the run.
   function reviewable(n){ try { return !!localStorage.getItem('psat89_hwrec_'+student+'_'+plan.start+'_'+n); } catch(e){ return false; } }
+
+  // How many questions the runner will actually serve: the day's own draw PLUS the
+  // spaced-review dose. The dose resolves day → plan → 2, and that order must stay in
+  // step with the same resolution in homework-run.html — if the two ever disagree, the
+  // card lies to the student about the length of her own set. That is what this fixes.
+  function reviewDose(day){
+    return (typeof day.review === 'number') ? day.review
+         : (typeof plan.review === 'number') ? plan.review
+         : 2;
+  }
+  function dayQuestionCount(day){
+    var own = day.sections
+      ? day.sections.reduce(function(s,x){ return s + (x.count||0); }, 0)
+      : (day.count || 0);
+    return own + reviewDose(day);
+  }
   var html='';
   plan.days.forEach(function(day){
     var open = hwDayOpen(student, plan, day.n);
@@ -203,8 +219,22 @@
     html += '<div class="'+cls+'">'
       + '<div class="top"><span class="num">'+day.n+'</span><span class="focus">'+day.focus+'</span>'+state+'</div>'
       // A sections day carries its difficulties and counts per section, not on the day.
+      //
+      // THE COUNT MUST INCLUDE THE REVIEW DOSE. It used to sum the sections alone, so a
+      // day authored as 4 new + 2 review advertised "4 questions · 8 min" and the runner
+      // then served six on that same clock. A student budgeting from this card divided
+      // the minutes by four and hit a wall two questions from the end — and the one
+      // student this app is currently built around is being taught, this week, to budget
+      // a clock across a set. Understating the denominator is the worst thing this card
+      // can do.
+      //
+      // It errs HIGH on purpose. dueForReview() may return fewer than the dose when the
+      // ladder is dry, and this page deliberately does not load the question banks (see
+      // the note above the challenge card), so it cannot know the true number. Serving
+      // fewer than advertised means she finishes early, which costs nothing. The clock
+      // is set for the full dose either way, so this is also the number the timer assumes.
       + '<div class="meta">'+(day.diffs? day.diffs.join(' + ')+' &middot; ' : '')
-        +(day.sections? day.sections.reduce(function(s,x){return s+(x.count||0);},0) : day.count)+' questions'
+        +dayQuestionCount(day)+' questions'
         +(day.minutes? ' &middot; '+day.minutes+' min':'')+'</div>'
       + (open? '<div class="tip">'+day.tip+'</div>' : '')
       + (open? '<div class="go" style="display:flex;gap:.5rem;flex-wrap:wrap">'
