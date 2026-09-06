@@ -427,13 +427,31 @@ function hwParseDate(s) {
 // Plans already running under `cumulative` stay on it until they are next
 // re-authored — same rule as the review freeze. Do not flip a live plan
 // mid-week; it changes what the student sees halfway through.
+// THE CALENDAR FLOOR, added 6 Sep 2026. Sequential on its own can DEADLOCK, and it
+// did: a student answered all ten questions of set 1 on 14 Aug and closed the tab
+// without reaching the score screen, so the completion flag was never written and
+// sets 2-5 -- the whole of that week's new skill -- stayed shut for seventeen days.
+// Nobody could see it. The hub prints every set, so she was looking at four sets she
+// could not start, and the score screen showed her a finished-looking result.
+//
+// So a missing flag no longer LOCKS a later set, it only stops that set from being
+// EARNED EARLY. Sequential keeps what it was built for -- submit set 1 and set 2
+// opens at once, so a free Saturday is not wasted -- and falls back to the calendar
+// rule when a set was not submitted. The worst case is now cumulative's pace, which
+// is the behaviour this replaced, rather than a plan that never opens again.
+//
+// Fixing the flag itself is homework-run.html's job (a fully answered set now
+// commits on pagehide). This is the floor under it: no submission path can be
+// perfect, and no bug in one should ever be able to strand a student's whole week.
 function hwDayOpen(student, plan, n) {
   if (!plan) return n === 1;
   if (plan.unlock === 'sequential') {
     if (n <= 1) return true;
     try {
       for (var i = 1; i < n; i++) {
-        if (localStorage.getItem('psat89_hw_' + student + '_' + plan.start + '_' + i) !== '1') return false;
+        if (localStorage.getItem('psat89_hw_' + student + '_' + plan.start + '_' + i) !== '1') {
+          return n <= hwDaysAvailable(plan.start);
+        }
       }
       return true;
     } catch (e) { return true; }

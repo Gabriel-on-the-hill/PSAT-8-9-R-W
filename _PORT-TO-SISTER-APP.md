@@ -1,3 +1,41 @@
+# The deadlock and the mislabelled set — applied to BOTH apps, 6 Sep 2026
+
+**Status: done in both.** Both full suites green. Three changes, all ported, `psat89_` ↔ `satrw_`
+being the only difference in the code itself.
+
+**The 25 Aug flush below fixed detection and stopped there** — by design, it "does not touch local
+history." That left two holes, and between them they cost a student **seventeen days of homework**.
+She answered all ten questions of set 1 on 14 Aug and closed the tab without reaching the score
+screen. No completion flag was written, so under `unlock: "sequential"` sets 2–5 — that week's entire
+new skill — never opened. Nothing errored. The hub listed all five, so she was looking at four sets
+she could not start, and the score screen had already shown her a finished-looking score which her
+tutor reviewed with her that same evening. Neither of them could see it. It was found in the backend
+export on 5 Sep.
+
+1. **`homework/assignments.js` — a calendar floor under `hwDayOpen()`.** A missing flag no longer
+   *locks* a later set, it only stops it being *earned early*: submit and the next opens at once,
+   otherwise the calendar releases it on its own day. Worst case is cumulative's pace, not a dead
+   plan. **No submission path can be perfect, and no bug in one should be able to strand a week.**
+2. **`homework-run.html` — a fully answered set commits on `pagehide`.** The 25 Aug partial flush was
+   written for a set abandoned halfway and treated every unpressed set the same way, so ten-of-ten
+   answered was filed as `INCOMPLETE (10 of 10 answered)` and still wrote no flag. Reaching the score
+   screen is how the *student* sees her result; it is not what makes the work exist. A part-answered
+   set keeps the partial behaviour.
+3. **`homework-hub.html` — the "Answered · not submitted" state.** It used to render as "Available",
+   identical to a set never opened, and the button said Start. It now says Finish.
+
+**Tests.** PSAT: 7 assertions in `homework/assignments.test.js` (including the regression itself),
+4 in `homework/hub-count.test.js`, 3 rewritten in `session-flush.test.js`. SAT: the same floor
+assertions in `homework/assignments.test.js`, the same 3 in `session-flush.test.js`, and 4 in
+`challenge/homework-hub.test.js`, whose `build()` gained a `seed` argument so a card can be driven
+into a storage-only state. Cache tags bumped to `20260906` on `assignments.js` in both.
+
+**Note the one asymmetry.** The PSAT app has `homework/hub-count.test.js` and the SAT app does not;
+the SAT app has `challenge/homework-hub.test.js` and the PSAT app does not. The hub assertions
+therefore live in a different file in each, which is why they are named here.
+
+---
+
 # The unfinished-sitting flush — applied to BOTH apps, 25 Aug 2026
 
 **Status: done in both.** `PSAT 8-9/app` and `MasteryApp` (SAT R&W). Both full suites green.

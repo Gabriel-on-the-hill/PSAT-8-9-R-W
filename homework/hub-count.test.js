@@ -73,8 +73,8 @@ try {
 // Render the page for one student against a stub DOM. The hub reads only
 // getElementById().textContent/.innerHTML and the two storages, so this is
 // enough to drive it end to end.
-function renderFor(student) {
-    const els = {}, store = {};
+function renderFor(student, seed) {
+    const els = {}, store = Object.assign({}, seed || {});
     const el = id => els[id] || (els[id] = { textContent: '', innerHTML: '', style: {} });
     const ctx = {
         console: { log() {}, warn() {}, error() {} },
@@ -131,6 +131,49 @@ for (const student of STUDENTS) {
                 `${per}s is below the ${MIN_SECONDS_PER_QUESTION}s floor`);
         }
     });
+}
+
+// ── Answered but not submitted ────────────────────────────────────────────
+// Added 6 Sep 2026. Answers are written per question as the student works; the
+// completion flag is written only at the score screen. A set holding answers and
+// no flag is work she has actually done that never reached the tutor — and under
+// sequential unlock it is also what is holding up every set behind it.
+//
+// The card used to render that state as "Available", identical to a set she had
+// never opened. So the hub told her to start something she had already finished,
+// and told the tutor nothing at all. Both of them read her result on the score
+// screen that same evening and neither could see it had not been sent. Seventeen
+// days of it went unnoticed.
+console.log('\n  answered but not submitted');
+{
+    const student = STUDENTS.find(s => {
+        const p = renderFor(s).plan;
+        return p && p.days && p.days.length;
+    });
+    if (!student) {
+        ok('a student with a plan exists to test the state against', false);
+    } else {
+        const plan = renderFor(student).plan;
+        const key = 'psat89_hwrec_' + student + '_' + plan.start + '_1';
+        const worked = JSON.stringify({ at: Date.now(), recs: [{ id: 'a', chosen: 'B', ok: true }] });
+
+        const clean = renderFor(student).rendered;
+        ok('a set never opened still reads Available',
+            /Available/.test(clean) && !/not submitted/.test(clean));
+
+        const seeded = renderFor(student, { [key]: worked }).rendered;
+        ok('a set with answers and no completion flag reads "Answered · not submitted"',
+            /Answered\s*&middot;\s*not submitted/.test(seeded),
+            'the card still calls answered work "Available"');
+        ok('and its button says Finish, not Start',
+            /Finish set 1/.test(seeded),
+            'the hub must not ask her to start a set she has already worked');
+
+        const doneKey = 'psat89_hw_' + student + '_' + plan.start + '_1';
+        const submitted = renderFor(student, { [key]: worked, [doneKey]: '1' }).rendered;
+        ok('a submitted set still reads Done, not the new state',
+            /Done/.test(submitted) && !/not submitted/.test(submitted));
+    }
 }
 
 console.log('\n' + '─'.repeat(64));

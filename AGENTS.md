@@ -22,6 +22,10 @@ NODE_PATH=/tmp/j/node_modules node homework/homework-run.test.js      # the lear
 NODE_PATH=/tmp/j/node_modules node homework/assignments.test.js       # the plans are sane
 NODE_PATH=/tmp/j/node_modules node homework/bank.test.js              # the bank is classified right
 NODE_PATH=/tmp/j/node_modules node homework/review-ladder.test.js     # spacing + calibration
+NODE_PATH=/tmp/j/node_modules node homework/homework-nav.test.js      # moving inside a homework set
+node homework/hub-count.test.js                                      # the card matches the set served
+NODE_PATH=/tmp/j/node_modules node challenge/challenge-core.test.js   # challenge tally + set building
+NODE_PATH=/tmp/j/node_modules node challenge/challenge-ui.test.js     # the challenge, driven for real
 NODE_PATH=/tmp/j/node_modules node ratio-mix.test.js                 # custom practice in a ratio
 NODE_PATH=/tmp/j/node_modules node ruletype.test.js                  # Conventions tagged by rule
 NODE_PATH=/tmp/j/node_modules node gate.test.js                      # tutor pages stay tutor-only
@@ -39,6 +43,15 @@ node cache-tags.test.js                                              # students 
 
 They skip cleanly without jsdom. Every one of them exists because something was silently
 broken and nothing failed. Read a test's header before you change what it guards.
+
+**Four suites were missing from this list until 6 Sep 2026** — `homework-nav`, `hub-count`,
+`challenge-core` and `challenge-ui` — which is the same omission the paragraph above describes,
+happening a second time to a different set of files. Three were green. **`challenge/challenge-ui.test.js`
+is RED and has been since it was written on 11 Aug 2026:** the session never starts under jsdom, so
+the exam-mode guard assertions fail and the run dies on `$(w,'nextBtn').click()` with `nextBtn`
+undefined. It is a real failure in the test's own driving of the page, not something you just broke,
+and it is on the list so that it gets fixed rather than forgotten again. **Do not delete it to make
+the list green.**
 
 **Put jsdom on a local disk, not in the repo folder.** The four `data-*.js` files are about a
 megabyte and jsdom itself is thousands of small files; loading either across a mounted or synced
