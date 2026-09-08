@@ -73,7 +73,7 @@ t('page loads all of its own dependencies', () => {
         .forEach(f => ok(inlined.includes(f), 'page does not load ' + f));
 });
 t('page boots with no script errors', () => eq(pageErrors, []));
-t('bank assembled in the page', () => eq(ev('questionBank.length'), 464));
+t('bank assembled in the page', () => eq(ev('questionBank.length'), 683));
 t('form built to 22 items', () => eq(ev('Q.length'), 22));
 t('form note tells the student which sitting this is', () => {
     const s = doc.getElementById('formNote').textContent;

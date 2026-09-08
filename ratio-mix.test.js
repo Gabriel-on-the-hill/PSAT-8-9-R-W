@@ -133,7 +133,7 @@ function setRatio(w, on) { w.document.getElementById('ratioToggle').checked = !!
 // Synthetic questions, so the allocator's arithmetic is checked against numbers
 // we control rather than against whatever the live bank happens to hold.
 function fake(skill, difficulty, i) {
-    return { id: `${skill}|${difficulty}|${i}`, skill, difficulty };
+    return { id: `${skill}|${difficulty}|${i}`, skill, difficulty, psatDifficulty: difficulty };
 }
 function fakePool(spec) {
     const out = [];
@@ -170,6 +170,38 @@ function seed(w, n) {
 (async () => {
     const w = await build();
     const PEEK = w.__peek();
+
+    section('0 · PSAT draws use the calibrated PSAT difficulty');
+    {
+        const skills = [...w.document.querySelectorAll('input[name="skill"]')].map(el => el.value);
+        let checked = 0;
+        let wrong = null;
+        for (const skill of skills) {
+            for (const difficulty of ['Easy', 'Medium', 'Hard']) {
+                const expected = PEEK.questionBank.filter(q =>
+                    q.skill === skill && q.psatDifficulty === difficulty);
+                if (!expected.length) continue;
+                setSkills(w, [skill]);
+                setDiffs(w, [difficulty]);
+                const got = w.getFilteredPool();
+                checked++;
+                if (!got.length || got.some(q => q.psatDifficulty !== difficulty)) {
+                    wrong = `${skill} / ${difficulty}: ${got.length} returned`;
+                    break;
+                }
+            }
+            if (wrong) break;
+        }
+        ok('every non-empty skill × difficulty draw returns the requested PSAT rung',
+            checked > 0 && wrong === null, wrong || `${checked} pools checked`);
+
+        const shifted = PEEK.questionBank.find(q => q.difficulty !== q.psatDifficulty);
+        setSkills(w, [shifted.skill]);
+        setDiffs(w, [shifted.psatDifficulty]);
+        ok('a shifted item is selected by psatDifficulty, not its native SAT label',
+            w.getFilteredPool().some(q => q.id === shifted.id),
+            `${shifted.id}: native ${shifted.difficulty}, PSAT ${shifted.psatDifficulty}`);
+    }
 
     // ═══════════════════════════════════════════════════════════
     section('1 · apportion — largest remainder, and the parts always sum to the total');

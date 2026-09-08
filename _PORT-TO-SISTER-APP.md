@@ -173,3 +173,32 @@ commit lands, or returning browsers keep running the old code and nothing errors
 
 Then verify for real: start a practice set, answer two questions, **close the tab**, and confirm one
 row appears marked INCOMPLETE with the shortfall in it.
+
+---
+
+# 8 Sep 2026 — Conventions + Expression of Ideas bank union
+
+Both apps now expose the same **414 distinct** questions across Boundaries, Form/Structure/Sense,
+Transitions, and Rhetorical Synthesis. The PSAT app gained 219 distinct questions and replaced
+three damaged or image-only copies with cleaner canonical records already in MasteryApp. MasteryApp
+needed no new scoped content.
+
+The wider audit also removed **25 extraction-damaged underline copies** and **123 legacy duplicate
+records** from MasteryApp. Every removed id remains in the retained question's `altIds`; `progress.js`,
+`storage.js`, and the homework review runner resolve those aliases so existing mastery, saved sessions,
+and saved review work are not orphaned.
+
+Difficulty remains deliberately asymmetric:
+
+- MasteryApp continues drawing on the native SAT `difficulty`.
+- The PSAT app draws and displays `psatDifficulty`. College Board SAT and book questions retain their
+  native `difficulty` alongside the mapped PSAT rung.
+- Book questions are draw-eligible as `provisional`, remain below about 61% of every affected
+  skill/rung pool, and are excluded from automated difficulty calibration until live evidence promotes
+  them.
+- Inside `prioritizePool`, the unseen tier is partitioned: unseen College Board questions are shuffled
+  first, then unseen provisional questions. `needsWork`, `resting`, and the `missesFirst` swap keep
+  their existing positions. Trusted items have no status; mapping provenance lives separately in
+  `psatDifficultyFrom` (`native` or `mapped-from-sat`).
+
+All changed bank, progress, storage, app, and challenge-set assets use the `20260909` cache tag.

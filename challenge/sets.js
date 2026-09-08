@@ -143,7 +143,7 @@ window.CHALLENGE_SETS = {
     //
     //   VForm 3 — three of the four non-Easy VForm items in the bank, because the
     //     finite/non-finite decision runs in BOTH directions and no single item
-    //     tests both. 7944e9f4 and cc0dcd9a need a non-finite form precisely
+    //     tests both. a30567fd and cc0dcd9a need a non-finite form precisely
     //     because the clause already carries its main verb; 491a17a7 needs the
     //     conjugated one because the blank IS the main verb. A set holding only
     //     the first kind teaches "pick the -ing", which is not the rule.
@@ -157,7 +157,7 @@ window.CHALLENGE_SETS = {
     //
     //   SVA 3 — the core of the class it follows, and the concept where the trap
     //     has a direction: 377a2b12 singular subject across an interrupting
-    //     relative clause, 9597885e PLURAL subject across an interrupter ringed by
+    //     relative clause, f10b7ce4 PLURAL subject across an interrupter ringed by
     //     singular nouns, 81000f32 (Medium) singular subject across a
     //     prepositional phrase. A set of three singular-subject items would only
     //     ever reward the guess "make it singular".
@@ -215,7 +215,7 @@ window.CHALLENGE_SETS = {
             date:   '2026-08-14',
             ids: [
                 // ── Verb form · finite vs non-finite, both directions ──
-                '7944e9f4',   // VForm    · Hard   — -ing modifier, clause already has its verb
+                'a30567fd',   // VForm    · Hard   — -ing modifier, clause already has its verb
                 'cc0dcd9a',   // VForm    · Medium — infinitive as modifier
                 '491a17a7',   // VForm    · Medium — the blank IS the main verb, so conjugate it
 
@@ -225,7 +225,7 @@ window.CHALLENGE_SETS = {
 
                 // ── Subject-verb agreement · across interrupters ───────
                 '377a2b12',   // SVA      · Hard   — singular across a relative clause
-                '9597885e',   // SVA      · Hard   — plural subject, singular nouns around it
+                'f10b7ce4',   // SVA      · Hard   — plural subject, singular nouns around it
                 '81000f32',   // SVA      · Medium — singular across a prepositional phrase
 
                 // ── Verb tense · past against past perfect ─────────────

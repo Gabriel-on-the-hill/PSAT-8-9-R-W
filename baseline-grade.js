@@ -222,7 +222,8 @@ function projectBaseline(items) {
 //
 //     skill weight = domain blueprint weight × skill's share of its domain
 //
-// Derived at run time, so it stays honest as the bank grows.
+// Derived at run time from trusted College Board records only. Provisional book
+// volume expands practice availability; it is not evidence about exam frequency.
 let _skillWeightCache = null;
 
 function skillWeights(bank) {
@@ -238,6 +239,9 @@ function skillWeights(bank) {
     const domainTotal = {};
     const skillTotal  = {};
     src.forEach(q => {
+        // The PSAT blueprint proxy comes from native PSAT-labelled records. SAT
+        // imports improve coverage but must not rewrite the exam-frequency model.
+        if (q.origin !== 'cb-psat89') return;
         const d = (typeof SKILL_DOMAIN !== 'undefined' && SKILL_DOMAIN[q.skill]) || null;
         if (!d) return;
         domainTotal[d]      = (domainTotal[d]      || 0) + 1;

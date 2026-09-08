@@ -1,4 +1,3 @@
-// PSAT 8/9 R&W — data-expression-of-ideas.js (Easy/Medium/Hard)
 const questionBank_EOI = [
   {
     "id": "051d72be",
@@ -13,7 +12,13 @@ const questionBank_EOI = [
       "D. Jones’s mobile refrigeration system, which he invented in 1938, made it possible for food transport trucks to carry perishable foods farther."
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. It compares Beard’s and Jones’s inventions to one another, and emphasizes what they have in common.\n\nChoice B is incorrect. This choice doesn’t emphasize a similarity. It only mentions Beard’s invention. It doesn’t compare it to Jones’s invention. Choice C is incorrect. This choice doesn’t emphasize a similarity between the two inventions. Instead, it emphasizes a difference. Choice D is incorrect. This choice doesn’t emphasize a similarity. It only mentions Jones’s invention. It doesn’t compare it to Beard’s invention."
+    "explanation": "Choice A is the best answer. It compares Beard’s and Jones’s inventions to one another, and emphasizes what they have in common.\n\nChoice B is incorrect. This choice doesn’t emphasize a similarity. It only mentions Beard’s invention. It doesn’t compare it to Jones’s invention. Choice C is incorrect. This choice doesn’t emphasize a similarity between the two inventions. Instead, it emphasizes a difference. Choice D is incorrect. This choice doesn’t emphasize a similarity. It only mentions Jones’s invention. It doesn’t compare it to Beard’s invention.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [
+      "ba263620"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "25daf339",
@@ -28,7 +33,13 @@ const questionBank_EOI = [
       "D. Yellowstone is a national park that has roughly 100 gray wolves living in it."
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. This choice uses relevant information from the third bullet point to state the approximate number of gray wolves in Yellowstone.\n\nChoice A is incorrect. This choice mentions the year gray wolves in Yellowstone were reintroduced but not how many there are currently. Choice B is incorrect. This choice mentions the year gray wolves in Yellowstone were reintroduced but not how many there are currently. Choice C is incorrect. This choice defines the term carrying capacity but doesn’t connect it to the specific number of gray wolves currently living in Yellowstone."
+    "explanation": "Choice D is the best answer. This choice uses relevant information from the third bullet point to state the approximate number of gray wolves in Yellowstone.\n\nChoice A is incorrect. This choice mentions the year gray wolves in Yellowstone were reintroduced but not how many there are currently. Choice B is incorrect. This choice mentions the year gray wolves in Yellowstone were reintroduced but not how many there are currently. Choice C is incorrect. This choice defines the term carrying capacity but doesn’t connect it to the specific number of gray wolves currently living in Yellowstone.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [
+      "a3204ab0"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "99cf0913",
@@ -43,7 +54,13 @@ const questionBank_EOI = [
       "D. By comparison,"
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. The first sentence claims that the number of sunspots can vary greatly. To support this claim, the next two sentences compare two examples: one time when there were 180 sunspots and one time when there were only 2 sunspots. So the transition “by comparison” fits perfectly.\n\nChoice A is incorrect. This choice uses a transition that indicates a restatement of the same idea, which doesn’t make sense here. This sentence doesn’t restate the first example — it describes a totally different example. Choice B is incorrect. This choice uses a transition that indicates the addition of a similar idea, which doesn’t make sense here. This sentence describes a second example that is very different from the first example. Choice C is incorrect. This choice uses a cause-and-effect transition, which doesn’t make sense here. The first example didn’t result in’ the second example."
+    "explanation": "Choice D is the best answer. The first sentence claims that the number of sunspots can vary greatly. To support this claim, the next two sentences compare two examples: one time when there were 180 sunspots and one time when there were only 2 sunspots. So the transition “by comparison” fits perfectly.\n\nChoice A is incorrect. This choice uses a transition that indicates a restatement of the same idea, which doesn’t make sense here. This sentence doesn’t restate the first example — it describes a totally different example. Choice B is incorrect. This choice uses a transition that indicates the addition of a similar idea, which doesn’t make sense here. This sentence describes a second example that is very different from the first example. Choice C is incorrect. This choice uses a cause-and-effect transition, which doesn’t make sense here. The first example didn’t result in’ the second example.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [
+      "1c36e3e1"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "8c1f7e00",
@@ -58,7 +75,13 @@ const questionBank_EOI = [
       "D. Likewise,"
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. “For example” logically signals that the Siletz beeswax stories mentioned in this sentence are examples consistent with the previous claim that Siletz stories support the shipwreck theory.\n\nChoice A is incorrect because “for this reason” illogically signals that the Siletz stories about the beeswax were caused by the previous claim that Siletz stories support the shipwreck theory. Instead, the beeswax stories are examples consistent with the claim. Choice C is incorrect because “however” illogically signals that the Siletz stories about the beeswax contrast with the previous claim that Siletz stories support the shipwreck theory. Instead, the beeswax stories are examples consistent with the claim. Choice D is incorrect because “likewise” illogically signals that the Siletz stories about the beeswax are similar to the previous claim that Siletz stories support the shipwreck theory. Instead, the beeswax stories are examples consistent with the claim."
+    "explanation": "Choice B is the best answer. “For example” logically signals that the Siletz beeswax stories mentioned in this sentence are examples consistent with the previous claim that Siletz stories support the shipwreck theory.\n\nChoice A is incorrect because “for this reason” illogically signals that the Siletz stories about the beeswax were caused by the previous claim that Siletz stories support the shipwreck theory. Instead, the beeswax stories are examples consistent with the claim. Choice C is incorrect because “however” illogically signals that the Siletz stories about the beeswax contrast with the previous claim that Siletz stories support the shipwreck theory. Instead, the beeswax stories are examples consistent with the claim. Choice D is incorrect because “likewise” illogically signals that the Siletz stories about the beeswax are similar to the previous claim that Siletz stories support the shipwreck theory. Instead, the beeswax stories are examples consistent with the claim.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [
+      "f07570bb"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "114adcdc",
@@ -73,7 +96,13 @@ const questionBank_EOI = [
       "D. Similarly,"
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. \"For this reason\" is a cause-and-effect transition. The cause in this case is that the mother elephant wants to know that her calf is safe, so the effect is that she lets out an infrasonic call for the calf to hear. Therefore, \"for this reason\" fits perfectly in this context.\n\nChoice A is incorrect. This choice uses a transition that introduces an example of a previous idea. But the second sentence doesn’t provide an example of the events described in the first sentence. Instead, it describes what happens next: the mother elephant calls for her calf. Choice C is incorrect. This choice uses a transition that indicates a shift from the past to the current time, which doesn’t make sense here. Both sentences use the present tense, as they’re describing the same time period. Choice D is incorrect. This choice uses a transition that indicates commonality or agreement between two ideas. But this sentence isn’t similar to the events in the first sentence. Instead, it describes the events that happen next."
+    "explanation": "Choice B is the best answer. \"For this reason\" is a cause-and-effect transition. The cause in this case is that the mother elephant wants to know that her calf is safe, so the effect is that she lets out an infrasonic call for the calf to hear. Therefore, \"for this reason\" fits perfectly in this context.\n\nChoice A is incorrect. This choice uses a transition that introduces an example of a previous idea. But the second sentence doesn’t provide an example of the events described in the first sentence. Instead, it describes what happens next: the mother elephant calls for her calf. Choice C is incorrect. This choice uses a transition that indicates a shift from the past to the current time, which doesn’t make sense here. Both sentences use the present tense, as they’re describing the same time period. Choice D is incorrect. This choice uses a transition that indicates commonality or agreement between two ideas. But this sentence isn’t similar to the events in the first sentence. Instead, it describes the events that happen next.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [
+      "2b5e0731"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "3fff5a77",
@@ -88,7 +117,13 @@ const questionBank_EOI = [
       "D. Similarly,"
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. \"As a result\" logically signals that the information in this sentence — that many people in Switzerland gained a new — opportunity to participate in their country’s political process is a result or consequence of the previous information about the Swiss government lowering the voting age.\n\nChoice A is incorrect because \"nevertheless\" illogically signals that the information that follows is despite the information in the previous’ sentence about the Swiss government lowering the voting age. Instead, people gained a new opportunity to participate in Switzerland’s political process as a result or consequence of that change. Choice C is incorrect because \"by contrast\" illogically signals that the information in this sentence contrasts with the information in the previous sentence about the Swiss government lowering the voting age. Instead, people gained a new opportunity to participate in Switzerland’s political process as a result or consequence of that change. Choice D is incorrect because \"similarly\" illogically signals that the information in this sentence is similar to the information about the Swiss government lowering the voting age in the previous sentence. Instead, people gained a new opportunity to participate in Switzerland’s political process as a result or consequence of that change."
+    "explanation": "Choice B is the best answer. \"As a result\" logically signals that the information in this sentence — that many people in Switzerland gained a new — opportunity to participate in their country’s political process is a result or consequence of the previous information about the Swiss government lowering the voting age.\n\nChoice A is incorrect because \"nevertheless\" illogically signals that the information that follows is despite the information in the previous’ sentence about the Swiss government lowering the voting age. Instead, people gained a new opportunity to participate in Switzerland’s political process as a result or consequence of that change. Choice C is incorrect because \"by contrast\" illogically signals that the information in this sentence contrasts with the information in the previous sentence about the Swiss government lowering the voting age. Instead, people gained a new opportunity to participate in Switzerland’s political process as a result or consequence of that change. Choice D is incorrect because \"similarly\" illogically signals that the information in this sentence is similar to the information about the Swiss government lowering the voting age in the previous sentence. Instead, people gained a new opportunity to participate in Switzerland’s political process as a result or consequence of that change.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [
+      "49ecf985"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "84ce416a",
@@ -103,7 +138,13 @@ const questionBank_EOI = [
       "D. One of the most influential artists of the twentieth century, Mexican painter Frida Kahlo is best known for her self-portraits, which are vivid and richly symbolic."
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. By identifying Kahlo as an influential artist from Mexico, and by describing the work she’s best known for, this choice provides the background information necessary to introduce Kahlo to an unfamiliar audience.\n\nChoice A is incorrect. This choice doesn’t effectively introduce Kahlo. It doesn’t include any background information about who Kahlo is or where she’s from. It simply identifies one of her paintings. Choice B is incorrect. This choice doesn’t effectively introduce Kahlo. It doesn’t include any background information about who Kahlo is or where she’s from. It simply identifies one of her paintings. Choice C is incorrect. This choice doesn’t effectively introduce Kahlo. It doesn’t include any background information about who Kahlo is or where she’s from. Instead, it describes one of her paintings in detail."
+    "explanation": "Choice D is the best answer. By identifying Kahlo as an influential artist from Mexico, and by describing the work she’s best known for, this choice provides the background information necessary to introduce Kahlo to an unfamiliar audience.\n\nChoice A is incorrect. This choice doesn’t effectively introduce Kahlo. It doesn’t include any background information about who Kahlo is or where she’s from. It simply identifies one of her paintings. Choice B is incorrect. This choice doesn’t effectively introduce Kahlo. It doesn’t include any background information about who Kahlo is or where she’s from. It simply identifies one of her paintings. Choice C is incorrect. This choice doesn’t effectively introduce Kahlo. It doesn’t include any background information about who Kahlo is or where she’s from. Instead, it describes one of her paintings in detail.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [
+      "eaded344"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "d121eb59",
@@ -118,7 +159,13 @@ const questionBank_EOI = [
       "D. As a result,"
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. This choice uses a transition that indicates a shift back in time. Since the first sentence talks about Thaden’s race win in 1929 and the second shifts back to talking about her record in 1928, this makes the most sense here.\n\nChoice B is incorrect. This choice uses a disagreement transition. But this sentence actually agrees with and expands on the previous sentence by describing the earlier record that Thaden had \"already\" held. Choice C is incorrect. This choice uses a transition that indicates a shift forward in time, which doesn’t make sense here. A record in 1928 didn’t come after Thaden’s race win in 1929. Choice D is incorrect. This choice uses a cause-and-effect transition, which doesn’t make sense in this context — an event in 1929 can’t cause something in 1928."
+    "explanation": "Choice A is the best answer. This choice uses a transition that indicates a shift back in time. Since the first sentence talks about Thaden’s race win in 1929 and the second shifts back to talking about her record in 1928, this makes the most sense here.\n\nChoice B is incorrect. This choice uses a disagreement transition. But this sentence actually agrees with and expands on the previous sentence by describing the earlier record that Thaden had \"already\" held. Choice C is incorrect. This choice uses a transition that indicates a shift forward in time, which doesn’t make sense here. A record in 1928 didn’t come after Thaden’s race win in 1929. Choice D is incorrect. This choice uses a cause-and-effect transition, which doesn’t make sense in this context — an event in 1929 can’t cause something in 1928.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [
+      "3831f2d7"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "dd9d2249",
@@ -133,7 +180,13 @@ const questionBank_EOI = [
       "D. The Laas Geel paintings and the Dhagah Nabi Galay paintings are both examples of ancient rock art found in Somaliland."
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. This choice compares the Laas Geel paintings and the Dhagah Nabi Galay paintings to one another and emphasizes what they have in common: they are both ancient rock art found in the same region.\n\nChoice A is incorrect. This choice only mentions the Dhagah Nabi Galay paintings. It doesn’t compare them to the Laas Geel paintings. Choice B is incorrect. This choice doesn’t emphasize a similarity between the two paintings. Instead, it emphasizes a difference: the type of content they depict. Choice C is incorrect. This choice only mentions the Laas Geel paintings. It doesn’t compare them to the Dhagah Nabi Galay paintings."
+    "explanation": "Choice D is the best answer. This choice compares the Laas Geel paintings and the Dhagah Nabi Galay paintings to one another and emphasizes what they have in common: they are both ancient rock art found in the same region.\n\nChoice A is incorrect. This choice only mentions the Dhagah Nabi Galay paintings. It doesn’t compare them to the Laas Geel paintings. Choice B is incorrect. This choice doesn’t emphasize a similarity between the two paintings. Instead, it emphasizes a difference: the type of content they depict. Choice C is incorrect. This choice only mentions the Laas Geel paintings. It doesn’t compare them to the Dhagah Nabi Galay paintings.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [
+      "fbffb352"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "96fa19ad",
@@ -148,7 +201,13 @@ const questionBank_EOI = [
       "D. Similarly,"
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. \"However\" is used to indicate a contrast between two ideas. The first sentence describes how Still used to be famous. This sentence describes how Still is not very famous today, so the transition \"however\" fits perfectly.\n\nChoice A is incorrect. This choice uses a transition that introduces an example. But the second sentence doesn’t provide a specific example of Still’s famous contributions to the Underground Railroad. Instead, it changes the subject to how his fame has faded over time. Choice C is incorrect. This choice uses a transition that introduces an example or continuation of a previous idea. But the second sentence doesn’t provide a specific example of Still’s famous contributions to the Underground Railroad. Instead, it changes the subject to how his fame has faded over time. Choice D is incorrect. This choice uses a transition that indicates the agreement between two ideas. But this sentence shows a contrast — with the first sentence namely, that Still used to be very famous but now isn’t very famous."
+    "explanation": "Choice B is the best answer. \"However\" is used to indicate a contrast between two ideas. The first sentence describes how Still used to be famous. This sentence describes how Still is not very famous today, so the transition \"however\" fits perfectly.\n\nChoice A is incorrect. This choice uses a transition that introduces an example. But the second sentence doesn’t provide a specific example of Still’s famous contributions to the Underground Railroad. Instead, it changes the subject to how his fame has faded over time. Choice C is incorrect. This choice uses a transition that introduces an example or continuation of a previous idea. But the second sentence doesn’t provide a specific example of Still’s famous contributions to the Underground Railroad. Instead, it changes the subject to how his fame has faded over time. Choice D is incorrect. This choice uses a transition that indicates the agreement between two ideas. But this sentence shows a contrast — with the first sentence namely, that Still used to be very famous but now isn’t very famous.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "0ee64efc"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "967a29a9",
@@ -163,7 +222,13 @@ const questionBank_EOI = [
       "D. In 1910, chemists Fritz Haber and Carl Bosch invented the Haber-Bosch process, which requires high temperatures and pressures."
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. The sentence provides an overview of the Haber-Bosch process, explaining that it uses an iron catalyst, high temperatures, and high pressures to manufacture ammonia from nitrogen and hydrogen.\n\nChoice A is incorrect. While the sentence identifies some of the process’s required components (nitrogen, hydrogen, and an iron catalyst), the overview is incomplete; it doesn’t explain what the process does (produces ammonia) or mention the conditions needed for it to function (high temperatures and pressures). Choice C is incorrect. While the sentence indicates who invented the process (Fritz Haber and Carl Bosch) and that it produces ammonia, the overview is incomplete; it doesn’t mention any of the necessary ingredients or conditions. Choice D is incorrect. While the sentence mentions the inventors of the process along with the required conditions (high temperatures and pressures), it doesn’t explain that the process produces ammonia or indicate what components are needed."
+    "explanation": "Choice B is the best answer. The sentence provides an overview of the Haber-Bosch process, explaining that it uses an iron catalyst, high temperatures, and high pressures to manufacture ammonia from nitrogen and hydrogen.\n\nChoice A is incorrect. While the sentence identifies some of the process’s required components (nitrogen, hydrogen, and an iron catalyst), the overview is incomplete; it doesn’t explain what the process does (produces ammonia) or mention the conditions needed for it to function (high temperatures and pressures). Choice C is incorrect. While the sentence indicates who invented the process (Fritz Haber and Carl Bosch) and that it produces ammonia, the overview is incomplete; it doesn’t mention any of the necessary ingredients or conditions. Choice D is incorrect. While the sentence mentions the inventors of the process along with the required conditions (high temperatures and pressures), it doesn’t explain that the process produces ammonia or indicate what components are needed.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "064c8999"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "931d2369",
@@ -178,7 +243,13 @@ const questionBank_EOI = [
       "D. Simphiwe Ndzube’s Assertion of Will was one of eight artworks exhibited in Oracles of the Pink Universe at the Denver Museum of Art."
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. This choice directly describes how fabric is used in Assertion of Will, by explaining that the fabric pieces are part of the painting itself.\n\nChoice B is incorrect. This choice provides contextual information about the exhibition, but it doesn’t mention anything about the painting or the fabric. Choice C is incorrect. This choice mentions that the figures are clothed, but it doesn’t explain how the fabric is integrated into the painting. Choice D is incorrect. This choice provides contextual information about the painting, but it doesn’t mention anything about the fabric or how it is used."
+    "explanation": "Choice A is the best answer. This choice directly describes how fabric is used in Assertion of Will, by explaining that the fabric pieces are part of the painting itself.\n\nChoice B is incorrect. This choice provides contextual information about the exhibition, but it doesn’t mention anything about the painting or the fabric. Choice C is incorrect. This choice mentions that the figures are clothed, but it doesn’t explain how the fabric is integrated into the painting. Choice D is incorrect. This choice provides contextual information about the painting, but it doesn’t mention anything about the fabric or how it is used.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "e2693197"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "b78350ca",
@@ -193,7 +264,13 @@ const questionBank_EOI = [
       "D. The design of a wok, a type of cooking pan that originated in China during the Han dynasty, helps the pan cook food evenly and contain oil splatters."
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. It summarizes the information that describes the wok’s shape from the second and third bullet points.\n Choice A is incorrect. This choice doesn’t describe the shape of a wok. Choice B is incorrect. This choice doesn’t describe the shape of a wok, just some of its features. Choice D is incorrect. This choice doesn’t describe the shape of a wok, only some of its benefits or functions."
+    "explanation": "Choice C is the best answer. It summarizes the information that describes the wok’s shape from the second and third bullet points.\n Choice A is incorrect. This choice doesn’t describe the shape of a wok. Choice B is incorrect. This choice doesn’t describe the shape of a wok, just some of its features. Choice D is incorrect. This choice doesn’t describe the shape of a wok, only some of its benefits or functions.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "ff3865b3"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "5e13f4d2",
@@ -208,7 +285,13 @@ const questionBank_EOI = [
       "D. In other words,"
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. \"However\" logically signals that the claim in this sentence — that the weight of the gold rhinestones likely limited — Elvis’s mobility contrasts with the previous information about the material being flexible enough for Elvis’s dance moves.\n\nChoice A is incorrect because \"for this reason\" illogically signals that the claim in this sentence is caused by the previous information about the material being flexible enough for Elvis’s dance moves. Instead, the claim that the weight of the suit’s rhinestones limited movement contrasts’ with the previous information about the jumpsuit’s flexibility. Choice B is incorrect because \"firstly\" illogically signals that the claim in this’ sentence is the first in a series of claims about the jumpsuit being flexible enough for Elvis’s dance moves. Instead, the claim that the weight of the suit’s rhinestones limited movement contrasts with the previous information about the jumpsuit’s flexibility. Choice D is incorrect because \"in other words\" illogically signals that the claim in this sentence is a paraphrase or restatement of the previous information about the material being flexible enough for Elvis’s dance moves. Instead, the claim that the weight of the suit’s rhinestones limited movement contrasts with the previous information about the jumpsuit’s flexibility."
+    "explanation": "Choice C is the best answer. \"However\" logically signals that the claim in this sentence — that the weight of the gold rhinestones likely limited — Elvis’s mobility contrasts with the previous information about the material being flexible enough for Elvis’s dance moves.\n\nChoice A is incorrect because \"for this reason\" illogically signals that the claim in this sentence is caused by the previous information about the material being flexible enough for Elvis’s dance moves. Instead, the claim that the weight of the suit’s rhinestones limited movement contrasts’ with the previous information about the jumpsuit’s flexibility. Choice B is incorrect because \"firstly\" illogically signals that the claim in this’ sentence is the first in a series of claims about the jumpsuit being flexible enough for Elvis’s dance moves. Instead, the claim that the weight of the suit’s rhinestones limited movement contrasts with the previous information about the jumpsuit’s flexibility. Choice D is incorrect because \"in other words\" illogically signals that the claim in this sentence is a paraphrase or restatement of the previous information about the material being flexible enough for Elvis’s dance moves. Instead, the claim that the weight of the suit’s rhinestones limited movement contrasts with the previous information about the jumpsuit’s flexibility.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "420dea42"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "d561db9c",
@@ -223,7 +306,13 @@ const questionBank_EOI = [
       "D. Jellyfish emit light to startle predators, whereas black dragonfish do so to locate prey."
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. The sentence emphasizes a difference between the behavior of jellyfish and that of black dragonfish, noting that jellyfish and black dragonfish emit light as part of different behaviors (protection and predation, respectively).\n\nChoice A is incorrect. The sentence emphasizes a similarity between jellyfish and black dragonfish; it doesn’t emphasize a difference between the behavior of the two animals. Choice B is incorrect. The sentence emphasizes the type of bioluminescence exhibited by black dragonfish, noting that it’s used in predation; it doesn’t emphasize a difference between the behavior of the two animals. Choice C is incorrect. The sentence defines bioluminescence and explains how it works; the sentence doesn’t mention either animal or emphasize a difference between them."
+    "explanation": "Choice D is the best answer. The sentence emphasizes a difference between the behavior of jellyfish and that of black dragonfish, noting that jellyfish and black dragonfish emit light as part of different behaviors (protection and predation, respectively).\n\nChoice A is incorrect. The sentence emphasizes a similarity between jellyfish and black dragonfish; it doesn’t emphasize a difference between the behavior of the two animals. Choice B is incorrect. The sentence emphasizes the type of bioluminescence exhibited by black dragonfish, noting that it’s used in predation; it doesn’t emphasize a difference between the behavior of the two animals. Choice C is incorrect. The sentence defines bioluminescence and explains how it works; the sentence doesn’t mention either animal or emphasize a difference between them.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "e3484c07"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "1e1d46f3",
@@ -238,7 +327,13 @@ const questionBank_EOI = [
       "D. Double Phantom/EntroP.R. is a sculpture created by multimedia visual artist Miguel Luciano."
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. The sentence correctly describes how the bicycles in the sculpture are fused together: they share the same rear wheel while facing opposite directions.\n\nChoice A is incorrect. The sentence states that the bicycles are fused together but doesn’t describe how they are fused. Choice B is incorrect. The sentence states that there are two bicycles in the sculpture without indicating that they are fused together or describing how they are fused. Choice D is incorrect. It identifies the artist who created the sculpture but doesn’t describe how the bicycles are fused together."
+    "explanation": "Choice C is the best answer. The sentence correctly describes how the bicycles in the sculpture are fused together: they share the same rear wheel while facing opposite directions.\n\nChoice A is incorrect. The sentence states that the bicycles are fused together but doesn’t describe how they are fused. Choice B is incorrect. The sentence states that there are two bicycles in the sculpture without indicating that they are fused together or describing how they are fused. Choice D is incorrect. It identifies the artist who created the sculpture but doesn’t describe how the bicycles are fused together.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "00bb356a"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "aaeb4c21",
@@ -253,7 +348,13 @@ const questionBank_EOI = [
       "D. While Sue is housed at the Field Museum of Natural History, Big Mike is housed at the Museum of the Rockies."
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. The sentence emphasizes a similarity between the two specimens, noting that Sue and Big Mike are members of the same genus: Tyrannosaurus.\n\nChoice A is incorrect. The sentence only provides information about where one of the specimens (Sue) can be found; it doesn’t emphasize a similarity between the two specimens. Choice B is incorrect. The sentence only provides information about one specimen (Big Mike); it doesn’t emphasize a similarity between the two specimens. Choice D is incorrect. The sentence contrasts the locations of Sue and Big Mike; it doesn’t emphasize a similarity between the two specimens."
+    "explanation": "Choice C is the best answer. The sentence emphasizes a similarity between the two specimens, noting that Sue and Big Mike are members of the same genus: Tyrannosaurus.\n\nChoice A is incorrect. The sentence only provides information about where one of the specimens (Sue) can be found; it doesn’t emphasize a similarity between the two specimens. Choice B is incorrect. The sentence only provides information about one specimen (Big Mike); it doesn’t emphasize a similarity between the two specimens. Choice D is incorrect. The sentence contrasts the locations of Sue and Big Mike; it doesn’t emphasize a similarity between the two specimens.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "af76771f"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "3e75bfa7",
@@ -268,7 +369,13 @@ const questionBank_EOI = [
       "D. In other words,"
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. “Later” logically signals that the event discussed in this sentence — the creation of the short film featuring Fuller’s dance — is a related event that occurred after the event discussed in the previous sentence (the 1891 debut of the dance).\n\nChoice A is incorrect because “however” illogically signals that the information in this sentence contrasts with the information in the previous sentence. Instead, the creation of the short film is a related event that followed the event discussed in the previous sentence. Choice B is incorrect because “in conclusion” illogically signals that the information in this sentence concludes or summarizes the information in the previous sentence. Instead, the creation of the short film is a related event that followed the event discussed in the previous sentence. Choice D is incorrect because “in other words” illogically signals that the information in this sentence is a paraphrase or restatement of the information in the previous sentence. Instead, the creation of the short film is a related event that followed the event discussed in the previous sentence."
+    "explanation": "Choice C is the best answer. “Later” logically signals that the event discussed in this sentence — the creation of the short film featuring Fuller’s dance — is a related event that occurred after the event discussed in the previous sentence (the 1891 debut of the dance).\n\nChoice A is incorrect because “however” illogically signals that the information in this sentence contrasts with the information in the previous sentence. Instead, the creation of the short film is a related event that followed the event discussed in the previous sentence. Choice B is incorrect because “in conclusion” illogically signals that the information in this sentence concludes or summarizes the information in the previous sentence. Instead, the creation of the short film is a related event that followed the event discussed in the previous sentence. Choice D is incorrect because “in other words” illogically signals that the information in this sentence is a paraphrase or restatement of the information in the previous sentence. Instead, the creation of the short film is a related event that followed the event discussed in the previous sentence.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "4154a7a3"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "76381e8b",
@@ -283,7 +390,13 @@ const questionBank_EOI = [
       "D. Earlier,"
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. The second sentence describes a consequence of the system laid out in the first sentence: because air is owned and sold by companies in this world, people have to buy it.\n\nChoice B is incorrect. This choice uses a transition that means “no matter what happens” or “whatever the situation is,” which doesn’t make sense here. There’s only one situation described in the text: a fictional world in which companies own all the breathable air, forcing people to buy it. Choice C is incorrect. This choice uses a disagreement transition. But this sentence doesn’t disagree with the previous sentence. They both describe the same fictional situation. Choice D is incorrect. This choice uses a transition that indicates a shift back in time, which doesn’t make sense here. Both sentences use the present tense, as they’re describing the same fictional time period."
+    "explanation": "Choice A is the best answer. The second sentence describes a consequence of the system laid out in the first sentence: because air is owned and sold by companies in this world, people have to buy it.\n\nChoice B is incorrect. This choice uses a transition that means “no matter what happens” or “whatever the situation is,” which doesn’t make sense here. There’s only one situation described in the text: a fictional world in which companies own all the breathable air, forcing people to buy it. Choice C is incorrect. This choice uses a disagreement transition. But this sentence doesn’t disagree with the previous sentence. They both describe the same fictional situation. Choice D is incorrect. This choice uses a transition that indicates a shift back in time, which doesn’t make sense here. Both sentences use the present tense, as they’re describing the same fictional time period.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "ac8eb085"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "8f0226dc",
@@ -298,7 +411,13 @@ const questionBank_EOI = [
       "D. In other words,"
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. The first sentence tells us that practical effects are more realistic but also more expensive than CGI. The second sentence tells us that many filmmakers use both kinds of effects, balancing realism with cost. To connect these ideas, we need a cause-and- effect transition, like “therefore.” “For this reason” has the same meaning as “therefore.”.\n\nChoice A is incorrect. This isn’t a logical transition. The first sentence tells us that practical effects are more realistic but also more expensive than CGI. The second sentence tells us that many filmmakers use both kinds of effects, balancing realism with cost. To connect these ideas, we need a cause-and-effect transition, like “therefore.” “Similarly” doesn’t show cause and effect: it shows the addition of another agreeing idea. Choice C is incorrect. This isn’t a logical transition. The first sentence tells us that practical effects are more realistic but also more expensive than CGI. The second sentence tells us that many filmmakers use both kinds of effects, balancing realism with cost. To connect these ideas, we need a cause-and-effect transition, like “therefore.” “Furthermore” doesn’t show cause and effect: it shows the addition of another agreeing idea. Choice D is incorrect. This isn’t a logical transition. The first sentence tells us that practical effects are more realistic but also more expensive than CGI. The second sentence tells us that many filmmakers use both kinds of effects, balancing realism with cost. To connect these ideas, we need a cause-and-effect transition, like “therefore.” “In other words” doesn’t show cause and effect: it shows a restatement of the same idea in different words."
+    "explanation": "Choice B is the best answer. The first sentence tells us that practical effects are more realistic but also more expensive than CGI. The second sentence tells us that many filmmakers use both kinds of effects, balancing realism with cost. To connect these ideas, we need a cause-and- effect transition, like “therefore.” “For this reason” has the same meaning as “therefore.”.\n\nChoice A is incorrect. This isn’t a logical transition. The first sentence tells us that practical effects are more realistic but also more expensive than CGI. The second sentence tells us that many filmmakers use both kinds of effects, balancing realism with cost. To connect these ideas, we need a cause-and-effect transition, like “therefore.” “Similarly” doesn’t show cause and effect: it shows the addition of another agreeing idea. Choice C is incorrect. This isn’t a logical transition. The first sentence tells us that practical effects are more realistic but also more expensive than CGI. The second sentence tells us that many filmmakers use both kinds of effects, balancing realism with cost. To connect these ideas, we need a cause-and-effect transition, like “therefore.” “Furthermore” doesn’t show cause and effect: it shows the addition of another agreeing idea. Choice D is incorrect. This isn’t a logical transition. The first sentence tells us that practical effects are more realistic but also more expensive than CGI. The second sentence tells us that many filmmakers use both kinds of effects, balancing realism with cost. To connect these ideas, we need a cause-and-effect transition, like “therefore.” “In other words” doesn’t show cause and effect: it shows a restatement of the same idea in different words.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "b7571c0a"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "49c962ea",
@@ -313,7 +432,13 @@ const questionBank_EOI = [
       "D. similarly,"
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. \"In contrast\" logically signals that the information in this sentence — — that Jordan has yet to officially ratify the treaty contrasts with the previous information about Niger having already ratified the treaty.\n\nChoice B is incorrect because \"specifically\" illogically signals that the information in this sentence specifies or elaborates on the previous information about Niger ratifying the treaty. Instead, the sentence changes subjects from Niger to Jordan, presenting contrasting information about Jordan’s treaty status. Choice C is incorrect because \"for example\" illogically signals that the information in this sentence exemplifies the previous information about Niger ratifying the treaty. Instead, the sentence explains that Jordan has yet to ratify the treaty. Choice D is incorrect because \"similarly\" illogically signals that the information in this sentence is similar to the previous information about Niger ratifying the treaty. Instead, the sentence presents contrasting information that Jordan has yet to ratify the treaty."
+    "explanation": "Choice A is the best answer. \"In contrast\" logically signals that the information in this sentence — — that Jordan has yet to officially ratify the treaty contrasts with the previous information about Niger having already ratified the treaty.\n\nChoice B is incorrect because \"specifically\" illogically signals that the information in this sentence specifies or elaborates on the previous information about Niger ratifying the treaty. Instead, the sentence changes subjects from Niger to Jordan, presenting contrasting information about Jordan’s treaty status. Choice C is incorrect because \"for example\" illogically signals that the information in this sentence exemplifies the previous information about Niger ratifying the treaty. Instead, the sentence explains that Jordan has yet to ratify the treaty. Choice D is incorrect because \"similarly\" illogically signals that the information in this sentence is similar to the previous information about Niger ratifying the treaty. Instead, the sentence presents contrasting information that Jordan has yet to ratify the treaty.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "b5972710"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "4fb9ac8c",
@@ -328,7 +453,13 @@ const questionBank_EOI = [
       "D. Sheeting muslin is machine made, has a coarse weave, and is used for furniture and theater sets."
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. The difference between the two different kinds of muslin is emphasized.\n\nChoice B is incorrect. This choice lists two kinds of muslins, but does not say how they are different from one another. Choice C is incorrect. This choice does not emphasize a difference between the two muslins. Choice D is incorrect. This choice does not emphasize a difference between the two muslins. It only describes sheeting muslin."
+    "explanation": "Choice A is the best answer. The difference between the two different kinds of muslin is emphasized.\n\nChoice B is incorrect. This choice lists two kinds of muslins, but does not say how they are different from one another. Choice C is incorrect. This choice does not emphasize a difference between the two muslins. Choice D is incorrect. This choice does not emphasize a difference between the two muslins. It only describes sheeting muslin.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "ca4ff52d"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "740ada1b",
@@ -343,7 +474,13 @@ const questionBank_EOI = [
       "D. In conclusion,"
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. “However” logically signals that the theory discussed in this sentence — that humans may have arrived in the Americas over 30,000 years ago — contrasts with the previously discussed theory that humans arrived around 13,000 years ago.\n\nChoice A is incorrect because “as a result” illogically signals that the theory in this sentence is the result of the theory discussed in the previous sentence. Instead, this theory contrasts with the previous one. Choice B is incorrect because “similarly” illogically signals that the theory in this sentence is similar to the theory discussed in the previous sentence. Instead, this theory contrasts with the previous one. Choice D is incorrect because in conclusion illogically signals that the theory in this sentence concludes or summarizes the discussion of the previous theory. Instead, this theory contrasts with the previous one."
+    "explanation": "Choice C is the best answer. “However” logically signals that the theory discussed in this sentence — that humans may have arrived in the Americas over 30,000 years ago — contrasts with the previously discussed theory that humans arrived around 13,000 years ago.\n\nChoice A is incorrect because “as a result” illogically signals that the theory in this sentence is the result of the theory discussed in the previous sentence. Instead, this theory contrasts with the previous one. Choice B is incorrect because “similarly” illogically signals that the theory in this sentence is similar to the theory discussed in the previous sentence. Instead, this theory contrasts with the previous one. Choice D is incorrect because in conclusion illogically signals that the theory in this sentence concludes or summarizes the discussion of the previous theory. Instead, this theory contrasts with the previous one.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "20733eac"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "d314192e",
@@ -358,7 +495,13 @@ const questionBank_EOI = [
       "D. For example,"
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. “Then” indicates that the events in this sentence took place after the events in the previous sentence. Only after users upload images of unknown soldiers can those images be analyzed.\n\nChoice B is incorrect. This transition is used to emphasize the truth of a statement that modifies the previous statement. But this sentence doesn’t modify the step described in the previous statement: instead, it introduces an entirely new step in the process. So “in fact” wouldn’t make sense here. Choice C is incorrect. This choice uses a transition that indicates the addition of a new but related idea, which doesn’t make sense here. Analyzing the physical features in the uploaded photographs isn’t a similar idea, but rather the next step in the process. Choice D is incorrect. This choice uses an exemplification transition, which doesn’t make sense here. Analyzing physical features is not an example of uploading and tagging an image."
+    "explanation": "Choice A is the best answer. “Then” indicates that the events in this sentence took place after the events in the previous sentence. Only after users upload images of unknown soldiers can those images be analyzed.\n\nChoice B is incorrect. This transition is used to emphasize the truth of a statement that modifies the previous statement. But this sentence doesn’t modify the step described in the previous statement: instead, it introduces an entirely new step in the process. So “in fact” wouldn’t make sense here. Choice C is incorrect. This choice uses a transition that indicates the addition of a new but related idea, which doesn’t make sense here. Analyzing the physical features in the uploaded photographs isn’t a similar idea, but rather the next step in the process. Choice D is incorrect. This choice uses an exemplification transition, which doesn’t make sense here. Analyzing physical features is not an example of uploading and tagging an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "63c73b50"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "e4b051ed",
@@ -373,7 +516,13 @@ const questionBank_EOI = [
       "D. C. olivacea is a perching bird that faces a high risk of extinction."
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. The sentence compares the extinction risks of the two species, noting that C. olivacea has a higher risk of becoming extinct in the near future than C. furcatus.\n\nChoice B is incorrect. While the sentence does compare the extinction risks of the two species, it misrepresents information from the notes; C. olivacea faces a higher risk of becoming extinct in the near future than C. furcatus, not the other way around. Choice C is incorrect. While the sentence mentions that conservation organizations have evaluated both species for extinction risk, it doesn’t compare the extinction risks of the two species. Choice D is incorrect. While the sentence states that C. olivacea faces a high risk of extinction, it doesn’t mention C. furcatus or compare the extinction risks of the two species."
+    "explanation": "Choice A is the best answer. The sentence compares the extinction risks of the two species, noting that C. olivacea has a higher risk of becoming extinct in the near future than C. furcatus.\n\nChoice B is incorrect. While the sentence does compare the extinction risks of the two species, it misrepresents information from the notes; C. olivacea faces a higher risk of becoming extinct in the near future than C. furcatus, not the other way around. Choice C is incorrect. While the sentence mentions that conservation organizations have evaluated both species for extinction risk, it doesn’t compare the extinction risks of the two species. Choice D is incorrect. While the sentence states that C. olivacea faces a high risk of extinction, it doesn’t mention C. furcatus or compare the extinction risks of the two species.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "7f2781fd"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "d4a1f75e",
@@ -388,7 +537,13 @@ const questionBank_EOI = [
       "D. For example,"
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. The previous sentence tells us that potters think about the look and use of a piece when selecting clay. This sentence provides a specific example of a type of clay selected for its appearance, so the transition \"for example\" fits perfectly.\n\nChoice A is incorrect. This choice uses a transition that indicates a restatement of the same idea. But this sentence does more than just restate the previous idea. Instead, it provides a more specific example of the idea presented in the first sentence. Choice B is incorrect. This choice uses a disagreement transition. But this sentence actually agrees with the previous sentence. Both sentences suggest that desired look plays a role in the selection of clay types for pottery pieces. Choice C is incorrect. This choice uses a concluding transition. But this sentence doesn’t sum up the previous sentence. Instead, it gives a specific example of the idea presented in the previous sentence."
+    "explanation": "Choice D is the best answer. The previous sentence tells us that potters think about the look and use of a piece when selecting clay. This sentence provides a specific example of a type of clay selected for its appearance, so the transition \"for example\" fits perfectly.\n\nChoice A is incorrect. This choice uses a transition that indicates a restatement of the same idea. But this sentence does more than just restate the previous idea. Instead, it provides a more specific example of the idea presented in the first sentence. Choice B is incorrect. This choice uses a disagreement transition. But this sentence actually agrees with the previous sentence. Both sentences suggest that desired look plays a role in the selection of clay types for pottery pieces. Choice C is incorrect. This choice uses a concluding transition. But this sentence doesn’t sum up the previous sentence. Instead, it gives a specific example of the idea presented in the previous sentence.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "db8fe023"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "4fec02dc",
@@ -403,7 +558,13 @@ const questionBank_EOI = [
       "D. According to a 2015 study, the first humans to populate the Azores may have been Vikings from Scandinavia, not mariners from Portugal as previously believed."
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. This choice effectively specifies who may have first populated the Azores, according to the 2015 study: the Vikings.\n\nChoice A is incorrect. This choice doesn’t effectively specify who may have first populated the Azores, according to the 2015 study. It only mentions the historical belief that the Portuguese were first. The 2015 study drew a different conclusion. Choice B is incorrect. This choice casts doubt on the Portuguese claim but doesn’t name the group of people who may have arrived before the Portuguese. Choice C is incorrect. This choice mentions the evidence that the researchers found but not the conclusion they drew from it. It doesn’t name the possible group of people who may have arrived before the Portuguese."
+    "explanation": "Choice D is the best answer. This choice effectively specifies who may have first populated the Azores, according to the 2015 study: the Vikings.\n\nChoice A is incorrect. This choice doesn’t effectively specify who may have first populated the Azores, according to the 2015 study. It only mentions the historical belief that the Portuguese were first. The 2015 study drew a different conclusion. Choice B is incorrect. This choice casts doubt on the Portuguese claim but doesn’t name the group of people who may have arrived before the Portuguese. Choice C is incorrect. This choice mentions the evidence that the researchers found but not the conclusion they drew from it. It doesn’t name the possible group of people who may have arrived before the Portuguese.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "296801d2"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "e3e8610d",
@@ -418,7 +579,13 @@ const questionBank_EOI = [
       "D. Peanuts contain 49 mg/oz of magnesium, a mineral the human body requires for over 300 essential processes."
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. The sentence identifies chia seeds as having the highest magnesium content of the three foods, noting that they contain 150 mg/oz, which is more than both peanuts and almonds.\n\nChoice A is incorrect. The sentence compares the magnesium content of almonds and peanuts; it doesn’t identify which of the three foods has the highest magnesium content. Choice C is incorrect. The sentence merely mentions the three foods; it doesn’t identify which one has the highest magnesium content. Choice D is incorrect. The sentence identifies the magnesium content of peanuts; it doesn’t identify which of the three foods has the highest magnesium content."
+    "explanation": "Choice B is the best answer. The sentence identifies chia seeds as having the highest magnesium content of the three foods, noting that they contain 150 mg/oz, which is more than both peanuts and almonds.\n\nChoice A is incorrect. The sentence compares the magnesium content of almonds and peanuts; it doesn’t identify which of the three foods has the highest magnesium content. Choice C is incorrect. The sentence merely mentions the three foods; it doesn’t identify which one has the highest magnesium content. Choice D is incorrect. The sentence identifies the magnesium content of peanuts; it doesn’t identify which of the three foods has the highest magnesium content.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "25a197dd"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "fa9fb43d",
@@ -433,7 +600,13 @@ const questionBank_EOI = [
       "D. In the second place,"
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. \"For example\" logically signals that this sentence supports the previous information about the descriptive notations opera singers use by providing specific examples of these notations: giocoso (playfully) and lento (at a slow tempo). Choice A is incorrect because \"on the other hand\" illogically signals that the information in this sentence contrasts with the previous information about the descriptive notations opera singers use. Instead, the sentence provides examples of these notations. Choice B is incorrect because \"all the same\" illogically signals that the information in this sentence is true despite the previous information about the descriptive notations opera singers use. Instead, the sentence provides examples of these notations. Choice D is incorrect because \"in the second place\" illogically signals that the information in this sentence is a second point that is separate from the previous information about the descriptive notations opera singers use. Instead, the sentence provides examples of these notations."
+    "explanation": "Choice C is the best answer. \"For example\" logically signals that this sentence supports the previous information about the descriptive notations opera singers use by providing specific examples of these notations: giocoso (playfully) and lento (at a slow tempo). Choice A is incorrect because \"on the other hand\" illogically signals that the information in this sentence contrasts with the previous information about the descriptive notations opera singers use. Instead, the sentence provides examples of these notations. Choice B is incorrect because \"all the same\" illogically signals that the information in this sentence is true despite the previous information about the descriptive notations opera singers use. Instead, the sentence provides examples of these notations. Choice D is incorrect because \"in the second place\" illogically signals that the information in this sentence is a second point that is separate from the previous information about the descriptive notations opera singers use. Instead, the sentence provides examples of these notations.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "fc5e83cc"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "40de026c",
@@ -448,7 +621,13 @@ const questionBank_EOI = [
       "D. Composer Greg Pattillo’s original work Three Beats for Beatbox Flute combines flute playing and beatboxing."
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. This describes the achievement for which Wu is best known.\n Choice A is incorrect. This choice doesn’t emphasize Wu’s most well-known achievement. It mentions some of her general achievements, but not the one for which she is “best known.” Choice B is incorrect. This choice doesn’t emphasize Wu’s most well-known achievement — it describes’ several of her achievements equally. Choice D is incorrect. This choice doesn’t emphasize Wu’s most well-known achievement. It describes a piece of music featured in her most well-known achievement."
+    "explanation": "Choice C is the best answer. This describes the achievement for which Wu is best known.\n Choice A is incorrect. This choice doesn’t emphasize Wu’s most well-known achievement. It mentions some of her general achievements, but not the one for which she is “best known.” Choice B is incorrect. This choice doesn’t emphasize Wu’s most well-known achievement — it describes’ several of her achievements equally. Choice D is incorrect. This choice doesn’t emphasize Wu’s most well-known achievement. It describes a piece of music featured in her most well-known achievement.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "d7f31e68"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "c6247ece",
@@ -463,7 +642,13 @@ const questionBank_EOI = [
       "D. For example,"
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. “Consequently” logically signals that the postal problems described in this sentence (slow fee collection, heaps of undeliverable mail) were a consequence of the fee system described in the previous sentence.\n\nChoice A is incorrect because “regardless” illogically signals that the postal problems described in this sentence occurred despite the fee system described in the previous sentence. Instead, they were a consequence of that system. Choice B is incorrect because “on the contrary” illogically signals that the postal problems described in this sentence contrast with the fee system described in the previous sentence. Instead, they were a consequence of that system. Choice D is incorrect because “for example” illogically signals that the postal problems described in this sentence are an example of the fee system described in the previous sentence. Instead, they were a consequence of that system."
+    "explanation": "Choice C is the best answer. “Consequently” logically signals that the postal problems described in this sentence (slow fee collection, heaps of undeliverable mail) were a consequence of the fee system described in the previous sentence.\n\nChoice A is incorrect because “regardless” illogically signals that the postal problems described in this sentence occurred despite the fee system described in the previous sentence. Instead, they were a consequence of that system. Choice B is incorrect because “on the contrary” illogically signals that the postal problems described in this sentence contrast with the fee system described in the previous sentence. Instead, they were a consequence of that system. Choice D is incorrect because “for example” illogically signals that the postal problems described in this sentence are an example of the fee system described in the previous sentence. Instead, they were a consequence of that system.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "01c8c433"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "7a6a974b",
@@ -478,7 +663,13 @@ const questionBank_EOI = [
       "D. Cather attended the University of Nebraska-Lincoln and set some of her novels in Nebraska."
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. This choice directly identifies the setting of Cather’s novel My Á ntonia as Nebraska.\n\nChoice B is incorrect. This choice mentions that Cather wrote about immigrants, but it doesn’t indicate where they lived. Choice C is incorrect. This choice mentions that My Ántonia is one of Cather’s best-known novels but doesn’t state where it takes place. Choice D is incorrect. This choice mentions that some of Cather’s novels are set in Nebraska, but it doesn’t specify which ones, so we can’t be certain that My Ántonia is one of them. It also includes irrelevant information about Cather’s education."
+    "explanation": "Choice A is the best answer. This choice directly identifies the setting of Cather’s novel My Á ntonia as Nebraska.\n\nChoice B is incorrect. This choice mentions that Cather wrote about immigrants, but it doesn’t indicate where they lived. Choice C is incorrect. This choice mentions that My Ántonia is one of Cather’s best-known novels but doesn’t state where it takes place. Choice D is incorrect. This choice mentions that some of Cather’s novels are set in Nebraska, but it doesn’t specify which ones, so we can’t be certain that My Ántonia is one of them. It also includes irrelevant information about Cather’s education.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "00460c13"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "75c4f5de",
@@ -493,7 +684,13 @@ const questionBank_EOI = [
       "D. Conversely,"
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. The second sentence provides more specific information about the fieldwork mentioned in the first sentence — that the paleontological digs took place in Utah, Montana, and Wyoming. Therefore, “specifically” fits perfectly in this context.\n\nChoice A is incorrect. This choice uses a disagreement transition. But this sentence doesn’t disagree with the previous sentence. Rather, this sentence agrees with and elaborates on the last sentence by providing more specifics about the fieldwork Black does. Choice B is incorrect. This choice uses a transition that indicates that an event took place after another event. But the two sentences are not describing different events — instead, this sentence gives more details about the fieldwork discussed in the first sentence. Choice D is incorrect. This choice uses a disagreement transition. But this sentence doesn’t disagree with the previous sentence. Rather, this sentence agrees with and elaborates on the last sentence by providing more specifics about the fieldwork Black does."
+    "explanation": "Choice C is the best answer. The second sentence provides more specific information about the fieldwork mentioned in the first sentence — that the paleontological digs took place in Utah, Montana, and Wyoming. Therefore, “specifically” fits perfectly in this context.\n\nChoice A is incorrect. This choice uses a disagreement transition. But this sentence doesn’t disagree with the previous sentence. Rather, this sentence agrees with and elaborates on the last sentence by providing more specifics about the fieldwork Black does. Choice B is incorrect. This choice uses a transition that indicates that an event took place after another event. But the two sentences are not describing different events — instead, this sentence gives more details about the fieldwork discussed in the first sentence. Choice D is incorrect. This choice uses a disagreement transition. But this sentence doesn’t disagree with the previous sentence. Rather, this sentence agrees with and elaborates on the last sentence by providing more specifics about the fieldwork Black does.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "d3898d32"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "165615db",
@@ -508,7 +705,13 @@ const questionBank_EOI = [
       "D. In other words,"
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. \"Eventually\" logically signals that the information in this sentence — that textile artists will remove the cloth when it has turned red — is the final step in the chronological sequence of the dyeing process described in the previous sentences.\n\nChoice A is incorrect because \"nevertheless\" illogically signals that the information in this sentence is true despite the previous information about simmering the cloth in the dyebath. Instead, the removal of the cloth is the final step in the dyeing process. Choice B is incorrect because \"likewise\" illogically signals that the information in this sentence is similar to the previous information about simmering the cloth in the dyebath. Instead, the removal of the cloth is the final step in the dyeing process. Choice D is incorrect because \"in other words\" illogically signals that the information in this sentence is a paraphrase or restatement of the previous information about simmering the cloth in the dyebath. Instead, the removal of the cloth is the final step in the dyeing process."
+    "explanation": "Choice C is the best answer. \"Eventually\" logically signals that the information in this sentence — that textile artists will remove the cloth when it has turned red — is the final step in the chronological sequence of the dyeing process described in the previous sentences.\n\nChoice A is incorrect because \"nevertheless\" illogically signals that the information in this sentence is true despite the previous information about simmering the cloth in the dyebath. Instead, the removal of the cloth is the final step in the dyeing process. Choice B is incorrect because \"likewise\" illogically signals that the information in this sentence is similar to the previous information about simmering the cloth in the dyebath. Instead, the removal of the cloth is the final step in the dyeing process. Choice D is incorrect because \"in other words\" illogically signals that the information in this sentence is a paraphrase or restatement of the previous information about simmering the cloth in the dyebath. Instead, the removal of the cloth is the final step in the dyeing process.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "56336696"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "70112b47",
@@ -523,7 +726,13 @@ const questionBank_EOI = [
       "D. Sometimes, a species once believed to be extinct is later found living in the wild."
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. The sentence defines the term \"Lazarus species\" and provides an example of one, explaining that a Lazarus species is a living organism that was once believed to be extinct and providing the mountain pygmy possum as an example.\n\nChoice B is incorrect. While the sentence provides an example of a Lazarus species, it doesn’t define the term \"Lazarus species.\" Choice C is incorrect. The sentence provides information about the mountain pygmy possum; it doesn’t define the term \"Lazarus species\" or explicitly identify the mountain pygmy possum as a Lazarus species. Choice D is incorrect. While the sentence describes the concept of a Lazarus species, it doesn’t define the term or provide an example of a Lazarus species."
+    "explanation": "Choice A is the best answer. The sentence defines the term \"Lazarus species\" and provides an example of one, explaining that a Lazarus species is a living organism that was once believed to be extinct and providing the mountain pygmy possum as an example.\n\nChoice B is incorrect. While the sentence provides an example of a Lazarus species, it doesn’t define the term \"Lazarus species.\" Choice C is incorrect. The sentence provides information about the mountain pygmy possum; it doesn’t define the term \"Lazarus species\" or explicitly identify the mountain pygmy possum as a Lazarus species. Choice D is incorrect. While the sentence describes the concept of a Lazarus species, it doesn’t define the term or provide an example of a Lazarus species.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "54227b8e"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "8ecf234b",
@@ -538,7 +747,13 @@ const questionBank_EOI = [
       "D. The new species was named Mansourasaurus to recognize the team that discovered it, a professor and students from Mansoura University."
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. It explains where the dinosaur’s name came from.\n\nChoice A is incorrect. This choice does not explain the origin of the dinosaur’s name. Choice B is incorrect. This choice does not explain the origin of the dinosaur’s name. Choice C is incorrect. This choice does not explain the origin of the dinosaur’s name."
+    "explanation": "Choice D is the best answer. It explains where the dinosaur’s name came from.\n\nChoice A is incorrect. This choice does not explain the origin of the dinosaur’s name. Choice B is incorrect. This choice does not explain the origin of the dinosaur’s name. Choice C is incorrect. This choice does not explain the origin of the dinosaur’s name.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [
+      "f4b63a04"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "9d8d3faf",
@@ -553,7 +768,13 @@ const questionBank_EOI = [
       "D. Taylor was the only Black woman to publish a Civil War memoir."
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. By indicating that Taylor’s book was the only Civil War memoir published by a Black woman, this sentence emphasizes the uniqueness, or one-of-a-kind nature, of Taylor’s accomplishment.\n\nChoice A is incorrect. While the sentence describes some of Taylor’s accomplishments, it doesn’t emphasize the uniqueness of them. Choice B is incorrect. While the sentence describes some of Taylor’s accomplishments, it doesn’t emphasize that they were unique. Choice C is incorrect. While the sentence provides information about Taylor’s book, it doesn’t emphasize what made the book unique."
+    "explanation": "Choice D is the best answer. By indicating that Taylor’s book was the only Civil War memoir published by a Black woman, this sentence emphasizes the uniqueness, or one-of-a-kind nature, of Taylor’s accomplishment.\n\nChoice A is incorrect. While the sentence describes some of Taylor’s accomplishments, it doesn’t emphasize the uniqueness of them. Choice B is incorrect. While the sentence describes some of Taylor’s accomplishments, it doesn’t emphasize that they were unique. Choice C is incorrect. While the sentence provides information about Taylor’s book, it doesn’t emphasize what made the book unique.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "2bf05ae9"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "36246bab",
@@ -568,7 +789,13 @@ const questionBank_EOI = [
       "D. In DLS, UV light is projected into layers of liquid resin until the resin solidifies and passes through a “dead zone,” wherein the curing is completed."
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. The sentence describes how DLS cures 3D objects, noting that UV light is projected into resin to cure the object in layers, after which the object is baked to complete the curing process.\n\nChoice A is incorrect. While the sentence does describe some elements of the curing process, the description misrepresents information in the notes; this sentence suggests that the UV light, rather than the 3D object, is baked in an oven. Choice B is incorrect. While the sentence does describe some elements of the curing process, the description misrepresents information in the notes: the UV light, not DLS, passes through the dead zone. Choice D is incorrect. While the sentence does describe some elements of the curing process, the description misrepresents information in the notes. This sentence suggests that curing is complete when the already-solidified resin passes through the dead zone; rather, liquid resin passes through the dead zone and is solidified in layers, after which curing is completed in the oven."
+    "explanation": "Choice C is the best answer. The sentence describes how DLS cures 3D objects, noting that UV light is projected into resin to cure the object in layers, after which the object is baked to complete the curing process.\n\nChoice A is incorrect. While the sentence does describe some elements of the curing process, the description misrepresents information in the notes; this sentence suggests that the UV light, rather than the 3D object, is baked in an oven. Choice B is incorrect. While the sentence does describe some elements of the curing process, the description misrepresents information in the notes: the UV light, not DLS, passes through the dead zone. Choice D is incorrect. While the sentence does describe some elements of the curing process, the description misrepresents information in the notes. This sentence suggests that curing is complete when the already-solidified resin passes through the dead zone; rather, liquid resin passes through the dead zone and is solidified in layers, after which curing is completed in the oven.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "b07a7634"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "fedee38c",
@@ -583,7 +810,13 @@ const questionBank_EOI = [
       "D. Established in 1841, Brook Farm was a utopian community created to “guarantee the highest mental freedom, by providing all with labor...” [and] the fruits of their industry, according to founder George Ripley."
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. This choice explains the goal of Brook Farm — to provide mental freedom to all by engaging individuals in labor — suited to their interests using a quotation from George Ripley.\n Choice A is incorrect. This choice only mentions part of Ripley’s goal, and it doesn’t mention Brook Farm at all. Choice B is incorrect. This choice defines what a utopia is but doesn’t use Ripley’s words to describe his vision for Brook Farm. Choice C is incorrect. This choice provides some background information about Brook Farm, but it doesn’t explain its goals or include Ripley’s words."
+    "explanation": "Choice D is the best answer. This choice explains the goal of Brook Farm — to provide mental freedom to all by engaging individuals in labor — suited to their interests using a quotation from George Ripley.\n Choice A is incorrect. This choice only mentions part of Ripley’s goal, and it doesn’t mention Brook Farm at all. Choice B is incorrect. This choice defines what a utopia is but doesn’t use Ripley’s words to describe his vision for Brook Farm. Choice C is incorrect. This choice provides some background information about Brook Farm, but it doesn’t explain its goals or include Ripley’s words.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "bce57278"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "4079ff52",
@@ -598,7 +831,13 @@ const questionBank_EOI = [
       "D. Thus,"
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. \"Of course\" logically signals that the information in this sentence — that \"the wavy staircase and ornate floral tilework\" of the Modernista hospital couldn’t actually grow in a forest —acknowledges an obvious limitation of, or qualification to, the previous claim that Modernista architects championed nature in their designs.\n\nChoice A is incorrect because \"furthermore\" illogically signals that the information in this sentence merely adds to the previous claim that Modernista architects championed nature in their designs. Instead, the sentence acknowledges an obvious limitation in how literally that natural influence was expressed in the hospital’s features. Choice B is incorrect because \"similarly\" illogically signals that the information in this sentence is similar to the previous claim that Modernista architects championed nature in their designs. Instead, the sentence acknowledges an obvious limitation in how literally that natural influence was expressed in the hospital’s features. Choice D is incorrect because \"thus\" illogically signals that the information in this sentence is a result of the previous claim that Modernista architects championed nature in their designs. Instead, the sentence acknowledges an obvious limitation in how literally that natural influence was expressed in the hospital’s features."
+    "explanation": "Choice C is the best answer. \"Of course\" logically signals that the information in this sentence — that \"the wavy staircase and ornate floral tilework\" of the Modernista hospital couldn’t actually grow in a forest —acknowledges an obvious limitation of, or qualification to, the previous claim that Modernista architects championed nature in their designs.\n\nChoice A is incorrect because \"furthermore\" illogically signals that the information in this sentence merely adds to the previous claim that Modernista architects championed nature in their designs. Instead, the sentence acknowledges an obvious limitation in how literally that natural influence was expressed in the hospital’s features. Choice B is incorrect because \"similarly\" illogically signals that the information in this sentence is similar to the previous claim that Modernista architects championed nature in their designs. Instead, the sentence acknowledges an obvious limitation in how literally that natural influence was expressed in the hospital’s features. Choice D is incorrect because \"thus\" illogically signals that the information in this sentence is a result of the previous claim that Modernista architects championed nature in their designs. Instead, the sentence acknowledges an obvious limitation in how literally that natural influence was expressed in the hospital’s features.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "f5959727"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "b81aa0f6",
@@ -613,7 +852,13 @@ const questionBank_EOI = [
       "D. Arelee Estefanía Muñoz-Hernández and her team wanted to know how many different Orchidaceae species are present in the forests of Oaxaca, Mexico, so they conducted a study to collect orchids."
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. This choice most effectively presents the study and its findings. It opens with the study and names its lead researcher, then tells us its finding: that they identified 74 Orchidaceae species in the temperate forests of Oaxaca, Mexico.\n\nChoice B is incorrect. This choice doesn’t include the study’s findings, so it fails to achieve the goal. It doesn’t mention that there was a study at all. Choice C is incorrect. This choice doesn’t present the study, so it fails to achieve the goal. It doesn’t mention that there was a study at all. Choice D is incorrect. This choice doesn’t include the study’s findings, so it fails to achieve the goal."
+    "explanation": "Choice A is the best answer. This choice most effectively presents the study and its findings. It opens with the study and names its lead researcher, then tells us its finding: that they identified 74 Orchidaceae species in the temperate forests of Oaxaca, Mexico.\n\nChoice B is incorrect. This choice doesn’t include the study’s findings, so it fails to achieve the goal. It doesn’t mention that there was a study at all. Choice C is incorrect. This choice doesn’t present the study, so it fails to achieve the goal. It doesn’t mention that there was a study at all. Choice D is incorrect. This choice doesn’t include the study’s findings, so it fails to achieve the goal.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "aa7e10d0"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "7bf4fe1b",
@@ -628,7 +873,13 @@ const questionBank_EOI = [
       "D. Maria Younghans’s career as a lighthouse keeper ended in 1918, whereas Flora McNeil’s ended in 1920."
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. The sentence emphasizes the order in which the two lighthouse keepers began their careers, noting that McNeil, who became the keeper at Bridgeport Breakwater Light in 1904, began her career years after Younghans, who became the keeper at Biloxi Light in 1867.\n\nChoice A is incorrect because it makes a generalization about the effects of McNeil’s and Younghans’s work; it doesn’t emphasize the order in which the two keepers began their careers. In addition, the sentence misrepresents information from the notes; McNeil was the keeper at a lighthouse in Connecticut from 1904 to 1920, not at a lighthouse in Mississippi from 1867 to 1918. Choice B is incorrect. The sentence claims that Younghans and McNeil were crucial to ensuring the safety of watercraft before lighthouses became automated; it doesn’t emphasize the order in which the two keepers began their careers. Choice D is incorrect. The sentence emphasizes when the lighthouse keepers’ respective careers ended; it doesn’t emphasize the order in which the two keepers began their careers."
+    "explanation": "Choice C is the best answer. The sentence emphasizes the order in which the two lighthouse keepers began their careers, noting that McNeil, who became the keeper at Bridgeport Breakwater Light in 1904, began her career years after Younghans, who became the keeper at Biloxi Light in 1867.\n\nChoice A is incorrect because it makes a generalization about the effects of McNeil’s and Younghans’s work; it doesn’t emphasize the order in which the two keepers began their careers. In addition, the sentence misrepresents information from the notes; McNeil was the keeper at a lighthouse in Connecticut from 1904 to 1920, not at a lighthouse in Mississippi from 1867 to 1918. Choice B is incorrect. The sentence claims that Younghans and McNeil were crucial to ensuring the safety of watercraft before lighthouses became automated; it doesn’t emphasize the order in which the two keepers began their careers. Choice D is incorrect. The sentence emphasizes when the lighthouse keepers’ respective careers ended; it doesn’t emphasize the order in which the two keepers began their careers.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "146233fc"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "54ac9e43",
@@ -643,7 +894,13 @@ const questionBank_EOI = [
       "D. Moreover,"
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. \"Of course\" logically signals that the information that follows— about many dances being \"defined by order, — repetition, and synchronicity\" acknowledges an obvious similarity between these dances and the previous description of the Madison. The sentence then goes on to emphasize a distinguishing feature of the Madison.\n\nChoice A is incorrect because \"however\" illogically signals that the information that follows contrasts with the previous description of the Madison. Instead, the information about many dances features acknowledges an obvious similarity between these dances and the Madison. The sentence then goes on to emphasize a distinguishing feature of the Madison. Choice C is incorrect because \"specifically\" illogically signals that the information that follows specifies or elaborates on the previous description of the Madison. Instead, the information about many dances’ features acknowledges an obvious similarity between these dances and the Madison. The sentence then goes on to emphasize a distinguishing feature of the Madison. Choice D is incorrect because \"moreover\" illogically signals that the information that follows adds to or expands on the previous description of the Madison. Instead, the information about many dances features acknowledges an obvious similarity between these dances and the Madison. The sentence then goes on to emphasize a distinguishing feature of the Madison."
+    "explanation": "Choice B is the best answer. \"Of course\" logically signals that the information that follows— about many dances being \"defined by order, — repetition, and synchronicity\" acknowledges an obvious similarity between these dances and the previous description of the Madison. The sentence then goes on to emphasize a distinguishing feature of the Madison.\n\nChoice A is incorrect because \"however\" illogically signals that the information that follows contrasts with the previous description of the Madison. Instead, the information about many dances features acknowledges an obvious similarity between these dances and the Madison. The sentence then goes on to emphasize a distinguishing feature of the Madison. Choice C is incorrect because \"specifically\" illogically signals that the information that follows specifies or elaborates on the previous description of the Madison. Instead, the information about many dances’ features acknowledges an obvious similarity between these dances and the Madison. The sentence then goes on to emphasize a distinguishing feature of the Madison. Choice D is incorrect because \"moreover\" illogically signals that the information that follows adds to or expands on the previous description of the Madison. Instead, the information about many dances features acknowledges an obvious similarity between these dances and the Madison. The sentence then goes on to emphasize a distinguishing feature of the Madison.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "974b5a8c"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "491d1285",
@@ -658,7 +915,13 @@ const questionBank_EOI = [
       "D. Tecozautla — a governmental region in the state of Hidalgo, Mexico — provides many public services to its residents."
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. The sentence emphasizes the size of Tecozautla, noting that it covers an area of roughly 535 km².\n\nChoice B is incorrect. The sentence gives an example of a public service that municipalities provide; it doesn’t emphasize the size of Tecozautla. Choice C is incorrect. While the sentence provides information about Tecozautla, it doesn’t emphasize Tecozautla’s size. Choice D is incorrect. While the sentence provides information about Tecozautla, it doesn’t emphasize Tecozautla’s size.’"
+    "explanation": "Choice A is the best answer. The sentence emphasizes the size of Tecozautla, noting that it covers an area of roughly 535 km².\n\nChoice B is incorrect. The sentence gives an example of a public service that municipalities provide; it doesn’t emphasize the size of Tecozautla. Choice C is incorrect. While the sentence provides information about Tecozautla, it doesn’t emphasize Tecozautla’s size. Choice D is incorrect. While the sentence provides information about Tecozautla, it doesn’t emphasize Tecozautla’s size.’",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "45eaf7fb"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "c04fe47d",
@@ -673,22 +936,13 @@ const questionBank_EOI = [
       "D. Sara Oyler-McCance’s researchers analyzed environmental DNA (eDNA) — that is, DNA from cellular materials released by organisms — in water samples from the Florida Everglades."
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. This choice presents the study in a way that assumes the audience is already familiar with eDNA.\n\nChoice B is incorrect. This choice doesn’t present the study. It only states a general fact about eDNA analysis. Choice C is incorrect. This choice isn’t suited for an audience already familiar with eDNA. A familiar audience wouldn’t need to have the term defined or explained. Choice D is incorrect. This choice isn’t suited for an audience already familiar with eDNA. A familiar audience wouldn’t need to have the term defined or explained. It also doesn’t present the study."
-  },
-  {
-    "id": "a94d75c0",
-    "skill": "Rhetorical Synthesis",
-    "difficulty": "Hard",
-    "passage": "While researching a topic, a student has taken the following notes:\n\námi activists staged protests to block the construction of a dam on the Alta River in Norway. In 1978, S The dam would disrupt Sámi fishing and reindeer herding. The dam was ultimately built, but the Alta conflict had a lasting impact. It brought international attention to the issue of Sámi rights. It led to a set of 2005 legal protections establishing Sámi rights to lands, waters, and resources.\n\nThe student wants to make and support a generalization about the Alta conflict.",
-    "question": "Which choice most effectively uses relevant information from the notes to accomplish this goal?",
-    "options": [
-      "A. During the Alta conflict, S fishing and reindeer herding.",
-      "B. Although the dam that the S ámi activists had protested was ultimately built, the Alta conflict had a lasting impact.",
-      "C. Sámi rights to lands, waters, and resources received international attention and legal protections as a result of the Alta conflict.",
-      "D. The Alta conflict had a lasting impact, resulting in international attention and legal protections for Sámi rights to lands, waters, and resources."
+    "explanation": "Choice A is the best answer. This choice presents the study in a way that assumes the audience is already familiar with eDNA.\n\nChoice B is incorrect. This choice doesn’t present the study. It only states a general fact about eDNA analysis. Choice C is incorrect. This choice isn’t suited for an audience already familiar with eDNA. A familiar audience wouldn’t need to have the term defined or explained. Choice D is incorrect. This choice isn’t suited for an audience already familiar with eDNA. A familiar audience wouldn’t need to have the term defined or explained. It also doesn’t present the study.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "b46e0c8a"
     ],
-    "answer": "D",
-    "explanation": "Choice D is the best answer. It makes a generalization — the conflict had a lasting impact— and then supports it with evidence — the attention and protections were results of the conflict.\n\nChoice A is incorrect. This choice doesn’t make a generalization about the conflict. It describes a specific event from the conflict. Choice B is incorrect. This choice makes a generalization about the Alta conflict, but doesn’t support it. Choice C is incorrect. This choice makes a statement about the aftermath of the conflict, but doesn’t support it. The statement is also a little too specific to be a generalization."
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "69abb48d",
@@ -703,7 +957,13 @@ const questionBank_EOI = [
       "D. FTWs using marigolds, Locke-Rodriguez and colleagues found, yielded 65 flower blooms and removed 52% of phosphorus from the water."
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. The sentence presents both findings from the study, noting that FTWs using marigolds both removed phosphorus from the water and yielded market-quality blooms.\n\nChoice A is incorrect. While the sentence presents a finding from the study, the presentation is incomplete; the study found that marigolds cultivated on FTWs both removed phosphorus from the water and yielded market-quality blooms. Choice B is incorrect. The sentence misrepresents information in the notes. The figure of 52% refers to the amount of phosphorus removed by FTWs using marigolds when compared to the control; the marigolds’ bloom yield was 65 market-quality blooms per square meter, and it was not compared to the control. Choice D is incorrect. The sentence misrepresents information in the notes. The FTWs using marigolds removed 52% more phosphorus from the water than did the control, not 52% of the total phosphorus. Additionally, the bloom figure is incomplete; the figure is 65 market-quality flower blooms per square meter."
+    "explanation": "Choice C is the best answer. The sentence presents both findings from the study, noting that FTWs using marigolds both removed phosphorus from the water and yielded market-quality blooms.\n\nChoice A is incorrect. While the sentence presents a finding from the study, the presentation is incomplete; the study found that marigolds cultivated on FTWs both removed phosphorus from the water and yielded market-quality blooms. Choice B is incorrect. The sentence misrepresents information in the notes. The figure of 52% refers to the amount of phosphorus removed by FTWs using marigolds when compared to the control; the marigolds’ bloom yield was 65 market-quality blooms per square meter, and it was not compared to the control. Choice D is incorrect. The sentence misrepresents information in the notes. The FTWs using marigolds removed 52% more phosphorus from the water than did the control, not 52% of the total phosphorus. Additionally, the bloom figure is incomplete; the figure is 65 market-quality flower blooms per square meter.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "5645f119"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "412eafc5",
@@ -718,7 +978,13 @@ const questionBank_EOI = [
       "D. The researchers studied how macaques behaved around both humans holding food and empty-handed humans."
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. This choice presents the study’s results from the last two bullet points.\n\nChoice B is incorrect. This choice describes the background and motivation of the study but not the outcome or findings. Choice C is incorrect. This choice describes the research question or hypothesis of the study but not the evidence or conclusion. Choice D is incorrect. This choice describes the method or design of the study but not the actual results."
+    "explanation": "Choice A is the best answer. This choice presents the study’s results from the last two bullet points.\n\nChoice B is incorrect. This choice describes the background and motivation of the study but not the outcome or findings. Choice C is incorrect. This choice describes the research question or hypothesis of the study but not the evidence or conclusion. Choice D is incorrect. This choice describes the method or design of the study but not the actual results.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "6249b173"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "5e9d0e43",
@@ -733,7 +999,13 @@ const questionBank_EOI = [
       "D. In 1990, more than three centuries after Plot claimed in his book that he had found fossilized dinosaur bones, archaeologists uncovered evidence in southern Africa that disproved his claims."
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. Noting that the evidence suggests Indigenous peoples may have found dinosaur remains in 1100 CE, the sentence emphasizes how the 1990 discovery challenged Plot’s reputation as the first person to discover dinosaur remains.\n\nChoice A is incorrect. While the sentence does emphasize that Benoit challenged Plot’s reputation, it misrepresents information in the notes; Plot was reputed to be the first person to discover dinosaur remains in general, not the first person to discover M. carinatus remains specifically. Choice C is incorrect. The sentence only partially explains the significance of the 1990 discovery, noting that it suggests Indigenous people brought dinosaur remains to the cave in 1100 CE; it doesn’t explain the discovery’s significance to Plot’s reputation. Choice D is incorrect. While the sentence does emphasize that the discovery challenged Plot’s reputation, it misrepresents information in the notes. The notes don’t indicate that the 1990 discovery cast any doubt on Plot’s claims to have found fossilized dinosaur bones; rather, the discovery challenged Plot’s reputation for being the first to discover dinosaur bones."
+    "explanation": "Choice B is the best answer. Noting that the evidence suggests Indigenous peoples may have found dinosaur remains in 1100 CE, the sentence emphasizes how the 1990 discovery challenged Plot’s reputation as the first person to discover dinosaur remains.\n\nChoice A is incorrect. While the sentence does emphasize that Benoit challenged Plot’s reputation, it misrepresents information in the notes; Plot was reputed to be the first person to discover dinosaur remains in general, not the first person to discover M. carinatus remains specifically. Choice C is incorrect. The sentence only partially explains the significance of the 1990 discovery, noting that it suggests Indigenous people brought dinosaur remains to the cave in 1100 CE; it doesn’t explain the discovery’s significance to Plot’s reputation. Choice D is incorrect. While the sentence does emphasize that the discovery challenged Plot’s reputation, it misrepresents information in the notes. The notes don’t indicate that the 1990 discovery cast any doubt on Plot’s claims to have found fossilized dinosaur bones; rather, the discovery challenged Plot’s reputation for being the first to discover dinosaur bones.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "3fa48bf3"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "d94990a0",
@@ -748,7 +1020,13 @@ const questionBank_EOI = [
       "D. Conversely,"
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. \"There\" indicates that the work of calculating Coordinated Universal Time takes place at the International Bureau of Weights and Measures in France. Because \"there\" indicates a location, it fits the context perfectly.\n\nChoice B is incorrect. This choice uses an exemplification transition, which doesn’t make sense here. This sentence is describing where the work of coordinating Coordinated Universal Time takes place, not giving an example of the work described in the previous sentence. Choice C is incorrect. This choice uses an exemplification transition, which doesn’t make sense here. This sentence is describing where the work of coordinating Coordinated Universal Time takes place, not giving an example of the work described in the previous sentence. Choice D is incorrect. This choice uses a disagreement transition. But this sentence doesn’t disagree with the previous sentence. They both describe the work involved in calculating Coordinated Universal Time."
+    "explanation": "Choice A is the best answer. \"There\" indicates that the work of calculating Coordinated Universal Time takes place at the International Bureau of Weights and Measures in France. Because \"there\" indicates a location, it fits the context perfectly.\n\nChoice B is incorrect. This choice uses an exemplification transition, which doesn’t make sense here. This sentence is describing where the work of coordinating Coordinated Universal Time takes place, not giving an example of the work described in the previous sentence. Choice C is incorrect. This choice uses an exemplification transition, which doesn’t make sense here. This sentence is describing where the work of coordinating Coordinated Universal Time takes place, not giving an example of the work described in the previous sentence. Choice D is incorrect. This choice uses a disagreement transition. But this sentence doesn’t disagree with the previous sentence. They both describe the work involved in calculating Coordinated Universal Time.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "388b45aa"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "82a40951",
@@ -763,7 +1041,13 @@ const questionBank_EOI = [
       "D. consequently,"
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. “Ultimately” means “in the long run” or “at the highest level.” Although Bolívar wrote to a local merchant, his ultimate goal was to send a message to political leaders in Europe. Therefore, “ultimately” fits perfectly in this context.\n\nChoice A is incorrect. This choice uses a transition that indicates the addition of an agreeing idea. However, the second part of the sentence actually disagrees with the first part. Bolívar addressed the letter to Cullen, but he was really sending a message to someone else. Notice how the contrast word “though” also acts as a transition between these ideas. Choice C is incorrect. This choice uses a cause-and-effect transition. Bolívar’s writing of the letter to Cullen would not cause him to have a goal of persuading European powers to support him. Choice D is incorrect. This choice uses a cause-and-effect transition. Bolívar’s writing of the letter to Cullen would not cause him to have a goal of persuading European powers to support him."
+    "explanation": "Choice B is the best answer. “Ultimately” means “in the long run” or “at the highest level.” Although Bolívar wrote to a local merchant, his ultimate goal was to send a message to political leaders in Europe. Therefore, “ultimately” fits perfectly in this context.\n\nChoice A is incorrect. This choice uses a transition that indicates the addition of an agreeing idea. However, the second part of the sentence actually disagrees with the first part. Bolívar addressed the letter to Cullen, but he was really sending a message to someone else. Notice how the contrast word “though” also acts as a transition between these ideas. Choice C is incorrect. This choice uses a cause-and-effect transition. Bolívar’s writing of the letter to Cullen would not cause him to have a goal of persuading European powers to support him. Choice D is incorrect. This choice uses a cause-and-effect transition. Bolívar’s writing of the letter to Cullen would not cause him to have a goal of persuading European powers to support him.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "00221c00"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "9eff0920",
@@ -778,7 +1062,13 @@ const questionBank_EOI = [
       "D. Knowledge has been one of the central themes of the A:shiwi A:wan Museum and Heritage Center from its founding."
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. This choice effectively uses information from the notes to emphasize how long the museum has existed. It says that the museum has existed since 1992.\n\nChoice A is incorrect. This choice doesn’t emphasize how long the museum has existed. It doesn’t say when the museum was founded. Choice C is incorrect. This choice doesn’t emphasize how long the museum has existed. It doesn’t say the exact date of the museum’s founding. Rather, it emphasizes the museum’s mission. Choice D is incorrect. This choice doesn’t emphasize how long the museum has existed. It doesn’t say when the museum was founded."
+    "explanation": "Choice B is the best answer. This choice effectively uses information from the notes to emphasize how long the museum has existed. It says that the museum has existed since 1992.\n\nChoice A is incorrect. This choice doesn’t emphasize how long the museum has existed. It doesn’t say when the museum was founded. Choice C is incorrect. This choice doesn’t emphasize how long the museum has existed. It doesn’t say the exact date of the museum’s founding. Rather, it emphasizes the museum’s mission. Choice D is incorrect. This choice doesn’t emphasize how long the museum has existed. It doesn’t say when the museum was founded.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "ed80971c"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "814aa8bf",
@@ -793,7 +1083,13 @@ const questionBank_EOI = [
       "D. Exoplanet names have diverse origins, a fact that can be seen in the cases of Phobetor, a name drawn from Greek mythology, and Mastika, which means “gem” or “jewel” in Malay."
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. The sentence makes and supports a generalization about exoplanets, noting that the names of exoplanets have diverse origins and supporting this with the examples of the origins of \"Phobetor\" and \"Mastika.\"\n\nChoice A is incorrect. The sentence misrepresents information from the notes, implying that there are multiple exoplanets with the same names. Additionally, the sentence provides no support for its generalization. Choice B is incorrect. The sentence contrasts the masses of two specific exoplanets; it doesn’t make and support a generalization about exoplanets. Choice C is incorrect. The sentence makes and supports a generalization about stars, not exoplanets."
+    "explanation": "Choice D is the best answer. The sentence makes and supports a generalization about exoplanets, noting that the names of exoplanets have diverse origins and supporting this with the examples of the origins of \"Phobetor\" and \"Mastika.\"\n\nChoice A is incorrect. The sentence misrepresents information from the notes, implying that there are multiple exoplanets with the same names. Additionally, the sentence provides no support for its generalization. Choice B is incorrect. The sentence contrasts the masses of two specific exoplanets; it doesn’t make and support a generalization about exoplanets. Choice C is incorrect. The sentence makes and supports a generalization about stars, not exoplanets.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "b0620764"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "dd5ab42d",
@@ -808,7 +1104,13 @@ const questionBank_EOI = [
       "D. As analyzed by Bhosale’s team, bird nests are uniquely flexible yet cohesive engineered structures."
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. It describes the reason Bhosale’s team wanted to study the structures of bird nests — that is to say, the study’s primary aim.\n\nChoice B is incorrect. This choice doesn’t present the primary aim of the research study. It describes how the study worked, but not why it was’ done. Choice C is incorrect. This choice doesn’t present the primary aim of the research study. It describes a result of the experiment, but not why it was carried out. Choice D is incorrect. This choice doesn’t present the primary aim of the research study."
+    "explanation": "Choice A is the best answer. It describes the reason Bhosale’s team wanted to study the structures of bird nests — that is to say, the study’s primary aim.\n\nChoice B is incorrect. This choice doesn’t present the primary aim of the research study. It describes how the study worked, but not why it was’ done. Choice C is incorrect. This choice doesn’t present the primary aim of the research study. It describes a result of the experiment, but not why it was carried out. Choice D is incorrect. This choice doesn’t present the primary aim of the research study.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "afec1a70"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "a4030a18",
@@ -823,7 +1125,13 @@ const questionBank_EOI = [
       "D. Accordingly,"
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. \"Accordingly\" logically signals that the information in this sentence — that the voting members awarded Banda Cuisillos the Best Banda Album award — is in accordance with, or results from, the previous information about the voters being impressed by Banda Cuisillos’s album.\n\nChoice A is incorrect because \"in contrast\" illogically signals that the information in this sentence contrasts with the previous information about voting members being impressed by Banda Cuisillos’s album. Instead, the voters decision to give the group the Best Banda Album award is in accordance with, or results from, that information. Choice B is incorrect because \"meanwhile\" illogically signals that the information in this sentence is separate from (while occurring simultaneously with) the previous information about the voting members being impressed by Banda Cuisillos’s album. Instead, the voters decision to give the group the Best Banda Album award is in accordance with, or results from, that information. Choice C is incorrect because \"nevertheless\" illogically signals that the information that follows is despite the information about the voting members being impressed by Banda Cuisillos’s album. Instead, the voters decision to give the group the Best Banda Album award is in accordance with, or results from, that information."
+    "explanation": "Choice D is the best answer. \"Accordingly\" logically signals that the information in this sentence — that the voting members awarded Banda Cuisillos the Best Banda Album award — is in accordance with, or results from, the previous information about the voters being impressed by Banda Cuisillos’s album.\n\nChoice A is incorrect because \"in contrast\" illogically signals that the information in this sentence contrasts with the previous information about voting members being impressed by Banda Cuisillos’s album. Instead, the voters decision to give the group the Best Banda Album award is in accordance with, or results from, that information. Choice B is incorrect because \"meanwhile\" illogically signals that the information in this sentence is separate from (while occurring simultaneously with) the previous information about the voting members being impressed by Banda Cuisillos’s album. Instead, the voters decision to give the group the Best Banda Album award is in accordance with, or results from, that information. Choice C is incorrect because \"nevertheless\" illogically signals that the information that follows is despite the information about the voting members being impressed by Banda Cuisillos’s album. Instead, the voters decision to give the group the Best Banda Album award is in accordance with, or results from, that information.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "3fd0ab63"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "b6c72ae9",
@@ -838,7 +1146,13 @@ const questionBank_EOI = [
       "D. As Camille Jazmin Gaynus knows well, coral reefs are vital underwater ecosystems, providing homes to thousands of species of fish."
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. We’re asked to select the sentence that \"introduce[s] the scientist and her field of study.\" This choice introduces scientist Camille Jazmin Gaynus as a marine biologist and explains what marine life she studies.\n\nChoice A is incorrect. This choice doesn’t mention Camille Jazmin Gaynus, so it fails to \"introduce the scientist.\" Choice C is incorrect. This choice doesn’t mention Camille Jazmin Gaynus, so it fails to \"introduce the scientist.\" Choice D is incorrect. This choice mentions Camille Jazmin Gaynus, but it doesn’t identify her as a marine biologist. It says she \"knows well\" about coral reefs, but doesn’t identify her expertise as a \"field of study.\""
+    "explanation": "Choice B is the best answer. We’re asked to select the sentence that \"introduce[s] the scientist and her field of study.\" This choice introduces scientist Camille Jazmin Gaynus as a marine biologist and explains what marine life she studies.\n\nChoice A is incorrect. This choice doesn’t mention Camille Jazmin Gaynus, so it fails to \"introduce the scientist.\" Choice C is incorrect. This choice doesn’t mention Camille Jazmin Gaynus, so it fails to \"introduce the scientist.\" Choice D is incorrect. This choice mentions Camille Jazmin Gaynus, but it doesn’t identify her as a marine biologist. It says she \"knows well\" about coral reefs, but doesn’t identify her expertise as a \"field of study.\"",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "8432a140"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "3584cb21",
@@ -853,7 +1167,13 @@ const questionBank_EOI = [
       "D. In 2012, Video Game High School premiered on RocketJump; it would later be nominated for an award."
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. This choice introduces Wong and VGHS in an active and specific way, as if to an audience unfamiliar with the series. It also sets up the time and genre of the web series, which are useful ways to introduce the series of events in a narrative.\n\nChoice B is incorrect. This choice isn’t suited for beginning a narrative. A narrative is a story that follows a sequence of events and creates interest and suspense for the reader. This choice jumps to the end, explaining the success of VGHS without explaining what it is. Choice C is incorrect. This choice isn’t suited for beginning a narrative. It doesn’t actually introduce the web series by name. It just jumps to later in the story without sufficient explanation. Choice D is incorrect. This choice is not very effective for beginning a narrative. It doesn’t explain what VGHS is, and it doesn’t mention Wong."
+    "explanation": "Choice A is the best answer. This choice introduces Wong and VGHS in an active and specific way, as if to an audience unfamiliar with the series. It also sets up the time and genre of the web series, which are useful ways to introduce the series of events in a narrative.\n\nChoice B is incorrect. This choice isn’t suited for beginning a narrative. A narrative is a story that follows a sequence of events and creates interest and suspense for the reader. This choice jumps to the end, explaining the success of VGHS without explaining what it is. Choice C is incorrect. This choice isn’t suited for beginning a narrative. It doesn’t actually introduce the web series by name. It just jumps to later in the story without sufficient explanation. Choice D is incorrect. This choice is not very effective for beginning a narrative. It doesn’t explain what VGHS is, and it doesn’t mention Wong.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "af88c47a"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "6ab314a3",
@@ -868,7 +1188,13 @@ const questionBank_EOI = [
       "D. A starburst galaxy will lose star-forming gas and eventually become quenched."
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. This choice defines a quenched galaxy as “one that no longer forms stars.”\n\nChoice A is incorrect. This choice only describes what happens before quenching. Choice B is incorrect. This choice only describes what happens after quenching. Choice D is incorrect. This choice only describes what causes quenching."
+    "explanation": "Choice C is the best answer. This choice defines a quenched galaxy as “one that no longer forms stars.”\n\nChoice A is incorrect. This choice only describes what happens before quenching. Choice B is incorrect. This choice only describes what happens after quenching. Choice D is incorrect. This choice only describes what causes quenching.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "db3ad406"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "010700f7",
@@ -883,7 +1209,13 @@ const questionBank_EOI = [
       "D. Mary Caswell Stoddard led a research study that determined the average lengths of eggs, including those of Gygis alba birds (4.46 cm) and Gavia stellata birds (7.22 cm)."
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. The sentence emphasizes a difference between the eggs of the two species, directly contrasting the shorter average length of Gygis alba eggs (4.46 cm) with the longer average length of Gavia stellata eggs (7.22 cm).\n\nChoice A is incorrect. While the sentence mentions both bird species, it doesn’t emphasize a difference between their eggs. Choice C is incorrect. While the sentence provides information about the two bird species, it doesn’t emphasize a difference between their eggs. Choice D is incorrect. While the sentence provides the average lengths of both species’ eggs, it doesn’t explicitly emphasize the difference between them."
+    "explanation": "Choice B is the best answer. The sentence emphasizes a difference between the eggs of the two species, directly contrasting the shorter average length of Gygis alba eggs (4.46 cm) with the longer average length of Gavia stellata eggs (7.22 cm).\n\nChoice A is incorrect. While the sentence mentions both bird species, it doesn’t emphasize a difference between their eggs. Choice C is incorrect. While the sentence provides information about the two bird species, it doesn’t emphasize a difference between their eggs. Choice D is incorrect. While the sentence provides the average lengths of both species’ eggs, it doesn’t explicitly emphasize the difference between them.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "61c0f7b3"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "be1e6beb",
@@ -898,7 +1230,13 @@ const questionBank_EOI = [
       "D. Many African American women, including Bates and Hedgeman, fought for civil rights, but only one spoke at the march."
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. The sentence compares the two women’s contributions to the march: Hedgeman worked behind the scenes to make sure a woman speaker was included, whereas Bates actually spoke at the event.\n\nChoice A is incorrect. While it acknowledges that the two women both contributed to the march, it doesn’t indicate what Hedgeman did, so no comparison is made. Choice B is incorrect. While the sentence provides information about the two women, it doesn’t mention anything about Bates’s contribution to the march. Choice D is incorrect. While the sentence indicates that the two women both fought for civil rights, it doesn’t compare their individual contributions to the march."
+    "explanation": "Choice C is the best answer. The sentence compares the two women’s contributions to the march: Hedgeman worked behind the scenes to make sure a woman speaker was included, whereas Bates actually spoke at the event.\n\nChoice A is incorrect. While it acknowledges that the two women both contributed to the march, it doesn’t indicate what Hedgeman did, so no comparison is made. Choice B is incorrect. While the sentence provides information about the two women, it doesn’t mention anything about Bates’s contribution to the march. Choice D is incorrect. While the sentence indicates that the two women both fought for civil rights, it doesn’t compare their individual contributions to the march.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "c34d6bff"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "0db6a123",
@@ -913,7 +1251,13 @@ const questionBank_EOI = [
       "D. Tubbs completed Erasure in 2008 and Home Grown in 2009."
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. This choice most effectively emphasizes \"a similarity\" by identifying a trait the works share: \"both Erasure and Home Grown include discarded objects.\"\n\nChoice A is incorrect. This choice doesn’t \"emphasize a similarity.\" Instead, this choice shows how the materials used in the two works are different. Notice the use of the contrast word \"however.\" Choice B is incorrect. This choice doesn’t \"emphasize a similarity between the two works.\" While it says that Tubbs’s work \"often features discarded objects,\" it doesn’t provide details about the two works in question. Choice D is incorrect. This choice doesn’t \"emphasize a similarity.\" Instead, this choice shows how the works were produced at different times."
+    "explanation": "Choice C is the best answer. This choice most effectively emphasizes \"a similarity\" by identifying a trait the works share: \"both Erasure and Home Grown include discarded objects.\"\n\nChoice A is incorrect. This choice doesn’t \"emphasize a similarity.\" Instead, this choice shows how the materials used in the two works are different. Notice the use of the contrast word \"however.\" Choice B is incorrect. This choice doesn’t \"emphasize a similarity between the two works.\" While it says that Tubbs’s work \"often features discarded objects,\" it doesn’t provide details about the two works in question. Choice D is incorrect. This choice doesn’t \"emphasize a similarity.\" Instead, this choice shows how the works were produced at different times.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "92dec236"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "9c8b4e82",
@@ -928,7 +1272,13 @@ const questionBank_EOI = [
       "D. The House of Wisdom collected writings from different countries and created paper versions in Arabic to be studied and shared."
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. The sentence explains how the House of Wisdom preserved the world’s knowledge, noting that the library collected, translated, and printed writings from different countries.\n\nChoice A is incorrect. While the sentence indicates that the House of Wisdom was known for bringing together knowledge from around the world, it doesn’t explain how the library preserved this knowledge. Choice B is incorrect. The sentence makes a generalization about the scholars who were employed by the House of Wisdom; it doesn’t explain how the library preserved the world’s knowledge. Choice C is incorrect. The sentence identifies two authors whose writings were preserved at the House of Wisdom; it doesn’t explain how the library preserved the world’s knowledge."
+    "explanation": "Choice D is the best answer. The sentence explains how the House of Wisdom preserved the world’s knowledge, noting that the library collected, translated, and printed writings from different countries.\n\nChoice A is incorrect. While the sentence indicates that the House of Wisdom was known for bringing together knowledge from around the world, it doesn’t explain how the library preserved this knowledge. Choice B is incorrect. The sentence makes a generalization about the scholars who were employed by the House of Wisdom; it doesn’t explain how the library preserved the world’s knowledge. Choice C is incorrect. The sentence identifies two authors whose writings were preserved at the House of Wisdom; it doesn’t explain how the library preserved the world’s knowledge.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "8fe4f4ab"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "0cc66f5e",
@@ -943,7 +1293,13 @@ const questionBank_EOI = [
       "D. As a result,"
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. “Granted” logically signals that the following information — that iconicity is not as highly correlated with acquisition as sign frequency — is true in spite of the information about the correlation between iconicity and acquisition in the previous sentence.\n\nChoice A is incorrect because “in fact” illogically signals that the sentence that follows either emphasizes or refutes the information in the previous sentence regarding the correlation between iconicity and acquisition. Instead, the sentence that follows provides additional information that is true in spite of the preceding information; it neither emphasizes nor refutes that information. Choice B is incorrect because “in other words” illogically signals that the sentence that follows is a restatement of the information in the previous sentence; instead, the sentence that follows provides additional information that is true in spite of the preceding information. Choice D is incorrect because “as a result” illogically signals that the sentence that follows is a result of the information in the previous sentence regarding the correlation between iconicity and acquisition; instead, the sentence that follows is true in spite of the preceding information."
+    "explanation": "Choice C is the best answer. “Granted” logically signals that the following information — that iconicity is not as highly correlated with acquisition as sign frequency — is true in spite of the information about the correlation between iconicity and acquisition in the previous sentence.\n\nChoice A is incorrect because “in fact” illogically signals that the sentence that follows either emphasizes or refutes the information in the previous sentence regarding the correlation between iconicity and acquisition. Instead, the sentence that follows provides additional information that is true in spite of the preceding information; it neither emphasizes nor refutes that information. Choice B is incorrect because “in other words” illogically signals that the sentence that follows is a restatement of the information in the previous sentence; instead, the sentence that follows provides additional information that is true in spite of the preceding information. Choice D is incorrect because “as a result” illogically signals that the sentence that follows is a result of the information in the previous sentence regarding the correlation between iconicity and acquisition; instead, the sentence that follows is true in spite of the preceding information.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "176edca6"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "f1a5da54",
@@ -958,7 +1314,13 @@ const questionBank_EOI = [
       "D. Conversely,"
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. \"What’s more\" logically signals that this sentence introduces an additional aspect of Wadud’s poem beyond what was previously discussed. While the previous sentence establishes that Adnan’s painting has inspired \"the poem’s exploration of temporality and identity,\" this sentence provides a separate, additional claim about the poem: that it reflects on poetry’s relationship to other art forms.\n\nChoice A is incorrect because \"in other words\" illogically signals that the information in this sentence is a paraphrase or restatement of the previous point about how Adnan’s painting has inspired \"the poem’s exploration of temporality and identity.\" Instead, the sentence provides a separate, additional claim about the poem. Choice B is incorrect because \"for instance\" illogically signals that the information in this sentence supports the previous point about \"the poem’s exploration of temporality and identity\" by providing an example. Instead, the sentence provides a separate, additional claim about the poem. Choice D is incorrect because \"conversely\" illogically signals that the information in this sentence is contrary to the previous point about how Adnan’s painting has inspired \"the poem’s exploration of temporality and identity.\" Instead, the sentence provides a separate, additional claim about the poem."
+    "explanation": "Choice C is the best answer. \"What’s more\" logically signals that this sentence introduces an additional aspect of Wadud’s poem beyond what was previously discussed. While the previous sentence establishes that Adnan’s painting has inspired \"the poem’s exploration of temporality and identity,\" this sentence provides a separate, additional claim about the poem: that it reflects on poetry’s relationship to other art forms.\n\nChoice A is incorrect because \"in other words\" illogically signals that the information in this sentence is a paraphrase or restatement of the previous point about how Adnan’s painting has inspired \"the poem’s exploration of temporality and identity.\" Instead, the sentence provides a separate, additional claim about the poem. Choice B is incorrect because \"for instance\" illogically signals that the information in this sentence supports the previous point about \"the poem’s exploration of temporality and identity\" by providing an example. Instead, the sentence provides a separate, additional claim about the poem. Choice D is incorrect because \"conversely\" illogically signals that the information in this sentence is contrary to the previous point about how Adnan’s painting has inspired \"the poem’s exploration of temporality and identity.\" Instead, the sentence provides a separate, additional claim about the poem.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "7ce14583"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "332ee132",
@@ -973,7 +1335,13 @@ const questionBank_EOI = [
       "D. and Catherine T. MacArthur Foundation’s “genius grants.”"
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. The sentence effectively describes the rocking chair to an audience unfamiliar with Sam Maloof, noting its sleek, contoured armrests and seat and explaining that Sam Maloof (the walnut chair’s creator) was an American woodworker.\n\nChoice B is incorrect. While the sentence explains who Sam Maloof was and mentions a chair, it doesn’t describe the chair. Choice C is incorrect. While the sentence explains who Sam Maloof was, it doesn’t describe the rocking chair. Choice D is incorrect. While the sentence describes the rocking chair, it doesn’t explain who Sam Maloof was."
+    "explanation": "Choice A is the best answer. The sentence effectively describes the rocking chair to an audience unfamiliar with Sam Maloof, noting its sleek, contoured armrests and seat and explaining that Sam Maloof (the walnut chair’s creator) was an American woodworker.\n\nChoice B is incorrect. While the sentence explains who Sam Maloof was and mentions a chair, it doesn’t describe the chair. Choice C is incorrect. While the sentence explains who Sam Maloof was, it doesn’t describe the rocking chair. Choice D is incorrect. While the sentence describes the rocking chair, it doesn’t explain who Sam Maloof was.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "48d0bb34"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "ebdb4c1d",
@@ -988,7 +1356,13 @@ const questionBank_EOI = [
       "D. Instead,"
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. “Fittingly” is a transition that means “appropriately” “or” suitably, and it is appropriate that writers who adopted their style from Okot p Bitek would be known as the Okot School poets.\n\nChoice A is incorrect. This choice uses a disagreement transition. But this sentence is not disagreeing with anything — rather, it’s discussing how it makes sense for those writers who adopted Okot’s style to be known as the Okot School poets. Choice C is incorrect. This choice uses a transition that compares two ideas. But this sentence is not comparing the Okot School poets and their style to Okot’s style. Choice D is incorrect. This choice uses a disagreement transition. But this sentence is not disagreeing with anything — rather, it’s discussing how it makes’ sense for those writers who adopted Okot’s style to be known as the Okot School poets."
+    "explanation": "Choice B is the best answer. “Fittingly” is a transition that means “appropriately” “or” suitably, and it is appropriate that writers who adopted their style from Okot p Bitek would be known as the Okot School poets.\n\nChoice A is incorrect. This choice uses a disagreement transition. But this sentence is not disagreeing with anything — rather, it’s discussing how it makes sense for those writers who adopted Okot’s style to be known as the Okot School poets. Choice C is incorrect. This choice uses a transition that compares two ideas. But this sentence is not comparing the Okot School poets and their style to Okot’s style. Choice D is incorrect. This choice uses a disagreement transition. But this sentence is not disagreeing with anything — rather, it’s discussing how it makes’ sense for those writers who adopted Okot’s style to be known as the Okot School poets.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "97e2e364"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "037b899b",
@@ -1003,7 +1377,13 @@ const questionBank_EOI = [
       "D. Many animals can make ascorbic acid, which is also known as vitamin C, in their bodies, but humans cannot."
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. The sentence provides an example of a fruit that contains vitamin C, noting that vitamin C (also known as ascorbic acid) can be found in pineapple as well as other fruits.\n\nChoice A is incorrect. While the sentence does explain that humans can get vitamin C from fruits, it doesn’t provide an example of a specific fruit that contains vitamin C. Choice C is incorrect. The sentence explains why humans must get vitamin C from foods; it doesn’t provide an example of a fruit that contains vitamin C. Choice D is incorrect. The sentence compares vitamin C production in animals with vitamin C production in humans; it doesn’t provide an example of a fruit that contains vitamin C."
+    "explanation": "Choice B is the best answer. The sentence provides an example of a fruit that contains vitamin C, noting that vitamin C (also known as ascorbic acid) can be found in pineapple as well as other fruits.\n\nChoice A is incorrect. While the sentence does explain that humans can get vitamin C from fruits, it doesn’t provide an example of a specific fruit that contains vitamin C. Choice C is incorrect. The sentence explains why humans must get vitamin C from foods; it doesn’t provide an example of a fruit that contains vitamin C. Choice D is incorrect. The sentence compares vitamin C production in animals with vitamin C production in humans; it doesn’t provide an example of a fruit that contains vitamin C.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "3c925481"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "bbe0c83e",
@@ -1018,7 +1398,13 @@ const questionBank_EOI = [
       "D. Hence,"
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. \"Likewise\" is a transition that indicates the addition of a new but related idea. In this sentence, the author is providing another similar example to that discussed in the previous sentence. Therefore, \"likewise\" works best in this context.\n\nChoice A is incorrect. This choice uses a transition that means \"admittedly.\" But the text isn’t admitting or conceding anything here. Instead, these two examples work together to support the claim made in the first sentence. Choice B is incorrect. This choice uses an exemplification transition, which doesn’t make sense here. The second story is not an example of the story in the previous sentence —’ it’s another, similar story. And while both stories exemplify the first sentence in the text, the transition we’re looking for isn’t actually connected to that sentence. Choice D is incorrect. This choice uses a cause-and-effect transition, which doesn’t make sense here. The first story didn’t result in the events of the second story."
+    "explanation": "Choice C is the best answer. \"Likewise\" is a transition that indicates the addition of a new but related idea. In this sentence, the author is providing another similar example to that discussed in the previous sentence. Therefore, \"likewise\" works best in this context.\n\nChoice A is incorrect. This choice uses a transition that means \"admittedly.\" But the text isn’t admitting or conceding anything here. Instead, these two examples work together to support the claim made in the first sentence. Choice B is incorrect. This choice uses an exemplification transition, which doesn’t make sense here. The second story is not an example of the story in the previous sentence —’ it’s another, similar story. And while both stories exemplify the first sentence in the text, the transition we’re looking for isn’t actually connected to that sentence. Choice D is incorrect. This choice uses a cause-and-effect transition, which doesn’t make sense here. The first story didn’t result in the events of the second story.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "30438650"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "a5fc475f",
@@ -1033,7 +1419,13 @@ const questionBank_EOI = [
       "D. Wool is an economically important fiber — especially in Australia —that can be used to make apparel or even rugs and blankets."
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. This choice most effectively emphasizes how Romney wool differs from Merino and Rambouillet wool. It describes’ the difference in thickness and the difference in what they’re used for.\n Choice A is incorrect. This choice doesn’t emphasize how Romney wool differs from Merino and Rambouillet wool. It doesn’t mention Merino or Rambouillet wool at all. Choice B is incorrect. This choice doesn’t emphasize how Romney wool differs from Merino and Rambouillet wool. It doesn’t mention Merino or Rambouillet wool at all. Choice D is incorrect. This choice doesn’t emphasize how Romney wool differs from Merino and Rambouillet wool. It doesn’t mention Romney, Merino or Rambouillet wool at all."
+    "explanation": "Choice C is the best answer. This choice most effectively emphasizes how Romney wool differs from Merino and Rambouillet wool. It describes’ the difference in thickness and the difference in what they’re used for.\n Choice A is incorrect. This choice doesn’t emphasize how Romney wool differs from Merino and Rambouillet wool. It doesn’t mention Merino or Rambouillet wool at all. Choice B is incorrect. This choice doesn’t emphasize how Romney wool differs from Merino and Rambouillet wool. It doesn’t mention Merino or Rambouillet wool at all. Choice D is incorrect. This choice doesn’t emphasize how Romney wool differs from Merino and Rambouillet wool. It doesn’t mention Romney, Merino or Rambouillet wool at all.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "1b94a80a"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "df4ccc47",
@@ -1048,7 +1440,13 @@ const questionBank_EOI = [
       "D. A mushroom rock is a rock formation that owes its shape to the wind, a natural force associated with Aeolus in Greek mythology."
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. The sentence provides an explanation and an example of Aeolian landforms, explaining that they are landforms created by wind and offering the mushroom rock as an example.\n\nChoice A is incorrect. The sentence explains that Aeolian landforms are created by wind but does not provide an example of any specific Aeolian landforms. Rather, the example it provides is of a wind-based process. Choice C is incorrect. While the sentence provides a partial explanation of Aeolian landforms, noting that they are created by the wind, it does not effectively provide an example. The sentence seems to indicate that mushroom rocks, rather than being an example of Aeolian landforms, are distinct from them. Choice D is incorrect. While the sentence provides’ an explanation of a mushroom rock, which is a specific example of an Aeolian landform, it doesn’t provide an explanation of Aeolian landforms in general."
+    "explanation": "Choice B is the best answer. The sentence provides an explanation and an example of Aeolian landforms, explaining that they are landforms created by wind and offering the mushroom rock as an example.\n\nChoice A is incorrect. The sentence explains that Aeolian landforms are created by wind but does not provide an example of any specific Aeolian landforms. Rather, the example it provides is of a wind-based process. Choice C is incorrect. While the sentence provides a partial explanation of Aeolian landforms, noting that they are created by the wind, it does not effectively provide an example. The sentence seems to indicate that mushroom rocks, rather than being an example of Aeolian landforms, are distinct from them. Choice D is incorrect. While the sentence provides’ an explanation of a mushroom rock, which is a specific example of an Aeolian landform, it doesn’t provide an explanation of Aeolian landforms in general.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "34e1124f"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "1fcc4e8c",
@@ -1063,7 +1461,13 @@ const questionBank_EOI = [
       "D. similarly,"
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. This sentence compares a chiral molecule to an achiral one. It discusses how when a chiral molecule is flipped, it results in something very different than when an achiral molecule is flipped. So the transition \"by contrast\" fits the context perfectly.\n\nChoice A is incorrect. This choice uses a transition that indicates a restatement of the same idea in different words. But this sentence doesn’t’ restate the same idea as the previous sentence. Instead, it makes a new point about a different type of molecule (chiral instead of achiral). Choice C is incorrect. This choice uses a transition that introduces an example, which doesn’t make sense here. The second sentence isn’t an’ example of the first sentence’s claim about achiral molecules: it actually introduces an entirely different idea that focuses on chiral molecules. Choice D is incorrect. This choice uses a transition that indicates the addition of an agreeing idea. But this sentence shows a contrast with the first sentence — namely, that a chiral molecule acts very differently from an achiral molecule when flipped."
+    "explanation": "Choice B is the best answer. This sentence compares a chiral molecule to an achiral one. It discusses how when a chiral molecule is flipped, it results in something very different than when an achiral molecule is flipped. So the transition \"by contrast\" fits the context perfectly.\n\nChoice A is incorrect. This choice uses a transition that indicates a restatement of the same idea in different words. But this sentence doesn’t’ restate the same idea as the previous sentence. Instead, it makes a new point about a different type of molecule (chiral instead of achiral). Choice C is incorrect. This choice uses a transition that introduces an example, which doesn’t make sense here. The second sentence isn’t an’ example of the first sentence’s claim about achiral molecules: it actually introduces an entirely different idea that focuses on chiral molecules. Choice D is incorrect. This choice uses a transition that indicates the addition of an agreeing idea. But this sentence shows a contrast with the first sentence — namely, that a chiral molecule acts very differently from an achiral molecule when flipped.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "11df9b99"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "8dcc0b25",
@@ -1078,7 +1482,13 @@ const questionBank_EOI = [
       "D. In 1975, the NCAI passed the Indian Self-Determination and Education Assistance Act, which was created to protect the sovereignty of Indigenous tribes."
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. The sentence directly identifies an accomplishment of the NCAI: that its advocacy was key to the passing of Public Law 96-638, which formally acknowledged Indigenous tribes’ right to self-governance.\n\nChoice A is incorrect. The sentence provides information about the NCAI’s founding and its first president, but it doesn’t identify an accomplishment of the organization. Choice B is incorrect. The sentence describes the NCAI’s founding, but it doesn’t identify an accomplishment of the organization. Choice D is incorrect. The sentence misrepresents the information in the notes: the US Congress, not the NCAI, passed the Indian Self-Determination and Education Assistance Act."
+    "explanation": "Choice C is the best answer. The sentence directly identifies an accomplishment of the NCAI: that its advocacy was key to the passing of Public Law 96-638, which formally acknowledged Indigenous tribes’ right to self-governance.\n\nChoice A is incorrect. The sentence provides information about the NCAI’s founding and its first president, but it doesn’t identify an accomplishment of the organization. Choice B is incorrect. The sentence describes the NCAI’s founding, but it doesn’t identify an accomplishment of the organization. Choice D is incorrect. The sentence misrepresents the information in the notes: the US Congress, not the NCAI, passed the Indian Self-Determination and Education Assistance Act.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "87d34a39"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "2d452923",
@@ -1093,7 +1503,13 @@ const questionBank_EOI = [
       "D. While the Kepler Challenge is a one-day ultramarathon, the Spreelauf is a six-day ultramarathon."
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. This is the only choice that makes a generalization about ultramarathons.\n\nChoice A is incorrect. This choice gives specific examples of ultramarathons but doesn’t say anything about them as a category. Choice B is incorrect. This choice compares marathons in general to one specific ultramarathon but doesn’t say anything about ultramarathons as a category. Choice D is incorrect. This choice contrasts two specific ultramarathons but doesn’t say anything about them as a category."
+    "explanation": "Choice C is the best answer. This is the only choice that makes a generalization about ultramarathons.\n\nChoice A is incorrect. This choice gives specific examples of ultramarathons but doesn’t say anything about them as a category. Choice B is incorrect. This choice compares marathons in general to one specific ultramarathon but doesn’t say anything about ultramarathons as a category. Choice D is incorrect. This choice contrasts two specific ultramarathons but doesn’t say anything about them as a category.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "81315093"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "47325c98",
@@ -1108,7 +1524,13 @@ const questionBank_EOI = [
       "D. That is,"
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. “That is” logically signals that this sentence clarifies the terms of the scientific debate introduced in the previous sentence by explaining the difference between dispersalists and vicariancists.\n\nChoice A is incorrect because “furthermore” illogically signals that the information in this sentence is merely additional to (and separate from) the information in the previous sentence about the scientific debate. Instead, the information about dispersalists and vicariancists clarifies the terms of that debate. Choice B is incorrect because “by contrast” illogically signals that the information in this sentence contrasts with the information in the previous sentence about the scientific debate. Instead, the information about dispersalists and vicariancists clarifies the terms of that debate. Choice C is incorrect because “similarly” illogically signals that the information in this sentence is merely similar to the information in the previous sentence about the scientific debate. Instead, the information about dispersalists and vicariancists clarifies the terms of that debate."
+    "explanation": "Choice D is the best answer. “That is” logically signals that this sentence clarifies the terms of the scientific debate introduced in the previous sentence by explaining the difference between dispersalists and vicariancists.\n\nChoice A is incorrect because “furthermore” illogically signals that the information in this sentence is merely additional to (and separate from) the information in the previous sentence about the scientific debate. Instead, the information about dispersalists and vicariancists clarifies the terms of that debate. Choice B is incorrect because “by contrast” illogically signals that the information in this sentence contrasts with the information in the previous sentence about the scientific debate. Instead, the information about dispersalists and vicariancists clarifies the terms of that debate. Choice C is incorrect because “similarly” illogically signals that the information in this sentence is merely similar to the information in the previous sentence about the scientific debate. Instead, the information about dispersalists and vicariancists clarifies the terms of that debate.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "e3edc138"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "a475bccb",
@@ -1123,7 +1545,13 @@ const questionBank_EOI = [
       "D. A leporello, such as Adnan’s December from My Window, is folded accordion style, and due to its zigzag shape it is able to stand on its own when fully expanded."
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. This choice describes Adnan’s December from My Window in a way that assumes the audience is already familiar with leporellos and focuses on the specific features of the work — its content and medium.\n Choice A is incorrect. This choice isn’t suited for an audience already familiar with leporellos. A familiar audience wouldn’t need to have the term defined or explained. Choice C is incorrect. This choice doesn’t describe Adnan’s December from My Window. It mentions the year and the type of work but not the content or the medium. In addition, it provides a simple definition of leporellos, making this an inappropriate choice for an audience already familiar with leporellos. Choice D is incorrect. This choice isn’t suited for an audience already familiar with leporellos. A familiar audience wouldn’t need to have the term defined."
+    "explanation": "Choice B is the best answer. This choice describes Adnan’s December from My Window in a way that assumes the audience is already familiar with leporellos and focuses on the specific features of the work — its content and medium.\n Choice A is incorrect. This choice isn’t suited for an audience already familiar with leporellos. A familiar audience wouldn’t need to have the term defined or explained. Choice C is incorrect. This choice doesn’t describe Adnan’s December from My Window. It mentions the year and the type of work but not the content or the medium. In addition, it provides a simple definition of leporellos, making this an inappropriate choice for an audience already familiar with leporellos. Choice D is incorrect. This choice isn’t suited for an audience already familiar with leporellos. A familiar audience wouldn’t need to have the term defined.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "1469d23a"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "3b00185b",
@@ -1138,7 +1566,13 @@ const questionBank_EOI = [
       "D. The SEBS rubber sample used in the 2019 study was thicker than the TPU sample."
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. The sentence contrasts the two samples, noting that the SEBS rubber sample, at 4 millimeters thick, was thicker than the TPU sample, which was 3 millimeters thick.\n\nChoice A is incorrect because the sentence mentions a similarity between the TPU fiber and the SEBS rubber; it doesn’t contrast the two samples. Choice B is incorrect because the sentence indicates that both the SEBS rubber and TPU samples were part of the 2019 study; it doesn’t contrast the two samples. Choice C is incorrect because the sentence describes the process of torsional heating; it doesn’t contrast the two samples."
+    "explanation": "Choice D is the best answer. The sentence contrasts the two samples, noting that the SEBS rubber sample, at 4 millimeters thick, was thicker than the TPU sample, which was 3 millimeters thick.\n\nChoice A is incorrect because the sentence mentions a similarity between the TPU fiber and the SEBS rubber; it doesn’t contrast the two samples. Choice B is incorrect because the sentence indicates that both the SEBS rubber and TPU samples were part of the 2019 study; it doesn’t contrast the two samples. Choice C is incorrect because the sentence describes the process of torsional heating; it doesn’t contrast the two samples.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "25755def"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "2b8d7931",
@@ -1153,7 +1587,13 @@ const questionBank_EOI = [
       "D. Before moving to Harlem, Claude McKay — — author of the poetry collection Harlem Shadows (1922) and the novel Home to Harlem (1928) lived in Jamaica."
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. This choice contrasts McKay’s fame as a Harlem Renaissance writer with his earlier achievements as a Jamaican poet, and it names the two collections he published before moving to Harlem.\n Choice A is incorrect. This choice doesn’t emphasize McKay’s accomplishments before moving to Harlem. It lists some of his works but doesn’t distinguish between those he wrote in Jamaica and those he wrote in Harlem. Choice C is incorrect. This choice doesn’t emphasize McKay’s accomplishments before moving to Harlem. It only mentions the year he moved and what he would become known for afterwards. Choice D is incorrect. This choice doesn’t emphasize McKay’s accomplishments before moving to Harlem. It mentions that he lived in Jamaica, but it doesn’t name any of the works he published there."
+    "explanation": "Choice B is the best answer. This choice contrasts McKay’s fame as a Harlem Renaissance writer with his earlier achievements as a Jamaican poet, and it names the two collections he published before moving to Harlem.\n Choice A is incorrect. This choice doesn’t emphasize McKay’s accomplishments before moving to Harlem. It lists some of his works but doesn’t distinguish between those he wrote in Jamaica and those he wrote in Harlem. Choice C is incorrect. This choice doesn’t emphasize McKay’s accomplishments before moving to Harlem. It only mentions the year he moved and what he would become known for afterwards. Choice D is incorrect. This choice doesn’t emphasize McKay’s accomplishments before moving to Harlem. It mentions that he lived in Jamaica, but it doesn’t name any of the works he published there.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "164a32e7"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "6b02deb3",
@@ -1168,7 +1608,13 @@ const questionBank_EOI = [
       "D. The populations of the capitals of Mongolia and Vietnam are 907,802 (Ulaanbaatar) and 7,781,631 (Hanoi), respectively."
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. The sentence emphasizes the relative sizes of the capital cities’ populations, noting that even though Hanoi has more people overall, Ulaanbaatar accounts for a larger percentage of the people in its country.\n\nChoice A is incorrect. While the sentence indicates the population size of each capital, it fails to emphasize their sizes relative to each other or to their countries’ overall population sizes. Choice B is incorrect. The sentence emphasizes the population sizes of the two countries; it fails to mention the capitals. Choice D is incorrect. While the sentence indicates the population size of each capital, it fails to emphasize their sizes relative to each other or to their countries’ overall population sizes."
+    "explanation": "Choice C is the best answer. The sentence emphasizes the relative sizes of the capital cities’ populations, noting that even though Hanoi has more people overall, Ulaanbaatar accounts for a larger percentage of the people in its country.\n\nChoice A is incorrect. While the sentence indicates the population size of each capital, it fails to emphasize their sizes relative to each other or to their countries’ overall population sizes. Choice B is incorrect. The sentence emphasizes the population sizes of the two countries; it fails to mention the capitals. Choice D is incorrect. While the sentence indicates the population size of each capital, it fails to emphasize their sizes relative to each other or to their countries’ overall population sizes.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "5fa51c86"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "8c4106fc",
@@ -1183,7 +1629,13 @@ const questionBank_EOI = [
       "D. For instance,"
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. “As a result” indicates that water molecules maintaining their linked structure at high pressures is caused by the strengthening of these water molecules by trimethylamine N-oxide. So the transition “as a result” fits the context perfectly.\n\nChoice A is incorrect. This choice uses a disagreement transition. But this sentence doesn’t disagree with the previous one — rather, it’s describing an effect of the phenomenon described in the previous sentence. Choice C is incorrect. This choice uses a disagreement transition. But this’ sentence doesn’t disagree with the previous one; it actually expands on the previous sentence by describing an effect of the strengthened molecules. Choice D is incorrect. This choice uses an exemplification transition, which doesn’t make sense here. The second sentence doesn’t provide an example or instance of the idea in the previous sentence. Instead, it explores the effects of the previous idea in more depth."
+    "explanation": "Choice B is the best answer. “As a result” indicates that water molecules maintaining their linked structure at high pressures is caused by the strengthening of these water molecules by trimethylamine N-oxide. So the transition “as a result” fits the context perfectly.\n\nChoice A is incorrect. This choice uses a disagreement transition. But this sentence doesn’t disagree with the previous one — rather, it’s describing an effect of the phenomenon described in the previous sentence. Choice C is incorrect. This choice uses a disagreement transition. But this’ sentence doesn’t disagree with the previous one; it actually expands on the previous sentence by describing an effect of the strengthened molecules. Choice D is incorrect. This choice uses an exemplification transition, which doesn’t make sense here. The second sentence doesn’t provide an example or instance of the idea in the previous sentence. Instead, it explores the effects of the previous idea in more depth.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "0c13dea9"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "db1676cd",
@@ -1198,7 +1650,13 @@ const questionBank_EOI = [
       "D. The melon, a species of fruit, has twenty-four structures called chromosomes."
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. The sentence directly specifies how many chromosomes the pineapple has, as indicated in the notes: fifty.\n\nChoice A is incorrect. While the sentence mentions the pineapple’s chromosomes, it doesn’t specify how many it has. Choice C is incorrect. The sentence indicates that the pineapple has more chromosomes than the melon; it doesn’t specify the exact number of chromosomes the pineapple has. Choice D is incorrect. The sentence specifies how many chromosomes the melon has, not how many the pineapple has."
+    "explanation": "Choice B is the best answer. The sentence directly specifies how many chromosomes the pineapple has, as indicated in the notes: fifty.\n\nChoice A is incorrect. While the sentence mentions the pineapple’s chromosomes, it doesn’t specify how many it has. Choice C is incorrect. The sentence indicates that the pineapple has more chromosomes than the melon; it doesn’t specify the exact number of chromosomes the pineapple has. Choice D is incorrect. The sentence specifies how many chromosomes the melon has, not how many the pineapple has.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "0778b4ac"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "2a805347",
@@ -1213,7 +1671,13 @@ const questionBank_EOI = [
       "D. Uros Island is an LED light sculpture made by Grimanesa Amoros, as is Fortuna."
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. The sentence emphasizes a similarity between the sculptures, noting that both Uros Island and Fortuna are LED light sculptures created by Grimanesa Amoros.\n Choice A is incorrect. Noting that Uros Island’s smooth LED domes contrast with Fortuna’s tangled LED tubes, the sentence emphasizes a difference between the two sculptures rather than a similarity. Choice B is incorrect. Contrasting the respective sizes of Uros Island and Fortuna, the sentence emphasizes a difference between the two sculptures rather than a similarity. Choice C is incorrect. While the sentence describes’ Uros Island, it doesn’t mention Fortuna or emphasize any similarity between the two sculptures."
+    "explanation": "Choice D is the best answer. The sentence emphasizes a similarity between the sculptures, noting that both Uros Island and Fortuna are LED light sculptures created by Grimanesa Amoros.\n Choice A is incorrect. Noting that Uros Island’s smooth LED domes contrast with Fortuna’s tangled LED tubes, the sentence emphasizes a difference between the two sculptures rather than a similarity. Choice B is incorrect. Contrasting the respective sizes of Uros Island and Fortuna, the sentence emphasizes a difference between the two sculptures rather than a similarity. Choice C is incorrect. While the sentence describes’ Uros Island, it doesn’t mention Fortuna or emphasize any similarity between the two sculptures.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "7298633c"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "2cb60d28",
@@ -1228,7 +1692,13 @@ const questionBank_EOI = [
       "D. The name of the online archive Hina Hanta means “bright path” in Choctaw."
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. The sentence specifies the fanner basket’s name in Choctaw, noting that it’s called ufko tapushik.\n\nChoice A is incorrect. While the sentence mentions the fanner basket, it doesn’t specify its name in Choctaw. Choice C is incorrect. While the sentence mentions the fanner basket, it doesn’t specify its name in Choctaw. Choice D is incorrect. The sentence doesn’t mention the fanner basket or specify its name in Choctaw."
+    "explanation": "Choice B is the best answer. The sentence specifies the fanner basket’s name in Choctaw, noting that it’s called ufko tapushik.\n\nChoice A is incorrect. While the sentence mentions the fanner basket, it doesn’t specify its name in Choctaw. Choice C is incorrect. While the sentence mentions the fanner basket, it doesn’t specify its name in Choctaw. Choice D is incorrect. The sentence doesn’t mention the fanner basket or specify its name in Choctaw.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "31ac4d2c"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "9875301d",
@@ -1243,7 +1713,13 @@ const questionBank_EOI = [
       "D. Las Meninas’s depiction of the artist with King Philip IV symbolizes art’s historical ties to power."
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. The sentence presents historical analysis to an audience unfamiliar with the concept by defining it as an approach to art criticism that considers the historical context in which a work was created.\n\nChoice A is incorrect because it provides an example of texture analysis; it doesn’t present historical analysis to an audience unfamiliar with the concept. Choice B is incorrect. The sentence explains a difference between texture analysis and historical analysis; it doesn’t present historical analysis to an audience unfamiliar with the concept. Choice D is incorrect. It provides an example of historical analysis; it doesn’t present historical analysis to an audience unfamiliar with the concept."
+    "explanation": "Choice C is the best answer. The sentence presents historical analysis to an audience unfamiliar with the concept by defining it as an approach to art criticism that considers the historical context in which a work was created.\n\nChoice A is incorrect because it provides an example of texture analysis; it doesn’t present historical analysis to an audience unfamiliar with the concept. Choice B is incorrect. The sentence explains a difference between texture analysis and historical analysis; it doesn’t present historical analysis to an audience unfamiliar with the concept. Choice D is incorrect. It provides an example of historical analysis; it doesn’t present historical analysis to an audience unfamiliar with the concept.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "85c0c0f0"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "1f3a1fd3",
@@ -1258,7 +1734,13 @@ const questionBank_EOI = [
       "D. Before the eleventh century, the ancient Greek philosopher Aristotle supported the intromission theory, which held that objects emit a form of radiation that reaches the eyes."
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. The sentence provides a historical overview of the two theories, noting that scholars were divided between them before Ibn al-Haytham’s experiments supporting intromission largely settled the debate in the eleventh century.\n\nChoice B is incorrect. While the sentence identifies the two theories and the scholars that supported them, it doesn’t provide a historical overview of the theories. Choice C is incorrect. While the sentence indicates Aristotle supported intromission theory centuries before Ibn al-Haytham settled the debate, it doesn’t mention extramission theory or provide a historical overview of both theories. Choice D is incorrect. The sentence provides information about intromission theory but doesn’t mention extramission theory or provide a historical overview of both theories."
+    "explanation": "Choice A is the best answer. The sentence provides a historical overview of the two theories, noting that scholars were divided between them before Ibn al-Haytham’s experiments supporting intromission largely settled the debate in the eleventh century.\n\nChoice B is incorrect. While the sentence identifies the two theories and the scholars that supported them, it doesn’t provide a historical overview of the theories. Choice C is incorrect. While the sentence indicates Aristotle supported intromission theory centuries before Ibn al-Haytham settled the debate, it doesn’t mention extramission theory or provide a historical overview of both theories. Choice D is incorrect. The sentence provides information about intromission theory but doesn’t mention extramission theory or provide a historical overview of both theories.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "964c6055"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "bd36d75d",
@@ -1273,7 +1755,13 @@ const questionBank_EOI = [
       "D. though,"
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. \"Though\" logically signals that the information in this sentence — that volcanologists can distinguish the two volcanoes by how they were formed — presents a qualification or exception to the previous statement that the volcanoes look similar. The volcanoes are actually of two different types.\n\nChoice A is incorrect because \"for example\" illogically signals that the information in this sentence exemplifies the previous information about the volcanoes looking similar. Instead, the sentence presents a qualification to that apparent similarity —the volcanoes are actually of two different types. Choice B is incorrect because \"in addition\" illogically signals that the information in this sentence merely adds to the previous information about the volcanoes looking similar. Instead, the sentence presents a qualification to that apparent similarity — the volcanoes are actually of two different types. Choice C is incorrect because \"therefore\" illogically signals that the information in this sentence is a result of the previous information about the volcanoes looking similar. Instead, the sentence presents a qualification to that apparent similarity —the volcanoes are actually of two different types."
+    "explanation": "Choice D is the best answer. \"Though\" logically signals that the information in this sentence — that volcanologists can distinguish the two volcanoes by how they were formed — presents a qualification or exception to the previous statement that the volcanoes look similar. The volcanoes are actually of two different types.\n\nChoice A is incorrect because \"for example\" illogically signals that the information in this sentence exemplifies the previous information about the volcanoes looking similar. Instead, the sentence presents a qualification to that apparent similarity —the volcanoes are actually of two different types. Choice B is incorrect because \"in addition\" illogically signals that the information in this sentence merely adds to the previous information about the volcanoes looking similar. Instead, the sentence presents a qualification to that apparent similarity — the volcanoes are actually of two different types. Choice C is incorrect because \"therefore\" illogically signals that the information in this sentence is a result of the previous information about the volcanoes looking similar. Instead, the sentence presents a qualification to that apparent similarity —the volcanoes are actually of two different types.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "f8c4591b"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "08090f12",
@@ -1288,7 +1776,13 @@ const questionBank_EOI = [
       "D. by contrast,"
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. This sentence compares two examples of Posey’s tone: the heartfelt language he used in his poetry versus the “humor and satire” he used in his journalism. We know from these descriptions and from the claim in the previous sentence that the two tones are very different from each other. So the transition “by contrast” fits the context perfectly.\n\nChoice A is incorrect. This choice uses a transition that indicates a restatement of the same idea in other words. But the text isn’t restating the first example here. Instead, it’s offering a second, totally different example. Choice B is incorrect. This choice uses a transition that means “admittedly.” But the text isn’t admitting or conceding anything here. Instead, these two examples work together to support the claim made in the first sentence. Choice C is incorrect. This choice uses a transition that indicates the addition of an agreeing idea. But these two examples are intentionally very different from each other, so “similarly” doesn’t make sense here."
+    "explanation": "Choice D is the best answer. This sentence compares two examples of Posey’s tone: the heartfelt language he used in his poetry versus the “humor and satire” he used in his journalism. We know from these descriptions and from the claim in the previous sentence that the two tones are very different from each other. So the transition “by contrast” fits the context perfectly.\n\nChoice A is incorrect. This choice uses a transition that indicates a restatement of the same idea in other words. But the text isn’t restating the first example here. Instead, it’s offering a second, totally different example. Choice B is incorrect. This choice uses a transition that means “admittedly.” But the text isn’t admitting or conceding anything here. Instead, these two examples work together to support the claim made in the first sentence. Choice C is incorrect. This choice uses a transition that indicates the addition of an agreeing idea. But these two examples are intentionally very different from each other, so “similarly” doesn’t make sense here.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "221ecf0f"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "499c10c0",
@@ -1303,7 +1797,13 @@ const questionBank_EOI = [
       "D. In Unwoven Light, a 2013 work by Korean American artist Soo Sunny Park, light formed colorful prisms as it passed through a fence Park had fitted with iridescent tiles."
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. The sentence effectively describes Unwoven Light to an audience unfamiliar with Park, noting that Soo Sunny Park is a Korean American artist and that the 2013 work consists of colorful prisms formed by light passing through iridescent tiles.\n Choice A is incorrect. The sentence describes aspects of Unwoven Light but doesn’t mention who Park is; it thus doesn’t effectively describe the work to an audience unfamiliar with Park. Choice B is incorrect. Although the sentence indicates when the work was created and who Park is, it lacks descriptive details and thus doesn’t effectively describe Unwoven Light. Choice C is incorrect. The sentence mentions Park and describes an aspect of Unwoven Light — — the chain-link fence but doesn’t effectively describe the overall work to an audience unfamiliar with the artist."
+    "explanation": "Choice D is the best answer. The sentence effectively describes Unwoven Light to an audience unfamiliar with Park, noting that Soo Sunny Park is a Korean American artist and that the 2013 work consists of colorful prisms formed by light passing through iridescent tiles.\n Choice A is incorrect. The sentence describes aspects of Unwoven Light but doesn’t mention who Park is; it thus doesn’t effectively describe the work to an audience unfamiliar with Park. Choice B is incorrect. Although the sentence indicates when the work was created and who Park is, it lacks descriptive details and thus doesn’t effectively describe Unwoven Light. Choice C is incorrect. The sentence mentions Park and describes an aspect of Unwoven Light — — the chain-link fence but doesn’t effectively describe the overall work to an audience unfamiliar with the artist.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "58281fc4"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "d8594b7f",
@@ -1318,7 +1818,13 @@ const questionBank_EOI = [
       "D. that is,"
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. \"That is\" logically signals that the information that follows in the sentence clarifies a term used in the previous’ discussion of the researchers findings: cognate replacement.\n\nChoice A is incorrect because \"for example\" illogically signals that the information that follows in the sentence provides a specific example of the research findings described earlier. Instead, it clarifies a term introduced earlier in the sentence. Choice B is incorrect because \"likewise\" illogically signals that the information that follows in the sentence is similar to the previous information about the researchers findings. Instead, it clarifies a term introduced earlier in the sentence. Choice C is incorrect because \"in addition\" illogically signals that the information that follows’ in the sentence merely adds to the previous information about the researchers findings. Instead, it clarifies a term introduced earlier in the sentence."
+    "explanation": "Choice D is the best answer. \"That is\" logically signals that the information that follows in the sentence clarifies a term used in the previous’ discussion of the researchers findings: cognate replacement.\n\nChoice A is incorrect because \"for example\" illogically signals that the information that follows in the sentence provides a specific example of the research findings described earlier. Instead, it clarifies a term introduced earlier in the sentence. Choice B is incorrect because \"likewise\" illogically signals that the information that follows in the sentence is similar to the previous information about the researchers findings. Instead, it clarifies a term introduced earlier in the sentence. Choice C is incorrect because \"in addition\" illogically signals that the information that follows’ in the sentence merely adds to the previous information about the researchers findings. Instead, it clarifies a term introduced earlier in the sentence.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "7c3f0145"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "bcc61492",
@@ -1333,7 +1839,13 @@ const questionBank_EOI = [
       "D. Nissologists different definitions can result in huge disparities in counts of islands, as the example of Sweden shows."
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. The sentence makes a generalization about nissologists definition of an island — specifically, that the use of one definition rather than another can result in huge disparities in the number of islands counted — and supports that generalization by citing Sweden as an example.\n\nChoice A is incorrect. The sentence introduces one definition of an island to an audience unfamiliar with nissologists; it doesn’t make a generalization about nissologists definition of an island. Choice B is incorrect. While the sentence synthesizes information from the notes about counts of Sweden’s islands, it doesn’t make and support a generalization about nissologists definition of an island. Choice C is incorrect. The sentence makes an inference about islands in Sweden; it doesn’t mention nissologists definition of an island or make a generalization about it."
+    "explanation": "Choice D is the best answer. The sentence makes a generalization about nissologists definition of an island — specifically, that the use of one definition rather than another can result in huge disparities in the number of islands counted — and supports that generalization by citing Sweden as an example.\n\nChoice A is incorrect. The sentence introduces one definition of an island to an audience unfamiliar with nissologists; it doesn’t make a generalization about nissologists definition of an island. Choice B is incorrect. While the sentence synthesizes information from the notes about counts of Sweden’s islands, it doesn’t make and support a generalization about nissologists definition of an island. Choice C is incorrect. The sentence makes an inference about islands in Sweden; it doesn’t mention nissologists definition of an island or make a generalization about it.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "3dcc7140"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "8c46294f",
@@ -1348,7 +1860,13 @@ const questionBank_EOI = [
       "D. likewise,"
     ],
     "answer": "B",
-    "explanation": "Choice B is the best answer. \"By contrast\" logically signals that the information about how Massey defined space — by focusing on socio-political forces— contrasts with the information in the previous clause, which discusses quantitative analytical approaches and spatial technologies.\n\nChoice A is incorrect because \"for example\" illogically signals that the information that follows in the sentence exemplifies the quantitative analytical approaches to defining space described previously. Instead, the information about Massey’s socio-political focus presents a contrasting approach. Choice C is incorrect because \"as such\" illogically signals that the information that follows in the sentence is a direct result or logical consequence of the quantitative analytical approaches to defining space described previously. Instead, the information about Massey’s socio-political focus presents a contrasting approach. Choice D is incorrect because \"likewise\" illogically signals that the information that follows in the sentence is similar to the quantitative analytical approaches to defining space described previously. Instead, the information about Massey’s socio-political focus presents a contrasting approach."
+    "explanation": "Choice B is the best answer. \"By contrast\" logically signals that the information about how Massey defined space — by focusing on socio-political forces— contrasts with the information in the previous clause, which discusses quantitative analytical approaches and spatial technologies.\n\nChoice A is incorrect because \"for example\" illogically signals that the information that follows in the sentence exemplifies the quantitative analytical approaches to defining space described previously. Instead, the information about Massey’s socio-political focus presents a contrasting approach. Choice C is incorrect because \"as such\" illogically signals that the information that follows in the sentence is a direct result or logical consequence of the quantitative analytical approaches to defining space described previously. Instead, the information about Massey’s socio-political focus presents a contrasting approach. Choice D is incorrect because \"likewise\" illogically signals that the information that follows in the sentence is similar to the quantitative analytical approaches to defining space described previously. Instead, the information about Massey’s socio-political focus presents a contrasting approach.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "edf30612"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "cad3065c",
@@ -1363,7 +1881,13 @@ const questionBank_EOI = [
       "D. In 1971, Cecilia Vicuña exhibited her first solo art exhibition, Pinturas, poemas y explicaciones, in Chile, her country of birth."
     ],
     "answer": "C",
-    "explanation": "Choice C is the best answer. The sentence effectively introduces the poetry collection Precario/Precarious, noting that it is a collection by Vicuña that was published in 1983 by Tanam Press.\n\nChoice A is incorrect. While the sentence mentions the 1983 poetry collection Precario/Precarious, it focuses mainly on Vicuña’s visual art. Choice B is incorrect. The sentence doesn’t introduce the 1983 poetry collection Precario/Precarious; instead, it introduces Vicuña. Choice D is incorrect. The sentence emphasizes the location of Vicuña’s 1971 exhibition Pinturas, poemas y explicaciones; it doesn’t introduce the 1983 \npoetry collection Precario/Precarious."
+    "explanation": "Choice C is the best answer. The sentence effectively introduces the poetry collection Precario/Precarious, noting that it is a collection by Vicuña that was published in 1983 by Tanam Press.\n\nChoice A is incorrect. While the sentence mentions the 1983 poetry collection Precario/Precarious, it focuses mainly on Vicuña’s visual art. Choice B is incorrect. The sentence doesn’t introduce the 1983 poetry collection Precario/Precarious; instead, it introduces Vicuña. Choice D is incorrect. The sentence emphasizes the location of Vicuña’s 1971 exhibition Pinturas, poemas y explicaciones; it doesn’t introduce the 1983 \npoetry collection Precario/Precarious.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "a1ca7ec4"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "28e6339e",
@@ -1378,7 +1902,13 @@ const questionBank_EOI = [
       "D. The Interesting Narrative of the Life of Olaudah Equiano and The Jungle are two works of literature that contributed to new legislation (concerning the slave trade and food safety, respectively)."
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. This choice emphasizes a difference between the two books by using relevant information from the notes to contrast their genres.\n\nChoice B is incorrect. This choice mentions a difference between the books (their different topics), but it emphasizes a similarity between the books (their influence on readers). Choice C is incorrect. This choice provides information about the books that reflects both a similarity (both resulted in new laws) and a difference (the specific laws that resulted), without emphasizing either. Choice D is incorrect. This choice doesn’t emphasize a difference between the two books. Instead, it emphasizes a similarity."
+    "explanation": "Choice A is the best answer. This choice emphasizes a difference between the two books by using relevant information from the notes to contrast their genres.\n\nChoice B is incorrect. This choice mentions a difference between the books (their different topics), but it emphasizes a similarity between the books (their influence on readers). Choice C is incorrect. This choice provides information about the books that reflects both a similarity (both resulted in new laws) and a difference (the specific laws that resulted), without emphasizing either. Choice D is incorrect. This choice doesn’t emphasize a difference between the two books. Instead, it emphasizes a similarity.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "6c9df5d1"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "c3b660af",
@@ -1393,7 +1923,13 @@ const questionBank_EOI = [
       "D. For instance,"
     ],
     "answer": "A",
-    "explanation": "Choice A is the best answer. \"By contrast\" logically signals that the information in this sentence — that isolating molybdenum was a relatively long process — contrasts with the previous information that isolating selenium was a short process.\n\nChoice B is incorrect because \"thus\" illogically signals that the information in this sentence is a result of the previous information about selenium’s short isolation process. Instead, the sentence presents contrasting information about molybdenum’s longer isolation process. Choice C is incorrect because \"similarly\" illogically signals that the information in this sentence is similar to the previous information about selenium’s short isolation process. Instead, the sentence presents contrasting information about molybdenum’s longer isolation process. Choice D is incorrect because \"for instance\" illogically signals that the information in this sentence exemplifies the previous information about selenium’s short isolation process. Instead, the sentence presents contrasting information about molybdenum’s longer isolation process."
+    "explanation": "Choice A is the best answer. \"By contrast\" logically signals that the information in this sentence — that isolating molybdenum was a relatively long process — contrasts with the previous information that isolating selenium was a short process.\n\nChoice B is incorrect because \"thus\" illogically signals that the information in this sentence is a result of the previous information about selenium’s short isolation process. Instead, the sentence presents contrasting information about molybdenum’s longer isolation process. Choice C is incorrect because \"similarly\" illogically signals that the information in this sentence is similar to the previous information about selenium’s short isolation process. Instead, the sentence presents contrasting information about molybdenum’s longer isolation process. Choice D is incorrect because \"for instance\" illogically signals that the information in this sentence exemplifies the previous information about selenium’s short isolation process. Instead, the sentence presents contrasting information about molybdenum’s longer isolation process.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "cf11282b"
+    ],
+    "psatDifficultyFrom": "native"
   },
   {
     "id": "21fb95d4",
@@ -1408,6 +1944,1651 @@ const questionBank_EOI = [
       "D. Additionally,"
     ],
     "answer": "D",
-    "explanation": "Choice D is the best answer. “Additionally” logically signals that the painting analysis discussed in this sentence is an additional part of the botany research discussed in the previous sentence. That is, to research which fruits Umbrians grew in the past, the botanist analyzes old paintings in addition to looking at old lists of ingredients.\n\nChoice A is incorrect because “in sum” illogically signals that the painting analysis discussed in this sentence is a concluding summary of the botany research discussed in the previous sentence. Instead, the painting analysis is an additional part of that research. Choice B is incorrect because “instead” illogically signals that the painting analysis discussed in this sentence is an alternative to the botany research discussed in the previous sentence. Rather, the painting analysis is an additional part of that research. Choice C is incorrect because “thus” illogically signals that the painting analysis discussed in this sentence is a result of the botany research discussed in the previous sentence. Instead, the painting analysis is an additional part of that research."
+    "explanation": "Choice D is the best answer. “Additionally” logically signals that the painting analysis discussed in this sentence is an additional part of the botany research discussed in the previous sentence. That is, to research which fruits Umbrians grew in the past, the botanist analyzes old paintings in addition to looking at old lists of ingredients.\n\nChoice A is incorrect because “in sum” illogically signals that the painting analysis discussed in this sentence is a concluding summary of the botany research discussed in the previous sentence. Instead, the painting analysis is an additional part of that research. Choice B is incorrect because “instead” illogically signals that the painting analysis discussed in this sentence is an alternative to the botany research discussed in the previous sentence. Rather, the painting analysis is an additional part of that research. Choice C is incorrect because “thus” illogically signals that the painting analysis discussed in this sentence is a result of the botany research discussed in the previous sentence. Instead, the painting analysis is an additional part of that research.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "39d1a519"
+    ],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "622a351d",
+    "skill": "Rhetorical Synthesis",
+    "difficulty": "Hard",
+    "passage": "While researching a topic, a student has taken the following notes: In 1978, Sámi activists staged protests to block the construction of a dam on the Alta River in Norway. The dam would disrupt Sámi fishing and reindeer herding. The dam was ultimately built, but the Alta conflict had a lasting impact. It brought international attention to the issue of Sámi rights. It led to a set of 2005 legal protections establishing Sámi rights to lands, waters, and resources.",
+    "question": "The student wants to make and support a generalization about the Alta conflict. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "A. During the Alta conflict, Sámi activists staged protests to block the construction of a dam on the Alta River in Norway that would disrupt local fishing and reindeer herding.",
+      "B. Although the dam that the Sámi activists had protested was ultimately built, the Alta conflict had a lasting impact.",
+      "C. Sámi rights to lands, waters, and resources received international attention and legal protections as a result of the Alta conflict.",
+      "D. The Alta conflict had a lasting impact, resulting in international attention and legal protections for Sámi rights to lands, waters, and resources."
+    ],
+    "answer": "D",
+    "explanation": "Strategy: Goal-First Filter\nWriting goal: “make and support a generalization about the Alta conflict.” Read this goal BEFORE the notes. Every answer must accomplish exactly this — nothing more, nothing less.\nTrap: Accurate But Off-Task — wrong answers may be factually correct but don’t serve the stated goal.\n────────────────────────────────────────\nChoice D is the best answer. It makes a generalization—the conflict had a lasting impact—and then supports it with evidence—the attention and protections were results of the conflict.\n\nChoice A is incorrect. This choice doesn’t make a generalization about the conflict. It describes a specific event from the conflict. Choice B is incorrect. This choice makes a generalization about the Alta conflict, but doesn’t support it. Choice C is incorrect. This choice makes a statement about the aftermath of the conflict, but doesn’t support it. The statement is also a little too specific to be a generalization.",
+    "strategy": "Goal-First Filter",
+    "trapName": "Wrong Goal · Accurate But Off-Task · Over-Inclusive",
+    "goalType": "Generalize",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [
+      "a94d75c0"
+    ],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "2df7b582",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "passage": "Plato believed material objects to be crude representations of unseen ideal forms. In his view, such abstract, nonmaterial forms are the ultimate source of knowledge. Aristotle disagreed, positing that knowledge is best obtained through direct engagement with the material world; ______ sensory experience of the material is the ultimate source of knowledge.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. regardless,",
+      "B. admittedly,",
+      "C. in other words,",
+      "D. meanwhile,"
+    ],
+    "answer": "C",
+    "explanation": "Strategy: Direction Check\nLogical relationship: Cause-Effect. Identify this BEFORE reading the options.\nCorrect category: Therefore / Thus / As a result / Consequently.\nTrap: Wrong Direction — eliminate any option pointing a different logical direction, even if it sounds formal or academic.\n────────────────────────────────────────\nChoice C is the best answer. “In other words” logically signals that the claim about sensory experience that follows—that sensory experience is the source of knowledge—is a restatement of Aristotle’s theory from earlier in the sentence.\n\nChoice A is incorrect because “regardless” illogically signals that the claim about sensory experience that follows is true in spite of Aristotle’s theory from earlier in the sentence. Instead, this claim is a restatement of his theory. Choice B is incorrect because “admittedly” illogically signals that the claim about sensory experience that follows is an exception to Aristotle’s theory from earlier in the sentence. Instead, this claim is a restatement of his theory. Choice D is incorrect because “meanwhile” illogically signals that the claim about sensory experience that follows is separate from (while occurring simultaneously with) Aristotle’s theory from earlier in the sentence. Instead, this claim is a restatement of his theory.",
+    "strategy": "Direction Check",
+    "trapName": "Wrong Direction · Formal Without Logic · Sequence vs. Contrast",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "f33f0892",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "passage": "Although novels and poems are considered distinct literary forms, many authors have created hybrid works that incorporate elements of both. Bernardine Evaristo’s The Emperor’s Babe, ______ is a verse novel, a book-length narrative complete with characters and a plot but conveyed in short, crisp lines of poetry rather than prose.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. by contrast,",
+      "B. consequently,",
+      "C. secondly,",
+      "D. for example,"
+    ],
+    "answer": "D",
+    "explanation": "Strategy: Direction Check\nLogical relationship: Contrast. Identify this BEFORE reading the options.\nCorrect category: However / In contrast / Nevertheless / Yet / On the other hand.\nTrap: Wrong Direction — eliminate any option pointing a different logical direction, even if it sounds formal or academic.\n────────────────────────────────────────\nChoice D is the best answer. “For example” logically signals that the information in this sentence—that The Emperor’s Babe is a novel conveyed in lines of poetry—exemplifies the claim in the previous sentence about hybrid works that incorporate elements of both novels and poems.\n\nChoice A is incorrect because “by contrast” illogically signals that the information in this sentence contrasts with the claim about hybrid works in the previous sentence. Instead, the information demonstrates that Evaristo’s novel is an example of a hybrid work. Choice B is incorrect because “consequently” illogically signals that the information in this sentence is a consequence, or result, of the claim about hybrid works in the previous sentence. Instead, the information demonstrates that Evaristo’s novel is an example of a hybrid work. Choice C is incorrect because “secondly” illogically signals that the information in this sentence is a second, separate claim from the previous sentence’s claim about hybrid works. Instead, the information demonstrates that Evaristo’s novel is an example of a hybrid work.",
+    "strategy": "Direction Check",
+    "trapName": "Wrong Direction · Formal Without Logic · Sequence vs. Contrast",
+    "origin": "cb-sat",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "c071eca2",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "passage": "Iraqi artist Nazik Al-Malaika, celebrated as the first Arabic poet to write in free verse, didn’t reject traditional forms entirely; her poem “Elegy for a Woman of No Importance” consists of two ten-line stanzas and a standard number of syllables. Even in this superficially traditional work, ______ Al-Malaika was breaking new ground by memorializing an anonymous woman rather than a famous man.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. therefore,",
+      "B. in fact,",
+      "C. moreover,",
+      "D. though,"
+    ],
+    "answer": "D",
+    "explanation": "Strategy: Direction Check\nLogical relationship: Contrast. Identify this BEFORE reading the options.\nCorrect category: However / In contrast / Nevertheless / Yet / On the other hand.\nTrap: Wrong Direction — eliminate any option pointing a different logical direction, even if it sounds formal or academic.\n────────────────────────────────────────\nChoice D is the best answer. The first sentence tells us that Al-Malaika sometimes used \"traditional forms\". The second tells us that even when she used traditional forms, Al-Malaika was \"breaking new ground\". To connect these ideas, we need a contrast word like \"but.\" \"Though\" is a contrast word similar to \"but.\"\n\nChoice A is incorrect. This isn’t a logical transition. The first sentence tells us that Al-Malaika sometimes used \"traditional forms\". The second tells us that even when she used traditional forms, Al-Malaika was \"breaking new ground\". To connect these ideas, we need a contrast word like \"but.\" \"Therefore\" doesn’t show contrast; it shows cause and effect. Choice B is incorrect. This isn’t a logical transition. The first sentence tells us that Al-Malaika sometimes used \"traditional forms\". The second tells us that even when she used traditional forms, Al-Malaika was \"breaking new ground\". To connect these ideas, we need a contrast word like \"but.\" \"In fact\" is a phrase that usually emphasizes the truth of the previous statement. Choice C is incorrect. This isn’t a logical transition. The first sentence tells us that Al-Malaika sometimes used \"traditional forms\". The second tells us that even when she used traditional forms, Al-Malaika was \"breaking new ground\". To connect these ideas, we need a contrast word like \"but.\" \"Moreover\" doesn’t show contrast—it introduces additional information that continues or supports the previous idea.",
+    "strategy": "Direction Check",
+    "trapName": "Wrong Direction · Formal Without Logic · Sequence vs. Contrast",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "5d3177aa",
+    "skill": "Rhetorical Synthesis",
+    "difficulty": "Medium",
+    "passage": "While researching a topic, a student has taken the following notes: In the early 1960s, the US had a strict national-origins quota system for immigrants. The number of new immigrants allowed from a country each year was based on how many people from that country lived in the US in 1890. This system favored immigrants from northern Europe. Almost 70% of slots were reserved for immigrants from Great Britain, Ireland, and Germany. The 1965 Hart-Celler Act abolished the national-origins quota system.",
+    "question": "The student wants to present the significance of the Hart-Celler Act to an audience unfamiliar with the history of US immigration. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "A. Almost 70% of slots were reserved for immigrants from Great Britain, Ireland, and Germany at the time the Hart-Celler Act was proposed.",
+      "B. Prior to the Hart-Celler Act, new immigration quotas were based on how many people from each country lived in the US in 1890.",
+      "C. The quota system in place in the early 1960s was abolished by the 1965 Hart-Celler Act.",
+      "D. The 1965 Hart-Celler Act abolished the national-origins quota system, which favored immigrants from northern Europe."
+    ],
+    "answer": "D",
+    "explanation": "Strategy: Goal-First Filter\nWriting goal: “present the significance of the Hart-Celler Act to an audience unfamiliar with the history of US immigration.” Read this goal BEFORE the notes. Every answer must accomplish exactly this — nothing more, nothing less.\nTrap: Wrong Goal — wrong answers use the notes accurately but accomplish a different writing purpose.\n────────────────────────────────────────\nChoice D is the best answer. The sentence presents the significance of the Hart-Celler Act to an audience unfamiliar with the history of US immigration, noting that the 1965 act abolished the national-origins quota system and explaining why that mattered, historically: because the old quota system had favored immigrants from northern Europe.\n\nChoice A is incorrect. The sentence describes an aspect of immigration policy at the time the Hart-Celler Act was proposed; it doesn’t present the significance of the Hart-Celler Act to an audience unfamiliar with the history of US immigration. Choice B is incorrect. The sentence describes an aspect of immigration policy before the Hart-Celler Act; it doesn’t describe or present the significance of the act to an audience unfamiliar with the history of US immigration. Choice C is incorrect. While the sentence indicates that the Hart-Celler Act abolished the old quota system, it doesn’t explain the act or the quota system to an audience unfamiliar with the history of US immigration.",
+    "strategy": "Goal-First Filter",
+    "trapName": "Wrong Goal · Accurate But Off-Task · Over-Inclusive",
+    "goalType": "Audience-Aware",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "fdd9a360",
+    "skill": "Rhetorical Synthesis",
+    "difficulty": "Hard",
+    "passage": "While researching a topic, a student has taken the following notes: The popular wood-wide web theory posits that trees can communicate and exchange resources with one another via common mycorrhizal networks (CMNs) of fungi. Ecologist Dr. Suzanne Simard first suggested this theory in 1997. She described trees as “super-cooperators.” In the 2022 study “The Decay of the Wood-Wide Web?,” mycologist Dr. Justine Karst and colleagues evaluated dozens of CMN studies. They write that CMNs “have captured the interest of broad audiences. We are concerned, however, that recent claims about CMNs in forests are disconnected from evidence.”",
+    "question": "The student wants to use a quotation to emphasize a potential problem with the wood-wide web theory. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "A. Describing trees as “super-cooperators,” Simard first suggested that trees can exchange resources with one another in 1997.",
+      "B. In “The Decay of the Wood-Wide Web?,” Karst and colleagues note that common mycorrhizal networks “have captured the interest of broad audiences.”",
+      "C. After evaluating dozens of CMN studies, Karst and colleagues expressed concern that recent claims about common mycorrhizal networks are “disconnected from evidence.”",
+      "D. Despite the concerns expressed in the 2022 study “The Decay of the Wood-Wide Web?,” the wood-wide web theory remains popular."
+    ],
+    "answer": "C",
+    "explanation": "Strategy: Goal-First Filter\nWriting goal: “use a quotation to emphasize a potential problem with the wood-wide web theory.” Read this goal BEFORE the notes. Every answer must accomplish exactly this — nothing more, nothing less.\nTrap: Wrong Goal — wrong answers use the notes accurately but accomplish a different writing purpose.\n────────────────────────────────────────\nChoice C is the best answer. This choice uses a quotation to convey the authors’ criticism and challenge to the wood-wide web theory due to an absence of evidence.\n\nChoice A is incorrect. This choice doesn’t emphasize a potential problem with the wood-wide web theory. It uses a quotation to introduce the theory and its originator. It doesn’t mention any criticism or challenge to the theory. Choice B is incorrect. This choice uses a quotation, but it doesn’t emphasize a potential problem with the wood-wide web theory. It uses a quotation to describe the appeal and interest of the theory, but it doesn’t indicate why the authors are concerned or what evidence they have. Choice D is incorrect. This choice doesn’t use a quotation at all. It paraphrases the main idea of the 2022 study, but it doesn’t include any specific words or phrases from the notes. It also doesn’t emphasize a potential problem with the theory, but rather its popularity.",
+    "strategy": "Goal-First Filter",
+    "trapName": "Wrong Goal · Accurate But Off-Task · Over-Inclusive",
+    "goalType": "Emphasize-Trait",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "ecb31049",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "passage": "The Sun and other stars are powered by nuclear fusion reactions, in which two atoms collide to form a single heavier atom, releasing energy. Scientists have long believed that fusion has the potential to meet humanity’s clean energy needs. ______ prior to December 2022, no fusion reaction in a laboratory setting had ever generated a net energy gain.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. For this reason,",
+      "B. Moreover,",
+      "C. Specifically,",
+      "D. That said,"
+    ],
+    "answer": "D",
+    "explanation": "Strategy: Direction Check\nLogical relationship: Contrast. Identify this BEFORE reading the options.\nCorrect category: However / In contrast / Nevertheless / Yet / On the other hand.\nTrap: Wrong Direction — eliminate any option pointing a different logical direction, even if it sounds formal or academic.\n────────────────────────────────────────\nChoice D is the best answer. Scientists believe in fusion’s potential as an energy source, but have struggled to actually make it work—in other words, there is a contradiction between scientists’ beliefs and their reality. “That said” is a disagreement transition that works perfectly in this context.\n\nChoice A is incorrect. This choice uses a cause-and-effect transition, which doesn’t make sense here. Scientists not being able to generate extra energy from lab fusion reactions isn’t an effect of them believing in fusion’s potential. Choice B is incorrect. This transition indicates the addition of another supporting point. But this sentence is not adding a supporting point to the previous sentence—scientists not being able to successfully generate energy from fusion isn’t another point in favor of fusion meeting humanity’s clean energy needs. Choice C is incorrect. This choice uses a transition that introduces or elaborates on a particular example. But this sentence doesn’t give an example of scientists’ belief in fusion’s potential to meet humanity’s clean energy needs—in fact, it contrasts that optimistic belief with the reality of past failures to successfully employ fusion for energy production.",
+    "strategy": "Direction Check",
+    "trapName": "Wrong Direction · Formal Without Logic · Sequence vs. Contrast",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "5a5e22b5",
+    "skill": "Rhetorical Synthesis",
+    "difficulty": "Medium",
+    "passage": "While researching a topic, a student has taken the following notes: Gravitational waves are powerful ripples that originate in deep space and eventually pass through Earth. The Laser Interferometer Gravitational Wave Observatory (LIGO) is a physics study that began in 2002. LIGO’s goal is to detect and analyze gravitational waves. LIGO uses a pair of massive gravitational wave detectors called interferometers that are thousands of miles apart. In 2015, for the first time in history, LIGO researchers detected a gravitational wave passing through Earth.",
+    "question": "The student wants to present LIGO’s aim and methodology. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "A. In 2015, LIGO’s massive interferometers detected a powerful ripple that originated in deep space and eventually passed through Earth.",
+      "B. Though the physics study LIGO began in 2002, its massive interferometers didn’t detect a gravitational wave until 2015.",
+      "C. To achieve its aims, LIGO uses a pair of massive interferometers that are thousands of miles apart.",
+      "D. A physics study designed to detect and analyze gravitational waves, LIGO uses a pair of massive interferometers that are thousands of miles apart."
+    ],
+    "answer": "D",
+    "explanation": "Strategy: Goal-First Filter\nWriting goal: “present LIGO’s aim and methodology.” Read this goal BEFORE the notes. Every answer must accomplish exactly this — nothing more, nothing less.\nTrap: Over-Inclusive — a wrong answer may include too much information, diluting the specific goal.\n────────────────────────────────────────\nChoice D is the best answer. The sentence effectively presents the LIGO study’s aim, noting that it is designed to detect and analyze gravitational waves, and its methodology (it uses two interferometers to detect the waves).\n\nChoice A is incorrect. The sentence describes a finding from the LIGO study; it doesn’t effectively present the study’s aim or its methodology. Choice B is incorrect. The sentence provides background information about the LIGO study’s timeline; it doesn’t effectively present the study’s aim or its methodology. Choice C is incorrect. The sentence touches on LIGO’s methodology, noting that it uses two interferometers, but doesn’t indicate what the study’s aims are.",
+    "strategy": "Goal-First Filter",
+    "trapName": "Wrong Goal · Accurate But Off-Task · Over-Inclusive",
+    "goalType": "Present-Study",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "5b8b69a2",
+    "skill": "Rhetorical Synthesis",
+    "difficulty": "Hard",
+    "passage": "While researching a topic, a student has taken the following notes: Archaeologist Jon Erlandson and colleagues argue that humans first arrived in the Americas by sea. They propose that humans traveled between Pacific Ocean islands and coastlines from northeast Asia to the Americas. Many of these islands and coastal zones were later submerged as glaciers melted and sea levels rose. The researchers think that “a coastal route, including kelp forests and estuaries, would have provided a rich mix of marine, estuarine, riverine, and terrestrial resources” such as seaweeds, fish, and birds. This proposed scenario is known as the kelp highway hypothesis.",
+    "question": "The student wants to summarize the kelp highway hypothesis. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "A. Pacific Ocean islands and coastlines likely contained “a rich mix of marine, estuarine, riverine, and terrestrial resources” such as seaweeds, fish, and birds, according to researchers.",
+      "B. One argument about how humans first arrived in the Americas is the kelp highway hypothesis proposed by Jon Erlandson and colleagues.",
+      "C. Humans may have first arrived in the Americas by sea, traveling between Pacific Ocean islands and coastlines and subsisting on a variety of resources.",
+      "D. As glaciers melted and sea levels rose, many Pacific Ocean islands and coastal zones were submerged."
+    ],
+    "answer": "C",
+    "explanation": "Strategy: Goal-First Filter\nWriting goal: “summarize the kelp highway hypothesis.” Read this goal BEFORE the notes. Every answer must accomplish exactly this — nothing more, nothing less.\nTrap: Over-Inclusive — a wrong answer may include too much information, diluting the specific goal.\n────────────────────────────────────────\nChoice C is the best answer. This choice summarizes the main idea of the kelp highway hypothesis, providing a high-level overview of how the hypothesis explains human migration to the Americas.\n\nChoice A is incorrect. This choice describes one aspect of the proposed scenario but doesn’t discuss human migration, which is the main focus of the kelp highway hypothesis. Choice B is incorrect. This choice introduces the kelp highway hypothesis but doesn’t explain what it entails. Choice D is incorrect. This choice describes one element of the proposed scenario but doesn’t discuss human migration, which is the main focus of the kelp highway hypothesis.",
+    "strategy": "Goal-First Filter",
+    "trapName": "Wrong Goal · Accurate But Off-Task · Over-Inclusive",
+    "goalType": "Present-Study",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "6e0c60da",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "passage": "When one looks at the dark craggy vistas in Hitoshi Fugo’s evocative photo series, one’s mind might wander off to the cratered surfaces of faraway planets. ______ it’s the series’ title, Flying Frying Pan, that brings one back to Earth, reminding the viewer that each photo is actually a close-up view of a familiar household object: a frying pan.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Consequently,",
+      "B. Alternatively,",
+      "C. Ultimately,",
+      "D. Additionally,"
+    ],
+    "answer": "C",
+    "explanation": "Strategy: Direction Check\nLogical relationship: Addition. Identify this BEFORE reading the options.\nCorrect category: Furthermore / Moreover / In addition / Also.\nTrap: Wrong Direction — eliminate any option pointing a different logical direction, even if it sounds formal or academic.\n────────────────────────────────────────\nChoice C is the best answer. The first sentence describes an experience that the viewer has when they’re looking at the photos: they imagine other planets. This sentence describes an experience that the viewer has afterward: the title reminds them that the photos are of frying pans, bringing them back to reality. “Ultimately” is a transition that means “eventually” or “in the end,” so it fits the context perfectly.\n\nChoice A is incorrect. This choice uses a cause-and-effect transition, which doesn’t make sense here. The viewer imagining other planets when they’re looking at the photos doesn’t cause the title to bring them back to reality. Choice B is incorrect. This choice uses a transition that indicates another option or possibility, which doesn’t make sense here. Rather, the viewer has both experiences: first the viewer imagines that they’re looking at another planet, and then the title reminds them that it’s just a frying pan. Choice D is incorrect. This choice uses a transition that indicates the addition of an agreeing idea. But the viewer’s experience in the second sentence is actually the opposite of the viewer’s experience in the first sentence. In the first sentence, the viewer is imagining that they’re seeing a landscape from another planet. In the second sentence, the viewer is reminded that they’re looking at a frying pan.",
+    "strategy": "Direction Check",
+    "trapName": "Wrong Direction · Formal Without Logic · Sequence vs. Contrast",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "17e49403",
+    "skill": "Transitions",
+    "difficulty": "Medium",
+    "passage": "When, in the 1800s, geologists first realized that much of Earth had once been covered by great sheets of ice, some theorized that the phenomenon was cyclical, occurring at regular intervals. Each Ice Age is so destructive, though, that it largely erases the geological evidence of its predecessor. ______ geologists were unable to confirm the theory of cyclical Ice Ages until the 1960s.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Hence,",
+      "B. Moreover,",
+      "C. Nevertheless,",
+      "D. Next,"
+    ],
+    "answer": "A",
+    "explanation": "Strategy: Direction Check\nLogical relationship: Addition. Identify this BEFORE reading the options.\nCorrect category: Furthermore / Moreover / In addition / Also.\nTrap: Wrong Direction — eliminate any option pointing a different logical direction, even if it sounds formal or academic.\n────────────────────────────────────────\nChoice A is the best answer. “Hence” logically signals that the information in this sentence—that geologists couldn’t confirm the theory of cyclical Ice Ages until the 1960s—is a consequence of the previous information about the destructiveness of each Ice Age and the erasure of necessary geological evidence.\n\nChoice B is incorrect because “moreover” illogically signals that the information in this sentence is merely additional to the previous information about the destructiveness of each Ice Age. Instead, the sentence identifies a specific consequence of that information. Choice C is incorrect because “nevertheless” illogically signals that the information in this sentence is true despite the previous information about the destructiveness of each Ice Age. Instead, the sentence identifies a specific consequence of that information. Choice D is incorrect because “next” illogically signals that the information in this sentence is the next step in a process. Instead, the sentence identifies a specific consequence of the previous information.",
+    "strategy": "Direction Check",
+    "trapName": "Wrong Direction · Formal Without Logic · Sequence vs. Contrast",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "9f1a0d91",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "passage": "“Tulip mania”—the rapid rise and sudden fall of the price of tulip bulbs in seventeenth-century Amsterdam—is often cited as an example of the perils of rampant market speculation. However, recent research has demonstrated that the episode was neither as frenzied nor as disastrous as has been thought. The popular myth surrounding it, ______ should be regarded with some skepticism.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. for example,",
+      "B. by contrast,",
+      "C. nevertheless,",
+      "D. therefore,"
+    ],
+    "answer": "D",
+    "explanation": "Strategy: Direction Check\nLogical relationship: Cause-Effect. Identify this BEFORE reading the options.\nCorrect category: Therefore / Thus / As a result / Consequently.\nTrap: Wrong Direction — eliminate any option pointing a different logical direction, even if it sounds formal or academic.\n────────────────────────────────────────\nChoice D is the best answer. This sentence is arguing that new evidence contradicting popular beliefs about “tulip mania” should cast doubt on those beliefs. “Therefore” is a cause-and-effect transition, which fits perfectly in this context.\n\nChoice A is incorrect. This choice uses an exemplification transition, which doesn’t make sense here. Skepticism about the popular beliefs is not an example of recent evidence contradicting those beliefs—rather, skepticism is an effect of that recent evidence. Choice B is incorrect. This choice uses a disagreement transition. But this sentence doesn’t disagree with the previous sentence. Instead, it connects a cause from the previous sentence (new evidence that tulip mania was not as disastrous as thought) to an effect (that we should look with skepticism upon the myth about its disastrousness). Choice C is incorrect. This choice uses a disagreement transition. But this sentence doesn’t disagree with the previous sentence. Instead, it connects a cause from the previous sentence (new evidence that tulip mania was not as disastrous as thought) to an effect (that we should look with skepticism upon the myth about its disastrousness).",
+    "strategy": "Direction Check",
+    "trapName": "Wrong Direction · Formal Without Logic · Sequence vs. Contrast",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "47e238be",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "passage": "Seismologists Kaiqing Yuan and Barbara Romanowicz have proposed that the magma fueling Iceland’s more than 30 active volcano systems emerges from deep within Earth. The great depths involved—nearly 3,000 km—mark Iceland’s volcanoes as extreme outliers; ______ many of Earth’s volcanoes are fed by shallow pockets of magma found less than 15 km below the surface.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. indeed,",
+      "B. nevertheless,",
+      "C. in addition,",
+      "D. consequently,"
+    ],
+    "answer": "A",
+    "explanation": "Strategy: Direction Check\nLogical relationship: Addition. Identify this BEFORE reading the options.\nCorrect category: Furthermore / Moreover / In addition / Also.\nTrap: Wrong Direction — eliminate any option pointing a different logical direction, even if it sounds formal or academic.\n────────────────────────────────────────\nChoice A is the best answer. The second part of the sentence says that many volcanoes use shallow pockets of magma. This is an elaboration of the same underlying idea from the first part of the sentence, which says that the super deep magma of Icelandic volcanoes’ makes them outliers. “Indeed” is a transition used for elaborating on the same idea, so it fits the context perfectly.\n\nChoice B is incorrect. This choice uses a disagreement transition. But these two parts of the sentence agree with each other, so “nevertheless” doesn’t make sense. Choice C is incorrect. This choice uses a transition that indicates the addition of a new idea. But the second part of the sentence isn’t adding a new idea: it’s elaborating on the same idea expressed in the first part of the sentence. Choice D is incorrect. This choice uses a cause-and-effect transition, which doesn’t make sense here. The fact that Iceland’s deep-magma volcanoes are outliers doesn’t cause many other volcanoes to get fed by shallow pockets of magma.",
+    "strategy": "Direction Check",
+    "trapName": "Wrong Direction · Formal Without Logic · Sequence vs. Contrast",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "a6155e60",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "passage": "Every chemical compound has a spectroscopic fingerprint, a pattern of reflected light unique to that compound. ______ upon analyzing the light reflected by the bright regions on the surface of the dwarf planet Ceres, Maria Cristina De Sanctis of Rome’s National Institute of Astrophysics was able to determine that the regions contain large amounts of the compound sodium carbonate.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Regardless,",
+      "B. Meanwhile,",
+      "C. Thus,",
+      "D. In comparison,"
+    ],
+    "answer": "C",
+    "explanation": "Strategy: Direction Check\nLogical relationship: Cause-Effect. Identify this BEFORE reading the options.\nCorrect category: Therefore / Thus / As a result / Consequently.\nTrap: Wrong Direction — eliminate any option pointing a different logical direction, even if it sounds formal or academic.\n────────────────────────────────────────\nChoice C is the best answer. “Thus” logically signals that the action described in this sentence—the researcher being able to determine the chemical makeup of the planet’s bright regions based on how they reflect light—is a result or consequence of the previous information about spectroscopic fingerprints.\n\nChoice A is incorrect because “regardless” illogically signals that the action described in this sentence occurs despite the previous information about spectroscopic fingerprints. Instead, the finding in this sentence is a result or consequence of that information. Choice B is incorrect because “meanwhile” illogically signals that the action described in this sentence either occurs at the same time as or offers an alternative to the previous information about spectroscopic fingerprints. Instead, the finding in this sentence is a result or consequence of that information. Choice D is incorrect because “in comparison” illogically signals that the action described in this sentence is being compared with the previous information about spectroscopic fingerprints. Instead, the finding in this sentence is a result or consequence of that information.",
+    "strategy": "Direction Check",
+    "trapName": "Wrong Direction · Formal Without Logic · Sequence vs. Contrast",
+    "origin": "cb-sat",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "eea351c4",
+    "skill": "Transitions",
+    "difficulty": "Medium",
+    "passage": "“Wishcycling”—putting nonrecyclable items into recycling bins under the mistaken belief that those items can be recycled— ultimately does more harm than good. Nonrecyclable items, such as greasy pizza boxes, can contaminate recyclable materials, rendering entire batches unusable. ______ nonrecyclable products can damage recycling plants’ machinery.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Fittingly,",
+      "B. On the contrary,",
+      "C. Moreover,",
+      "D. Nevertheless,"
+    ],
+    "answer": "C",
+    "explanation": "Strategy: Direction Check\nLogical relationship: Addition. Identify this BEFORE reading the options.\nCorrect category: Furthermore / Moreover / In addition / Also.\nTrap: Wrong Direction — eliminate any option pointing a different logical direction, even if it sounds formal or academic.\n────────────────────────────────────────\nChoice C is the best answer. The first sentence tells us that “wishcycling” is harmful, the previous sentence gives us an example, and this sentence gives us another example. So “moreover”—a transition that indicates the addition of another supporting point— fits perfectly here.\n\nChoice A is incorrect. This choice uses a transition that means “appropriately” or “suitably,” which doesn’t make sense in context. This sentence adds another example of how “wishcycling” is harmful, so we’re looking for an addition transition. Choice B is incorrect. This choice uses a disagreement transition. But this sentence actually agrees with the previous sentence. Both provide examples of how “wishcycling” is harmful. Choice D is incorrect. This choice uses a disagreement transition. But this sentence actually agrees with the previous sentence. Both provide examples of how “wishcycling” is harmful.",
+    "strategy": "Direction Check",
+    "trapName": "Wrong Direction · Formal Without Logic · Sequence vs. Contrast",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "00e0170f",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "passage": "Magnetic levitation (maglev) trains are suspended above a track by powerful electromagnets, reducing friction and thus allowing for much faster speeds. Though maglev advocates in the US have long imagined these trains crisscrossing the country, their dream remains unrealized. ______ of the handful of maglev trains currently in operation, all are in Asia.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. In fact,",
+      "B. To that end,",
+      "C. Nevertheless,",
+      "D. That said,"
+    ],
+    "answer": "A",
+    "explanation": "Strategy: Direction Check\nLogical relationship: Cause-Effect. Identify this BEFORE reading the options.\nCorrect category: Therefore / Thus / As a result / Consequently.\nTrap: Wrong Direction — eliminate any option pointing a different logical direction, even if it sounds formal or academic.\n────────────────────────────────────────\nChoice A is the best answer. This sentence emphasizes just how far maglev advocates’ dreams are from coming true. “In fact” is a transition used to emphasize the truth of a statement that modifies the previous statement and therefore fits perfectly in this context.\n\nChoice B is incorrect. This choice uses a cause-and-effect transition, which doesn’t make sense here. Maglev advocates’ dream remaining unrealized would not cause there to be only a few maglev trains, all located in Asia. Choice C is incorrect. This choice uses a disagreement transition, which doesn’t make sense here. In fact, this sentence agrees with the previous sentence—both talk about how maglev trains are far from becoming common in the US. Choice D is incorrect. This choice uses a disagreement transition, which doesn’t make sense here. In fact, this sentence agrees with the previous sentence—both talk about how maglev trains are far from becoming common in the US.",
+    "strategy": "Direction Check",
+    "trapName": "Wrong Direction · Formal Without Logic · Sequence vs. Contrast",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "84e108cf",
+    "skill": "Rhetorical Synthesis",
+    "difficulty": "Medium",
+    "passage": "While researching a topic, a student has taken the following notes: Platinum is a rare and expensive metal. It is used as a catalyst for chemical reactions. Platinum catalysts typically require a large amount of platinum to be effective. Researcher Jianbo Tang and his colleagues created a platinum catalyst that combines platinum with liquid gallium. Their catalyst was highly effective and required only trace amounts of platinum (0.0001% of the atoms in the mixture).",
+    "question": "The student wants to explain an advantage of the new platinum catalyst developed by Jianbo Tang and his colleagues. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "A. Researcher Jianbo Tang and his colleagues created a platinum catalyst that combines platinum, a rare and expensive metal, with liquid gallium.",
+      "B. Like other platinum catalysts, the new platinum catalyst requires a particular amount of the metal to be effective.",
+      "C. Platinum is a rare and expensive metal that is used as a catalyst for chemical reactions; however, platinum catalysts typically require a large amount of platinum to be effective.",
+      "D. While still highly effective, the new platinum catalyst requires far less of the rare and expensive metal than do other platinum catalysts."
+    ],
+    "answer": "D",
+    "explanation": "Strategy: Goal-First Filter\nWriting goal: “explain an advantage of the new platinum catalyst developed by Jianbo Tang and his colleagues.” Read this goal BEFORE the notes. Every answer must accomplish exactly this — nothing more, nothing less.\nTrap: Over-Inclusive — a wrong answer may include too much information, diluting the specific goal.\n────────────────────────────────────────\nChoice D is the best answer. The sentence explains an advantage of Tang and his colleagues’ platinum catalyst, noting that it requires far less platinum (which is rare and expensive) than other platinum catalysts do.\n\nChoice A is incorrect. The sentence describes the platinum catalyst that Tang and his colleagues created; it doesn’t explain an advantage of their platinum catalyst. Choice B is incorrect. The sentence emphasizes a similarity between the new platinum catalyst and other platinum catalysts; it doesn’t explain an advantage of the new platinum catalyst. Choice C is incorrect. The sentence connects the metal platinum to the functioning of platinum catalysts, noting that large amounts of platinum are typically required for platinum catalysts to be effective; it doesn’t explain an advantage of Tang and his colleagues’ platinum catalyst.",
+    "strategy": "Goal-First Filter",
+    "trapName": "Wrong Goal · Accurate But Off-Task · Over-Inclusive",
+    "goalType": "Define-Explain",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "16631d34",
+    "skill": "Rhetorical Synthesis",
+    "difficulty": "Hard",
+    "passage": "While researching a topic, a student has taken the following notes: The Million Song Dataset (MSD) includes main audio features and descriptive tags for popular songs. Audio features include acoustic traits such as loudness and pitch intervals. Many algorithms use these audio features to predict a new song’s popularity. These algorithms may fail to accurately identify main audio features of a song with varying acoustic traits. Algorithms based on descriptive tags that describe fixed traits such as genre are more reliable predictors of song popularity.",
+    "question": "The student wants to explain a disadvantage of relying on audio features to predict a song’s popularity. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "A. Many popularity-predicting algorithms are based on a song’s audio features, such as loudness and pitch intervals.",
+      "B. Algorithms based on audio features may misidentify the main features of a song with varying acoustic traits, making such algorithms less reliable predictors of popularity than those based on fixed traits.",
+      "C. Audio features describe acoustic traits such as pitch intervals, which may vary within a song, whereas descriptive tags describe fixed traits such as genre, which are reliable predictors of popularity.",
+      "D. The MSD’s descriptive tags are reliable predictors of a song’s popularity, as the traits they describe are fixed."
+    ],
+    "answer": "B",
+    "explanation": "Strategy: Goal-First Filter\nWriting goal: “explain a disadvantage of relying on audio features to predict a song’s popularity.” Read this goal BEFORE the notes. Every answer must accomplish exactly this — nothing more, nothing less.\nTrap: Over-Inclusive — a wrong answer may include too much information, diluting the specific goal.\n────────────────────────────────────────\nChoice B is the best answer. This choice uses relevant information from the notes to explain a disadvantage of relying on audio features to predict a song’s popularity—namely, that it may misidentify features of certain songs. It also contrasts audio features with descriptive tags, which are more reliable predictors.\n\nChoice A is incorrect. This choice only states a fact about the algorithms without evaluating their reliability or accuracy. Choice C is incorrect. This choice only describes the difference between audio features and descriptive tags without indicating why this difference matters for predicting popularity. Choice D is incorrect. This choice only mentions descriptive tags, which are not the focus of the student’s rhetorical goal.",
+    "strategy": "Goal-First Filter",
+    "trapName": "Wrong Goal · Accurate But Off-Task · Over-Inclusive",
+    "goalType": "Define-Explain",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "5222ffab",
+    "skill": "Rhetorical Synthesis",
+    "difficulty": "Hard",
+    "passage": "While researching a topic, a student has taken the following notes: Neuroscientists Krishnan Padmanabhan and Zhen Chen sought to better understand the workings of the brain’s olfactory system. They devised a study using mathematical models. They found that certain fibers allow the brain to toggle from one method of processing smells to another. In one method, cells in the piriform cortex (where the perception of odor forms) capture olfactory information at a given moment. In the other, the cells track changes in olfactory information over time.",
+    "question": "The student wants to summarize the study’s findings. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "A. To arrive at these findings, which describe dual methods of processing smells in the piriform cortex, Padmanabhan and Chen devised a study using mathematical models.",
+      "B. Padmanabhan and Chen showed that olfactory information is captured by cells in the piriform cortex, where the perception of odor forms.",
+      "C. Using mathematical models, Padmanabhan and Chen devised a study to better understand the workings of the brain’s olfactory system.",
+      "D. According to Padmanabhan and Chen, the brain can toggle between capturing olfactory information at a given moment and tracking changes in that information over time."
+    ],
+    "answer": "D",
+    "explanation": "Strategy: Goal-First Filter\nWriting goal: “summarize the study’s findings.” Read this goal BEFORE the notes. Every answer must accomplish exactly this — nothing more, nothing less.\nTrap: Over-Inclusive — a wrong answer may include too much information, diluting the specific goal.\n────────────────────────────────────────\nChoice D is the best answer. The sentence effectively summarizes the study’s findings, explaining what Padmanabhan and Chen found: that the brain can toggle between one method of processing smells (capturing information at a given moment) and another (tracking changes in information over time).\n\nChoice A is incorrect. While the sentence mentions findings, it mainly focuses on Padmanabhan and Chen’s methodology. It doesn’t effectively summarize the study’s findings. Choice B is incorrect. The sentence notes a fact about the olfactory system— that the perception of odor forms in the piriform cortex—but doesn’t summarize the findings of Padmanabhan and Chen’s study. Choice C is incorrect. The sentence presents the goal of Padmanabhan and Chen’s study; it doesn’t summarize the study’s findings.",
+    "strategy": "Goal-First Filter",
+    "trapName": "Wrong Goal · Accurate But Off-Task · Over-Inclusive",
+    "goalType": "Present-Study",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "dd11e5ab",
+    "skill": "Rhetorical Synthesis",
+    "difficulty": "Medium",
+    "passage": "While researching a topic, a student has taken the following notes: Muckrakers were journalists who sought to expose corruption in US institutions during the Progressive Era (1897–1920). Ida Tarbell was a muckraker who investigated the Standard Oil Company. She interviewed Standard Oil Company executives, oil industry workers, and public officials. She examined thousands of pages of the company’s internal communications, including letters and financial records. Her book The History of the Standard Oil Company (1904) exposed the company’s unfair business practices.",
+    "question": "The student wants to emphasize the thoroughness of Ida Tarbell’s investigation of the Standard Oil Company. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "A. Ida Tarbell not only interviewed Standard Oil executives, oil industry workers, and public officials but also examined thousands of pages of the company’s internal communications.",
+      "B. Ida Tarbell, who investigated the Standard Oil Company, was a muckraker (a journalist who sought to expose corruption in US institutions during the Progressive Era, 1897–1920).",
+      "C. As part of her investigation of the Standard Oil Company, muckraker Ida Tarbell conducted interviews.",
+      "D. Published in 1904, muckraker Ida Tarbell’s book The History of the Standard Oil Company exposed the company’s unfair business practices."
+    ],
+    "answer": "A",
+    "explanation": "Strategy: Goal-First Filter\nWriting goal: “emphasize the thoroughness of Ida Tarbell’s investigation of the Standard Oil Company.” Read this goal BEFORE the notes. Every answer must accomplish exactly this — nothing more, nothing less.\nTrap: Accurate But Off-Task — wrong answers may be factually correct but don’t serve the stated goal.\n────────────────────────────────────────\nChoice A is the best answer. It describes Tarbell’s investigation and the lengths she went to complete it.\n\nChoice B is incorrect. This choice doesn’t describe how thorough Tarbell was. Instead, it gives a biographical sketch. Choice C is incorrect. This choice doesn’t describe how thorough Tarbell was. Tarbell didn’t only conduct interviews—she also “examined thousands of pages of the company’s internal communications.” Choice D is incorrect. This choice doesn’t describe how thorough Tarbell was. It describes her book but doesn’t include anything about her investigation.",
+    "strategy": "Goal-First Filter",
+    "trapName": "Wrong Goal · Accurate But Off-Task · Over-Inclusive",
+    "goalType": "Emphasize-Trait",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "64e88c58",
+    "skill": "Rhetorical Synthesis",
+    "difficulty": "Hard",
+    "passage": "While researching a topic, a student has taken the following notes: In 1971, experimental musician Pauline Oliveros created Sonic Meditations. Sonic Meditations is not music but rather a series of sound-based exercises called meditations. Each meditation consists of instructions for participants to make, imagine, listen to, or remember sounds. The instructions for Meditation V state, “walk so silently that the bottoms of your feet become ears.” Those for Meditation XVIII state, “listen to a sound until you no longer recognize it.”",
+    "question": "The student wants to provide an explanation and an example of Oliveros’s Sonic Meditations. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "A. Sonic Meditations is not music but rather a series of sound-based meditations that consist of instructions; Meditation XVIII, for instance, instructs participants to “listen to a sound until you no longer recognize it.”",
+      "B. In 1971, Oliveros created Sonic Meditations, a series of meditations that consist of instructions for participants to make, imagine, listen to, or remember sounds.",
+      "C. “Walk so silently that the bottoms of your feet become ears” is one example of the instructions found in Oliveros’s Sonic Meditations.",
+      "D. While both meditations consist of instructions, Meditation XVIII instructs participants to “listen,” whereas Meditation V instructs participants to “walk.”"
+    ],
+    "answer": "A",
+    "explanation": "Strategy: Goal-First Filter\nWriting goal: “provide an explanation and an example of Oliveros’s Sonic Meditations.” Read this goal BEFORE the notes. Every answer must accomplish exactly this — nothing more, nothing less.\nTrap: Over-Inclusive — a wrong answer may include too much information, diluting the specific goal.\n────────────────────────────────────────\nChoice A is the best answer. It describes what a “Sonic Meditation” is, and then gives an example in the form of Meditation XVIII.\n\nChoice B is incorrect. This choice describes what a “Sonic Meditation” is, but doesn’t give an example of one. Choice C is incorrect. This choice gives an example of a “Sonic Meditation,” but doesn’t explain what the meditations are. Choice D is incorrect. This choice doesn’t describe what a “Sonic Meditation” is.",
+    "strategy": "Goal-First Filter",
+    "trapName": "Wrong Goal · Accurate But Off-Task · Over-Inclusive",
+    "goalType": "Define-Explain",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "10cd0327",
+    "skill": "Rhetorical Synthesis",
+    "difficulty": "Hard",
+    "passage": "While researching a topic, a student has taken the following notes: A thermal inversion is a phenomenon where a layer of atmosphere is warmer than the layer beneath it. In 2022, a team of researchers studied the presence of thermal inversions in twenty-five gas giants. Gas giants are planets largely composed of helium and hydrogen. The team found that gas giants featuring a thermal inversion were also likely to contain heat-absorbing metals. One explanation for this relationship is that these metals may reside in a planet’s upper atmosphere, where their absorbed heat causes an increase in temperature.",
+    "question": "The student wants to present the study’s findings to an audience already familiar with thermal inversions. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+    "options": [
+      "A. Heat-absorbing metals may reside in a planet’s upper atmosphere.",
+      "B. The team studied thermal inversions in twenty-five gas giants, which are largely composed of helium and hydrogen.",
+      "C. Researchers found that gas giants featuring a thermal inversion were likely to contain heat-absorbing metals, which may reside in the planets’ upper atmospheres.",
+      "D. Gas giants were likely to contain heat-absorbing metals when they featured a layer of atmosphere warmer than the layer beneath it, researchers found; this phenomenon is known as a thermal inversion."
+    ],
+    "answer": "C",
+    "explanation": "Strategy: Goal-First Filter\nWriting goal: “present the study’s findings to an audience already familiar with thermal inversions.” Read this goal BEFORE the notes. Every answer must accomplish exactly this — nothing more, nothing less.\nTrap: Accurate But Off-Task — wrong answers may be factually correct but don’t serve the stated goal.\n────────────────────────────────────────\nChoice C is the best answer. It describes the study’s findings in a way that assumes the audience is already familiar with thermal inversions.\n\nChoice A is incorrect. This choice doesn’t fully describe the findings of the study, because it doesn’t include anything about thermal inversions. Choice B is incorrect. This choice doesn’t describe the study’s findings. Choice D is incorrect. This choice isn’t suited for an audience already familiar with thermal inversion. A familiar audience wouldn’t need to have the term defined.",
+    "strategy": "Goal-First Filter",
+    "trapName": "Wrong Goal · Accurate But Off-Task · Over-Inclusive",
+    "goalType": "Audience-Aware",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "326017ce",
+    "skill": "Transitions",
+    "difficulty": "Medium",
+    "passage": "For years, biologists have experimented with using grime-eating bacteria rather than harsh chemicals to clean artworks, and results have been impressive overall. ______ these bacterial strains—which can metabolize centuries’ worth of oil, glue, dirt, and other surface impurities without creating harmful byproducts—have proven more effective than traditional chemical cleaning methods.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. However,",
+      "B. In many cases,",
+      "C. As a result,",
+      "D. Additionally,"
+    ],
+    "answer": "B",
+    "explanation": "Strategy: Direction Check\nLogical relationship: Addition. Identify this BEFORE reading the options.\nCorrect category: Furthermore / Moreover / In addition / Also.\nTrap: Wrong Direction — eliminate any option pointing a different logical direction, even if it sounds formal or academic.\n────────────────────────────────────────\nChoice B is the best answer. The first sentence makes the claim that using grime-eating bacteria has led to “impressive results.” This sentence supports that claim by describing the specific findings of the biologists’ experimentation. The transition “in many cases” fits the context perfectly.\n\nChoice A is incorrect. This choice uses a disagreement transition. But this sentence actually agrees with the previous sentence. Both claim that grime-eating bacteria are better at cleaning artworks than chemicals. Choice C is incorrect. This choice uses a cause-and-effect transition, which doesn’t make sense in context. The fact that the results of the experimentation have been impressive overall doesn’t cause the bacteria to have proven more effective. Choice D is incorrect. This choice uses a transition that indicates the addition of a new idea. But this sentence doesn’t introduce a new idea. Instead, it elaborates on the same idea laid out in the previous sentence by describing the “impressive results” in more detail.",
+    "strategy": "Direction Check",
+    "trapName": "Wrong Direction · Formal Without Logic · Sequence vs. Contrast",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "ad729337",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "passage": "With its clichéd imagery of suburban lawns and power lines, John Ashbery’s 2004 poem “Ignorance of the Law Is No Excuse” may seem barren terrain for critical analysis. ______ cultural critic Lauren Berlant finds fertile ground in just its first two stanzas, devoting most of a book chapter to deciphering the “weight of the default space” Ashbery creates in this poem.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Likewise,",
+      "B. Nonetheless,",
+      "C. In turn,",
+      "D. That is,"
+    ],
+    "answer": "B",
+    "explanation": "Strategy: Direction Check\nLogical relationship: Addition. Identify this BEFORE reading the options.\nCorrect category: Furthermore / Moreover / In addition / Also.\nTrap: Wrong Direction — eliminate any option pointing a different logical direction, even if it sounds formal or academic.\n────────────────────────────────────────\nChoice B is the best answer. “Nonetheless” is a transition that indicates disagreement. The first sentence describes the unlikelihood of finding much for critical analysis in Ashbery’s poem (“barren terrain”), while the second sentence describes how Berlant did in fact find much to analyze in Ashbery’s poem (“fertile ground”), so the transition “nonetheless” fits perfectly.\n\nChoice A is incorrect. This choice uses a transition that indicates the addition of a new but similar idea, which doesn’t make sense here. The idea in this sentence directly contradicts the idea in the previous sentence. Choice C is incorrect. This choice uses a cause-and-effect transition, which doesn’t make sense in this context—a poem seemingly having little opportunity for critical analysis would not cause someone to write an extensive critical analysis (in fact, we might expect the opposite). Choice D is incorrect. This choice uses a transition that indicates a restatement of the same idea in other words. But the text isn’t restating the first idea here. Instead, it’s offering a contradiction to the idea expressed in the first sentence.",
+    "strategy": "Direction Check",
+    "trapName": "Wrong Direction · Formal Without Logic · Sequence vs. Contrast",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "6351062d",
+    "skill": "Rhetorical Synthesis",
+    "difficulty": "Medium",
+    "passage": "While researching a topic, a student has taken the following notes:\n In the late 1890s, over 14,000 unique varieties of apples were grown in the US.\n The rise of industrial agriculture in the mid-1900s narrowed the range of commercially grown crops.\n Thousands of apple varieties considered less suitable for commercial growth were lost.\n Today, only 15 apple varieties dominate the market, making up 90% of apples purchased in the US.\n The Lost Apple Project, based in Washington State, attempts to find and grow lost apple varieties.",
+    "question": "The student wants to emphasize the decline in unique apple varieties in the US and specify why this decline occurred. Which\nchoice most effectively uses relevant information from the notes to accomplish these goals?",
+    "options": [
+      "A. The Lost Apple Project is dedicated to finding some of the apple varieties lost following a shift in agricultural practices in the mid-1900s.",
+      "B. While over 14,000 apple varieties were grown in the US in the late 1890s, only 15 unique varieties make up most of the apples sold today.",
+      "C. Since the rise of industrial agriculture, US farmers have mainly grown the same few unique apple varieties, resulting in the loss of thousands of varieties less suitable for commercial growth.",
+      "D. As industrial agriculture rose to prominence in the mid-1900s, the number of crops selected for cultivation decreased dramatically."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer. The sentence emphasizes the decline in unique apple varieties in the US and specifies why this\ndecline occurred, noting that thousands of apple varieties were lost because US farmers started mainly growing the same few\nunique varieties.\n\nChoice A is incorrect. The sentence introduces the Lost Apple Project; it doesn't emphasize the decline in unique apple varieties in\nthe US and specify why this decline occurred. Choice B is incorrect. While the sentence emphasizes the decline in unique apple\nvarieties in the US, it doesn't explain why this decline occurred. Choice D is incorrect. The sentence emphasizes the general decline\nof crop varieties in the mid-1900s; it doesn't emphasize the specific decline in unique apple varieties in the US.",
+    "strategy": "Goal-First Filter",
+    "goalType": "Emphasize-Trait",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "2b89bfe5",
+    "skill": "Rhetorical Synthesis",
+    "difficulty": "Medium",
+    "passage": "While researching a topic, a student has taken the following notes:\n In 1999, astronomer Todd Henry studied the differences in surface temperature between the Sun and nearby stars.\n His team mapped all stars within 10 parsecs (approximately 200 trillion miles) of the Sun.\n The surface temperature of the Sun is around 9,800°F, which classifies it as a G star.\n 327 of the 357 stars in the study were classified as K or M stars, with surface temperatures under 8,900°F (cooler than the\n Sun).\n 11 of the 357 stars in the study were classified as A or F stars, with surface temperatures greater than 10,300°F (hotter\n than the Sun).\n\nThe student wants to emphasize how hot the Sun is relative to nearby stars.",
+    "question": "Which choice most effectively uses relevant\ninformation from the notes to accomplish this goal?",
+    "options": [
+      "A. At around 9,800°F, which classifies it as a G star, the Sun is hotter than most but not all of the stars within 10 parsecs of it.",
+      "B. Astronomer Todd Henry determined that the Sun, at around 9,800°F, is a G star, and several other stars within a 10-parsec range are A or F stars.",
+      "C. Of the 357 stars within ten parsecs of the Sun, 327 are classified as K or M stars, with surface temperatures under 8,900°F.",
+      "D. While most of the stars within 10 parsecs of the Sun are classified as K, M, A, or F stars, the Sun is classified as a G star due to its surface temperature of 9,800°F."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer. Noting that the Sun (9,800°F) is hotter than most stars within 10 parsecs of it, the sentence\nemphasizes how hot the Sun is relative to nearby stars.\n\nChoice B is incorrect. The sentence explains that astronomer Todd Henry determined the classifications for the Sun and several\nother stars nearby; it doesn't emphasize how hot the Sun is relative to nearby stars. Choice C is incorrect. The sentence explains\nthat the majority of stars near the Sun are classified as K or M stars; it doesn't indicate the Sun's temperature or emphasize how\nhot it is relative to nearby stars. Choice D is incorrect. While the sentence indicates that the Sun is classified differently than most\nnearby stars due to its surface temperature, it doesn't emphasize how hot the Sun is relative to nearby stars.",
+    "strategy": "Goal-First Filter",
+    "goalType": "Compare",
+    "origin": "cb-sat",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "835d2e85",
+    "skill": "Transitions",
+    "difficulty": "Medium",
+    "difficultyStatus": "provisional",
+    "passage": "In the past, coffees were blended to suit a homogenous popular taste. ______ many different coffee flavors are now being produced.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Accordingly,",
+      "B. Thus,",
+      "C. However,",
+      "D. Alternatively,"
+    ],
+    "answer": "C",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals cause and effect; B signals cause and effect; C signals contrast; D signals contrast. Decide what the text does between the two sentences before choosing. Neutral, versatile contrast — the safe default. The answer is C, \"However,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 21,
+      "keyPage": 201,
+      "ref": "grammar_p022_q01"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "2f3d636b",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "difficultyStatus": "provisional",
+    "passage": "Researchers are unable to drill into the Earth's core. ______ its chemical composition remains a mystery.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Indeed,",
+      "B. Consequently,",
+      "C. In contrast,",
+      "D. For example,"
+    ],
+    "answer": "B",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals continuation; B signals cause and effect; C signals contrast; D signals example or specification. Decide what the text does between the two sentences before choosing. The result followed directly from the cause. The answer is B, \"Consequently,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 21,
+      "keyPage": 201,
+      "ref": "grammar_p022_q02"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "7a6c573b",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "difficultyStatus": "provisional",
+    "passage": "The Taj Mahal is regarded as one of the eight wonders of the world. ______ some people believe that its architectural beauty has never been surpassed.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Indeed,",
+      "B. Specifically,",
+      "C. To illustrate,",
+      "D. Still,"
+    ],
+    "answer": "A",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals continuation; B signals example or specification; C signals example or specification; D signals contrast. Decide what the text does between the two sentences before choosing. Emphatic confirmation of what was just said. The answer is A, \"Indeed,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 21,
+      "keyPage": 201,
+      "ref": "grammar_p022_q03"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "18167811",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "difficultyStatus": "provisional",
+    "passage": "In order to save an endangered species, preservationists must study it in detail. Scientific information about some endangered animals is scarce, ______.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. therefore",
+      "B. moreover",
+      "C. in contrast",
+      "D. however"
+    ],
+    "answer": "D",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals cause and effect; B signals continuation; C signals contrast; D signals contrast. Decide what the text does between the two sentences before choosing. Neutral, versatile contrast — the safe default. The answer is D, \"however\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 21,
+      "keyPage": 201,
+      "ref": "grammar_p022_q04"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "c6c2a7bb",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "difficultyStatus": "provisional",
+    "passage": "Pyramids are most commonly associated with ancient Egypt. ______ many people are surprised to learn that the Nubians, who lived in modern-day Sudan, constructed a far greater number of pyramids than the Egyptians did.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Moreover,",
+      "B. Consequently,",
+      "C. Nevertheless,",
+      "D. Likewise,"
+    ],
+    "answer": "B",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals continuation; B signals cause and effect; C signals contrast; D signals continuation. Decide what the text does between the two sentences before choosing. The result followed directly from the cause. The answer is B, \"Consequently,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 22,
+      "keyPage": 201,
+      "ref": "grammar_p023_q01"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "6260dc4f",
+    "skill": "Transitions",
+    "difficulty": "Medium",
+    "difficultyStatus": "provisional",
+    "passage": "Modern chemistry keeps insects from ravaging crops, removes stains, and saves lives. ______ constant exposure to chemicals is taking a toll on many people's health.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Hence,",
+      "B. In contrast,",
+      "C. Still,",
+      "D. Subsequently,"
+    ],
+    "answer": "C",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals cause and effect; B signals contrast; C signals contrast; D signals sequence. Decide what the text does between the two sentences before choosing.  The answer is C, \"Still,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 22,
+      "keyPage": 201,
+      "ref": "grammar_p023_q02"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "e7bb0c46",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "difficultyStatus": "provisional",
+    "passage": "Music serves no obvious purpose. It has, ______ played a role in every known civilization on earth.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. therefore,",
+      "B. moreover,",
+      "C. however,",
+      "D. for instance,"
+    ],
+    "answer": "C",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals cause and effect; B signals continuation; C signals contrast; D signals example or specification. Decide what the text does between the two sentences before choosing. Neutral, versatile contrast — the safe default. The answer is C, \"however,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 22,
+      "keyPage": 201,
+      "ref": "grammar_p023_q03"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "f4b10544",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "difficultyStatus": "provisional",
+    "passage": "In the Middle Ages, fairs often attracted large crowds and led to rioting. ______ authorities were reluctant to grant permission for them to be held.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Alternatively,",
+      "B. For instance,",
+      "C. Furthermore,",
+      "D. Therefore,"
+    ],
+    "answer": "D",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals contrast; B signals example or specification; C signals continuation; D signals cause and effect. Decide what the text does between the two sentences before choosing. Neutral logical conclusion. The answer is D, \"Therefore,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 22,
+      "keyPage": 201,
+      "ref": "grammar_p023_q04"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "c7bb6033",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "difficultyStatus": "provisional",
+    "passage": "Although the abstract painter Joan Mitchell disliked being compared to Monet, the parallels between them were undeniable. Her terrace overlooked a house that Monet occupied from 1878 to 1881, as well as a landscape that he painted. ______ some of her own late works unmistakably hark back to the paintings that Monet produced in his twilight years at Giverny.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Moreover,",
+      "B. Thus,",
+      "C. Meanwhile,",
+      "D. Nevertheless,"
+    ],
+    "answer": "A",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals continuation; B signals cause and effect; C signals sequence; D signals contrast. Decide what the text does between the two sentences before choosing. Another equally weighted point. The answer is A, \"Moreover,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 23,
+      "keyPage": 201,
+      "ref": "grammar_p024_q01"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "d8a97f0c",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "difficultyStatus": "provisional",
+    "passage": "A recent study suggests that consuming food late in the evening has profound effects on the hunger-regulating hormones leptin and ghrelin, which influence our drive to eat. ______ researchers found that levels of the hormone leptin, which signals satiety, remained low for 24 hours for a group of subjects instructed to eat dinner late, whereas leptin levels were much higher in a group that ate dinner early.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Despite this,",
+      "B. However,",
+      "C. Specifically,",
+      "D. Therefore,"
+    ],
+    "answer": "C",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals contrast; B signals contrast; C signals example or specification; D signals cause and effect. Decide what the text does between the two sentences before choosing. Narrows to a precise detail within the prior broader claim. The answer is C, \"Specifically,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 23,
+      "keyPage": 201,
+      "ref": "grammar_p024_q02"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "d5331170",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "difficultyStatus": "provisional",
+    "passage": "Rather than embrace the type of abstract work that many artists of her generation preferred, Gwendolyn Knight preferred to depict figures in a spontaneous and personal manner. ______ she painted oil portraits of friends as well as studies of dancers in motion.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Moreover,",
+      "B. Specifically,",
+      "C. Nevertheless,",
+      "D. Besides,"
+    ],
+    "answer": "B",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals continuation; B signals example or specification; C signals contrast; D signals continuation. Decide what the text does between the two sentences before choosing. Narrows to a precise detail within the prior broader claim. The answer is B, \"Specifically,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 24,
+      "keyPage": 201,
+      "ref": "grammar_p025_q01"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "848d5a83",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "difficultyStatus": "provisional",
+    "passage": "Discarded electronic devices such as cell phones and tablets are a rapidly growing source of waste. One way to mitigate the problem, ______ could be to include components made with renewable resources.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. therefore,",
+      "B. moreover,",
+      "C. nevertheless,",
+      "D. however,"
+    ],
+    "answer": "D",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals cause and effect; B signals continuation; C signals contrast; D signals contrast. Decide what the text does between the two sentences before choosing. Neutral, versatile contrast — the safe default. The answer is D, \"however,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 24,
+      "keyPage": 201,
+      "ref": "grammar_p025_q02"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "094b6500",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "difficultyStatus": "provisional",
+    "passage": "While doing fieldwork on Gorgonilla Island in Colombia in 2014, Hermann Bermúdez found spherule deposits—layers of sediment filled with tiny glass beads. These beads formed when the heat and pressure from an asteroid impact melted and scattered the crust of the Earth, ejecting tiny liquid blobs into the atmosphere. ______ they fell back to earth in solid form under the influence of gravity.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Therefore,",
+      "B. Meanwhile,",
+      "C. Subsequently,",
+      "D. Additionally,"
+    ],
+    "answer": "C",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals cause and effect; B signals sequence; C signals sequence; D signals continuation. Decide what the text does between the two sentences before choosing.  The answer is C, \"Subsequently,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 24,
+      "keyPage": 201,
+      "ref": "grammar_p025_q03"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "bb938122",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "difficultyStatus": "provisional",
+    "passage": "Blue whales recognize when the wind is changing their habitat and identify places where ocean currents produce large aggregations of krill. The tiny shrimp are the primary food sources for the massive animals, which can weigh 165 tons or more. ______ their ability to locate these dense concentrations of nutrients is a matter of survival.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Consequently,",
+      "B. For instance,",
+      "C. Furthermore,",
+      "D. Alternatively,"
+    ],
+    "answer": "A",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals cause and effect; B signals example or specification; C signals continuation; D signals contrast. Decide what the text does between the two sentences before choosing. The result followed directly from the cause. The answer is A, \"Consequently,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 24,
+      "keyPage": 201,
+      "ref": "grammar_p025_q04"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "47bfd930",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "difficultyStatus": "provisional",
+    "passage": "In 1959, Project Mercury became the first human spaceflight program led by NASA. Aimed at putting an American into orbit before the Soviet Union could accomplish that goal, it was shut down after less than half a decade. ______ in the four years of its existence, seven astronauts were able to travel into space.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. For instance,",
+      "B. Still,",
+      "C. Accordingly,",
+      "D. Indeed,"
+    ],
+    "answer": "B",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals example or specification; B signals contrast; C signals cause and effect; D signals continuation. Decide what the text does between the two sentences before choosing.  The answer is B, \"Still,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 25,
+      "keyPage": 201,
+      "ref": "grammar_p026_q01"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "f30ccfc0",
+    "skill": "Transitions",
+    "difficulty": "Medium",
+    "difficultyStatus": "provisional",
+    "passage": "Bacteria have one or many appendages known as a flagellum, which is made of thousands of identical subunits. ______ a tail that was straight or only slightly flexible would leave an organism unable to move, bacteria have evolved rotating, corkscrew-shaped propellers that push them forward. Scientists call the formation of this shape \"supercoiling,\" and now, after more than half a century, they understand how the process works.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Although",
+      "B. Despite",
+      "C. Because",
+      "D. Unless"
+    ],
+    "answer": "C",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals contrast; B signals contrast; C signals cause and effect; D signals condition. Decide what the text does between the two sentences before choosing.  The answer is C, \"Because\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 25,
+      "keyPage": 201,
+      "ref": "grammar_p026_q02"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "8d08cd6a",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "difficultyStatus": "provisional",
+    "passage": "Although Shakespeare portrayed King Richard III as a villain, historians argue that he was in fact a far more sympathetic figure. The Tudors, on whose patronage Shakespeare was dependent, had conquered the English throne from Richard. ______ the playwright was obliged to portray the king in an unflattering light.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Hence,",
+      "B. Still,",
+      "C. In contrast,",
+      "D. Moreover,"
+    ],
+    "answer": "A",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals cause and effect; B signals contrast; C signals contrast; D signals continuation. Decide what the text does between the two sentences before choosing. Formal, slightly archaic. Same logic as therefore. The answer is A, \"Hence,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 25,
+      "keyPage": 201,
+      "ref": "grammar_p026_q03"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "fd4b25eb",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "difficultyStatus": "provisional",
+    "passage": "Trade on the Silk Road was a significant factor in the development of China, India, and Europe, opening long-distance political and economic interactions. ______ silk was certainly the major trade item from China, numerous other types of goods, including textiles, cloth, and pottery, also traveled along the Silk Road.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Because",
+      "B. Although",
+      "C. Until",
+      "D. When"
+    ],
+    "answer": "B",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals cause and effect; B signals contrast; C signals time; D signals time. Decide what the text does between the two sentences before choosing.  The answer is B, \"Although\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 25,
+      "keyPage": 201,
+      "ref": "grammar_p026_q04"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "5fb71c6b",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "difficultyStatus": "provisional",
+    "passage": "From the moment 2001: A Space Odyssey premiered in 1968, it was clear that the film would become best known for its special effects. It featured spacecraft that flew realistically—not zooming around in a cartoonish manner, as was the case in other films of the time. ______ Kubrick imagined a fully realized vision of regular human spaceflights in Earth orbit and beyond.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Moreover,",
+      "B. Nevertheless,",
+      "C. To illustrate,",
+      "D. Meanwhile,"
+    ],
+    "answer": "A",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals continuation; B signals contrast; C signals example or specification; D signals sequence. Decide what the text does between the two sentences before choosing. Another equally weighted point. The answer is A, \"Moreover,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 26,
+      "keyPage": 201,
+      "ref": "grammar_p027_q01"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "760df910",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "difficultyStatus": "provisional",
+    "passage": "Straw has been used as a building material for centuries, and contrary to popular belief, it is not easily destroyed. ______ it can be remarkably durable. In the nineteenth century, settlers in the Nebraska Sand Hills used straw to build houses when wood and clay were scarce; some of the structures are still standing today.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Therefore,",
+      "B. Even so,",
+      "C. However,",
+      "D. In fact,"
+    ],
+    "answer": "D",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals cause and effect; B signals contrast; C signals contrast; D signals continuation. Decide what the text does between the two sentences before choosing. Sharpens or intensifies the prior claim — makes it more specifically true. The answer is D, \"In fact,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 26,
+      "keyPage": 201,
+      "ref": "grammar_p027_q02"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "0116938a",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "difficultyStatus": "provisional",
+    "passage": "Many animals recognize the voices of members of their own species, and some can even recognize those of other species, such as humans. ______ it turns out a few animals, including gorillas, can not only identify familiar voices but also connect those voices to pleasant or unpleasant memories.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Therefore,",
+      "B. Indeed,",
+      "C. However,",
+      "D. For example,"
+    ],
+    "answer": "C",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals cause and effect; B signals continuation; C signals contrast; D signals example or specification. Decide what the text does between the two sentences before choosing. Neutral, versatile contrast — the safe default. The answer is C, \"However,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 113,
+      "keyPage": 205,
+      "ref": "grammar_p114_q01"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "75825ec6",
+    "skill": "Transitions",
+    "difficulty": "Medium",
+    "difficultyStatus": "provisional",
+    "passage": "Illusions, cognitive scientists have found, can reveal everything from how we process time and space to how we experience consciousness. ______ if a person watching a waterfall shifts his or her gaze to a group of rocks on the side, the rocks appear to move in the opposite direction from the flow of water.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Nevertheless,",
+      "B. Therefore,",
+      "C. Still,",
+      "D. To illustrate,"
+    ],
+    "answer": "D",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals contrast; B signals cause and effect; C signals contrast; D signals example or specification. Decide what the text does between the two sentences before choosing.  The answer is D, \"To illustrate,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 114,
+      "keyPage": 205,
+      "ref": "grammar_p115_q03"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "b9ac0469",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "difficultyStatus": "provisional",
+    "passage": "The scientific contributions of Svänte Pääbo have shaped the entire field of paleogenetics, not just the study of Neanderthals. ______ his work has spanned all three known species of humans, one of which the world would likely be unaware if not for Pääbo and his research team.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Indeed,",
+      "B. Still,",
+      "C. Consequently,",
+      "D. In contrast,"
+    ],
+    "answer": "A",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals continuation; B signals contrast; C signals cause and effect; D signals contrast. Decide what the text does between the two sentences before choosing. Emphatic confirmation of what was just said. The answer is A, \"Indeed,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 115,
+      "keyPage": 205,
+      "ref": "grammar_p116_q03"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "009470bd",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "difficultyStatus": "provisional",
+    "passage": "While ancient cities are often imagined to have been more sustainable than modern ones, the tension between urban life and the environment has deep roots. ______ the development of the ancient city of Akko six thousand years ago transformed dense coastal forests into a dry, shrubby grassland.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. However,",
+      "B. Hence,",
+      "C. Furthermore,",
+      "D. For example,"
+    ],
+    "answer": "D",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals contrast; B signals cause and effect; C signals continuation; D signals example or specification. Decide what the text does between the two sentences before choosing. General claim → specific instance. Most frequently correct transition overall. The answer is D, \"For example,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 178,
+      "keyPage": 206,
+      "ref": "grammar_p179_q01"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "5e374830",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "difficultyStatus": "provisional",
+    "passage": "In the eyes of the colonial British administration, Samuel Adams was an outlaw. ______ he often behaved like one: he erased his fingerprints, refused to copy his letters, and destroyed piles of his papers to prevent them from falling into enemy hands.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Specifically,",
+      "B. Indeed,",
+      "C. Nevertheless,",
+      "D. On the other hand,"
+    ],
+    "answer": "B",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals example or specification; B signals continuation; C signals contrast; D signals contrast. Decide what the text does between the two sentences before choosing. Emphatic confirmation of what was just said. The answer is B, \"Indeed,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 178,
+      "keyPage": 207,
+      "ref": "grammar_p179_q02"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "c0e2314c",
+    "skill": "Transitions",
+    "difficulty": "Medium",
+    "difficultyStatus": "provisional",
+    "passage": "Because the wild ancestors of modern felines never lived in social groups, cats are genetically predisposed to be independent. ______ during the domestication process, they developed the ability to form social relationships with other members of their species as well as with people.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Moreover,",
+      "B. Accordingly,",
+      "C. For instance,",
+      "D. Still,"
+    ],
+    "answer": "D",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals continuation; B signals cause and effect; C signals example or specification; D signals contrast. Decide what the text does between the two sentences before choosing.  The answer is D, \"Still,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 178,
+      "keyPage": 207,
+      "ref": "grammar_p179_q03"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "33afce26",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "difficultyStatus": "provisional",
+    "passage": "Magnesium, phosphorous, and zinc, which the human body requires to carry out its basic functions, cannot be produced internally. ______ people must obtain them from food and drink.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Therefore,",
+      "B. Nevertheless,",
+      "C. Subsequently,",
+      "D. To illustrate,"
+    ],
+    "answer": "A",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals cause and effect; B signals contrast; C signals sequence; D signals example or specification. Decide what the text does between the two sentences before choosing. Neutral logical conclusion. The answer is A, \"Therefore,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 181,
+      "keyPage": 208,
+      "ref": "grammar_p182_q01"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "1f1558f0",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "difficultyStatus": "provisional",
+    "passage": "While much of mathematics research focuses on developing proofs for conjectures, it is often impossible to check that a hypothesis is true in all cases. Mathematician Melanie Wood uses statistics to verify these hypotheses. ______ she develops probabilistic models for natural numbers and integers to see how they behave on average.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. However,",
+      "B. Consequently,",
+      "C. Meanwhile,",
+      "D. Specifically,"
+    ],
+    "answer": "D",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals contrast; B signals cause and effect; C signals sequence; D signals example or specification. Decide what the text does between the two sentences before choosing. Narrows to a precise detail within the prior broader claim. The answer is D, \"Specifically,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 181,
+      "keyPage": 208,
+      "ref": "grammar_p182_q02"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "b8f59e07",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "difficultyStatus": "provisional",
+    "passage": "The consumption of glucose activates a specific circuit notifying a person's brain that sugar is present in the body. Calorie-free artificial sweeteners, ______ do not have this effect, a fact that likely explains why many people find diet soft drinks less satisfying than regular ones.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. moreover,",
+      "B. therefore,",
+      "C. in contrast,",
+      "D. for instance,"
+    ],
+    "answer": "C",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals continuation; B signals cause and effect; C signals contrast; D signals example or specification. Decide what the text does between the two sentences before choosing. Direct opposition between two different things. The answer is C, \"in contrast,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 181,
+      "keyPage": 208,
+      "ref": "grammar_p182_q03"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "aca9aa7d",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "difficultyStatus": "provisional",
+    "passage": "Most organisms that carry out photosynthesis are able to produce food directly from carbon dioxide and water using energy from light. However, not all organisms use carbon dioxide as a source of carbon atoms for this process. ______ photoheterotrophs use organic compounds rather than carbon dioxide as a source of carbon.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. For instance,",
+      "B. Meanwhile,",
+      "C. Furthermore,",
+      "D. Nevertheless,"
+    ],
+    "answer": "A",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals example or specification; B signals sequence; C signals continuation; D signals contrast. Decide what the text does between the two sentences before choosing.  The answer is A, \"For instance,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 184,
+      "keyPage": 209,
+      "ref": "grammar_p185_q01"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "b581dcd2",
+    "skill": "Transitions",
+    "difficulty": "Medium",
+    "difficultyStatus": "provisional",
+    "passage": "By the beginning of the 20th century, the sonnet had become an antiquated poetic style. Claude McKay, however, found it an ideal medium to convey his ideas. Many modernists criticized his use of the form. ______ he persevered and created a significant number of sonnets.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Moreover,",
+      "B. Likewise,",
+      "C. Indeed,",
+      "D. Nevertheless,"
+    ],
+    "answer": "D",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals continuation; B signals continuation; C signals continuation; D signals contrast. Decide what the text does between the two sentences before choosing.  The answer is D, \"Nevertheless,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 184,
+      "keyPage": 209,
+      "ref": "grammar_p185_q02"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "c5b5cc68",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "difficultyStatus": "provisional",
+    "passage": "The \"songs\" of blue whales usually register at between 15 and 20 hertz—a nearly inaudible rumble on the edge of what the human ear can perceive. One blue whale in the Pacific has produced vocalizations registering more than 50 herz, ______ a finding so unusual that some researchers have suggested the animal is actually a hybrid species.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. therefore,",
+      "B. moreover,",
+      "C. however,",
+      "D. for example,"
+    ],
+    "answer": "C",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals cause and effect; B signals continuation; C signals contrast; D signals example or specification. Decide what the text does between the two sentences before choosing. Neutral, versatile contrast — the safe default. The answer is C, \"however,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 184,
+      "keyPage": 209,
+      "ref": "grammar_p185_q03"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "4cf3720a",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "difficultyStatus": "provisional",
+    "passage": "Growing nutritious, protein-dense microalgae in seawater-fed aquaculture systems—particularly in the southern hemisphere—could help increase food production by more than 50%. ______ researchers estimate that over the next three decades, an additional 10 million people might be fed.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Still,",
+      "B. In fact,",
+      "C. Therefore,",
+      "D. Subsequently,"
+    ],
+    "answer": "B",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals contrast; B signals continuation; C signals cause and effect; D signals sequence. Decide what the text does between the two sentences before choosing. Sharpens or intensifies the prior claim — makes it more specifically true. The answer is B, \"In fact,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 184,
+      "keyPage": 210,
+      "ref": "grammar_p185_q04"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "30942390",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "difficultyStatus": "provisional",
+    "passage": "One criticism that is commonly leveled against remote work is that employees, who work from home, have difficulty controlling the boundary between their personal and professional lives. ______, in a recent survey, remote workers reported a fairly good fit—5.3 on a 7-point scale—between their work and non-work lives.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Therefore,",
+      "B. Similarly,",
+      "C. However,",
+      "D. Moreover,"
+    ],
+    "answer": "C",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals cause and effect; B signals continuation; C signals contrast; D signals continuation. Decide what the text does between the two sentences before choosing. Neutral, versatile contrast — the safe default. The answer is C, \"However,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 187,
+      "keyPage": 211,
+      "ref": "grammar_p188_q01"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "56948207",
+    "skill": "Transitions",
+    "difficulty": "Easy",
+    "difficultyStatus": "provisional",
+    "passage": "As a college student at Mt. Holyoke, the playwright Suzanne-Lori Parks was steered toward writing plays rather than fiction because of her penchant for drama. ______ she had a tendency to act out all the characters' voices when she read her short stories aloud in class.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. As such,",
+      "B. Specifically,",
+      "C. In addition,",
+      "D. Consequently,"
+    ],
+    "answer": "B",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals cause and effect; B signals example or specification; C signals continuation; D signals cause and effect. Decide what the text does between the two sentences before choosing. Narrows to a precise detail within the prior broader claim. The answer is B, \"Specifically,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 187,
+      "keyPage": 211,
+      "ref": "grammar_p188_q02"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "3534cb75",
+    "skill": "Transitions",
+    "difficulty": "Medium",
+    "difficultyStatus": "provisional",
+    "passage": "The Komodo dragon, a reptile with ancestors that date back more than 100 million years, is the largest lizard in the world. The yellow color of its long, forked tongue is indeed reminiscent of a fire-spitting dragon. ______ its heavy, scaly body recalls that of the mythical creature.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Consequently,",
+      "B. Specifically,",
+      "C. In contrast,",
+      "D. Likewise,"
+    ],
+    "answer": "D",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals cause and effect; B signals example or specification; C signals contrast; D signals continuation. Decide what the text does between the two sentences before choosing. Adds a parallel example (X does A; likewise, Y also does A). The answer is D, \"Likewise,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 189,
+      "keyPage": 212,
+      "ref": "grammar_p190_q03"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "aff667fc",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "difficultyStatus": "provisional",
+    "passage": "Advocates of space exploration often hope for a fully developed space economy driven by widespread demand. ______ a path toward this future remains unclear. Space tourism, zero-gravity manufacturing, and asteroid mining all show promise, but none of them is commercially viable yet.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Indeed,",
+      "B. Consequently,",
+      "C. However,",
+      "D. Furthermore,"
+    ],
+    "answer": "C",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals continuation; B signals cause and effect; C signals contrast; D signals continuation. Decide what the text does between the two sentences before choosing. Neutral, versatile contrast — the safe default. The answer is C, \"However,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 190,
+      "keyPage": 212,
+      "ref": "grammar_p191_q01"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "b0a33163",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "difficultyStatus": "provisional",
+    "passage": "The Triassic reptile Scleromochlus measured only about seven inches long. Its bones were light and delicate, preventing them from being physically removed from rock without damage. ______, paleontologist Davide Foffa and his colleagues took CT scans of Scleromochlus fossils still embedded in the ground in order to obtain a detailed look at the animal's skeleton.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. Nevertheless,",
+      "B. To illustrate,",
+      "C. Besides,",
+      "D. Thus,"
+    ],
+    "answer": "D",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals contrast; B signals example or specification; C signals continuation; D signals cause and effect. Decide what the text does between the two sentences before choosing. Formal — often summarises reasoning. The answer is D, \"Thus,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 190,
+      "keyPage": 212,
+      "ref": "grammar_p191_q02"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "4f412342",
+    "skill": "Transitions",
+    "difficulty": "Hard",
+    "difficultyStatus": "provisional",
+    "passage": "One of the indirect effects of globalization has been the creation of global cities, which have a tendency to form megacities and megaregions. This type of growth exerts immense pressure on cities; ______ it also increases the competition among them.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. however,",
+      "B. moreover,",
+      "C. for instance,",
+      "D. still,"
+    ],
+    "answer": "B",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals contrast; B signals continuation; C signals example or specification; D signals contrast. Decide what the text does between the two sentences before choosing. Another equally weighted point. The answer is B, \"moreover,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 190,
+      "keyPage": 212,
+      "ref": "grammar_p191_q03"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
+  },
+  {
+    "id": "ad7012da",
+    "skill": "Transitions",
+    "difficulty": "Medium",
+    "difficultyStatus": "provisional",
+    "passage": "Predictions that electronic books would replace physical ones entirely appear to have been premature. ______ sales of printed books have actually overtaken sales of electronic ones in some genres. While easy access to online platforms satisfies consumers' demand for instant content, print offers reader a tactile experience they cannot obtain from screens.",
+    "question": "Which choice completes the text with the most logical transition?",
+    "options": [
+      "A. In fact,",
+      "B. Nevertheless,",
+      "C. Similarly,",
+      "D. On the other hand,"
+    ],
+    "answer": "A",
+    "explanation": "All four choices are transitions, and they do not assert the same thing: A signals continuation; B signals contrast; C signals continuation; D signals contrast. Decide what the text does between the two sentences before choosing. Sharpens or intensifies the prior claim — makes it more specifically true. The answer is A, \"In fact,\".",
+    "strategy": "Direction Check",
+    "source": {
+      "book": "The Ultimate Guide to SAT Grammar, Sixth Edition",
+      "questionPage": 190,
+      "keyPage": 212,
+      "ref": "grammar_p191_q04"
+    },
+    "origin": "book-ugsg",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "mapped-from-sat"
   }
 ];

@@ -105,11 +105,11 @@
   .saved{font-size:.78rem;color:var(--good);font-weight:700;margin-top:.25rem;height:1rem}
 </style>
 <script src="gate.js?v=20260820"></script>
-<script src="data-craft-structure.js?v=20260711"></script>
-<script src="data-expression-of-ideas.js?v=20260726"></script>
-<script src="data-info-ideas.js?v=20260726"></script>
-<script src="data-conventions.js?v=20260811"></script>
-<script src="progress.js?v=20260904"></script>
+<script src="data-craft-structure.js?v=20260909"></script>
+<script src="data-expression-of-ideas.js?v=20260909"></script>
+<script src="data-info-ideas.js?v=20260909"></script>
+<script src="data-conventions.js?v=20260909"></script>
+<script src="progress.js?v=20260909"></script>
 <script src="sheet-sync.js?v=20260825"></script>
 <script src="homework/assignments.js?v=20260908"></script>
 </head>
@@ -203,7 +203,12 @@
   var HW_QUARANTINE = {};
   QB = QB.filter(function(q){ return q && !HW_QUARANTINE[q.id]; });
 
-  function byId(id){ for(var i=0;i<QB.length;i++) if(QB[i].id===id) return QB[i]; return null; }
+  var QB_ID_MAP={};
+  QB.forEach(function(q){
+    QB_ID_MAP[q.id]=q;
+    (q.altIds||[]).forEach(function(id){ if(id) QB_ID_MAP[id]=q; });
+  });
+  function byId(id){ return QB_ID_MAP[id]||null; }
 
   // ── The record of what she actually did. This is what makes review possible:
   // the old runner kept only a running score, so the moment she clicked Next
@@ -212,7 +217,16 @@
   var RECS_KEY = 'psat89_hwrec_'+student+'_'+plan.start+'_'+dayN;
   var records = [];
   function saveRecs(){ try{ localStorage.setItem(RECS_KEY, JSON.stringify({at:Date.now(), recs:records})); }catch(e){} }
-  function loadRecs(){ try{ var o=JSON.parse(localStorage.getItem(RECS_KEY)); return (o&&o.recs&&o.recs.length)?o.recs:null; }catch(e){ return null; } }
+  function loadRecs(){
+    try{
+      var o=JSON.parse(localStorage.getItem(RECS_KEY));
+      if(!(o&&o.recs&&o.recs.length)) return null;
+      var changed=false;
+      o.recs.forEach(function(r){ var q=byId(r.id); if(q&&q.id!==r.id){r.id=q.id; changed=true;} });
+      if(changed) localStorage.setItem(RECS_KEY,JSON.stringify(o));
+      return o.recs;
+    }catch(e){ return null; }
+  }
 
   // ── Review-only entry (from the hub's "Review" link on a finished day).
   if (reviewOnly) {
@@ -252,7 +266,7 @@
 
     var target = (bias==='up') ? diffs[diffs.length-1] : diffs[0];
     var lean=[], rest=[];
-    pool.forEach(function(q){ (q.difficulty===target?lean:rest).push(q); });
+    pool.forEach(function(q){ (q.psatDifficulty===target?lean:rest).push(q); });
 
     var picked=_pick(lean, Math.min(Math.ceil(n*CALIBRATE_LEAN), n));
     var have={}; picked.forEach(function(q){ have[q.id]=true; });
@@ -294,7 +308,7 @@
       var secPool=QB.filter(function(q){
         if(_used[q.id]) return false;
         if(sec.skills && sec.skills.length && sec.skills.indexOf(q.skill)<0) return false;
-        if(sec.diffs && sec.diffs.length && sec.diffs.indexOf(q.difficulty)<0) return false;
+        if(sec.diffs && sec.diffs.length && sec.diffs.indexOf(q.psatDifficulty)<0) return false;
         return true;
       });
       var picked=_calibratedPick(sec, secPool, sec.count||0);
@@ -302,7 +316,7 @@
       set=set.concat(picked);
     });
   } else {
-    var pool=QB.filter(function(q){return spec.skills.indexOf(q.skill)>=0 && spec.diffs.indexOf(q.difficulty)>=0;});
+    var pool=QB.filter(function(q){return spec.skills.indexOf(q.skill)>=0 && spec.diffs.indexOf(q.psatDifficulty)>=0;});
     set=_pick(pool, spec.count);
   }
 
@@ -676,7 +690,7 @@
       ? Math.max(0, n.secs - (onText || 0))
       : (r.onOpts != null ? r.onOpts : null);
     records[idx]={
-      id:q.id, skill:q.skill, difficulty:q.difficulty,
+      id:q.id, skill:q.skill, difficulty:q.psatDifficulty,
       chosen:n.chosen, answer:q.answer,
       ok: grade ? (n.chosen===q.answer) : (r.ok||false),
       prediction:n.prediction||'',
@@ -804,7 +818,7 @@
     if(!isRedo){
       for (var j=0;j<daySet.length;j++){
         if (!records[j]) records[j]={
-          id:daySet[j].id, skill:daySet[j].skill, difficulty:daySet[j].difficulty,
+          id:daySet[j].id, skill:daySet[j].skill, difficulty:daySet[j].psatDifficulty,
           chosen:null, answer:daySet[j].answer, ok:false, prediction:'',
           onText:null, onOpts:null, secs:null, tag:(expired?"I ran out of time":null), fix:''
         };
@@ -910,7 +924,7 @@
     }
 
     return '<div class="rv '+cls+'">'
-      + '<div class="rvh"><span class="rvn">Q'+r._n+' · '+esc(q.skill)+' · '+esc(q.difficulty)+'</span><span class="rvm">'+esc(timing)+'</span></div>'
+      + '<div class="rvh"><span class="rvn">Q'+r._n+' · '+esc(q.skill)+' · '+esc(q.psatDifficulty)+'</span><span class="rvm">'+esc(timing)+'</span></div>'
       + '<details><summary>Show the text</summary><div class="rvp">'+media+'</div></details>'
       + '<div class="rvq">'+esc(q.question)+'</div>'
       + yours + right + fixed + pred

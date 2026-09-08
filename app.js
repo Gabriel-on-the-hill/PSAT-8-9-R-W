@@ -185,7 +185,7 @@ function getLimit() {
 function getFilteredPool() {
     const skills = getSelectedSkills();
     const diffs  = getSelectedDiffs();
-    return questionBank.filter(q => skills.includes(q.skill) && diffs.includes(q.difficulty));
+    return questionBank.filter(q => skills.includes(q.skill) && diffs.includes(q.psatDifficulty));
 }
 
 // ══════════════════════════════════════════════════════════════════
@@ -339,7 +339,7 @@ function allocateByRatio(pool, count, diffWeights, skillWeights) {
     // one-dimensional case.
     if (!skillOn) {
         const owedDiff = apportion(diffWeights, count);
-        sweep(q => claim(owedDiff, q.difficulty));
+        sweep(q => claim(owedDiff, q.psatDifficulty));
         sweep(() => true);
         return picked;
     }
@@ -362,7 +362,7 @@ function allocateByRatio(pool, count, diffWeights, skillWeights) {
     // Pass 1 · fill the grid cell by cell. Spending a cell also spends the
     // skill's overall quota, so pass 2 only ever sees a genuine shortfall.
     sweep(q => {
-        if (!claim(owedCell[q.skill], q.difficulty)) return false;
+        if (!claim(owedCell[q.skill], q.psatDifficulty)) return false;
         owedSkill[q.skill]--;
         return true;
     });
@@ -400,7 +400,7 @@ function ratioCapacity(pool, weights, keyOf) {
 // The set size to apportion when the limit is "All matching questions".
 function ratioTotalForWholePool(pool, diffWeights, skillWeights) {
     let cap = pool.length;
-    if (hasShares(diffWeights))  cap = Math.min(cap, ratioCapacity(pool, diffWeights,  q => q.difficulty));
+    if (hasShares(diffWeights))  cap = Math.min(cap, ratioCapacity(pool, diffWeights,  q => q.psatDifficulty));
     if (hasShares(skillWeights)) cap = Math.min(cap, ratioCapacity(pool, skillWeights, q => q.skill));
     return cap;
 }
@@ -424,7 +424,7 @@ function orderSATStyle(questions) {
     return questions.slice().sort((a, b) => {
         const d = domainRank(a.skill) - domainRank(b.skill);
         if (d !== 0) return d;
-        const ra = DIFF_RANK[a.difficulty], rb = DIFF_RANK[b.difficulty];
+        const ra = DIFF_RANK[a.psatDifficulty], rb = DIFF_RANK[b.psatDifficulty];
         return (ra === undefined ? 1 : ra) - (rb === undefined ? 1 : rb);
     });
 }
@@ -605,7 +605,7 @@ function finalizeSession() {
     }
 
     const skills = [...new Set(activeQuestions.map(q => q.skill))];
-    const diffs  = [...new Set(activeQuestions.map(q => q.difficulty))];
+    const diffs  = [...new Set(activeQuestions.map(q => q.psatDifficulty))];
     logSession(skills, diffs, score, activeQuestions.length);
     mockScoreEstimate = null;
     showCompletion();
@@ -678,9 +678,9 @@ function buildMockModule(spread, used) {
         const pool = questionBank.filter(q =>
             SKILL_DOMAIN[q.skill] === domain && !used.has(q.id));
         const byDiff = {
-            Easy:   _fyShuffle(pool.filter(q => q.difficulty === 'Easy')),
-            Medium: _fyShuffle(pool.filter(q => q.difficulty === 'Medium')),
-            Hard:   _fyShuffle(pool.filter(q => q.difficulty === 'Hard')),
+            Easy:   _fyShuffle(pool.filter(q => q.psatDifficulty === 'Easy')),
+            Medium: _fyShuffle(pool.filter(q => q.psatDifficulty === 'Medium')),
+            Hard:   _fyShuffle(pool.filter(q => q.psatDifficulty === 'Hard')),
         };
         const tE = Math.round(n * spread.E), tH = Math.round(n * spread.H);
         const tM = n - tE - tH;
@@ -774,7 +774,7 @@ function updateSetupUI() {
         const el = document.getElementById(id);
         if (!el) return;
         const n = questionBank.filter(
-            q => q.skill === skill && diffs.includes(q.difficulty)
+            q => q.skill === skill && diffs.includes(q.psatDifficulty)
         ).length;
         el.textContent = n + ' q';
     });
@@ -1085,12 +1085,12 @@ function showCompletion() {
             const rightLabel = `${q.answer}. ${optText(q.answer)}`.trim();
             const imgThumb  = q.image
                 ? `<img class="missed-thumb" src="${escapeHtml(q.image)}" alt="Question figure" loading="lazy">` : '';
-            const diffCls   = q.difficulty === 'Easy' ? 'badge-green'
-                            : q.difficulty === 'Hard' ? 'badge-red' : 'badge-orange';
+            const diffCls   = q.psatDifficulty === 'Easy' ? 'badge-green'
+                            : q.psatDifficulty === 'Hard' ? 'badge-red' : 'badge-orange';
             return `
             <div class="missed-item">
                 <div class="missed-meta">
-                    <span class="badge ${diffCls}" style="font-size:0.65rem">${q.difficulty}</span>
+                    <span class="badge ${diffCls}" style="font-size:0.65rem">${q.psatDifficulty}</span>
                     <span class="missed-skill">${SKILL_ABBR[q.skill] || q.skill}</span>
                 </div>
                 <div class="missed-q">${escapeHtml(shortQ)}</div>
@@ -1338,10 +1338,10 @@ function loadQuestion(index) {
     if (domainBadge) domainBadge.textContent = SKILL_DOMAIN[q.skill] || '';
 
     const diffBadge = document.getElementById('difficultyBadge');
-    diffBadge.textContent = q.difficulty;
+    diffBadge.textContent = q.psatDifficulty;
     diffBadge.className   = 'badge ' + (
-        q.difficulty === 'Easy' ? 'badge-green' :
-        q.difficulty === 'Hard' ? 'badge-red'   : 'badge-orange'
+        q.psatDifficulty === 'Easy' ? 'badge-green' :
+        q.psatDifficulty === 'Hard' ? 'badge-red'   : 'badge-orange'
     );
     document.getElementById('questionCounter').textContent =
         `Q ${index + 1} / ${activeQuestions.length}`;
@@ -1487,7 +1487,8 @@ function submitAnswer() {
     bankTimeOnCurrent();
     const isCorrect = r.chosen === q.answer;
     commitOne(responses, i, q, 'practice', recordAnswer);
-    recordTrapOutcome(q.skill, q.trapName, isCorrect, q.difficultyStatus !== 'provisional');
+    recordTrapOutcome(q.skill, q.trapName, isCorrect,
+        q.difficultyStatus !== 'provisional');
     if (isCorrect) score++;
     document.getElementById('currentScore').textContent = score;
 
@@ -1922,7 +1923,7 @@ function showProgressPanel() {
 
     const skillRows = skills.map(skill => {
         const diffHtml = DIFFS.map(d => {
-            const pool = questionBank.filter(q => q.skill === skill && q.difficulty === d);
+            const pool = questionBank.filter(q => q.skill === skill && q.psatDifficulty === d);
             if (pool.length === 0) return '';
             const s   = getPoolSummary(pool);
             const pct = Math.round(s.mastered / s.total * 100);
