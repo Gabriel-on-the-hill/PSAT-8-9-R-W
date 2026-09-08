@@ -108,34 +108,28 @@
 
 window.CHALLENGE_SETS = {
 
-    'Faith': [
-        {
-            setId:  'con-concepts-1',
-            title:  'Conventions: every mark, every form',
-            source: 'Built from the bank by concept coverage, 10 Aug 2026',
-            date:   '2026-08-11',
-            ids: [
-                // ── Boundaries · one per mark ──────────────────────────
-                '91d28dac',   // NoPunct  · Easy    — the trap: no mark belongs
-                'f0124561',   // Semi     · Medium
-                '312bfabb',   // Commas   · Medium  — non-essential clause
-                '139f1b75',   // Dash     · Hard    — parenthetical pair
-                '65439b1e',   // Colon    · Hard    — colon before an explanation
-
-                // ── Form, Structure & Sense · all six concepts ─────────
-                '78cef1d4',   // SVA      · Easy    — the odd-one-out check
-                '69556476',   // VTense   · Easy
-                '8de2ee41',   // VForm    · Easy    — infinitive vs finite
-                '6b2a1288',   // SVA      · Medium  — subject across an interrupter
-                '9ab0c766',   // VTense   · Medium
-                'cf881255',   // Pron     · Medium
-                '02c22816',   // Poss     · Medium
-                '1fda4fb5',   // Mod      · Hard    — ⚠ ruleType unverified
-                '11add1e8',   // SVA      · Hard
-                '03ca25bb',   // Poss     · Hard
-            ],
-        },
-    ],
+    // ── Faith · RETIRED 8 Sep 2026 ─────────────────────────────────
+    // con-concepts-1 is spent: 14 of its 15 ids were worked on 14 Aug 2026, so a
+    // sitting now would score recall, not mastery, and the tally would read as
+    // progress it did not measure. The card is withdrawn from the hub rather than
+    // left standing as an invitation to sit a set that can no longer measure
+    // anything. Whole-section evidence comes from the Blue Book instead.
+    //
+    // THIS IS A DELIBERATE EXCEPTION TO RULE 2 (append-only), made by the tutor.
+    // Nothing else in the file is touched, and no set was edited: the array is
+    // emptied, which rule 5 already defines as "no challenge is served".
+    //
+    // NO STUDENT DATA IS AFFECTED. The module introduces zero storage of its own —
+    // every tally derives from psat89_progress_Faith, which is untouched. Her work
+    // on these 15 questions stays on the review ladder exactly as it was.
+    //
+    // RULE 3 STILL BINDS, so the spent ids are preserved here: any future Faith set
+    // must exclude all fifteen.
+    //   91d28dac f0124561 312bfabb 139f1b75 65439b1e   (Boundaries · one per mark)
+    //   78cef1d4 69556476 8de2ee41 6b2a1288 9ab0c766   (FSS)
+    //   cf881255 02c22816 1fda4fb5 11add1e8 03ca25bb   (FSS)
+    // Only f0124561 (Semi · Medium) was never worked.
+    'Faith': [],
 
     // ═════════════════════════════════════════════════════════════════
     // HOW THIS SET WAS BUILT — Form, Structure and Sense, all six concepts
