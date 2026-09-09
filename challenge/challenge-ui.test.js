@@ -33,7 +33,8 @@ const HTML = read('index.html')
     .replace(/<link\b[^>]*>/gi, '');
 
 const SCRIPTS = [
-    'gate.js', 'config.js', 'progress.js', 'sheet-sync.js', 'storage.js', 'timer.js', 'history.js',
+    'gate.js', 'config.js', 'progress.js', 'sheet-sync.js', 'session-responses.js',
+    'storage.js', 'timer.js', 'history.js',
     'data-craft-structure.js', 'data-expression-of-ideas.js', 'data-info-ideas.js', 'data-conventions.js',
     'app.js',
     // test-only probe: a classic script, so it closes over app.js's lexical globals
@@ -48,17 +49,24 @@ const PROBE = 'window.__peek = function(){ return { activeQuestions: activeQuest
 
 // ── Expectations are DERIVED FROM THE ROSTER, never written as literals ──
 //
-// This suite loads the real challenge/sets.js, so every "28 questions" and
-// "Practice Test 8" written by hand became a failure the day a second set was
-// appended — a test asserting the roster's contents rather than the module's
-// behaviour. sets.js is append-only and challenge.js serves the LAST entry, so
-// that is what these read. Appending a p12 set must not touch this file.
+// This suite loads the real challenge/sets.js. When the live roster has a set,
+// challenge.js serves its LAST entry and the expectations are derived from it.
+// An intentionally empty roster must not disable the integration test, though:
+// in that case a test-only set is injected after sets.js executes and before the
+// challenge engine loads. The production roster itself is never changed.
 const SETS  = (() => { const w = {}; new Function('window', read('challenge/sets.js'))(w); return w.CHALLENGE_SETS; })();
 // The STUDENT is derived too, not written down. gate.js names are the only
 // personal names this repo may carry, and a test file is not gate.js — so this
 // takes whoever the roster happens to hold rather than naming anyone here.
-const STUDENT = Object.keys(SETS)[0];
-const SET   = SETS[STUDENT][SETS[STUDENT].length - 1];
+const LIVE_STUDENT = Object.keys(SETS).find(name => Array.isArray(SETS[name]) && SETS[name].length);
+const USING_FIXTURE = !LIVE_STUDENT;
+const STUDENT = LIVE_STUDENT || '__CHALLENGE_UI_TEST__';
+const FIXTURE_IDS = [...read('data-conventions.js').matchAll(/"id"\s*:\s*"([^"]+)"/g)]
+    .map(match => match[1]).slice(0, 15);
+const SET = LIVE_STUDENT
+    ? SETS[STUDENT][SETS[STUDENT].length - 1]
+    : { setId: 'challenge-ui-fixture', title: 'Challenge UI fixture', source: 'Test fixture', ids: FIXTURE_IDS };
+if (USING_FIXTURE && SET.ids.length < 3) throw new Error('challenge UI fixture needs at least three bank ids');
 const N     = SET.ids.length;
 // No debrief layer in this app — see the SCRIPTS note above. A set built from
 // the bank has no verbatim missed questions to show, so this is 0 and the
@@ -88,6 +96,9 @@ function build(student, search) {
             const s = w.document.createElement('script');
             s.textContent = f === null ? PROBE : read(f);
             w.document.body.appendChild(s);
+            if (f === 'challenge/sets.js' && USING_FIXTURE) {
+                w.CHALLENGE_SETS[STUDENT] = [JSON.parse(JSON.stringify(SET))];
+            }
         }
         if (w.document.readyState !== 'loading') return resolve(w);
         // registered after challenge.js's, so boot() has already run
@@ -117,9 +128,9 @@ section('1 · The tile appears only for a student who has a set');
     ok('tile shows the live tally', new RegExp('Mastered 0 of '+N).test(txt(tile)), txt(tile));
     ok('tile names the source', new RegExp(SET.source.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')).test(txt(tile)));
 
-    const b = await build('Bruce');
-    ok('Bruce gets no tile', !$(b, 'challengeTile'));
-    ok('Bruce gets no challenge screen', !$(b, 'challengeScreen'));
+    const b = await build('__NO_CHALLENGE__');
+    ok('a student with no set gets no tile', !$(b, 'challengeTile'));
+    ok('a student with no set gets no challenge screen', !$(b, 'challengeScreen'));
 }
 
 // ═════════════════════════════════════════════════════════════════
