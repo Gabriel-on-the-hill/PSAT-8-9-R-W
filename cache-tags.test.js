@@ -9,6 +9,8 @@
 // the entire cache-busting mechanism: change a file without changing its tag and
 // every browser that already has the old copy keeps it, indefinitely. Nothing
 // errors. The page loads, the app runs, and it runs the old code.
+// Same-day second releases may add `&rev=N`; `v` remains the file-change date while
+// the revision makes the browser request a distinct URL.
 //
 // That is not hypothetical. It happened in the sibling SAT app on 25 Jul 2026 —
 // ELEVEN files stale, some by nineteen days: app.js tagged 3 Jul but changed
@@ -46,7 +48,7 @@ if (lastCommitDate('AGENTS.md') === undefined) {
   process.exit(0);
 }
 
-const REF = /(?:src|href)="([^"?]+)\?v=(\d{8})"/g;
+const REF = /(?:src|href)="([^"?]+)\?v=(\d{8})(?:&rev=\d+)?"/g;
 
 // Every .html in the app root, plus the ones in sub-folders that carry their
 // own script tags. A page missed here is a page whose tags nothing checks.

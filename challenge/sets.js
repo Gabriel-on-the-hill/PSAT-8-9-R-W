@@ -207,43 +207,17 @@ window.CHALLENGE_SETS = {
     // Note 03ca25bb also appears in Faith's con-concepts-1. Rule 3 is per student —
     // a set must not overlap that student's OWN earlier sets — and this is Maysa's
     // first set, so there is nothing to exclude.
-    'Maysa': [
-        {
-            setId:  'fss-concepts-1',
-            title:  'Form, Structure and Sense: every form, every agreement',
-            source: 'Built from the bank by concept coverage, 14 Aug 2026',
-            date:   '2026-08-14',
-            ids: [
-                // ── Verb form · finite vs non-finite, both directions ──
-                'a30567fd',   // VForm    · Hard   — -ing modifier, clause already has its verb
-                'cc0dcd9a',   // VForm    · Medium — infinitive as modifier
-                '491a17a7',   // VForm    · Medium — the blank IS the main verb, so conjugate it
-
-                // ── Modifier placement · Hard-only in the bank ─────────
-                '49fbe443',   // Mod      · Hard   — true subject buried in a possessive
-                '8e23d0c7',   // Mod      · Hard   — true subject behind "there are" + passive
-
-                // ── Subject-verb agreement · across interrupters ───────
-                '377a2b12',   // SVA      · Hard   — singular across a relative clause
-                'f10b7ce4',   // SVA      · Hard   — plural subject, singular nouns around it
-                '81000f32',   // SVA      · Medium — singular across a prepositional phrase
-
-                // ── Verb tense · past against past perfect ─────────────
-                'b995581c',   // VTense   · Hard   — earlier of two past events
-                '0b3c05ab',   // VTense   · Hard   — plain past beside an existing past perfect
-
-                // ── Pronouns · agreement and the homophone pair ────────
-                'bb804798',   // Pron     · Hard   — nearest noun is the wrong number
-                '2b9ce465',   // Pron     · Hard   — its/it's, their/they're
-
-                // ── Possessives · two decisions in one blank ───────────
-                '03ca25bb',   // Poss     · Hard   — plain plural + singular possessive
-                'a272d236',   // Poss     · Hard   — plain plural + plural possessive
-                'f09186ab',   // Poss     · Medium — singular possessive + plain plural
-            ],
-        },
-    ],
-
+    // ── RETIRED 9 Sep 2026 ─────────────────────────────────────────
+    // fss-concepts-1 has already been worked across submitted sittings and
+    // correction passes. It no longer serves as a fresh challenge, so its card
+    // is withdrawn from the hub.
+    //
+    // The progress ledger and submitted history remain untouched. Rule 3 still
+    // binds, so any future set for this student must exclude all fifteen ids:
+    //   a30567fd cc0dcd9a 491a17a7 49fbe443 8e23d0c7
+    //   377a2b12 f10b7ce4 81000f32 b995581c 0b3c05ab
+    //   bb804798 2b9ce465 03ca25bb a272d236 f09186ab
+    'Maysa': [],
     // ═════════════════════════════════════════════════════════════════
     // con-taught-1 — built to match a lesson, not to survey a domain
     // ═════════════════════════════════════════════════════════════════
