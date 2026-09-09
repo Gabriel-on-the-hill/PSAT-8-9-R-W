@@ -46,12 +46,11 @@ broken and nothing failed. Read a test's header before you change what it guards
 
 **Four suites were missing from this list until 6 Sep 2026** — `homework-nav`, `hub-count`,
 `challenge-core` and `challenge-ui` — which is the same omission the paragraph above describes,
-happening a second time to a different set of files. Three were green. **`challenge/challenge-ui.test.js`
-is RED and has been since it was written on 11 Aug 2026:** the session never starts under jsdom, so
-the exam-mode guard assertions fail and the run dies on `$(w,'nextBtn').click()` with `nextBtn`
-undefined. It is a real failure in the test's own driving of the page, not something you just broke,
-and it is on the list so that it gets fixed rather than forgotten again. **Do not delete it to make
-the list green.**
+happening a second time to a different set of files. All four are green as of 9 Sep 2026.
+`challenge/challenge-ui.test.js` must load `session-responses.js` before `storage.js` and `app.js`,
+matching `index.html`; otherwise `makeResponses` is undefined and the session never starts. It also
+uses a test-only set when the production challenge roster is intentionally empty. **Do not delete or
+skip it to make the list green.**
 
 **Put jsdom on a local disk, not in the repo folder.** The four `data-*.js` files are about a
 megabyte and jsdom itself is thousands of small files; loading either across a mounted or synced
