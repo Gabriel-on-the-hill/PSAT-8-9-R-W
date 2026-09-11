@@ -32,28 +32,55 @@
 // ══════════════════════════════════════════════════════════════════
 
 const HOMEWORK = {
-  // Maysa — 9 Sep re-author. Two short sets before the next class.
-  // Each set uses exact sections; up to two due review questions may be added.
+  // 12–17 Sep 2026. Five short sets, with an untimed build before timed transfer.
   "Maysa": {
-    title: "Two short sets before class",
-    start: "2026-09-09",
-    through: "2026-09-11",
+    title: "Five short sets — spread them across the week",
+    start: "2026-09-12",
+    through: "2026-09-17",
     unlock: "sequential",
     days: [
-      { n:1, focus:"Punctuation fast, data slow — one clock, two budgets", minutes:8,
+      { n:1, focus:"Conventions proof — build the method without a clock", minutes:0, review:0,
         sections:[
-          { skills:["Boundaries"],                         diffs:["Hard"], count:2 },
-          { skills:["Command of Evidence — Quantitative"], diffs:["Hard"], count:2 },
+          { skills:["Boundaries"],                    diffs:["Medium"], count:1 },
+          { skills:["Boundaries"],                    diffs:["Hard"],   count:2 },
+          { skills:["Form, Structure, and Sense"],    diffs:["Medium"], count:1 },
+          { skills:["Form, Structure, and Sense"],    diffs:["Hard"],   count:2 },
         ],
-        tip:"SIX questions in eight minutes: four new questions and up to two review questions from earlier work.\nOn the two punctuation questions, aim for about FORTY-FIVE SECONDS each. On the two data questions, allow about TWO MINUTES each. The review questions can appear anywhere, so include them in your clock from the start.\nPunctuation: remove the extra description, find the subject and finite verb on each side, then let the sentence structure force the mark. Two complete sentences need a full stop, a semicolon, or a comma plus and/but/or/so. One complete side and a fragment cannot take a semicolon.\nData: read the heading, axes, and units before the choices. Take only the statement the data actually supports." },
+        tip:"No clock. Type the proof before you reveal the choices.\nFor a verb-form question, name the true subject and the finite verb the sentence needs. For punctuation, remove any optional description, then label each side: complete clause, dependent clause, or phrase.\nA dependent clause can contain a finite verb; a non-finite -ing or to- phrase is not a clause. Keep going past the last question until the results screen appears so the set is saved." },
 
-      { n:2, focus:"Information and Ideas at real pace — on your own", minutes:10,
+      { n:2, focus:"The same conventions method — now under time", minutes:7, review:0,
         sections:[
-          { skills:["Command of Evidence — Textual"], diffs:["Hard"], count:2 },
-          { skills:["Inferences"],                     diffs:["Hard"], count:2 },
-          { skills:["Central Ideas and Details"],      diffs:["Hard"], count:2 },
+          { skills:["Boundaries"],                    diffs:["Medium"], count:1 },
+          { skills:["Boundaries"],                    diffs:["Hard"],   count:2 },
+          { skills:["Form, Structure, and Sense"],    diffs:["Medium"], count:1 },
+          { skills:["Form, Structure, and Sense"],    diffs:["Hard"],   count:2 },
         ],
-        tip:"EIGHT questions in ten minutes: six new Information and Ideas questions — two of each kind — and up to two review questions from earlier work. The review questions can appear anywhere.\nRead the passage once. Before you look at the choices, say its main claim or the answer you expect in one sentence of your own. Then choose the option that matches it.\nAt sixty seconds, decide: \"I have it\" or \"I'm choosing and moving.\" Do not cut the passage to save time, and do not spend the set comparing choices without a prediction." },
+        tip:"Six questions in seven minutes. Timed mode will not ask you to type the proof, but run it mentally before choosing.\nRemove interruptions, find the true subject and finite verb, and label each side complete clause, dependent clause, or phrase. Let that structure force the answer.\nAt sixty seconds, decide. At ninety seconds, choose and move." },
+
+      { n:3, focus:"Reading proof — function, inference, and data", minutes:9,
+        sections:[
+          { skills:["Text Structure and Purpose"],          diffs:["Medium","Hard"], count:1 },
+          { skills:["Inferences"],                          diffs:["Medium","Hard"], count:1 },
+          { skills:["Command of Evidence — Quantitative"], diffs:["Medium","Hard"], count:2 },
+        ],
+        tip:"Four new reading questions and up to two due review questions in nine minutes.\nName the job before reading the choices. For function, state what the exact detail does. For inference, complete the logic in your own words. For data, read the title, headings, and units, then prove every part of the choice.\nAllow about two minutes for each data question; due review questions count in the nine minutes." },
+
+      { n:4, focus:"Conventions at pace — mixed Medium and Hard", minutes:7,
+        sections:[
+          { skills:["Boundaries"],                 diffs:["Medium","Hard"], count:2 },
+          { skills:["Form, Structure, and Sense"], diffs:["Medium","Hard"], count:2 },
+        ],
+        tip:"Four new conventions questions and up to two due review questions in seven minutes.\nRemove interruptions. Find the true subject and finite verb. For punctuation, label each side complete clause, dependent clause, or phrase, then let the structure force the mark.\nAt sixty seconds, decide. At ninety seconds, choose and move." },
+
+      { n:5, focus:"Mixed transfer — prove the answer, then move", minutes:8, review:1,
+        sections:[
+          { skills:["Boundaries"],                         diffs:["Medium","Hard"], count:1 },
+          { skills:["Form, Structure, and Sense"],         diffs:["Medium","Hard"], count:1 },
+          { skills:["Text Structure and Purpose"],         diffs:["Medium","Hard"], count:1 },
+          { skills:["Inferences"],                         diffs:["Medium","Hard"], count:1 },
+          { skills:["Command of Evidence — Quantitative"], diffs:["Medium","Hard"], count:1 },
+        ],
+        tip:"Five new mixed questions and up to one due review question in eight minutes.\nName the job first, state the proof, then choose. Give data questions a little more time, but do not accept any option without proof. Change an answer only when you find new evidence." },
     ]
   },
 
