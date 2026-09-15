@@ -84,99 +84,83 @@ const HOMEWORK = {
     ]
   },
 
-  // Faith — week of 8 Sep 2026. Five short sets across seven days.
+  // Faith — week of 15 Sep 2026. Four sets across four days, one a day.
   //
-  // START MOVES to 2026-09-08. Completion is stored per plan as
-  // psat89_hw_<student>_<start>_<n>, so a new start date orphans finished days and
-  // re-serves them. That is safe here and only here: on the 10 Aug plan only Day 1
-  // was ever submitted, and Days 2-5 were never served at all, so nothing that was
-  // completed is lost and nothing completed is re-served.
+  // CUMULATIVE, NOT SEQUENTIAL, deliberately. Sequential opens the next set the
+  // moment one is submitted, so a whole week can be finished in a single sitting —
+  // and spacing is this plan's purpose, not its packaging. Cumulative keeps the
+  // same calendar floor (n <= hwDaysAvailable(start), with no dependence on a
+  // submission flag, so it cannot deadlock) and adds the ceiling sequential lacks:
+  // a set cannot be opened before its date. Catching up stays possible.
   //
-  // SEQUENTIAL IS NOW THE RIGHT CHOICE, where before it was the dangerous one.
-  // Under the old hwDayOpen() a missing submission flag locked every later set
-  // indefinitely. It now has a CALENDAR FLOOR: a missing flag only stops a set being
-  // EARNED early, and the day releases on its own date regardless. So sequential
-  // gives cumulative's floor plus the ability to run ahead on a free evening, and it
-  // can no longer deadlock. Prefer it over cumulative from here.
+  // start: 2026-09-15. The 8 Sep plan is complete through day 5 and its `through`
+  // date has passed, so nothing finished is orphaned by the move.
   //
-  // THE LADDER IS ASYMMETRIC ACROSS THE TWO SKILLS, on purpose:
-  //   Boundaries  -> the clock arrives immediately, on day 3. It is the older skill
-  //                  in this plan and the only variable this week isolates for it.
-  //   Transitions -> two untimed days first (1, 2), clock on day 4. It is the newest
-  //                  skill in the plan, and a new skill plus a clock in one set
-  //                  measures neither of them.
-  // Day 5 is the only set that mixes both under a clock. Switching cleanly between a
-  // punctuation question and a meaning question is its own skill and nothing earlier
-  // in the week practises it.
+  // THE ORDER OF THE FOUR DAYS IS THE DESIGN:
+  //   1 — punctuation with NO clock and a typed prediction. Untimed comes before
+  //       timed, and the typed reasoning is the only way to tell a wrong rule from
+  //       a rushed one.
+  //   2 — main idea and data, slower on purpose, two minutes a question.
+  //   3 — the same punctuation, now on the clock, two days after day 1, with the
+  //       transitions reps beside it. Same skill, harder condition, spacing between.
+  //   4 — eight questions in real domain order: Conventions, then Expression of
+  //       Ideas. That is the shape of the last third of a module, and no short
+  //       single-skill set rehearses switching between them.
   //
-  // 90 SECONDS, NOT 71. Real pace is ~71s (27 questions / 32 minutes), but a flat
-  // budget is the wrong model: the module puts Conventions and Expression of Ideas
-  // in its last third, and those questions are worth more time than the reading
-  // questions that open it. 90s is that stretch practised at the rate it should get.
-  // Do not tighten toward 71 before the dress rehearsal.
+  // `review` IS PART OF THE DESIGN, NOT A DEFAULT. Day 1 sets 0 so a typed,
+  // untimed punctuation set is not interrupted by another skill. Day 4 sets 0
+  // because review questions splice in at RANDOM POSITIONS, and that day's whole
+  // point is the order. Days 2 and 3 take the dose and let the ladder work.
   //
-  // minutes COVERS THE REVIEW QUESTIONS TOO. Every day here is 4 new + 2 review = 6,
-  // so 9 minutes is ~90s each, not ~135s. Author 4 new and let the ladder make it 6;
-  // short sets that get finished beat long sets that get abandoned.
+  // 90 SECONDS, STILL NOT 71. Real pace is ~71s, but the front of the module is
+  // cheap for this student and the last third is expensive. 90s is that stretch
+  // practised at the rate it deserves. 71s belongs to a full-length rehearsal
+  // under real conditions, not to a six-question set.
   //
-  // SECTIONS EVERYWHERE, EVEN FOR ONE SKILL. A single diffs:["Medium","Hard"] day
-  // does NOT yield an even split: it orders one pool through prioritizePool() and
-  // slices the top N, so the split lands wherever the sort does. One difficulty per
-  // section is the only construction that makes a count exact, and it also keeps
-  // _calibratedPick out of the draw.
+  // ONE DIFFICULTY PER SECTION, always. A single diffs:["Medium","Hard"] section
+  // orders one pool and slices the top N, so the split lands wherever the sort
+  // does. Separate sections are the only construction that makes a count exact.
   //
-  // BANK SUPPLY. Transitions has 23 items unspent by the 5 Sep class set (1 E, 8 M,
-  // 15 H) and this week spends 13. Boundaries draws only on Commas and NoPunct,
-  // which are the best-supplied rules in the Conventions bank; the Semi/Colon/Dash
-  // items are nearly exhausted and are NOT reachable from here anyway, because a
-  // section takes skills/diffs/count and has no id field. Those are class-set items.
-  //
-  // Shape only. The reasoning that produced these choices is TUTOR-ONLY and lives in
-  // the gitignored notes: this file is loaded by three pages, so a student's browser
-  // downloads all of it — every student's plan, not just their own.
+  // Shape only. The student data behind these choices is TUTOR-ONLY and lives in
+  // the gitignored ledger — this file is downloaded in full by every student.
   "Faith": {
-    title: "The end of the module — five short sets, and the clock where it belongs",
-    start: "2026-09-08",
-    through: "2026-09-14",    // sequential unlock stops enforcing spacing, so the hub asks for these to be spread
-    unlock: "sequential",
+    title: "The last third of a module — four short sets, one a day",
+    start: "2026-09-15",
+    through: "2026-09-18",
+    unlock: "cumulative",
     days: [
-      { n:1, focus:"Transitions — no clock, type the link before you look", review:0, minutes:0,
-        sections:[
-          { skills:["Transitions"], diffs:["Medium"], count:4 },
-        ],
-        tip:"No clock at all. Take as long as you want — this is the set where the method gets built.\nCover the choices before you read them. Every option on a transition question is a real transition naming a real relationship, so they are all convincing on their own. That is exactly why looking first ruins the question.\nRead the sentence BEFORE the blank and say what it claims. Read the sentence AFTER it and say what it claims. Then type the link between them in ORDINARY words — \"same again\", \"opposite\", \"so\", \"for instance\", \"then\", \"I'll admit that, but\". Not a transition word. A plain phrase.\nOnly then uncover the choices, and take the one whose family matches what you typed.\nOne distinction to carry all week: FOR EXAMPLE introduces a new instance of the thing just claimed. IN OTHER WORDS re-says the same fact in different words. If the sentence after the blank contains no new information, it is restatement, not example." },
-
-      { n:2, focus:"Transitions — same method, harder texts, still no clock", minutes:0,
-        sections:[
-          { skills:["Transitions"], diffs:["Medium"], count:2 },
-          { skills:["Transitions"], diffs:["Hard"],   count:2 },
-        ],
-        tip:"Still no clock. The texts get longer here; the five steps do not change.\nTwo things get harder at this level. First, the blank often sits INSIDE the sentence, after the subject, instead of at the front. Read it with the blank closed up — \"Jordan has yet to ratify the treaty\" — and then ask how that sits against the sentence before it.\nSecond, and this is the one worth writing down: IF THE SENTENCE AFTER THE BLANK ALREADY CONTAINS ITS OWN \"BUT\", THE BLANK IS A CONCESSION, NOT A CONTRAST. A sentence only turns once. If the turn happens later in the sentence, the blank is the part that agrees first — \"of course\", \"granted\", \"admittedly\" — and \"however\" is wrong there no matter how right it feels.\nOn a sequence question, find the dates before you find the transition. The order the sentences appear in tells you nothing about the order the events happened in." },
-
-      { n:3, focus:"Punctuation with a clock — about 90 seconds a question", minutes:9,
+      { n:1, focus:"Punctuation, no clock — say which mark and why before you look", review:0, minutes:0,
         sections:[
           { skills:["Boundaries"], diffs:["Hard"], count:4 },
         ],
-        tip:"About ninety seconds a question. Read that as room, not pressure — the clock is the only new thing in this set, so the clock is the only thing being practised.\nRun the procedure in this order, every time. First cover everything that could come out: the extra description, the who/which clause, anything sitting between two commas. What is left is the spine. Now look for a subject and a verb on each side of the mark.\nTwo complete sides -> full stop, semicolon, or comma plus and/but/or/so. One complete side and a fragment -> comma, colon or dash, and a semicolon is always wrong there.\nNever put a mark between a subject and its verb. And if the sentence has already opened a dash or a bracket, the interruption closes with the SAME mark and nothing after it — look left and read off what the sentence already did rather than judging what looks right.\nThe question to ask is not \"does a comma look OK here?\" It is \"what has this sentence already done, and what does that force?\"" },
+        tip:"No clock on this one at all, and you will have to type your reasoning before the choices appear. Take as long as you want. This set is about being right for the right reason, not about speed.\nBefore you type, do this in order. Cover the extra description, the who/which clause, anything sitting between two commas. What is left is the spine of the sentence. Now look at each side of the blank and ask whether it could stand on its own as a sentence.\nTwo complete sides: full stop, semicolon, or comma plus and/but/or/so. One complete side and a fragment: comma, colon or dash — and a semicolon is always wrong there. Never a mark between a subject and its verb. If the sentence has already opened a dash or a bracket, the interruption closes with the SAME mark.\nThen type what the structure forces, in your own words — \"both sides complete, needs a semicolon\" — and only then uncover the options.\nThe question is never \"does a comma look alright here?\" A comma almost always looks alright. The question is what the sentence has already done, and what that leaves you no choice about." },
 
-      { n:4, focus:"Transitions meets the clock — about 90 seconds a question", minutes:9,
+      { n:2, focus:"Main idea and data — slower on purpose", minutes:10,
         sections:[
-          { skills:["Transitions"], diffs:["Medium"], count:2 },
-          { skills:["Transitions"], diffs:["Hard"],   count:2 },
+          { skills:["Central Ideas and Details"],          diffs:["Hard"], count:2 },
+          { skills:["Command of Evidence — Quantitative"], diffs:["Hard"], count:2 },
         ],
-        tip:"First clock on this skill, and there is deliberate room in it.\nDo not drop the naming step because a timer is running. It is the first thing that goes and it is the only thing holding the method up — saying \"opposite\" to yourself costs about two seconds and it decides the question.\nIf you catch yourself reading all four choices and weighing which sounds best, stop and go back to the two sentences. That weighing feeling IS the wrong method — there is nothing to weigh once you have named the link.\nIf a question has not come to you after about forty seconds, choose and move on. Come back to it if the clock allows." },
+        tip:"About two minutes a question, and that is deliberate. These are the two types where hurrying costs you the answer.\nMain idea: say what the whole text is about in one sentence of your own before you look at anything. Then hold every option against it. An option can be a true detail from the text and still be too narrow to be the main idea; an option can also say more than the text did. Watch for only, proves, all, always — when the text said may, or one or both.\nData: read the title, the axis labels and the units BEFORE you read a word of the options. Then say what the claim needs the figure to show: which groups, which years, which direction. A choice that describes one year accurately cannot prove a change across two.\nThe trap is the same in both, and it is the same trap as everywhere else. The option is true. It is not the thing you were asked for." },
 
-      { n:5, focus:"The last stretch of a module — mixed, at about 90 seconds", minutes:9,
+      { n:3, focus:"Punctuation on the clock, and transitions beside it", minutes:9,
         sections:[
-          { skills:["Boundaries"],                        diffs:["Hard"], count:2 },
-          { skills:["Transitions"],                       diffs:["Hard"], count:1 },
-          { skills:["Command of Evidence — Quantitative"], diffs:["Hard"], count:1 },
+          { skills:["Boundaries"],  diffs:["Hard"], count:2 },
+          { skills:["Transitions"], diffs:["Hard"], count:2 },
         ],
-        tip:"This set is shaped like the end of a real module, and switching cleanly between the three jobs is the thing being practised.\nBefore you start each question, name which job it is: a punctuation mark, a link between two sentences, or a claim that has to match a table. They need different first moves, and running the wrong one costs you the question.\nPunctuation: is each side a complete sentence, and what has the sentence already opened?\nTransition: what do the two sentences claim, and what is the link in plain words?\nData: read the heading, the axis labels and the units BEFORE you read a single choice. Then find the choice the table actually supports — not the one that sounds most like the passage.\nOn these, a choice can be perfectly true about the topic and still not be the one the question asked for. That is the trap, and it is the same trap in every skill on this test.\nOne pacing rule for the real thing: the module runs 27 questions in 32 minutes, and the punctuation and transition questions are all in its last third. Aim to be at question 18 with sixteen minutes still on the clock. The reading questions at the front are the ones to move through." },
+        tip:"About ninety seconds a question, and read that as generous rather than tight. Tuesday's set was the same punctuation with no clock at all; this is the same procedure with a timer running, which is the only thing that has changed.\nPunctuation: cover what could come out, find the spine, check each side for a subject and a verb, and let the structure choose the mark. Do not audition the options.\nTransition: this one is not about going faster. Say what the sentence before claims. Say what the sentence after claims. Name the link between them in ordinary words — same again, opposite, so, for instance, then, I will admit that but — and only then look.\nTwo to keep in mind at this level. If the sentence after the blank already contains its own but, the blank is a concession, not a contrast: a sentence only turns once. And on a sequence question, find the dates before you find the transition — the order the sentences appear in tells you nothing about the order the events happened in.\nIf a question has not come to you after about forty seconds, choose, mark it and move on." },
+
+      { n:4, focus:"The last ten questions of a module, in test order", review:0, minutes:12,
+        sections:[
+          { skills:["Boundaries"],                 diffs:["Hard"],   count:2 },
+          { skills:["Form, Structure, and Sense"], diffs:["Medium"], count:1 },
+          { skills:["Form, Structure, and Sense"], diffs:["Hard"],   count:1 },
+          { skills:["Transitions"],                diffs:["Medium"], count:1 },
+          { skills:["Transitions"],                diffs:["Hard"],   count:1 },
+          { skills:["Rhetorical Synthesis"],       diffs:["Hard"],   count:2 },
+        ],
+        tip:"Eight questions in twelve minutes, and they arrive in the order the real test uses: punctuation and grammar first, then transitions and writing-goal questions. This is the stretch of the module that decides your score, and moving cleanly between the jobs is the thing being practised.\nBefore each question, name which job it is, then make that job's first move.\nPunctuation — what could come out of this sentence, and is each side complete?\nGrammar — what is being tested: subject and verb agreeing, tense, verb form, pronoun, possession, or a description sitting next to the wrong thing? Cross out the phrase in the middle and find the real subject.\nTransition — what does each sentence claim, and what is the link in plain words?\nWriting goal — say the goal in two or three words taken from the question itself, then choose the option that does that job and ignore the ones that are merely accurate.\nIf you have no route after about forty seconds, choose, mark it and move. One question is not allowed to eat the time the rest of them need.\nOne attempt at this set. It is the closest thing to the real thing you will do this week, and it is only worth anything the first time." },
     ]
   },
-
-  // Gabe — sample/placeholder plan; edit to assign.
   "Gabe": {
     title: "This week — mixed Reading & Writing review",
     start: "2026-06-20",
