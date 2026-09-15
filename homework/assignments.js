@@ -212,94 +212,101 @@ const HOMEWORK = {
     ]
   },
 
-  // Luke — first assignment. Two skills were taught in the first class and are the
-  // only two that appear here; nothing else has been taught, and the ledger rule is
-  // that an untaught skill is never assigned cold.
+  // Luke — week of 15 Sep, into the full-length mock on Sat 19 Sep. Four short sets,
+  // finished before Friday night. Transitions is the new skill, taught in the 14 Sep
+  // class, and the only thing added to the plan.
   //
-  // BANK SUPPLY IS THE TIGHTEST CONSTRAINT ON THIS WEEK, and it is why the
-  // difficulties look lopsided. Both skills had a full class session worked inside
-  // the app, so a chunk of each Medium pool is already spent and — because those
-  // sessions DID reach progress.js — the runner correctly ranks them resting, below
-  // unseen. What is left:
-  //   Inferences / Medium   9 in bank, 5 spent, 4 unseen  → SPENT NOWHERE THIS WEEK
-  //   Central Ideas / Medium 12 in bank, 5 spent, 7 unseen → 3 + 2 + 2 = all 7
-  // Inferences Medium is deliberately held at zero new draws. Its five worked items
-  // are on the ladder and already overdue, so the review dose on days 3 and 4 brings
-  // them back at the 1→3→7-day rungs — delayed retrieval of what was actually taught
-  // beats four fresh items, and it keeps a reserve for next week. Inferences instead
-  // runs Easy (4, untouched) and Hard (25, untouched).
+  // THE WEEK IS AUTHORED AT HARD, AND THAT IS THE DECISION HERE. The independent
+  // record has been running at Hard since late August: the fourth homework day of the
+  // engagement was Hard and came back clean untimed, and every solo sitting since has
+  // been Hard or Hard-plus-a-control. The Medium-frontier line in the notes is a
+  // pre-teaching snapshot that got quoted forward through four classes; it is retired.
   //
-  // ⚠ EVERY DIFFICULTY IS PINNED, ON PURPOSE. The class practice fed
-  // recordTrapOutcome, so both skills carry a COACHED accuracy near the top of the
-  // scale, and recommendDifficulty() would read that as permission to lean Hard. A
-  // section pinning ONE difficulty is an explicit tutor choice and calibration is
-  // forbidden from touching it. Do not author a ranged diffs:["Medium","Hard"] on
-  // either skill until a mock has produced a number earned without a tutor present.
+  // WHAT LIMITS HIM IS FLUENCY AND OWNERSHIP, NOT TIER. The most informative sitting on
+  // file is ten unseen Hard items at roughly seventy seconds each, then every miss
+  // repaired on a second pass at four minutes each. The method is there and is not yet
+  // automatic, and the only thing that moves that is unguided repetition at the tier
+  // with the method forced — which is what an untimed, typed set is. Three of the four
+  // sets are therefore untimed, and the clock appears once.
   //
-  // THE LADDER IS THE CLOCK, and it is slow:
-  //   Day 1  untimed, typed   — procedure rehearsal at Easy, both skills, low load
-  //   Day 2  untimed, typed   — one skill alone, difficulty steps to Medium
-  //   Day 3  untimed, typed   — difficulty steps to Hard on a PAIR, with a control
-  //   Day 4  ~80s a question  — day 3's exact composition, so the CLOCK is the only
-  //                             thing that moved and a drop reads as pace, not difficulty
-  // Two rungs at once is the failure mode: difficulty moves on day 3, time on day 4.
-  // Real pace (~71s) is not in this week at all.
+  // A MEDIUM CONTROL SITS IN EVERY SET AFTER THE FIRST. Hard alone cannot separate "the
+  // Hard application slipped" from "the whole skill went", and those two readings call
+  // for different classes. The control is also what stops any set coming back all-red in
+  // the week before a full-length sitting.
   //
-  // minutes:0 puts the runner in typed mode. That typed prediction is the only
-  // instrument that tests the habit this plan is built around, so three of four days
-  // keep it; day 4 spends it for pace data.
+  // SET 1 IS THE ONE MEDIUM NIGHT, AND IT IS NOT A TIER JUDGEMENT. Transitions is a day
+  // old and has never been run without the tutor — the items before the teaching are
+  // uninterpretable and the ones after it were guided. Night one asks whether it landed,
+  // and asks it where a miss is unambiguous. Night two steps to Hard.
   //
-  // ⚠ AN UNTIMED SET ONLY REACHES THE TUTOR IF IT IS FINISHED. In practice-nav mode
-  // the ledger is written per question but postLog fires from finish(), which
-  // advance() reaches by moving PAST the last question — there is no Submit button in
-  // this mode. Day 1's tip says so in plain words. Sequential unlock is the safety
-  // net: the completion flag and postLog are written together, so if the next set has
-  // not opened, the previous one did not finish. Check the hub, not the sheet.
+  // THE RAMP MOVES ONE RUNG AT A TIME: difficulty on night two, the clock on night four,
+  // never both in one set. Set 4 runs at ~70s, which is real module pace (27 questions
+  // in 32 minutes), and minutes COVERS THE REVIEW QUESTIONS TOO — so every later day is
+  // authored as 4 new + 2 review = 6, never 6 plus review on top.
   //
-  // review:0 on days 1 and 2 — day 1 because it is the first dose of the procedure
-  // itself, day 2 because its whole job is one skill and the ladder draws from the
-  // WHOLE bank. From day 3 the default 2 resumes and days are authored as 4 new + 2
-  // review = 6, never 6 new plus review on top.
+  // SET 2'S TIP CARRIES TWO RULES THE CLASS DID NOT REACH — concession, and example
+  // versus restatement — and set 2 is where the Hard pair sits, so the rule arrives in
+  // the same set as the items that need it. Set 1's tip carries a warning against
+  // picking by word shape, which matters more than any single relationship.
   //
-  // SECTIONS ON EVERY MULTI-SKILL DAY. A plain skills/diffs/count day orders one pool
-  // and slices the top N, so a "mixed" set silently collapses to one skill.
+  // review:0 ON SET 1 ONLY. The ladder has been idle for over two weeks, so from set 2
+  // the default dose of 2 resumes and pulls the most-overdue items from the WHOLE bank —
+  // the only draw that can reach the reading skills, since no set this week names them.
+  //
+  // EVERY DIFFICULTY IS PINNED. Class practice feeds recordTrapOutcome, so coached
+  // accuracy sits near the top of the scale and recommendDifficulty() would lean any
+  // ranged section further toward Hard than authored, in places nobody chose. Pinning is
+  // what makes the Hard dose exact. Author ranged diffs once a mock has produced numbers
+  // earned without a tutor in the room.
+  //
+  // ⚠ AN UNTIMED SET ONLY REACHES THE TUTOR IF IT IS FINISHED. In practice-nav mode the
+  // ledger is written per question but postLog fires from finish(), which advance()
+  // reaches by moving PAST the last question — there is no Submit button in this mode.
+  // Set 1's tip says so in plain words. Sequential unlock is the safety net: if the next
+  // set has not opened, the previous one did not finish. Check the hub, not the sheet.
+  //
+  // SECTIONS ON EVERY MULTI-SKILL DAY, and on every mixed-difficulty day. A plain
+  // skills/diffs/count day orders one pool and slices the top N, so a "2 Medium and 2
+  // Hard" day would land wherever the sort does. One difficulty per section is the only
+  // construction that makes a per-tier count exact.
   //
   // Shape only. The student data behind these choices is TUTOR-ONLY and lives in the
-  // gitignored notes — it must never be written into this public, student-downloaded
-  // file (root rule: no assessment of a student where the student can read it).
+  // gitignored notes — it must never be written into this public, student-downloaded file.
   "Luke": {
-    title: "Two skills, one habit — predict before you look",
-    start: "2026-08-25",
-    through: "2026-08-30",    // required: sequential unlock stops enforcing spacing, so we ask
+    title: "Four short sets before Saturday — name it before you look",
+    start: "2026-09-15",
+    through: "2026-09-18",    // sequential unlock stops enforcing spacing, so the hub asks for these to be spread
     unlock: "sequential",     // set 1 open now; each later set opens when the one before is submitted
     days: [
-      { n:1, focus:"Inferences and main idea — no clock, type your prediction first", review:0, minutes:0,
+      { n:1, focus:"Transitions — no clock, type the link before you look", review:0, minutes:0,
         sections:[
-          { skills:["Inferences"],                diffs:["Easy"], count:4 },
-          { skills:["Central Ideas and Details"], diffs:["Easy"], count:2 },
+          { skills:["Transitions"], diffs:["Medium"], count:4 },
         ],
-        tip:"Keep going until you reach the results screen at the end — a set you stop halfway through does not get saved for me to read.\nNo clock at all on this one. Take as long as you want — the typing IS the assignment, and the questions are the excuse for it.\nCover the choices. Read to the end. Then write the claim in ONE sentence of your own: what is this text actually saying?\nIf the text turns — but, however, regardless, although — your claim has to carry the turn. A claim that drops the \"but\" will match a wrong answer perfectly.\nOnly then look at the options, and take the one that matches your sentence.\nLast step every time, and it is the whole point: does the text SAY this, or does it just sound sensible? Reasonable and supported are not the same thing." },
+        tip:"Keep going until you reach the results screen at the end — a set you stop halfway through does not get saved for me to read.\nNo clock at all, and a short set. This is where the method gets built, so the typing IS the assignment and the questions are the excuse for it.\nCover the choices before you read them. Every option on a transition question is a real transition naming a real relationship, so they are all convincing on their own. That is exactly why looking first ruins the question.\nRead the sentence BEFORE the blank and say what it claims. Read the sentence AFTER it and say what it claims. Then type the link between them in ORDINARY words — \"same again\", \"opposite\", \"so\", \"for instance\", \"then\". Not a transition word. A plain phrase.\nOnly then uncover the choices, and take the one whose family matches what you typed.\nOne warning worth more than any single relationship: DO NOT PICK BY THE SHAPE OF THE WORD. \"Similarly\", \"consequently\", \"additionally\", \"specifically\" and \"subsequently\" all end the same way and belong to four different families. The commonest one you will meet is \"Similarly\", and it means SAME AGAIN, not SO. The ending tells you nothing. The two sentences tell you everything." },
 
-      { n:2, focus:"Main idea on its own — still no clock", review:0, minutes:0,
+      { n:2, focus:"Transitions — harder texts, and the two that catch everyone", minutes:0,
         sections:[
-          { skills:["Central Ideas and Details"], diffs:["Easy"],   count:2 },
-          { skills:["Central Ideas and Details"], diffs:["Medium"], count:3 },
+          { skills:["Transitions"], diffs:["Medium"], count:2 },
+          { skills:["Transitions"], diffs:["Hard"],   count:2 },
         ],
-        tip:"Still no clock, and a short set on purpose. One skill today, and the texts get longer partway through — the method does not change.\nWrite the claim before you look, every single question.\nHere is the trap at this level, and it catches almost everyone: on a main-idea question, MOST of the wrong choices are true. They are real statements about the passage. They are just too small.\nSo \"is it true?\" is the wrong test. The test is: does it cover the WHOLE text, or only one corner of it?\nToo narrow is one detail wearing a main-idea costume. Too broad is a claim the text never grew big enough to make. Name which one each wrong option is before you move on." },
+        tip:"Still no clock. The texts get longer partway through and the four steps do not change — name the link in your own words first, every time.\nThree things get harder here. First, the blank often sits INSIDE the sentence instead of opening it. Read it with the blank closed up — \"Jordan has yet to ratify the treaty\" — and then ask how that sits against the sentence before it.\nSecond: FOR EXAMPLE introduces a new instance of the thing just claimed. IN OTHER WORDS re-says the same fact in different words. If the sentence after the blank contains no new information it is restatement; if it does contain new information, \"in other words\" is wrong no matter how smoothly it reads.\nThird, and this is the one to write down: IF THE SENTENCE AFTER THE BLANK ALREADY CONTAINS ITS OWN \"BUT\", THE BLANK IS A CONCESSION, NOT A CONTRAST. A sentence only turns once. If the turn happens later in the sentence, the blank is the part that AGREES first — \"granted\", \"admittedly\", \"of course\", \"to be sure\" — and \"however\" is wrong there however right it feels.\nOn a sequence question, find the dates before you find the transition. The order the sentences appear in tells you nothing about the order the events happened in.\nSome questions from other weeks will come back in here. That is deliberate — getting one right a second time, days later, is the only thing that proves it stuck." },
 
-      { n:3, focus:"Harder inferences, mixed with main idea — no clock", minutes:0,
+      { n:3, focus:"Goals and punctuation — no clock, type the reason first", minutes:0,
         sections:[
-          { skills:["Inferences"],                diffs:["Hard"],   count:2 },
-          { skills:["Central Ideas and Details"], diffs:["Medium"], count:2 },
+          { skills:["Rhetorical Synthesis"], diffs:["Medium"], count:1 },
+          { skills:["Rhetorical Synthesis"], diffs:["Hard"],   count:1 },
+          { skills:["Boundaries"],           diffs:["Hard"],   count:2 },
         ],
-        tip:"The step up you were told about — and still no clock, on purpose. Harder texts and a timer at once would measure neither.\nTwo of these are harder inference questions. The passages are denser; the method is identical. Claim first, in your own words, before the choices.\nAt this level the wrong answers stop being obviously wrong. Watch for four of them: something true-sounding about a topic the text never raised; a real finding widened into a sweeping claim; a cause the passage never mentioned; and an option that is perfectly accurate but does not finish THIS sentence.\nIf you cannot point at the words that force your answer, it is not your answer yet.\nSome questions from earlier this week will come back in here. That is deliberate — getting one right a second time, days later, is the only thing that proves it stuck." },
+        tip:"No clock on this one either, and it is the most important set of the week — so type a real sentence every time, not three characters. These are the harder ones, and you have done this tier before.\nTwo different jobs in here, and naming which one you are looking at is the first move.\nGOAL QUESTIONS: read the goal BEFORE the notes and write down, in your own words, the job the sentence has to do — compare two things in this order, define a term then give an example, introduce something to an audience that already knows it. Then find the option that does THAT job. Here is the trap, and it is the same trap in every skill on this test: an option can be perfectly accurate about the notes and still not be the answer, because it does not do the job the goal asked for. True is not the test.\nPUNCTUATION: cover everything that could come out — the extra description, the who/which clause, anything sitting between two commas. What is left is the spine. Then find the subject and the verb on each side of the mark. Two complete sides means full stop, semicolon, or comma plus and/but/or/so. One complete side and a fragment means comma, colon or dash, and a semicolon is always wrong there. Never put a mark between a subject and its verb, and if the sentence has already opened a dash or a bracket, the interruption closes with the SAME mark.\nThe question is not \"does a comma look right here?\" It is \"what has this sentence already done, and what does that force?\"\nTake the time. On a hard question the answer usually comes on the second look at the text, not the first look at the options — and if you cannot point at the words that force your answer, it is not your answer yet." },
 
-      { n:4, focus:"Same mix, now against a clock — about 80 seconds a question", minutes:8,
+      { n:4, focus:"Warm-up for Saturday — four kinds of question, about 70 seconds each", minutes:7,
         sections:[
-          { skills:["Inferences"],                diffs:["Hard"],   count:2 },
-          { skills:["Central Ideas and Details"], diffs:["Medium"], count:2 },
+          { skills:["Transitions"],                diffs:["Hard"],   count:1 },
+          { skills:["Rhetorical Synthesis"],       diffs:["Medium"], count:1 },
+          { skills:["Boundaries"],                 diffs:["Hard"],   count:1 },
+          { skills:["Form, Structure, and Sense"], diffs:["Hard"],   count:1 },
         ],
-        tip:"Same kind of set as last time — the only thing that changed is the clock. About 80 seconds a question, and the real test gives you around 71, so there is room in it.\nYou will not type your prediction this time; you commit with a click instead. Say the claim in your head anyway. That step is the one that goes first under time, and it is the only thing holding everything else up.\nMost of your time belongs to the passage, not the options. If you are still circling the choices after a minute, you did not read hard enough the first time.\nIf a question will not come, choose and move. One you never reach scores the same as one you get wrong, and it costs you the next two.\nPacing has never been your problem. Do not let the clock talk you out of the method." },
+        tip:"Short, and it is a warm-up rather than a test. The score on this one does not matter and I am not reading it as a result — it is here so Saturday's clock is not the first clock you have seen this week.\nSix questions in seven minutes is about seventy seconds each, which is the real rate on the day.\nBefore each question, name which job it is: a link between two sentences, a goal to accomplish, a punctuation mark, or a subject and its verb. They need different first moves and running the wrong one costs you the question.\nYou will not type your prediction this time; you commit with a click. Say it in your head anyway. That step is the first one to go under a clock and it is the only thing holding the rest up.\nIf a question has not come to you after about forty seconds, choose it, note the number, and move. One you never reach scores exactly the same as one you get wrong, and it costs you the next two as well.\nThen stop. Nothing the night before Saturday, and nothing on Saturday morning." },
     ]
   }
 };
