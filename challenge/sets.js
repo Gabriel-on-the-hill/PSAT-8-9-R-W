@@ -217,7 +217,133 @@ window.CHALLENGE_SETS = {
     //   a30567fd cc0dcd9a 491a17a7 49fbe443 8e23d0c7
     //   377a2b12 f10b7ce4 81000f32 b995581c 0b3c05ab
     //   bb804798 2b9ce465 03ca25bb a272d236 f09186ab
-    'Maysa': [],
+    // ═════════════════════════════════════════════════════════════════
+    // con-rules-1 — built on the rule axis, with its own teaching layer
+    // ═════════════════════════════════════════════════════════════════
+    //
+    // A homework day selects on skill and difficulty and nothing else, so a
+    // Boundaries draw can come back as four comma items and never test a dash or
+    // a colon. Three ruleTypes had therefore never appeared in a set for this
+    // student: Dash, Colon and Mod. This set exists to reach exactly those.
+    //
+    // TWO LAYERS, AND THE ORDER IS THE DESIGN:
+    //
+    //   `review` — 7 items, UNSCORED, never recorded. Three teach a rule from a
+    //     paired-sentence drill, where only one mapping is possible and the rule
+    //     is the only variable. Four are real passages. Each carries a `strategy`
+    //     line, which the debrief renders above the explanation: that line is the
+    //     rule in the words to reuse. Authored items are legitimate here and only
+    //     here — renderDebrief takes self-contained objects and never touches the
+    //     bank, so nothing can reach the mastery denominator.
+    //
+    //   `ids` — 12 real bank items, SCORED, served wrong-first until two clean
+    //     corrects on separate goes. Rule 4 makes this half bank-only: a written
+    //     question cannot be scored, cannot enter the denominator, and cannot come
+    //     back through the ladder. Mastery is the point of this half.
+    //
+    // Teaching ships INSIDE the set on purpose. con-taught-1 records the reason:
+    // a question whose rule was never taught cannot be mastered by practice, only
+    // by guessing until the tally moves. Here the debrief discharges that first.
+    //
+    // COMPOSITION — 4 Dash : 4 Colon : 4 Mod, ten of twelve at MEDIUM.
+    // Hard makes a set unmasterable in the week it is set, and the exam window
+    // opens 1 Oct. Medium was not available for these rules until the 9 Sep merge:
+    // the ruleType commit says "Mod and Dash exist ONLY at Hard" and "Colon has
+    // nothing at Medium", and that is now out of date. Mod is all Medium — the
+    // eight unseen Mod items at Hard are the next set. Two Hard slots go to the
+    // transfer checks: 051f87ec repeats the printed-mark shape, and 8df2ca61
+    // carries a colon and a conjunctive adverb in one item.
+    //
+    // RULE 3 — all fifteen retired fss-concepts-1 ids are excluded; none appears
+    // here. Cross-student overlap is not rule 3 and two of these have been worked
+    // by other students. TWO ITEMS ARE HELD OUT for the class that precedes this
+    // set: 1fda4fb5 and 2ff2efad. A question worked aloud opens the set by asking
+    // her to remember rather than to decide; they return via the review ladder.
+    //
+    // 1fda4fb5 was flagged in con-concepts-1 as the one unverified Mod tag. It has
+    // now been read by hand — "Far from being modern inventions, ______ more than
+    // 5,000 years ago" — and the tag is correct.
+    //
+    // SELECTION was ledger-blind in the sense that matters: candidates were the
+    // unseen set for each rule, ordered by id, never shuffled.
+    'Maysa': [
+        {
+            setId:  'con-rules-1',
+            title:  'Conventions by rule: the dash, the colon, and what the opening describes',
+            source: 'Built from the bank along the rule axis, with a teaching debrief',
+            date:   '2026-09-18',
+            review: [
+              {
+                source: 'Rule drill — paired sentences', skill: 'Boundaries', ruleType: 'Dash',
+                passage: '(1) The festival—a month-long celebration of music and film ______ drew visitors from four continents.  (2) The festival, a month-long celebration of music and film ______ drew visitors from four continents.',
+                question: 'Which mark closes the description in each sentence?',
+                options: ['A. a dash in (1), a comma in (2)', 'B. a comma in both', 'C. a dash in both', 'D. no mark in either'],
+                answer: 'A',
+                strategy: 'Before you choose a mark, read the sentence for the marks it already has. A description opened with a dash must be closed with a dash; one opened with a comma must be closed with a comma. The pair has to match.',
+                explanation: 'Choice A is correct. Both sentences interrupt "The festival drew visitors" with the same extra description. Sentence (1) has already opened that interruption with a dash, so it closes with a dash. Sentence (2) opened it with a comma, so it closes with a comma. Nothing about the description changed — only the mark the sentence had already committed to. B and C each force a mismatched pair. D removes the closing mark entirely, so the reader cannot tell where the interruption ends and the main sentence resumes.'
+              },
+              {
+                source: 'Dash — the mark already in the sentence', skill: 'Boundaries', ruleType: 'Dash',
+                passage: 'Luci Tapahonso is the inaugural poet laureate of the Navajo Nation. Her book Sáanii Dahataal/The Women Are Singing—a combination of fiction and memoir, poetry and ______ serves as a testament to her versatility as a writer.',
+                question: 'Which choice completes the text so that it conforms to the conventions of Standard English?',
+                options: ['A. prose;', 'B. prose', 'C. prose,', 'D. prose —'],
+                answer: 'D',
+                strategy: 'Find the mark that is already printed BEFORE you look at the options. Here there is a dash after "Singing". That dash has opened something, and the blank is where it has to close.',
+                explanation: 'Choice D is correct. "A combination of fiction and memoir, poetry and prose" is extra description sitting between the book title and the verb "serves". It has already been opened with a dash, so it closes with a matching dash. Choice B is the tempting one, and it is tempting for a specific reason: read only the words around the blank and no mark seems needed. But the sentence had already committed itself several words earlier. A semicolon (A) needs a complete sentence on both sides and there is not one. A comma (C) cannot close what a dash opened. The whole question was decided before the blank, which is why the answer is invisible if you start at the options.'
+              },
+              {
+                source: 'Dash — the mark already in the sentence', skill: 'Boundaries', ruleType: 'Dash',
+                passage: "With some 16,000 in attendance, the Second World Black and African Festival of Arts and ______ or FESTAC '77, as the event was more commonly known—became the largest pan-African event on record. FESTAC drew people from around the world to Lagos, Nigeria, for a monthlong celebration of Black and African art, scholarship, and activism.",
+                question: 'Which choice completes the text so that it conforms to the conventions of Standard English?',
+                options: ['A. Culture:', 'B. Culture—', 'C. Culture,', 'D. Culture'],
+                answer: 'B',
+                strategy: 'The same rule running backwards. The printed mark comes AFTER the blank this time, so read to the end of the interruption before you decide.',
+                explanation: 'Choice B is correct. The interruption is "or FESTAC \'77, as the event was more commonly known", and it is already closed with a dash before "became". So the blank has to open it with the matching dash. This is the harder direction of the same rule, because the mark that decides it sits further along the sentence than the blank does, and a quick read never reaches it. D leaves a closing mark with nothing to open it. C mismatches the pair. A is wrong because a colon introduces rather than pairs, so it cannot be half of a matched set around an interruption.'
+              },
+              {
+                source: 'Rule drill — paired sentences', skill: 'Boundaries', ruleType: 'Colon',
+                passage: '(1) The long voyages created one problem the crews could not solve ______ mold in the flour.  (2) The long voyages created problems such as ______ mold in the flour.',
+                question: 'Which mark does each blank take?',
+                options: ['A. a colon in (1), no mark in (2)', 'B. no mark in (1), a colon in (2)', 'C. a colon in both', 'D. a comma in both'],
+                answer: 'A',
+                strategy: 'A colon needs a complete sentence in front of it. What comes after does not have to be complete. So test the LEFT side first, every time.',
+                explanation: 'Choice A is correct. In (1), "The long voyages created one problem the crews could not solve" is already a complete sentence, and "mold in the flour" is the thing it promised. That is what a colon is for. Note that a semicolon could not go here: a semicolon needs a complete sentence on BOTH sides, and "mold in the flour" is not one. In (2) the left side ends on "such as" and is not complete, so no mark belongs at all — "such as" is already doing the introducing. The two sentences say almost the same thing, and the only thing that decided the mark was whether the left side could stand alone.'
+              },
+              {
+                source: 'Rule drill — paired sentences', skill: 'Boundaries', ruleType: 'Colon',
+                passage: '(1) The curators settled on a single theme ______ migration and the objects people carry.  (2) The curators settled on a single theme ______ the objects in the final room were chosen to match it.',
+                question: 'Which mark does each blank take?',
+                options: ['A. a colon in (1), a semicolon in (2)', 'B. a colon in both', 'C. a semicolon in both', 'D. a comma in (1), a colon in (2)'],
+                answer: 'A',
+                strategy: 'Colon or semicolon is decided on the RIGHT side. A fragment that explains takes a colon. A whole second sentence takes a semicolon.',
+                explanation: 'Choice A is correct. Both sentences have the same complete left side, so the left side cannot be what decides it. In (1) the right side is "migration and the objects people carry" — a noun phrase naming the theme, not a sentence — so it takes a colon. In (2) the right side is "the objects in the final room were chosen to match it", which has its own subject and verb and could stand alone, so it takes a semicolon. B and C each apply one mark to both and ignore the only thing that changed. D puts a comma between two complete clauses in (2), which is a splice.'
+              },
+              {
+                source: 'Rule drill — sentence opener', skill: 'Form, Structure, and Sense', ruleType: 'Mod',
+                passage: 'Consisting of pigment applied to plaster while the plaster is still wet, ______',
+                question: 'Which choice completes the text so that it conforms to the conventions of Standard English?',
+                options: ['A. water carries the pigment into the wall as the plaster sets.', 'B. frescoes bond with the wall itself as the plaster sets.', 'C. the wall is bonded with by frescoes as the plaster sets.', 'D. bonding with the wall happens as the plaster sets.'],
+                answer: 'B',
+                strategy: 'When a sentence opens with a description and then a blank, ask one question: who or what is that description about? The blank has to start with that thing.',
+                explanation: 'Choice B is correct. The opening describes something that consists of pigment applied to wet plaster. That is a fresco, so the main sentence has to start with frescoes. Choice A starts with water, and water does not consist of pigment applied to plaster. C starts with the wall and D starts with bonding — neither is the thing being described. Each of A, C and D is a perfectly grammatical sentence on its own, and that is the trap: what makes them wrong is only what the opening phrase attached itself to. Reading the options first cannot show you that. Reading the opener can.'
+              },
+              {
+                source: 'Rule drill — where the description sits', skill: 'Form, Structure, and Sense', ruleType: 'Mod',
+                passage: 'Orchid seeds are so light that air currents can carry them ______',
+                question: 'Which choice completes the text so that it conforms to the conventions of Standard English?',
+                options: ['A. weighing less than a speck of dust for hundreds of kilometres.', 'B. for hundreds of kilometres weighing less than a speck of dust.', 'C. for hundreds of kilometres, each seed weighing less than a speck of dust.', 'D. that weigh less than a speck of dust for hundreds of kilometres.'],
+                answer: 'C',
+                strategy: 'A description sits next to the thing it describes. If it has drifted next to something else, the sentence says something it did not mean.',
+                explanation: 'Choice C is correct. The seeds weigh less than a speck of dust, so that description has to sit beside the seeds. C does it cleanly, starting a fresh phrase — "each seed weighing less than a speck of dust" — after the distance. In A and B the description lands next to "kilometres", so the sentence claims the distance weighs less than a speck of dust. D puts it next to "them", which is closer to right, but then strands "for hundreds of kilometres" inside the weighing phrase and says the seeds weigh that much for hundreds of kilometres. Same rule as the fresco question, moved from the front of the sentence to the middle.'
+              },
+            ],
+            ids: [
+                '209d41b1', '8f118e5c', '844f8051', '051f87ec',
+                '4a307bb9', '779f904a', 'ac57e2a8', '8df2ca61',
+                'cc37a7ee', '690688d8', 'e7bf56e7', 'fbf562d7',
+            ],
+        },
+    ],
     // ═════════════════════════════════════════════════════════════════
     // con-taught-1 — built to match a lesson, not to survey a domain
     // ═════════════════════════════════════════════════════════════════
