@@ -132,12 +132,50 @@ const HOMEWORK = {
   // orders one pool and slices the top N, so the split lands wherever the sort
   // does. Separate sections are the only construction that makes a count exact.
   //
+  // ── 21 SEP: TWO DAYS ADDED. The plan is EXTENDED, not replaced. ──────────
+  //
+  // Days 3 and 4 have not been sat. Re-authoring now would take the only timed
+  // punctuation set and the only test-order set off the hub before either had
+  // produced a first attempt — and those two are the whole reason the first four
+  // days were ordered the way they are. So days 1-4 stand untouched, two days go
+  // on the end, and `through` moves to 24 Sep.
+  //
+  // STILL `cumulative`, because it is already running and a live plan does not get
+  // flipped. Seven days in, cumulative locks nothing, so the ORDER lives in the
+  // tips: day 5 says Wednesday, day 6 says Thursday, and 3 and 4 come first.
+  //
+  // WHY THE WEEK TURNS TOWARD READING. Days 1-4 are punctuation, transitions and
+  // writing goal — the back half of a module. The front half has had one set in
+  // six weeks of plans. Day 5 is the first untimed typed set pointed at reading
+  // rather than at punctuation, and that is the point: the typed prediction is the
+  // only condition in this app where the text has to be settled before the options
+  // are allowed to speak.
+  //
+  // DAY 5 IS `minutes: 0` ON PURPOSE. That is what makes the gate a typed one
+  // rather than a one-click commit (predictMode()), and `review: 0` goes with it
+  // for the same reason day 1 carries it.
+  //
+  // DAY 6 TAKES THE DEFAULT DOSE — four new plus two review. Day 5 freezes the
+  // ladder, so day 6 carries the week's spacing.
+  //
+  // DAY 6 NAMES A `ruleType`, which a homework day could not do until today.
+  // Boundaries at Hard is 102 questions and 47 of them are comma items. The rule
+  // this set exists to test is the one where a mark is already open in the
+  // sentence and the blank has to close it. Without naming it, the set cannot
+  // reach it — which is how a set can be built for a rule and never serve it.
+  //
+  // NOTHING UNTAUGHT IS ASSIGNED. Text Structure and Purpose and Cross-Text
+  // Connections have not been taught in class, so neither is in either day.
+  // `cs.html` carries the move for both and that is reading; a full-length serves
+  // them and that is a measurement. A homework set is neither, and assigning a
+  // skill cold is the fastest way to lose a student.
+  //
   // Shape only. The student data behind these choices is TUTOR-ONLY and lives in
   // the gitignored ledger — this file is downloaded in full by every student.
   "Faith": {
-    title: "The last third of a module — four short sets, one a day",
+    title: "Six short sets — the back half of a module, then the front",
     start: "2026-09-15",
-    through: "2026-09-18",
+    through: "2026-09-24",
     unlock: "cumulative",
     days: [
       { n:1, focus:"Punctuation, no clock — say which mark and why before you look", review:0, minutes:0,
@@ -170,6 +208,20 @@ const HOMEWORK = {
           { skills:["Rhetorical Synthesis"],       diffs:["Hard"],   count:2 },
         ],
         tip:"Eight questions in twelve minutes, and they arrive in the order the real test uses: punctuation and grammar first, then transitions and writing-goal questions. This is the stretch of the module that decides your score, and moving cleanly between the jobs is the thing being practised.\nBefore each question, name which job it is, then make that job's first move.\nPunctuation — what could come out of this sentence, and is each side complete?\nGrammar — what is being tested: subject and verb agreeing, tense, verb form, pronoun, possession, or a description sitting next to the wrong thing? Cross out the phrase in the middle and find the real subject.\nTransition — what does each sentence claim, and what is the link in plain words?\nWriting goal — say the goal in two or three words taken from the question itself, then choose the option that does that job and ignore the ones that are merely accurate.\nIf you have no route after about forty seconds, choose, mark it and move. One question is not allowed to eat the time the rest of them need.\nOne attempt at this set. It is the closest thing to the real thing you will do this week, and it is only worth anything the first time." },
+
+      { n:5, focus:"Reading \u2014 say what the question wants before you look", review:0, minutes:0,
+        sections:[
+          { skills:["Central Ideas and Details"],          diffs:["Hard"], count:2 },
+          { skills:["Command of Evidence \u2014 Quantitative"], diffs:["Hard"], count:2 },
+        ],
+        tip:"Wednesday. No clock, and you type before the choices appear. Take as long as you want.\nType two things every time: what the question is actually asking, in your own words, and which sentence in the text answers it. If you cannot point at a sentence, you are not ready to look.\nThen the rule that matters more than any of the rest of this: once you have typed it, the prediction does not change. You may cross out a choice for contradicting it. You may not talk yourself into a different answer because an option sounds better written than yours.\nMain idea: say what the whole text is doing in one sentence before you look at anything. An option can be a true detail from the text and still be far too small to be the answer. Watch for only, proves, all, always, when the text said may, or one, or both.\nData: title, axis labels, units, before a word of the options. Then say what the claim needs the figure to show \u2014 which groups, which years, which direction. A choice that describes one year accurately cannot prove a change across two.\nThe trap is the same in both and it is the same trap as everywhere else. The option is true. It is not the thing you were asked for." },
+
+      { n:6, focus:"The mark the sentence has already opened, on the clock", minutes:9,
+        sections:[
+          { skills:["Boundaries"],  diffs:["Hard"], ruleTypes:["Dash"], count:2 },
+          { skills:["Transitions"], diffs:["Hard"], count:2 },
+        ],
+        tip:"Thursday. Four new questions and up to two review ones, about ninety seconds each.\nPunctuation, in this order \u2014 and notice that the question you have been starting with is now the last one:\n1. Is a mark already open anywhere in this sentence, a dash, a bracket, a colon? Then the blank closes it, with the SAME mark.\n2. Is one side a description rather than a clause \u2014 making..., a pioneering..., which...? Comma, colon or dash. Never a semicolon.\n3. Is this a list whose items already contain commas? Then semicolons separate the items.\n4. Only now: is each side a whole sentence?\nTransitions: name the link in ordinary words before you look. Three to have ready.\nConcession \u2014 if the turn comes later inside the sentence, the blank agrees first: granted, admittedly, of course, though. A sentence only turns once.\nRestatement \u2014 for example adds a new instance; that is re-says the same fact in plainer words. No new information means restatement, not example.\nCulmination \u2014 if the second sentence finishes the first rather than opposing it, the word is Ultimately, not However.\nNo route after about forty seconds: choose, flag it, move on. One question is not allowed to eat the time the rest of them need." },
     ]
   },
   "Gabe": {
