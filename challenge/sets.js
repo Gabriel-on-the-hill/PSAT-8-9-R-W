@@ -418,7 +418,342 @@ window.CHALLENGE_SETS = {
     // behind it is still an open repair — see LEDGER §Open, item 6a.
     //
     // The build rationale for the set is preserved above, unedited.
-    'Luke': [],
+    // ═════════════════════════════════════════════════════════════════
+    // exp-predict-1 — one set, three skills, one move
+    // ═════════════════════════════════════════════════════════════════
+    //
+    // WHY THIS IS ONE SET AND NOT THREE. Transitions, Boundaries and Words in
+    // Context look like three curricula. They are three places to test one step:
+    // say what the sentence needs BEFORE the options are visible. Name the link.
+    // Cover the mark and let the structure force it. Say your own word for the
+    // blank. The set is built along that axis, which is why a Transitions item
+    // and a Boundaries item sit next to each other rather than in separate sets.
+    //
+    // THE SELECTION ARGUMENT, AND IT IS A BANK FACT, NOT A PREFERENCE.
+    // `homework/assignments.js` selects on skill and difficulty and nothing else.
+    // That is sufficient wherever `ruleType` exists — Boundaries carries it on 136
+    // items, Form/Structure on 119 — because prioritizePool() at least draws from
+    // a tagged pool. TRANSITIONS AND WORDS IN CONTEXT CARRY NO ruleType AT ALL
+    // (89 and 52 items, untagged). So no homework day can ask for a concession
+    // item, or for a blank whose clue is a colon. Of the 38 Transitions Hard items
+    // unseen by this student, five have a concession word as the answer and two a
+    // restatement; a random four-item draw reaches a concession item about 45% of
+    // the time and both families together about one time in ten.
+    //
+    // A hand-picked frozen `ids` is therefore the ONLY mechanism in the app that
+    // can guarantee a given relationship appears. That is the same argument
+    // con-rules-1 makes for the five Boundaries marks, and it is stronger here,
+    // because Boundaries at least has the axis to select on.
+    //
+    // THE DURABLE FIX is a relationship field on Transitions and a clue-type field
+    // on Words in Context, exactly as ruleType was added for Conventions. Until
+    // that exists, concept coverage for these two skills lives here or nowhere.
+    //
+    // TWO LAYERS, AND THE ORDER IS THE DESIGN.
+    //
+    //   `review` — 7 items, UNSCORED, never recorded, authored rather than drawn.
+    //     Four are PAIRED DRILLS: the same two sentences twice with one word
+    //     changed, so that the SAME transition word cannot be right in both. That
+    //     shape is not available from the bank at any draw, and it is the whole
+    //     point — a paired item cannot be answered by recognising a word, only by
+    //     naming the relationship, because the word is held constant and the
+    //     relationship is the only variable. Two are single items that do the same
+    //     job for a suffix and for a mark. EVERY SCORED RULE HAS A DRILL BEHIND IT,
+    //     and that was checked item by item: the first draft shipped two scored Colon
+    //     items with no colon drill in the layer, which is the same defect as a rule
+    //     taught with nothing scoring it, running the other way. Each carries a
+    //     `strategy` line, which
+    //     renderDebrief prints above the explanation: that line is the rule in the
+    //     words to reuse. Authored items are legitimate here and only here —
+    //     renderDebrief takes self-contained objects, never touches the bank, and
+    //     nothing on that screen can reach the mastery denominator.
+    //
+    //   `ids` — 10 real bank items, SCORED, served wrong-first until two clean
+    //     corrects on separate goes. Rule 4 makes this half bank-only. Mastery is
+    //     the point of this half, and by construction it cannot be reached in one
+    //     sitting: MASTERY_THRESHOLD is 2 and the two corrects must fall on
+    //     separate goes.
+    //
+    // COMPOSITION — 10 items, 7 Hard : 3 Medium.
+    //
+    // THE RATIO IS NOT A TARGET AND WAS NOT CHOSEN. An earlier draft of this set was
+    // 5:5, which is a number rather than an argument. Every Medium here exists to
+    // make a specific Hard miss readable, and there are exactly three rules under
+    // test that need one:
+    //     c0e2314c (M concession)  <->  0cc66f5e / 54ac9e43 (H concession)
+    //     4a307bb9 (M colon)       <->  65439b1e (H colon)
+    //     cae07228 (M colon clue)  <->  1841cb73 / ef399b40 (H Words in Context)
+    // Three controls for three rules. 7:3 falls out of that; it was not aimed at.
+    //
+    // MEDIUM IS EVIDENCED ON ALL THREE SKILLS ALREADY, which is why none of these
+    // Mediums is there to rehearse a tier. Transitions came back 4/4 unguided at
+    // Medium on 21 Sep; the retired con-taught-1 ran Easy and Medium across
+    // Boundaries at 11/12 on first response; Words in Context returned 2/2 at Medium
+    // on the 20 Aug screener. A Medium item added beyond a control would rehearse a
+    // rate already held. The LEDGER's standing instruction is unguided repetition at
+    // Hard with the method forced, and this is what that looks like in a set.
+    //
+    //   Transitions 4 · Hard 3 : Medium 1
+    //     0cc66f5e  concession, "Granted", with "In other words" in slot B —
+    //               the two rules that were never reached, set against each other
+    //     54ac9e43  concession where the NEXT sentence carries its own "but",
+    //               with "However" sitting in slot A as the whole trap
+    //     d8594b7f  restatement, "that is", with "for example" as option A —
+    //               example-vs-restatement decided inside a single item
+    //     c0e2314c  Medium concession control, with "Accordingly" as the -ly trap
+    //     THE MEDIUM CONTROL IS LOAD-BEARING, not filler. Three of these four are
+    //     Hard, and a Hard miss on a skill this new cannot be distinguished from a
+    //     hurried one without a Medium item testing the same rule beside it.
+    //
+    //   Boundaries 3 · Hard 2 : Medium 1
+    //     65439b1e  Hard, Colon. Complete sentence, then the thing it promised
+    //     4a307bb9  Medium, Colon. The same rule, one tier down, as the control
+    //     a481fe22  Hard, Commas. A conjunctive adverb cannot join two independent
+    //               clauses with a comma — "however" is not a FANBOYS. THIS IS THE
+    //               HINGE OF THE WHOLE SET: it is a Conventions question whose
+    //               subject matter is a transition word, and it is the one item
+    //               that forces the two halves of the set to meet.
+    //     COLON IS DELIBERATE AND IT IS SPENT DELIBERATELY. con-taught-1 carried no
+    //     colon and no dash by design, so this student's challenge history has never
+    //     included one, and only four Colon items remain unseen at Hard against 24
+    //     Commas, 15 NoPunct, 12 Semi and 9 Dash. Two of the four are spent here,
+    //     with the Medium control chosen to mirror the Hard rather than to add a
+    //     sixth mark. NoPunct is absent because con-taught-1 already carried two
+    //     no-mark items; it is the next set's, not this one's.
+    //
+    //   Words in Context 3 · Hard 2 : Medium 1
+    //     cae07228  Medium. The clue is a COLON handing over the definition
+    //     1841cb73  Hard. The clue is DESPITE, and the answer is "opaque"
+    //     ef399b40  Hard. The clue is a semicolon RESTATEMENT of the missing word
+    //
+    //     HARD-WEIGHTED, AND THE REASON IS SPECIFIC TO THIS SKILL. The first draft
+    //     of this set was Medium-only here, on con-taught-1's rule that an hour-old
+    //     rule is not masterable by practice. That rule was misapplied. Read what
+    //     difficulty actually varies across the Words in Context bank: the clue
+    //     structure is the SAME at both tiers — a colon, a restatement, a contrast
+    //     word, the logic of a verb — and what hardens is the VOCABULARY in the
+    //     options. Hard here is a harder word, not a harder method. So the method
+    //     taught tonight is not an hour-old rule at Hard in the way a transition
+    //     relationship is; it is the same rule meeting words that cannot be
+    //     recognised on sight.
+    //
+    //     THAT DISTINCTION DECIDES THE TIER. A Medium item whose answer arrives on
+    //     instinct is invisible: it cannot show whether the clue was found, which is
+    //     the whole thing being taught. At Hard the option set refuses instinct, so
+    //     the clue has to be used. 1841cb73 turns on "opaque", which is one of the
+    //     two words named in the 24 Aug vocabulary block, so the harder tier here
+    //     arrives warm rather than cold.
+    //
+    //     THE ONE MEDIUM IS THE DIAGNOSTIC, NOT A CONCESSION. cae07228 carries the
+    //     most structural clue in the pool — a colon that hands over the definition
+    //     outright. Medium right and Hard wrong reads as method intact, vocabulary
+    //     thin. Medium wrong reads as the method not running at all. Without it a
+    //     Hard miss cannot be told apart from a word he has never met.
+    //
+    //     Clue coverage is still three types — colon, contrast, restatement — and
+    //     still matches the paired drill, because with no clue-type field in the
+    //     bank a random draw cannot promise any of them.
+    //
+    // NOTHING IS HELD OUT FOR A SEPARATE LIVE BLOCK, and that is a change of model
+    // worth stating. con-concepts-1 was sat in class; so is this. The teaching layer
+    // is worked together at the top of the hour and the ten scored items are then
+    // attempted in the room, so there is no second list of questions worked aloud
+    // beforehand — the first response IN THE HUB is the measurement, and the
+    // discussion happens after it is recorded, not before. That is the whole reason
+    // the scored half can be Hard at all.
+    //
+    // THE ONE SITTING IS THE FULL SET BY DESIGN. nextBatchSize() is
+    // min(10, total - mastered), so ten unmastered items serve as one sitting of ten.
+    // MASTERY CANNOT COMPLETE IN THAT HOUR AND IS NOT MEANT TO: MASTERY_THRESHOLD is
+    // 2 and the two corrects must fall on separate goes. The class buys the clean
+    // first response; the second go is what the rest of the week is for.
+    //
+    // THE SIX FROM 31 AUG STAY OUT on con-taught-1's grounds — worked aloud with the
+    // answers given, so they would ask him to remember rather than to decide:
+    // 6b2a1288, edbbeca3, f09186ab, f0124561, 566fac8d, 312bfabb.
+    //
+    // RULE 3 — all twelve retired con-taught-1 ids are excluded and none appears
+    // here. Cross-student overlap is not rule 3: 4a307bb9 and ac57e2a8 also sit in
+    // Maysa's con-rules-1, exactly as 03ca25bb sits in two sets already.
+    //
+    // WHAT IS NOT IN THIS SET, and the reasons are as much a part of the build as
+    // the inclusions. Rhetorical Synthesis: the most recent unguided evidence is the
+    // strongest on file, so slots here would measure a strength. Form, Structure and
+    // Sense: the hour is already teaching six rules across three skills, and an SVA
+    // repair is a five-minute known archetype that does not need a mastery loop to
+    // land. It stays open as LEDGER item 6a and is the first claim on the next set,
+    // with f859d049 (analysis ... identifies) reserved and unseen for it.
+    //
+    // ── WHAT THIS SET IS FOR, IN THE PROGRAM ─────────────────────────────
+    //
+    // Coverage is not the reason this set exists and would be a poor one. There are
+    // four untaught skills left and two classes that may still teach new material;
+    // surveying a domain is that job, not this one. This set exists for the single
+    // finding that runs through every measurement on file: the methods are owned and
+    // they are not automatic, and they are not run at all without supervision.
+    //
+    // THE SECOND SITTING IS THE POINT, NOT THE FIRST. The first sitting happens in
+    // class with the tutor present, which by this program's own standard is not
+    // evidence — an in-class score on a skill being coached never proved anything
+    // here and is not about to start. What the set uniquely produces is a SECOND
+    // unguided retrieval of the same ten questions, days later, wrong-first. Nothing
+    // else in the app can force that: a homework day serves an item once and moves
+    // on. The gap between the first response and the second is the exact quantity
+    // this student's whole diagnosis turns on, and this set is the only instrument
+    // that reports it.
+    //
+    // THE DECAY WINDOW LANDS WHERE THE PROGRAM NEEDS IT, and this is worth knowing
+    // before anyone re-sets the date. MASTERY_DECAY_MS is 21 days from lastSeen. Ten
+    // items mastered in the last week of September fall back to unmastered around
+    // the middle of October — inside the final fortnight, between the consolidation
+    // class and the test-craft class. The set therefore turns itself back into a
+    // revision instrument in the run-up with nobody authoring anything. Do not
+    // "tidy" it away before then.
+    //
+    // WHERE IT SITS ON THE PAPER. Conventions is about 26% of the section and
+    // Expression of Ideas about 20%; Words in Context is the largest single slice of
+    // Craft and Structure. These ten therefore sit on roughly three-fifths of the
+    // test, which is the right place to spend a mastery loop when there is one loop
+    // to spend.
+    //
+    // THE CLOCK IS AVAILABLE AND IT IS A THIRD USE OF THIS SET, NOT A SETTING TO
+    // LEAVE ON. renderStart offers a Timed checkbox next to the question count, and
+    // begin() turns it into a WHOLE-SITTING countdown of n x getQuestionBudget()
+    // seconds — a pooled budget the student allocates himself, which is the real
+    // module's shape rather than a per-question egg timer. So the sequence this set
+    // supports is three sittings, not two, and the order is the design:
+    //
+    //   1. IN CLASS, UNTIMED. The clean first response with the method forced. A
+    //      clock here would manufacture exactly the rush that produced one-word
+    //      predictions on 21 Sep, and the first response is the scarce reading.
+    //   2. AT HOME, UNTIMED. The second retrieval, wrong-first. This is the one the
+    //      whole set exists for.
+    //   3. TIMED, ONCE THE RULES ARE KNOWN. Ten questions on a pooled budget, on
+    //      items whose rules have already been repaired — so a miss is pace and
+    //      nothing else, which is the only condition under which a timed score on
+    //      this material means anything.
+    //
+    // ONE MECHANICAL CONSTRAINT ON STEP 3, worth knowing before it is planned: the
+    // Timed checkbox lives in the `else` branch of renderStart, so it is offered
+    // only while questions remain unmastered. The 'done' state offers Reattempt
+    // all, and cReattemptBtn calls begin(total, true, FALSE) — untimed, hardcoded.
+    // A timed run of the full ten must therefore happen BEFORE the last item is
+    // mastered, or the option is gone until decay returns it.
+    //
+    // WHAT IT STILL CANNOT DO. Ten questions on a pooled budget is not 27 under a
+    // module clock with a passage-length tail, and nothing in this app is. If the
+    // 19 Sep mock was not sat, this set does not substitute for it and rebooking
+    // outranks everything in here.
+    //
+    // SELECTION was ledger-blind in the sense that matters: candidates were the
+    // unseen set for each skill and tier, filtered on the answer's relationship
+    // family or ruleType, then ordered by id. Never shuffled.
+    'Luke': [
+        {
+            setId:  'exp-predict-1',
+            title:  'Say it before you look: links, marks, and the word the sentence needs',
+            source: 'Built along the prediction axis, with a teaching layer of paired drills',
+            date:   '2026-09-21',
+            reviewLabel: 'Start here',
+            reviewIntro: 'Six short drills that teach the rules this set is built on. Work them first — they are quick, and nothing here counts toward mastery.',
+            reviewCta:   'Work the 6 teaching drills',
+            review: [
+              {
+                source: "Paired drill — the word is fixed, the link is not", skill: "Transitions",
+                passage: "(1) The new alloy resists corrosion better than steel. ______ it costs four times as much to produce.\n\n(2) The new alloy resists corrosion better than steel. ______ it is also far lighter than steel.",
+                question: "Which transition belongs in each blank?",
+                options: [
+                  "A. However, in (1); Moreover, in (2)",
+                  "B. Moreover, in (1); However, in (2)",
+                  "C. However, in both",
+                  "D. Moreover, in both"
+                ],
+                answer: "A",
+                strategy: "The blank is identical in both sentences and so is the sentence before it. Only the sentence AFTER changed. So the transition cannot be chosen by looking at the blank, or at the word, or at the first sentence — it can only be chosen by naming what the second sentence does to the first.",
+                explanation: "Choice A is correct. In (1) the second sentence takes something away from the first: better, but expensive. That is opposite, so it needs a contrast word. In (2) the second sentence piles on: better, and lighter too. That is same again, so it needs an addition word. Nothing about the blank changed and nothing about the first sentence changed. B reverses both. C and D force one word to cover two opposite jobs, which is the mistake this drill exists to make visible: a transition word is not a thing you recognise, it is a name for a relationship you have already worked out."
+              },
+              {
+                source: "The suffix tells you nothing", skill: "Transitions",
+                passage: "Coral reefs support roughly a quarter of all marine species. ______ they occupy less than one percent of the ocean floor.",
+                question: "Which choice completes the text with the most logical transition?",
+                options: ["A. Similarly,", "B. Consequently,", "C. Specifically,", "D. Ultimately,"],
+                answer: "D",
+                strategy: "Every option here ends in -ly and every one of them means something different. Similarly is same again. Consequently is so. Specifically is for instance. Ultimately is then, at the end. The ending of a word is not a clue to anything — decide the link first, then find the word that names it.",
+                explanation: "Choice D is the best answer, and the reasoning is worth more than the answer. The two sentences set a large fact against a small one, and the second closes the thought rather than adding to it, causing it, or giving an example of it. Work the others: A would claim the second sentence says the same as the first, and it does not. B would claim the tiny footprint is CAUSED by supporting a quarter of marine species, which is backwards. C would claim the second sentence is an instance of the first, and a percentage of the ocean floor is not an example of a species count. Four words, one suffix, four different jobs."
+              },
+              {
+                source: "Paired drill — concession", skill: "Transitions",
+                passage: "(1) Solar panels have become far cheaper to manufacture. ______ they remain expensive to install, but installation costs are now falling too.\n\n(2) Solar panels have become far cheaper to manufacture. ______ they remain expensive to install, and that gap is widening.",
+                question: "Which transition belongs in each blank?",
+                options: [
+                  "A. Granted, in (1); However, in (2)",
+                  "B. However, in (1); Granted, in (2)",
+                  "C. Granted, in both",
+                  "D. However, in both"
+                ],
+                answer: "A",
+                strategy: "Read to the END of the sentence after the blank before you choose. If that sentence already carries its own but, the objection is already being made and the blank is the part that AGREES first — granted, of course, admittedly, to be sure. If nothing later takes the objection back, the blank carries the contrast itself.",
+                explanation: "Choice A is correct. In (1) the sentence says they are still expensive BUT costs are falling — the writer concedes a point and then overrules it, so the blank opens the concession: Granted. Putting However there spends the contrast early and leaves the real turn, the but, with nothing to turn against. In (2) nothing takes the objection back; the gap is widening, so the contrast is the whole point and belongs in the blank: However. Granted there would promise a comeback that never arrives. The first sentence is identical in both. The only thing that decided it was the far end of the second."
+              },
+              {
+                source: "Paired drill — for example against in other words", skill: "Transitions",
+                passage: "(1) The museum holds several works made from salvaged industrial material. ______ one sculpture is assembled entirely from ship propellers.\n\n(2) The museum holds several works made from salvaged industrial material. ______ nothing in the collection was made from anything bought new.",
+                question: "Which transition belongs in each blank?",
+                options: [
+                  "A. For example, in (1); In other words, in (2)",
+                  "B. In other words, in (1); For example, in (2)",
+                  "C. For example, in both",
+                  "D. In other words, in both"
+                ],
+                answer: "A",
+                strategy: "For example adds a NEW instance — something the first sentence did not already contain. In other words re-says the SAME fact in different language and adds nothing new. Ask one question: is the second sentence new information, or the same information again?",
+                explanation: "Choice A is correct. In (1) the ship-propeller sculpture is one of the several works — new information, a single case drawn out of a group. That is an example. In (2) nothing new arrives at all: salvaged industrial material and nothing bought new are the same fact stated twice, once positively and once negatively. That is a restatement. B reverses them. C and D again ask one word to do two jobs. These two are easy to confuse because both feel like the writer is explaining — the difference is only whether anything was added."
+              },
+              {
+                source: "Where the two halves of this set meet", skill: "Boundaries", ruleType: "Commas",
+                passage: "The prototype passed every stress test in the laboratory ______ it failed within a week in the field.",
+                question: "Which choice completes the text so that it conforms to the conventions of Standard English?",
+                options: ["A. however,", "B. , however,", "C. . However,", "D. and however,"],
+                answer: "C",
+                strategy: "However is a transition word, not a joining word. It names a relationship; it cannot hold two complete sentences together. Only a full stop, a semicolon, or a comma plus one of the FANBOYS can do that. Cover the blank and ask the Boundaries question first: is each side a whole sentence?",
+                explanation: "Choice C is correct. Both sides stand alone — the prototype passed every stress test in the laboratory, and it failed within a week in the field — so the join needs a mark strong enough for two complete sentences. A full stop is. A semicolon would be too, and here the answer prints the full stop. Choice B is the comma splice, and it is the most common error on this whole paper: a comma plus however looks like a join because however sounds like a join, but the comma is doing all the work and a comma cannot. Choice A leaves the two sentences run together with nothing between them. Choice D is not how and behaves with however. Notice what happened: the sentence was decided by a Boundaries rule even though the word in the blank was a transition."
+              },
+              {
+                source: "Paired drill — what the colon actually needs", skill: "Boundaries", ruleType: "Colon",
+                passage: "(1) The expedition packed for one hazard above all ______ sudden drops in temperature after dark.\n\n(2) The expedition packed for hazards such as ______ sudden drops in temperature after dark.",
+                question: "Which mark belongs in each blank?",
+                options: [
+                  "A. a colon in (1), no mark in (2)",
+                  "B. a semicolon in (1), a colon in (2)",
+                  "C. a colon in both",
+                  "D. no mark in either"
+                ],
+                answer: "A",
+                strategy: "A colon only needs a complete sentence on its LEFT. What comes after it can be a list, a phrase, or a sentence — it just has to be the thing the left side promised. A semicolon is different: it needs a complete sentence on BOTH sides. So cover the mark and test the left side first, and if the left side cannot stand alone, no mark belongs there at all.",
+                explanation: "Choice A is correct. In (1) \"The expedition packed for one hazard above all\" is a complete sentence, and it has promised something — which hazard. The colon delivers it. A semicolon cannot go there, and this is the trap worth naming: \"sudden drops in temperature after dark\" is not a sentence, and a semicolon needs one on both sides. In (2) the left side ends on \"such as\" and is not complete — \"such as\" is already doing the introducing, so nothing belongs in the blank at all. The words after the blank are identical in both. The only thing that decided the mark was what happened on the left."
+              },
+              {
+                source: "Paired drill — the clue decides the word", skill: "Words in Context",
+                passage: "(1) The committee found the proposal ______ : every figure in it was supported by two independent audits.\n\n(2) Despite being ______ , the proposal was adopted, since no member could point to a single verified figure in it.",
+                question: "Which word belongs in each blank?",
+                options: [
+                  "A. credible in (1); credible in (2)",
+                  "B. credible in (1); unsubstantiated in (2)",
+                  "C. unsubstantiated in (1); credible in (2)",
+                  "D. unsubstantiated in both"
+                ],
+                answer: "B",
+                strategy: "The sentence always defines the blank somewhere else in itself. Find that part FIRST and say your own ordinary word before you look at the options. The clue hides in four places: after a colon or dash, in a restatement, in a contrast word like despite or although, or in the logic of the verb. When an option is a word you do not know, do not skip past it — take it apart the way we did with prefixes, suffixes and roots, and then test it against the ordinary word you already said. The clue is found the same way whether the words are easy or hard; only the words change.",
+                explanation: "Choice B is correct, and the point is where the clue sat in each one. In (1) the colon hands over the definition: every figure supported by two independent audits. Your own word is something like backed up, and credible is the match. In (2) the clue is Despite, which tells you the blank is the OPPOSITE of what makes adoption unsurprising, and the far end of the sentence says no member could point to a single verified figure. Your own word is something like not backed up, and unsubstantiated is the match. The blank is written the same way in both. Only the clue changed, and in one case it came before the blank and in the other it came after."
+              }
+            ],
+            ids: [
+                '0cc66f5e', '54ac9e43', 'd8594b7f', 'c0e2314c',
+                '65439b1e', '4a307bb9', 'a481fe22',
+                'cae07228', '1841cb73', 'ef399b40',
+            ],
+        },
+    ],
 
 
 };
