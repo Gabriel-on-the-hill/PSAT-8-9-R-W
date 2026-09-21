@@ -87,6 +87,15 @@ const PLAN = {
         // 1/60 min = a 1-second clock, so the expiry path runs for real rather than
         // being faked. minutes is only ever multiplied by 60, so a fraction is fine.
         { n: 4, focus: 'expiring', skills: ['Inferences'], diffs: ['Medium'], count: 3, minutes: 1 / 60, tip: 'x' },
+        // Boundaries/Hard is 102 questions of which 13 are dash items. A day that can
+        // only say "Boundaries, Hard" cannot ask for the dash ones, which is how a set
+        // built to test one rule came back without a single question that tests it.
+        {
+            n: 5, focus: 'one rule', minutes: 8, review: 0, tip: 'x',
+            sections: [
+                { skills: ['Boundaries'], diffs: ['Hard'], ruleTypes: ['Dash'], count: 2 },
+            ],
+        },
     ],
 };
 
@@ -248,7 +257,8 @@ function setAnswersFor(w, dayIdx) {
     if (spec.sections) {
         const used = {};
         spec.sections.forEach(sec => {
-            const pool = QB.filter(q => !used[q.id] && sec.skills.includes(q.skill) && sec.diffs.includes(q.difficulty));
+            const pool = QB.filter(q => !used[q.id] && sec.skills.includes(q.skill) && sec.diffs.includes(q.difficulty)
+                && (!sec.ruleTypes || sec.ruleTypes.includes(q.ruleType)));
             const got = pick(pool, sec.count);
             got.forEach(q => used[q.id] = true);
             set = set.concat(got);
@@ -580,6 +590,26 @@ function finish() {
 
         // And the exact-count guarantee that `sections` exists for survives all of it.
         eq('a calibrated sections day still draws its exact count', runDay(3, { [TRAP]: traps(0.95) }).length, 3);
+    }
+
+    // ═════════════════════════════════════════════════════════════════
+    section('12 · A section can ask for one RULE, not just a skill and a difficulty');
+    {
+        // Without this the only axes are skill and difficulty, and a punctuation set
+        // is whatever the pool happens to hand over — 47 of the 102 Boundaries/Hard
+        // questions are comma items. A day whose job is one rule has to be able to
+        // name it, or the instrument cannot reach the thing it was built to test.
+        const w = build(5);
+        setAnswersFor(w, 4);
+        commit(w); pickRight(w); $(w, 'next').click();
+        commit(w); pickRight(w); finishSet(w);
+
+        const QB = w.__QB();
+        const served = (recs(w) || []).map(r => QB.find(q => q.id === r.id));
+        eq('the section still serves its exact count', served.length, 2);
+        ok('and every question served is the rule the day named',
+            served.length === 2 && served.every(q => q && q.ruleType === 'Dash'),
+            served.map(q => (q && q.ruleType) || '?').join(', '));
     }
 
     console.log('\n' + '─'.repeat(64));

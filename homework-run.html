@@ -309,6 +309,14 @@
         if(_used[q.id]) return false;
         if(sec.skills && sec.skills.length && sec.skills.indexOf(q.skill)<0) return false;
         if(sec.diffs && sec.diffs.length && sec.diffs.indexOf(q.psatDifficulty)<0) return false;
+        // OPTIONAL THIRD AXIS. `skill` + `difficulty` cannot express a rule. Ask for
+        // "Boundaries, Hard" and the 102 items behind it are 47 comma questions and
+        // 13 dash ones, so the set that was built to test whether a student can close
+        // an already-open mark can come back without a single item that opens one —
+        // and it has. `ruleType` is tagged on every Conventions question and is the
+        // same vocabulary `challenge/build-challenge-set.js` already selects on
+        // (ruletype.test.js guards the spelling). Omit it and nothing changes.
+        if(sec.ruleTypes && sec.ruleTypes.length && sec.ruleTypes.indexOf(q.ruleType)<0) return false;
         return true;
       });
       var picked=_calibratedPick(sec, secPool, sec.count||0);
