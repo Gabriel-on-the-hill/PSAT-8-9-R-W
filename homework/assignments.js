@@ -32,55 +32,66 @@
 // ══════════════════════════════════════════════════════════════════
 
 const HOMEWORK = {
-  // 12–17 Sep 2026. Five short sets, with an untimed build before timed transfer.
+  // Maysa — week of 21 Sep 2026. THREE sets, Mon/Tue/Thu, and the challenge card
+  // con-rules-1 on Wed and Fri. Practice 3 is Saturday, so Friday carries no set.
+  //
+  // NO UNTIMED SET THIS WEEK, and that is the reversal of the 18 Sep candidate,
+  // which was three-quarters untimed because it was written before the class.
+  // On 20 Sep she answered every conventions question she REACHED correctly, two
+  // of them Boundaries at Hard, on a fresh draw rather than a replay — and spent
+  // 377 of 420 seconds doing it, leaving three questions unseen. Untimed is the
+  // condition she has already passed. The clock is the one she has not.
+  //
+  // THE FINDING THIS PLAN IS BUILT ON: it is not reading time. On 20 Sep she
+  // settled each sentence in 15–26 seconds of `onText` and then took two to three
+  // minutes to choose. The untimed 17 Sep set shows it from the other side, where
+  // the options field still works: 21s on the text and 97s on the options for her
+  // Dash miss. She has no procedure that TERMINATES, so she cycles the choices.
+  //
+  // AND SHE DOES NOT NAVIGATE. A timed set runs in exam mode — flag button,
+  // question grid, dashed cells for blanks, free movement — because the real test
+  // allows all of it. She works straight through in order, so the two expensive
+  // questions take the clock and the tail is never seen. Five September items were
+  // assigned and never reached, every one of them Form, Structure, and Sense
+  // sitting behind Boundaries in its set. Day 1's whole job is to break that.
+  //
+  // review: 0 ON DAYS 1 AND 2. Both are pace instruments on a stated budget, and
+  // 17 Sep's day 4 collapsed into a two-question measurement when a spliced review
+  // item took 128 seconds. Day 3 takes the default dose, because it is the mixed
+  // one and the ladder should bring this week's misses back inside it.
+  //
+  // `through` LOCKS NOTHING — homework-hub.html uses it only to print the sentence
+  // asking her to spread the sets out. The levers that actually work are fewer
+  // sets and named days, so this is three sets with the days written into the tips.
   "Maysa": {
-    title: "Five short sets — spread them across the week",
-    start: "2026-09-12",
-    through: "2026-09-17",
-    unlock: "sequential",
+    title: "Three sets on the clock — Monday, Tuesday, Thursday",
+    start: "2026-09-21",
+    through: "2026-09-24",
+    unlock: "cumulative",
     days: [
-      { n:1, focus:"Conventions proof — build the method without a clock", minutes:0, review:0,
+      { n:1, focus:"Flag and move — four questions, and none of them left blank", minutes:5, review:0,
         sections:[
-          { skills:["Boundaries"],                    diffs:["Medium"], count:1 },
-          { skills:["Boundaries"],                    diffs:["Hard"],   count:2 },
-          { skills:["Form, Structure, and Sense"],    diffs:["Medium"], count:1 },
-          { skills:["Form, Structure, and Sense"],    diffs:["Hard"],   count:2 },
+          { skills:["Form, Structure, and Sense"], diffs:["Medium"], count:1 },
+          { skills:["Form, Structure, and Sense"], diffs:["Hard"],   count:1 },
+          { skills:["Boundaries"],                 diffs:["Hard"],   count:2 },
         ],
-        tip:"No clock. Type the proof before you reveal the choices.\nFor a verb-form question, name the true subject and the finite verb the sentence needs. For punctuation, remove any optional description, then label each side: complete clause, dependent clause, or phrase.\nA dependent clause can contain a finite verb; a non-finite -ing or to- phrase is not a clause. Keep going past the last question until the results screen appears so the set is saved." },
+        tip:"Monday. Four questions, five minutes, seventy-five seconds each. The verb-form ones come first and the two hardest punctuation ones come last, on purpose.\nThis set has a Flag button and a row of question squares at the bottom. USE THEM. At seventy-five seconds on any question, put something down, flag it, and move on. You can come back, change your mind, and the squares show you what is still blank.\nLast time three questions took six of your seven minutes and the last three were never seen. Every one of those scored zero, and you knew how to do them.\nCount the verbs: if the sentence already has its main verb, the blank needs an -ing or a to- phrase, not another one. For punctuation, read the sentence for the marks it already carries, cover what could come out, then let the two sides force the mark." },
 
-      { n:2, focus:"The same conventions method — now under time", minutes:7, review:0,
+      { n:2, focus:"The same rules at Medium — 45 seconds each, nothing harder", minutes:3, review:0,
         sections:[
-          { skills:["Boundaries"],                    diffs:["Medium"], count:1 },
-          { skills:["Boundaries"],                    diffs:["Hard"],   count:2 },
-          { skills:["Form, Structure, and Sense"],    diffs:["Medium"], count:1 },
-          { skills:["Form, Structure, and Sense"],    diffs:["Hard"],   count:2 },
+          { skills:["Form, Structure, and Sense"], diffs:["Medium"], count:2 },
+          { skills:["Boundaries"],                 diffs:["Medium"], count:2 },
         ],
-        tip:"Six questions in seven minutes. Timed mode will not ask you to type the proof, but run it mentally before choosing.\nRemove interruptions, find the true subject and finite verb, and label each side complete clause, dependent clause, or phrase. Let that structure force the answer.\nAt sixty seconds, decide. At ninety seconds, choose and move." },
+        tip:"Tuesday. Four questions, three minutes. These are deliberately easier than Monday, because the only thing being tested today is the clock.\nRun the check in the same order every time. Read the sentence for the marks it already carries. Cover what could come out. Subject and finite verb on each side. Let the structure force the mark.\nDo not audition the options. At forty-five seconds, choose and move. If you finish with time over, that is the set working." },
 
-      { n:3, focus:"Reading proof — function, inference, and data", minutes:9,
+      { n:3, focus:"Mixed transfer at real pace — the rehearsal for Saturday", minutes:8,
         sections:[
-          { skills:["Text Structure and Purpose"],          diffs:["Medium","Hard"], count:1 },
-          { skills:["Inferences"],                          diffs:["Medium","Hard"], count:1 },
-          { skills:["Command of Evidence — Quantitative"], diffs:["Medium","Hard"], count:2 },
-        ],
-        tip:"Four new reading questions and up to two due review questions in nine minutes.\nName the job before reading the choices. For function, state what the exact detail does. For inference, complete the logic in your own words. For data, read the title, headings, and units, then prove every part of the choice.\nAllow about two minutes for each data question; due review questions count in the nine minutes." },
-
-      { n:4, focus:"Conventions at pace — mixed Medium and Hard", minutes:7,
-        sections:[
-          { skills:["Boundaries"],                 diffs:["Medium","Hard"], count:2 },
-          { skills:["Form, Structure, and Sense"], diffs:["Medium","Hard"], count:2 },
-        ],
-        tip:"Four new conventions questions and up to two due review questions in seven minutes.\nRemove interruptions. Find the true subject and finite verb. For punctuation, label each side complete clause, dependent clause, or phrase, then let the structure force the mark.\nAt sixty seconds, decide. At ninety seconds, choose and move." },
-
-      { n:5, focus:"Mixed transfer — prove the answer, then move", minutes:8, review:1,
-        sections:[
-          { skills:["Boundaries"],                         diffs:["Medium","Hard"], count:1 },
           { skills:["Form, Structure, and Sense"],         diffs:["Medium","Hard"], count:1 },
-          { skills:["Text Structure and Purpose"],         diffs:["Medium","Hard"], count:1 },
-          { skills:["Inferences"],                         diffs:["Medium","Hard"], count:1 },
+          { skills:["Boundaries"],                         diffs:["Medium","Hard"], count:1 },
           { skills:["Command of Evidence — Quantitative"], diffs:["Medium","Hard"], count:1 },
+          { skills:["Inferences"],                         diffs:["Medium","Hard"], count:1 },
         ],
-        tip:"Five new mixed questions and up to one due review question in eight minutes.\nName the job first, state the proof, then choose. Give data questions a little more time, but do not accept any option without proof. Change an answer only when you find new evidence." },
+        tip:"Thursday. Four new questions and up to two due review questions in eight minutes. This is Saturday in miniature.\nStart the proof routine on question one, not question four. Name the job before you read the choices: for punctuation, what the structure forces; for data, the title, the headings and the units before any option; for inference, finish the logic in your own words first.\nGive the data question two minutes and not a second more. Everything else gets about a minute. Change an answer only when you find new evidence." },
     ]
   },
 
