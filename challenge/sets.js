@@ -395,43 +395,30 @@ window.CHALLENGE_SETS = {
     //
     // The hub appends the newest set for any student who has one, so this needs
     // no `challenge:` key in assignments.js and does not disturb his day cards.
-    'Luke': [
-        {
-            setId:  'con-taught-1',
-            title:  'Conventions: find the subject, cover the mark',
-            source: 'Built from the bank to match the 31 Aug class, by rule',
-            date:   '2026-08-31',
-            ids: [
-                // ── Form, Structure & Sense ────────────────────────────
-                // Subject-verb agreement · the trap is always distance
-                '78cef1d4',   // SVA      · Easy   — plural subject, singular verbs offered
-                '81000f32',   // SVA      · Medium — subject across a long appositive
-
-                // Verb tense · the sentence states the time, the ear does not
-                '69556476',   // VTense   · Easy   — general facts take the present
-                '9ab0c766',   // VTense   · Medium — a stated date forces the past
-
-                // Verb form · is the blank the main verb, or a modifier?
-                '491a17a7',   // VForm    · Medium — the blank IS the main verb, so conjugate it
-
-                // Possessive · one apostrophe decision, two nouns
-                '02c22816',   // Poss     · Medium — singular possessive
-
-                // ── Boundaries · cover the mark, count the sentences ───
-                // Both sides whole — and the mark is not always the same one
-                '7c30c345',   // Commas   · Medium — two independent clauses, take the period
-                'e9a761e7',   // Commas   · Medium — two independent clauses, comma + "but"
-                '3269925f',   // Commas   · Easy   — NOT two: dependent "although" clause
-
-                // Supplements · essential takes nothing, non-essential takes commas
-                '5a4e7f5f',   // Commas   · Medium — non-essential "such as" aside
-                'f60f2482',   // NoPunct  · Medium — essential "that" clause takes no mark
-
-                // The one the ear gets wrong most: no mark belongs at all
-                '91d28dac',   // NoPunct  · Easy   — preposition and its object, never split
-            ],
-        },
-    ],
+    // ── RETIRED 21 Sep 2026 · con-taught-1 is spent ──────────────────────
+    // Every one of the twelve was attempted and the set is done: 25 attempts,
+    // 12 distinct questions, 24/25 correct including repeats, and 11/12 on FIRST
+    // response. The single first-response miss was 81000f32 — subject-verb
+    // agreement across a long appositive — which he took on a later go.
+    //
+    // Emptying the array is the retirement, exactly as Faith's was: rule 5 already
+    // defines an empty array as "no challenge is served", and the hub then simply
+    // stops appending a challenge card to his day view.
+    //
+    // NO STUDENT DATA IS AFFECTED. The module stores nothing of its own — every
+    // tally derives from psat89_progress_Luke, which is untouched. His work on
+    // these twelve stays on the review ladder exactly as it was, and they come
+    // back as delayed retrievals through dueForReview() like anything else.
+    //
+    // RULE 3 STILL BINDS, so the spent ids are preserved here: any future Luke set
+    // must exclude all twelve.
+    //   7c30c345 e9a761e7 3269925f 5a4e7f5f f60f2482 91d28dac   (Boundaries)
+    //   78cef1d4 81000f32 69556476 9ab0c766 491a17a7 02c22816   (FSS)
+    // 81000f32 is the only one he ever got wrong first time, and the SVA archetype
+    // behind it is still an open repair — see LEDGER §Open, item 6a.
+    //
+    // The build rationale for the set is preserved above, unedited.
+    'Luke': [],
 
 
 };
