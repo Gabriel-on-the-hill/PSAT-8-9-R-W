@@ -259,66 +259,83 @@ const HOMEWORK = {
     ]
   },
 
-  // Luke — 21 Sep, and this is a SALVAGE, not a week. Read the reasoning before editing.
+  // Luke — week of 22 Sep 2026. FOUR mixed sets, Tue to Fri, into a full-length
+  // practice test on the weekend. Shape only; the reasoning and the evidence behind
+  // it are tutor-only and live outside this repo.
   //
-  // The 15-18 Sep plan went live on the 15th and was never opened: zero rows of any type
-  // after 14 Sep, against a sheet that logged other students on the 17th, 18th, 19th and
-  // 20th. So the pipe works and the silence is real. All four sets then sat open on his
-  // hub under a window that had already closed, which is the display most likely to
-  // produce a panicked blast through everything an hour before class.
+  // WHAT THE WEEK IS FOR. Every taught skill touched at least twice before the test,
+  // so nothing goes stale, with the recent skills carrying the weight: each set leads
+  // with them and the older skills fill the back half. Across the four sets:
+  // Boundaries 5, Words in Context 5, Transitions 4, Form/Structure 3, Inferences 3,
+  // Central Ideas 2, Rhetorical Synthesis 2 -- 24 new, plus the ladder's review.
   //
-  // WHY ONE SET AND NOT FOUR. Questions are the consumable here: once drawn and answered
-  // they are marked seen in progress.js and rank resting, so they can never be served
-  // fresh again. Sixteen rushed questions spend sixteen unseen items and return sixteen
-  // readings nobody can interpret, because minutes:0 exists to capture a typed prediction
-  // and a rushed prediction is three characters. One set spends four and returns a
-  // reading that survives being hurried.
+  // THE CLOCK COMES LAST, ONCE. Sets 1-3 are untimed with a typed prediction, because
+  // minutes > 0 switches the runner to a one-click commit and the typed box is the
+  // only record of HOW an answer was reached. Set 4 is the rehearsal: seven minutes,
+  // exam navigation, questions in the order the real module serves them (Craft and
+  // Structure, Information and Ideas, Conventions, Expression of Ideas), review:0 so
+  // a spliced item cannot distort the pace.
   //
-  // WHAT WAS CUT, AND WHERE IT WENT:
-  //   the timed mixed set  -> deleted. It existed to rehearse the clock before a
-  //                           full-length sitting that has now passed. Obsolete, not
-  //                           deferred.
-  //   the evidence set     -> moved into the class hour as a silent independent block.
-  //                           It is the only untimed typed read on two skills and it is
-  //                           precisely the thing a rush destroys, so it must not be
-  //                           reachable from the hub tonight. Re-author it properly after
-  //                           the class, per the standing rule.
-  //   the two transitions  -> merged into the single set below. He will sit down once,
-  //   sets                    so the set is built for one sitting rather than four.
+  // BOUNDARIES IS PINNED TO Colon + Semi in sets 1 and 3: both rule types test one
+  // question -- can each side stand as a sentence -- and the wide Commas pool would
+  // mostly test something else. Set 4 leaves it open, as transfer. Form/Structure
+  // takes SVA in set 1 and Pron/Poss in set 3 for the same reason. Inferences is
+  // Hard throughout: the Medium pool is too exposed to read.
   //
-  // WHY MEDIUM SURVIVES AND HARD DOES NOT. Transitions was taught once, guided, and has
-  // never had an unguided repetition. Under a rush a Hard miss cannot be told apart from
-  // a hurry, whereas four Medium items answer the only question worth asking tonight:
-  // did the teaching survive a week? The Hard step goes in the re-authored week, where it
-  // can have a control beside it.
+  // THE PREDICTION STANDARD differs by skill and each tip says it: Boundaries names
+  // both sides, then the mark; Words in Context names the clue, then its own word;
+  // Transitions names the relationship, never a transition word. One word is fine
+  // when it is the right kind of word.
   //
-  // REVIEW IS ON, AND THAT IS A DELIBERATE REVERSAL. The first-dose rule says review:0 on
-  // a day teaching one brand-new skill, and that was right for a four-set week. In a
-  // one-set week it flips: the ladder has been idle since 30 August, and review questions
-  // are the ONE part of a set a rush cannot waste, because they are items already seen and
-  // answering them quickly is still retrieval. They spend no unseen stock. Two free
-  // retrievals of Information and Ideas, which nothing else this week touches.
-  //
-  // THE TIP IS SHORTER THAN THE TWO IT REPLACES, ON PURPOSE. A hurrying student reads the
-  // first two lines or none, so the -ly correction leads: the 14 Sep class gave "words
-  // ending in -ly mean cause and effect", and across this bank 69 -ly options split 19
-  // addition, 18 cause, 12 example, 5 sequence, 3 contrast -- the commonest is "Similarly",
-  // which is the opposite family. Concession and example-vs-restatement follow as one line
-  // each; both were in the session plan and neither was reached in class.
-  //
-  // Shape only. The student data behind these choices is TUTOR-ONLY and lives in the
-  // gitignored notes -- it must never be written into this public, student-downloaded file.
+  // UNLOCK: sequential with the calendar floor -- set n opens when set n-1 is
+  // submitted OR on day n, whichever comes first. The days are named in the tips.
   "Luke": {
-    title: "One short set — it is the only one, so take your time on it",
-    start: "2026-09-21",
-    through: "2026-09-21",
+    title: "Four mixed sets before your practice test — one a night",
+    start: "2026-09-22",
+    through: "2026-09-25",
     unlock: "sequential",
     days: [
-      { n:1, focus:"Transitions — no clock, name the link before you look", minutes:0,
+      { n:1, focus:"Punctuation first, then a bit of everything — no clock", minutes:0,
         sections:[
-          { skills:["Transitions"], diffs:["Medium"], count:4 },
+          { skills:["Boundaries"],                 diffs:["Medium"], count:1, ruleTypes:["Colon","Semi"] },
+          { skills:["Boundaries"],                 diffs:["Hard"],   count:2, ruleTypes:["Colon","Semi"] },
+          { skills:["Form, Structure, and Sense"], diffs:["Hard"],   count:1, ruleTypes:["SVA"] },
+          { skills:["Inferences"],                 diffs:["Hard"],   count:1 },
+          { skills:["Central Ideas and Details"],  diffs:["Hard"],   count:1 },
         ],
-        tip:"One set, six questions, no clock. It is short on purpose — the job is to take your time on it, not to get it done.\nCover the choices first. Say what the sentence BEFORE the blank claims, then what the sentence AFTER it claims, and type the link in ordinary words — \"same again\", \"opposite\", \"so\", \"for instance\", \"then\". Only then look at the options.\nDo not pick by the shape of the word. \"Similarly\", \"consequently\" and \"specifically\" all end the same way and mean different things. The one you will meet most is \"Similarly\", and it means SAME AGAIN, not SO.\nTwo more: FOR EXAMPLE adds a new instance, IN OTHER WORDS re-says the same fact. And if the sentence after the blank already has its own \"but\", the blank is the part that agrees first — \"granted\", \"of course\" — not \"however\".\nKeep going to the results screen, or it does not save." },
+        tip:"Tuesday. One set tonight, no clock, about ten minutes. Four sets this week, one a night, then your practice test at the weekend.\nPunctuation: before you look at the choices, ask one thing about each side of the blank: could it stand on its own as a sentence? Type it: \"left complete, right complete, semicolon.\"\nTwo complete sides need a period or a semicolon. A comma can't join them unless a FANBOYS word comes right after it, and \"however\" isn't one. A colon needs a complete sentence on its LEFT.\nVerb questions: cross out everything between the subject and the blank, then match the verb to the subject.\nReading questions: type the claim in your own words before you look." },
+
+      { n:2, focus:"Words in Context, then transitions and the rest — no clock", minutes:0,
+        sections:[
+          { skills:["Words in Context"],          diffs:["Medium"], count:1 },
+          { skills:["Words in Context"],          diffs:["Hard"],   count:2 },
+          { skills:["Transitions"],               diffs:["Hard"],   count:1 },
+          { skills:["Rhetorical Synthesis"],      diffs:["Hard"],   count:1 },
+          { skills:["Central Ideas and Details"], diffs:["Hard"],   count:1 },
+        ],
+        tip:"Wednesday. No clock, about ten minutes.\nWords in Context: cover the choices and find the clue — after a colon or dash, the same idea said again after a semicolon, or a contrast word like \"despite\". Type the clue and your own plain word: \"after the semicolon, comparison.\" One word is fine if it's yours. Then put your choice back into the sentence and read it.\nTransitions: type the link, not a transition word — \"opposite\", \"same again\", \"so\", \"for instance\", \"I'll admit that, but\".\nSynthesis: read the goal first and pick the option that does that job." },
+
+      { n:3, focus:"Transitions and a mix of everything — no clock", minutes:0,
+        sections:[
+          { skills:["Transitions"],                diffs:["Medium"], count:1 },
+          { skills:["Transitions"],                diffs:["Hard"],   count:1 },
+          { skills:["Words in Context"],           diffs:["Hard"],   count:1 },
+          { skills:["Inferences"],                 diffs:["Hard"],   count:1 },
+          { skills:["Boundaries"],                 diffs:["Hard"],   count:1, ruleTypes:["Colon","Semi"] },
+          { skills:["Form, Structure, and Sense"], diffs:["Hard"],   count:1, ruleTypes:["Pron","Poss"] },
+        ],
+        tip:"Thursday. No clock, about ten minutes. Last untimed set before the test.\nTransitions: read to the END of the sentence after the blank. If it already has its own \"but\", the blank is the part that agrees first: \"granted\", \"of course\". \"For example\" adds a new case; \"in other words\" says the same thing again.\nDon't pick by the shape of the word. \"Similarly\" and \"consequently\" both end in -ly and mean different things.\nPronouns: find the noun it points back to. Singular or plural? Owning something (its, their) or a contraction (it's, they're)?\nEvery question: say what it needs before you look." },
+
+      { n:4, focus:"Dress rehearsal — six questions in test order, seven minutes", minutes:7, review:0,
+        sections:[
+          { skills:["Words in Context"],           diffs:["Hard"], count:1 },
+          { skills:["Inferences"],                 diffs:["Hard"], count:1 },
+          { skills:["Boundaries"],                 diffs:["Hard"], count:1 },
+          { skills:["Form, Structure, and Sense"], diffs:["Hard"], count:1 },
+          { skills:["Transitions"],                diffs:["Hard"], count:1 },
+          { skills:["Rhetorical Synthesis"],       diffs:["Hard"], count:1 },
+        ],
+        tip:"Friday. Six questions, seven minutes: the same pace as the real test, about seventy seconds each, in the same order.\nThat's more time than you've been using. Spend it on the method, not on second-guessing.\nIf one is taking too long, put something down, flag it, and come back. Never leave a square blank.\nKeep going to the results screen, or it doesn't save. Then rest. Test at the weekend." },
     ]
   }
 };
