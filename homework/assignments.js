@@ -32,66 +32,67 @@
 // ══════════════════════════════════════════════════════════════════
 
 const HOMEWORK = {
-  // Maysa — week of 21 Sep 2026. THREE sets, Mon/Tue/Thu, and the challenge card
-  // con-rules-1 on Wed and Fri. Practice 3 is Saturday, so Friday carries no set.
+  // Maysa — 24 and 25 Sep 2026. TWO short sets: one sat IN CLASS tonight, one on
+  // Friday. Practice 3 (the full-length, Reading and Writing plus Math) is Saturday,
+  // outside the app, and nothing is assigned after it until it has been reviewed.
   //
-  // NO UNTIMED SET THIS WEEK, and that is the reversal of the 18 Sep candidate,
-  // which was three-quarters untimed because it was written before the class.
-  // On 20 Sep she answered every conventions question she REACHED correctly, two
-  // of them Boundaries at Hard, on a fresh draw rather than a replay — and spent
-  // 377 of 420 seconds doing it, leaving three questions unseen. Untimed is the
-  // condition she has already passed. The clock is the one she has not.
+  // WHAT THIS PLAN IS FOR. Last week's plan trained the clock and it worked: sets
+  // were reached to the end and reading ran at under a minute a question. What did
+  // not come with the speed was a rule that ENDS a punctuation question. So this
+  // plan is the procedure first, then the clock — the order last week skipped.
+  // The procedure is taught in the room before day 1 opens:
+  //   1. marks already printed in the sentence must be matched or closed;
+  //   2. cover the blank — is the left side a complete sentence? the right side?
+  //   3. both complete: a comma alone is out (period, semicolon, colon, dash, or
+  //      comma + and/but/so);
+  //   4. right side not complete: semicolon is out;
+  //   5. left side not complete: colon and semicolon are both out.
+  //   Pick the survivor and move. No re-reading the options.
   //
-  // THE FINDING THIS PLAN IS BUILT ON: it is not reading time. On 20 Sep she
-  // settled each sentence in 15–26 seconds of `onText` and then took two to three
-  // minutes to choose. The untimed 17 Sep set shows it from the other side, where
-  // the options field still works: 21s on the text and 97s on the options for her
-  // Dash miss. She has no procedure that TERMINATES, so she cycles the choices.
+  // `ruleTypes` ON EVERY BOUNDARIES SECTION, because the decision this plan tests is
+  // the one between Semi / Colon / Dash / Commas / NoPunct, and an unfiltered
+  // Boundaries draw is mostly comma items. One rule per section so the counts are
+  // exact. Supply checked against the bank before authoring.
   //
-  // AND SHE DOES NOT NAVIGATE. A timed set runs in exam mode — flag button,
-  // question grid, dashed cells for blanks, free movement — because the real test
-  // allows all of it. She works straight through in order, so the two expensive
-  // questions take the clock and the tail is never seen. Five September items were
-  // assigned and never reached, every one of them Form, Structure, and Sense
-  // sitting behind Boundaries in its set. Day 1's whole job is to break that.
+  // NO Mod SECTION. The unseen Hard Mod items include one held back for class use,
+  // and a homework draw would spend it. SVA stands in: the sentence spine is the
+  // same skill the Mod question rests on.
   //
-  // review: 0 ON DAYS 1 AND 2. Both are pace instruments on a stated budget, and
-  // 17 Sep's day 4 collapsed into a two-question measurement when a spliced review
-  // item took 128 seconds. Day 3 takes the default dose, because it is the mixed
-  // one and the ladder should bring this week's misses back inside it.
+  // review: 0 ON BOTH DAYS. These are two short, clean measurements of one
+  // procedure the night before and two nights before a full-length; a spliced
+  // review item from another skill would blur exactly the reading they exist for.
   //
-  // `through` LOCKS NOTHING — homework-hub.html uses it only to print the sentence
-  // asking her to spread the sets out. The levers that actually work are fewer
-  // sets and named days, so this is three sets with the days written into the tips.
+  // CUMULATIVE: day 1 opens on the 24th, day 2 on the 25th. A set cannot open
+  // before its day, so the two cannot be sat back to back ahead of time.
+  //
+  // Shape only. The student data behind these choices is TUTOR-ONLY and lives in
+  // the ledger outside this repo — this file is downloaded in full by every student.
   "Maysa": {
-    title: "Three sets on the clock — Monday, Tuesday, Thursday",
-    start: "2026-09-21",
-    through: "2026-09-24",
+    title: "The two-sides test — one set tonight, one on Friday",
+    start: "2026-09-24",
+    through: "2026-09-25",
     unlock: "cumulative",
     days: [
-      { n:1, focus:"Flag and move — four questions, and none of them left blank", minutes:5, review:0,
+      { n:1, focus:"In class — the two-sides test, six questions on the clock", minutes:6, review:0,
         sections:[
-          { skills:["Form, Structure, and Sense"], diffs:["Medium"], count:1 },
-          { skills:["Form, Structure, and Sense"], diffs:["Hard"],   count:1 },
-          { skills:["Boundaries"],                 diffs:["Hard"],   count:2 },
+          { skills:["Boundaries"],                 diffs:["Hard"],   ruleTypes:["Semi"],    count:1 },
+          { skills:["Boundaries"],                 diffs:["Hard"],   ruleTypes:["Commas"],  count:1 },
+          { skills:["Boundaries"],                 diffs:["Hard"],   ruleTypes:["Dash"],    count:1 },
+          { skills:["Boundaries"],                 diffs:["Medium"], ruleTypes:["Colon"],   count:1 },
+          { skills:["Boundaries"],                 diffs:["Hard"],   ruleTypes:["NoPunct"], count:1 },
+          { skills:["Form, Structure, and Sense"], diffs:["Hard"],   ruleTypes:["SVA"],     count:1 },
         ],
-        tip:"Monday. Four questions, five minutes, seventy-five seconds each. The verb-form ones come first and the two hardest punctuation ones come last, on purpose.\nThis set has a Flag button and a row of question squares at the bottom. USE THEM. At seventy-five seconds on any question, put something down, flag it, and move on. You can come back, change your mind, and the squares show you what is still blank.\nLast time three questions took six of your seven minutes and the last three were never seen. Every one of those scored zero, and you knew how to do them.\nCount the verbs: if the sentence already has its main verb, the blank needs an -ing or a to- phrase, not another one. For punctuation, read the sentence for the marks it already carries, cover what could come out, then let the two sides force the mark." },
+        tip:"We start this one together in class. Six questions, six minutes — one minute each.\nFor every punctuation question, run the two-sides test in order and stop when one choice is left:\n1. Any mark already printed in the sentence? Match it or close it.\n2. Cover the blank. Is the LEFT side a full sentence? Is the RIGHT side?\n3. Both full: a comma on its own is out.\n4. Right side not full: a semicolon is out.\n5. Left side not full: a colon and a semicolon are both out.\nPick what is left and move. If two choices survive, flag it, choose one, and come back at the end." },
 
-      { n:2, focus:"The same rules at Medium — 45 seconds each, nothing harder", minutes:3, review:0,
+      { n:2, focus:"Friday — the same test, five questions, then rest before Saturday", minutes:5, review:0,
         sections:[
-          { skills:["Form, Structure, and Sense"], diffs:["Medium"], count:2 },
-          { skills:["Boundaries"],                 diffs:["Medium"], count:2 },
+          { skills:["Boundaries"],                 diffs:["Hard"], ruleTypes:["Semi"],   count:1 },
+          { skills:["Boundaries"],                 diffs:["Hard"], ruleTypes:["Colon"],  count:1 },
+          { skills:["Boundaries"],                 diffs:["Hard"], ruleTypes:["Dash"],   count:1 },
+          { skills:["Boundaries"],                 diffs:["Hard"], ruleTypes:["Commas"], count:1 },
+          { skills:["Form, Structure, and Sense"], diffs:["Hard"], ruleTypes:["SVA"],    count:1 },
         ],
-        tip:"Tuesday. Four questions, three minutes. These are deliberately easier than Monday, because the only thing being tested today is the clock.\nRun the check in the same order every time. Read the sentence for the marks it already carries. Cover what could come out. Subject and finite verb on each side. Let the structure force the mark.\nDo not audition the options. At forty-five seconds, choose and move. If you finish with time over, that is the set working." },
-
-      { n:3, focus:"Mixed transfer at real pace — the rehearsal for Saturday", minutes:8,
-        sections:[
-          { skills:["Form, Structure, and Sense"],         diffs:["Medium","Hard"], count:1 },
-          { skills:["Boundaries"],                         diffs:["Medium","Hard"], count:1 },
-          { skills:["Command of Evidence — Quantitative"], diffs:["Medium","Hard"], count:1 },
-          { skills:["Inferences"],                         diffs:["Medium","Hard"], count:1 },
-        ],
-        tip:"Thursday. Four new questions and up to two due review questions in eight minutes. This is Saturday in miniature.\nStart the proof routine on question one, not question four. Name the job before you read the choices: for punctuation, what the structure forces; for data, the title, the headings and the units before any option; for inference, finish the logic in your own words first.\nGive the data question two minutes and not a second more. Everything else gets about a minute. Change an answer only when you find new evidence." },
+        tip:"Friday only — not Thursday night, not Saturday morning. Five questions, five minutes.\nSame two-sides test as in class, in the same order, every time. Say the step that decides it, even if only in your head: \"right side not full — semicolon out.\"\nFor the verb question: cross out everything between the subject and the blank, then match the verb to the subject.\nThen stop. No extra practice tonight. Saturday is the full practice test, Reading and Writing and Math, in one sitting." },
     ]
   },
 
