@@ -33,7 +33,7 @@ const HTML = read('index.html')
     .replace(/<link\b[^>]*>/gi, '');
 
 const SCRIPTS = [
-    'gate.js', 'config.js', 'progress.js', 'sheet-sync.js', 'session-responses.js',
+    'config.js', 'progress.js', 'sheet-sync.js', 'session-responses.js',
     'storage.js', 'timer.js', 'history.js',
     'data-craft-structure.js', 'data-expression-of-ideas.js', 'data-info-ideas.js', 'data-conventions.js',
     'app.js',
@@ -90,7 +90,6 @@ function build(student, search) {
             },
         });
         const w = dom.window;
-        w.sessionStorage.setItem('mastery_unlocked', '1');
         w.sessionStorage.setItem('psat89_user', student);
         for (const f of SCRIPTS) {
             const s = w.document.createElement('script');
@@ -142,11 +141,16 @@ section('2 · The start screen and its gates');
     eq('screen is shown', scr.style.display, 'block');
     ok('tally rendered', new RegExp('Mastered 0 of '+N+' \\(0%\\)').test(txt(scr)));
     ok('segments rendered', new RegExp('not attempted '+N).test(txt(scr)));
-    eq('default session size', $(w, 'cHowMany').value, '10');
+    // Derived, not literal: a fresh set defaults to min(10, N) (ChallengeCore.defaultSessionSize).
+    // The literal '10' held only while every live set had ten or more ids.
+    eq('default session size', $(w, 'cHowMany').value, String(Math.min(10, N)));
     // Only a set carrying a `review` block offers a debrief. A set built from the
     // bank by concept coverage has no verbatim misses to show, so the correct
     // behaviour is that the button is ABSENT — assert that rather than skip.
-    if (REVIEW_N > 0) ok('debrief offered for '+REVIEW_N+' misses', new RegExp('Review your '+REVIEW_N+' misses').test(txt(scr)));
+    // A set may carry its own button text (`reviewCta`) when its review layer teaches
+    // rather than debriefs misses; challenge.js falls back to 'Review your N misses'.
+    const REVIEW_CTA = SET.reviewCta || ('Review your '+REVIEW_N+' misses');
+    if (REVIEW_N > 0) ok('debrief offered: '+REVIEW_CTA, txt(scr).includes(REVIEW_CTA));
     else ok('no debrief offered for a set with no review block', !$(w, 'cDebriefBtn'), txt(scr));
     ok('Begin offered (gate=normal)', !!$(w, 'cBeginBtn'));
 

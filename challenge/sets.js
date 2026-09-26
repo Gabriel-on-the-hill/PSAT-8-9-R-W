@@ -129,7 +129,129 @@ window.CHALLENGE_SETS = {
     //   78cef1d4 69556476 8de2ee41 6b2a1288 9ab0c766   (FSS)
     //   cf881255 02c22816 1fda4fb5 11add1e8 03ca25bb   (FSS)
     // Only f0124561 (Semi · Medium) was never worked.
-    'Faith': [],
+    'Faith': [
+        // ══════════════════════════════════════════════════════════════
+        // ci-claim-1 — main idea, built on the prediction axis, with a teaching layer
+        // ══════════════════════════════════════════════════════════════
+        //
+        // The first reading set on this roster. Every earlier challenge set here was
+        // Conventions, built along ruleType. Central Ideas has no ruleType, so this
+        // set is built along QUESTION TYPE instead: main idea of the whole text, and
+        // a detail or suggestion drawn from one part of it. Both halves appear in
+        // both layers.
+        //
+        // TWO LAYERS, AND THE ORDER IS THE DESIGN (as con-rules-1):
+        //
+        //   `review` — 7 items, UNSCORED, never recorded. Three authored paired
+        //     drills, one per move: a prediction needs a topic AND a point; every
+        //     word of an answer must point to a line; on a one-part question the
+        //     trap is the text's own words with the wrong owner. Then four real
+        //     passages worked with the tutor, each with a `strategy` line in the
+        //     words to reuse.
+        //
+        //   `ids` — 8 real bank items, SCORED. Medium 4 : Hard 4. The Medium half
+        //     is where the routine is practised; the Hard half is where it is needed.
+        //     Hard is kept to four so the set stays masterable before the window.
+        //     All Hard items put the claim somewhere other than a plain first line:
+        //     after "But" (60c36cf5, 88ee5572), in the second sentence (877b3824),
+        //     or in a poem (fb473f4d).
+        //
+        // SAT IN CLASS, BEFORE THE HOMEWORK DAY OF THE SAME DATE. This set writes
+        // to the mastery ledger, so its ids are no longer unseen when homework
+        // day 1 draws Central Ideas at Hard. That order keeps the homework draw a
+        // true first attempt. Sitting them the other way round could serve the same
+        // question twice in one class.
+        //
+        // RULE 3 — the fifteen retired con-concepts-1 ids above are all Conventions;
+        // none can appear here. Selection: the unseen College Board items in each
+        // tier, main idea and detail both represented, read by hand, ordered by
+        // tier. Never shuffled.
+        {
+            setId:  'ci-claim-1',
+            title:  'Main idea: say the point, then point to the line',
+            source: 'Built along question type, with a teaching layer of paired drills',
+            date:   '2026-09-26',
+            reviewLabel: 'Start here',
+            reviewIntro: 'Seven short items that teach the routine this set is built on. Work them first, with your tutor. Nothing here counts toward mastery.',
+            reviewCta:   'Work the 7 teaching items',
+            review: [
+              {
+                source: "Paired drill — a topic is not a prediction",
+                skill: "Central Ideas and Details",
+                passage: "Farmers in parts of Kenya have started hanging beehives along the fences around their fields. Elephants avoid the buzzing hives, so the fences keep elephants out of the crops, and the bees also produce honey that the farmers can sell.",
+                question: "Which prediction of the main idea could you actually test the options against?",
+                options: ["A. It is about beehives and elephants in Kenya.", "B. Beehive fences keep elephants away from crops and also give farmers honey to sell.", "C. It is about how farmers in Kenya earn money.", "D. Elephants are afraid of bees."],
+                answer: "B",
+                strategy: "A prediction has two halves: the topic (who or what) and the point (what the text says about it). A topic on its own fits every option, so it cannot rule any of them out. Say both halves before you look.",
+                explanation: "Choice B is correct because it names the topic and the point: the hives protect crops and earn money. A and C are only topics. Every option in a real question would be \"about beehives and elephants\", so a prediction like that cannot eliminate anything. D is one true detail from the text, and a detail is too small to be the main idea. When your prediction could not rule out a single option, it is a topic, and you are not ready to look yet."
+              },
+              {
+                source: "Paired drill — point to the line",
+                skill: "Central Ideas and Details",
+                passage: "A study of 40 city parks found that parks with many trees recorded lower ground temperatures on summer afternoons than parks covered mostly in grass. The researchers suggest that planting more trees could help cities manage summer heat.",
+                question: "Which choice is fully supported by the text?",
+                options: ["A. Planting trees is the most effective way for cities to reduce summer heat.", "B. Grass makes city parks hotter every year.", "C. Most cities have already started planting more trees in their parks.", "D. Parks with many trees tended to be cooler in summer than grassy parks, which suggests trees could help cities manage heat."],
+                answer: "D",
+                strategy: "Every word of the answer has to point to a line in the text. Put your finger on the text for each part of the option. If a word has no line — most, first, every, always, already, widely — the option is out, however sensible it sounds.",
+                explanation: "Choice D is correct: every part of it points to a line (\"lower ground temperatures\", \"could help cities manage summer heat\"). A says \"the most effective way\", but the text compares trees with grass and nothing else. B says \"every year\" and blames the grass, and the text says neither. C says \"most cities have already\", and the text never mentions what cities have done. Each wrong option sounds reasonable, and that is the trap: sounding right is not the test. Pointing is."
+              },
+              {
+                source: "Paired drill — right words, wrong owner",
+                skill: "Central Ideas and Details",
+                passage: "Historian Ana Ruiz argues that the old canal was built mainly to move goods to market. Historian Tom Bell agrees that the canal later carried goods, but he argues that it was first dug to drain flooded farmland.",
+                question: "According to the text, what does Bell claim that Ruiz does not?",
+                options: ["A. The canal was built mainly to move goods to market.", "B. The canal never carried any goods.", "C. The canal was first dug to drain flooded farmland.", "D. Ruiz has no evidence that the canal carried goods."],
+                answer: "C",
+                strategy: "On a question about one person or one part of the text, find the sentence about that person and answer from it alone. The trap is an option built from the text's own words that belong to someone else.",
+                explanation: "Choice C is correct: it comes from Bell's sentence and nowhere else. A is Ruiz's claim, taken word for word from her sentence, which is exactly why it is tempting. B contradicts Bell, who agrees the canal carried goods. D is not in the text at all. Every word of A appears in the passage. It is still wrong, because the words belong to the wrong person."
+              },
+              {
+                source: "Real question — worked with your tutor",
+                skill: "Central Ideas and Details",
+                passage: "In many of his sculptures, artist Richard Hunt uses broad forms rather than extreme accuracy to hint at specific people or ideas. In his first major work, Arachne (1956), Hunt constructed the mythical character Arachne, a weaver who was changed into a spider, by welding bits of steel together into something that, although vaguely human, is strange and machine-like. And his large bronze sculpture The Light of Truth (2021) commemorates activist and journalist Ida B. Wells using mainly flowing, curved pieces of metal that create stylized flame.",
+                question: "Which choice best states the text’s main idea about Hunt?",
+                options: ["A. He often depicts the subjects of his sculptures using an unrealistic style.", "B. He uses different kinds of materials depending on what kind of sculpture he plans to create.", "C. He tends to base his art on important historical figures rather than on fictional characters.", "D. He has altered his approach to sculpture over time, and his works have become increasingly abstract."],
+                answer: "A",
+                strategy: "Main idea, whole text. The claim is the first sentence, and the two sculptures after it are examples of it. Say topic plus point before you look: Hunt shows his subjects with loose, unrealistic shapes rather than exact detail. Then point to the line for each option. Nothing in the text says his approach changed over time.",
+                explanation: "Choice A is the best answer because it most accurately states the main idea of the text. According to the text, many of Richard Hunt’s sculptures’ “use broad forms rather than extreme accuracy”— in other words, they are more abstract than realistic. To illustrate Hunt’s abstract approach, the text characterizes his sculpture of Arachne as “vaguely human” and his work in honor of Ida B. Wells as “using mainly flowing, curved pieces of metal that create stylized flame.” Thus, the main idea is that Hunt often depicts the subjects of his sculptures using an unrealistic style.\n\nChoice B is incorrect. Although the text indicates that one of Hunt’s sculptures is made of steel and another of bronze, there is no mention of why he chose these materials. Choice C is incorrect because the text says nothing about how Hunt chose the subjects for his sculptures. Furthermore, of the two examples provided in the text, only Ida B. Wells is an important historical figure; Arachne is a “mythical character.” Choice D is incorrect because the text says nothing about how Hunt’s style changed over time. In fact, although the two examples of Hunt’s work discussed in the text were created 65 years apart, they are both described as heavily stylized rather than realistic, which may suggest that some aspects of Hunt’s style haven’t changed over that time."
+              },
+              {
+                source: "Real question — worked with your tutor",
+                skill: "Central Ideas and Details",
+                passage: "To dye wool, Navajo (Diné) weaver Lillie Taylor uses plants and vegetables from Arizona, where she lives. For example, she achieved the deep reds and browns featured in her 2003 rug In the Path of the Four Seasons by using Arizona dock roots, drying and grinding them before mixing the powder with water to create a dye bath. To intensify the appearance of certain colors, Taylor also sometimes mixes in clay obtained from nearby soil.",
+                question: "Which choice best states the main idea of the text?",
+                options: ["A. Reds and browns are not commonly featured in most of Taylor’s rugs.", "B. Taylor draws on local resources in the approach she uses to dye wool.", "C. Taylor finds it difficult to locate Arizona dock root in the desert.", "D. In the Path of the Four Seasons is widely acclaimed for its many colors and innovative weaving techniques."],
+                answer: "B",
+                strategy: "\"For example\" tells you that everything after it supports what came before. So the claim is sentence one: Taylor dyes her wool with local plants. An option that praises the rug has no line to point to.",
+                explanation: "Choice B is the best answer. It best states the main idea of the text. The text opens with the statement that Taylor uses local plants and vegetables to dye wool. The rest of the text describes how she does this.\n\nChoice A is incorrect. This doesn’t state the main idea of the text. The text only mentions one rug: In the Path of the Four Seasons, in which reds and browns are featured. It never mentions whether or not these colors are featured in her other rugs. Choice C is incorrect. This doesn’t state the main idea of the text. The text never says that Taylor finds it difficult to locate Arizona dock roots. Choice D is incorrect. This doesn’t state the main idea of the text. The text never says that In the Path of the Four Seasons is widely acclaimed. Rather, it discusses the rug to illustrate the point made earlier in the passage: that Taylor uses local plants and vegetables to dye wool."
+              },
+              {
+                source: "Real question — worked with your tutor",
+                skill: "Central Ideas and Details",
+                passage: "Historians point to the rule of the Piast dynasty as crucial to the formation of the Polish state. However, some differentiate between members of the dynasty like Mieszko II Lambert, who ruled as king from 1025 to 1031 CE, and less well-documented figures like Siemomysł, who is said to have ruled in the 10th century but whose historical actuality is disputed. Siemomysł appears in the Gesta principum Polonorum, a chronicle of medieval Polish history written between 1112 and 1118. However, the chronicle’s documentation of Siemomysł relies on oral tradition, unlike its records of later rulers.",
+                question: "According to the text, what is a difference between how historians view Siemomysł and how they view Mieszko II Lambert?",
+                options: ["A. Historians agree that Mieszko II Lambert existed, but disagree about whether Siemomysł existed.", "B. Historians believe that the Gesta principum Polonorum provides more evidence for Siemomysł s existence than it does for Mieszko II Lambert’s existence.", "C. Historians agree that Siemomysł ruled Poland much later than Mieszko II Lambert.", "D. Historians find the orally transmitted stories affirming the existence of Mieszko II Lambert to be more convincing than similar stories about Siemomysł."],
+                answer: "A",
+                strategy: "This asks about one difference, not the whole text. Find the sentence about each ruler and compare only those. Watch for the text's own words, such as oral tradition, attached to the wrong ruler.",
+                explanation: "Choice A is the best answer because it presents a statement about how historians view Siemomysł and Mieszko II Lambert that is supported by the text. The text states that the Piast dynasty had a number of different members. The text refers to two of the rulers in the Piast dynasty by name: Mieszko II Lambert, whose rule was known to have occurred from 1025 to 1031 CE, and Siemomysł (\"whose historical actuality is disputed\"), for whom less is known and who therefore is the subject of debate among historians. The text further casts doubt about Siemomysł by stating that he is \"said to have ruled\" during the 10th century, or the 900s, which suggests the possibility that he didn’t rule. The text also mentions that the chronicle’s documentation of Siemomysł relies on oral tradition, unlike its records of later rulers, including Mieszko II Lambert. This indicates that historians agree that Mieszko II Lambert was an actual historical figure, but they disagree about whether Siemomysł existed.\n\nChoice B is incorrect because the text states that the Gesta principum Polonorum’s documentation of Siemomysł comes from oral tradition — spoken rather than written documentation — unlike its records of rulers who came after Siemomysł. This suggests that the chronicle provides less’ reliable evidence rather than more evidence for Siemomysł s existence in the 900s (or the 10th century) than it does for later rulers like Mieszko II Lambert, who ruled from 1025 to 1031 CE. Choice C is incorrect because the text indicates the opposite: Siemomysł supposedly ruled earlier in the 10th century, while Mieszko II Lambert ruled from 1025 to 1031 CE. The 10th century spans the years from 901 to 1000 CE, so Siemomysł is believed to have ruled earlier than Mieszko II Lambert did, not later as this choice states. Choice D is incorrect. Although the text mentions that information in the written chronicle Gesta principum Polonorum draws its information about Siemomysł from the oral tradition, it doesn’t mention orally transmitted stories about Mieszko II Lambert. Instead, it states that the chronicle’s documentation of Siemomysł relies on oral tradition unlike the records of later rulers do, which suggests that the documentation of later rulers such as Mieszko II Lambert did not rely on oral tradition. Thus, no comparison can be made about how convincing the orally transmitted stories of each ruler are to historians."
+              },
+              {
+                source: "Real question — worked with your tutor",
+                skill: "Central Ideas and Details",
+                passage: "Algae living within the tissues of corals play a critical role in keeping corals, and the marine ecosystems they are part of, thriving. Some coral species appear brown in color when healthy due to the algae colonies living in their tissues. In the event of an environmental stressor, the algae can die or be expelled, causing the corals to appear white. To recover the algae, the bleached corals then begin to produce bright colors, which block intense sunlight, encouraging the light-sensitive algae to recolonize the corals.",
+                question: "What does the text most strongly suggest about corals that produce bright colors?",
+                options: ["A. These corals have likely been subjected to stressful environmental conditions.", "B. These corals are likely more vulnerable to exposure from intense sunlight than white corals are.", "C. These corals have likely recovered from an environmental event without the assistance of algae colonies.", "D. These corals are more likely to survive without algae colonies than brown corals are."],
+                answer: "A",
+                strategy: "The question names one thing: corals that produce bright colors. Find that sentence and read what comes just before it. The colors appear after an environmental stressor, so a brightly colored coral has been through one.",
+                explanation: "Choice A is the best answer. The text says that corals produce bright colors to block sunlight and encourage algae to recolonize after “an environmental stressor.” From this, we can infer that corals that produce bright colors have probably been subjected to an environmental stressor.\n\nChoice B is incorrect. The text says that corals produce bright colors to block intense sunlight, which protects the light-sensitive algae that keep the coral healthy. In other words, bright colors make the coral’s health less vulnerable to intense sunlight. Choice C is incorrect. The text says that corals produce bright colors to encourage algae to recolonize, not that they have recovered without the assistance of algae colonies. Choice D is incorrect. The text never compares the likelihood of differently colored corals surviving without algae colonies."
+              },
+            ],
+            ids: [
+                'c48584b6', '4816580f', '808414ef', '5675bdeb',
+                '60c36cf5', '877b3824', '88ee5572', 'fb473f4d',
+            ],
+        },
+    ],
 
     // ═════════════════════════════════════════════════════════════════
     // HOW THIS SET WAS BUILT — Form, Structure and Sense, all six concepts

@@ -96,133 +96,46 @@ const HOMEWORK = {
     ]
   },
 
-  // Faith — week of 15 Sep 2026. Four sets across four days, one a day.
+  // Faith — Sat 26 Sep 2026. ONE set, sat IN CLASS with the tutor watching.
+  // The 15 Sep plan is cleared. Nothing is assigned after class: the next plan is
+  // authored after the weekend practice test has been read, not before it.
   //
-  // CUMULATIVE, NOT SEQUENTIAL, deliberately. Sequential opens the next set the
-  // moment one is submitted, so a whole week can be finished in a single sitting —
-  // and spacing is this plan's purpose, not its packaging. Cumulative keeps the
-  // same calendar floor (n <= hwDaysAvailable(start), with no dependence on a
-  // submission flag, so it cannot deadlock) and adds the ceiling sequential lacks:
-  // a set cannot be opened before its date. Catching up stays possible.
+  // WHAT THE SET IS FOR. The class teaches a main-idea routine: find the claim
+  // sentence, predict topic + point, and keep an option only if every word of it
+  // can be pointed to in the text. The challenge set teaches and practises it in
+  // Assisted mode; this day is the first test of it in Standard mode at test pace,
+  // sat silently, so the result is a first attempt and not a coached one.
   //
-  // start: 2026-09-15. The 8 Sep plan is complete through day 5 and its `through`
-  // date has passed, so nothing finished is orphaned by the move.
+  // 6 MINUTES FOR 4, about ninety seconds a question. Timed, so the gate is one
+  // click, not typed: in the room she narrates nothing and the tutor watches the
+  // time-on-text column instead.
   //
-  // THE ORDER OF THE FOUR DAYS IS THE DESIGN:
-  //   1 — punctuation with NO clock and a typed prediction. Untimed comes before
-  //       timed, and the typed reasoning is the only way to tell a wrong rule from
-  //       a rushed one.
-  //   2 — main idea and data, slower on purpose, two minutes a question.
-  //   3 — the same punctuation, now on the clock, two days after day 1, with the
-  //       transitions reps beside it. Same skill, harder condition, spacing between.
-  //   4 — eight questions in real domain order: Conventions, then Expression of
-  //       Ideas. That is the shape of the last third of a module, and no short
-  //       single-skill set rehearses switching between them.
+  // `review: 0` so the four questions are exactly the four authored. A spliced
+  // review item from another skill would make the set measure something else.
   //
-  // `review` IS PART OF THE DESIGN, NOT A DEFAULT. Day 1 sets 0 so a typed,
-  // untimed punctuation set is not interrupted by another skill. Day 4 sets 0
-  // because review questions splice in at RANDOM POSITIONS, and that day's whole
-  // point is the order. Days 2 and 3 take the dose and let the ladder work.
+  // SAT AFTER THE CHALLENGE SET OF THE SAME DATE (ci-claim-1 in challenge/sets.js).
+  // That set teaches the routine and scores eight Central Ideas items, four of them
+  // Hard, and challenge answers write to the mastery ledger. Attempted first, they
+  // are no longer unseen, so this day's Hard draw cannot serve one of them as a
+  // first attempt. Sat the other way round, it can.
   //
-  // 90 SECONDS, STILL NOT 71. Real pace is ~71s, but the front of the module is
-  // cheap for this student and the last third is expensive. 90s is that stretch
-  // practised at the rate it deserves. 71s belongs to a full-length rehearsal
-  // under real conditions, not to a six-question set.
+  // `start` MOVES to today. Done flags are keyed by start date, so the new day 1
+  // cannot inherit the old day 1's flag.
   //
-  // ONE DIFFICULTY PER SECTION, always. A single diffs:["Medium","Hard"] section
-  // orders one pool and slices the top N, so the split lands wherever the sort
-  // does. Separate sections are the only construction that makes a count exact.
-  //
-  // ── 21 SEP: TWO DAYS ADDED. The plan is EXTENDED, not replaced. ──────────
-  //
-  // Days 3 and 4 have not been sat. Re-authoring now would take the only timed
-  // punctuation set and the only test-order set off the hub before either had
-  // produced a first attempt — and those two are the whole reason the first four
-  // days were ordered the way they are. So days 1-4 stand untouched, two days go
-  // on the end, and `through` moves to 24 Sep.
-  //
-  // STILL `cumulative`, because it is already running and a live plan does not get
-  // flipped. Seven days in, cumulative locks nothing, so the ORDER lives in the
-  // tips: day 5 says Wednesday, day 6 says Thursday, and 3 and 4 come first.
-  //
-  // WHY THE WEEK TURNS TOWARD READING. Days 1-4 are punctuation, transitions and
-  // writing goal — the back half of a module. The front half has had one set in
-  // six weeks of plans. Day 5 is the first untimed typed set pointed at reading
-  // rather than at punctuation, and that is the point: the typed prediction is the
-  // only condition in this app where the text has to be settled before the options
-  // are allowed to speak.
-  //
-  // DAY 5 IS `minutes: 0` ON PURPOSE. That is what makes the gate a typed one
-  // rather than a one-click commit (predictMode()), and `review: 0` goes with it
-  // for the same reason day 1 carries it.
-  //
-  // DAY 6 TAKES THE DEFAULT DOSE — four new plus two review. Day 5 freezes the
-  // ladder, so day 6 carries the week's spacing.
-  //
-  // DAY 6 NAMES A `ruleType`, which a homework day could not do until today.
-  // Boundaries at Hard is 102 questions and 47 of them are comma items. The rule
-  // this set exists to test is the one where a mark is already open in the
-  // sentence and the blank has to close it. Without naming it, the set cannot
-  // reach it — which is how a set can be built for a rule and never serve it.
-  //
-  // NOTHING UNTAUGHT IS ASSIGNED. Text Structure and Purpose and Cross-Text
-  // Connections have not been taught in class, so neither is in either day.
-  // `cs.html` carries the move for both and that is reading; a full-length serves
-  // them and that is a measurement. A homework set is neither, and assigning a
-  // skill cold is the fastest way to lose a student.
-  //
-  // Shape only. The student data behind these choices is TUTOR-ONLY and lives in
-  // the gitignored ledger — this file is downloaded in full by every student.
+  // Shape only. The evidence behind these choices is tutor-only and lives outside
+  // this repo — this file is downloaded in full by every student.
   "Faith": {
-    title: "Six short sets — the back half of a module, then the front",
-    start: "2026-09-15",
-    through: "2026-09-24",
+    title: "In class today — main idea at test pace",
+    start: "2026-09-26",
+    through: "2026-09-26",
     unlock: "cumulative",
     days: [
-      { n:1, focus:"Punctuation, no clock — say which mark and why before you look", review:0, minutes:0,
+      { n:1, focus:"Main idea at test pace \u2014 in class", review:0, minutes:6,
         sections:[
-          { skills:["Boundaries"], diffs:["Hard"], count:4 },
+          { skills:["Central Ideas and Details"],     diffs:["Hard"], count:3 },
+          { skills:["Command of Evidence \u2014 Textual"], diffs:["Hard"], count:1 },
         ],
-        tip:"No clock on this one at all, and you will have to type your reasoning before the choices appear. Take as long as you want. This set is about being right for the right reason, not about speed.\nBefore you type, do this in order. Cover the extra description, the who/which clause, anything sitting between two commas. What is left is the spine of the sentence. Now look at each side of the blank and ask whether it could stand on its own as a sentence.\nTwo complete sides: full stop, semicolon, or comma plus and/but/or/so. One complete side and a fragment: comma, colon or dash — and a semicolon is always wrong there. Never a mark between a subject and its verb. If the sentence has already opened a dash or a bracket, the interruption closes with the SAME mark.\nThen type what the structure forces, in your own words — \"both sides complete, needs a semicolon\" — and only then uncover the options.\nThe question is never \"does a comma look alright here?\" A comma almost always looks alright. The question is what the sentence has already done, and what that leaves you no choice about." },
-
-      { n:2, focus:"Main idea and data — slower on purpose", minutes:10,
-        sections:[
-          { skills:["Central Ideas and Details"],          diffs:["Hard"], count:2 },
-          { skills:["Command of Evidence — Quantitative"], diffs:["Hard"], count:2 },
-        ],
-        tip:"About two minutes a question, and that is deliberate. These are the two types where hurrying costs you the answer.\nMain idea: say what the whole text is about in one sentence of your own before you look at anything. Then hold every option against it. An option can be a true detail from the text and still be too narrow to be the main idea; an option can also say more than the text did. Watch for only, proves, all, always — when the text said may, or one or both.\nData: read the title, the axis labels and the units BEFORE you read a word of the options. Then say what the claim needs the figure to show: which groups, which years, which direction. A choice that describes one year accurately cannot prove a change across two.\nThe trap is the same in both, and it is the same trap as everywhere else. The option is true. It is not the thing you were asked for." },
-
-      { n:3, focus:"Punctuation on the clock, and transitions beside it", minutes:9,
-        sections:[
-          { skills:["Boundaries"],  diffs:["Hard"], count:2 },
-          { skills:["Transitions"], diffs:["Hard"], count:2 },
-        ],
-        tip:"About ninety seconds a question, and read that as generous rather than tight. Tuesday's set was the same punctuation with no clock at all; this is the same procedure with a timer running, which is the only thing that has changed.\nPunctuation: cover what could come out, find the spine, check each side for a subject and a verb, and let the structure choose the mark. Do not audition the options.\nTransition: this one is not about going faster. Say what the sentence before claims. Say what the sentence after claims. Name the link between them in ordinary words — same again, opposite, so, for instance, then, I will admit that but — and only then look.\nTwo to keep in mind at this level. If the sentence after the blank already contains its own but, the blank is a concession, not a contrast: a sentence only turns once. And on a sequence question, find the dates before you find the transition — the order the sentences appear in tells you nothing about the order the events happened in.\nIf a question has not come to you after about forty seconds, choose, mark it and move on." },
-
-      { n:4, focus:"The last ten questions of a module, in test order", review:0, minutes:12,
-        sections:[
-          { skills:["Boundaries"],                 diffs:["Hard"],   count:2 },
-          { skills:["Form, Structure, and Sense"], diffs:["Medium"], count:1 },
-          { skills:["Form, Structure, and Sense"], diffs:["Hard"],   count:1 },
-          { skills:["Transitions"],                diffs:["Medium"], count:1 },
-          { skills:["Transitions"],                diffs:["Hard"],   count:1 },
-          { skills:["Rhetorical Synthesis"],       diffs:["Hard"],   count:2 },
-        ],
-        tip:"Eight questions in twelve minutes, and they arrive in the order the real test uses: punctuation and grammar first, then transitions and writing-goal questions. This is the stretch of the module that decides your score, and moving cleanly between the jobs is the thing being practised.\nBefore each question, name which job it is, then make that job's first move.\nPunctuation — what could come out of this sentence, and is each side complete?\nGrammar — what is being tested: subject and verb agreeing, tense, verb form, pronoun, possession, or a description sitting next to the wrong thing? Cross out the phrase in the middle and find the real subject.\nTransition — what does each sentence claim, and what is the link in plain words?\nWriting goal — say the goal in two or three words taken from the question itself, then choose the option that does that job and ignore the ones that are merely accurate.\nIf you have no route after about forty seconds, choose, mark it and move. One question is not allowed to eat the time the rest of them need.\nOne attempt at this set. It is the closest thing to the real thing you will do this week, and it is only worth anything the first time." },
-
-      { n:5, focus:"Reading \u2014 say what the question wants before you look", review:0, minutes:0,
-        sections:[
-          { skills:["Central Ideas and Details"],          diffs:["Hard"], count:2 },
-          { skills:["Command of Evidence \u2014 Quantitative"], diffs:["Hard"], count:2 },
-        ],
-        tip:"Wednesday. No clock, and you type before the choices appear. Take as long as you want.\nType two things every time: what the question is actually asking, in your own words, and which sentence in the text answers it. If you cannot point at a sentence, you are not ready to look.\nThen the rule that matters more than any of the rest of this: once you have typed it, the prediction does not change. You may cross out a choice for contradicting it. You may not talk yourself into a different answer because an option sounds better written than yours.\nMain idea: say what the whole text is doing in one sentence before you look at anything. An option can be a true detail from the text and still be far too small to be the answer. Watch for only, proves, all, always, when the text said may, or one, or both.\nData: title, axis labels, units, before a word of the options. Then say what the claim needs the figure to show \u2014 which groups, which years, which direction. A choice that describes one year accurately cannot prove a change across two.\nThe trap is the same in both and it is the same trap as everywhere else. The option is true. It is not the thing you were asked for." },
-
-      { n:6, focus:"The mark the sentence has already opened, on the clock", minutes:9,
-        sections:[
-          { skills:["Boundaries"],  diffs:["Hard"], ruleTypes:["Dash"], count:2 },
-          { skills:["Transitions"], diffs:["Hard"], count:2 },
-        ],
-        tip:"Thursday. Four new questions and up to two review ones, about ninety seconds each.\nPunctuation, in this order \u2014 and notice that the question you have been starting with is now the last one:\n1. Is a mark already open anywhere in this sentence, a dash, a bracket, a colon? Then the blank closes it, with the SAME mark.\n2. Is one side a description rather than a clause \u2014 making..., a pioneering..., which...? Comma, colon or dash. Never a semicolon.\n3. Is this a list whose items already contain commas? Then semicolons separate the items.\n4. Only now: is each side a whole sentence?\nTransitions: name the link in ordinary words before you look. Three to have ready.\nConcession \u2014 if the turn comes later inside the sentence, the blank agrees first: granted, admittedly, of course, though. A sentence only turns once.\nRestatement \u2014 for example adds a new instance; that is re-says the same fact in plainer words. No new information means restatement, not example.\nCulmination \u2014 if the second sentence finishes the first rather than opposing it, the word is Ultimately, not However.\nNo route after about forty seconds: choose, flag it, move on. One question is not allowed to eat the time the rest of them need." },
+        tip:"Four questions, six minutes. Work on your own; your tutor will not help during the set.\nFirst, decide what kind of question it is. Main idea means the whole text. According to the text, or what the text suggests about something, means one part: find that sentence and say only what it says.\nMain idea: find the claim sentence. It is often the first sentence, or the one after However or But, or the one every other sentence supports. Say it to yourself as a topic plus a point, who or what, and what the text says about it. A topic on its own cannot rule anything out.\nThen every word of the option you choose has to point to a line in the text. If you cannot put a finger on it, it is out. Two to watch for: words the text never said, like widely, most, first, always or over time, and the text's own words attached to the wrong person or thing.\nNo route after about forty seconds: choose, flag it, move on. One attempt only." },
     ]
   },
   "Gabe": {
