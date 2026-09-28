@@ -875,6 +875,177 @@ window.CHALLENGE_SETS = {
                 'cae07228', '1841cb73', 'ef399b40',
             ],
         },
+        // ══════════════════════════════════════════════════════════════
+        // coe-clause-1 — Command of Evidence taught, plus a punctuation repair
+        // ══════════════════════════════════════════════════════════════
+        //
+        // SUPERSEDES exp-predict-1 ON THE HUB, and that is a cost worth naming.
+        // challenge.js serves only the LAST set in a student's array, so appending
+        // this one withdraws exp-predict-1 from the card. Its ten ids stay in this
+        // file (rule 3 still excludes them below) and stay in the progress ledger,
+        // so they keep returning through the review ladder. What is lost is the
+        // set-level wrong-first second go. The four rules that set was checking
+        // (colon, the transition-word splice, concession, the semicolon clue) are
+        // re-taught or re-checked here, which is why the trade was made.
+        //
+        // TWO LAYERS, THE ORDER IS THE DESIGN (as exp-predict-1, con-rules-1):
+        //
+        //   `review` — 8 authored drills, UNSCORED, never recorded.
+        //     Three punctuation drills, each on one decision a two-sides test
+        //     cannot make by itself: (1) finding the real verb, so a side with
+        //     "to predict" or an "-ing" opener is judged correctly; (2) where a
+        //     transition word sits relative to the boundary (however, though);
+        //     (3) marks already printed in the sentence, including the semicolon
+        //     list. Step (3) is borrowed from con-rules-1, whose procedure starts
+        //     with printed marks; this student's procedure did not.
+        //     Five evidence drills, one method: say the claim in two parts, then
+        //     keep only the option that proves exactly that. Support vs a cause,
+        //     on-topic vs support, weaken as the same claim pointed the other way,
+        //     right feeling / wrong owner in a quotation, true-of-the-table vs
+        //     says-what-the-claim-says.
+        //
+        //   `ids` — 10 real bank items, SCORED. 3 Medium : 7 Hard.
+        //     Repair checks (4): 73c5f2c1 (M, an -ing opener after a full stop),
+        //       be6f3070 (H, "though" at the boundary), f10d84ef (H, the printed
+        //       semicolon in a list), 4079ff52 (H, concession with "Still" after).
+        //     Command of Evidence (6): Textual a0657a1a (M, quotation), fd0220fe
+        //       (H, weaken), 49fbf628 (H, quotation, two-part claim); Quantitative
+        //       ff9e17fe (M, table example), 52e660f8 (H, support a conclusion),
+        //       15a46f3a (H, support a claim about change).
+        //     One Medium per family, so a Hard miss can be read as rule or tier.
+        //     Hard is where the "true but does not prove the claim" option lives,
+        //     which is the thing the evidence drills teach.
+        //
+        // TEN, NOT MORE: nextBatchSize() caps a sitting at ten, so all ten serve
+        // in one sitting tonight and the second go at home is served wrong-first.
+        //
+        // RULE 3 — none of the ten appears in exp-predict-1 or con-taught-1.
+        // SELECTION: unseen items in each cell, filtered on the rule or the
+        // question stem, then read by hand. Baseline CoE items (7d5d0033,
+        // a264e62d) excluded. Never shuffled.
+        {
+            setId:  'coe-clause-1',
+            title:  'Prove the claim, and check the sentence before the mark',
+            source: 'Built along the method axis, with a teaching layer of paired drills',
+            date:   '2026-09-28',
+            reviewLabel: 'Start here',
+            reviewIntro: 'Eight short drills: three on punctuation, five on evidence. Work them first, with your tutor. Nothing here counts toward mastery.',
+            reviewCta:   'Work the 8 teaching drills',
+            review: [
+              {
+                source: "Paired drill — find the real verb first", skill: "Boundaries", ruleType: "Semi",
+                passage: "(1) A subseasonal forecast attempts to predict the weather three weeks in ______ its predictions are less certain than those of a daily forecast.\n\n(2) Attempting to predict the weather three weeks in ______ a subseasonal forecast relies on ocean temperatures.",
+                question: "Which mark belongs in each blank?",
+                options: [
+                  "A. a semicolon in (1), a comma in (2)",
+                  "B. a comma in (1), a semicolon in (2)",
+                  "C. a comma in both",
+                  "D. a semicolon in both"
+                ],
+                answer: "A",
+                strategy: "A side is a complete sentence only if it has a subject AND a real verb: a verb that shows time, the one you could put into the past (attempts → attempted). \"To predict\" and \"attempting\" cannot do that job on their own. So find the real verb before you judge a side. Careful the other way too: an -ing word can be the SUBJECT of a real verb. \"Keeping fruit fresh was impossible\" is complete, because \"was\" is its verb.",
+                explanation: "Choice A is correct. In (1) the left side has a subject (a subseasonal forecast) and a real verb (attempts). \"To predict\" only says what it attempts; it is not the verb. So the left side is complete, the right side (its predictions are less certain...) is complete, and two complete sides need a semicolon or a period. A comma there is a splice. In (2) the sentence opens with \"Attempting to predict...\" and there is no real verb before the blank: you cannot put \"attempting\" into the past and still have a sentence. That side cannot stand alone, so it takes a comma and the main sentence follows it. The words are almost the same. The only thing that changed is whether the left side had a real verb."
+              },
+              {
+                source: "A transition word sits beside the boundary, not on it", skill: "Boundaries", ruleType: "Semi",
+                passage: "The plan sounded ______ it took the team four years to finish.",
+                question: "Which choice completes the text so that it conforms to the conventions of Standard English?",
+                options: ["A. simple, however,", "B. simple; however,", "C. simple however,", "D. simple, however"],
+                answer: "B",
+                strategy: "Two complete sides still need a period or a semicolon, whatever transition word is there. However, though, therefore and thus are not FANBOYS, so a comma next to them can never join two sentences. Put the strong mark on the boundary, then set the transition word off with a comma on its own side. \"Though\" works the same way when it ends the first side: \"simple, though; it took...\". If \"though\" STARTS the second side it means \"although\", and that side is no longer complete.",
+                explanation: "Choice B is correct. \"The plan sounded simple\" is complete and \"it took the team four years to finish\" is complete, so the boundary needs a semicolon or a period. B puts the semicolon on the boundary and a comma after however. A is the comma splice: two commas around however look tidy, but neither is strong enough to join two sentences. It is the most common wrong answer on this whole paper. C and D leave the join with no strong mark at all. The transition word does not decide the mark. It only has to stay out of the boundary's way."
+              },
+              {
+                source: "Paired drill — read for the mark that is already there", skill: "Boundaries", ruleType: "Semi",
+                passage: "(1) The tour stopped in three cities: Lagos, Nigeria; Accra, Ghana ______ and Nairobi, Kenya.\n\n(2) The tour stopped in three cities: Lagos, Accra ______ and Nairobi.",
+                question: "Which mark belongs in each blank?",
+                options: [
+                  "A. a comma in both",
+                  "B. a semicolon in both",
+                  "C. a semicolon in (1), a comma in (2)",
+                  "D. a comma in (1), a semicolon in (2)"
+                ],
+                answer: "C",
+                strategy: "Before you test the two sides, read the whole sentence for a mark that is already printed. In a list whose items already contain commas (a city and its country), the items are separated by semicolons, and once the sentence has used one, every item boundary in that list takes one. The printed mark tells you the answer before you look.",
+                explanation: "Choice C is correct. In (1) each item has a comma inside it (Lagos, Nigeria), so commas alone could not show where one item ends and a reader would count six places. The sentence has already printed a semicolon after Nigeria, so the boundary after Ghana takes a semicolon too. In (2) the items are single words, so ordinary commas separate them. The two-sides test cannot help here, because neither side is a sentence. That is why printed marks come first. This is also the one place a semicolon appears without a complete sentence on each side."
+              },
+              {
+                source: "Paired drill — say the claim in two parts", skill: "Command of Evidence — Textual",
+                passage: "(1) Biologist Ana Ruiz claims that robins in cities sing at a higher pitch than robins in forests.\n\n(2) Biologist Ana Ruiz claims that robins in cities sing at a higher pitch because of traffic noise.\n\nFinding P: Recordings show that city robins sing about 20% higher than forest robins.\nFinding Q: City robins sing lower on public holidays, when traffic stops, than on ordinary weekdays.",
+                question: "Which finding most directly supports each claim?",
+                options: [
+                  "A. P for both",
+                  "B. Q for (1), P for (2)",
+                  "C. Q for both",
+                  "D. P for (1), Q for (2)"
+                ],
+                answer: "D",
+                strategy: "Before you look at the options, say the claim in your own words, in two parts: WHO or WHAT, and WHAT IS SAID about it. A claim with \"because\" has an extra part, the cause, and the evidence has to reach the cause, not just show the difference.",
+                explanation: "Choice D is correct. Claim (1) is only a comparison: city higher than forest. P measures exactly that. Claim (2) says why: traffic noise. P shows a difference, but the difference could have any cause. Q changes the traffic and nothing else, and the pitch changes with it, so Q is evidence about the cause. That is why A fails: P is true and it is on the topic of (2), but it does not touch the part of the claim that makes (2) different. Most wrong answers on these questions are true and on topic. They fail because they miss one part of the claim."
+              },
+              {
+                source: "On topic is not the same as support", skill: "Command of Evidence — Textual",
+                passage: "A researcher claims that students remember more of a text when they read it on paper than when they read the same text on a screen.",
+                question: "Which finding, if true, would most directly support the researcher's claim?",
+                options: [
+                  "A. Most students surveyed said that they prefer reading on paper.",
+                  "B. Students who read an article on paper answered more recall questions correctly than students who read the same article on a screen.",
+                  "C. Schools buy more tablets each year than printed textbooks.",
+                  "D. Reading on a screen for a long time can cause eye strain."
+                ],
+                answer: "B",
+                strategy: "Ask of each option: if this were true, would the claim be MORE likely to be true? Every part of the claim has to be touched. Here that is the same text, paper against screen, and remembering. An option that talks about the topic without reaching the claim's point is the trap.",
+                explanation: "Choice B is correct. It compares paper with screen, uses the same article, and measures remembering: every part of the claim. A is about what students prefer, and liking paper is not remembering more from it. C is about what schools buy. D is about eyes, not memory. All four options are about reading on paper and on screens, and that is the point of the drill: when the topic matches in every option, the topic cannot choose the answer. Only the claim's point can."
+              },
+              {
+                source: "Paired drill — weaken is the same claim, pointed the other way", skill: "Command of Evidence — Textual",
+                passage: "A gardener claims that a new fertilizer increases the number of tomatoes a plant produces.\n\nFinding P: Plants given the fertilizer produced more tomatoes than identical plants grown without it.\nFinding Q: Plants given the fertilizer produced the same number of tomatoes as identical plants grown without it.\nFinding R: Plants given the fertilizer grew larger leaves than identical plants grown without it.",
+                question: "Which finding most directly SUPPORTS the claim, and which most directly WEAKENS it?",
+                options: [
+                  "A. Q supports, P weakens",
+                  "B. R supports, Q weakens",
+                  "C. P supports, R weakens",
+                  "D. P supports, Q weakens"
+                ],
+                answer: "D",
+                strategy: "Support and weaken questions test the same claim. Say the claim first, then check which way the question points. A finding that weakens still has to be ABOUT the claim: it shows the claim's point failing. A finding about something else weakens nothing and supports nothing.",
+                explanation: "Choice D is correct. The claim is about the number of tomatoes. P shows more tomatoes with the fertilizer, so it supports. Q shows no difference in tomatoes, so the claim's point fails and Q weakens it. R is the trap in both directions: bigger leaves sound as if the fertilizer is working, but leaves are not tomatoes, so R neither supports nor weakens this claim. On a weaken question, read the word WEAKEN twice before you look, because the option that supports is always sitting there too."
+              },
+              {
+                source: "Quotation — right feeling, wrong owner", skill: "Command of Evidence — Textual",
+                passage: "In a short story, the narrator presents Mara as impatient with her younger brother, Kofi: ______",
+                question: "Which quotation most effectively illustrates the claim?",
+                options: [
+                  "A. \"Kofi pulled at Mara's sleeve, impatient to reach the park before his friends left.\"",
+                  "B. \"Mara sighed at the teacher's long list of rules and wished the lesson would end.\"",
+                  "C. \"Mara tapped her foot as Kofi searched, for the third time, for his other shoe. 'We're leaving now,' she said, 'with or without it.'\"",
+                  "D. \"Mara smiled as Kofi told her, again, about the goal he had scored.\""
+                ],
+                answer: "C",
+                strategy: "Split the claim into its parts and find each one in the quotation: WHO (Mara), toward WHOM (her brother), and WHAT (impatient). A quotation that shows the right feeling in the wrong person, or aimed at the wrong person, is the commonest trap.",
+                explanation: "Choice C is correct: Mara (who), waiting on Kofi (her brother), tapping her foot and threatening to leave (impatient). B shows Mara impatient, but with a teacher. A shows impatience, but it is Kofi's, not Mara's. D shows Mara with her brother, but fond of him, not impatient. Each wrong option matches two of the three parts, which is why each one feels close. Check all three parts before you choose."
+              },
+              {
+                source: "Data — true is not enough", skill: "Command of Evidence — Quantitative",
+                passage: "Average hours of screen time per day, 2019 → 2023\nAges 10–12: 4.1 → 5.6\nAges 13–15: 5.3 → 7.2\nAges 16–18: 6.0 → 7.0\n\nA student claims that screen time rose most sharply among 13- to 15-year-olds.",
+                question: "Which choice most effectively uses data from the table to support the student's claim?",
+                options: [
+                  "A. In 2019, 16- to 18-year-olds had more screen time than either of the other groups.",
+                  "B. Screen time for 13- to 15-year-olds rose by 1.9 hours, more than the rise for 10- to 12-year-olds (1.5 hours) or for 16- to 18-year-olds (1.0 hour).",
+                  "C. In 2023, 13- to 15-year-olds had 7.2 hours of screen time, the most of any group.",
+                  "D. Screen time rose in every age group between 2019 and 2023."
+                ],
+                answer: "B",
+                strategy: "Read the title and labels first, so you know what the numbers measure. Then say the claim and find its key words. Here that is \"rose most sharply\": it is about CHANGE, compared ACROSS groups. Every option may be true of the table. The answer is the one that says what the claim says.",
+                explanation: "Choice B is correct. The claim is about the size of the rise, and B works out each group's rise and compares them: 1.9 against 1.5 and 1.0. Check the others against the table and all three are true. A is about 2019 levels, not change. C is about 2023 levels: 13- to 15-year-olds do have the most, but a group can have the most and still have risen the least. D says every group rose without saying which rose most. On data questions, \"is it true?\" only removes misreadings. \"Does it say what the claim says?\" is the question that finds the answer."
+              }
+            ],
+            ids: [
+                '73c5f2c1', 'be6f3070', 'f10d84ef', '4079ff52',
+                'a0657a1a', 'fd0220fe', '49fbf628',
+                'ff9e17fe', '52e660f8', '15a46f3a',
+            ],
+        },
     ],
 
 

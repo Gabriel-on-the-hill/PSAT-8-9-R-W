@@ -5,39 +5,80 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>English Conventions — Notes</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!--
+  sec.html — Standard English Conventions notes (Boundaries + Form, Structure, and Sense).
+
+  BUILT AROUND ONE IDEA: the real verb. The same check decides a Boundaries
+  question (is this side complete?), subject-verb agreement (find the verb, then
+  its subject) and verb form (is the blank the main verb, or is there one
+  already?). It is taught once at the top and pointed back to from each rule.
+
+  THE WORDS ARE SHARED. "Real verb", "hook word", "two-sides test", "marks already
+  printed" and "signposts aren't glue" are the same phrases the challenge drills
+  and homework tips use. Change one, change them all.
+
+  THE "TRY IT" CHECKS RECORD NOTHING. They are reference, not practice: no
+  storage, no sheet, no progress ledger. Every example is invented, never taken
+  from the question bank, so the notes cannot spend or reveal an unseen item.
+
+  Public page. General rules only — no student names, no item ids.
+-->
 <style>
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   :root{--bg:#f5f7fa;--surface:#fff;--surface2:#f1f5f9;--border:#e2e8f0;
     --text:#1a2233;--muted:#5b6678;--accent:#2563eb;--accent-soft:#eaf1fe;
-    --good:#15803d;--good-soft:#eef8f0;--radius:14px}
+    --good:#15803d;--good-soft:#eef8f0;--bad:#b91c1c;--bad-soft:#fdf0f0;
+    --warn:#b45309;--warn-soft:#fff7ea;--radius:14px}
   body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;font-size:16px}
-  .wrap{max-width:680px;margin:0 auto;padding:1.5rem 1.15rem 4rem}
+  .wrap{max-width:680px;margin:0 auto;padding:1.5rem 1rem 4rem}
   header.bar{display:flex;align-items:center;gap:.6rem;margin-bottom:1.6rem}
   .bar .mark{display:flex;align-items:center;gap:.5rem;font-weight:800;color:var(--accent)}
   .bar .tag{flex:1;color:var(--muted);font-size:.85rem;font-weight:600}
   .back{font-size:.82rem;font-weight:700;color:var(--text);text-decoration:none;border:1px solid var(--border);background:var(--surface);border-radius:9px;padding:.4rem .7rem}
   h1{font-size:1.6rem;font-weight:800;letter-spacing:-.01em;margin-bottom:.4rem}
-  .lede{color:var(--muted);font-size:1rem;margin-bottom:1.5rem}
-  .panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.15rem 1.2rem;margin-bottom:1rem;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+  .lede{color:var(--muted);font-size:1rem;margin-bottom:1.2rem}
+  .jump{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.4rem}
+  .jump a{font-size:.8rem;font-weight:700;color:var(--accent);text-decoration:none;background:var(--accent-soft);border-radius:99px;padding:.25rem .7rem}
+  .panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.1rem 1.15rem;margin-bottom:1rem;box-shadow:0 1px 2px rgba(15,23,42,.04)}
   .panel h2{font-size:1.02rem;font-weight:800;margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem}
-  .panel h2 svg{color:var(--accent);flex:none}
+  .panel h2 .n{flex:none;width:1.45rem;height:1.45rem;border-radius:50%;background:var(--accent);color:#fff;font-size:.8rem;display:flex;align-items:center;justify-content:center}
   .panel p{margin-bottom:.5rem}.panel p:last-child{margin-bottom:0}
-  .label{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:1.6rem 0 .7rem .15rem}
-  .ex{background:var(--accent-soft);border-radius:10px;padding:.7rem .85rem;font-size:.95rem;margin:.55rem 0}
-  .ex b{color:var(--accent)}
-  .two{display:grid;grid-template-columns:1fr 1fr;gap:.7rem;margin:.5rem 0}
-  .box{border:1px solid var(--border);border-radius:10px;padding:.7rem .8rem;font-size:.93rem}
-  .box .t{font-weight:700;margin-bottom:.25rem}
-  .good .t{color:var(--good)} .stop .t{color:#b91c1c}
-  .guide{list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:.6rem;margin-top:.4rem}
-  .guide li{counter-increment:s;display:flex;gap:.65rem;align-items:flex-start}
-  .guide li::before{content:counter(s);flex:none;width:1.5rem;height:1.5rem;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;font-size:.85rem;display:flex;align-items:center;justify-content:center;margin-top:.1rem}
-  .guide b{color:var(--accent)}
-  .rule{border-left:4px solid var(--accent);margin-bottom:1rem}
-  .rule .chk{font-size:.9rem;color:var(--muted);margin-top:.4rem}
-  .chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.3rem}
-  .chip{background:var(--surface2);border:1px solid var(--border);border-radius:99px;padding:.2rem .6rem;font-size:.8rem;font-weight:600}
-  .close{color:var(--muted);font-size:.95rem;margin-top:1.6rem}
+  .star{border:2px solid var(--accent)}
+  .label{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:1.8rem 0 .7rem .15rem;scroll-margin-top:1rem}
+  .ex{background:var(--accent-soft);border-radius:10px;padding:.65rem .8rem;font-size:.95rem;margin:.5rem 0}
+  .ex b{color:var(--accent)} .ex .why{color:var(--muted);font-size:.88rem;display:block}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin:.5rem 0}
+  @media (max-width:520px){.two{grid-template-columns:1fr}}
+  .box{border:1px solid var(--border);border-radius:10px;padding:.65rem .75rem;font-size:.93rem}
+  .box .t{font-weight:700;margin-bottom:.2rem}
+  .good .t{color:var(--good)} .stop .t{color:var(--bad)}
+  .checks{list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:.55rem;margin:.5rem 0}
+  .checks li{counter-increment:s;display:flex;gap:.6rem;align-items:flex-start}
+  .checks li::before{content:counter(s);flex:none;width:1.45rem;height:1.45rem;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;font-size:.82rem;display:flex;align-items:center;justify-content:center;margin-top:.12rem}
+  .checks b{color:var(--accent)}
+  .ask{font-size:.92rem;margin-top:.55rem;padding-top:.5rem;border-top:1px dashed var(--border)}
+  .ask b{color:var(--accent)}
+  .trap{background:var(--warn-soft);border-radius:10px;padding:.55rem .75rem;font-size:.9rem;margin-top:.55rem}
+  .trap b{color:var(--warn)}
+  .chips{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:.35rem;align-items:center;font-size:.88rem}
+  .chip{background:var(--surface2);border:1px solid var(--border);border-radius:99px;padding:.15rem .55rem;font-size:.8rem;font-weight:600}
+  /* try-it checks */
+  .tryhead{font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:.9rem 0 .4rem}
+  .try{border:1px solid var(--border);border-radius:10px;padding:.65rem .75rem;margin-bottom:.5rem}
+  .try .s{font-size:.95rem;margin-bottom:.45rem}
+  .try .s mark{background:#fef3c7;border-radius:3px;padding:0 2px}
+  .try .blank{display:inline-block;min-width:2.2em;border-bottom:2px solid var(--accent);text-align:center;color:var(--accent);font-weight:700}
+  .try .opts{display:flex;flex-wrap:wrap;gap:.4rem}
+  .try button{font:inherit;font-size:.88rem;font-weight:600;border:1.5px solid var(--border);background:var(--surface);border-radius:8px;padding:.35rem .7rem;cursor:pointer;color:var(--text)}
+  .try button:hover{border-color:var(--accent)}
+  .try button.right{border-color:var(--good);background:var(--good-soft);color:var(--good)}
+  .try button.wrong{border-color:var(--bad);background:var(--bad-soft);color:var(--bad)}
+  .try .fb{display:none;font-size:.9rem;margin-top:.45rem;color:var(--text)}
+  .try.done .fb{display:block}
+  .try .fb b{color:var(--good)}
+  .summary{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.15rem;margin-top:1.6rem}
+  .summary h2{font-size:.95rem;font-weight:800;margin-bottom:.4rem}
+  .summary ol{padding-left:1.2rem;font-size:.95rem}
 </style>
 </head>
 <body>
@@ -49,59 +90,240 @@
   </header>
 
   <h1>English Conventions</h1>
-  <p class="lede">These questions check whether a sentence follows the basic rules of written English — mostly punctuation and how the parts of a sentence fit together. The test hides which rule it's checking, so the real skill is learning to spot the rule, then applying it.</p>
+  <p class="lede">These questions check punctuation and how the parts of a sentence fit together. Nearly all of them come back to one question: <b>where is the real verb, and is each side a complete sentence?</b> Learn that first. Everything below uses it.</p>
 
-  <div class="panel">
-    <h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 12h6"/></svg>Start here: the two kinds of clause</h2>
-    <p>Almost every punctuation question comes down to one idea: is each part of the sentence a complete thought or not?</p>
-    <div class="two">
-      <div class="box good"><div class="t">Complete (independent)</div>Has a subject and a verb and could stand alone as a sentence.<br><i>The team won the game.</i></div>
-      <div class="box stop"><div class="t">Incomplete (dependent)</div>Has a subject and verb but can't stand alone. Often starts with a joining word.<br><i>Because the team won the game…</i></div>
-    </div>
-    <p class="chk"><b>The test:</b> read the part by itself and ask, "Could this be its own sentence?" Yes = complete. No = incomplete.</p>
-    <div class="chips">Joining words that make a part incomplete:
-      <span class="chip">because</span><span class="chip">although</span><span class="chip">when</span><span class="chip">if</span><span class="chip">since</span><span class="chip">while</span><span class="chip">after</span><span class="chip">that</span><span class="chip">which</span>
-    </div>
-  </div>
+  <nav class="jump">
+    <a href="#start">Start here</a><a href="#boundaries">Joining sentences</a><a href="#fss">Matching the parts</a><a href="#summary">Summary</a>
+  </nav>
 
-  <div class="label">Joining sentences <span style="font-weight:600;color:var(--muted)">(Boundaries)</span></div>
-  <div class="panel">
-    <h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 12h18"/><circle cx="7" cy="12" r="2"/><circle cx="17" cy="12" r="2"/></svg>A guide for choosing punctuation</h2>
-    <p>Walk down this list. The first "yes" tells you what to use.</p>
-    <ol class="guide">
-      <li><b>Are both parts complete sentences?</b> Use a period, a semicolon, or a comma + a joining word (<i>and, but, or, so, yet, for, nor</i>).</li>
-      <li><b>Does the second part explain or introduce the first</b> (and the first is complete)? Use a colon.</li>
-      <li><b>Is it extra information you could remove</b> and still have a sentence? Surround it with a pair of commas (or dashes).</li>
-      <li><b>Does an incomplete part come first?</b> Put a comma after it.</li>
-      <li><b>None of these?</b> Often no punctuation is needed.</li>
+  <!-- ═════════════ START HERE ═════════════ -->
+  <div class="label" id="start">Start here</div>
+  <div class="panel star">
+    <h2>Is this side a complete sentence?</h2>
+    <p>Don't go by whether it <i>sounds</i> finished. Long sentences often sound unfinished when they aren't. Run three checks instead:</p>
+    <ol class="checks">
+      <li><span><b>Subject.</b> Who or what is it about?</span></li>
+      <li><span><b>Real verb.</b> Find a verb you can move into the past or future: <i>attempts → attempted → will attempt</i>. If you can't change its time, it isn't the real verb.</span></li>
+      <li><span><b>No hook word in front.</b> Words like <i>because, although, when, which</i> leave the thought hanging, so it needs another sentence to hang on.</span></li>
     </ol>
-    <div class="ex">The hike was long. <b>It was worth it.</b> &nbsp;→&nbsp; two complete sentences, so a period works. A comma alone would be wrong (that's a run-on).</div>
+    <div class="two">
+      <div class="box good"><div class="t">Complete (independent)</div>Passes all three. It could end with a full stop.<br><i>The team <b>won</b> the game.</i></div>
+      <div class="box stop"><div class="t">Not complete (dependent)</div>Fails at least one check.<br><i><b>Because</b> the team won the game…</i></div>
+    </div>
+    <div class="ex"><b>Never the real verb on their own:</b> <i>to + verb</i> (to predict) and <i>-ing</i> words (predicting).
+      <span class="why">"The forecast <b>attempts</b> to predict the weather." The real verb is <i>attempts</i>, so this side is complete.</span></div>
+    <div class="trap"><b>The twist:</b> an <i>-ing</i> phrase can be the <b>subject</b>. "Keeping fruit fresh <b>was</b> nearly impossible" is complete, because <i>was</i> is its real verb.</div>
+    <div class="chips">Hook words:
+      <span class="chip">because</span><span class="chip">although</span><span class="chip">though</span><span class="chip">when</span><span class="chip">if</span><span class="chip">since</span><span class="chip">while</span><span class="chip">after</span><span class="chip">before</span><span class="chip">unless</span><span class="chip">which</span><span class="chip">who</span>
+    </div>
+    <p class="ask"><b>Ask yourself:</b> "Which word is the real verb?" Say it. If you can't name one, the side isn't complete.</p>
+
+    <div class="tryhead">Try it: complete or not?</div>
+    <div class="try" data-ans="Complete">
+      <div class="s">The forecast attempts to predict next month's weather.</div>
+      <div class="opts"><button>Complete</button><button>Not complete</button></div>
+      <div class="fb"><b>Complete.</b> Real verb: <i>attempts</i> (→ attempted). <i>To predict</i> can't show time, so it isn't the verb.</div>
+    </div>
+    <div class="try" data-ans="Not complete">
+      <div class="s">Attempting to predict next month's weather</div>
+      <div class="opts"><button>Complete</button><button>Not complete</button></div>
+      <div class="fb"><b>Not complete.</b> There's no real verb. <i>Attempting</i> and <i>to predict</i> can't show time on their own.</div>
+    </div>
+    <div class="try" data-ans="Complete">
+      <div class="s">Keeping fresh fruit on long voyages was nearly impossible.</div>
+      <div class="opts"><button>Complete</button><button>Not complete</button></div>
+      <div class="fb"><b>Complete.</b> Real verb: <i>was</i>. The <i>-ing</i> phrase is the subject.</div>
+    </div>
+    <div class="try" data-ans="Not complete">
+      <div class="s">Although the crew stored the fruit in barrels</div>
+      <div class="opts"><button>Complete</button><button>Not complete</button></div>
+      <div class="fb"><b>Not complete.</b> It has a real verb (<i>stored</i>), but the hook word <i>although</i> leaves it hanging.</div>
+    </div>
+    <div class="try" data-ans="Not complete">
+      <div class="s">The scientist who studied the reef for ten years</div>
+      <div class="opts"><button>Complete</button><button>Not complete</button></div>
+      <div class="fb"><b>Not complete.</b> <i>Studied</i> belongs to the <i>who</i> part. <i>The scientist</i> never gets a verb of its own.</div>
+    </div>
   </div>
 
-  <div class="label">Matching the parts <span style="font-weight:600;color:var(--muted)">(Form, Structure, and Sense)</span></div>
+  <!-- ═════════════ BOUNDARIES ═════════════ -->
+  <div class="label" id="boundaries">Joining sentences <span style="font-weight:600">(Boundaries)</span></div>
 
-  <div class="panel rule">
-    <h2>Subject and verb agree</h2>
-    <p>One thing takes a singular verb; more than one takes a plural verb. Watch for words that sneak between them.</p>
-    <div class="ex">The <b>box</b> of old photos <b>was</b> heavy. <span style="color:var(--muted)">(The subject is "box," not "photos.")</span></div>
-    <p class="chk"><b>Check:</b> find the real subject, ignore the words in between, then match the verb.</p>
+  <div class="panel">
+    <h2><span class="n">1</span>The two-sides test, in order</h2>
+    <p>Cover the blank. Work down the list and stop when only one choice is left.</p>
+    <ol class="checks">
+      <li><span><b>Any mark already printed in the sentence?</b> Match it or close it. A dash opened earlier closes with a dash. A semicolon already in a list means the next item gets one too.</span></li>
+      <li><span><b>Test each side</b> with the three checks above. Is the left side complete? Is the right side?</span></li>
+      <li><span><b>Both complete:</b> a comma on its own is out. Use a period, a semicolon, or a comma + <i>and, but, or, so, yet, for, nor</i>.</span></li>
+      <li><span><b>Right side not complete:</b> a semicolon is out.</span></li>
+      <li><span><b>Left side not complete:</b> a colon and a semicolon are both out. Usually a comma, or nothing.</span></li>
+    </ol>
+    <div class="ex">The museum opened in 1990<b>;</b> it now welcomes a million visitors a year.
+      <span class="why">Left: real verb <i>opened</i>, complete. Right: real verb <i>welcomes</i>, complete. Two complete sides, so a semicolon (or a period).</span></div>
+    <div class="trap"><b>Trap:</b> a comma between two complete sides is the most common wrong answer on the whole test. It's called a comma splice.</div>
   </div>
 
-  <div class="panel rule">
-    <h2>Keep verb tense consistent</h2>
-    <p>Don't switch between past and present without a reason.</p>
-    <div class="ex">She <b>opened</b> the door and <b>walked</b> in. <span style="color:var(--muted)">(Both past — not "opened … walks.")</span></div>
-    <p class="chk"><b>Check:</b> what tense did the sentence start in? Stay there unless the meaning changes.</p>
+  <div class="panel">
+    <h2><span class="n">2</span>Signposts aren't glue</h2>
+    <p><i>However, therefore, though, thus, instead, for example</i> tell you how two ideas connect. They <b>can't join</b> two sentences. Only a period, a semicolon, or a comma + FANBOYS can do that.</p>
+    <div class="two">
+      <div class="box good"><div class="t">Right</div>The plan sounded simple<b>; however,</b> it took four years.<br>The plan sounded simple<b>, though;</b> it took four years.</div>
+      <div class="box stop"><div class="t">Wrong</div>The plan sounded simple<b>, however,</b> it took four years.<br><span style="color:var(--muted);font-size:.86rem">Two commas look tidy, but it's still a comma splice.</span></div>
+    </div>
+    <p class="ask"><b>Ask yourself:</b> "Where is the boundary?" Put the strong mark there. The signpost sits beside it, with a comma on its own side.</p>
+    <div class="trap"><b>Watch <i>though</i>:</b> at the <b>start</b> of a side it means <i>although</i>, a hook word, so that side is no longer complete.</div>
   </div>
 
-  <div class="panel rule">
-    <h2>Pronouns are clear and agree</h2>
-    <p>A pronoun (<i>it, they, this</i>) must clearly point to one noun and match it in number.</p>
-    <div class="ex">Each student brought <b>their</b> own lunch. <span style="color:var(--muted)">(If "student" is singular, prefer "his or her" — or rewrite as "Students brought their…")</span></div>
-    <p class="chk"><b>Check:</b> ask "what exactly does this pronoun stand for?" If it's unclear or doesn't match, fix it.</p>
+  <div class="panel">
+    <h2><span class="n">3</span>Colon or semicolon?</h2>
+    <div class="two">
+      <div class="box"><div class="t">Colon <b style="color:var(--accent)">:</b></div>Needs a complete sentence on the <b>left</b>. The right side can be anything that explains or lists what the left side promised.<br><i>The crew feared one thing<b>:</b> mold.</i></div>
+      <div class="box"><div class="t">Semicolon <b style="color:var(--accent)">;</b></div>Needs a complete sentence on <b>both</b> sides.<br><i>The crew feared mold<b>;</b> it ruined the flour.</i></div>
+    </div>
+    <div class="trap"><b>Trap:</b> if the left side ends on <i>such as</i>, <i>including</i> or <i>like</i>, it isn't complete, so no colon: "problems such as mold."</div>
   </div>
 
-  <p class="close">You don't need to memorize rule names. For Boundaries, decide if each part is complete and walk the guide. For the rest, find the real subject, keep tense steady, and make every pronoun point clearly. Spotting which rule is being tested is the whole skill.</p>
+  <div class="panel">
+    <h2><span class="n">4</span>Extra information comes in pairs</h2>
+    <p>A description you could lift out, and still have a sentence, is set off by a <b>matching pair</b>: two commas, two dashes, or two brackets.</p>
+    <div class="ex">The festival<b>—</b>a month of music and film<b>—</b>drew visitors from four continents.
+      <span class="why">It opened with a dash, so it closes with a dash, not a comma.</span></div>
+    <p class="ask"><b>Ask yourself:</b> "Did the sentence already open something?" Read to the end of the description before you choose.</p>
+  </div>
+
+  <div class="panel">
+    <h2><span class="n">5</span>Lists whose items already have commas</h2>
+    <p>If the items in a list contain commas (<i>a city, its country</i>), separate the items with <b>semicolons</b>. This is the one place a semicolon doesn't need complete sentences.</p>
+    <div class="ex">The tour visited Lima, Peru<b>;</b> Quito, Ecuador<b>;</b> and Bogotá, Colombia.</div>
+    <div class="trap"><b>Trap:</b> the two-sides test can't solve this one, because neither side is a sentence. Step 1 (marks already printed) does it.</div>
+
+    <div class="tryhead">Try it: pick the mark</div>
+    <div class="try" data-ans=";">
+      <div class="s">The museum opened in 1990<span class="blank">?</span> it now welcomes a million visitors a year.</div>
+      <div class="opts"><button>,</button><button>;</button></div>
+      <div class="fb"><b>Semicolon.</b> Both sides have a real verb and no hook word. A comma alone would be a splice.</div>
+    </div>
+    <div class="try" data-ans=",">
+      <div class="s">Built in 1990<span class="blank">?</span> the museum now welcomes a million visitors a year.</div>
+      <div class="opts"><button>,</button><button>;</button></div>
+      <div class="fb"><b>Comma.</b> The left side fails check 1: it has no subject. Nothing in it is doing the building, so it can't stand alone, and a semicolon is out.</div>
+    </div>
+    <div class="try" data-ans="; however,">
+      <div class="s">The plan sounded simple<span class="blank">?</span> it took the team four years.</div>
+      <div class="opts"><button>, however,</button><button>; however,</button></div>
+      <div class="fb"><b>; however,</b> Both sides are complete, and <i>however</i> is a signpost, not glue.</div>
+    </div>
+    <div class="try" data-ans=";">
+      <div class="s">The tour visited Lima, Peru; Quito, Ecuador<span class="blank">?</span> and Bogotá, Colombia.</div>
+      <div class="opts"><button>,</button><button>;</button></div>
+      <div class="fb"><b>Semicolon.</b> The sentence already printed one between items, so every item boundary takes one.</div>
+    </div>
+  </div>
+
+  <!-- ═════════════ FSS ═════════════ -->
+  <div class="label" id="fss">Matching the parts <span style="font-weight:600">(Form, Structure, and Sense)</span></div>
+
+  <div class="panel">
+    <h2><span class="n">6</span>Subject and verb agree</h2>
+    <p>Find the <b>real verb</b> first, then ask who or what is doing it. One thing takes a singular verb, more than one takes a plural.</p>
+    <div class="ex">The <b>list</b> of names on the doors <b>is</b> out of date.
+      <span class="why">Cross out "of names on the doors". The subject is <i>list</i>, not <i>names</i> or <i>doors</i>.</span></div>
+    <div class="trap"><b>Trap:</b> the noun right next to the verb is often not its subject. Long descriptions and <i>which / who</i> parts sit in between on purpose.</div>
+  </div>
+
+  <div class="panel">
+    <h2><span class="n">7</span>Verb form: is the blank the real verb?</h2>
+    <p>Every sentence needs one real verb for its subject. So first ask: <b>does the sentence already have one?</b></p>
+    <div class="two">
+      <div class="box"><div class="t">No real verb yet</div>The blank <b>is</b> the real verb, so it needs a verb that shows time.<br><i>The scientists <b>studied</b> the samples.</i></div>
+      <div class="box"><div class="t">Real verb already there</div>The blank is extra, so it takes an <i>-ing</i> or <i>to</i> form.<br><i>The scientists, <b>studying</b> the samples, <b>found</b> a flaw.</i></div>
+    </div>
+    <p class="ask"><b>Ask yourself:</b> "Where is the real verb for this subject?" Choose the blank to fill whichever gap is left.</p>
+  </div>
+
+  <div class="panel">
+    <h2><span class="n">8</span>Openers must touch what they describe</h2>
+    <p>When a sentence opens with a description and a comma, the <b>very next words</b> must be the thing being described.</p>
+    <div class="two">
+      <div class="box good"><div class="t">Right</div>Covered in snow, <b>the trail</b> was hard to follow.</div>
+      <div class="box stop"><div class="t">Wrong</div>Covered in snow, <b>the hikers</b> found the trail hard to follow.<br><span style="color:var(--muted);font-size:.86rem">The hikers weren't covered in snow.</span></div>
+    </div>
+    <div class="trap"><b>Trap:</b> every wrong option is a perfectly good sentence on its own. Only the opener shows which one is right, so read it first and ask "who or what is this about?"</div>
+  </div>
+
+  <div class="panel">
+    <h2><span class="n">9</span>Plurals and possessives</h2>
+    <p>Each blank can hold <b>two decisions</b>: is it more than one, and does it own something?</p>
+    <div class="ex">the <b>bird's</b> nest (one bird) · the <b>birds'</b> nests (more than one bird) · the <b>birds</b> flew (no owning)</div>
+    <div class="two">
+      <div class="box"><div class="t">Owning</div><i>its</i> · <i>their</i> · <i>whose</i><br><span style="color:var(--muted);font-size:.86rem">No apostrophe for these.</span></div>
+      <div class="box"><div class="t">Short forms</div><i>it's</i> = it is · <i>they're</i> = they are · <i>who's</i> = who is</div>
+    </div>
+    <p class="ask"><b>Ask yourself:</b> "Could I say <i>it is</i> here?" If not, it's <i>its</i>.</p>
+  </div>
+
+  <div class="panel">
+    <h2><span class="n">10</span>Pronouns point clearly and match</h2>
+    <p>A pronoun must point to one noun and match it: singular with singular, plural with plural.</p>
+    <div class="ex">The <b>company</b> changed <b>its</b> logo. <span class="why">One company, so <i>its</i>, not <i>their</i>.</span></div>
+  </div>
+
+  <div class="panel">
+    <h2><span class="n">11</span>Keep the tense steady</h2>
+    <p>Stay in the tense the sentence starts in unless the timing really changes. For the earlier of two past events, use <i>had</i> + verb.</p>
+    <div class="ex">She <b>opened</b> the door and <b>walked</b> in. · By the time we <b>arrived</b>, the show <b>had started</b>.</div>
+
+    <div class="tryhead">Try it</div>
+    <div class="try" data-ans="is">
+      <div class="s">The list of names on the doors <span class="blank">?</span> out of date.</div>
+      <div class="opts"><button>is</button><button>are</button></div>
+      <div class="fb"><b>is.</b> The subject is <i>list</i>. "Of names on the doors" is in between.</div>
+    </div>
+    <div class="try" data-ans="studying">
+      <div class="s">The scientists, <span class="blank">?</span> the samples for three weeks, found a flaw in the method.</div>
+      <div class="opts"><button>studied</button><button>studying</button></div>
+      <div class="fb"><b>studying.</b> The real verb is already there (<i>found</i>), so the blank is extra.</div>
+    </div>
+    <div class="try" data-ans="the trail was hard to follow.">
+      <div class="s">Covered in snow, <span class="blank">?</span></div>
+      <div class="opts"><button>the hikers found the trail hard to follow.</button><button>the trail was hard to follow.</button></div>
+      <div class="fb"><b>The trail.</b> It's the thing covered in snow, so it has to come right after the comma.</div>
+    </div>
+    <div class="try" data-ans="birds'">
+      <div class="s">The two <span class="blank">?</span> nests were built side by side.</div>
+      <div class="opts"><button>bird's</button><button>birds'</button><button>birds</button></div>
+      <div class="fb"><b>birds'.</b> More than one bird, and they own the nests.</div>
+    </div>
+  </div>
+
+  <div class="summary" id="summary">
+    <h2>In three lines</h2>
+    <ol>
+      <li><b>Find the real verb</b>, the one you can put into the past. Name it out loud.</li>
+      <li><b>Punctuation:</b> marks already printed first, then the two-sides test. Signposts aren't glue.</li>
+      <li><b>Matching:</b> verb to its real subject, opener to what it describes, pronoun to its noun.</li>
+    </ol>
+  </div>
 </div>
+
+<script>
+// Tap-to-check. Reveals the reason; records nothing anywhere, by design.
+(function () {
+  document.querySelectorAll('.try').forEach(function (t) {
+    var ans = t.getAttribute('data-ans');
+    t.querySelectorAll('button').forEach(function (b) {
+      b.addEventListener('click', function () {
+        if (t.classList.contains('done')) return;
+        t.classList.add('done');
+        t.querySelectorAll('button').forEach(function (x) {
+          if (x.textContent.trim() === ans) x.classList.add('right');
+        });
+        if (b.textContent.trim() !== ans) b.classList.add('wrong');
+      });
+    });
+  });
+})();
+</script>
 </body>
 </html>

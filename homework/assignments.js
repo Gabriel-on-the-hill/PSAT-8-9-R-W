@@ -173,83 +173,80 @@ const HOMEWORK = {
     ]
   },
 
-  // Luke — week of 22 Sep 2026. FOUR mixed sets, Tue to Fri, into a full-length
-  // practice test on the weekend. Shape only; the reasoning and the evidence behind
-  // it are tutor-only and live outside this repo.
+  // Luke — from Mon 28 Sep 2026. MODULE VARIANT: the Bluebook practice test was
+  // not sat, so a one-module mock is sat IN CLASS tonight (day 1). The teaching
+  // variant of this plan is kept outside the repo; swap it back if the class runs
+  // the Command of Evidence lesson instead.
   //
-  // WHAT THE WEEK IS FOR. Every taught skill touched at least twice before the test,
-  // so nothing goes stale, with the recent skills carrying the weight: each set leads
-  // with them and the older skills fill the back half. Across the four sets:
-  // Boundaries 5, Words in Context 5, Transitions 4, Form/Structure 3, Inferences 3,
-  // Central Ideas 2, Rhetorical Synthesis 2 -- 24 new, plus the ladder's review.
+  // DAY 1 IS ONE REAL MODULE: 27 questions, 32 minutes, in the order the test
+  // serves them (Craft and Structure, Information and Ideas, Conventions,
+  // Expression of Ideas, with the notes questions last). minutes > 0 gives exam
+  // navigation: mark for review, a review grid, and an auto-submit at 0:00, which
+  // is the real module's shape. Unlike the real test, it logs seconds and time on
+  // text for every question, which is the reading the tutor needs.
   //
-  // THE CLOCK COMES LAST, ONCE. Sets 1-3 are untimed with a typed prediction, because
-  // minutes > 0 switches the runner to a one-click commit and the typed box is the
-  // only record of HOW an answer was reached. Set 4 is the rehearsal: seven minutes,
-  // exam navigation, questions in the order the real module serves them (Craft and
-  // Structure, Information and Ideas, Conventions, Expression of Ideas), review:0 so
-  // a spliced item cannot distort the pace.
+  // WHAT IS SCORED FOR DIAGNOSIS: the 21 questions on taught skills, Medium and
+  // Hard (Inferences Hard only; its Medium pool is exposed). The 6 questions on
+  // untaught skills (Text Structure, Cross-Text, Command of Evidence) are there so
+  // the module has its real length and reading load. A module without them runs
+  // light and flatters the pace. They sit at Medium so the Hard pools stay unseen
+  // for teaching; the Cross-Text Hard pool is the thinnest in the bank.
   //
-  // BOUNDARIES IS PINNED TO Colon + Semi in sets 1 and 3: both rule types test one
-  // question -- can each side stand as a sentence -- and the wide Commas pool would
-  // mostly test something else. Set 4 leaves it open, as transfer. Form/Structure
-  // takes SVA in set 1 and Pron/Poss in set 3 for the same reason. Inferences is
-  // Hard throughout: the Medium pool is too exposed to read.
+  // review:0 on day 1, so the 27 are exactly the 27 authored.
   //
-  // THE PREDICTION STANDARD differs by skill and each tip says it: Boundaries names
-  // both sides, then the mark; Words in Context names the clue, then its own word;
-  // Transitions names the relationship, never a transition word. One word is fine
-  // when it is the right kind of word.
+  // DAYS 2-3 carry NO Command of Evidence: it has not been taught yet. The
+  // challenge card coe-clause-1 waits for the next class.
   //
-  // UNLOCK: sequential with the calendar floor -- set n opens when set n-1 is
-  // submitted OR on day n, whichever comes first. The days are named in the tips.
+  // Shape only. The evidence behind these choices is tutor-only and lives outside
+  // this repo — this file is downloaded in full by every student.
   "Luke": {
-    title: "Four mixed sets before your practice test — one a night",
-    start: "2026-09-22",
-    through: "2026-09-25",
-    unlock: "sequential",
+    title: "A test module in class, then two short sets",
+    start: "2026-09-28",
+    through: "2026-10-01",
+    unlock: "cumulative",
     days: [
-      { n:1, focus:"Punctuation first, then a bit of everything — no clock", minutes:0,
+      { n:1, focus:"In class — one test module, 27 questions, 32 minutes", minutes:32, review:0,
         sections:[
-          { skills:["Boundaries"],                 diffs:["Medium"], count:1, ruleTypes:["Colon","Semi"] },
-          { skills:["Boundaries"],                 diffs:["Hard"],   count:2, ruleTypes:["Colon","Semi"] },
-          { skills:["Form, Structure, and Sense"], diffs:["Hard"],   count:1, ruleTypes:["SVA"] },
-          { skills:["Inferences"],                 diffs:["Hard"],   count:1 },
-          { skills:["Central Ideas and Details"],  diffs:["Hard"],   count:1 },
+          { skills:["Words in Context"],                       diffs:["Medium"], count:2 },
+          { skills:["Words in Context"],                       diffs:["Hard"],   count:2 },
+          { skills:["Text Structure and Purpose"],             diffs:["Medium"], count:2 },
+          { skills:["Cross-Text Connections"],                 diffs:["Medium"], count:1 },
+          { skills:["Central Ideas and Details"],              diffs:["Hard"],   count:2 },
+          { skills:["Command of Evidence — Textual"],      diffs:["Medium"], count:1 },
+          { skills:["Command of Evidence — Quantitative"], diffs:["Medium"], count:2 },
+          { skills:["Inferences"],                             diffs:["Hard"],   count:2 },
+          { skills:["Boundaries"],                             diffs:["Medium"], count:1, ruleTypes:["Semi"] },
+          { skills:["Boundaries"],                             diffs:["Hard"],   count:1, ruleTypes:["Colon"] },
+          { skills:["Boundaries"],                             diffs:["Hard"],   count:1, ruleTypes:["Commas"] },
+          { skills:["Boundaries"],                             diffs:["Hard"],   count:1, ruleTypes:["Dash"] },
+          { skills:["Form, Structure, and Sense"],             diffs:["Hard"],   count:1, ruleTypes:["SVA"] },
+          { skills:["Form, Structure, and Sense"],             diffs:["Hard"],   count:1, ruleTypes:["Mod"] },
+          { skills:["Form, Structure, and Sense"],             diffs:["Medium"], count:1, ruleTypes:["Poss","Pron"] },
+          { skills:["Transitions"],                            diffs:["Medium"], count:1 },
+          { skills:["Transitions"],                            diffs:["Hard"],   count:2 },
+          { skills:["Rhetorical Synthesis"],                   diffs:["Medium"], count:1 },
+          { skills:["Rhetorical Synthesis"],                   diffs:["Hard"],   count:2 },
         ],
-        tip:"Tuesday. One set tonight, no clock, about ten minutes. Four sets this week, one a night, then your practice test at the weekend.\nPunctuation: before you look at the choices, ask one thing about each side of the blank: could it stand on its own as a sentence? Type it: \"left complete, right complete, semicolon.\"\nTwo complete sides need a period or a semicolon. A comma can't join them unless a FANBOYS word comes right after it, and \"however\" isn't one. A colon needs a complete sentence on its LEFT.\nVerb questions: cross out everything between the subject and the blank, then match the verb to the subject.\nReading questions: type the claim in your own words before you look." },
+        tip:"In class only. Don't start this on your own.\n27 questions, 32 minutes: one real module, in the real order. About 70 seconds a question, which is more than you usually use.\nEvery question: cover the choices and say what it needs before you look.\nIf one is taking too long, choose, mark it for review, and move on. Never leave one blank. Go back to your marked ones at the end.\nSome questions are on skills we haven't done yet. Use what you know, make your best choice, and keep moving." },
 
-      { n:2, focus:"Words in Context, then transitions and the rest — no clock", minutes:0,
+      { n:2, focus:"A bit of everything — no clock", minutes:0,
         sections:[
-          { skills:["Words in Context"],          diffs:["Medium"], count:1 },
-          { skills:["Words in Context"],          diffs:["Hard"],   count:2 },
-          { skills:["Transitions"],               diffs:["Hard"],   count:1 },
-          { skills:["Rhetorical Synthesis"],      diffs:["Hard"],   count:1 },
-          { skills:["Central Ideas and Details"], diffs:["Hard"],   count:1 },
-        ],
-        tip:"Wednesday. No clock, about ten minutes.\nWords in Context: cover the choices and find the clue — after a colon or dash, the same idea said again after a semicolon, or a contrast word like \"despite\". Type the clue and your own plain word: \"after the semicolon, comparison.\" One word is fine if it's yours. Then put your choice back into the sentence and read it.\nTransitions: type the link, not a transition word — \"opposite\", \"same again\", \"so\", \"for instance\", \"I'll admit that, but\".\nSynthesis: read the goal first and pick the option that does that job." },
-
-      { n:3, focus:"Transitions and a mix of everything — no clock", minutes:0,
-        sections:[
-          { skills:["Transitions"],                diffs:["Medium"], count:1 },
-          { skills:["Transitions"],                diffs:["Hard"],   count:1 },
           { skills:["Words in Context"],           diffs:["Hard"],   count:1 },
           { skills:["Inferences"],                 diffs:["Hard"],   count:1 },
-          { skills:["Boundaries"],                 diffs:["Hard"],   count:1, ruleTypes:["Colon","Semi"] },
-          { skills:["Form, Structure, and Sense"], diffs:["Hard"],   count:1, ruleTypes:["Pron","Poss"] },
+          { skills:["Boundaries"],                 diffs:["Hard"],   count:1, ruleTypes:["Semi"] },
+          { skills:["Boundaries"],                 diffs:["Medium"], count:1, ruleTypes:["Colon"] },
+          { skills:["Form, Structure, and Sense"], diffs:["Hard"],   count:1 },
+          { skills:["Transitions"],                diffs:["Hard"],   count:1 },
+          { skills:["Rhetorical Synthesis"],       diffs:["Hard"],   count:1 },
         ],
-        tip:"Thursday. No clock, about ten minutes. Last untimed set before the test.\nTransitions: read to the END of the sentence after the blank. If it already has its own \"but\", the blank is the part that agrees first: \"granted\", \"of course\". \"For example\" adds a new case; \"in other words\" says the same thing again.\nDon't pick by the shape of the word. \"Similarly\" and \"consequently\" both end in -ly and mean different things.\nPronouns: find the noun it points back to. Singular or plural? Owning something (its, their) or a contraction (it's, they're)?\nEvery question: say what it needs before you look." },
+        tip:"One set, no clock, about twelve minutes, on the day we agreed.\nEvery question: say what it needs before you look at the choices, and type it.\nPunctuation: look for a mark the sentence already has. Then find the real verb on each side. However and though can't join two sentences.\nWords in Context: the clue, then your own word. Transitions: the link, not a transition word.\nLeave the challenge card for our next class." },
 
-      { n:4, focus:"Dress rehearsal — six questions in test order, seven minutes", minutes:7, review:0,
+      { n:3, focus:"Your module's misses, one more time — no clock", minutes:0, review:4,
         sections:[
-          { skills:["Words in Context"],           diffs:["Hard"], count:1 },
-          { skills:["Inferences"],                 diffs:["Hard"], count:1 },
           { skills:["Boundaries"],                 diffs:["Hard"], count:1 },
-          { skills:["Form, Structure, and Sense"], diffs:["Hard"], count:1 },
-          { skills:["Transitions"],                diffs:["Hard"], count:1 },
-          { skills:["Rhetorical Synthesis"],       diffs:["Hard"], count:1 },
+          { skills:["Words in Context"],           diffs:["Hard"], count:1 },
         ],
-        tip:"Friday. Six questions, seven minutes: the same pace as the real test, about seventy seconds each, in the same order.\nThat's more time than you've been using. Spend it on the method, not on second-guessing.\nIf one is taking too long, put something down, flag it, and come back. Never leave a square blank.\nKeep going to the results screen, or it doesn't save. Then rest. Test at the weekend." },
+        tip:"Short one. No clock.\nSome of these are questions you've seen before and some are new. Treat every one as new: say what it needs before you look.\nIf you remember the answer, still say why it's right before you choose." },
     ]
   }
 };
