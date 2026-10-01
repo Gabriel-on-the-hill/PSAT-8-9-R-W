@@ -56,12 +56,12 @@
 <script src="gate.js?v=20260820"></script>
 <script src="whoami.js?v=20260918"></script>
 <script src="sheet-sync.js?v=20260825"></script>
-<script src="homework/assignments.js?v=20260928"></script>
+<script src="homework/assignments.js?v=20261002"></script>
 <!-- progress.js supplies getProgress(), which is where the challenge's tally
      comes from. challenge.js (the runner) is NOT loaded here: this page only
      ever renders the card and links into index.html. -->
 <script src="progress.js?v=20260909"></script>
-<script src="challenge/sets.js?v=20260928"></script>
+<script src="challenge/sets.js?v=20261002"></script>
 <script src="challenge/challenge-core.js?v=20260811"></script>
 </head>
 <body>
@@ -113,6 +113,11 @@
   }
 
   function challengeCardHTML(set){
+    if (set.learningPath) {
+      return '<div class="day"><div class="top"><span class="focus">' + esc(set.title) +
+        '</span><span class="state open">Class route</span></div><div class="tip">' +
+        esc(set.learningPath.order) + '</div><div class="go"><a class="btn" href="index.html?challenge=1">Open the class route</a></div></div>';
+    }
     // segmentOf() only ever reads q.id, so id stubs are enough for the tally —
     // this page never loads the question banks.
     var stubs = set.ids.map(function(id){ return { id: id }; });
@@ -167,7 +172,7 @@
     var set = challengeSets().filter(function(s){ return s.setId === plan.challenge; })[0];
     if (!set) { list.innerHTML = '<div class="empty">Your challenge set is not ready yet.</div>'; return; }
     list.innerHTML = challengeCardHTML(set);
-    if (note) note.textContent = 'There are no daily sets this week. Work through the challenge whenever you like, ' +
+    if (note) note.textContent = set.learningPath ? 'Work through this route with your tutor. Homework is decided after class.' : 'There are no daily sets this week. Work through the challenge whenever you like, ' +
       'as often as you like. It is done when every question is mastered — not when you have been through it once.';
   }
 

@@ -1050,3 +1050,592 @@ window.CHALLENGE_SETS = {
 
 
 };
+
+// Ordered teaching route. Earlier frozen sets and their denominators are preserved.
+window.CHALLENGE_SETS["Maysa"].push({
+  "setId": "structure-route-20261001",
+  "title": "Read the structure, then test it",
+  "source": "Ordered class route",
+  "date": "2026-10-01",
+  "tileIntro": "Learn the structure in order, then try a fresh independent set.",
+  "ids": [
+    "b456e9f2",
+    "01f418eb",
+    "d855ac19",
+    "e6d93586",
+    "31413994",
+    "8d310eb0"
+  ],
+  "learningPath": {
+    "intro": "Work with your tutor. Commit a deciding reason and an answer before feedback. After a miss, try a different example. Keep notes closed for the fresh checks and independent set.",
+    "order": "Reading retrieval → finite verb and clause → agreement → punctuation job → list and adverb contrasts → fresh checks → independent transfer → feedback and exit.",
+    "steps": [
+      {
+        "stage": "Retrieve a reading method",
+        "passage": "Although the artist hoped to build a large installation, a small grant constrained its size. Here, constrained most nearly means…",
+        "question": "Which choice is correct?",
+        "options": [
+          "A. decorated",
+          "B. limited",
+          "C. predicted",
+          "D. celebrated"
+        ],
+        "answer": 1,
+        "explanation": "The small grant limits the size. Predict limited from that contrast before comparing choices.",
+        "note": "Find the clue, predict your own word, then compare choices.",
+        "followUp": {
+          "stage": "Retrieve a reading method",
+          "passage": "The narrow entrance restricted the size of the sculpture. Restricted means…",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. limited",
+            "B. praised",
+            "C. copied",
+            "D. measured"
+          ],
+          "answer": 0,
+          "explanation": "Narrow entrance is the constraint: limited."
+        }
+      },
+      {
+        "stage": "Find the whole finite verb phrase",
+        "passage": "The team can study the samples. Which is its finite verb phrase?",
+        "question": "Which choice is correct?",
+        "options": [
+          "A. study alone",
+          "B. can study",
+          "C. the samples",
+          "D. to study"
+        ],
+        "answer": 1,
+        "explanation": "Can study is the whole finite verb phrase; the modal can carries finiteness.",
+        "note": "An independent clause can stand as a complete sentence. A dependent clause is attached to another part of a sentence; it may have a subject AND a finite verb.\nFind the main subject and whole finite verb phrase (won / is winning / has won / can win). Check whose verb it is, how the clause functions, and whether required wording is present.\nDependent clauses can supply reason/time/condition (because we won), describe a noun (who won), or supply content (that we won / what we discovered). Non-finite groups also cannot stand as independent sentences. A word is a clue, not a verdict: Though we won… is dependent; We won, though is complete. In a command, you can be understood: Wait.",
+        "followUp": {
+          "stage": "Find the whole finite verb phrase",
+          "passage": "The team is studying the samples. Which is its finite verb phrase?",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. studying alone",
+            "B. the team",
+            "C. is studying",
+            "D. samples"
+          ],
+          "answer": 2,
+          "explanation": "Is studying is finite as a whole. Studying alone is non-finite."
+        }
+      },
+      {
+        "stage": "Check dependence and the main predicate",
+        "passage": "Which group can stand as a complete sentence?",
+        "question": "Which choice is correct?",
+        "options": [
+          "A. Because the team has won",
+          "B. The scientist who studied the reef",
+          "C. The scientist who studied the reef returned",
+          "D. Studying the reef"
+        ],
+        "answer": 2,
+        "explanation": "Returned supplies the main predicate. Studied belongs to the relative who clause. Because marks a dependent reason clause here.",
+        "followUp": {
+          "stage": "Check dependence and the main predicate",
+          "passage": "Which group can stand alone?",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. Although the crew stored the fruit",
+            "B. The crew that stored the fruit",
+            "C. Keeping the fruit fresh",
+            "D. Keeping the fruit fresh was difficult"
+          ],
+          "answer": 3,
+          "explanation": "Was supplies the main finite verb; the -ing group is its subject."
+        }
+      },
+      {
+        "stage": "Content clauses and required wording",
+        "passage": "In “The team confirmed that the result was reliable,” which description is correct?",
+        "question": "Which choice is correct?",
+        "options": [
+          "A. That the result was reliable is an independent sentence",
+          "B. The whole sentence is complete; that the result was reliable is dependent content",
+          "C. The whole sentence has no finite verb",
+          "D. Every group with was is independent"
+        ],
+        "answer": 1,
+        "explanation": "Confirmed is the main predicate; that the result was reliable supplies its content. A sentence can contain a dependent clause and still be complete.",
+        "followUp": {
+          "stage": "Content clauses and required wording",
+          "passage": "Which is complete in the intended placement sense?",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. The team placed",
+            "B. The team placed the sensor",
+            "C. The team placed the sensor beside the door",
+            "D. That the sensor was beside the door"
+          ],
+          "answer": 2,
+          "explanation": "Placed needs what was placed and where in this use. The last choice is dependent content."
+        }
+      },
+      {
+        "stage": "Match the subject, not the nearest noun",
+        "passage": "The collection of maps ______ valuable. The maps in the collection ______ valuable.",
+        "question": "Which choice is correct?",
+        "options": [
+          "A. is / is",
+          "B. are / is",
+          "C. is / are",
+          "D. are / are"
+        ],
+        "answer": 2,
+        "explanation": "Collection is singular; maps is plural. The nearby of/in phrases do not control agreement. No comma separates either subject from its predicate.",
+        "followUp": {
+          "stage": "Match the subject, not the nearest noun",
+          "passage": "The list of errors ______ long. The errors on the list ______ serious.",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. is / are",
+            "B. are / is",
+            "C. is / is",
+            "D. are / are"
+          ],
+          "answer": 0,
+          "explanation": "List → is; errors → are. Name the head of each subject."
+        }
+      },
+      {
+        "stage": "Choose the punctuation job first",
+        "passage": "The archive preserves a recording, Voices, released in 2012; a booklet, Routes, published in 2015; and a map, Crossings, printed in 2018. What do the semicolons separate?",
+        "question": "Which choice is correct?",
+        "options": [
+          "A. Three independent sentences",
+          "B. Whole list items, each with internal commas",
+          "C. Subjects from their verbs",
+          "D. Only the dates"
+        ],
+        "answer": 1,
+        "explanation": "Each whole item contains a type, title and date. Internal commas stay inside; semicolons mark the item boundaries. Do this BEFORE the sentence-boundary test.",
+        "note": "Punctuation can mark a complex list, a paired interruption, or a clause boundary. Identify its job first. Only then apply the relevant rule.",
+        "followUp": {
+          "stage": "Choose the punctuation job first",
+          "passage": "The tour visited Lima, Peru; Quito, Ecuador; and Bogotá, Colombia. Why semicolons?",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. Each city is a complete sentence",
+            "B. They separate complete city-country items with internal commas",
+            "C. They replace the commas within each city-country item",
+            "D. Every long sentence needs them"
+          ],
+          "answer": 1,
+          "explanation": "The whole items are Lima + Peru, Quito + Ecuador, Bogotá + Colombia. List semicolons do not require complete sentences."
+        }
+      },
+      {
+        "stage": "Separate whole complex-list items",
+        "passage": "The display includes a mural, Tides, painted in 2016; a sculpture, Reach, completed in 2019 ______ and a photograph, Light, taken in 2022.",
+        "question": "Which choice is correct?",
+        "options": [
+          "A.  ,",
+          "B. :",
+          "C. ;",
+          "D. —"
+        ],
+        "answer": 2,
+        "explanation": "The blank ends the second whole item. Match the list-item semicolon, not the commas inside an item.",
+        "followUp": {
+          "stage": "Separate whole complex-list items",
+          "passage": "The program features a talk, Origins, at 10:00; a workshop, Making, at 11:00 ______ and a tour, Spaces, at 12:00.",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. ; ",
+            "B. , ",
+            "C. : ",
+            "D. no mark"
+          ],
+          "answer": 0,
+          "explanation": "The second whole event ends at 11:00, so a semicolon separates it from the tour."
+        }
+      },
+      {
+        "stage": "An adverb does not join two clauses",
+        "passage": "The route looked short ______ the journey took four hours.",
+        "question": "Which choice is correct?",
+        "options": [
+          "A. , however,",
+          "B. ; however,",
+          "C. however,",
+          "D. ; however;"
+        ],
+        "answer": 1,
+        "explanation": "Route looked and journey took are two independent clauses. The semicolon is their boundary; the comma follows however.",
+        "followUp": {
+          "stage": "An adverb does not join two clauses",
+          "passage": "The sample appeared clean ______ the test detected contamination.",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. however,",
+            "B. , however,",
+            "C. ; however;",
+            "D. ; however,"
+          ],
+          "answer": 3,
+          "explanation": "Two complete clauses need a boundary; however supplies contrast, not the join."
+        }
+      },
+      {
+        "stage": "Though has two roles",
+        "passage": "The writer does not just collect stories ______ she also records songs.",
+        "question": "Which choice is correct?",
+        "options": [
+          "A. though,",
+          "B. , though,",
+          "C. , though;",
+          "D. ; though"
+        ],
+        "answer": 2,
+        "explanation": "Sentence-ending though belongs to the first independent clause. Close that aside with a comma; put the semicolon AFTER though before she also records.",
+        "followUp": {
+          "stage": "Though has two roles",
+          "passage": "Which sentence is correct?",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. Though the path was steep; we reached the summit.",
+            "B. Though the path was steep, we reached the summit.",
+            "C. The path was steep, though, we reached the summit.",
+            "D. Though the path was steep."
+          ],
+          "answer": 1,
+          "explanation": "Here though means although and introduces a dependent clause. It takes a comma before the main clause, not a semicolon."
+        }
+      },
+      {
+        "stage": "Explanation or sentence join?",
+        "passage": "The team feared one problem ______ contamination.",
+        "question": "Which choice is correct?",
+        "options": [
+          "A. ; ",
+          "B. : ",
+          "C. , and ",
+          "D. no mark"
+        ],
+        "answer": 1,
+        "explanation": "The left side is complete and promises an explanation; contamination names that problem. Use a colon.",
+        "note": "When JOINING clauses, a semicolon needs independent clauses on both sides. A colon needs a complete introduction and an explanation or list. A colon or dash can also precede an explanatory independent clause.",
+        "followUp": {
+          "stage": "Explanation or sentence join?",
+          "passage": "The team identified one risk ______ a power failure.",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. : ",
+            "B. ; ",
+            "C. , and ",
+            "D. no mark"
+          ],
+          "answer": 0,
+          "explanation": "A complete introduction followed by the named risk takes a colon. After such as or including, do not insert a colon."
+        }
+      },
+      {
+        "stage": "Close the printed interruption",
+        "passage": "The festival—a week of music and film ______ attracted visitors.",
+        "question": "Which choice is correct?",
+        "options": [
+          "A. ,",
+          "B. ;",
+          "C. —",
+          "D. :"
+        ],
+        "answer": 2,
+        "explanation": "The interruption opened with a dash. Close it with a dash; the main sentence is The festival attracted visitors.",
+        "followUp": {
+          "stage": "Close the printed interruption",
+          "passage": "The collection—a selection of rare maps ______ filled the gallery.",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. —",
+            "B. ,",
+            "C. :",
+            "D. ;"
+          ],
+          "answer": 0,
+          "explanation": "Remove the interruption: The collection filled the gallery. Close the printed dash pair."
+        }
+      },
+      {
+        "stage": "A supplementary group is not a second sentence",
+        "passage": "The quilts covered the wall ______ their stitching barely visible.",
+        "question": "Which choice is correct?",
+        "options": [
+          "A. ; ",
+          "B. . Their ",
+          "C. , and ",
+          "D. , "
+        ],
+        "answer": 3,
+        "explanation": "Their stitching barely visible has no finite verb phrase. It adds a supplementary description and takes a comma here. Barely visible is not a finite predicate.",
+        "followUp": {
+          "stage": "A supplementary group is not a second sentence",
+          "passage": "The vessels filled the shelf ______ their surfaces polished to a shine.",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. . Their ",
+            "B. ; ",
+            "C. , ",
+            "D. , and "
+          ],
+          "answer": 2,
+          "explanation": "Their surfaces polished to a shine is a supplementary non-finite group; it does not supply an independent clause."
+        }
+      },
+      {
+        "stage": "Match an introductory description to its subject",
+        "passage": "Covered in snow, ______",
+        "question": "Which choice is correct?",
+        "options": [
+          "A. the hikers found the trail hard to follow.",
+          "B. the trail was hard to follow.",
+          "C. it was hard for the hikers to follow the trail.",
+          "D. following the trail was hard for the hikers."
+        ],
+        "answer": 1,
+        "explanation": "The description covered in snow refers to the trail, so trail must be the main subject immediately after this opener.",
+        "followUp": {
+          "stage": "Match an introductory description to its subject",
+          "passage": "Designed to measure rainfall, ______",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. the researchers installed the instrument.",
+            "B. rainfall was measured by the researchers.",
+            "C. the instrument recorded each shower.",
+            "D. the showers were recorded."
+          ],
+          "answer": 2,
+          "explanation": "Instrument is what was designed. This rule concerns this kind of introductory modifier, not every introductory phrase."
+        }
+      },
+      {
+        "stage": "Separate number from ownership",
+        "passage": "The two ______ analysis of the samples was published.",
+        "question": "Which choice is correct?",
+        "options": [
+          "A. researcher’s",
+          "B. researchers’",
+          "C. researchers",
+          "D. researcher"
+        ],
+        "answer": 1,
+        "explanation": "Two means plural researchers; they own one analysis, so researchers’ analysis. Number of owners and number of owned things are separate decisions.",
+        "followUp": {
+          "stage": "Separate number from ownership",
+          "passage": "The three ______ report was revised.",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. scientists",
+            "B. scientist’s",
+            "C. scientists’",
+            "D. scientist"
+          ],
+          "answer": 2,
+          "explanation": "Three scientists own one report: scientists’ report."
+        }
+      }
+    ],
+    "gates": [
+      [
+        {
+          "stage": "Fresh check",
+          "passage": "Which group can stand as a complete sentence?",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. Although the researchers have finished",
+            "B. The researchers who finished returned",
+            "C. The researchers who finished",
+            "D. Finishing the research"
+          ],
+          "answer": 1,
+          "explanation": "Returned is the main finite verb; have finished in the although clause does not establish independence.",
+          "step": 2
+        },
+        {
+          "stage": "Fresh check",
+          "passage": "The menu lists a soup, River, made with beans; a salad, Meadow, made with leaves ______ and a dessert, Cloud, made with cream.",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. ,",
+            "B. :",
+            "C. ;",
+            "D. —"
+          ],
+          "answer": 2,
+          "explanation": "The blank separates whole items with internal commas.",
+          "step": 6
+        },
+        {
+          "stage": "Fresh check",
+          "passage": "The curator does not just restore paintings ______ she also studies their history.",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. , though,",
+            "B. ; though",
+            "C. though,",
+            "D. , though;"
+          ],
+          "answer": 3,
+          "explanation": "Though ends the first clause; the semicolon then joins the two independent clauses.",
+          "step": 8
+        },
+        {
+          "stage": "Fresh check",
+          "passage": "The quality of the reports ______ excellent.",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. is",
+            "B. are",
+            "C. have been",
+            "D. were"
+          ],
+          "answer": 0,
+          "explanation": "Quality is the singular subject; of the reports is inside it.",
+          "step": 4
+        }
+      ],
+      [
+        {
+          "stage": "Fresh check",
+          "passage": "Which group is a complete sentence?",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. Because the team can travel",
+            "B. The team that can travel",
+            "C. The team that can travel has arrived",
+            "D. Travelling to the site"
+          ],
+          "answer": 2,
+          "explanation": "Has arrived is the main finite verb; can travel belongs to the relative clause.",
+          "step": 2
+        },
+        {
+          "stage": "Fresh check",
+          "passage": "The exhibition displays a bowl, Waves, dated 1910; a vase, Branches, dated 1920 ______ and a plate, Circles, dated 1930.",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. ; ",
+            "B. , ",
+            "C. : ",
+            "D. — "
+          ],
+          "answer": 0,
+          "explanation": "Separate whole list items containing internal commas.",
+          "step": 6
+        },
+        {
+          "stage": "Fresh check",
+          "passage": "The first trial succeeded ______ the second trial failed.",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. however,",
+            "B. ; however;",
+            "C. ; however,",
+            "D. , however,"
+          ],
+          "answer": 2,
+          "explanation": "The semicolon supplies the clause boundary, and the comma follows however.",
+          "step": 7
+        },
+        {
+          "stage": "Fresh check",
+          "passage": "The reports in the folder ______ accurate.",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. is",
+            "B. has been",
+            "C. was",
+            "D. are"
+          ],
+          "answer": 3,
+          "explanation": "Reports is plural; in the folder does not change its number.",
+          "step": 4
+        }
+      ]
+    ],
+    "transfer": [
+      "67165318",
+      "f10d84ef",
+      "b78350ca",
+      "62120607",
+      "8e03df49"
+    ],
+    "transferOriginal": {
+      "id": "class-adverb-transfer-20261001",
+      "domain": "Standard English Conventions",
+      "skill": "Boundaries",
+      "difficulty": "Medium",
+      "ruleType": "Semi",
+      "source": "Tutor-authored transfer item",
+      "passage": "The sensor detected a faint signal ______ the research team could not reproduce the signal in a second trial.",
+      "question": "Which choice completes the text so that it conforms to the conventions of Standard English?",
+      "options": [
+        "A. , however,",
+        "B. ; however,",
+        "C. however,",
+        "D. ; however;"
+      ],
+      "answer": "B",
+      "explanation": "The sensor detected and the research team could not reproduce are independent clauses. The semicolon supplies the boundary; a comma follows however."
+    },
+    "exit": [
+      {
+        "stage": "Explain the list branch",
+        "passage": "The archive lists a letter, Home, written in 1890; a diary, Travel, begun in 1900 ______ and a sketch, Field, drawn in 1910.",
+        "question": "Which choice is correct?",
+        "options": [
+          "A. : ",
+          "B. , ",
+          "C. ; ",
+          "D. — "
+        ],
+        "answer": 2,
+        "explanation": "These are whole list items with internal commas. Completeness on both sides is not required for this use of a semicolon.",
+        "followUp": {
+          "stage": "Explain the list branch",
+          "passage": "The journey includes Accra, Ghana; Lomé, Togo ______ and Cotonou, Benin.",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. ; ",
+            "B. , ",
+            "C. : ",
+            "D. — "
+          ],
+          "answer": 0,
+          "explanation": "Whole city-country items are separated by semicolons."
+        }
+      },
+      {
+        "stage": "Explain the clause boundary",
+        "passage": "The route was short ______ the climb was difficult.",
+        "question": "Which choice is correct?",
+        "options": [
+          "A. though,",
+          "B. , though;",
+          "C. , though,",
+          "D. ; though"
+        ],
+        "answer": 1,
+        "explanation": "Sentence-ending though belongs to route was short; put the boundary after it.",
+        "followUp": {
+          "stage": "Explain the clause boundary",
+          "passage": "Although the route was short ______ the climb was difficult.",
+          "question": "Which choice is correct?",
+          "options": [
+            "A. ; ",
+            "B. : ",
+            "C. , ",
+            "D. . "
+          ],
+          "answer": 2,
+          "explanation": "The although clause is dependent, so a comma connects it to the main clause."
+        }
+      }
+    ],
+    "schedule": "Homework is decided after class, using what the checks and discussion reveal. Discuss realistic independent practice windows with your tutor; these are not extra classes. Practice 3 is a separate longer sitting: confirm its date with your family. If it takes the available window, adjust the short-set workload."
+  }
+});

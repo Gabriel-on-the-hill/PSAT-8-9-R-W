@@ -32,69 +32,13 @@
 // ══════════════════════════════════════════════════════════════════
 
 const HOMEWORK = {
-  // Maysa — 24 and 25 Sep 2026. TWO short sets: one sat IN CLASS tonight, one on
-  // Friday. Practice 3 (the full-length, Reading and Writing plus Math) is Saturday,
-  // outside the app, and nothing is assigned after it until it has been reviewed.
-  //
-  // WHAT THIS PLAN IS FOR. Last week's plan trained the clock and it worked: sets
-  // were reached to the end and reading ran at under a minute a question. What did
-  // not come with the speed was a rule that ENDS a punctuation question. So this
-  // plan is the procedure first, then the clock — the order last week skipped.
-  // The procedure is taught in the room before day 1 opens:
-  //   1. marks already printed in the sentence must be matched or closed;
-  //   2. cover the blank — is the left side a complete sentence? the right side?
-  //   3. both complete: a comma alone is out (period, semicolon, colon, dash, or
-  //      comma + and/but/so);
-  //   4. right side not complete: semicolon is out;
-  //   5. left side not complete: colon and semicolon are both out.
-  //   Pick the survivor and move. No re-reading the options.
-  //
-  // `ruleTypes` ON EVERY BOUNDARIES SECTION, because the decision this plan tests is
-  // the one between Semi / Colon / Dash / Commas / NoPunct, and an unfiltered
-  // Boundaries draw is mostly comma items. One rule per section so the counts are
-  // exact. Supply checked against the bank before authoring.
-  //
-  // NO Mod SECTION. The unseen Hard Mod items include one held back for class use,
-  // and a homework draw would spend it. SVA stands in: the sentence spine is the
-  // same skill the Mod question rests on.
-  //
-  // review: 0 ON BOTH DAYS. These are two short, clean measurements of one
-  // procedure the night before and two nights before a full-length; a spliced
-  // review item from another skill would blur exactly the reading they exist for.
-  //
-  // CUMULATIVE: day 1 opens on the 24th, day 2 on the 25th. A set cannot open
-  // before its day, so the two cannot be sat back to back ahead of time.
-  //
-  // Shape only. The student data behind these choices is TUTOR-ONLY and lives in
-  // the ledger outside this repo — this file is downloaded in full by every student.
+  // Class route only. Homework is assigned after class.
   "Maysa": {
-    title: "The two-sides test — one set tonight, one on Friday",
-    start: "2026-09-24",
-    through: "2026-09-25",
-    unlock: "cumulative",
-    days: [
-      { n:1, focus:"In class — the two-sides test, six questions on the clock", minutes:6, review:0,
-        sections:[
-          { skills:["Boundaries"],                 diffs:["Hard"],   ruleTypes:["Semi"],    count:1 },
-          { skills:["Boundaries"],                 diffs:["Hard"],   ruleTypes:["Commas"],  count:1 },
-          { skills:["Boundaries"],                 diffs:["Hard"],   ruleTypes:["Dash"],    count:1 },
-          { skills:["Boundaries"],                 diffs:["Medium"], ruleTypes:["Colon"],   count:1 },
-          { skills:["Boundaries"],                 diffs:["Hard"],   ruleTypes:["NoPunct"], count:1 },
-          { skills:["Form, Structure, and Sense"], diffs:["Hard"],   ruleTypes:["SVA"],     count:1 },
-        ],
-        tip:"We start this one together in class. Six questions, six minutes — one minute each.\nFor every punctuation question, run the two-sides test in order and stop when one choice is left:\n1. Any mark already printed in the sentence? Match it or close it.\n2. Cover the blank. Is the LEFT side a full sentence? Is the RIGHT side?\n3. Both full: a comma on its own is out.\n4. Right side not full: a semicolon is out.\n5. Left side not full: a colon and a semicolon are both out.\nPick what is left and move. If two choices survive, flag it, choose one, and come back at the end." },
-
-      { n:2, focus:"Friday — the same test, five questions, then rest before Saturday", minutes:5, review:0,
-        sections:[
-          { skills:["Boundaries"],                 diffs:["Hard"], ruleTypes:["Semi"],   count:1 },
-          { skills:["Boundaries"],                 diffs:["Hard"], ruleTypes:["Colon"],  count:1 },
-          { skills:["Boundaries"],                 diffs:["Hard"], ruleTypes:["Dash"],   count:1 },
-          { skills:["Boundaries"],                 diffs:["Hard"], ruleTypes:["Commas"], count:1 },
-          { skills:["Form, Structure, and Sense"], diffs:["Hard"], ruleTypes:["SVA"],    count:1 },
-        ],
-        tip:"Friday only — not Thursday night, not Saturday morning. Five questions, five minutes.\nSame two-sides test as in class, in the same order, every time. Say the step that decides it, even if only in your head: \"right side not full — semicolon out.\"\nFor the verb question: cross out everything between the subject and the blank, then match the verb to the subject.\nThen stop. No extra practice tonight. Saturday is the full practice test, Reading and Writing and Math, in one sitting." },
-    ]
-  },
+  "title": "Class route — homework follows the class",
+  "start": "2026-10-01",
+  "challenge": "structure-route-20261001",
+  "days": []
+},
 
   // Faith — Sat 26 Sep 2026. ONE set, sat IN CLASS with the tutor watching.
   // The 15 Sep plan is cleared. Nothing is assigned after class: the next plan is
