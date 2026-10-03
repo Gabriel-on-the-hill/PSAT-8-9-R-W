@@ -58,7 +58,7 @@ const SETS  = (() => { const w = {}; new Function('window', read('challenge/sets
 // The STUDENT is derived too, not written down. gate.js names are the only
 // personal names this repo may carry, and a test file is not gate.js — so this
 // takes whoever the roster happens to hold rather than naming anyone here.
-const LIVE_STUDENT = Object.keys(SETS).find(name => Array.isArray(SETS[name]) && SETS[name].length);
+const LIVE_STUDENT = Object.keys(SETS).find(name => Array.isArray(SETS[name]) && SETS[name].length && !SETS[name].at(-1).learningPath);
 const USING_FIXTURE = !LIVE_STUDENT;
 const STUDENT = LIVE_STUDENT || '__CHALLENGE_UI_TEST__';
 const FIXTURE_IDS = [...read('data-conventions.js').matchAll(/"id"\s*:\s*"([^"]+)"/g)]

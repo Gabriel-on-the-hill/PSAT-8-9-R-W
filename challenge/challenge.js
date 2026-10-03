@@ -210,12 +210,24 @@
     function learningContext() {
         return { student: studentName(), set: state.set, bank: theBank(), paint: paint,
             header: header, back: function () { goToHub(); },
+            resume: function () {
+                var saved = loadSessionState(), ids = state.set.learningPath.transfer;
+                if (!saved || saved.questionIds.join('|') !== ids.join('|') || saved.mode !== 'exam') return false;
+                screenEl().style.display = 'none';
+                if (!restoreSession(saved)) return false;
+                document.getElementById('modeSelect').value = userMode;
+                hideSetup();
+                loadQuestion(currentQuestionIndex);
+                applyTimerState();
+                if (typeof _pushScreen === 'function') _pushScreen('session');
+                return true;
+            },
             practice: function (n) { begin(n, false, false); },
             transfer: function (questions, seconds) {
                 unlockMode();
                 screenEl().style.display = 'none';
                 state.transferActive = true;
-                if (!launchSession(questions, 'exam', { mode: 'countdown', total: seconds })) {
+                if (!launchSession(questions, 'exam', { mode: seconds > 0 ? 'countdown' : 'off', total: seconds })) {
                     state.transferActive = false;
                     screenEl().style.display = 'block';
                     return false;
@@ -476,6 +488,18 @@
             if (isTransferSession()) {
                 state.transferActive = true;
                 lockTransferMode();
+            }
+        });
+
+        // A protected class check uses the silent exam runner, with one credit per answer.
+        var originalRecord = window.recordAnswer;
+        if (typeof originalRecord === 'function') window.recordAnswer = function (id, correct, source, meta) {
+            if (state.set.learningPath && state.set.learningPath.singleCredit && isTransferSession()) source = 'class-transfer';
+            return originalRecord(id, correct, source, meta);
+        };
+        wrap('applyTimerState', null, function () {
+            if (state.set.learningPath && state.set.learningPath.protectedTransfer && isTransferSession() && timerMode === 'off') {
+                var timer = $('timerDisplay'); if (timer) timer.classList.add('hidden');
             }
         });
 

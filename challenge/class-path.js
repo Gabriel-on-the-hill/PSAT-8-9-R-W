@@ -11,6 +11,11 @@
     return sessions[key] || (sessions[key] = { taught:false, passed:false, form:0, transferStarted:false, transferDone:false, exited:false });
   }
   function render(ctx) {
+    if (ctx.set.learningPath.protectedTransfer) {
+      if (window.StructuredClass) StructuredClass.render(ctx);
+      else ctx.paint(ctx.header() + '<div class="cbanner">The class route did not load. Reload before starting.</div>');
+      return;
+    }
     var path = ctx.set.learningPath, s = state(ctx);
     function paint(body) {
       ctx.paint(ctx.header() + body + '<div class="crow">'+button('lpHub','Back to hub',true)+'</div>');
@@ -93,5 +98,5 @@
     }
     home();
   }
-  window.ChallengeLearning = {render:render, completeTransfer:function(ctx){state(ctx).transferDone=true;}};
+  window.ChallengeLearning = {render:render, completeTransfer:function(ctx){if(ctx.set.learningPath.protectedTransfer){if(window.StructuredClass)StructuredClass.completeTransfer(ctx);}else state(ctx).transferDone=true;}};
 })();

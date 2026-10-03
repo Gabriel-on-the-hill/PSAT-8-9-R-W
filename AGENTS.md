@@ -26,6 +26,7 @@ NODE_PATH=/tmp/j/node_modules node homework/homework-nav.test.js      # moving i
 node homework/hub-count.test.js                                      # the card matches the set served
 NODE_PATH=/tmp/j/node_modules node challenge/challenge-core.test.js   # challenge tally + set building
 NODE_PATH=/tmp/j/node_modules node challenge/challenge-ui.test.js     # the challenge, driven for real
+NODE_PATH=/tmp/j/node_modules node challenge/structured-class.test.js # reasons, untimed transfer, reload, exit checks
 NODE_PATH=/tmp/j/node_modules node challenge/class-path.test.js     # ordered attempts, fresh gates, independent transfer
 NODE_PATH=/tmp/j/node_modules node ratio-mix.test.js                 # custom practice in a ratio
 NODE_PATH=/tmp/j/node_modules node ruletype.test.js                  # Conventions tagged by rule

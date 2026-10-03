@@ -1639,3 +1639,88 @@ window.CHALLENGE_SETS["Maysa"].push({
     "schedule": "Homework is decided after class, using what the checks and discussion reveal. Discuss realistic independent practice windows with your tutor; these are not extra classes. Practice 3 is a separate longer sitting: confirm its date with your family. If it takes the available window, adjust the short-set workload."
   }
 });
+
+// Fixed class sequence. Earlier challenge denominators stay frozen.
+window.CHALLENGE_SETS["Faith"].push({
+  "setId": "reading-structure-route-20261003",
+  "title": "Reading relationships and sentence structure",
+  "source": "Class route",
+  "date": "2026-10-03",
+  "tileIntro": "Predict, check the deciding reason, then work independently.",
+  "ids": [
+    "7379012a",
+    "c4972b33",
+    "a0946a9f",
+    "67165318",
+    "1fcc4e8c",
+    "8ecf234b"
+  ],
+  "learningPath": {
+    "protectedTransfer": true,
+    "singleCredit": true,
+    "intro": "Name the task. Keep the relationship in your prediction. For grammar, find the sentence underneath the extra words.",
+    "order": "Retrieval → two methods → four fresh checks → independent set → review → two exit checks. Homework is decided after class.",
+    "steps": [
+      {
+        "bankId": "bf0d6766",
+        "stage": "Retrieval: reading"
+      },
+      {
+        "bankId": "45f188bf",
+        "stage": "Retrieval: sentence structure"
+      },
+      {
+        "bankId": "9e09ef04",
+        "stage": "Repair: preserve the relationship"
+      },
+      {
+        "bankId": "8dad1ce4",
+        "stage": "Repair: find the sentence spine"
+      }
+    ],
+    "checks": [
+      {
+        "bankId": "b0d77006",
+        "stage": "Whole-text scope"
+      },
+      {
+        "bankId": "9811f0b1",
+        "stage": "Evidence for the exact claim"
+      },
+      {
+        "bankId": "0ecf02c1",
+        "stage": "Complete sentences"
+      },
+      {
+        "bankId": "fa9fb43d",
+        "stage": "Connection between ideas"
+      }
+    ],
+    "transfer": [
+      "7379012a",
+      "c4972b33",
+      "a0946a9f",
+      "67165318",
+      "1fcc4e8c",
+      "8ecf234b"
+    ],
+    "exitChoices": [
+      {
+        "bankId": "b06f8662",
+        "stage": "Whole-text scope"
+      },
+      {
+        "bankId": "16be2777",
+        "stage": "Supported inference"
+      },
+      {
+        "bankId": "62120607",
+        "stage": "Sentence structure"
+      },
+      {
+        "bankId": "96fa19ad",
+        "stage": "Connection between ideas"
+      }
+    ]
+  }
+});

@@ -40,47 +40,13 @@ const HOMEWORK = {
   "days": []
 },
 
-  // Faith — Sat 26 Sep 2026. ONE set, sat IN CLASS with the tutor watching.
-  // The 15 Sep plan is cleared. Nothing is assigned after class: the next plan is
-  // authored after the weekend practice test has been read, not before it.
-  //
-  // WHAT THE SET IS FOR. The class teaches a main-idea routine: find the claim
-  // sentence, predict topic + point, and keep an option only if every word of it
-  // can be pointed to in the text. The challenge set teaches and practises it in
-  // Assisted mode; this day is the first test of it in Standard mode at test pace,
-  // sat silently, so the result is a first attempt and not a coached one.
-  //
-  // 6 MINUTES FOR 4, about ninety seconds a question. Timed, so the gate is one
-  // click, not typed: in the room she narrates nothing and the tutor watches the
-  // time-on-text column instead.
-  //
-  // `review: 0` so the four questions are exactly the four authored. A spliced
-  // review item from another skill would make the set measure something else.
-  //
-  // SAT AFTER THE CHALLENGE SET OF THE SAME DATE (ci-claim-1 in challenge/sets.js).
-  // That set teaches the routine and scores eight Central Ideas items, four of them
-  // Hard, and challenge answers write to the mastery ledger. Attempted first, they
-  // are no longer unseen, so this day's Hard draw cannot serve one of them as a
-  // first attempt. Sat the other way round, it can.
-  //
-  // `start` MOVES to today. Done flags are keyed by start date, so the new day 1
-  // cannot inherit the old day 1's flag.
-  //
-  // Shape only. The evidence behind these choices is tutor-only and lives outside
-  // this repo — this file is downloaded in full by every student.
+  // Class route only. Existing completion keys retain their start date.
   "Faith": {
-    title: "In class today — main idea at test pace",
+    title: "Class route — homework follows the class",
     start: "2026-09-26",
-    through: "2026-09-26",
-    unlock: "cumulative",
-    days: [
-      { n:1, focus:"Main idea at test pace \u2014 in class", review:0, minutes:6,
-        sections:[
-          { skills:["Central Ideas and Details"],     diffs:["Hard"], count:3 },
-          { skills:["Command of Evidence \u2014 Textual"], diffs:["Hard"], count:1 },
-        ],
-        tip:"Four questions, six minutes. Work on your own; your tutor will not help during the set.\nFirst, decide what kind of question it is. Main idea means the whole text. According to the text, or what the text suggests about something, means one part: find that sentence and say only what it says.\nMain idea: find the claim sentence. It is often the first sentence, or the one after However or But, or the one every other sentence supports. Say it to yourself as a topic plus a point, who or what, and what the text says about it. A topic on its own cannot rule anything out.\nThen every word of the option you choose has to point to a line in the text. If you cannot put a finger on it, it is out. Two to watch for: words the text never said, like widely, most, first, always or over time, and the text's own words attached to the wrong person or thing.\nNo route after about forty seconds: choose, flag it, move on. One attempt only." },
-    ]
+    challenge: "reading-structure-route-20261003",
+    classOnly: true,
+    days: []
   },
   "Gabe": {
     title: "This week — mixed Reading & Writing review",
@@ -307,7 +273,7 @@ function hwNormalizeSheetPlan(plan) {
 function hwLoadPlan(student, cb) {
   var local = (typeof HOMEWORK !== "undefined" && HOMEWORK[student]) ? HOMEWORK[student] : null;
   var ep = (typeof SHEET_SYNC_ENDPOINT === "string") ? SHEET_SYNC_ENDPOINT : "";
-  if (!HW_USE_SHEET || !ep) { cb(local, "local"); return; }
+  if ((local && local.classOnly) || !HW_USE_SHEET || !ep) { cb(local, "local"); return; }
   var done = false, name = "__hwcb" + Math.random().toString(36).slice(2), sc;
   function finish(plan) { if (done) return; done = true;
     try { delete window[name]; } catch (e) {}
