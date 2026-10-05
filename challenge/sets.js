@@ -1724,3 +1724,106 @@ window.CHALLENGE_SETS["Faith"].push({
     ]
   }
 });
+
+// Luke, class 7 (5 Oct 2026). Protected class route. Earlier challenge denominators stay frozen.
+// Steps 1-3 are his own module misses (the true-but-not-the-task pattern); step 4 is a Sunday miss.
+// Checks, independent set and exits are unseen by him as of the 5 Oct sheet. Tutor rationale lives outside this repo.
+window.CHALLENGE_SETS["Luke"].push({
+  "setId": "luke-craft-route-20261005",
+  "title": "True is not enough: purpose, structure, and two texts",
+  "source": "Class route",
+  "date": "2026-10-05",
+  "tileIntro": "Say what the question asks, predict, then check the choice does that job.",
+  "ids": [
+    "1d280f7b",
+    "77203bc5",
+    "0182db39",
+    "7d035567",
+    "a586235b",
+    "442c2887"
+  ],
+  "learningPath": {
+    "protectedTransfer": true,
+    "singleCredit": true,
+    "intro": "Every question: say what it asks you to do, then predict before you look. A choice can be true and still not do the job.",
+    "order": "Three of your misses → the semicolon gate → two new methods → four fresh checks → six questions in seven minutes → review → two exit checks. Homework is decided after class.",
+    "steps": [
+      {
+        "bankId": "9811f0b1",
+        "stage": "Your miss: true, but does it prove the claim?"
+      },
+      {
+        "bankId": "6b02deb3",
+        "stage": "Your miss: true, but does it meet the goal?"
+      },
+      {
+        "bankId": "c0628d2c",
+        "stage": "Your miss: right topic, but what is its job?"
+      },
+      {
+        "bankId": "9e1567fe",
+        "stage": "Semicolon gate: name the verb on each side first"
+      },
+      {
+        "bankId": "f7d36930",
+        "stage": "Purpose: say the text's job in one line"
+      },
+      {
+        "bankId": "aad6de37",
+        "stage": "Structure: first it does X, then it does Y"
+      },
+      {
+        "bankId": "a3cfd927",
+        "stage": "Two texts: the point both would accept"
+      },
+      {
+        "bankId": "61ee55dd",
+        "stage": "Two texts: Text 1's claim, then Text 2's stance on it"
+      }
+    ],
+    "checks": [
+      {
+        "bankId": "594b4a94",
+        "stage": "Sentence boundary"
+      },
+      {
+        "bankId": "650bb994",
+        "stage": "Purpose of the text"
+      },
+      {
+        "bankId": "26f67cc6",
+        "stage": "Text 2's response to Text 1"
+      },
+      {
+        "bankId": "6eda4233",
+        "stage": "Evidence for the exact claim"
+      }
+    ],
+    "transfer": [
+      "1d280f7b",
+      "77203bc5",
+      "0182db39",
+      "7d035567",
+      "a586235b",
+      "442c2887"
+    ],
+    "exitChoices": [
+      {
+        "bankId": "62120607",
+        "stage": "Sentence boundary"
+      },
+      {
+        "bankId": "827e316d",
+        "stage": "Purpose of the text"
+      },
+      {
+        "bankId": "c08912f4",
+        "stage": "Text 2's response to Text 1"
+      },
+      {
+        "bankId": "23d86807",
+        "stage": "Evidence for the exact claim"
+      }
+    ]
+  }
+});

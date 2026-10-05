@@ -364,81 +364,14 @@ const HOMEWORK = {
     ]
   },
 
-  // Luke — from Mon 28 Sep 2026. MODULE VARIANT: the Bluebook practice test was
-  // not sat, so a one-module mock is sat IN CLASS tonight (day 1). The teaching
-  // variant of this plan is kept outside the repo; swap it back if the class runs
-  // the Command of Evidence lesson instead.
-  //
-  // DAY 1 IS ONE REAL MODULE: 27 questions, 32 minutes, in the order the test
-  // serves them (Craft and Structure, Information and Ideas, Conventions,
-  // Expression of Ideas, with the notes questions last). minutes > 0 gives exam
-  // navigation: mark for review, a review grid, and an auto-submit at 0:00, which
-  // is the real module's shape. Unlike the real test, it logs seconds and time on
-  // text for every question, which is the reading the tutor needs.
-  //
-  // WHAT IS SCORED FOR DIAGNOSIS: the 21 questions on taught skills, Medium and
-  // Hard (Inferences Hard only; its Medium pool is exposed). The 6 questions on
-  // untaught skills (Text Structure, Cross-Text, Command of Evidence) are there so
-  // the module has its real length and reading load. A module without them runs
-  // light and flatters the pace. They sit at Medium so the Hard pools stay unseen
-  // for teaching; the Cross-Text Hard pool is the thinnest in the bank.
-  //
-  // review:0 on day 1, so the 27 are exactly the 27 authored.
-  //
-  // DAYS 2-3 carry NO Command of Evidence: it has not been taught yet. The
-  // challenge card coe-clause-1 waits for the next class.
-  //
-  // Shape only. The evidence behind these choices is tutor-only and lives outside
-  // this repo — this file is downloaded in full by every student.
+  // Luke — class route only, 5 Oct 2026. Existing completion keys retain their start date.
+  // The week's homework is authored after class, from the route's responses.
   "Luke": {
-    title: "A test module in class, then two short sets",
+    title: "Class route — homework follows the class",
     start: "2026-09-28",
-    through: "2026-10-01",
-    unlock: "cumulative",
-    days: [
-      { n:1, focus:"In class — one test module, 27 questions, 32 minutes", minutes:32, review:0,
-        sections:[
-          { skills:["Words in Context"],                       diffs:["Medium"], count:2 },
-          { skills:["Words in Context"],                       diffs:["Hard"],   count:2 },
-          { skills:["Text Structure and Purpose"],             diffs:["Medium"], count:2 },
-          { skills:["Cross-Text Connections"],                 diffs:["Medium"], count:1 },
-          { skills:["Central Ideas and Details"],              diffs:["Hard"],   count:2 },
-          { skills:["Command of Evidence — Textual"],      diffs:["Medium"], count:1 },
-          { skills:["Command of Evidence — Quantitative"], diffs:["Medium"], count:2 },
-          { skills:["Inferences"],                             diffs:["Hard"],   count:2 },
-          { skills:["Boundaries"],                             diffs:["Medium"], count:1, ruleTypes:["Semi"] },
-          { skills:["Boundaries"],                             diffs:["Hard"],   count:1, ruleTypes:["Colon"] },
-          { skills:["Boundaries"],                             diffs:["Hard"],   count:1, ruleTypes:["Commas"] },
-          { skills:["Boundaries"],                             diffs:["Hard"],   count:1, ruleTypes:["Dash"] },
-          { skills:["Form, Structure, and Sense"],             diffs:["Hard"],   count:1, ruleTypes:["SVA"] },
-          { skills:["Form, Structure, and Sense"],             diffs:["Hard"],   count:1, ruleTypes:["Mod"] },
-          { skills:["Form, Structure, and Sense"],             diffs:["Medium"], count:1, ruleTypes:["Poss","Pron"] },
-          { skills:["Transitions"],                            diffs:["Medium"], count:1 },
-          { skills:["Transitions"],                            diffs:["Hard"],   count:2 },
-          { skills:["Rhetorical Synthesis"],                   diffs:["Medium"], count:1 },
-          { skills:["Rhetorical Synthesis"],                   diffs:["Hard"],   count:2 },
-        ],
-        tip:"In class only. Don't start this on your own.\n27 questions, 32 minutes: one real module, in the real order. About 70 seconds a question, which is more than you usually use.\nEvery question: cover the choices and say what it needs before you look.\nIf one is taking too long, choose, mark it for review, and move on. Never leave one blank. Go back to your marked ones at the end.\nSome questions are on skills we haven't done yet. Use what you know, make your best choice, and keep moving." },
-
-      { n:2, focus:"A bit of everything — no clock", minutes:0,
-        sections:[
-          { skills:["Words in Context"],           diffs:["Hard"],   count:1 },
-          { skills:["Inferences"],                 diffs:["Hard"],   count:1 },
-          { skills:["Boundaries"],                 diffs:["Hard"],   count:1, ruleTypes:["Semi"] },
-          { skills:["Boundaries"],                 diffs:["Medium"], count:1, ruleTypes:["Colon"] },
-          { skills:["Form, Structure, and Sense"], diffs:["Hard"],   count:1 },
-          { skills:["Transitions"],                diffs:["Hard"],   count:1 },
-          { skills:["Rhetorical Synthesis"],       diffs:["Hard"],   count:1 },
-        ],
-        tip:"One set, no clock, about twelve minutes, on the day we agreed.\nEvery question: say what it needs before you look at the choices, and type it.\nPunctuation: look for a mark the sentence already has. Then find the real verb on each side. However and though can't join two sentences.\nWords in Context: the clue, then your own word. Transitions: the link, not a transition word.\nLeave the challenge card for our next class." },
-
-      { n:3, focus:"Your module's misses, one more time — no clock", minutes:0, review:4,
-        sections:[
-          { skills:["Boundaries"],                 diffs:["Hard"], count:1 },
-          { skills:["Words in Context"],           diffs:["Hard"], count:1 },
-        ],
-        tip:"Short one. No clock.\nSome of these are questions you've seen before and some are new. Treat every one as new: say what it needs before you look.\nIf you remember the answer, still say why it's right before you choose." },
-    ]
+    challenge: "luke-craft-route-20261005",
+    classOnly: true,
+    days: []
   }
 };
 

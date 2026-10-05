@@ -64,7 +64,7 @@
       if(block.done){results(qs,block,label);return;}
       var i=block.index,q=qs[i];
       paint('<p class="cnote"><b>'+esc(label)+' '+(i+1)+' of '+qs.length+'</b>'+(immediate?' · '+esc(q.stage||q.skill):' · notes closed · no hints')+'</p>'+
-        '<div class="cq">'+esc(q.passage)+'</div><div class="cq"><b>'+esc(q.question)+'</b></div>'+
+        (q.image?'<div class="cq"><img src="'+esc(q.image)+'" alt="'+esc(q.alt||'Question figure')+'" style="display:block;max-width:100%;height:auto"></div>':'<div class="cq">'+esc(q.passage)+'</div>')+'<div class="cq"><b>'+esc(q.question)+'</b></div>'+
         '<label for="scReason">Predict the answer or deciding relationship before choosing.</label><textarea id="scReason" rows="2" style="width:100%;box-sizing:border-box;font:inherit;padding:.65rem;margin:.5rem 0"></textarea>'+button('scCommit','Commit the prediction',true)+
         '<div id="scOptions" style="display:none">'+q.options.map(function(o,j){return '<button class="copt" data-i="'+j+'">'+esc(o)+'</button>';}).join('')+'</div><div id="scFeedback" aria-live="polite"></div><div class="crow">'+button('scNext',i===qs.length-1?'Finish this block':'Commit and continue',true)+'</div>');
       function refresh() {
