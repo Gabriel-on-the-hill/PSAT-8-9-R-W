@@ -37,14 +37,290 @@
 // ══════════════════════════════════════════════════════════════════
 
 const HOMEWORK = {
-  // Class route only. Homework is assigned after class.
+  // Three required sittings: untimed structure practice, a conditional clock, then mixed retention.
+  // Fixed question coverage keeps the total at 6 / 6 / 4; the regular ledger still records each attempt.
   "Maysa": {
-  "title": "Class route — homework follows the class",
-  "start": "2026-10-01",
-  "challenge": "structure-route-20261001",
-  "days": []
+  "title": "Three short sets — read the structure, then move",
+  "start": "2026-10-05",
+  "through": "2026-10-08",
+  "unlock": "sequential",
+  "days": [
+    {
+      "n": 1,
+      "focus": "Monday — deciding evidence, no clock",
+      "minutes": 0,
+      "review": 0,
+      "sections": [
+        {
+          "skills": [
+            "Form, Structure, and Sense"
+          ],
+          "diffs": [
+            "Easy",
+            "Medium",
+            "Hard"
+          ],
+          "questionIds": [
+            "155c9bf7"
+          ],
+          "count": 1
+        },
+        {
+          "skills": [
+            "Boundaries"
+          ],
+          "diffs": [
+            "Easy",
+            "Medium",
+            "Hard"
+          ],
+          "questionIds": [
+            "01f418eb"
+          ],
+          "count": 1
+        },
+        {
+          "skills": [
+            "Form, Structure, and Sense"
+          ],
+          "diffs": [
+            "Easy",
+            "Medium",
+            "Hard"
+          ],
+          "questionIds": [
+            "8d310eb0"
+          ],
+          "count": 1
+        },
+        {
+          "skills": [
+            "Boundaries"
+          ],
+          "diffs": [
+            "Easy",
+            "Medium",
+            "Hard"
+          ],
+          "questionIds": [
+            "78b88c04"
+          ],
+          "count": 1
+        },
+        {
+          "skills": [
+            "Boundaries"
+          ],
+          "diffs": [
+            "Easy",
+            "Medium",
+            "Hard"
+          ],
+          "questionIds": [
+            "790fc366"
+          ],
+          "count": 1
+        },
+        {
+          "skills": [
+            "Inferences"
+          ],
+          "diffs": [
+            "Easy",
+            "Medium",
+            "Hard"
+          ],
+          "questionIds": [
+            "ce129344"
+          ],
+          "count": 1
+        }
+      ],
+      "explanations": {
+        "01f418eb": "D is correct. The comma after His poems opens the supplementary clause which ... compositions. A second comma closes it. Remove that clause: His poems often defy easy understanding. Do not separate often from defy.",
+        "8d310eb0": "C is correct. Inexpensive describes the cameras, not the filmmakers. Put inexpensive next to professional quality digital cameras. A and D attach that are inexpensive to filmmakers; B leaves these unclear. The opening While clause is already a finite dependent clause: the deciding issue here is which noun the description belongs to.",
+        "78b88c04": "C is correct. Group the three products with their dates: Chickasaw Anompa, in 2009; Chickasaw TV, in 2010; and a Rosetta Stone course, in 2015. Commas stay inside the items and semicolons separate the whole items. A semicolon can separate complex-list items even when an item is not a complete sentence.",
+        "790fc366": "A is correct. Nakalembe does not just compile the information and she also shares her findings are two complete clauses. Though belongs at the end of the first clause: information, though;. It needs its comma, and the semicolon supplies the boundary between the clauses."
+      },
+      "tip": "Monday, October 5. Six questions; no clock. Keep your notes closed for each first attempt. Type the evidence that decides the answer, not an answer letter.\nFor a description, ask which noun it belongs to. Example: The team bought lightweight cameras for photographers. Lightweight describes cameras. An opening While clause is a different structure.\nFor punctuation, first check whole list items and both ends of an interruption; then test clause independence. A semicolon can join complete clauses OR separate complex-list items.\nAfter finishing, explain each miss and redo it. Stop after this set; complete the next one on Wednesday."
+    },
+    {
+      "n": 2,
+      "focus": "Wednesday — the method in different sentences",
+      get minutes() {
+        try {
+          var saved = JSON.parse(localStorage.getItem('psat89_hwrec_Maysa_2026-10-05_1') || 'null');
+          var needed = ['01f418eb', '8d310eb0', '78b88c04', '790fc366'];
+          return saved && saved.recs && needed.every(function(id) {
+            return saved.recs.some(function(r) { return r.id === id && r.ok === true; });
+          }) ? 8 : 0;
+        } catch (e) { return 0; }
+      },
+      "review": 0,
+      "sections": [
+        {
+          "skills": [
+            "Form, Structure, and Sense"
+          ],
+          "diffs": [
+            "Easy",
+            "Medium",
+            "Hard"
+          ],
+          "questionIds": [
+            "81000f32"
+          ],
+          "count": 1
+        },
+        {
+          "skills": [
+            "Boundaries"
+          ],
+          "diffs": [
+            "Easy",
+            "Medium",
+            "Hard"
+          ],
+          "questionIds": [
+            "9911baa0"
+          ],
+          "count": 1
+        },
+        {
+          "skills": [
+            "Form, Structure, and Sense"
+          ],
+          "diffs": [
+            "Easy",
+            "Medium",
+            "Hard"
+          ],
+          "questionIds": [
+            "e7bf56e7"
+          ],
+          "count": 1
+        },
+        {
+          "skills": [
+            "Boundaries"
+          ],
+          "diffs": [
+            "Easy",
+            "Medium",
+            "Hard"
+          ],
+          "questionIds": [
+            "f10d84ef"
+          ],
+          "count": 1
+        },
+        {
+          "skills": [
+            "Boundaries"
+          ],
+          "diffs": [
+            "Easy",
+            "Medium",
+            "Hard"
+          ],
+          "questionIds": [
+            "cf0604c3"
+          ],
+          "count": 1
+        },
+        {
+          "skills": [
+            "Inferences"
+          ],
+          "diffs": [
+            "Easy",
+            "Medium",
+            "Hard"
+          ],
+          "questionIds": [
+            "06a57199"
+          ],
+          "count": 1
+        }
+      ],
+      "explanations": {
+        "9911baa0": "B is correct. Pair the comma after Pterosaurs with the comma after vertebrates. Removing the interruption leaves Pterosaurs had wings made of a membrane that ended in over-elongated fingers. Do not put a comma before the essential clause that ended ... .",
+        "e7bf56e7": "D is correct. The spores are smaller than pollen and are blown by the wind. That are ... and ... attaches both descriptions to the plural spores. A and B displace smaller than a grain of pollen; C uses singular is for plural spores and creates an unclear attachment.",
+        "cf0604c3": "D is correct. Every clinical drug trial ... two groups and only one of them receives the actual medication are complete clauses. Use a semicolon between them and a comma after however. Only one of which does not supply an independent main clause."
+      },
+      "tip": "Wednesday, October 7. Six different questions. Keep notes closed. If the clock appears, you have eight minutes: predict before choices, answer every question, and flag an unresolved decision after about 75 seconds. Return after reaching the end.\nIf there is no clock, write the deciding evidence before choices and complete the set untimed.\nAfterward, review misses and your two longest decisions. Finish before starting the final set on Thursday."
+    },
+    {
+      "n": 3,
+      "focus": "Thursday — required mixed check",
+      "minutes": 5,
+      "review": 0,
+      "sections": [
+        {
+          "skills": [
+            "Boundaries"
+          ],
+          "diffs": [
+            "Easy",
+            "Medium",
+            "Hard"
+          ],
+          "questionIds": [
+            "d855ac19"
+          ],
+          "count": 1
+        },
+        {
+          "skills": [
+            "Boundaries"
+          ],
+          "diffs": [
+            "Easy",
+            "Medium",
+            "Hard"
+          ],
+          "questionIds": [
+            "e6d93586"
+          ],
+          "count": 1
+        },
+        {
+          "skills": [
+            "Transitions"
+          ],
+          "diffs": [
+            "Easy",
+            "Medium",
+            "Hard"
+          ],
+          "questionIds": [
+            "96fa19ad"
+          ],
+          "count": 1
+        },
+        {
+          "skills": [
+            "Rhetorical Synthesis"
+          ],
+          "diffs": [
+            "Easy",
+            "Medium",
+            "Hard"
+          ],
+          "questionIds": [
+            "967a29a9"
+          ],
+          "count": 1
+        }
+      ],
+      "explanations": {
+        "d855ac19": "B is correct. There is often a large gap between desired and actual numbers is a complete clause. The Germany example explains that gap, so a colon can introduce it. The other choices fuse the example to the first clause or use only a comma between complete clauses.",
+        "e6d93586": "D is correct. The subject is the astonishing Japanese stone circles at Oyu; its verb is bear. Keep the subject with its verb. These adjectives build one noun group, so no comma belongs after astonishing or Japanese either."
+      },
+      "tip": "Thursday, October 8, before class. This third set is required. Four questions, five minutes, notes closed. Predict before choices. Choose, flag a specific doubt if needed, and move on. Return after answering all four.\nReview every miss and any correct answer that took more than 75 seconds. Keep one short note about the evidence that ends the decision.\nComplete the separate full-length Bluebook sitting at the agreed family time if it is still pending, then bring the score report and missed questions to class."
+    }
+  ]
 },
-
   // Class route only. Existing completion keys retain their start date.
   "Faith": {
     title: "Class route — homework follows the class",

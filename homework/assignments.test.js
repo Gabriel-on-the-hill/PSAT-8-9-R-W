@@ -99,11 +99,11 @@ for (const [student, plan] of Object.entries(HOMEWORK)) {
 
         // ── 2 & 3 · every draw must resolve to enough real questions ───────────
         const draws = day.sections
-            ? day.sections.map(s => ({ skills: s.skills, diffs: s.diffs, count: s.count }))
+            ? day.sections.map(s => ({ skills: s.skills, diffs: s.diffs, count: s.count, questionIds: s.questionIds }))
             : [{ skills: day.skills, diffs: day.diffs, count: day.count }];
 
         for (const d of draws) {
-            const pool = poolFor(d.skills || [], d.diffs || []);
+            const pool = poolFor(d.skills || [], d.diffs || []).filter(q => !d.questionIds || d.questionIds.includes(q.id));
             const label = (d.skills || []).join(' + ') + ' @ ' + (d.diffs || []).join('/');
             ok(`${tag}: "${label}" exists in the bank`, pool.length > 0,
                 'EMPTY POOL — check the skill name (it uses an em dash "—", not a hyphen) ' +
@@ -119,7 +119,7 @@ for (const [student, plan] of Object.entries(HOMEWORK)) {
             const used = {};
             let set = [];
             for (const sec of day.sections) {
-                const pool = QB.filter(q => !used[q.id] && sec.skills.includes(q.skill) && sec.diffs.includes(q.difficulty));
+                const pool = QB.filter(q => !used[q.id] && sec.skills.includes(q.skill) && sec.diffs.includes(q.difficulty) && (!sec.questionIds || sec.questionIds.includes(q.id)));
                 const picked = w.prioritizePool(pool).slice(0, sec.count);
                 picked.forEach(q => used[q.id] = true);
                 set = set.concat(picked);

@@ -127,6 +127,10 @@ function build(day) {
     const probe = w.document.createElement('script');
     probe.textContent = PROBE;
     w.document.body.appendChild(probe);
+    const pinned = w.__QB().filter(q => q.skill === 'Inferences' && q.difficulty === 'Medium').slice(-1)[0];
+    PLAN.days[5] = {n:6, focus:'selected passage', minutes:0, review:0,
+        sections:[{skills:['Inferences'],diffs:['Medium'],questionIds:[pinned.id],count:1}],
+        explanations:{[pinned.id]:'Selected passage feedback.'},tip:'x'};
     w.HOMEWORK['__TEST__'] = JSON.parse(JSON.stringify(PLAN));
     freezeDraw(w);
     installClock(w);
@@ -164,6 +168,10 @@ function reopen(day, store, mode) {
     const probe = w.document.createElement('script');
     probe.textContent = PROBE;
     w.document.body.appendChild(probe);
+    const pinned = w.__QB().filter(q => q.skill === 'Inferences' && q.difficulty === 'Medium').slice(-1)[0];
+    PLAN.days[5] = {n:6, focus:'selected passage', minutes:0, review:0,
+        sections:[{skills:['Inferences'],diffs:['Medium'],questionIds:[pinned.id],count:1}],
+        explanations:{[pinned.id]:'Selected passage feedback.'},tip:'x'};
     w.HOMEWORK['__TEST__'] = JSON.parse(JSON.stringify(PLAN));
     freezeDraw(w);
     installClock(w);
@@ -610,6 +618,17 @@ function finish() {
         ok('and every question served is the rule the day named',
             served.length === 2 && served.every(q => q && q.ruleType === 'Dash'),
             served.map(q => (q && q.ruleType) || '?').join(', '));
+    }
+
+    {
+        const w = build(6);
+        const chosen = PLAN.days[5].sections[0].questionIds[0];
+        const q = w.__QB().find(q => q.id === chosen);
+        w.__setAnswers = [q.answer];
+        commit(w); pickRight(w); grade(w); finishSet(w);
+        eq('a selected passage is actually served by the runner', recs(w)[0].id, chosen);
+        ok('selected feedback is visible in review', $(w,'finish').textContent.includes('Selected passage feedback.'));
+        ok('feedback does not mutate the shared bank', q.explanation !== 'Selected passage feedback.');
     }
 
     console.log('\n' + '─'.repeat(64));

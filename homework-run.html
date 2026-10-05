@@ -104,15 +104,15 @@
   .lbl{font-size:.8rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.03em;margin-top:.7rem}
   .saved{font-size:.78rem;color:var(--good);font-weight:700;margin-top:.25rem;height:1rem}
 </style>
-<script src="gate.js?v=20260929"></script>
-<script src="whoami.js?v=20260929"></script>
+<script src="gate.js?v=20261005"></script>
+<script src="whoami.js?v=20261005"></script>
 <script src="data-craft-structure.js?v=20260909"></script>
 <script src="data-expression-of-ideas.js?v=20260909"></script>
 <script src="data-info-ideas.js?v=20260909"></script>
 <script src="data-conventions.js?v=20260909"></script>
 <script src="progress.js?v=20261005"></script>
 <script src="sheet-sync.js?v=20260825"></script>
-<script src="homework/assignments.js?v=20261005"></script>
+<script src="homework/assignments.js?v=20261005&rev=2"></script>
 </head>
 <body>
 <div class="wrap">
@@ -203,6 +203,13 @@
   // explanation text.
   var HW_QUARANTINE = {};
   QB = QB.filter(function(q){ return q && !HW_QUARANTINE[q.id]; });
+
+  // Per-set feedback uses copies so shared bank entries and other plans stay intact.
+  if(spec.explanations) QB = QB.map(function(q) {
+    var explanation = spec.explanations[q.id];
+    if(typeof explanation !== 'string') return q;
+    return Object.assign({}, q, {explanation:explanation});
+  });
 
   var QB_ID_MAP={};
   QB.forEach(function(q){
@@ -313,6 +320,7 @@
       var secPool=QB.filter(function(q){
         if(_used[q.id]) return false;
         if(sec.skills && sec.skills.length && sec.skills.indexOf(q.skill)<0) return false;
+        if(sec.questionIds && sec.questionIds.length && sec.questionIds.indexOf(q.id)<0) return false;
         if(sec.diffs && sec.diffs.length && sec.diffs.indexOf(q.psatDifficulty)<0) return false;
         // OPTIONAL THIRD AXIS. `skill` + `difficulty` cannot express a rule. Ask for
         // "Boundaries, Hard" and the 102 items behind it are 47 comma questions and
@@ -451,8 +459,8 @@
                                             ph:'Contrast, continuation, cause–effect, example or sequence — and why…' },
     'Rhetorical Synthesis':               { q:'What must the correct answer DO? Name the goal — do not try to write the sentence.',
                                             ph:'It must compare / define / emphasise / introduce / present findings…' },
-    'Boundaries':                         { q:'Does each side stand alone as a sentence? Then say which mark that forces.',
-                                            ph:'e.g. “Both complete → semicolon or period”, or “second half is not complete → no mark”' },
+    'Boundaries':                         { q:'What does the blank separate: list items, an interruption, or clauses? State the deciding structure.',
+                                            ph:'e.g. “Internal commas → semicolons between list items”, “close the paired mark”, or “two independent clauses → sentence boundary”' },
     'Form, Structure, and Sense':         { q:'What form does the sentence require? Say the rule, not the choice.',
                                             ph:'e.g. “plural verb — the subject is ‘studies’”' },
   };

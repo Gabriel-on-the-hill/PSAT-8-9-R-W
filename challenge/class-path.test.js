@@ -17,7 +17,8 @@ const account=Object.keys(roster).find(n=>roster[n].some(s=>s.learningPath&&!s.l
 let set;
 if(account){set=roster[account].at(-1);w.sessionStorage.setItem(USER_KEY,account);
  const plans={};new Function('window',read('homework/assignments.js'))(plans);
- ok(plans.HOMEWORK[account].days.length===0&&plans.HOMEWORK[account].challenge===set.setId,'homework stays unassigned while the class route is active');
+ const plan=plans.HOMEWORK[account];
+ ok(plan && (!plan.classOnly || (plan.days.length===0 && plan.challenge===set.setId)), 'a class-only plan has no homework and points at its class route');
  const prior=new Set(roster[account].slice(0,-1).flatMap(s=>s.ids));
  ok(set.ids.every(id=>!prior.has(id)),'new scored list does not mutate or overlap earlier denominators');
  ok(set.learningPath.steps.every(q=>q.followUp),'every teaching miss has a different follow-up');
