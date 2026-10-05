@@ -1,8 +1,10 @@
 // ─────────────────────────────────────────────────────────────────
 // whoami.js  —  Who is this session, with no gate in front of it.
 //
-// This replaces the identity half of the old gate.js. The password gate is
-// gone: nothing here blocks, prompts or hides the page. All it does is work
+// ON EVERY APP PAGE gate.js IS LOADED FIRST AND THIS FILE DOES NOTHING — see
+// the __psatGate check below. What follows describes a page with NO gate (a
+// tool that deliberately asks for no password): nothing here blocks, prompts
+// or hides the page. All it does is work
 // out a name for the session, because a great deal downstream is keyed to
 // one:
 //
@@ -32,6 +34,18 @@
 (function () {
     var SESSION_KEY = 'psat89_user';     // read by storage.js, sheet-sync.js, et al.
     var REMEMBER_KEY = 'psat89_user_last';
+
+    // ON A GATED PAGE THIS FILE STANDS ASIDE. The app always has a password
+    // (tutor's decision, 29 Sep 2026), and the password is what names the
+    // session — that is how the tutor sheet knows which student did the work,
+    // and what the one-login-at-a-time lease is keyed on. A ?user= on the URL,
+    // or a name remembered from an earlier visit, must not be able to relabel a
+    // logged-in session, and this file must not replace gate.js's lockMastery
+    // (which releases the lease). gate.js loads first and sets __psatGate.
+    if (window.__psatGate) {
+        try { window.psatUser = sessionStorage.getItem(SESSION_KEY) || ''; } catch (e) { window.psatUser = ''; }
+        return;
+    }
 
     function clean(name) {
         if (!name) return '';

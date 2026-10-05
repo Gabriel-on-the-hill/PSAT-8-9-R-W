@@ -55,6 +55,53 @@ Three deliberate properties:
   of the session write too. Concurrent posts from one tutor's handful of students are not a real
   risk; revisit if that ever stops being true.
 
+## One login at a time (29 Sep 2026)
+
+A student password opens the app in **one tab, on one device, at a time.** `gate.js` asks this script
+for a lease on the student's name when the password is accepted (`doGet`, `action=lease`, JSONP),
+beats it once a minute, and releases it when the tab closes (`doPost` via `sendBeacon`; a released
+name frees 20 seconds later, so moving between pages never drops it). A second tab or device asking
+for a name that is already live is **refused**. A lease nobody has beaten for 150 seconds is dead.
+
+Two tabs appear on first use (or run `setupLogins` once): **Active Logins** — one row per student; a
+blank Token means not logged in, and **clearing a student's Token cell frees a stuck login** — and
+**Login Log** (granted / refused / lost). Tutor logins never take a lease.
+
+**Redeploy is required** (Deploy → Manage deployments → edit → New version, same deployment so the
+`/exec` URL does not change). Until then the gate gets no readable answer and lets the student in —
+it fails open by design. `tutor-sheet/lease.test.js` runs `lease_()` against an in-memory sheet.
+
+## What the 8 Sep 2026 outage was, and what changed here
+
+Between **24 Aug and 7 Sep** every question row landed with a **blank `Logged at`**, and the
+matching session rows stopped arriving. Because the blank started on a date rather than on a
+student, it looked student-specific only by accident: Luke's first sitting was 24 Aug, so *all* of
+his work fell on the broken side and none of it could be dated. That is what made the September
+performance write-up unable to say when anything happened.
+
+Black-box probes of the live endpoint on 8 Sep (POST a throwaway payload, read the reply) established:
+
+- `doPost` returns `ok` and **the session rows write correctly** to both `Homework` and `Sessions`,
+  timestamps included. The tab routing and the summary write are fine.
+- **`appendQuestions_` was throwing on every call** and the empty `catch` was eating it. `ok` was
+  being returned for a post that wrote half of what it claimed.
+
+Three changes above, in order of how much they matter:
+
+1. **The catch no longer swallows.** The reply is now `ok | questions failed: <the actual error>`.
+   This is the change that matters most — the previous failure was invisible for two weeks purely
+   because the only signal was the word `ok`.
+2. **The grid is grown before `setValues`.** `setValues` throws if the range runs past the last row
+   of the sheet; `appendRow` would have grown it. A `Questions` tab that has had its spare rows
+   deleted stops accepting rows silently, which matches the observed behaviour exactly.
+3. **Column A can no longer be blank.** If a `Date` does not arrive, `new Date()` is used. A
+   timestamp that is off by milliseconds is recoverable; a blank one is not.
+
+**Still unverified, and worth one look in the Apps Script UI:** whether more than one web-app
+deployment is live. Maysa's 27–28 Aug sittings produced session rows while Luke's never have, which
+is hard to explain from one deployment. **Deploy → Manage deployments** lists them; there should be
+exactly one, and its URL must match `SHEET_SYNC_ENDPOINT` in `sheet-sync.js`.
+
 ## Two known limits (neither is biting today)
 
 1. **`buildPlan()` cannot express `sections`.** It reads `skills/diffs/count/minutes/tip` only. A
@@ -74,7 +121,7 @@ edit the existing web app → **New version → Deploy**. Keep the same URL, or 
 > snapshot. Until **New version → Deploy** is done, every set a student submits still writes only
 > the session row, and the per-question detail for those sets is recoverable **only** by parsing
 > `Raw payload` by hand afterwards. Redeploy before the next set is due, not after.
->
+> 
 > Nothing needs to change on the client. `homework-run.html` has been posting `questions[]` all
 > along; this is purely a matter of the backend finally writing it down.
 
@@ -95,6 +142,9 @@ edit the existing web app → **New version → Deploy**. Keep the same URL, or 
 function doPost(e) {
   try {
     var data = JSON.parse((e && e.postData && e.postData.contents) || '{}');
+    // gate.js releases its login with navigator.sendBeacon when a tab closes.
+    // It is not a completion, so it must never reach the Homework/Sessions tabs.
+    if (data.action === 'lease') return leaseReply_(lease_(data));
     var ss   = SpreadsheetApp.getActiveSpreadsheet();
     var tab  = (data.type === 'homework') ? 'Homework' : 'Sessions';
     var sheet = ss.getSheetByName(tab) || ss.insertSheet(tab);
@@ -115,12 +165,22 @@ function doPost(e) {
       (data.seconds != null ? data.seconds : ''), JSON.stringify(data)]);
 
     // The session row is the thing that must never be lost. Anything that goes wrong
-    // writing the per-question detail is swallowed here, on purpose: a Questions tab
+    // writing the per-question detail is caught here, on purpose: a Questions tab
     // that is missing a set is a nuisance, a Homework tab that is missing a set is a
     // hole in the record.
-    try { appendQuestions_(ss, data, loggedAt, focus); } catch (qErr) {}
+    //
+    // BUT IT IS NO LONGER SWALLOWED. Until 8 Sep 2026 this catch block was empty, and
+    // appendQuestions_ failed silently for weeks: the reply said 'ok', the session rows
+    // kept arriving, and nobody could see that the per-question detail had stopped.
+    // The reply now names the error. The client still cannot read it — the POST is
+    // `no-cors` — but a hand-run smoke test can, and that is the whole point: one curl
+    // or one fetch from the console now tells you what is actually wrong, instead of
+    // 'ok'. Do not put the empty catch back.
+    var qErrMsg = '';
+    try { appendQuestions_(ss, data, loggedAt, focus); }
+    catch (qErr) { qErrMsg = ' | questions failed: ' + qErr; }
 
-    return ContentService.createTextOutput('ok');
+    return ContentService.createTextOutput('ok' + qErrMsg);
   } catch (err) {
     return ContentService.createTextOutput('error: ' + err);
   }
@@ -143,6 +203,13 @@ function appendQuestions_(ss, data, loggedAt, focus) {
   var qs = Array.isArray(data.questions) ? data.questions : [];
   if (!qs.length) return;
 
+  // Column A is the documented join key back to the session row. Every question row
+  // logged between 24 Aug and 7 Sep 2026 has it BLANK, which cost the ledger the
+  // ability to date any of Luke's work at all. Whatever reached this function with no
+  // usable Date, it must never write an empty timestamp again: fall back to now, which
+  // is wrong by milliseconds rather than wrong by everything.
+  var at = (loggedAt instanceof Date && !isNaN(loggedAt)) ? loggedAt : new Date();
+
   var sheet = ss.getSheetByName('Questions') || ss.insertSheet('Questions');
   if (sheet.getLastRow() === 0) {
     sheet.getRange(1, 1, 1, QUESTION_COLUMNS.length)
@@ -159,7 +226,7 @@ function appendQuestions_(ss, data, loggedAt, focus) {
   var type    = data.type || 'session';
   var rows = qs.map(function (q, i) {
     return [
-      loggedAt, student, type, focus, i + 1,
+      at, student, type, focus, i + 1,
       val_(q.id), val_(q.skill), val_(q.difficulty),
       val_(q.chosen), val_(q.correct),
       (q.isCorrect === undefined || q.isCorrect === null) ? '' : !!q.isCorrect,
@@ -170,7 +237,16 @@ function appendQuestions_(ss, data, loggedAt, focus) {
       val_(q.prediction)
     ];
   });
-  sheet.getRange(sheet.getLastRow() + 1, 1, rows.length, QUESTION_COLUMNS.length)
+  // setValues writes into the EXISTING grid and throws if the range runs off the
+  // bottom of it — unlike appendRow, which grows the sheet for you. A tab whose spare
+  // rows have been deleted (tidying a log tab is the most natural thing in the world)
+  // therefore stops accepting question rows the moment it fills up, and every failure
+  // after that is one line of red in a log nobody reads. Grow the grid first.
+  var firstRow = sheet.getLastRow() + 1;
+  var overflow = (firstRow + rows.length - 1) - sheet.getMaxRows();
+  if (overflow > 0) sheet.insertRowsAfter(sheet.getMaxRows(), overflow);
+
+  sheet.getRange(firstRow, 1, rows.length, QUESTION_COLUMNS.length)
        .setValues(rows);
 }
 
@@ -184,6 +260,7 @@ function val_(v) {
 // Browser reads cross-origin via JSONP, so we honour a ?callback= param.
 function doGet(e) {
   var p = (e && e.parameter) || {};
+  if (p.action === 'lease') return leaseReply_(lease_(p), p.callback);   // gate.js — see section 3
   if (p.action === 'plan' && p.student) {
     var plan = buildPlan(p.student);
     var json = JSON.stringify(plan);
@@ -236,5 +313,132 @@ function fmtDate(v) {
   if (isNaN(dt)) return String(v);
   var m = ('0' + (dt.getMonth() + 1)).slice(-2), d = ('0' + dt.getDate()).slice(-2);
   return dt.getFullYear() + '-' + m + '-' + d;   // always YYYY-MM-DD
+}
+
+// ---- 3. One login at a time ---------------------------------------
+// gate.js asks for a LEASE on a student's name the moment a student password
+// is accepted, and keeps it alive with a beat once a minute. One live lease per
+// name: a second tab, browser or device asking for the same name while a lease
+// is live is REFUSED, not given a takeover. A lease not beaten for
+// LEASE_TTL_SEC is dead, so a laptop that sleeps frees the name on its own.
+//
+// Two tabs you can read and edit:
+//   Active Logins — one row per student. A blank Token means "not logged in".
+//                   To free a stuck login, clear that student's Token cell.
+//   Login Log     — granted / refused / lost, with the time.
+//
+// Tutor sessions never ask for a lease. This is a deterrent against sharing a
+// login, not security: the gate runs in the browser. The log is the useful part.
+// Same logic as the sister app's lease_() in rw-apps-script.md; this script has
+// none of that one's helpers, so it carries its own.
+var LEASE_TAB         = 'Active Logins';
+var LEASE_LOG_TAB     = 'Login Log';
+var LEASE_TTL_SEC     = 150;   // two missed beats (gate.js beats every 60s)
+var LEASE_GRACE_SEC   = 20;    // how long a released lease still answers to its own token
+var LEASE_COLUMNS     = ['Student', 'Token', 'Since', 'Last seen', 'App'];
+var LEASE_LOG_COLUMNS = ['Timestamp', 'Student', 'Event', 'Token', 'Detail'];
+
+function lease_(p) {
+  var op      = String(p.op || '');
+  var student = String(p.student || '').replace(/[^A-Za-z '\-]/g, '').trim().slice(0, 24);
+  var token   = String(p.token || '').replace(/[^A-Za-z0-9]/g, '').slice(0, 64);
+  if (['acquire', 'beat', 'release'].indexOf(op) < 0) return { ok: false, error: 'bad op' };
+  if (!student || !token) return { ok: false, error: 'missing student or token' };
+
+  var lock = LockService.getScriptLock();
+  lock.waitLock(10000);                         // two tabs asking at once must not both win
+  try {
+    var sheet = leaseTab_(LEASE_TAB, LEASE_COLUMNS);
+    var W = LEASE_COLUMNS.length;               // Student, Token, Since, Last seen, App
+    var now = new Date();
+
+    var last = sheet.getLastRow(), rowNo = 0, row = null;
+    if (last >= 2) {
+      var vals = sheet.getRange(2, 1, last - 1, W).getValues();
+      for (var i = 0; i < vals.length; i++) {
+        if (String(vals[i][0]).trim().toLowerCase() === student.toLowerCase()) { rowNo = i + 2; row = vals[i]; break; }
+      }
+    }
+    var heldBy = row ? String(row[1] || '').trim() : '';
+    var seen   = row ? leaseTime_(row[3]) : 0;
+    var live   = !!heldBy && seen > 0 && (now.getTime() - seen) < LEASE_TTL_SEC * 1000;
+    var mine   = live && heldBy === token;
+
+    function write(tok, since, lastSeen) {
+      if (!rowNo) rowNo = sheet.getLastRow() + 1;
+      sheet.getRange(rowNo, 1, 1, W).setValues([[
+        row ? row[0] : student, tok, since, lastSeen, tok ? String(p.app || 'PSAT 8/9 R&W').slice(0, 40) : ''
+      ]]);
+    }
+
+    // A release is sent on EVERY pagehide, including moving from one page of the
+    // app to the next, so it must not free the name outright or write a log row.
+    // The lease is aged to die LEASE_GRACE_SEC from now instead: the same tab
+    // walks straight back in, a closed tab frees the name shortly after.
+    if (op === 'release') {
+      if (live && heldBy === token) {
+        write(heldBy, row[2], new Date(now.getTime() - (LEASE_TTL_SEC - LEASE_GRACE_SEC) * 1000));
+        return { ok: true, released: true };
+      }
+      return { ok: true, released: false };     // not ours: never free someone else's login
+    }
+
+    if (mine) {                                 // a beat, or a new page in the same tab
+      write(token, row[2] || now, now);
+      return { ok: true };
+    }
+
+    if (live) {                                 // somebody else holds it — refuse
+      var idle = Math.round((now.getTime() - seen) / 1000);
+      leaseLog_(student, op === 'beat' ? 'lost' : 'refused', token,
+                'held by ' + heldBy.slice(0, 6) + ', last seen ' + idle + 's ago');
+      return { ok: false, reason: 'held', idleSecs: idle, ttlSecs: LEASE_TTL_SEC };
+    }
+
+    write(token, now, now);                     // free, or the old lease went stale
+    leaseLog_(student, 'granted', token,
+              op === 'beat' ? 're-claimed on a beat' : (heldBy ? 'previous login had expired' : ''));
+    return { ok: true, granted: true };
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+function leaseTab_(name, cols) {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName(name) || ss.insertSheet(name);
+  if (sheet.getLastRow() === 0) {
+    sheet.getRange(1, 1, 1, cols.length).setValues([cols]);   // setValues, not appendRow: see the note above QUESTION_COLUMNS
+    sheet.setFrozenRows(1);
+  }
+  return sheet;
+}
+
+function leaseTime_(v) {
+  if (!v) return 0;
+  var t = (v instanceof Date) ? v.getTime() : new Date(v).getTime();
+  return isNaN(t) ? 0 : t;
+}
+
+function leaseLog_(student, event, token, detail) {
+  var row = [new Date(), student, event, String(token || '').slice(0, 6), detail || ''];
+  leaseTab_(LEASE_LOG_TAB, LEASE_LOG_COLUMNS).appendRow(row);
+}
+
+/** JSON for the beacon, JSONP for the gate. The callback name is validated. */
+function leaseReply_(obj, callback) {
+  var cb = String(callback || '');
+  if (/^[A-Za-z_$][A-Za-z0-9_$]{0,63}$/.test(cb)) {
+    return ContentService.createTextOutput(cb + '(' + JSON.stringify(obj) + ');')
+      .setMimeType(ContentService.MimeType.JAVASCRIPT);
+  }
+  return ContentService.createTextOutput(JSON.stringify(obj))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
+/** Run once from the editor to create the two tabs (they also appear on first use). */
+function setupLogins() {
+  leaseTab_(LEASE_TAB, LEASE_COLUMNS);
+  leaseTab_(LEASE_LOG_TAB, LEASE_LOG_COLUMNS);
 }
 ```

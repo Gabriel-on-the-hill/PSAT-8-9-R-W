@@ -31,7 +31,7 @@ NODE_PATH=/tmp/j/node_modules node challenge/structured-class.test.js # reasons,
 NODE_PATH=/tmp/j/node_modules node challenge/class-path.test.js     # ordered attempts, fresh gates, independent transfer
 NODE_PATH=/tmp/j/node_modules node ratio-mix.test.js                 # custom practice in a ratio
 NODE_PATH=/tmp/j/node_modules node ruletype.test.js                  # Conventions tagged by rule
-NODE_PATH=/tmp/j/node_modules node gate.test.js                      # tutor pages stay tutor-only
+NODE_PATH=/tmp/j/node_modules node gate.test.js                      # tutor pages stay tutor-only; one login at a time
 NODE_PATH=/tmp/j/node_modules node session-responses.test.js         # moving between questions
 NODE_PATH=/tmp/j/node_modules node session-nav.e2e.test.js           # ... in the real runner
 node session-flush.test.js                                           # an unfinished sitting still reports
@@ -41,6 +41,7 @@ NODE_PATH=/tmp/j/node_modules node baseline.e2e.test.js              # the scree
 NODE_PATH=/tmp/j/node_modules node baseline-sync.test.js             # the tutor actually receives it
 NODE_PATH=/tmp/j/node_modules node baseline-recover.test.js          # a stranded baseline can be sent
 NODE_PATH=/tmp/j/node_modules node tutor-sheet/tutor-dashboard.test.js # the dashboard can read the sheet
+node tutor-sheet/lease.test.js                                       # one login at a time (server half)
 node cache-tags.test.js                                              # students get the CURRENT files
 ```
 
@@ -65,6 +66,27 @@ hung.
 **`SKIP` is not a pass, and it looks like one.** Without jsdom every suite above prints
 `SKIP` and exits 0. On 17 Jul 2026 all five had been skipping while a doc asserted they
 were green. Check the last line says `ALL n ASSERTIONS PASSED`.
+
+## Every page has a password, and one login at a time
+
+**The app always asks for a password** (tutor's decision, 29 Sep 2026). The password is what names
+the session: it is how every row on the tutor sheet is attributed to a student, and it is what the
+lease below is keyed on. `whoami.js` still loads on the hub, the runner and progress, but on any page
+that carries `gate.js` it **stands aside** (`window.__psatGate`): a `?user=` or a remembered name can
+never relabel a logged-in session, and it does not replace gate.js's `lockMastery`. `gate.test.js`
+holds all of this. A tool that genuinely wants no password (the question search, say) loads
+`whoami.js` without `gate.js` — never the app's own pages.
+
+**One login at a time.** `gate.js` asks the tutor sheet's script for a lease on the student's name
+when the password is accepted, beats it every 60 seconds, and releases it with `sendBeacon` on
+`pagehide`. A second tab or device asking for a live name is **refused** (no takeover); a duplicated
+tab is caught over a `BroadcastChannel`. Tutor sessions never take a lease. It **fails open**: no
+reply lets the student in. A release ages the lease to die 20 seconds later rather than freeing it,
+because it is sent on every page change. The tutor frees a stuck login by clearing the student's
+Token cell in the **Active Logins** tab; refusals are in **Login Log**. The server half is section 3
+of `tutor-sheet/psat-apps-script.md`, tested by `tutor-sheet/lease.test.js` — **redeploy the script
+after changing it**. `LEASE_ENDPOINT` in `gate.js` must equal `SHEET_SYNC_ENDPOINT`; the test checks.
+Same design as the sister app — change one, change both. Deterrent, not security.
 
 ## The tutor sheet is NOT shared with the sister app
 

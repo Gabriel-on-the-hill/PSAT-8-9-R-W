@@ -46,7 +46,10 @@ pageHtml = pageHtml.replace(
         const file = path.join(__dirname, src);
         if (!fs.existsSync(file)) throw new Error('page references a missing file: ' + src);
         inlined.push(src);
-        return '<script>' + fs.readFileSync(file, 'utf8') + '</script>';
+        // Escape any literal </script> in the file: gate.js carries one in its
+        // header comment, and unescaped it ends the block there and dumps the
+        // rest of the file into the page as markup (see gate.test.js).
+        return '<script>' + fs.readFileSync(file, 'utf8').replace(/<\/script/gi, '<\\/script') + '</script>';
     });
 pageHtml = pageHtml.replace(/<link[^>]*fonts\.googleapis[^>]*>/g, '');
 
