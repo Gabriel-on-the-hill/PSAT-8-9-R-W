@@ -439,3 +439,22 @@ fact about the test.**
 can see it, but it is **not** a property of `window`. Tests must inject a probe script to reach
 it. `prioritizePool` and `recordAnswer` are function declarations, so they *are* on `window`,
 which is how tests stub them.
+
+## Cross out, the timed-set lock, and review logging (5 Oct 2026)
+
+- **`eliminator.js` is the Bluebook cross-out tool, on every surface that shows A–D**: the
+  practice/exam runner (`app.js`), the homework runner, the baseline, the challenge review,
+  and both class routes. The strike control is a `<span>` *inside* each option button, so no
+  surface's DOM changes — `box.children`, `.opt`, `.copt`, `.option-btn` and `#xOptions
+  button` all still find exactly four options. A new surface that shows options should call
+  `Eliminator.decorate(container, {ns, id, selector})` and, if it logs, add
+  `Eliminator.report(ns, id, answer)` (`elim`, `elimAnswer`) to its per-question payload.
+  Guarded by `eliminator.test.js`, `homework/homework-run.test.js` §13 and
+  `challenge/structured-class.test.js`.
+- **A submitted TIMED homework day is one sitting.** The hub stops offering "Do it again" and
+  `homework-run.html` refuses a fresh run; review stays open. Untimed days are unchanged.
+- **Review is logged.** Opening a review, finishing a redo, and leaving with new "what went
+  wrong" notes each post a `review` row (Sessions tab). A class route posts a `class-route`
+  row per finished block, with the typed reason in the Prediction column. None of these
+  touch mastery or the first-attempt record.
+- **The class route offers the independent set only after the four checks.**

@@ -29,7 +29,7 @@ fails if the dashboard stops being able to read what it writes.
 
 ```
 Logged at · Student · Type · Day / Focus / Skills · # · Question ID · Skill · Difficulty
-         · Chosen · Correct · Right · Seconds · On text · On options · Prediction
+         · Chosen · Correct · Right · Seconds · On text · On options · Prediction · Crossed out
 ```
 
 **Why this was worth porting.** The per-question array was always arriving — `homework-run.html`
@@ -197,7 +197,7 @@ function doPost(e) {
 // file; a second literal would make which schema it validates a coin toss.
 var QUESTION_COLUMNS = ['Logged at', 'Student', 'Type', 'Day / Focus / Skills',
   '#', 'Question ID', 'Skill', 'Difficulty', 'Chosen', 'Correct', 'Right',
-  'Seconds', 'On text', 'On options', 'Prediction'];
+  'Seconds', 'On text', 'On options', 'Prediction', 'Crossed out'];
 
 function appendQuestions_(ss, data, loggedAt, focus) {
   var qs = Array.isArray(data.questions) ? data.questions : [];
@@ -220,6 +220,13 @@ function appendQuestions_(ss, data, loggedAt, focus) {
     // whole column to plain text before a single row lands in it.
     var idCol = QUESTION_COLUMNS.indexOf('Question ID') + 1;
     sheet.getRange(1, idCol, sheet.getMaxRows(), 1).setNumberFormat('@');
+  } else if (sheet.getLastColumn() < QUESTION_COLUMNS.length) {
+    // A tab created before a column was added (5 Oct 2026: "Crossed out") keeps its old
+    // header row. Write only the missing header cells, so old rows stay aligned and the
+    // new column is named.
+    var have = sheet.getLastColumn();
+    sheet.getRange(1, have + 1, 1, QUESTION_COLUMNS.length - have)
+         .setValues([QUESTION_COLUMNS.slice(have)]).setFontWeight('bold');
   }
 
   var student = data.student || '(unknown)';
@@ -234,7 +241,11 @@ function appendQuestions_(ss, data, loggedAt, focus) {
       // Untimed sets ask her to TYPE the reasoning; this column is the reason the
       // tab exists. Keep it last — it is long, and it should not push the numbers
       // off the right-hand edge of the screen.
-      val_(q.prediction)
+      val_(q.prediction),
+      // eliminator.js (5 Oct 2026): the letters she crossed out, and a flag when the
+      // RIGHT answer was among them at any point — eliminating on "sounds wrong".
+      // Last, so every column before it keeps the position old rows already have.
+      (q.elim || '') + (q.elimAnswer ? ' (crossed out the answer)' : '')
     ];
   });
   // setValues writes into the EXISTING grid and throws if the range runs off the

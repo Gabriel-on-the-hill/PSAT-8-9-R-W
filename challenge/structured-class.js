@@ -14,6 +14,24 @@
     return memory[k] || (memory[k]={lesson:{index:0,reasons:[],answers:[]},gate:{index:0,reasons:[],answers:[]},reasonsReady:false,transferStarted:false,transferDone:false});
   }
   function save(ctx,s) { try { localStorage.setItem(key(ctx),JSON.stringify(s)); } catch(e) {} }
+  // The typed reasons are the diagnostic part of a class route, and until 5 Oct 2026 they
+  // lived only in this browser's localStorage. When a block (learning steps, the four
+  // checks, the exit checks) is finished, it now posts one Sessions row typed
+  // `class-route`, with one Questions row per item: what was chosen, whether it was right,
+  // what was crossed out, and the reason typed before the choices appeared (in the
+  // Prediction column). Mastery is untouched: class answers still earn no credit.
+  function postBlock(ctx,qs,block,label) {
+    try {
+      if(typeof syncSessionToSheet!=='function')return;
+      var L='ABCD',rows=qs.map(function(q,i){
+        var a=block.answers[i],e=(typeof Eliminator!=='undefined')?Eliminator.report('route:'+ctx.student+':'+ctx.set.setId+':'+label,q.id,q.answer):{elim:'',elimAnswer:false};
+        return {id:q.id,skill:q.skill,difficulty:q.psatDifficulty||q.difficulty,chosen:(a==null?null:L[a]),correct:q.answer,
+          isCorrect:a===q.answerIndex,prediction:block.reasons[i]||'',stage:q.stage||'',elim:e.elim,elimAnswer:e.elimAnswer};
+      });
+      syncSessionToSheet({source:'class-route',student:ctx.student,focus:ctx.set.setId+' · '+label+'s',
+        score:rows.filter(function(r){return r.isCorrect;}).length,total:rows.length,questions:rows});
+    } catch(e) {}
+  }
   function completeTransfer(ctx) { var s=state(ctx);s.transferStarted=true;s.transferDone=true;save(ctx,s); }
   function render(ctx) {
     var path=ctx.set.learningPath,s=state(ctx);
@@ -33,7 +51,7 @@
       paint('<div class="cbox"><p>'+esc(path.intro)+'</p><p>'+esc(path.order)+'</p></div>'+
         '<div class="crow">'+button('scLearn',s.lesson.done?'Review the learning responses':'Retrieval and two methods')+
         (s.lesson.done?button('scGate',s.gate.done?'Review the four checks':'Four fresh checks'):'')+
-        (!s.transferStarted?button('scOff','When your tutor says: independent set, clock off'):'')+
+        (!s.transferStarted&&s.gate.done?button('scOff','When your tutor says: independent set, clock off'):'')+
         (ready()&&!s.transferStarted?button('scTimed','Independent set: six questions, seven minutes'):'')+
         (s.transferStarted&&!s.transferDone?button('scResume','Resume the independent set'):'')+
         (s.transferDone&&!s.exit?button('scExit','Choose two exit checks'):'')+
@@ -47,7 +65,9 @@
       wire('scExit',function(){if(s.exit)run(s.exit.ids.map(function(id){return exits.find(function(q){return q.id===id;});}),s.exit,'Exit check',false);else selectExits();});
     }
     function start(timed) {
-      if(s.transferStarted || (timed&&!ready()))return;
+      // The six are offered only after the four checks (5 Oct 2026): pressed early, the
+      // clock-off button used the independent set up before anything had been taught.
+      if(s.transferStarted || !s.gate.done || (timed&&!ready()))return;
       if(ctx.transfer(transfer,timed?420:0)){s.transferStarted=true;s.clock=timed?'countdown':'off';save(ctx,s);}
     }
     function feedback(q,block,i) {
@@ -72,13 +92,14 @@
         el('scReason').value=committed?block.reasons[i]:'';el('scReason').disabled=committed;
         el('scCommit').style.display=committed?'none':'';el('scOptions').style.display=committed?'block':'none';
         el('scNext').disabled=!chosen;
-        document.querySelectorAll('#scOptions button').forEach(function(b){b.disabled=immediate&&chosen;b.style.borderColor=Number(b.dataset.i)===block.answers[i]?'#7c3aed':'';});
+        document.querySelectorAll('#scOptions .copt').forEach(function(b){b.disabled=immediate&&chosen;var on=Number(b.dataset.i)===block.answers[i];b.style.borderColor=on?'#7c3aed':'';b.classList.toggle('sel',on);});
         if(immediate&&chosen)el('scFeedback').innerHTML=feedback(q,block,i);
       }
+      if(typeof Eliminator!=='undefined')Eliminator.decorate(el('scOptions'),{ns:'route:'+ctx.student+':'+ctx.set.setId+':'+label,id:q.id,selector:'.copt'});
       el('scReason').oninput=function(){el('scCommit').disabled=el('scReason').value.trim().length<2;};
       wire('scCommit',function(){var value=el('scReason').value.trim();if(value.length<2||block.reasons[i]!==undefined)return;block.reasons[i]=value;save(ctx,s);refresh();});
-      document.querySelectorAll('#scOptions button').forEach(function(b){b.onclick=function(){if(block.reasons[i]===undefined||(immediate&&block.answers[i]!==undefined))return;block.answers[i]=Number(b.dataset.i);save(ctx,s);refresh();};});
-      wire('scNext',function(){if(block.answers[i]===undefined)return;if(typeof recordExposure==='function')recordExposure(q.bankId||q.id,'class',block.answers[i]===q.answerIndex);block.index++;if(block.index===qs.length)block.done=true;save(ctx,s);run(qs,block,label,immediate);});
+      document.querySelectorAll('#scOptions .copt').forEach(function(b){b.onclick=function(){if(block.reasons[i]===undefined||(immediate&&block.answers[i]!==undefined))return;block.answers[i]=Number(b.dataset.i);save(ctx,s);refresh();};});
+      wire('scNext',function(){if(block.answers[i]===undefined)return;if(typeof recordExposure==='function')recordExposure(q.bankId||q.id,'class',block.answers[i]===q.answerIndex);block.index++;if(block.index===qs.length){block.done=true;postBlock(ctx,qs,block,label);}save(ctx,s);run(qs,block,label,immediate);});
       refresh();
     }
     function selectExits() {

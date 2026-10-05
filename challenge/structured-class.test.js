@@ -7,7 +7,7 @@ let count=0;
 function ok(c,m){assert.ok(c,m);count++;}
 async function setup(saved){
  const errors=[];
- const dom=new JSDOM(html,{url:'http://localhost/index.html',runScripts:'dangerously',beforeParse(w){w.fetch=()=>Promise.resolve({ok:true});w.alert=()=>{};w.confirm=()=>true;w.scrollTo=()=>{};w.addEventListener('error',e=>errors.push(e.message));}});
+ const dom=new JSDOM(html,{url:'http://localhost/index.html',runScripts:'dangerously',beforeParse(w){w.__posts=[];w.fetch=(u,o)=>{try{w.__posts.push(JSON.parse(o.body));}catch(e){}return Promise.resolve({ok:true});};w.alert=()=>{};w.confirm=()=>true;w.scrollTo=()=>{};w.addEventListener('error',e=>errors.push(e.message));}});
  const w=dom.window,$=id=>w.document.getElementById(id);
  if(saved)Object.entries(saved).forEach(([k,v])=>w.localStorage.setItem(k,v));
  function inject(s){const e=w.document.createElement('script');e.textContent=s;w.document.body.appendChild(e);}
@@ -15,7 +15,7 @@ async function setup(saved){
  const account=Object.keys(w.CHALLENGE_SETS).find(n=>w.CHALLENGE_SETS[n].at(-1).learningPath?.protectedTransfer);
  const set=w.CHALLENGE_SETS[account].at(-1),p=set.learningPath;
  w.sessionStorage.setItem('psat89_user',account);
- for(const f of ['config.js','progress.js','sheet-sync.js','session-responses.js','storage.js','timer.js','history.js','data-craft-structure.js','data-expression-of-ideas.js','data-info-ideas.js','data-conventions.js','app.js','homework/assignments.js','challenge/challenge-core.js','challenge/structured-class.js','challenge/class-path.js','challenge/challenge.js'])inject(read(f));
+ for(const f of ['config.js','progress.js','sheet-sync.js','session-responses.js','storage.js','timer.js','history.js','data-craft-structure.js','data-expression-of-ideas.js','data-info-ideas.js','data-conventions.js','eliminator.js','app.js','homework/assignments.js','challenge/challenge-core.js','challenge/structured-class.js','challenge/class-path.js','challenge/challenge.js'])inject(read(f));
  inject('window.__peek=function(){return {questions:activeQuestions,mode:userMode,timer:countdownRemaining,timerMode:timerMode,bank:questionBank,answers:responses};};window.__expire=function(){countdownRemaining=0;handleTimeUp();};');
  if(w.document.readyState==='loading')await new Promise(resolve=>w.document.addEventListener('DOMContentLoaded',resolve));
  function reason(){ $('scReason').value='the exact relationship or sentence spine';$('scReason').dispatchEvent(new w.Event('input'));$('scCommit').click(); }
@@ -34,16 +34,21 @@ async function main(){
  ok(set.ids.every(id=>!prior.has(id)),'scored class IDs preserve prior challenge denominators');
  const fresh=p.checks.concat(p.transfer.map(bankId=>({bankId})),p.exitChoices).map(q=>q.bankId);
  ok(new Set(fresh).size===14,'fresh checks, independent and exits do not overlap');
- ok($('scOff')&&!$('scTimed'),'protected clock-off set is available without a timer bypass');
+ ok(!$('scOff')&&!$('scTimed'),'no independent set is offered before the four checks');
  $('scLearn').click();ok($('scOptions').style.display==='none'&&$('scNext').disabled,'prediction precedes visible choices');
  t.reason();const saved=t.storage();t.close();
  t=await setup(saved);({w,$,p,set}=t);$('scLearn').click();
  ok($('scReason').disabled&&$('scOptions').style.display==='block','reload keeps the first committed prediction');
  const first=w.__peek().bank.find(q=>q.id===p.steps[0].bankId);t.choose(first.answer.charCodeAt(0)-65);$('scNext').click();
- p.steps.slice(1).forEach(q=>t.answer(q));$('scHome').click();$('scGate').click();
+ ok(w.document.querySelectorAll('#scOptions .elim-x').length===4&&w.document.querySelectorAll('#scOptions button').length===4,'route choices carry the cross-out control without adding buttons');
+ p.steps.slice(1).forEach(q=>t.answer(q));
+ {const post=w.__posts.find(x=>x.type==='class-route'&&/Learning steps/.test(x.focus));
+  ok(post&&post.questions.length===p.steps.length,'finished learning steps post a class-route row, one question each');
+  ok(post&&post.questions.slice(1).every(q=>q.prediction==='the exact relationship or sentence spine'),'the typed reasons reach the sheet as the prediction');}
+ $('scHome').click();$('scGate').click();
  p.checks.forEach(q=>{t.reason();const item=w.__peek().bank.find(x=>x.id===q.bankId);t.choose(item.answer.charCodeAt(0)-65);ok(!$('scFeedback').textContent,'readiness feedback withheld before all four');$('scNext').click();});
  ok($('scReasons')&&$('challengeScreen').textContent.includes('Your prediction:'),'answer checks display original reasons for tutor review');
- $('scHome').click();ok(!$('scTimed'),'correct answers alone cannot enable the clock');
+ $('scHome').click();ok(!$('scTimed'),'correct answers alone cannot enable the clock');ok($('scOff'),'clock-off independent set is offered once the four checks are done');
  $('scGate').click();$('scReasons').click();ok($('scTimed'),'tutor reason review enables seven-minute option');
  ok(Object.keys(w.getProgress()).length===0,'retrieval, repair and readiness checks award no mastery');
  const met=w.getExposure();
