@@ -78,7 +78,7 @@
       el('scReason').oninput=function(){el('scCommit').disabled=el('scReason').value.trim().length<2;};
       wire('scCommit',function(){var value=el('scReason').value.trim();if(value.length<2||block.reasons[i]!==undefined)return;block.reasons[i]=value;save(ctx,s);refresh();});
       document.querySelectorAll('#scOptions button').forEach(function(b){b.onclick=function(){if(block.reasons[i]===undefined||(immediate&&block.answers[i]!==undefined))return;block.answers[i]=Number(b.dataset.i);save(ctx,s);refresh();};});
-      wire('scNext',function(){if(block.answers[i]===undefined)return;block.index++;if(block.index===qs.length)block.done=true;save(ctx,s);run(qs,block,label,immediate);});
+      wire('scNext',function(){if(block.answers[i]===undefined)return;if(typeof recordExposure==='function')recordExposure(q.bankId||q.id,'class',block.answers[i]===q.answerIndex);block.index++;if(block.index===qs.length)block.done=true;save(ctx,s);run(qs,block,label,immediate);});
       refresh();
     }
     function selectExits() {

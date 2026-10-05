@@ -27,6 +27,11 @@
 //     it. They were mid-week when the ladder landed and nobody's homework should
 //     grow by two questions overnight. **Drop the line when you next re-assign.**
 //
+// CLASS MISSES, OPT-IN. `reviewClassMisses: true` on a plan (or a day) lets a
+// question MISSED in a class route come back as review once the miss cooldown
+// clears. Class items carry no ledger row, so without it they never return.
+// Baseline misses never qualify. See the exposure section in AGENTS.md.
+//
 // AUTHOR THE COUNTS AROUND IT. A six-question day is now 4 new + 2 review, not 6 + 2.
 // Short sets she finishes still beat long sets she abandons.
 // ══════════════════════════════════════════════════════════════════

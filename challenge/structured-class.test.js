@@ -46,6 +46,8 @@ async function main(){
  $('scHome').click();ok(!$('scTimed'),'correct answers alone cannot enable the clock');
  $('scGate').click();$('scReasons').click();ok($('scTimed'),'tutor reason review enables seven-minute option');
  ok(Object.keys(w.getProgress()).length===0,'retrieval, repair and readiness checks award no mastery');
+ const met=w.getExposure();
+ ok(p.steps.concat(p.checks).every(q=>met[q.bankId]&&met[q.bankId].by.class&&met[q.bankId].by.class.result==='correct'),'every committed step and check is recorded as met, with its result, outside the ledger');
  $('scTimed').click();let peek=w.__peek();
  ok(peek.mode==='exam'&&peek.timer===420&&peek.questions.map(q=>q.id).join()===p.transfer.join(),'actual runner uses exact six and seven minutes');
  ok(!$('timerDisplay').classList.contains('hidden'),'ready transfer shows countdown');
