@@ -109,6 +109,43 @@ section('Merge metadata and content identity are sound');
         id !== canonical && !canonicalIds.has(id)));
 }
 
+section('Retired questions cannot reach any draw');
+{
+    // Retired 8 Oct 2026: SAT-bank and book questions, replaced by the full College Board PSAT 8/9
+    // bank. They live in retired/data-retired.js, which NO page loads, so homework, practice,
+    // review and the challenge builder cannot draw them. Bringing one back is a deliberate move of
+    // its record into a data file. These checks fail if the retired file is ever wired into a page
+    // or a retired record drifts back into a bank file by accident.
+    const RET = path.join(APP, 'retired', 'data-retired.js');
+    const retired = fs.existsSync(RET)
+        ? JSON.parse(fs.readFileSync(RET, 'utf8').replace(/^[\s\S]*?=\s*/, '').replace(/;\s*$/, ''))
+        : [];
+    const pages = [];
+    (function walk(dir) {
+        for (const f of fs.readdirSync(dir)) {
+            const p = path.join(dir, f);
+            if (f === 'node_modules' || f === '.git' || f === 'retired') continue;
+            if (fs.statSync(p).isDirectory()) walk(p);
+            else if (/\.(html|js)$/.test(f) && !/\.test\.js$/.test(f)) pages.push(p);
+        }
+    })(APP);
+    const loaders = pages.filter(p => /data-retired|questionBank_RETIRED/.test(fs.readFileSync(p, 'utf8')));
+    ok('no page or script loads the retired file', loaders.length === 0,
+        loaders.map(p => path.relative(APP, p)).join(', '));
+    const live = new Set(QB.map(q => q.id));
+    const back = retired.filter(q => live.has(q.id));
+    ok('no retired question is back in a bank file', back.length === 0, back.map(q => q.id).join(', '));
+    // Questions a live plan or challenge set names by id stay until those plans are retired.
+    // `retireAfter` dates the follow-up; see RETIREMENT-RECORD.md outside this repo.
+    const held = QB.filter(q => q.retireAfter);
+    const plans = ['homework/assignments.js', 'challenge/sets.js', 'challenge/class-path.js',
+        'challenge/structured-class.js'].map(f => fs.existsSync(path.join(APP, f)) ? read(f) : '').join('\n');
+    const orphan = held.filter(q => !plans.includes(q.id));
+    ok('every held SAT/book question is still named by a plan (otherwise retire it)', orphan.length === 0,
+        orphan.map(q => q.id).join(', '));
+    ok('only SAT/book questions carry retireAfter', held.every(q => q.origin !== 'cb-psat89'));
+}
+
 section('Provisional questions are eligible without taking over a pool');
 {
     const provisional = QB.filter(q => q.difficultyStatus === 'provisional');
@@ -137,7 +174,9 @@ section('Underline references have one coherent target');
         const closes = (passage.match(/<\/u>/gi) || []).length;
         const singular = /underlined\s+(?:sentence|claim|portion|phrase|line)\b/i.test(question);
         return (!q.image && opens === 0) || opens !== closes || opens > 3 ||
-            (singular && opens > 1) || /<u>[\s\S]*<u>/i.test(passage);
+            // nested = a second <u> opens before the first closes. (The old pattern, /<u>[\s\S]*<u>/,
+            // also matched two separate spans, so it forbade the "three underlined portions" items.)
+            (singular && opens > 1) || /<u>(?:(?!<\/u>)[\s\S])*<u>/i.test(passage);
     });
     ok('no underline target is missing, scattered, nested, or unbalanced', broken.length === 0,
         broken.map(q => q.id).join(', '));

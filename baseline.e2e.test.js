@@ -76,7 +76,10 @@ t('page loads all of its own dependencies', () => {
         .forEach(f => ok(inlined.includes(f), 'page does not load ' + f));
 });
 t('page boots with no script errors', () => eq(pageErrors, []));
-t('bank assembled in the page', () => eq(ev('questionBank.length'), 683));
+// Expected size comes from the four data files themselves, so a bank import does not need a test edit.
+const BANK_SIZE = ['data-craft-structure.js', 'data-expression-of-ideas.js', 'data-info-ideas.js', 'data-conventions.js']
+    .reduce((n, f) => n + (fs.readFileSync(path.join(__dirname, f), 'utf8').match(/^  \{$/gm) || []).length, 0);
+t('bank assembled in the page', () => eq(ev('questionBank.length'), BANK_SIZE));
 t('form built to 22 items', () => eq(ev('Q.length'), 22));
 t('form note tells the student which sitting this is', () => {
     const s = doc.getElementById('formNote').textContent;

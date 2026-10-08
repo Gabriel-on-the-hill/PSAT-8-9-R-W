@@ -3061,5 +3061,5787 @@ const questionBank_II = [
     "psatDifficulty": "Hard",
     "altIds": [],
     "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "c2fe3dc4",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Easy",
+    "passage": "Hevea brasiliensis, a tree in the Amazon rainforest, is the world’s main source of natural rubber. The tree produces a milky substance called latex that is used to make rubber. The bark of Hevea brasiliensis is helpful for the process of making rubber because it has a unique structure that makes it easy to collect latex. A network of tubes in the tree’s inner bark helps the latex to flow out easily when people make small cuts into the bark.",
+    "question": "What feature of Hevea brasiliensis does the text say is helpful for the process of making rubber?",
+    "options": [
+      "A. Its latex produces rubber of an especially high quality.",
+      "B. Its bark has a unique structure that makes it easy to collect latex.",
+      "C. It is able to grow in a wide variety of climates around the world.",
+      "D. It is one of only two trees in the Amazon that produce latex."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most accurately states what feature of Hevea brasiliensis is helpful for the process of making rubber. According to the text, this tree species produces latex, which is used to make rubber, and its inner bark contains a \"network of tubes\" that, when cut, enables the latex to flow out. The text explicitly states that this feature of Hevea brasiliensis is \"helpful for the process of making rubber.\" Choice A is incorrect because the text doesn’t mention the quality of the rubber produced from the latex of Hevea brasiliensis or compare its quality to that of rubber produced from other sources. Choice C is incorrect because the text never discusses the climates in which Hevea brasiliensis grows. Moreover, the text mentions only one region where this tree is found: the Amazon rainforest. Choice D is incorrect. Because the text states that Hevea brasiliensis is the world’s \"main source of natural rubber,\" it can be inferred that there is at least one other source. However, the text doesn’t specify whether that other source is also a tree species and, if so, whether that species grows in the Amazon rainforest.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "09322f3e",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Easy",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "A. 2000–2004.",
+      "B. 1995–1999.",
+      "C. 1970–1974.",
+      "D. 1985–1989."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most effectively uses data from the table to complete the statement about video game availability. The text states that just a few games released in the past are available today and then indicates that there is a period of years from which only 14.22 percent of the games released are available. The table shows that 14.22 percent of games are still available from the years 1995–1999. Choice A is incorrect because the years 2000–2004 are not represented in the table. Choice C is incorrect because the years 1970–1974 are not represented in the table. Choice D is incorrect because the years 1985–1989 correspond to a percentage of games still available of 15.38 percent, not 14.22 percent.",
+    "image": "assets/coeq_09322f3e.png",
+    "alt": "Data figure: Video Game Availability by Initial Release Years Initial release years Percentage of games still available. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "b52e4f97",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Easy",
+    "passage": "",
+    "question": "Which choice best describes data from the graph that support the researchers’ conclusion?",
+    "options": [
+      "A. There were about as many drawings with an example of an insect as there were with an example of a bird.",
+      "B. The fewest number of drawings contained an example of a bird.",
+      "C. More of the drawings had an example of an insect than an example of a mammal.",
+      "D. More of the drawings had an example of a mammal than either an example of a bird or an example of an insect."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it accurately describes data from the graph that support the researchers’ conclusion that children may be more aware of mammals than of other animals. The graph presents the percent of drawings by schoolchildren that contained an example of an animal from a certain group (mammals, birds, or insects). The graph shows that approximately 80% of the drawings contained an example of a mammal, while only approximately 69% contained an example of a bird and only about 55% contained an example of an insect. The fact that mammals were included in more drawings than either birds or insects were supports the idea that children may be particularly aware of mammals in their environments. Choice A is incorrect because the graph shows that there were not \"about as many\" drawings with insects as there were drawings with birds (approximately 69% of the drawings included an example of a bird, while only about 55% included an example of an insect). Further, comparing only the numbers for birds and insects wouldn’t indicate anything about the schoolchildren’s awareness of mammals. Choice B is incorrect because the graph shows that insects, not birds, were the group that appeared in the fewest number of drawings (approximately 69% of the drawings included an example of a bird but only about 55% included an example of an insect). Further, stating that examples from one nonmammal group appeared in the fewest number of drawings would provide no evidence about the schoolchildren’s awareness of mammals. Choice C is incorrect because the graph shows that more drawings had an example of a mammal than an example of an insect, not the other way around (approximately 80% of the drawings included an example of a mammal, while only about 55% included an example of an insect). Further, examples of a nonmammal group appearing in more drawings than examples of mammals did would actually weaken the claim that schoolchildren may be more aware of mammals than of other animals.",
+    "image": "assets/coeq_b52e4f97.png",
+    "alt": "Data figure: Percent of Drawings Containing an Example of Each Animal Group. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "db168a6e",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Easy",
+    "passage": "",
+    "question": "According to the graph, about what percentage of participants mentioned costs in the interviews?",
+    "options": [
+      "A. 10%",
+      "B. 95%",
+      "C. 25%",
+      "D. 50%"
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it states the percentage of participants who mentioned costs in the interviews conducted by Judith Hilton and her team. The text states that Hilton and her team interviewed participants about factors that would encourage them to switch from single- use plastic containers to reusable containers. The graph presents three factors mentioned in the interviews (convenience, costs, and established behaviors) and the percentage of participants who mentioned each one. The graph shows that about 50% of participants mentioned costs as a factor. Choice A is incorrect because the graph shows that about 50% of participants, not 10%, mentioned costs as a factor. Choice B is incorrect because the graph shows that about 50% of participants, not 95%, mentioned costs as a factor. Choice C is incorrect because the graph shows that about 50% of participants, not 25%, mentioned costs as a factor.",
+    "image": "assets/coeq_db168a6e.png",
+    "alt": "Data figure: Percentage of Participants Who Mentioned Factors. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "e5b0ddba",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Easy",
+    "passage": "",
+    "question": "According to the table, in which year was the dolphin with the ID FB43 recorded with her calf?",
+    "options": [
+      "A. 1999",
+      "B. 2012",
+      "C. 2020",
+      "D. 1992"
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it accurately reflects the data in the table. According to the table, the dolphin with ID FB43 has a recording year of 1992. Choice A is incorrect. None of the dolphins in the table have a recording year of 1999. Choice B is incorrect. The table shows 2012 as the recording year for the dolphin with ID FB07, not ID FB43. Choice C is incorrect. None of the dolphins in the table have a recording year of 2020.",
+    "image": "assets/coeq_e5b0ddba.png",
+    "alt": "Data figure: Recordings of Female Bottlenose Dolphins with Their Calves Dolphin ID Recording year. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "b5b20421",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Easy",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the graph to complete the sentence?",
+    "options": [
+      "A. jet fuel.",
+      "B. POP biofuel.",
+      "C. ethanol.",
+      "D. gasoline."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most effectively uses data from the graph to complete the sentence about which fuel has the highest energy density. Of the four bars in the graph, the highest (indicating the greatest energy density in MJ/L) is for POP biofuel. According to the graph, the energy densities of the fuels shown are approximately 40 MJ/L for POP biofuel, 36 MJ/L for gasoline, 34 MJ/L for jet fuel, and 23 MJ/L for ethanol. Choice A is incorrect. The task is to find the fuel in the graph with the highest bar (indicating the greatest energy density in MJ/L), and jet fuel has the third-highest bar in the graph, not the highest. According to the graph, the energy densities of the fuels shown are approximately 40 MJ/L for POP biofuel, 36 MJ/L for gasoline, 34 MJ/L for jet fuel, and 23 MJ/L for ethanol. Choice C is incorrect. The task is to find the fuel in the graph with the highest bar (indicating the greatest energy density in MJ/L), and ethanol has the lowest bar in the graph, not the highest. According to the graph, the energy densities of the fuels shown are approximately 40 MJ/L for POP biofuel, 36 MJ/L for gasoline, 34 MJ/L for jet fuel, and 23 MJ/L for ethanol. Choice D is incorrect. The task is to find the fuel in the graph with the highest bar (indicating the greatest energy density in MJ/L), and gasoline has the second-highest bar in the graph, not the highest. According to the graph, the energy densities of the fuels shown are approximately 40 MJ/L for POP biofuel, 36 MJ/L for gasoline, 34 MJ/L for jet fuel, and 23 MJ/L for ethanol.",
+    "image": "assets/coeq_b5b20421.png",
+    "alt": "Data figure: Energy Density of Four Fuels. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "20ce4e60",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Easy",
+    "passage": "The average age at which people in the United States start businesses is 35. Economist Andrés Hincapié studied why young adults are relatively less likely to start businesses and whether there are ways to increase entrepreneurship in early adulthood. Hincapié found that one impediment is lack of knowledge about the practical details of how businesses are started; he further found that simply providing young adults with good informational resources on the topic significantly alleviates this problem.",
+    "question": "Based on the text, what would Hincapié most likely say is a promising way to increase entrepreneurship in early adulthood?",
+    "options": [
+      "A. Creating social networks of young adults who are interested in starting a business",
+      "B. Encouraging young adults to brainstorm business ideas",
+      "C. Providing young adults with practical information about how to start a business",
+      "D. Giving young adults training opportunities at a variety of businesses"
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it presents a conclusion about increasing entrepreneurship in early adulthood that can be reasonably inferred from the text. The text explains that Andrés Hincapié investigated why young adults are less likely than older adults to start businesses and found that lack of knowledge of practical aspects of starting a business is a barrier. The text then states that Hincapié found that providing relevant informational resources greatly helps address that problem. Offering young adults practical information about how to start a business would be an example of providing relevant informational resources, so Hincapié would most likely say it is a promising way to increase early adult entrepreneurship. Choice A is incorrect because creating social networks of young adults interested (but presumably inexperienced) in starting a business wouldn’t involve a clear source of practical information for those young adults, and the text indicates that Hincapié identified offering relevant informational resources about starting a business as a way to significantly reduce the problem of young adults’ low participation in entrepreneurship. Choice B is incorrect because encouraging young people to brainstorm business ideas wouldn’t involve a clear source of practical information for those young adults, and the text indicates that Hincapié identified offering relevant informational resources about starting a business as a way to significantly reduce the problem of young adults’ low participation in entrepreneurship. Choice D is incorrect because providing young adults with training opportunities at existing businesses would give those young people exposure to businesses that already exist but not necessarily information about how to start a business, and the text indicates that Hincapié identified offering relevant informational resources about starting a business as a way to significantly reduce the problem of young adults’ low participation in entrepreneurship.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "51b79633",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Easy",
+    "passage": "In the 1700s and 1800s, European composers experimented with volume in their musical works. They did so by increasing the number of musicians playing in the orchestra. For example, in some of his operas, German composer Richard Wagner added more horns, trombones, and tubas to the orchestra. With more instruments playing at the same time, the orchestra could play extremely loudly at key moments in his operas.",
+    "question": "According to the text, how did Richard Wagner achieve moments of extremely high volume in his operas?",
+    "options": [
+      "A. By moving the performances of his operas from outdoor stages to indoor ones",
+      "B. By increasing the number of musicians playing horns, trombones, and tubas in the orchestra",
+      "C. By building a concert hall whose shape would cause sounds to echo",
+      "D. By insisting that the singers undergo special training to sing for extended periods of time"
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it presents a statement about how Richard Wagner achieved moments of extremely high volume in his operas that is supported by the text. The text states that European composers experimented with volume in their works by increasing the number of musicians in the orchestra and provides the example of Wagner, who \"added more horns, trombones, and tubas to the orchestra.\" The text explains that by having more of these instruments playing at the same time, the overall volume of the orchestra could be dramatically increased at key moments in Wagner’s operas. Choice A is incorrect because the text never indicates that Wagner moved his operas indoors to achieve moments of extremely high volume, nor does it indicate that his operas were previously performed outdoors. The only technique discussed in the text for achieving extremely high volume is Wagner’s addition of more instruments to create a bigger, louder orchestra. Choice C is incorrect because the text never says that Wagner built or used a specially designed concert hall to increase volume through echoes. The only technique discussed in the text is Wagner’s addition of more instruments to create a bigger, louder orchestra. Choice D is incorrect because the text never mentions any special training for singers related to volume or singing for extended periods. The text’s focus is entirely on the orchestra and how Wagner and other European composers used instruments to experiment with volume in their musical works.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "04fec446",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Easy",
+    "passage": "The following text is from David Barclay Moore’s 2022 novel Holler of the Fireflies. The narrator has just arrived at summer camp, which is far away from his home.\n\nThis place was different than I thought it would be. I’d never been somewhere like this before. I did feel scared, but also excited.\n\n©2022 by David Barclay Moore",
+    "question": "According to the text, how does the narrator feel about being at summer camp?",
+    "options": [
+      "A. He feels overjoyed.",
+      "B. He feels peaceful.",
+      "C. He feels both scared and excited.",
+      "D. He feels both angry and jealous."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most accurately states how the narrator feels about being at summer camp. In the text, the narrator states that after arriving at the camp, he found it to be different than he’d expected and that as a result, he felt \"scared, but also excited.\" Choice A is incorrect. In the text, the narrator describes himself as \"excited.\" Although excitement is a positive emotion, it isn’t as intensely positive as feeling overjoyed is. Moreover, the narrator also notes that he felt \"scared.\" In other words, his excitement (a positive emotion) is balanced with fear (a negative emotion). Given this mixture of positive and negative emotions, it would be inaccurate to characterize the narrator as overjoyed. Choice B is incorrect because in the text, the narrator describes himself as having felt both fear and excitement. Neither of these emotions can be thought of as peaceful and, in fact, are almost the opposite of a sense of peace. Choice D is incorrect because in the text, the narrator describes himself as both \"scared\" and \"excited,\" not angry and jealous.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "a4a5eb75",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Easy",
+    "passage": "",
+    "question": "According to the graph, which city had the largest population in 1891?",
+    "options": [
+      "A. Toronto",
+      "B. Montréal",
+      "C. Québec City",
+      "D. Halifax"
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because the graph shows that Montréal had the largest population in 1891 among the four cities represented. According to the data points in the graph for the year 1891, Montréal’s population was approximately 220,000, which is greater than the respective populations of Toronto (approximately 180,000), Québec City (approximately 60,000), and Halifax (approximately 40,000). Choice A is incorrect because Toronto’s population in 1891 was approximately 180,000, which is the second largest among the four cities shown but still clearly smaller than Montréal’s population of approximately 220,000. Choice C is incorrect because Québec City had a population of approximately 60,000 in 1891, making it only the third largest of the four cities shown. Choice D is incorrect because Halifax had a population of approximately 40,000 people in 1891. Of the four cities shown in the graph, Halifax has the smallest population, not the largest.",
+    "image": "assets/coeq_a4a5eb75.png",
+    "alt": "Data figure: Census Data for Four Canadian Cities. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "e1c17b20",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Easy",
+    "passage": "The following text is adapted from Sylvia Acevedo’s 2018 memoir Path to the Stars: My Journey from Girl Scout to Rocket Scientist. The narrator is traveling by car with her family to Mexico City. Mario and Laura are her brother and sister.\n\nMario and I played games to see how many different license plates we could spot, and Laura liked to look for children in the back seats of the cars we passed. We were used to the forty-five-minute drive to El Paso and familiar with the six-hour ride to Chihuahua, but I wondered what the long journey to Mexico City would be like.\n\n©2018 by Sylvia Acevedo",
+    "question": "According to the text, what did the narrator and Mario do while riding in the car?",
+    "options": [
+      "A. They read books.",
+      "B. They sang songs.",
+      "C. They went to sleep.",
+      "D. They played games."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most accurately describes what the narrator and Mario did while riding in the car. The text describes a car trip that the narrator is taking with her family. The text states that during the car ride, the narrator and Mario \"played games\" to see how many different license plates they could spot. Choice A is incorrect because the text doesn’t mention the narrator and Mario reading during the car ride and instead describes them playing games. Choice B is incorrect because the text doesn’t mention the narrator and Mario singing songs during the car ride and instead describes them playing games. Choice C is incorrect because the text doesn’t mention the narrator and Mario sleeping during the car ride and instead describes them playing games.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "bf131886",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Easy",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the graph to complete the sentence?",
+    "options": [
+      "A. wild boar.",
+      "B. eastern gray kangaroo.",
+      "C. African bush elephant.",
+      "D. white-tailed deer."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it accurately identifies the species with the highest global biomass, the white-tailed deer at approximately 2.7 million metric tons. The graph shows the global biomass for four wild land mammal species with the highest global biomass. The graph indicates that the African bush elephant’s global biomass is about 1.3 million metric tons, the eastern gray kangaroo’s is about 0.6 million metric tons, and the wild boar’s is about 1.9 million metric tons. These values are all lower than the global biomass for the white-tailed deer’s approximately 2.7 million metric tons. Thus, the white-tailed deer is the species with the highest global biomass. Choice A is incorrect because although the graph indicates that the wild boar has a relatively high global biomass of about 1.9 million metric tons, it is not the species with the highest value. The white-tailed deer is the species with the highest global biomass at about 2.7 million metric tons. Choice B is incorrect because the eastern gray kangaroo has the lowest global biomass value shown on the graph at about 0.6 million metric tons, not the highest global biomass. The white-tailed deer has the highest at about 2.7 million metric tons. Choice C is incorrect because although the African bush elephant has a substantial global biomass of about 1.3 million metric tons, it is not the species with the highest value according to the graph. The white-tailed deer has the highest global biomass at about 2.7 million metric tons.",
+    "image": "assets/coeq_bf131886.png",
+    "alt": "Data figure: Top Four Species of Wild Land Mammals by Global Biomass. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "cfa34fe5",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Easy",
+    "passage": "",
+    "question": "Based on the information in the table, at what depth does the southern stoplight loosejaw live?",
+    "options": [
+      "A. More than 2,000 meters below the surface",
+      "B. 150 to 400 meters below the surface",
+      "C. 500 to 2,000 meters below the surface",
+      "D. 250 to 500 meters below the surface"
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer. The table shows the depths below the ocean surface at which four species of deep-sea fish live. According to the table, the range of depths at which the southern stoplight loosejaw lives is 500–2,000 meters below the surface. Choice A is incorrect because the table indicates that the southern stoplight loosejaw lives 500–2,000 meters below the ocean surface, not at depths more than 2,000 meters below the surface. Choice B is incorrect because the table indicates that the southern stoplight loosejaw lives 500–2,000 meters below the ocean surface, not 150–400 meters below the surface. Choice D is incorrect because the table indicates that the southern stoplight loosejaw lives 500–2,000 meters below the ocean surface, not 250–500 meters below the surface.",
+    "image": "assets/coeq_cfa34fe5.png",
+    "alt": "Data figure: Depths at Which Four Deep-Sea Fish Species Live Species Depth below the ocean surface. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "e35a864c",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Easy",
+    "passage": "",
+    "question": "According to the table, what is the total area of Bahrain?",
+    "options": [
+      "A. 4,268,873 square miles",
+      "B. 4,471 square miles",
+      "C. 304 square miles",
+      "D. 6,880 square miles"
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it states the total area of Bahrain that is indicated in the table. The table presents the total area (in square miles) and population for Bahrain, Qatar, and Kuwait, and it indicates that the total area of Bahrain is 304 square miles. Choice A is incorrect because the table indicates that 4,268,873 is the population of Kuwait, not the total area of Bahrain. Choice B is incorrect because the table indicates that 4,471 square miles is the total area of Qatar, not of Bahrain. Choice D is incorrect because the table indicates that 6,880 square miles is the total area of Kuwait, not of Bahrain.",
+    "image": "assets/coeq_e35a864c.png",
+    "alt": "Data figure: Total Areas and 2022 Populations of Smallest Arabian Peninsula Countries Country Total area (square miles) Population. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "a6baa3f8",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Easy",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the student’s claim?",
+    "options": [
+      "A. 50%.",
+      "B. 15%.",
+      "C. 90%.",
+      "D. 29%."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it effectively uses data from the table to complete the student’s claim about the highest percentage of bus stops with shaded shelter in the areas represented. The table shows the highest average surface temperature of five areas and the percentage of bus stops with shaded shelter in each area, and 29% is the highest percentage listed. Choice A is incorrect because the list of percentages of bus stops with shaded shelter does not include 50%; the highest percentage in the table is 29%. Choice B is incorrect because 15% is the lowest value in the listed percentages of bus stops with shaded shelter, not the highest value. Choice C is incorrect because the list of percentages of bus stops with shaded shelter does not include 90%; the highest percentage in the table is 29%.",
+    "image": "assets/coeq_a6baa3f8.png",
+    "alt": "Data figure: Percentage of Bus Shelters with Shade in a County by Areas’ Highest Average Summer Surface Temperature Highest average surface temperature (Fahrenheit) Percentage of bus stops with shaded shelter 90.2° 15. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "055b7943",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Easy",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "A. April.",
+      "B. March.",
+      "C. January.",
+      "D. February."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it effectively uses data from the table to complete the statement, identifying the month in which the United States had the highest number of housing starts in 2022. According to the table, which shows the number of US housing starts from January to April 2022, the highest number of housing starts was 1,803 thousand, which occurred in April. Choice B is incorrect because March had 1,713 thousand housing starts, which is lower than the number of starts in April and in February. Choice C is incorrect because January had 1,669 thousand housing starts, which is the lowest of all the months listed in the table. Choice D is incorrect because February had 1,771 thousand housing starts, which is lower than the number of starts in April.",
+    "image": "assets/coeq_055b7943.png",
+    "alt": "Data figure: Housing Starts in the US, January–April 2022 (in thousands) Month Housing starts. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Easy",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "da9a6075",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Medium",
+    "passage": "Over the course of the 1900s, more and more Native Hawaiians spoke English instead of the Hawaiian language. To preserve their language, Native Hawaiian teachers founded the ‘Aha Pūnana Leo preschool in 1984. They spoke Hawaiian while teaching, and their Native Hawaiian students were soon able to understand and speak it themselves. The school was a huge success. Eventually it opened locations around Hawai‘i and started teaching Hawaiian to elementary and high school students too. <u>Thanks to ‘Aha Pūnana Leo, the number of young people who speak the language has increased.</u>",
+    "question": "Which statement, if true, would most directly support the underlined claim?",
+    "options": [
+      "A. Fewer than fifty children could speak Hawaiian when ‘Aha Pūnana Leo was founded, but now more than 2,000 students at ‘Aha Pūnana Leo speak it.",
+      "B. Roughly 680,000 Native Hawaiian people lived in the United States in 2020, and a little less than half of them lived in Hawai‘i.",
+      "C. Hawaiian is very similar to other languages that are spoken on the Polynesian Islands of the Pacific Ocean, including Tahitian, Samoan, and Māori.",
+      "D. Besides Native Hawaiians, tens of thousands of people from other Pacific Islander communities live in Hawai‘i today, including over 37,000 Samoans."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents a statement that, if true, would most directly support the claim that the number of young people who speak Hawaiian has increased because of the ‘Aha Pūnana Leo school. The text explains that Native Hawaiian teachers founded the school to help preserve the Hawaiian language by teaching it to children at a time when an increasing number of Native Hawaiians were speaking English instead. If it is true that when ‘Aha Pūnana Leo was founded fewer than fifty children could speak Hawaiian and that now over 2,000 students at the school can speak it, that would directly demonstrate that the school’s efforts have led to a greater number of young people speaking Hawaiian. Choice B is incorrect because information about the total number and location of Native Hawaiian people in a single year wouldn’t reveal anything about the number of young speakers of Hawaiian (particularly since the text indicates that not all Native Hawaiians speak Hawaiian) or about the effect of the ‘Aha Pūnana Leo school on that number, so it wouldn’t have any bearing on the text’s claim. Choice C is incorrect because the fact that Hawaiian is similar to Tahitian, Samoan, Māori, and other languages of the Polynesian Islands wouldn’t reveal anything about the number of young speakers of Hawaiian or the effect of the ‘Aha Pūnana Leo school on that number, so it wouldn’t have any bearing on the text’s claim. Choice D is incorrect because information about non–Native Hawaiian people from Pacific Islander communities living in Hawai‘i today wouldn’t reveal anything about the number of young speakers of Hawaiian or the effect of the ‘Aha Pūnana Leo school on that number, so it wouldn’t have any bearing on the text’s claim.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "3b7fcc89",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Medium",
+    "passage": "The following text is from Beatrice Harraden’s 1894 novel Ships that Pass in the Night.\n\nIn an old second-hand bookshop in London, an old man sat reading Gibbon’s History of Rome. He did not put down his book when the postman brought him a letter. He just glanced indifferently at the letter, and impatiently at the postman. Zerviah Holme did not like to be interrupted when he was reading Gibbon; and as he was always reading Gibbon, an interruption was always regarded by him as an insult.",
+    "question": "Based on the text, how did Zerviah Holme most likely feel when the letter was delivered?",
+    "options": [
+      "A. He felt relieved because he had been expecting an important letter.",
+      "B. He felt excited because the letter was from a good friend.",
+      "C. He felt sad because the postman did not stop to talk with him before leaving.",
+      "D. He felt annoyed because he was interrupted while reading his favorite author."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents a description of how Zerviah Holme felt that is directly supported by the text. The text states that Holme \"did not like to be interrupted\" while reading Gibbon and that he considered interruptions to be \"an insult.\" Furthermore, the text suggests that Gibbon is Holme’s favorite author because, as the text states, \"he was always reading Gibbon.\" Thus, Holme would have felt annoyed at having been interrupted when the letter was delivered. Choice A is incorrect because the text doesn’t suggest that Holme is relieved to receive the letter. Instead, the text states that Holme \"just glanced indifferently at the letter,\" suggesting that the letter wasn’t important to him. Choice B is incorrect because the text doesn’t suggest that Holme is excited to receive the letter. Instead, the text states that Holme didn’t put down his book to receive the letter and that he looked at the letter \"indifferently\" and at the postman \"impatiently.\" This suggests that Holme isn’t excited. Also, there is no mention that Holme knows who sent the letter. Choice C is incorrect because the text doesn’t indicate that Holme is sad or that he wants to speak with the postman. Instead, the text describes Holme as looking \"impatiently at the postman,\" which suggests that he wants the postman to leave.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "2a1e59e3",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Medium",
+    "passage": "The following text is adapted from Frances Hodgson Burnett’s 1911 novel The Secret Garden. Mary, a young girl, recently found an overgrown hidden garden.\n\nMary was an odd, determined little person, and now she had something interesting to be determined about, she was very much absorbed, indeed. She worked and dug and pulled up weeds steadily, only becoming more pleased with her work every hour instead of tiring of it. It seemed to her like a fascinating sort of play.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. Mary hides in the garden to avoid doing her chores.",
+      "B. Mary is getting bored with pulling up so many weeds in the garden.",
+      "C. Mary is clearing out the garden to create a space to play.",
+      "D. Mary feels very satisfied when she’s taking care of the garden."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most accurately states the main idea of the text. The text describes Mary’s activities in an overgrown hidden garden, saying that she was “very much absorbed” and was “only becoming more pleased with her work every hour” rather than getting tired of it. She also thinks of garden activities as a “fascinating sort of play.” Thus, the main idea of the text is that Mary feels very satisfied when taking care of the garden. Choice A is incorrect because the text never makes any mention of Mary’s chores. Choice B is incorrect because the text indicates that Mary finds pulling up weeds to be fascinating, not boring. Choice C is incorrect because Mary thinks of garden activities in and of themselves as play, not as something necessary to do to create a space to play.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "83b074cc",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Medium",
+    "passage": "In the 1960s, Chavela Vargas became an unlikely star in ranchera, a style of traditional Mexican music. Most ranchera singers had clear, polished voices and performed with a full band. But Vargas accompanied her raspy voice with just her guitar. Dressed in men’s trousers and a poncho, she would perform classic songs that had been written from a male point of view and were usually sung by men. She also altered those songs by performing them much more slowly than other ranchera singers did. The slower tempo allowed her to express the emotional quality of the lyrics more fully.",
+    "question": "According to the text, what is one way that Vargas differed from other ranchera singers?",
+    "options": [
+      "A. She possessed a voice that was clear and polished.",
+      "B. She avoided singing songs written from a male point of view.",
+      "C. She disliked performing classic songs.",
+      "D. She altered classic songs by slowing them down."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it accurately describes an aspect of Chavela Vargas that the text indicates is unusual among ranchera artists. According to the text, Vargas differed from other ranchera singers by slowing the tempo of classic songs, which allowed her to express the emotional quality of the lyrics more fully. Choice A is incorrect because the text states that Vargas possessed an unusually raspy voice for a ranchera singer, not a clear and polished voice. Choice B is incorrect because the text indicates that Vargas was known to perform songs written from a male point of view, not that she avoided such songs. Choice C is incorrect because nothing in the text suggests that Vargas disliked performing classic songs. Rather, it suggests that she found innovative ways of performing them to emphasize their emotional content, which seems to suggest an affinity for such songs, not dislike.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "38df8850",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Medium",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the graph to complete the statement?",
+    "options": [
+      "A. 75%.",
+      "B. 10%.",
+      "C. 45%.",
+      "D. 20%."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most effectively uses data from the graph to complete the statement. The graph shows test results for two new battery recycling processes used with two types of lithium-ion batteries, type A and type B. According to the graph, recycling process 2 recovered the highest percentage of lithium in the tests: recovering about 75% from lithium-ion battery type B. Choice B is incorrect because, according to the graph, the highest percentage of lithium recovered in the tests was 75%, not 10%. In fact, none of the tests recovered exactly 10% of lithium from a recycling process. Choice C is incorrect because, according to the graph, the highest percentage of lithium recovered in the tests was 75%, not 45%. In fact, none of the tests recovered exactly 45% of lithium from a recycling process. Choice D is incorrect because, according to the graph, the highest percentage of lithium recovered in the tests was 75%, not 20%. In fact, none of the tests recovered exactly 20% of lithium from a recycling process.",
+    "image": "assets/coeq_38df8850.png",
+    "alt": "Data figure: Test Results for Two New Battery Recycling Processes. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "fc6556b6",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Medium",
+    "passage": "O Pioneers! is a 1913 novel by Willa Cather. In the novel, Cather portrays Alexandra Bergson as having a deep emotional connection to her natural surroundings: ______",
+    "question": "Which quotation from O Pioneers! most effectively illustrates the claim?",
+    "options": [
+      "A. “She had never known before how much the country meant to her. The chirping of the insects down in the long grass had been like the sweetest music. She had felt as if her heart were hiding down there, somewhere, with the quail and the plover and all the little wild things that crooned or buzzed in the sun. Under the long shaggy ridges, she felt the future stirring.”",
+      "B. “Alexandra talked to the men about their crops and to the women about their poultry. She spent a whole day with one young farmer who had been away at school, and who was experimenting with a new kind of clover hay. She learned a great deal.”",
+      "C. “Alexandra drove off alone. The rattle of her wagon was lost in the howling of the wind, but her lantern, held firmly between her feet, made a moving point of light along the highway, going deeper and deeper into the dark country.”",
+      "D. “It was Alexandra who read the papers and followed the markets, and who learned by the mistakes of their neighbors. It was Alexandra who could always tell about what it had cost to fatten each steer, and who could guess the weight of a hog before it went on the scales closer than John Bergson [her father] himself.”"
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents the quotation that most directly illustrates the claim that Cather portrays Alexandra as having a deep emotional connection to her natural surroundings. This quotation states that the country meant a great deal to Alexandra and then goes on to detail several ways in which her natural surroundings affect her emotionally: the insects sound like “the sweetest music,” she feels as though “her heart were hiding” in the grass “with the quail and the plover,” and near the ridges she feels “the future stirring.” Choice B is incorrect because the quotation doesn’t suggest that Alexandra had a deep emotional connection to her natural surroundings but instead describes how she interacts with the people around her to learn more about crops, poultry, and experiments with clover hay. Choice C is incorrect because the quotation doesn’t suggest that Alexandra has a deep emotional connection to her natural surroundings but instead describes her nighttime departure in a wagon. The quotation says nothing about Alexandra’s emotional state. Choice D is incorrect because the quotation doesn’t convey Alexandra’s deep emotional connection to her natural surroundings; instead, this quotation describes how well she understands the markets and livestock.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "04556bc7",
+    "skill": "Inferences",
+    "difficulty": "Medium",
+    "passage": "Individuals with visual impairments who want to experience a solar eclipse may be able to make use of a device that converts light into sound. The device is made up of a microcontroller board and a light sensor that measures the brightness of light shining onto the device. It also has a component called a MIDI, which allows the device to play different sounds. The device plays a high-pitched flute sound in bright light, a neutral- pitched clarinet sound in mid-range light, and a soft clicking sound in low light. After a solar eclipse starts, the sun becomes more covered and the amount of light slowly reduces. Therefore, during a solar eclipse the device will ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. play a flute sound, then a clarinet sound, and then a clicking sound.",
+      "B. play a clicking sound, then a flute sound, and then a clarinet sound.",
+      "C. start with fast clarinet sounds that become steadily slower.",
+      "D. start with a soft flute sound that becomes steadily louder."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most logically completes the text’s discussion of a device that converts light into sound during a solar eclipse. The text states that the device plays different sounds based on the amount of light shining on it, producing a high-pitched flute sound in bright light, a neutral-pitched clarinet sound in mid-range light, and a soft clicking sound in low light. The text also indicates that during a solar eclipse, the sun becomes more covered and the amount of light slowly reduces from full brightness. Thus, because the eclipse begins with full sunlight that progressively decreases, the device would first play a flute sound (bright light), then a clarinet sound (mid-range light), and then a clicking sound (low light). Choice B is incorrect. Based on the text’s description of the sounds the device makes, if the device played clicking sounds, then a flute sound, and then a clarinet sound, the light would have to be going from low to bright to mid-range. But the text indicates that when a solar eclipse starts, the light is bright and then slowly reduces, meaning it would go from bright to mid-range light and then to low light. And even as the sun begins to be less covered again, which isn’t discussed in the text, there’s no reason to think the light would jump from low to bright and then back to mid- range. Choice C is incorrect because the text indicates only that the device plays a distinct sound (flute, clarinet, or clicking) for each of the three levels of brightness, not that it varies the speed of any of those sounds. Choice D is incorrect because the text indicates only that the device plays a distinct sound (flute, clarinet, or clicking) for each of the three levels of brightness, not that it varies the volume of any of those sounds.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "530145de",
+    "skill": "Inferences",
+    "difficulty": "Medium",
+    "passage": "A main goal of the Association for the Advancement of Creative Musicians (AACM), an arts organization founded in 1965, is to advance new works by Black musicians. The AACM achieves this goal in part by focusing on young artists. By having established musicians and composers serve as mentors, the AACM gives young artists the benefits of expert technical training and creative guidance. Numerous organizations offer similar kinds of support to new generations of painters, writers, and other artists, suggesting that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. artists of all ages benefit more from technical training than from creative guidance.",
+      "B. many arts organizations recognize the importance of providing opportunities for young artists to learn from experienced mentors.",
+      "C. most established artists could become even better artists by serving as mentors.",
+      "D. finding a mentor is more important for musicians than it is for painters, writers, and other types of artists."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it presents the conclusion that most logically follows from the text’s discussion of the relationship between the AACM’s use of mentors to support young Black musicians and similar support that other organizations offer their young artists. According to the text, in service of AACM’s goal to support new works by Black musicians, AACM mentors provide beneficial training and guidance to young artists. The text goes on to say that many other art organizations support new artists in similar ways, suggesting that these organizations recognize the importance of providing opportunities for young artists to learn from mentors who are established in their field. Choice A is incorrect because the text gives no indication that technical training is more beneficial than creative guidance. The text states that AACM mentors offer both technical training and creative guidance to young artists and that other arts organizations offer similar kinds of support; however, nothing in the text suggests that young artists, or artists of any age, benefit more from technical training. Choice C is incorrect because the text is mainly concerned with the fact that established artists are mentoring young artists through AACM and other arts organizations. The text states that young musicians benefit from AACM mentors but does not address what mentors gain from the relationship, so there is no reason to conclude that most established artists could improve as artists by serving as mentors. Choice D is incorrect. Although the text indicates that mentors are beneficial to young musicians and that young people pursuing other kinds of art (including painting and writing) can also find mentors through arts organizations, the text gives no indication that mentors are more important for musicians than for other types of artists.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "49568189",
+    "skill": "Inferences",
+    "difficulty": "Medium",
+    "passage": "In the South Pacific, New Caledonian crows use two different kinds of stick tools. One tool is complex. The crows shape a stick from a rare plant into a hook. The other tool is basic. The crows find a stick without a hook on the ground. The hooked tool is harder to get but is much better than the basic tool at removing prey from holes. When studying New Caledonian crows, ecologist Barbara Klump found that they hold the hooked tools in their claws when not using them, or they carefully put them in a safe place. The crows don’t do the same with the basic tools. This suggests to Klump that the ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. hooked stick tools are more valuable to the crows than the stick tools without hooks.",
+      "B. hooked stick tools are easier for most of the crows to hold than the stick tools without hooks.",
+      "C. crows prefer to share their hooked stick tools but don’t share the stick tools without hooks.",
+      "D. crows realize that both kinds of stick tools are less effective than their claws are at removing prey from holes."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most logically completes the text’s discussion of the two types of stick tools used by New Caledonian crows. The text indicates that the more effective type of tool has a hook that the crows make themselves, while the other type of tool is simply a stick without a hook that the crows find and don’t shape in any way. According to the text, Klump found that the crows keep hooked tools—but not the tools without hooks—in their grasp or in safe places when they aren’t using the tools. If the hooked tools are more effective than the tools without hooks are and the crows are more protective of the hooked tools than they are of the tools without hooks, it’s reasonable to conclude that the hooked tools are more valuable to the crows than the tools without hooks are. Choice B is incorrect because the text gives no indication of how easy it is for the crows to hold either the hooked tools or the tools without hooks. The text does state that crows hold the hooked tools and not the tools without hooks when the tools aren’t in use. However, the text also indicates that the hooked tools require work from the crows to make and are more useful for helping the crows catch prey than the tools without hooks are. This context suggests that the crows hold the hooked tools because they’re more valuable to the crows than the tools without hooks are, not because the hooked tools are easier to hold. Choice C is incorrect because the text makes no mention of the crows sharing tools. Additionally, the text indicates that when the crows aren’t using the hooked tools, they either grasp the tools or store them safely, which suggests that the crows try to maintain possession of the hooked tools, not that crows prefer to share those tools. Choice D is incorrect because the text says nothing about the crows using their claws to remove prey from holes, so there’s no evidence that the crows perceive the stick tools to be less effective than their claws are.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "719417d2",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Medium",
+    "passage": "“The Mountain” is a 1914 poem by Robert Frost. In the poem, the speaker visits a town next to a mountain. The speaker claims to feel protected by the mountain, saying ______",
+    "question": "Which quotation from “The Mountain” most effectively illustrates the claim?",
+    "options": [
+      "A. “A dry ravine emerged under boughs / Into the pasture.”",
+      "B. “The mountain stood there to be pointed at.”",
+      "C. “I felt it like a wall / Behind which I was sheltered from a wind.”",
+      "D. “I crossed the river and swung round the mountain.”"
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most effectively uses a quotation from \"The Mountain\" to illustrate the claim that the speaker feels protected by the mountain. In the quotation, the speaker recounts that the mountain felt like a wall that offers shelter from the wind. That the speaker felt sheltered by the mountain suggests that it offered the speaker a sense of being protected. Choice A is incorrect because this quotation doesn’t express the speaker’s feeling of being protected by the mountain. Instead, it notes that the speaker has seen a dry ravine and a pasture. Choice B is incorrect because this quotation doesn’t express the speaker’s feeling of being protected by the mountain. Instead, it simply states that there is a mountain, which is meant to be viewed. Choice D is incorrect because this quotation doesn’t express the speaker’s feeling of being protected by the mountain. Instead, it indicates that the speaker has gone around the mountain.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "adac21ac",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Medium",
+    "passage": "When Kenyan writer Ngũgĩ wa Thiong’o, who had previously published four novels in English, began writing in his native language, Gĩkũyũ, in the 1970s, several fellow writers and critics cautioned that doing so might make his works inaccessible outside his own community. Some noted that Kiswahili—widely spoken in Kenya and elsewhere in Africa—would be a more practical choice. Rejecting their arguments, Ngũgĩ went on to author dozens of acclaimed works in Gĩkũyũ that have been translated into a total of more than thirty languages.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. The reaction to Ngũgĩ’s rejection of English illustrates that some literary experts believe that fame is most easily gained by writing in a widely understood language, such as Gĩkũyũ.",
+      "B. Although Ngũgĩ insisted on publishing his first works in Gĩkũyũ, they have since been translated into many other languages.",
+      "C. Although Ngũgĩ’s decision to write in Gĩkũyũ was met with some skepticism, it didn’t prevent him from achieving literary success.",
+      "D. In the 1970s, Ngũgĩ became convinced that literature ought to be written in authors’ native languages, and he proceeded to publish many works in Gĩkũyũ."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most accurately states the main idea of the text. The text begins by explaining that Kenyan writer Ngũgĩ wa Thiong’o had published four novels in English before he began writing in his native language, Gĩkũyũ, in the 1970s. The text then explains that fellow writers and critics were skeptical of this decision, warning that the choice to publish in his native language, which the text implies isn’t widely understood, would limit his readership. The text concludes by stating that despite those warnings, Ngũgĩ proceeded to publish several acclaimed novels in Gĩkũyũ that were translated into several languages, suggesting that Ngũgĩ’s works in Gĩkũyũ achieved literary success in the forms of critical recognition and a wide international readership. Thus, the main idea is that although Ngũgĩ’s decision to write in Gĩkũyũ was met with some skepticism, this choice didn’t prevent him from achieving literary success. Choice A is incorrect because it contradicts the description of Gĩkũyũ provided in the text. Rather than indicating that Gĩkũyũ is a widely understood language, as this choice claims, the text states that colleagues cautioned Ngũgĩ that writing in Gĩkũyũ instead of English “might make his works inaccessible outside his own community.” Furthermore, the text contrasts the choice of Gĩkũyũ with another alternative to English, Kiswahili, which the text indicates is “a more practical choice” given that it is “widely spoken in Kenya and elsewhere in Africa.” Choice B is incorrect because it contradicts information in the text. Although the text states that the novels Ngũgĩ published in Gĩkũyũ were later translated into other languages, the text explicitly states that Ngũgĩ had previously published four novels in English before he began writing in Gĩkũyũ in the 1970s. Thus, his first works were published in English, not Gĩkũyũ. Choice D is incorrect. The text doesn’t address what motivated Ngũgĩ’s choice to publish in his native Gĩkũyũ, and nothing in the text suggests that he intended for other authors to follow his example.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "fb2ff4bb",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Medium",
+    "passage": "Biologists have generally believed that the diet of jaguars consists mostly of land-based mammals, but researchers studying a population of jaguars living in the Brazilian Pantanal, a tropical wetland, claim that jaguars can survive on a diet of more fish and aquatic reptiles than mammals.",
+    "question": "Which finding, if true, would most directly support the researchers’ claim?",
+    "options": [
+      "A. Aquatic reptile and fish remains were detected more often than were mammal remains in an analysis of jaguar waste matter found in the area.",
+      "B. Exceptionally high numbers of yacare caiman, an aquatic reptile, were found living in the area.",
+      "C. Aquatic prey like the reptiles and fish in the area provide a source of omega-3 fatty acids that aren’t often found in land mammals.",
+      "D. When jaguars in the area preyed on mammals, they tended to prefer semiaquatic ones like capybaras."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents a finding that, if true, would support the researchers’ claim about the diets of jaguars in the Brazilian Pantanal. The text notes that jaguars generally eat land-based mammals, but researchers claim that jaguars in the Pantanal can survive on a diet that includes more fish and aquatic reptiles than mammals. Finding that the remains of aquatic reptiles and fish appear more often in these jaguars’ waste than the remains of mammals do would support the researchers’ claim, since it would suggest that fish and aquatic reptiles are a more significant part of the jaguars’ diet than mammals are. Choice B is incorrect because finding that a particular aquatic reptile exists in high numbers in the area would not support the researchers’ claim about the jaguars’ diet. The mere presence of many aquatic reptiles nearby does not mean that the jaguars eat those reptiles, let alone survive on more aquatic reptiles and fish than mammals. Choice C is incorrect. Although finding that aquatic reptiles and fish can provide nutrients that land mammals typically do not provide could help explain why some animals eat those reptiles and fish, it would not indicate whether the jaguars in particular eat those reptiles and fish and thus would not support the researchers’ claim. Choice D is incorrect because finding that when preying on mammals, jaguars prefer semiaquatic mammals, such as capybaras, would be irrelevant to the researchers’ claim that the jaguars can survive on a diet of more fish and aquatic reptiles than mammals. The type of mammals the jaguars tend to eat does not indicate anything about whether fish and aquatic reptiles are part of the jaguars’ diet.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "408c6f2e",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Medium",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the text?",
+    "options": [
+      "A. only children.",
+      "B. both adolescents and adults.",
+      "C. only adolescents.",
+      "D. only adults."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most effectively uses data from the table to complete the text’s comparison of the studies about food choices. The table shows information from four studies about food choices, including each study’s location, the context of the food choices examined, the study population, and the number of participants. According to the table, the study with the greatest number of participants (142) was conducted in Ghana and Kenya and involved only adolescents. Choice A is incorrect because the table indicates that the study that involved only children was conducted in the United States and had 44 participants—not the greatest number of participants. According to the table, the study with the greatest number of participants (142) involved only adolescents. Choice B is incorrect because the table indicates that the study population that consisted of both adolescents and adults was the India study, which had 94 participants—not the greatest number of participants. According to the table, the study with the greatest number of participants (142) involved only adolescents. Choice D is incorrect because, according to the table and the text, the study that involved only adults was conducted in Canada and had 17 participants—the smallest, not the greatest, number of participants in the table.",
+    "image": "assets/coeq_408c6f2e.png",
+    "alt": "Data figure: Four Studies of Food Choices in Various Contexts. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "29b7048f",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Medium",
+    "passage": "",
+    "question": "Which choice best describes data from the graph that support the underlined claim?",
+    "options": [
+      "A. Each of the three sponges was inhabited by at least one male A. fasciatus and at least one undetermined A. fasciatus.",
+      "B. Sponge 1 was inhabited by 17 male A. fasciatus.",
+      "C. Each of the three sponges was inhabited by at least one male A. fasciatus and at least one female A. fasciatus.",
+      "D. Sponge 1 was inhabited by 13 female A. fasciatus."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it accurately describes data from the graph that support the claim that the team found that male and female Atelomycterus fasciatus (banded sand catsharks) share the same sponge. The graph presents the number of male, female, and undetermined banded sand catsharks found in each of three sponges—sponge 1, sponge 2, and sponge 3. The graph shows that approximately 17 male sharks and 13 female sharks were found in sponge 1, approximately 1 male shark and 2 female sharks were found in sponge 2, and approximately 2 male sharks and 1 female shark were found in sponge 3. Thus, the graph shows that male and female sharks were found sharing the same sponges. Choice A is incorrect because the graph shows that one of the sponges (sponge 1) was not inhabited by any undetermined banded sand catsharks. Additionally, this choice doesn’t give any information about female sharks, so it can’t support the claim that male and female sharks are actually found in the same sponge. Choice B is incorrect because it doesn’t give any information about female sharks. The graph does show that approximately 17 male banded sand catsharks inhabited sponge 1, but that information alone can’t support the claim that male and female sharks are found in the same sponge. Choice D is incorrect because it doesn’t give any information about male banded sand catsharks. The graph does show that approximately 13 female banded sand catsharks inhabited sponge 1, but that information alone can’t support the claim that male and female sharks are found in the same sponge.",
+    "image": "assets/coeq_29b7048f.png",
+    "alt": "Data figure: Banded Sand Catsharks Found in Three Sponges. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "f3f5de3c",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Medium",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "A. $31.78.",
+      "B. $23.72.",
+      "C. $22.98.",
+      "D. $28.94."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most effectively uses data from the table to complete the text’s discussion of how much a grower could have expected to receive on average for a box of lemons in July 2021. The table lists the average prices received by US citrus growers in dollars per box for grapefruits, oranges, and lemons in June 2020, June 2021, July 2020, and July 2021. According to the table, the average price of a box of lemons in July 2021 was $31.78. Choice B is incorrect because the text indicates that the employee of a citrus grower wishes to know the average price for a box of lemons in July 2021. According to the table, $23.72 was the average price for a box of grapefruits in June 2021, not for a box of lemons in July 2021. Choice C is incorrect because the text indicates that the employee of a citrus grower wishes to know the average price for a box of lemons in July 2021. According to the table, $22.98 was the average price for a box of grapefruits in July 2021, not for a box of lemons in July 2021. Choice D is incorrect because the text indicates that the employee of a citrus grower wishes to know the average price for a box of lemons in July 2021. According to the table, $28.94 was the average price for a box of lemons in June 2021, not in July 2021.",
+    "image": "assets/coeq_f3f5de3c.png",
+    "alt": "Data figure: Average Prices Received by US Growers for Citrus Fruits, 2020–2021 (dollars per box) Fruit June 2020 June 2021 July 2020 July 2021 Grapefruits $13.80 $23.72 $16.13 $22.98. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "a80e7e12",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Medium",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the example?",
+    "options": [
+      "A. 7.35 million visitors.",
+      "B. 9.60 million visitors.",
+      "C. 6.40 million visitors.",
+      "D. 5.60 million visitors."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most effectively uses data from the table to complete the example of the high cost and low popularity of world’s fairs. The text presents Chow’s argument that the United States hasn’t hosted a world’s fair since 1984 because people think these exhibitions are overly expensive and insufficiently popular. The text then cites the 1984 World’s Fair as an example, noting that it cost $350 million. Since the example should illustrate both high cost and insufficient popularity, the best completion of the example is the information from the table that the 1984 World’s Fair had 7.35 million visitors. Choice B is incorrect because it misrepresents data from the table. The table indicates that the 1984 World’s Fair, which is the world’s fair used as an example in the text, had 7.35 million, not 9.60 million, visitors. Choice C is incorrect because it misrepresents data from the table. The table indicates that the 1984 World’s Fair, which is the world’s fair used as an example in the text, had 7.35 million, not 6.40 million, visitors. Choice D is incorrect because it misrepresents data from the table. The table indicates that the 1984 World’s Fair, which is the world’s fair used as an example in the text, had 7.35 million, not 5.60 million, visitors.",
+    "image": "assets/coeq_a80e7e12.png",
+    "alt": "Data figure: Attendance and Cost of Hosting for Past Four US World’s Fairs World’ s fairs held in the US Cost (in US dollars) Number of visitors. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "467fb475",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Medium",
+    "passage": "In the 1960s, Gloria Richardson led a movement to promote racial equality. Her involvement in this effort was inspired by her daughter, Donna Richardson. In 1961, Donna joined protests organized by the Student Nonviolent Coordinating Committee in Cambridge, Maryland. Following her daughter, Gloria joined these protests too. Gloria soon became the cochair of the Cambridge Nonviolent Action Committee. She was also the leader of what became known as the Cambridge movement.",
+    "question": "According to the text, what did Gloria Richardson lead?",
+    "options": [
+      "A. The Cambridge movement",
+      "B. Her daughter Donna’s high school",
+      "C. Protests to support environmental protections",
+      "D. A new business in Cambridge, Maryland"
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents information about Gloria Richardson that is supported by the text. The text provides a number of details about Gloria’s involvement in efforts to promote racial equality, including that she was the leader of what became known as the Cambridge movement. Choice B is incorrect because the text never indicates that Gloria Richardson led her daughter Donna’s high school. The text says only that Gloria was inspired by her daughter to become involved in efforts to promote racial equality. Choice C is incorrect because the text doesn’t mention protests related to environmental protections. Rather, the text discusses Gloria Richardson’s involvement in efforts to promote racial equality. Choice D is incorrect because the text doesn’t indicate that Gloria Richardson led a new business in Cambridge, Maryland. Rather, the text states that she led what became known as the Cambridge movement.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "1f222de0",
+    "skill": "Inferences",
+    "difficulty": "Medium",
+    "passage": "Archaeologist Christiana Kohler and her team excavated the Egyptian tomb of Queen Merneith, the wife of a First Dynasty pharaoh. Some scholars claim that she also ruled Egypt on her own and was actually the first female pharaoh. The team found a tablet in Merneith’s tomb with writing suggesting that she was in charge of the country’s treasury and other central offices. Whether Merneith was a pharaoh or not, this discovery supports the idea that Merneith likely ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. had an important role in Egypt’s government.",
+      "B. lived after rather than before the First Dynasty of Egypt.",
+      "C. traveled beyond Egypt’s borders often.",
+      "D. created a new form of writing in Egypt."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most logically completes the text’s discussion of the evidence found in Queen Merneith’s tomb. The text begins by mentioning archaeologists’ efforts to excavate the tomb of Queen Merneith, the wife of a pharaoh who some scholars think was actually the first female pharaoh. The text states that a tablet discovered in her tomb suggests she \"was in charge of the country’s treasury and other central offices,\" which supports the idea that she had an important role in Egypt’s government. Choice B is incorrect because since the text explicitly states that Merneith’s husband was a First Dynasty pharaoh, it can be inferred that she lived during the First Dynasty, not after it. Choice C is incorrect because the text does not provide any evidence that Merneith traveled beyond Egypt’s borders often. The text is focused on the archaeological discovery in her tomb and the implications about her potential role as a ruler in Egypt but does not mention anything about her traveling habits. Choice D is incorrect because the text does not mention anything about Merneith creating a new form of writing in Egypt. The text discusses the discovery of a tablet with writing suggesting her governmental role but does not imply that this writing represented a new form created by Merneith.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "187666de",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Medium",
+    "passage": "Researchers Narelle Haworth and Amy Schramm studied bicycling behavior in Queensland, Australia. Haworth and Schramm asked adult bike riders questions about their level of experience, reasons for riding a bike, and route preferences. The researchers claim that <u>experienced riders who mainly bike to work tend to prefer routes that reduce their travel time.</u>",
+    "question": "Which survey response from a bike rider in Queensland would best support the underlined claim?",
+    "options": [
+      "A. “I have a bike, but I don’t ride it very often. When the weather is nice, I sometimes use my bike to go into town to do some shopping.”",
+      "B. “I just got a new bike, and I’m looking forward to going on rides with my friends soon.”",
+      "C. “I bike to my job every day. There’s a nice bike path that goes through a park, but I use the bike lane on the main road because it’s faster.”",
+      "D. “I usually bike to work, but I’m taking the bus now because my bike has a broken part that needs to be fixed.”"
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it presents a response that best supports the underlined claim that experienced riders who mainly bike to work tend to prefer routes that reduce their travel time. The bike rider responds that they bike to work every day and that they use the bike lane because it is faster; thus, it is reasonable to assume that they are an experienced rider who prefers routes that reduce their travel time to work. Choice A is incorrect because this response does not address the claim. The claim is about experienced riders preferring to take routes that reduce their travel time on the way to work; however, this response is from an inexperienced rider who is discussing biking for personal reasons. Choice B is incorrect because this response is not related to the underlined claim. The response from this rider does not establish the level of experience they have with riding, nor does it state that the rider uses a bike to get to work. Choice D is incorrect. Although this response is from an experienced rider who mainly bikes to work, the response also mentions that the rider’s bike is broken, which is not related to any route preference.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "9f55dec4",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Medium",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the graph to complete the statement?",
+    "options": [
+      "A. remained largely consistent from 2005 to 2022, whereas the level of bridging trust showed more variability from 2005 to 2022.",
+      "B. consistently grew from 2005 to 2022, whereas the level of bridging trust largely declined from 2005 to 2022.",
+      "C. was the same in 2018 as it was in 2022 but remained lower than the level of bridging trust in 2018 and 2022.",
+      "D. declined from 2005 to 2022 but remained higher than the level of bridging trust from 2005 to 2018."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most effectively uses data from the graph to complete the statement about the level of bonding trust in the UK. The text defines bonding trust as trust within already existing relationships and bridging trust as trust between different groups, often involving interactions beyond one’s immediate social circle, giving as an example meeting someone at a networking event, a type of event where people would typically make new acquaintances. The graph presents the percentage of UK survey respondents who indicated that they trust people at least somewhat in two categories—people they know personally (bonding trust) and people they are meeting for the first time (bridging trust)—in 2005, 2018, and 2022. According to the graph, the percentage representing bonding trust remained fairly consistent over the period, at approximately 96% in 2005, 97% in 2018, and 97% in 2022. By contrast, the percentage representing bridging trust showed more variability, rising from approximately 46% in 2005 to approximately 55% in 2018 before falling to approximately 53% in 2022. Choice B is incorrect because the graph shows that the percentage representing bonding trust didn’t consistently grow from 2005 to 2022; rather, it remained largely consistent at approximately 96%, 97%, and 97% in 2005, 2018, and 2022, respectively. Moreover, the graph shows that the percentage representing bridging trust didn’t largely decline from 2005 to 2022; rather, it rose from approximately 46% in 2005 to approximately 55% in 2018 before falling slightly to approximately 53% in 2022. Choice C is incorrect. While the graph indicates that the percentage representing bonding trust was approximately the same in 2018 and 2022 (approximately 97%), the graph also shows that bonding trust was substantially higher than, not lower than, bridging trust in both 2018 (approximately 55%) and 2022 (approximately 53%). Choice D is incorrect. While the graph does indicate that bonding trust remained higher than bridging trust from 2005 to 2018, the claim that bonding trust declined from 2005 to 2022 isn’t supported by the graph. The graph shows that the percentage representing bonding trust rose slightly from approximately 96% in 2005 to approximately 97% in both 2018 and 2022.",
+    "image": "assets/coeq_9f55dec4.png",
+    "alt": "Data figure: Percent of UK Survey Respondents Who Trust People At Least Somewhat. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "983ce347",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Medium",
+    "passage": "In 1935 Hallie Flanagan was chosen to lead the Federal Theatre Project (FTP). This project was part of the new Works Progress Administration (WPA), a program created by President Franklin D. Roosevelt to provide jobs for unemployed people during the Great Depression. As the director of the FTP, Flanagan created jobs for over 12,500 performers, designers, and other theater professionals across the country. She also kept ticket prices low for the shows they staged, which meant that many people could afford to experience theater for the first time.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. Jobs provided by the FTP were intended mainly for performers, designers, and other theater professionals.",
+      "B. President Roosevelt created the WPA to provide jobs for unemployed people.",
+      "C. During the Great Depression, many people couldn’t afford to buy theater tickets.",
+      "D. As the director of the FTP, Flanagan succeeded in creating many jobs and introducing people to theater."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most accurately states the main idea of the text. The text begins by stating that Flanagan was chosen in 1935 to lead the Federal Theatre Project (FTP), which was part of a program created by President Franklin D. Roosevelt. The text then explains that as the director of the FTP, Flanagan created jobs for more than 12,500 theater professionals and ensured that ticket prices stayed low so that many people could afford to experience theater for the first time. Thus, the main idea of the text is that as the FTP’s director, Flanagan succeeded in creating many jobs and introducing people to theater. Choice A is incorrect. The text does suggest that jobs provided by the FTP were intended mainly for theater professionals, but this isn’t the text’s main idea. The focus of the text is Hallie Flanagan’s work as the director of the FTP, with the text’s main point being that Flanagan succeeded in creating many jobs and introducing people to theater. Choice B is incorrect. The text does state that President Roosevelt created the WPA to provide jobs for unemployed people, but this is supporting information, not the text’s main idea. The focus of the text is Hallie Flanagan’s work as the director of the FTP, which was part of the WPA, and the text’s main point is that Flanagan succeeded in creating many jobs and introducing people to theater. Choice C is incorrect. It’s true that many people couldn’t afford to buy theater tickets during the Great Depression, but this isn’t the text’s main idea. The focus of the text is Hallie Flanagan’s work as the director of the FTP, with the text’s main point being that Flanagan succeeded in creating many jobs and introducing people to theater.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "b50bf7eb",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Medium",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the graph to support the underlined claim?",
+    "options": [
+      "A. In 2016, the number of cellular and molecular biology topic submissions was the same as the number of animal science topic submissions.",
+      "B. In 2019, there were more physics and space science topic submissions than there were medicine and health topic submissions.",
+      "C. The lowest number of animal science topic submissions in a year was approximately 95 in 2016.",
+      "D. The highest number of medicine and health topic submissions during the period shown is approximately 285 in 2019."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it effectively uses data from the graph to support the underlined claim that more medicine and health topics were submitted to a national science fair in 2019 than in any of the other years shown. This choice indicates that the approximately 285 medicine and health topics submitted in 2019 are more than the number of medicine and health submissions in any other year shown—a description that is supported by information in the graph, which shows that medicine and health topic submissions were below 250 in 2016, 2017, and 2018, but above 250 (approximately 285 submissions) in 2019. Choice A is incorrect because it doesn’t support the underlined claim or accurately reflect the information in the graph. This choice refers to 2016 and discusses cellular and molecular biology and animal science, whereas the underlined claim refers to 2019 and discusses medicine and health. Moreover, the claim that in 2016 there were equal numbers of submissions in the cellular and molecular biology category and in the animal science category is contradicted by the graph, which shows approximately 200 submissions and 50 submissions, respectively, for those categories in 2016. Choice B is incorrect because it doesn’t accurately reflect the information in the graph. This choice claims that in 2019 there were more physics and space submissions than there were medicine and health submissions, but the graph shows that there were approximately 100 space and science submissions that year and approximately 285 medicine and health submissions. Choice C is incorrect because it doesn’t accurately reflect the information in the graph or support the underlined claim about medicine and health research topics. This choice claims that there were approximately 95 submissions for the animal science category in 2016, but the graph shows that the number was closer to 50 in 2016.",
+    "image": "assets/coeq_b50bf7eb.png",
+    "alt": "Data figure: Total Science Research Submissions by Topic, 2016–2019. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "33cd68b1",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Medium",
+    "passage": "Olms are salamanders that live in underwater caves. Scientists once thought that olms stay in their caves all their lives. However, Raoul Manenti and team claim that <u>olms regularly come to the surface to perform important activities such as finding food.</u>",
+    "question": "Which finding, if true, would most strongly support the underlined claim?",
+    "options": [
+      "A. Researchers determine that olms don’t breed often.",
+      "B. Researchers confirm that olms live in only a few cave systems.",
+      "C. Researchers discover that earthworms from surface soils are a major part of olms’ diet.",
+      "D. Researchers learn that olms’ brains differ from other salamanders’ brains."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it presents a finding that, if true, would most strongly support Manenti and team’s claim that olms regularly come to the surface to find food. The text explains that scientists previously believed olms remained in their underwater caves throughout their lives, but Manenti’s team claims that olms actually surface regularly to perform important activities like finding food. Since earthworms from surface soils would not be present in underwater caves, the finding that such earthworms constitute a major part of olms’ diet would provide compelling evidence that olms regularly leave their underwater cave environment to obtain food from the surface, thus supporting the underlined claim. Choice A is incorrect because information about olms’ breeding frequency wouldn’t support the claim about their leaving their underwater habitats to obtain food. While breeding patterns might be relevant to understanding olm behavior in general, this finding doesn’t address whether olms surface to find food, which is the specific behavior that the underlined claim addresses. Choice B is incorrect because learning that olms live in only a few cave systems wouldn’t support the claim about their regular visits to the surface. This finding would provide information about the geographic distribution of olm habitats but wouldn’t address whether olms leave these caves to find food or perform other activities on the surface. Choice D is incorrect because the differences between olms’ brains and other salamanders’ brains have no clear connection to olms’ movement beyond their underwater habitats or to their feeding habits. A finding about the uniqueness of olms’ brains wouldn’t address whether olms leave their caves to find food or support Manenti and team’s claim about olms’ motivation for coming to the surface.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "39ab3cf3",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Medium",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the graph to complete the statement?",
+    "options": [
+      "A. Rincón’s average rainfall is greater than that of Isabela, San Sebastián, and Ponce.",
+      "B. Rincón and Ponce have an average rainfall of about 5 inches, and Isabela and San Sebastián have an average rainfall of about 10 inches.",
+      "C. Rincón, Ponce, and Isabela each have an average rainfall below 8 inches, but San Sebastián’s average rainfall that month is greater than 8 inches.",
+      "D. Rincón has a similar average rainfall to Isabela, and Ponce has a similar average rainfall to San Sebastián."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most effectively uses data from the graph to complete the statement about average rainfall in September in select Puerto Rican cities. The graph shows that between 1981 and 2010 Rincón, Ponce, and Isabela all had an average rainfall during the month of September of about 6 inches, and San Sebastián had an average rainfall of nearly 11 inches. Describing the average September rainfall of Rincón, Ponce, and Isabela as below 8 inches and the average September rainfall of San Sebastián as greater than 8 inches therefore offers an accurate description of the data in the graph and most effectively completes the statement. Choice A is incorrect because it offers an inaccurate interpretation of the data in the graph. The graph shows that in September, Rincón, Isabela, and Ponce all have an average rainfall of about 6 inches, and San Sebastián has an average rainfall of nearly 11 inches. Therefore, Rincón’s average rainfall is the same as, not greater than, that of Isabela and Ponce, and it is below, not greater than, that of San Sebastián. Choice B is incorrect because it inaccurately describes the data in the graph. In September, Rincón and Ponce have an average rainfall of about 6 inches, not 5 inches; Isabela has an average rainfall of about 6 inches, not 10 inches; and San Sebastián has an average rainfall of nearly 11 inches, not 10 inches. Choice D is incorrect because although the graph shows a similar average rainfall (about 6 inches) for Rincón and Isabela in September, it doesn’t show that Ponce has a similar average rainfall to San Sebastián during this month. In September, Ponce’s average rainfall is about 6 inches, whereas San Sebastián’s average rainfall is nearly 11 inches.",
+    "image": "assets/coeq_39ab3cf3.png",
+    "alt": "Data figure: Average Monthly Rainfall in Select Puerto Rican Cities from 1981 to 2010. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "12ab9acf",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Medium",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the graph to complete the text?",
+    "options": [
+      "A. Washington had between 600 and 800 organic farms.",
+      "B. New York had fewer than 800 organic farms.",
+      "C. Wisconsin and Iowa each had between 1,200 and 1,400 organic farms.",
+      "D. Pennsylvania had more than 1,200 organic farms."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it uses data from the graph to accurately complete the text. The graph shows the number of organic farms located in each of six US states in 2016: between 2,600 and 2,800 in California; between 1,200 and 1,400 in Wisconsin; between 1,000 and 1,200 in New York; approximately 800 in Pennsylvania; and between 600 and 800 in both Iowa and Washington. The last sentence of the text provides information about the number of organic farms in 2016, first describing the number in California. The best completion of the sentence is the choice that accurately describes the number of organic farms in 2016 in another state, which the assertion that Washington had between 600 and 800 organic farms provides. Choice B is incorrect because it doesn’t accurately reflect the data from the graph. The graph indicates that there were between 1,000 and 1,200 organic farms in New York, not fewer than 800 organic farms. Choice C is incorrect because it doesn’t accurately reflect the data from the graph. While the graph indicates that there were between 1,200 and 1,400 organic farms in Wisconsin in 2016, there were only between 600 and 800 in Iowa. Choice D is incorrect because it doesn’t accurately reflect the data from the graph. The graph indicates that in 2016 there were approximately 800 organic farms in Pennsylvania, not more than 1,200.",
+    "image": "assets/coeq_12ab9acf.png",
+    "alt": "Data figure: US States with the Greatest Number of Organic Farms in 2016. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "b93d6e06",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Medium",
+    "passage": "Treasure Island is an 1883 novel by Robert Louis Stevenson. When the narrator was a child, his father ran a hotel. A mysterious sailor came to stay at the hotel. The narrator was frightened of the sailor, as can be seen when the narrator says, ______",
+    "question": "Which quotation from Treasure Island most effectively illustrates the claim?",
+    "options": [
+      "A. “I remember [the sailor] as if it were yesterday, as he came plodding to the inn door, his sea-chest following behind him in a hand-barrow.”",
+      "B. “[The sailor] was a very silent man by custom. All day he hung round the cove or upon the cliffs with a brass telescope.”",
+      "C. “All the time he lived with us [the sailor] made no change whatever in his dress but to buy some stockings from a hawker. One of the [corners] of his hat having fallen down, he let it hang from that day forth, though it was a great annoyance when it blew.”",
+      "D. “How [the sailor] haunted my dreams, I need scarcely tell you. On stormy nights, when the wind shook the four corners of the house and the surf roared along the cove and up the cliffs, I would see him in a thousand forms, and with a thousand diabolical expressions.”"
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most effectively illustrates the claim that the narrator was frightened of the sailor. The quotation describes the sailor haunting the narrator’s dreams, appearing in \"a thousand forms\" with \"a thousand diabolical expressions.\" This vivid imagery conveys the intense psychological fear the narrator experienced when thinking about the sailor. Furthermore, the quotation evokes the narrator’s terror and dread by describing a stormy night setting with wind shaking the house and a roaring surf. Choice A is incorrect because this quotation does not provide any details to suggest that the narrator was afraid of the sailor. It simply describes the narrator’s memory of the sailor arriving at the inn with his sea chest. Choice B is incorrect because this quotation does not effectively illustrate the claim that the narrator was frightened of the sailor. The quotation provides several details about the sailor, including that it was his custom to remain silent. However, the quotation does not relate these details to the narrator’s experience of being frightened of the sailor. Choice C is incorrect because this quotation focuses on aspects of the sailor’s appearance and dress. There is no connection made in the quotation between these physical details and the narrator’s sense of being frightened of the sailor.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "70c71c11",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Medium",
+    "passage": "In 2014, Amelia Quon and her team at NASA set out to build a helicopter capable of flying on Mars. Because Mars’s atmosphere is only one percent as dense as Earth’s, the air of Mars would not provide enough resistance to the rotating blades of a standard helicopter for the aircraft to stay aloft. For five years, Quon’s team tested designs in a lab that mimicked Mars’s atmospheric conditions. The craft the team ultimately designed can fly on Mars because its blades are longer and rotate faster than those of a helicopter of the same size built for Earth.",
+    "question": "According to the text, why would a helicopter built for Earth be unable to fly on Mars?",
+    "options": [
+      "A. Because Mars and Earth have different atmospheric conditions",
+      "B. Because the blades of helicopters built for Earth are too large to work on Mars",
+      "C. Because the gravity of Mars is much weaker than the gravity of Earth",
+      "D. Because helicopters built for Earth are too small to handle the conditions on Mars"
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents an explanation about a helicopter that is directly supported by the text. The text states that Mars’s atmosphere is much less dense than Earth’s, and as a result, the air on Mars doesn’t provide the resistance required to support the blades of a helicopter built for Earth and to keep the helicopter aloft. In other words, a helicopter built for Earth can’t fly on Mars because of the differences in the two planets’ atmospheres. Choice B is incorrect because instead of stating that the blades of helicopters built for Earth are too large to work on Mars, the text indicates that the helicopter built to fly on Mars actually has even longer blades than a helicopter built for Earth. Choice C is incorrect because the text never addresses the role of gravity on Mars or on Earth; instead, it focuses on atmospheric conditions. Choice D is incorrect because the text doesn’t indicate that helicopters built for Earth are too small to operate in the conditions on Mars. In fact, the text states that the size of the helicopter built to fly on Mars is the same size as a helicopter built for Earth, even though it has longer blades that rotate faster.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "4c90d0f0",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Medium",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "A. 170 electoral college votes.",
+      "B. 103 electoral college votes.",
+      "C. 62 electoral college votes.",
+      "D. 44 electoral college votes."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most effectively uses data from the table to complete the statement about the 15th US presidential election. The table shows the total number of electoral college votes and the total number of popular votes received by each of three candidates. The table shows that Polk received 170 electoral college votes. Choice B is incorrect because the table shows that Polk received 170 electoral college votes, not 103. According to the table, none of the candidates received a total of 103 votes of either type (electoral college or popular). Choice C is incorrect because the table shows that Polk received 170 electoral college votes, not 62. According to the table, none of the candidates received a total of 62 votes of either type (electoral college or popular). Choice D is incorrect because the table shows that Polk received 170 electoral college votes, not 44. According to the table, none of the candidates received a total of 44 votes of either type (electoral college or popular).",
+    "image": "assets/coeq_4c90d0f0.png",
+    "alt": "Data figure: Total Electoral College Votes and Popular Votes in the 15th US Presidential Election Candidate Total electoral college votes Total popular votes James K. Polk 170 1,339,494. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "29410b56",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Medium",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "A. Eris and Makemake.",
+      "B. Haumea and Eris.",
+      "C. Pluto and Haumea.",
+      "D. Makemake and Ceres."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most effectively uses data from the table to complete the statement about dwarf planets that have exactly one moon. The table lists several dwarf planets in one column and the number of moons that each of those dwarf planets has in another column. The text states that some dwarf planets have exactly one moon and indicates that there are two examples. Only two dwarf planets in the table have exactly one moon: Eris and Makemake. Choice B is incorrect. According to the table, Eris has exactly one moon, but Haumea has two moons. Choice C is incorrect. According to the table, Haumea has two moons, and Pluto has five moons. Thus, they are not examples of dwarf planets with exactly one moon. Choice D is incorrect because while the table indicates that Makemake has exactly one moon, the table shows that Ceres has no moons at all.",
+    "image": "assets/coeq_29410b56.png",
+    "alt": "Data figure: Moons of Dwarf Planets. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "139385ce",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Medium",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "A. shrimp cocktail for meal B.",
+      "B. hot cocoa for meal C.",
+      "C. sugar cookie cubes for meal B.",
+      "D. chicken and vegetables for meal A."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most effectively uses data from the table to complete the statement. The table shows that on day 1, the menu for NASA’s Gemini missions included sugar cookie cubes for meal B. Choice A is incorrect because according to the table, shrimp cocktail was served on day 4, not day 1; moreover, the item was served for meal C, not meal B, as this choice claims. Choice B is incorrect because according to the table, hot cocoa was served on day 3, not on day 1; moreover, the item was served for meal A, not for meal C, as this choice claims. Choice D is incorrect because according to the table, chicken and vegetables were served on day 2, not on day 1; moreover, the item was served for meal B, not for meal A, as this choice claims.",
+    "image": "assets/coeq_139385ce.png",
+    "alt": "Data figure: Sample of Food Items from Gemini Mission Menus Food item Day Meal Sugar cookie cubes 1 B. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "31a2d2ea",
+    "skill": "Inferences",
+    "difficulty": "Medium",
+    "passage": "If an animal has been extinct for a long time, how can scientists learn what color it was? One group of scientists came up with a possible answer. When the scientists examined the fossilized feather of an extinct bird, they found melanosomes in it. Melanosomes produce pigment, or grains of color, inside cells. Because melanosomes are shaped differently depending on which colors they produce, the scientists hypothesized that they could ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. show how melanosomes can be found in fossils belonging to animals from other extinct species.",
+      "B. determine the colors of the bird based on the appearance of the melanosomes in the feather.",
+      "C. explain why the melanosomes in the feather were so well preserved.",
+      "D. identify the colors of extinct animals whose fossils lack melanosomes."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most logically completes the text’s discussion of a hypothesis by one group of scientists about how to determine the colors of a long-extinct animal. The text explains that the scientists found melanosomes in the fossilized feather of an extinct bird and that melanosomes are responsible for producing color inside cells. The text also explains that melanosomes have different shapes depending on the colors they produce. Given this information, it follows that the scientists hypothesized that they could determine the colors of the extinct bird by examining the shapes of the melanosomes in the feather. Choice A is incorrect because the text never suggests that the scientists were seeking to show how melanosomes can be found in fossils belonging to animals from other extinct species. Rather, the text indicates that the scientists were seeking to identify an extinct bird’s colors, and the text strongly suggests that the scientists hypothesized that they could achieve their goal by examining the shapes of the melanosomes in the bird’s fossilized feather. Choice C is incorrect because the text never suggests that the scientists were seeking to explain why the melanosomes in the feather were so well preserved. Rather, the text indicates that the scientists were seeking to identify an extinct bird’s colors, and the text strongly suggests that the scientists hypothesized that they could achieve their goal by examining the shapes of the melanosomes in the bird’s fossilized feather. Choice D is incorrect because the text suggests only one method of identifying the colors of extinct animals: by examining the shapes of melanosomes found in fossils. The text doesn’t discuss other methods for learning the colors of extinct animals and therefore provides no support for the idea that the scientists could identify the colors of extinct animals whose fossils lack melanosomes.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "6de69e2c",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Medium",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the graph to complete the sentence?",
+    "options": [
+      "A. from 2003 to 2023, the House of Representatives had a higher percentage of those members than the Senate did.",
+      "B. from 1953 to 2003, those members constituted a majority in both houses of Congress.",
+      "C. the percentage of those members decreased substantially in both houses of Congress from 1973 to 2013.",
+      "D. the percentage of those members remained fairly consistent, regardless of house, from 1993 to 2023."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it accurately uses data from the graph to complete the statement regarding the research institute’s findings about veteran representation in Congress. The graph shows that the percentage of veterans in both houses of Congress decreased dramatically from 1973 to 2013. In 1973, the House of Representatives consisted of approximately 74% veterans, and the Senate was made up of approximately 79% veterans. By 2013, veteran members of both houses had fallen to approximately 17%–18%. This represents a substantial decrease of more than 50% in each house over this 40-year period. Choice A is incorrect because from 2003 to 2023, the House of Representatives did not consistently have a higher percentage of veterans than the Senate did. According to the graph, in 2003 the Senate was made up of approximately 35% veterans, while the House consisted of approximately 23% veterans. In 2013, the number of veterans in the Senate was still slightly higher (approximately 18%) than in the House (approximately 17%). Only in 2023 did the House have a marginally higher percentage than the Senate. Choice B is incorrect because veterans did not constitute a majority in both houses throughout the entire period shown in the graph from 1953 to 2003. According to the graph, both houses had a majority of veterans in 1953 (approximately 62% in the House and approximately 74% in the Senate) and in 1973 (approximately 74% in the House and approximately 79% in the Senate), but by 1993 the House had fallen below 50% to approximately 40% veterans. By 2003, both houses were well below 50%. Choice D is incorrect because the percentage of veterans in Congress did not remain consistent from 1993 to 2023. The graph shows significant changes in the number of members reporting past military service during this period, particularly the continued decline from 1993 to 2003. In 1993, the House had approximately 40% veterans and the Senate had approximately 63% veterans, but by 2003 these percentages had dropped to approximately 23% and 35%, respectively. Furthermore, there was a large gap between the two houses in 1993 that narrowed considerably by 2013, which contradicts the claim that the percentage of veterans across both houses “remained fairly consistent” during this period.",
+    "image": "assets/coeq_6de69e2c.png",
+    "alt": "Data figure: Percentage of US Congress Members Who Self-Identified as Veterans, 1953–2023. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "bfef868a",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Medium",
+    "passage": "The following text is adapted from Oscar Wilde’s 1891 novel The Picture of Dorian Gray. Dorian Gray is taking his first look at a portrait that Hallward has painted of him.\n\nDorian passed listlessly in front of his picture and turned towards it. When he saw it he drew back, and his cheeks flushed for a moment with pleasure. A look of joy came into his eyes, as if he had recognized himself for the first time. He stood there motionless and in wonder, dimly conscious that Hallward was speaking to him, but not catching the meaning of his words. The sense of his own beauty came on him like a revelation. He had never felt it before.",
+    "question": "According to the text, what is true about Dorian?",
+    "options": [
+      "A. He wants to know Hallward’s opinion of the portrait.",
+      "B. He is delighted by what he sees in the portrait.",
+      "C. He prefers portraits to other types of paintings.",
+      "D. He is uncertain of Hallward’s talent as an artist."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it presents a statement about Dorian that is directly supported by the text. The narrator of the text says that when Dorian sees his portrait, “his cheeks flushed for a moment with pleasure” and “a look of joy came into his eyes.” The narrator goes on to say that Dorian looked at the portrait “in wonder” and presents him as being so entranced by the portrait that he doesn’t notice what Hallward is saying to him. All these details support the description of Dorian as being delighted by what he sees in the portrait. Choice A is incorrect because Dorian isn’t depicted as interested in Hallward’s opinion of the portrait but rather as so enraptured by the painting that he’s hardly even aware of Hallward. Choice C is incorrect because the portrait of Dorian is the only painting that is mentioned in the text, so there’s no evidence that Dorian prefers portraits to other types of paintings. Although Dorian is depicted as delighted with this particular portrait, there’s no way of knowing from the text whether he likes portraits better than other kinds of paintings. Choice D is incorrect because nothing in the text suggests that Dorian is uncertain about Hallward’s talent. Instead, the text is focused on Dorian’s delight with the portrait.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "a795332a",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Medium",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the text?",
+    "options": [
+      "A. silver maple.",
+      "B. sugar maple.",
+      "C. red maple.",
+      "D. Norway maple."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most effectively uses data from the table to complete the statement about the forestry student’s project. The table shows five types of maple trees, each tree’s maximum height, and whether each tree is native to North America. The text indicates that the student needs to recommend a maple tree that’s native to North America and won’t reach a height greater than 60 feet. The red maple is the only tree listed in the table that meets these criteria: its maximum height is 60 feet—meaning that it won’t grow higher than 60 feet—and it’s native to North America. Choice A is incorrect because the text states that the student needs to recommend a tree that’s native to North America and won’t grow higher than 60 feet, but the table shows that the maximum height of the silver maple is 70 feet. Choice B is incorrect because the text states that the student needs to recommend a tree that’s native to North America and won’t grow higher than 60 feet, but the table shows that the maximum height of the sugar maple is 75 feet. Choice D is incorrect because the text states that the student needs to recommend a tree that’s native to North America and won’t grow higher than 60 feet, but the table shows that the Norway maple isn’t native to North America.",
+    "image": "assets/coeq_a795332a.png",
+    "alt": "Data figure: Maximum Height of Maple Trees When Fully Grown Tree type Maximum height (feet) Native to North America Sugar maple 75 yes Silver maple 70 yes. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "43bab8ec",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Medium",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the text?",
+    "options": [
+      "A. 5–6 meters below the surface.",
+      "B. 4–5 meters below the surface.",
+      "C. 3–4 meters below the surface.",
+      "D. 6–7 meters below the surface."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most effectively uses data from the table to complete the statement about the depth at which the highest number of tools made from clamshells that Neanderthals collected from the beach was found. The table presents the depths at which Neanderthal clamshell tools were found, and, for each depth, the number of those tools made from clamshells that washed up on the beach and the number made from clamshells harvested from the seafloor. The table indicates that the highest number made from clamshells collected from the beach was 99 and that these tools were found at a depth of 3–4 meters. Choice A is incorrect because the table indicates that 18 tools made from clamshells collected from the beach were found at a depth of 5–6 meters, which is fewer than the 99 tools found at a depth of 3–4 meters. Choice B is incorrect because the table indicates that 2 tools made from clamshells collected from the beach were found at a depth of 4–5 meters, which is fewer than the 99 tools found at a depth of 3–4 meters. Choice D is incorrect because the table indicates that 1 tool made from clamshells collected from the beach was found at a depth of 6–7 meters, which is fewer than the 99 tools found at a depth of 3–4 meters.",
+    "image": "assets/coeq_43bab8ec.png",
+    "alt": "Data figure: Number and Origin of Clamshell Tools Found at Different Depths below the Surface in Neanderthal Cave. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "ff9ce0ca",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Medium",
+    "passage": "The following text is adapted from Ann Petry’s 1946 novel The Street. Lutie lives in an apartment in Harlem, New York.\n\nThe glow from the sunset was making the street radiant. The street is nice in this light, [Lutie] thought. It was swarming with children who were playing ball and darting back and forth across the sidewalk in complicated games of tag. Girls were skipping double dutch rope, going tirelessly through the exact center of a pair of ropes, jumping first on one foot and then the other.\n\n©1946 by Ann Petry",
+    "question": "Which choice best describes what is happening in the text?",
+    "options": [
+      "A. Lutie is observing the appearance of the street at a particular time of day and the events occurring on it.",
+      "B. Lutie is annoyed by the noise of children playing games on her street.",
+      "C. Lutie is puzzled by the rules of certain children’s games.",
+      "D. Lutie is spending time alone in her apartment because she doesn’t want to interact with her neighbors."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most accurately states what is happening in the text. The narrator notes that Lutie thinks the street looks nice in the light of the sunset. The narrator goes on to describe what Lutie can see in the street: children playing ball or tag and girls skipping rope. Thus, what is happening in the text is that Lutie is observing the appearance of the street at a particular time of day and the events occurring on it. Choice B is incorrect. Although Lutie is observing children playing games on her street, the text doesn’t suggest that she is annoyed by the noise of the games. Instead, the text says that Lutie thinks the street looks nice in the light of the sunset. Choice C is incorrect. Although Lutie is observing children playing games on her street, the text doesn’t suggest that she is puzzled by the rules of the games. Choice D is incorrect because there is no evidence in the text that Lutie doesn’t want to interact with her neighbors or that she is in her apartment alone. All the text indicates about Lutie is that she is watching the events on the street and thinks the street looks nice in the light of the sunset.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "ff7a1c0d",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Medium",
+    "passage": "Ochre sea stars live in tidal pools along the shoreline of the Pacific Ocean. At night, they move to higher shore levels in search of prey. But scientists Corey Garza and Carlos Robles noticed that ochre sea stars stayed at lower levels at night after heavy rains. Garza and Robles hypothesized that a layer of fresh water formed by rainfall was a barrier to the sea stars. To test their hypothesis, the scientists did an experiment. They placed some sea stars in a climbable tank of seawater and other sea stars in a similar tank of seawater with a layer of fresh water on top. Then, the scientists watched the sea stars’ behavior at night.",
+    "question": "Which finding from the experiment, if true, would most directly support Garza and Robles’s hypothesis?",
+    "options": [
+      "A. None of the sea stars climbed to the tops of the tanks, but sea stars in the tank with only seawater moved around the bottom of the tank more than sea stars in the other tank did.",
+      "B. Sea stars in the tank with only seawater climbed to the top of the tank, but sea stars in the other tank stopped climbing just below the layer of fresh water.",
+      "C. Both groups of sea stars climbed to the tops of the tanks, but sea stars in the tank with only seawater climbed more slowly than sea stars in the other tank did.",
+      "D. Sea stars in the tank with only seawater mostly stayed near the bottom of the tank, but sea stars in the other tank climbed into the layer of fresh water."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it presents a finding that, if true, would support Garza and Robles’s hypothesis that a layer of fresh water forms a barrier to ochre sea stars. The text explains that the sea stars tend to move to higher shore levels at night in search of prey, but after a heavy rain, the sea stars stay at lower shore levels. Garza and Robles hypothesize that rainfall results in a layer of fresh water that the sea stars don’t cross. To determine whether fresh water forms a barrier to sea stars, Garza and Robles observed how sea stars behaved in a tank of only seawater and in a tank of seawater with a layer of fresh water on top. If the sea stars climbed to the top of the tank with only seawater but stopped climbing just below the layer of fresh water in the other tank, that would suggest that fresh water does indeed serve as a barrier to the sea stars, thereby supporting Garza and Robles’s hypothesis. Choice A is incorrect because finding that sea stars in the tank with only seawater moved around the bottom of the tank more than sea stars in the other tank did but that none of the stars in either tank climbed to the top would be irrelevant to Garza and Robles’s hypothesis. Such a finding would reveal nothing about whether fresh water serves as a barrier to sea stars. Choice C is incorrect because finding that sea stars climbed to the top of both tanks would weaken, not support, Garza and Robles’s hypothesis, since it would indicate that the layer of fresh water wasn’t a barrier to the sea stars. Choice D is incorrect because finding that sea stars in the tank with only seawater mostly stayed near the bottom of the tank but sea stars in the other tank climbed into the layer of fresh water wouldn’t support Garza and Robles’s hypothesis. Instead, such a finding would suggest that the layer of fresh water wasn’t a barrier to the sea stars, thereby weakening Garza and Robles’s hypothesis.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "9e4326be",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Medium",
+    "passage": "The following text is from Laila Lalami’s 2019 novel The Other Americans. The narrator is a member of her middle school’s jazz band.\n\nOne day the jazz band was invited to perform at the Summer Festival in Palm Springs. Walking across the stage to the piano, I did what my teacher had advised. Pretend you’re only playing for one person. That way you won’t be so nervous. I glanced at my father, who sat in the front row, leaning his head just so, waiting. Then I closed my eyes, and began to play.\n\n©2019 by Laila Lalami",
+    "question": "According to the text, what does the narrator do as she walks across the stage?",
+    "options": [
+      "A. She thinks about the differences between playing the piano alone and playing in a band.",
+      "B. She feels excitement about playing in a music festival for the first time.",
+      "C. She remembers how hard she has practiced for the performance.",
+      "D. She follows her teacher’s advice about managing her nervousness."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents a statement about what the narrator is doing that is directly supported by the text. According to the text, as the narrator walks across the stage to her piano, she recalls her teacher’s advice to pretend that she is playing for only one person. The text indicates that this advice was intended to help manage any nerves related to performing. Moreover, the text implies that the narrator follows this advice by deciding to focus on her father sitting in the audience. Thus, the text supports the idea that as she walks across the stage, the narrator follows her teacher’s advice about managing her nervousness. Choice A is incorrect because the text doesn’t indicate that the narrator is thinking about how playing the piano alone is different from playing the piano in a band. Rather, the narrator thinks about her teacher’s advice to pretend that she is playing the piano for only one person to help ease her nervousness about performing. Choice B is incorrect because the text provides no indication that this is the first music festival that the narrator has performed in. Furthermore, the text indicates that the narrator is nervous, not excited, to play the piano at the festival. Choice C is incorrect because the text doesn’t suggest that the narrator is remembering how hard she practiced for the performance. Rather, she is thinking about what her teacher told her to do to help ease her nerves about playing the piano in front of an audience.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "9a943a62",
+    "skill": "Inferences",
+    "difficulty": "Medium",
+    "passage": "To create the poems in her 2017 collection One Last Word, poet Nikki Grimes used a writing method called the golden shovel. This method often involves choosing a line from an existing poem and then using each word from that line as the last word of each line in a new poem. Grimes wanted the poems in One Last Word to honor important Black poets of the past, so she chose lines by poets such as Langston Hughes and Georgia Douglas Johnson. Writing in this way can be challenging and might seem as though it would produce awkward poems. However, reviewers praised One Last Word as a beautiful and powerful tribute to the poets who inspired it. This reaction suggests that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. most reviewers didn’t understand Grimes’s goal for One Last Word.",
+      "B. Grimes successfully used the golden shovel method to achieve her goal for One Last Word.",
+      "C. Langston Hughes and Georgia Douglas Johnson are two of Grimes’s favorite poets.",
+      "D. Grimes inspired many other writers to create poems using the golden shovel method."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most logically completes the text’s discussion of Nikki Grimes’s poetry collection One Last Word. The text explains that Grimes used a writing method called the golden shovel to create the poems in her book. According to the text, the method involves basing a new poem on a line from an existing poem. The text then mentions Langston Hughes and Georgia Douglas Johnson as examples of important Black poets whose lines of poetry form the basis of Grimes’s poems. The text goes on to say that this writing method is difficult and that the resulting poems can be awkward, but reviewers have positively reviewed Grimes’s book. If the reviewers of One Last Word specifically note that the work is a “beautiful and powerful tribute to the poets who inspired it,” then they must have appreciated how Grimes used the golden shovel method to pay tribute to other poets. This suggests that Grimes was successful in using the golden shovel method to achieve her goal of honoring Black poets in her book. Choice A is incorrect because the reaction suggests that most reviewers did understand Grimes’s goal for her book. According to the text, the reviewers noted that the poems in her book were a “beautiful and powerful tribute to the poets who inspired it.” Earlier, the text claims that Grimes intended the poems “to honor important Black poets of the past,” so in their praise of her book, the reviewers clearly indicated that they understood Grimes’s goal. Choice C is incorrect. Although it’s likely that Grimes sought to honor Hughes and Johnson in her book of poetry because they’re among her favorite poets, this fact isn’t suggested by the reviewers’ positive reaction to her book. Instead, the reaction suggests that Grimes was successful in her use of the golden shovel method. Choice D is incorrect because the text doesn’t discuss whether other writers were inspired by Grimes to use the golden shovel method in their poetry. The text mentions the poets Hughes and Johnson as examples of poets honored in Grimes’s book and describes reviewers’ positive reception of her book, but it doesn’t detail Grimes’s impact on other writers.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "a1904094",
+    "skill": "Inferences",
+    "difficulty": "Medium",
+    "passage": "The musical Hadestown was produced off-Broadway in New York in 2016. A revised version of the musical premiered on Broadway in 2019, in a larger production. In a review of the Broadway production, theater critic Jesse Green enthusiastically praised the musical’s storytelling. However, Green also explained that he had seen the earlier version of Hadestown in 2016 and had found the storytelling to be very confusing. This suggests that in Green’s view, ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. the 2016 version of Hadestown had fewer storytelling problems than the 2019 version did.",
+      "B. Hadestown should have had a larger production in 2019 than it actually did.",
+      "C. the 2019 version of Hadestown was less enjoyable than the 2016 version.",
+      "D. Hadestown improved greatly between 2016 and its premiere on Broadway."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most logically completes the text’s discussion of critic Jesse Green’s review of the 2016 and 2019 productions of Hadestown. The text states that Green found the storytelling in the 2016 off-Broadway version to be \"very confusing\" but that he \"enthusiastically praised\" the storytelling in the revised 2019 Broadway version. This stark contrast in Green’s opinions suggests that he believed the musical had significantly improved between 2016 and its 2019 Broadway premiere. Choice A is incorrect because it contradicts the information in the text. The text indicates that Green found the storytelling in the 2016 version to be \"very confusing,\" while he \"enthusiastically praised\" the storytelling in the 2019 version. This suggests that the 2019 version had fewer, not more, storytelling problems. Choice B is incorrect because the text doesn’t provide any information about Green’s opinion on the size of the 2019 Broadway production. While it mentions that the 2019 production was larger than the 2016 production, there’s no indication in the text that Green thought the 2019 production should have been even larger than it was. Choice C is incorrect because it contradicts the information in the text. The text’s description of Green’s enthusiastic praise for the 2019 production suggests that he found this version more enjoyable, not less enjoyable, than the 2016 version, which he described as \"very confusing.\"",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "ed7c82f0",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Medium",
+    "passage": "“Banking Coal” is a 1922 poem by Jean Toomer. The poem describes a fire being lit and maintained. In the poem, the speaker praises the person who built the fire: ______",
+    "question": "Which quotation from “Banking Coal” most effectively illustrates the claim?",
+    "options": [
+      "A. “I’ve seen them set to work, each in his way, / Though all with shovels and with ashes.”",
+      "B. “Whoever it was who brought the first wood and coal / To start the Fire, did his part well.”",
+      "C. “Sometimes the fire left alone / Would die...”",
+      "D. “Whereupon they’d crawl in hooded night-caps / Contentedly to bed.”"
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it presents a quotation that effectively illustrates the claim that the speaker in the poem praises the person who built the fire. In the quotation, the speaker explicitly refers to the builder of the fire—the one “who brought the first wood and coal / To start the Fire”—and offers praise, stating that this person “did his part well.” Choice A is incorrect. Although the quotation describes seeing people working with shovels and ashes, which can be associated with tending a fire, it doesn’t mention the building of the fire or single out any person for praise. Choice C is incorrect. Although the quotation refers to the fire, it describes the fire dying when left alone, not the starting of the fire or the person who built it. Choice D is incorrect because the quotation makes no reference to the fire and doesn’t praise anyone; it simply states that people got into bed contentedly in nightcaps.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "6abd46ef",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Medium",
+    "passage": "Happy House is a 1920 novel by Jane Abbott. The narrator presents a young woman as being unimpressed with the house she is visiting: ______",
+    "question": "Which quotation from Happy House most effectively illustrates the claim?",
+    "options": [
+      "A. “Her first feeling was of disappointment; in the square lines of the house there was little claim to beauty.”",
+      "B. “Someone had opened one of the blinds so here there was more light.”",
+      "C. “The door, built squarely in the middle of the house, opened almost directly upon a stone-flagged path that led in a straight line to the road.”",
+      "D. “She tip-toed through the hall and opened the door on the right.”"
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most effectively uses a quotation from Happy House to illustrate the claim that the young woman is unimpressed with the house she is visiting. In the quotation, it says the young woman’s \"first feeling was of disappointment\" and that \"there was little claim to beauty\" when referring to the house. This disappointment and the overall lack of beauty in the house suggest that the young woman isn’t impressed by the house she is visiting. Choice B is incorrect because the quotation doesn’t describe what the young woman thinks about the house. Instead, it indicates that there is more light because window blinds have been opened. Choice C is incorrect because the quotation describes a door and a path outside of the house but doesn’t include anything to indicate the young woman’s feelings about the house. Choice D is incorrect because the quotation states what the young woman did in the house (\"tip-toed through the hall\" and \"opened the door\"), but it doesn’t show what she thinks about it.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "d9f5b2a5",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Medium",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the graph to complete the text?",
+    "options": [
+      "A. Zion National Park.",
+      "B. Rocky Mountain National Park.",
+      "C. Yellowstone National Park.",
+      "D. Grand Canyon National Park."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most effectively uses data from the graph to complete the statement about the US national park with the highest number of recreation visits during a three-month period. The line graph shows the number of recreation visits to four US national parks for the months of June, July, and August 2021. According to the graph, the number of recreation visits to Yellowstone National Park in June was approximately 940,000; in July, the number of visits was approximately 1,080,000; and in August, the number of visits was approximately 920,000. In all three months, the number of visits to Yellowstone was higher than the number of visits to any other park in each month. Choice A is incorrect. According to the graph, the number of recreation visits to Zion National Park was approximately 680,000 in June, about 580,000 in July, and about 470,000 in August, each of which is lower than the number of visits to Yellowstone in the same months. Choice B is incorrect. According to the graph, the number of recreation visits to Rocky Mountain National Park was approximately 670,000 in June, about 900,000 in July, and about 750,000 in August, each of which is lower than the number of visits to Yellowstone in the same months. Choice D is incorrect. According to the graph, the number of recreation visits to Grand Canyon National Park was approximately 540,000 in June, about 560,000 in July, and about 430,000 in August, each of which is lower than the total visits to Yellowstone in the same months.",
+    "image": "assets/coeq_d9f5b2a5.png",
+    "alt": "Data figure: Recreation Visits by Month to Four US National Parks during the Peak Season in 2021. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "e111c334",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Medium",
+    "passage": "Stores often play background music to create a pleasant shopping experience. Based on a survey, Amir Manzoor found that such music was linked to reduced enjoyment among customers. Manzoor thinks that one explanation for this result is that the surveyed customers may have wanted to finish their shopping as quickly as possible. They therefore weren’t focused on enjoying the experience. It’s possible that background music could improve the experience of other customers whose main goal is to have a good time while they shop.",
+    "question": "Based on the text, which research question was Manzoor’s study most likely intended to answer?",
+    "options": [
+      "A. Does the volume of a store’s background music affect how much time customers spend in the store?",
+      "B. How does the use of background music in stores affect customers’ shopping experience?",
+      "C. Do customers spend more money when shopping for music in stores or online?",
+      "D. What genres of music do customers prefer to listen to while they are shopping?"
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it presents a research question that is clearly addressed by Manzoor’s study as described in the text. The text indicates that Manzoor surveyed customers and found that background music was linked to reduced enjoyment while shopping. Manzoor then explains this result in terms of the music interfering with customers’ main goal (finishing their shopping as quickly as possible), speculating that background music might improve the experience of customers with different shopping goals. Throughout the text, the focus is on the relationship between background music and customers’ shopping experience, suggesting that Manzoor’s study was designed to answer how background music affects that experience. Choice A is incorrect because the text doesn’t mention the volume of background music or how much time customers spend in a store. Instead, the text focuses on whether background music is linked to customer enjoyment of the shopping experience. Choice C is incorrect because the text doesn’t address how much money customers spend or compare in-store and online purchasing. Rather, the text discusses background music played during shopping, not music as a product to be purchased. Choice D is incorrect because the text doesn’t discuss different genres of music or customers’ preferences for particular genres. Instead, the text addresses background music in general and its link to customer enjoyment.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "73057ba1",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Medium",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "A. 2016.",
+      "B. 2018.",
+      "C. 2019.",
+      "D. 2017."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most effectively uses data from the table to complete the statement about the year when both museums had the highest number of visits. The table shows the number of visits (in millions) from 2016 to 2019 to two museums: the National Museum of the American Indian and the National Museum of African American History and Culture. It indicates that the highest number of visits to the National Museum of the American Indian was 1.2 million in 2017 and that the highest number of visits to the National Museum of African American History and Culture was 2.4 million, also in 2017. Choice A is incorrect because the table shows that in 2016, the National Museum of the American Indian had 1.1 million visits and that the National Museum of African American History and Culture had 0.73 million visits, both of which are lower than the number of visits these museums had in 2017. Choice B is incorrect because the table shows that in 2018, the National Museum of the American Indian had 1.1 million visits and that the National Museum of African American History and Culture had 1.9 million visits, both of which are lower than the number of visits these museums had in 2017. Choice C is incorrect because the table shows that in 2019, the National Museum of the American Indian had 0.96 million visits and that the National Museum of African American History and Culture had 2.0 million visits, both of which are lower than the number of visits these museums had in 2017.",
+    "image": "assets/coeq_73057ba1.png",
+    "alt": "Data figure: Number of Museum Visits (in Millions) from 2016 to 2019. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "6b73e8c2",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Medium",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the claim?",
+    "options": [
+      "A. a longer footprint, and a longer average stride.",
+      "B. a longer footprint, and a shorter average stride.",
+      "C. a shorter footprint, and a longer average stride.",
+      "D. a shorter footprint, and a shorter average stride."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most effectively uses data from the table to complete the claim about the tracks left by two therapods. The table indicates that the set of tracks labeled La Torre 6A has an estimated footprint length of 32.8 centimeters, an average stride length of 5.23 meters, and an estimated mean speed of 6.5–10.3 meters per second. For the set of tracks labeled La Torre 6B, on the other hand, the estimated footprint length is 28.9 centimeters, the average stride length is 5.57 meters, and the estimated mean speed is 8.8–12.4 meters per second. Therefore, the therapod that left the La Torre 6B tracks had a shorter footprint and a longer average stride than the one that left the La Torre 6A tracks. Choice A is incorrect. While it is true that of the two therapods, the one that left the La Torre 6B tracks had a longer average stride, it didn’t have a longer footprint: the table shows that its estimated footprint length is 28.9 centimeters, while La Torre 6A’s estimated footprint length is 32.8 centimeters. Choice B is incorrect because the table shows that of the two therapods, the one that left the La Torre 6B tracks had a footprint length estimated at 28.9 centimeters, which is shorter than the 32.8 centimeters estimated for the other set of tracks. Moreover, the therapod that left the La Torre 6B tracks had a longer average stride, not shorter: 5.57 meters, compared with 5.23 meters for the other set of tracks. Choice D is incorrect. While it is true that of the two therapods, the one that left the La Torre 6B tracks had a shorter footprint, it didn’t have a shorter average stride: the table shows that its average stride length is 5.57 meters, while La Torre 6A’s average stride length is 5.23 meters.",
+    "image": "assets/coeq_6b73e8c2.png",
+    "alt": "Data figure: Results of Footprint Analysis for Two Sets of Theropod Tracks. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "bf09f839",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Medium",
+    "passage": "It has long been thought that the original author of the US Pledge of Allegiance was Francis Bellamy, who said that he wrote the pledge one evening in August of 1892. But a historian recently discovered a newspaper article that was published several months before August 1892. The article describes students reciting the same pledge that Bellamy claims he first wrote in August. This means that Bellamy may not have created the pledge after all.",
+    "question": "Based on the text, what piece of knowledge about the Pledge of Allegiance has recently become uncertain?",
+    "options": [
+      "A. How many changes were made to the pledge in the 1900s",
+      "B. The identity of the person who first wrote the pledge",
+      "C. The name of the newspaper that first published the pledge",
+      "D. Which part of the pledge students liked best in 1892"
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it presents a supposed fact about the Pledge of Allegiance that, as the text explains, has recently become uncertain. The text begins by explaining the long-held belief that the original author of the US Pledge of Allegiance was Francis Bellamy, who claimed to have written it in August 1892. The text then describes a historian’s recent discovery of a newspaper article published several months before August 1892 that mentions students reciting the same pledge. The text concludes that this discovery suggests Bellamy may not have created the pledge after all. Thus, what has recently become uncertain is the identity of the person who first wrote the pledge. Choice A is incorrect because the text doesn’t address any changes made to the Pledge of Allegiance in the 1900s. The text focuses solely on the question of who originally authored the pledge in or before 1892 and doesn’t mention any subsequent modifications to its wording. Choice C is incorrect. While the text does mention a historian’s discovery of a newspaper article that described students reciting the pledge, it doesn’t suggest that the pledge was published in its entirety within that article. Moreover, the text doesn’t identify the newspaper by name or suggest the possibility of an earlier mention of the pledge in a different newspaper. Choice D is incorrect because the text doesn’t mention which parts of the Pledge of Allegiance students preferred in 1892 or at any other time. The text only states that a newspaper article described students reciting the pledge, without providing any information about their preferences regarding different portions of it.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "737a2aca",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Medium",
+    "passage": "Few animals are known to spit: among them are humans, cobras, and camels. But in January 2022 at a nature preserve in southern England, bird- watcher Clare Jacobs observed a gray seal spitting a jet of water at a white-tailed eagle flying overhead. Seals had never been seen spitting before. Biologist Sean Twiss, who studies gray seals, believes that the seal may have been attempting to scare the eagle away from a food source or that the seal may have just been playing.",
+    "question": "Which choice best states the main topic of the text?",
+    "options": [
+      "A. Bird-watching in southern England",
+      "B. A previously unseen behavior of gray seals",
+      "C. How white-tailed eagles defend their territory against other predators",
+      "D. Differences between gray seals and white-tailed eagles"
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most accurately states the main topic of the text. The text begins by noting that few animals are known to spit, and then it focuses on Clare Jacobs’s January 2022 observation of a gray seal spitting water at a white-tailed eagle. The text explicitly notes that this behavior had never before been observed in seals, highlighting that this was a previously unseen behavior. The text concludes with biologist Sean Twiss’s hypotheses about why the seal might have been spitting. Thus, the main topic is the observation of a previously unseen behavior (spitting) of gray seals. Choice A is incorrect because while the text does mention bird-watcher Clare Jacobs making an observation in southern England, bird-watching itself is not the main topic. The reference to bird-watching is incidental to the central focus of the novel behavior of a gray seal spitting water at an eagle. Choice C is incorrect because the text only mentions a white-tailed eagle as the target of a seal’s spitting behavior; it doesn’t provide any information about how these eagles typically behave when defending territory or interacting with other predators. Choice D is incorrect because the text doesn’t discuss differences between gray seals and white-tailed eagles. While both animals are mentioned, the text is focused on the seal’s unusual spitting behavior rather than comparing the two animals in any way.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "cec80c03",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Medium",
+    "passage": "Janet Echelman is a sculptor and fiber artist. She has installed giant sculptures all over the world. Echelman uses bright and flowing materials, which mimic the wind. <u>However, while her sculptures appear as delicate as a breeze, they are actually very durable.</u>",
+    "question": "Which quotation from an article about Echelman’s sculptures, if true, would most effectively illustrate the underlined claim?",
+    "options": [
+      "A. “Echelman uses a special program that makes a 3D model of the sculpture.”",
+      "B. “The first part of planning a new sculpture is done using paper and pencil, and then a digital program is used to finalize the design.”",
+      "C. “The materials that Echelman uses to build her sculptures are both flexible and strong.”",
+      "D. “Each sculpture is designed to reflect local landmarks from the area in which it is eventually installed.”"
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it presents the quotation that most effectively illustrates the claim that Echelman’s sculptures appear delicate but are in fact quite durable. The text explains that Echelman’s sculptures include flowing shapes that mimic the wind. If it is true that the materials she uses are both flexible and strong, that would help explain why the works are durable even though they appear delicate. Choice A is incorrect because the claim in the text is not about how Echelman models her work before sculpting. Choice B is incorrect because the claim in the text is not about the planning and design phases of Echelman’s work. Choice D is incorrect because the claim in the text is not about how the sculptures relate to their locations.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "18d9db1c",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Medium",
+    "passage": "Xin Wang and colleagues have discovered the earliest known example of a flower bud in a 164-million-year-old plant fossil in China. The researchers have named the new species Florigerminis jurassica. They believe that the discovery pushes the emergence of flowering plants, or angiosperms, back to the Jurassic period, which occurred between 145 million and 201 million years ago.",
+    "question": "According to the text, how old was the fossil that Wang and colleagues discovered?",
+    "options": [
+      "A. 150 million years old",
+      "B. 145 million years old",
+      "C. 164 million years old",
+      "D. 201 million years old"
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it gives the age for the fossil discovered by Wang and colleagues that is directly supported by the text. According to the text, Xin Wang and colleagues discovered a 164-million-year-old plant fossil. This plant fossil included a flower bud, which the researchers believe provides evidence that flowering plants emerged in the Jurassic period, which falls between 145 million and 201 million years ago. Choice A is incorrect because the text states that Wang and colleagues discovered a 164-million-year-old flowering plant fossil in China, not one that is 150 million years old. Although 150 million years ago would fall within the Jurassic period, according to the text it isn’t the age of the discovered fossil. Choice B is incorrect because the text states that Wang and colleagues discovered a 164-million-year-old flowering plant fossil in China, not one that is 145 million years old. Although 145 million years ago would fall at the end of the Jurassic period, according to the text it isn’t the age of the discovered fossil. Choice D is incorrect because the text states that Wang and colleagues discovered a 164-million-year-old flowering plant fossil in China, not one that is 201 million years old. Although 201 million years ago would fall at the beginning of the Jurassic period, according to the text it isn’t the age of the discovered fossil.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "1619c136",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Medium",
+    "passage": "Ruth Asawa was an accomplished artist who worked in many art forms, including her unique tied-wire sculptures, but she was dedicated to more than the creation of art. Asawa also wanted to bring art to children in her hometown of San Francisco, California. To that end, in 1968 she cofounded the Alvarado School Arts Workshop, which brought works of art and artists into public schools, and in 1982 she helped found a San Francisco public arts high school, which was later named after her.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. Asawa inspired many other artists to share their work with students in public schools.",
+      "B. Asawa’s unique sculptures were appreciated more by local art communities than they were nationwide.",
+      "C. Asawa’s interest in art education prompted her to create art programs for students in San Francisco.",
+      "D. Asawa left a promising career as a sculptor to work as an art teacher in San Francisco schools."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most accurately states the main idea of the text. The text begins by establishing Ruth Asawa as an artist who worked in several art forms but emphasizes that she was interested in art for reasons other than her desire to create it. The text mentions two ways in which Asawa brought art to children through public schools: cofounding the Alvarado School Arts Workshop in 1968 and helping found a public arts high school in 1982. Thus, the main idea is that Asawa’s interest in art education motivated her to establish arts programs for students in San Francisco. Choice A is incorrect because the text doesn’t mention Asawa inspiring other artists to share their work with students. While the text does note that the Alvarado School Arts Workshop brought works of art and artists into public schools, it doesn’t state that Asawa motivated these artists. Choice B is incorrect because the text makes no comparison between local and national appreciation of Asawa’s sculptures. While the text does mention that Asawa created unique tied-wire sculptures and was connected to San Francisco, it does not contrast her local and national critical receptions. Choice D is incorrect. Although the text emphasizes Asawa’s educational initiatives, it doesn’t state or imply that she abandoned her career as a sculptor to work as an art teacher. Instead, the text portrays her educational work as a complement to her career as a successful artist.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "d2a7948a",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Medium",
+    "passage": "The following text is adapted from Johanna Spyri’s 1881 novel Heidi (translated by Elisabeth Stork in 1915). Eight-year-old Heidi and her friend’s grandmother are looking at some illustrated books.\n\nHeidi had come and was looking with wondering eyes at the splendid pictures in the large books, that Grandmama was showing her. Suddenly she screamed aloud, for there on the picture she saw a peaceful flock grazing on a green pasture. In the middle a shepherd was standing, leaning on his crook. The setting sun was shedding a golden light over everything. With glowing eyes Heidi devoured the scene.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. Heidi is upset until she sees a serene image of a pasture in one of Grandmama’s books.",
+      "B. Heidi is delighted and fascinated by an image she sees in one of Grandmama’s books.",
+      "C. Heidi is initially frightened by an image in one of Grandmama’s books but quickly comes to appreciate its beauty.",
+      "D. Heidi is inspecting an image in one of Grandmama’s books because she has never seen a shepherd with his sheep before."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most effectively states the main idea of the text, which is that Heidi is delighted and fascinated by an image she sees in one of Grandmama’s books. In the text, Heidi screams upon first seeing the picture of the green pasture. In another context, such a reaction might suggest fear, but here the reaction is followed by descriptions of an image that’s peaceful rather than scary. The text goes on to describe Heidi’s eyes as “glowing” and states that she “devoured the scene,” suggesting that the image delights and fascinates her so much that she wants to examine every detail. Together, these descriptions suggest that Heidi is thrilled and intrigued by the image in the book. Choice A is incorrect because there’s nothing in the text to suggest that Heidi is upset before seeing the peaceful image of the green pasture. Before Heidi sees that image, the text describes her as “looking with wondering eyes at the splendid pictures” in the book, suggesting that Heidi is intrigued, not that she’s unhappy. Choice C is incorrect. Although Heidi screams upon first seeing the image, the text’s description of the image and Heidi’s other reactions to it suggest that she is screaming with delight, not fear. The text describes the images in the book as “splendid” and the particular image that causes her to scream as peaceful rather than frightening. It also describes Heidi’s eyes as “glowing” and states that she “devoured the scene,” suggesting that the image of the green pasture delights and fascinates her so much that she wants to examine every detail. Choice D is incorrect because it’s unclear from the text whether Heidi has ever seen a shepherd with his sheep before. The text merely suggests that she is delighted and fascinated by the image of the shepherd and his sheep.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "908c95d2",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Medium",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the graph to complete the example?",
+    "options": [
+      "A. the Philippines increased dramatically from 1908 to 1918.",
+      "B. New Zealand were largely consistent from 1903 to 1918.",
+      "C. Australia increased steadily from 1903 to 1918.",
+      "D. Turkey declined substantially from 1913 to 1918."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most effectively uses data from the graph to complete the example. According to the graph, fewer than 10,000 sewing machines were sold in the Philippines in both 1903 and 1908, but nearly 30,000 were sold in 1913 and around 45,000 were sold in 1918. This increase illustrates the statement in the text that demand for Singer sewing machines grew significantly in the early twentieth century in overseas countries other than Russia, Germany, and the United Kingdom. Choice B is incorrect because consistent sales of Singer sewing machines in New Zealand from 1903 to 1918 do not indicate that demand for the product increased but rather that demand remained relatively the same. Choice C is incorrect because it does not accurately describe the data in the graph. Although sales in Australia did increase somewhat between 1903 and 1908, there was very little change between 1908 and 1913, and then sales declined between 1913 and 1918. The data for Australia, then, do not show a steady increase from 1903 to 1918. Choice D is incorrect because declining sales of Singer sewing machines in Turkey from 1913 to 1918 do not point to an increase in demand for the product but rather to a decline in demand.",
+    "image": "assets/coeq_908c95d2.png",
+    "alt": "Data figure: Singer Sewing Machine Sales in Four Countries, 1903–1918. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "9e588341",
+    "skill": "Inferences",
+    "difficulty": "Medium",
+    "passage": "A typical string quartet consists of two violin players, a viola player, and a cello player. When a string quartet performs, one violinist and the cellist usually sit facing the audience. The violist and the other violinist usually sit facing each other. This seating arrangement causes the viola’s carved sound openings, or f-holes, to be angled away from the audience. Therefore, if the viola player has a musical solo and wants to make sure that the audience can hear it clearly, the violist typically ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. instructs the other members of the quartet to play louder.",
+      "B. plays at the same volume as the cellist.",
+      "C. shifts position in order to face outwards toward the audience.",
+      "D. looks at the sheet music instead of looking at the audience."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most logically completes the text’s discussion of how a violist in a string quartet might behave to ensure their instrument can be heard clearly by the audience during a solo. According to the text, such quartets consist of two violins, a viola, and a cello, configured as follows: the cellist and one of the violinists both face the audience, while the other violinist and the violist face each other. In other words, the viola and its f-holes, or sound openings, are “angled away from the audience,” just as the musician playing the instrument is. As the text implies, the f-holes are crucial for projecting sound, so this positioning reduces the volume of the viola as perceived by the audience and in turn presents a dilemma during a solo, in which the viola should be heard clearly above the other instruments in the quartet. Therefore, during a viola solo, the violist would most logically adjust their position and face the audience directly, thereby projecting the sound emerging from the instrument’s f-holes toward listeners. This adjustment would maximize the viola’s sound for the benefit of the audience for the duration of the solo. Choice A is incorrect because the text’s discussion is about how a violist in a string quartet behaves to ensure that their instrument can be heard clearly by the audience during a solo, given the orientation of this instrument in a typical string quartet configuration, and a soloist would want the viola to be more prominent relative to the other instruments in this context, not less prominent. Therefore, it wouldn’t be sensible for the violist to instruct the other members of the quartet to play louder during the solo. Choice B is incorrect because the text’s discussion is about how a violist behaves to ensure that their instrument can be heard clearly by the audience during a solo, given the orientation of this instrument in a typical string quartet configuration, and a violist would want the viola to be more prominent and therefore louder relative to all the other instruments. Therefore, it wouldn’t be sensible for the violist to play at the same volume as the cellist during a solo. Choice D is incorrect. While a violist might very well look at the sheet music during a solo to ensure they are playing the piece correctly, the direction that a musician looks in doesn’t determine how effectively the sound of their instrument is projected to the audience. If, as the text stipulates, a violist wants to ensure that their instrument can be heard clearly, given the orientation of the viola in the typical seating configuration of a string quartet, then the violist would likely change their physical orientation, facing toward the audience and therefore angling the viola’s f-holes in that direction during the solo.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "8f13ba27",
+    "skill": "Inferences",
+    "difficulty": "Medium",
+    "passage": "In Switzerland, the white fuzzy mountain flowers known as edelweiss are widely treated as a symbol of strength and courage. Although edelweiss can thrive in extreme conditions, they aren’t notably tougher or harder to reach than other mountain flowers growing in the Swiss Alps. Historian Tobias Scheidegger has shown that the popular view of the flowers originated in the mid-1800s when mountain climbing became popular in Switzerland. Mountain climbers spread the idea that the flowers grew only in steep, icy terrains that were dangerous to climb to. Scheidegger says that these claims were self-interested. He suggests that mountain climbers presented edelweiss in this way in order to ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. make themselves appear brave and strong for being able to climb to difficult places where edelweiss supposedly grew.",
+      "B. encourage more flower enthusiasts to explore the Swiss Alps.",
+      "C. share their observations about the unusual characteristics of edelweiss with scientists.",
+      "D. prove that edelweiss were more common in the Swiss Alps than in other mountain regions in Europe."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most logically completes the text’s discussion of mountain climbers’ motivations for exaggerating the difficulty of reaching edelweiss. The text establishes that edelweiss became symbols of strength and courage in Switzerland in the mid-1800s. The text goes on to state that mountain climbing became popular around the same time and that climbers spread the false idea that the flowers grew only in dangerous, hard-to-reach locations. According to the text, historian Tobias Scheidegger argues that these claims were “self- interested,” meaning they served the climbers’ own purposes. The text therefore implies that by claiming that edelweiss could be found only in perilous locations, mountain climbers could enhance their own reputations: climbers who encountered edelweiss would appear to have undertaken a dangerous journey, thereby making themselves seem brave and strong. Choice B is incorrect because making edelweiss seem more dangerous to reach than other mountain flowers are would likely discourage flower enthusiasts from trying to reach edelweiss rather than encourage them to explore the Swiss Alps. The text suggests that climbers’ self-interested motivation for exaggerating the difficulty of climbing to areas where edelweiss grew was to enhance their own reputations for being especially brave, not to promote tourism in the Swiss Alps. Choice C is incorrect because the text states that according to Scheidegger, mountain climbers exaggerated the difficulty of reaching edelweiss for self-interested reasons, not because they wanted to report genuine scientific observations about the flower’s unique characteristics. The text provides no indication that the climbers sincerely believed that their claims about the especially challenging terrain in which edelweiss grew were accurate, much less that they wanted to share this information with scientists. Choice D is incorrect because the text doesn’t suggest that mountain climbers were trying to prove that edelweiss were more common in Switzerland than elsewhere. The text’s focus is on the supposed difficulty and danger of reaching the flowers, not on their relative abundance in the Swiss Alps compared to other regions. In fact, the text implies that mountain climbers exaggerated how difficult edelweiss were to reach; it therefore wouldn’t make sense to say that they exaggerated this difficulty to demonstrate that edelweiss were relatively common.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "60df0468",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Medium",
+    "passage": "“Aunt Sue’s Stories” is a 1926 poem by Langston Hughes. In the poem, the speaker indicates that the stories Aunt Sue tells are based on Aunt Sue’s personal experiences, saying that ______",
+    "question": "Which choice most effectively uses a quotation from “Aunt Sue’s Stories” to illustrate the claim?",
+    "options": [
+      "A. dark shadows “cross and recross / Aunt Sue’s stories.”",
+      "B. a listening child “knows that Aunt Sue / Never got her stories out of any book at all, / But that they came / Right out of her own life.”",
+      "C. the stories are told during “Summer nights on the front porch.”",
+      "D. the people in the stories “Mingle themselves softly / In the flow of old Aunt Sue’s voice, / Mingle themselves softly.”"
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most effectively illustrates the speaker of the poem’s claim that the stories Aunt Sue tells are based on Aunt Sue’s personal experiences. In the quotation, the speaker conveys the listening child’s point of view that Aunt Sue’s stories originate from her personal experiences and are not taken from books or other external sources. The listening child explicitly contrasts two possible sources for Aunt Sue’s stories: a book (whose potentially fictitious stories are implied to be written by someone else) or “her own life.” By having the child confidently assert that Aunt Sue “never got her stories out of any book at all,” the speaker indicates that Aunt Sue’s stories are instead informed by her lived experiences. Choice A is incorrect because it describes an element or image that recurs within Aunt Sue’s stories rather than indicating that these stories have a real-life basis. The reference to dark shadows that “cross and recross” the stories functions as imagery on a literal, visual level and may also evoke figurative darkness, but this detail by itself doesn’t suggest that the stories are based on Aunt Sue’s personal experiences. Choice C is incorrect because it identifies the setting of Aunt Sue’s storytelling rather than describing the real-life basis of the stories themselves. The quotation states that Aunt Sue tells her stories on “summer nights on the front porch,” which establishes when and where the storytelling occurs; however, no information is provided about the origins of the stories that Aunt Sue tells within this setting. Choice D is incorrect because it describes the movement or circulation of characters in the stories as Aunt Sue speaks rather than establishing that these stories have a real-life basis. The quotation primarily evokes the sounds of Aunt Sue’s voice and the seemingly easy “flow” of this voice in her storytelling. Although the characters who “mingle…in the flow of old Aunt Sue’s voice” are to some extent created or animated by her voice, no information is provided about the characters themselves or their relationship to Aunt Sue’s actual experiences.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "4444a465",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Medium",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "A. the number of cars produced increased but the number of companies producing cars decreased.",
+      "B. both the number of cars produced and the number of companies producing cars remained unchanged.",
+      "C. the number of cars produced decreased but the number of companies producing cars remained unchanged.",
+      "D. both the number of cars produced and the number of companies producing cars increased."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most effectively uses data from the table to complete the statement about the US auto industry in the early twentieth century. The table shows the number of cars produced annually and number of companies producing cars in the United States between 1910 and 1925 in increments of five years. According to the table, the number of cars produced consistently increased from one increment to the next, going from 123,990 cars in 1910 to 3,185,881 cars in 1925. At the same time, the table shows that the number of companies producing cars consistently decreased, going from 320 companies in 1910 to only 80 companies in 1925. Thus, the table shows that the number of cars produced increased from 1910 to 1925, even as the number of companies producing cars decreased. Choice B is incorrect. The table shows that the number of cars produced in the US increased, going from 123,990 in 1910 to 3,185,881 in 1925, instead of remaining unchanged, and the table also shows that the number of companies producing cars decreased from 320 to 80 instead of remaining unchanged. Choice C is incorrect because the table indicates that the number of cars produced consistently increased from 1910 to 1925, going from 123,990 cars to 3,185,881 cars, instead of decreasing; moreover, the table shows that the number of companies producing cars from 1910 to 1925 declined from 320 to 80 instead of remaining unchanged. Choice D is incorrect because the table indicates that the number of companies producing cars consistently decreased from 1910 to 1925, going from 320 companies to only 80 companies.",
+    "image": "assets/coeq_4444a465.png",
+    "alt": "Data figure: Annual Car Production in the United States, 1910–1925 Year Number of cars produced Number of companies producing cars. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "b5191457",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Medium",
+    "passage": "When fashion designer Lloyd Henri Kiva New opened his store in Scottsdale, Arizona, in 1945, he quickly became known for creating delicately crafted leather goods, like belts and hats. He was perhaps most renowned for his colorful handbags, which he made by hand using a long and painstaking process. As he gained more customers, New began using sewing machines and other tools to help him produce bags more efficiently, though he continued to handcraft the crucial details that made each bag unique.",
+    "question": "Based on the text, what would have been the most likely consequence if New had not begun using sewing machines?",
+    "options": [
+      "A. He would have been unable to ensure that each bag included unique, handcrafted details.",
+      "B. He would have struggled to meet the increasing demand for his bags.",
+      "C. He would have had to individually design each bag he produced.",
+      "D. He would not have been able to generate as much interest in his bags."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it presents the most likely consequence if New had not begun using sewing machines. The text states that New gained new customers and that sewing machines allowed him to make bags more efficiently, or in less time than he could when sewing by hand. It’s reasonable to conclude that if New hadn’t reduced the time it took to make each bag by starting to use sewing machines, it would have been hard for him to keep up with the increased demand. Choice A is incorrect because the text indicates that New added unique, handcrafted details to his bags before he started using sewing machines and continued to do so after he started using them. Choice C is incorrect because the text doesn’t suggest that individually designing each bag would have been a consequence of not using sewing machines, since New was already designing unique details for each bag before he started using sewing machines and continued to do so after he started using them. Choice D is incorrect because the text indicates that people were already interested in New’s bags before he started using sewing machines. Rather than allowing New to generate more interest in his bags, sewing machines helped New keep up with the interest that had already grown.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "4bef02f7",
+    "skill": "Inferences",
+    "difficulty": "Medium",
+    "passage": "Researchers Eugeni Vidal-Tortosa and Robin Lovelace looked at the relationship between street lighting in a city and people’s willingness to ride a bicycle. Their results suggest that poor street lighting can deter new or inexperienced cyclists from riding in a city but has little effect on experienced cyclists. Therefore, increasing the number of streetlights in a city could potentially ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. decrease the number of new or inexperienced cyclists riding in the city.",
+      "B. increase the number of experienced cyclists riding in the city.",
+      "C. decrease the number of experienced cyclists riding in the city.",
+      "D. increase the number of new or inexperienced cyclists riding in the city."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most logically completes the text’s discussion of the relationship between street lighting and people’s cycling behavior. According to the text, Eugeni Vidal-Tortosa and Robin Lovelace found that poor street lighting deters new or inexperienced cyclists from riding their bikes in a city but has little effect on experienced cyclists. This finding establishes a causal relationship between street lighting and the willingness of new or inexperienced cyclists to ride a bicycle in the city: if poor lighting discourages new or inexperienced cyclists from riding, then improving lighting conditions by increasing the number of streetlights would logically remove this deterrent, potentially leading to an increase in the number of new or inexperienced cyclists willing to ride in the city. Choice A is incorrect because it contradicts the logical relationship established in the text. If poor street lighting deters new or inexperienced cyclists from riding in the city, then increasing the number of streetlights (improving lighting conditions) would be expected to encourage more of these cyclists to ride, not decrease their numbers. Choice B is incorrect because the text explicitly states that street lighting didn’t have an effect on experienced cyclists. If lighting conditions don’t significantly influence experienced cyclists’ decisions to ride, then increasing the number of streetlights wouldn’t necessarily increase the number of experienced cyclists riding in the city. Choice C is incorrect. The text indicates that street lighting didn’t affect experienced cyclists, so increasing the number of streetlights wouldn’t decrease the participation of these cyclists. Instead, their numbers would be expected to remain about the same.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "8c56bcda",
+    "skill": "Inferences",
+    "difficulty": "Medium",
+    "passage": "The Nacional tree is a rare variety of cacao. Nacionals were thought to have gone extinct by the twentieth century due to a fungus. This fungus can spread from tree to nearby tree through the air and causes disease. But around 2013, cacao expert Servio Pachard located some of these Nacional trees. The trees were in the Piedra de Plata coastal forest, within a hard-to-reach valley in Ecuador. Conservationists inferred that the Nacional trees in Piedra de Plata might have avoided the diseases that wiped out the other Nacionals because ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. early twentieth-century scientists did not know why so many Nacionals were becoming infected.",
+      "B. the ability of the fungus to travel through the air was only recently discovered.",
+      "C. they were too far from the other Nacional trees infected by the fungus to become infected themselves.",
+      "D. the chocolate made from their pods was highly valued."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most logically completes the text’s discussion of the Nacional trees’ survival in Piedra de Plata. The text states that the fungus that caused Nacional trees elsewhere to become diseased spreads from tree to nearby tree through the air. The text also mentions that the surviving Nacional trees were found in a hard-to-reach valley in Ecuador. Given this information, it’s logical to conclude that these trees might have avoided infection because they were geographically isolated from infected Nacional trees, which prevented the airborne fungus from reaching them. Choice A is incorrect because early twentieth-century scientists’ lack of knowledge about the infection that affected many Nacionals doesn’t explain how the trees in the Piedra de Plata coastal forest survived. The text is concerned with the physical factors that allowed certain trees to avoid infection, not with scientists’ understanding of the disease. Choice B is incorrect. Although the text mentions that the fungus spreads through the air, it doesn’t indicate when this ability was discovered. Moreover, even if the ability to move through the air was recently discovered, that wouldn’t explain how the trees in Piedra de Plata avoided infection in the past. Choice D is incorrect because the value of the chocolate made from Nacional pods doesn’t explain how the trees in the Piedra de Plata coastal forest avoided disease. The text focuses on the physical spread of the fungus that caused most Nacionals to become diseased, not on economic factors related to the trees’ products.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "4890497a",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Medium",
+    "passage": "“The Bet” is an 1889 short story by Anton Chekhov. In the story, a banker is described as being very upset about something: ______",
+    "question": "Which quotation from “The Bet” most effectively illustrates the claim?",
+    "options": [
+      "A. “Then the banker cautiously broke the seals off the door and put the key in the keyhole.”",
+      "B. “It struck three o’clock, the banker listened; everyone was asleep in the house and nothing could be heard outside but the rustling of the chilled trees.”",
+      "C. “The banker, spoilt and frivolous, with millions beyond his reckoning, was delighted at the bet.”",
+      "D. “When [the banker] got home he lay on his bed, but his tears and emotion kept him for hours from sleeping.”"
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most effectively uses a quotation from \"The Bet\" to illustrate the claim that the banker was very upset about something. The quotation indicates that the banker shed tears, which suggests that he was likely unhappy about something, and that his emotions were so strong that they kept him from sleeping for hours. These details suggest that the banker was very upset. Choice A is incorrect because this quotation mainly describes the banker cautiously unlocking a door; it doesn’t suggest that he was particularly upset about anything. Choice B is incorrect because this quotation doesn’t mention whether the banker was experiencing any particularly strong negative feelings; instead, the quotation focuses on the quietness of the setting. Choice C is incorrect because this quotation states that the banker was feeling \"delighted,\" not that he was upset.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "e7f3d55f",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Medium",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the example?",
+    "options": [
+      "A. 0.35.",
+      "B. 0.61.",
+      "C. 0.75.",
+      "D. 0.52."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it effectively uses data from the table to complete the example of the estimated impact of invasive mongooses on threatened mammals. The table shows the values for the estimated harmful impact of three invasive predator species (mongooses, dogs, and cats) on threatened birds, mammals, and reptiles. The text states that the values are on a scale from 0.25 (less impact) to 1.00 (greater impact). The table shows that the value for the estimated impact of invasive mongooses on threatened mammals is 0.75. Choice A is incorrect because the table shows that the value for the estimated impact of mongooses on threatened mammals is 0.75, not 0.35. The value 0.35 is not assigned to any of the categories in the table. Choice B is incorrect because the table shows that 0.61 is the value for the estimated impact of cats, not mongooses, on threatened mammals. Choice D is incorrect because the table shows that 0.52 is the value for the estimated impact of cats on threatened reptiles, not of mongooses on threatened mammals.",
+    "image": "assets/coeq_e7f3d55f.png",
+    "alt": "Data figure: Estimated Impacts of Invasive Predator Species on Threatened Birds, Mammals, and Reptiles. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Medium",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "737870c6",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Geoglyphs are large-scale designs of lines or shapes created in a natural landscape. The Nazca Lines were created in the Nazca Desert in Peru by several Indigenous civilizations over a period of many centuries. Peruvian archaeologist Johny Isla specializes in these geoglyphs. At a German exhibit about the Nazca Lines, he saw an old photograph of a large geoglyph of a whalelike figure and was surprised that he didn’t recognize it. Isla returned to Peru and used a drone to search a wide area, looking for the figure from the air. This approach suggests that Isla thought that if he hadn’t already seen it, the whalelike geoglyph ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. must represent a species of whale that went extinct before there were any people in Peru.",
+      "B. is actually located in Germany, not Peru, and isn’t part of the Nazca Lines at all.",
+      "C. is probably in a location Isla hadn’t ever come across while on the ground.",
+      "D. was almost certainly created a long time after the other Nazca Lines geoglyphs were created."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most logically completes the text’s discussion of Johny Isla and the whalelike geoglyph. The text indicates that the German exhibit about the Nazca Lines included a photograph showing a whalelike geoglyph that Isla hadn’t known about before attending the exhibit, even though Isla “specializes in” Nazca Lines geoglyphs. Given his expertise, and his surprise at being unfamiliar with the whale glyph, the text strongly suggests that Isla believed he would have noticed the glyph if he had been to its location. Thus, the text implies that the whalelike geoglyph is likely in a location Isla had not previously been to. Choice A is incorrect because the text doesn’t address either the species of whale that the geoglyph is meant to represent or its relationship to the earliest humans in the area that is now Peru. Choice B is incorrect. Although the text indicates that the photograph of the whalelike geoglyph was on display at a “German exhibit,” that exhibit was specifically “about the Nazca Lines,” which the text indicates are located in Peru. Choice D is incorrect. Although the text does indicate that the glyphs were created “over a period of many centuries,” the text doesn’t address when in that period of time any particular glyphs were created.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "1b9fa866",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the graph to complete the student’s conclusion?",
+    "options": [
+      "A. cells for worker eggs are probably closer in size to cells for drone eggs in the hives of the western honeybee than in the hives of the dwarf honeybee and the black dwarf honeybee.",
+      "B. both the western honeybee and the black dwarf honeybee probably reserve eight-sided cells for drone eggs, while the dwarf honeybee likely deposits drone eggs in seven-sided cells.",
+      "C. the western honeybee probably relies on many more geometrical shapes when constructing cells than either the dwarf honeybee or the black dwarf honeybee does.",
+      "D. the percentage of hexagonal cells is probably slightly lower in the hives of the western honeybee than in the hives of the dwarf honeybee and the black dwarf honeybee."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most effectively uses data from the graph to complete the student’s conclusion about beehive structure. The text explains that in the hives of honeybees, the hexagonal cells housing drone eggs are larger than the hexagonal cells housing worker eggs, and that this size difference results in a construction problem that the bees address by using nonhexagonal cells to fill gaps between sections of drone-egg cells and worker-egg cells. The text also states that the size difference between drone-egg cells and worker-egg cells varies by species of honeybee. The graph displays data on the percentage of nonhexagonal cells in the hives of three species. In the hives of the western honeybee, the percentages of five-sided, seven-sided, and eight-sided cells are all less than 0.5%. But in the hives of the black dwarf honeybee, the percentages of five-sided and seven-sided cells are higher than those for the western honeybee: about 2.5% for both. And for the dwarf honeybee, the percentages of five-sided and seven-sided cells are also higher than those for the western honeybee: slightly over 2.5% and slightly over 2.0%, respectively; additionally, the dwarf honeybee possesses a higher percentage of eight-sided cells than the western honeybee does. Taken altogether, the graph shows that the hives of the western honeybee consist of a smaller percentage of nonhexagonal cells than the hives of the two other species do. Since the nonhexagonal cells exist only to solve the construction problem arising from the difference in size between drone-egg cells and worker-egg cells, a smaller percentage of nonhexagonal cells would be associated with a smaller size difference between the two types of cells. Therefore, it can be concluded from the data that worker-egg cells are probably closer in size to drone-egg cells in the hives of the western honeybee than in the hives of the other two species. Choice B is incorrect because, as the text states, honeybee species deposit their eggs in hexagonal cells, not in nonhexagonal ones. Thus, the western honeybee and black dwarf honeybee wouldn’t deposit drone eggs in eight-sided cells, and the dwarf honeybee wouldn’t deposit drone eggs in seven-sided cells. Choice C is incorrect. The text explains that honeybees rely mainly on one geometric shape, the hexagon, when constructing their hives, and the graph shows that the western honeybee relies on the same nonhexagonal shapes as the dwarf honeybee does: five-sided, seven-sided, and eight-sided cells. In other words, the western honeybee and dwarf honeybee rely on the same number of geometric shapes. For the black dwarf honeybee, the graph displays data only for five-sided and seven-sided cells, which suggests a total absence of eight- sided cells. Yet this would be only one less nonhexagonal shape than is seen in the western honeybee. Thus, based on the graph, it would be inaccurate to say that the western honeybee relies on \"many more\" geometrical shapes than the other two species do. Choice D is incorrect. As the text explains, honeybee hives consist mainly of hexagonal cells, and sections of nonhexagonal cells are used to connect sections of hexagonal cells of different sizes. Since the graph indicates that the percentage of nonhexagonal cells is lower for the western honeybee than it is for the dwarf honeybee or black dwarf honeybee, the western honeybee would conversely have a higher percentage of hexagonal cells than the either the dwarf honeybee or black dwarf honeybee does, not a lower percentage.",
+    "image": "assets/coeq_1b9fa866.png",
+    "alt": "Data figure: Percentage of Nonhexagonal Cells in Hives of Three Honeybee Species. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "d390118e",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice best describes data from the graph that support the researchers’ conclusion?",
+    "options": [
+      "A. In the second test administration, participants who took 2–4 days of leave had higher average attentiveness scores than did those who took no leave, but in the third test administration, those who took no leave had higher average scores than those who took 1–5 weeks of leave.",
+      "B. In the first test administration, participants who took 2–4 days of leave had lower average attentiveness scores than did those who took 1–5 weeks of leave and those who took no leave.",
+      "C. In both the second and third test administrations, participants who took 2–4 days of leave had higher average attentiveness scores than did participants who took 1–5 weeks of leave.",
+      "D. In the second and third test administrations, participants who took 2–4 days of leave had higher average attentiveness scores than did those who took no leave."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it describes data from the graph that support Jan Packer and colleagues’ conclusion about the effect of leave time on the attentiveness of university employees. According to the text, the researchers’ study design included a group of employees who took no leave, a group who took 2–4 days of leave, and a group who took 1–5 weeks of leave. The participants who took leave were tested for attentiveness one week before their leave (the first test administration), one week after their return to work (the second test administration), and two weeks after their return (the third test administration). The participants who took no leave were tested three times at random. The graph shows that at one week after their return to work, participants who took only 2–4 days of leave had an average attentiveness score of between 540 and 600, while participants who took 1–5 weeks of leave had an average score of between 480 and 540. At two weeks after their return to work, those who took only 2–4 days of leave had an average score of between 480 and 540, while those who took 1–5 weeks of leave had an average score of approximately 480. In other words, the graph shows that on both post-leave testing dates, participants with longer leave times had lower average attentiveness scores than those with shorter leave times. Since attentiveness is an indicator of cognitive functioning, these data confirm Packer and colleagues’ conclusion that longer leave times might not confer a greater cognitive benefit than shorter leave times do. Choice A is incorrect. The graph does show that in the second test administration, participants who took 2–4 days of leave had higher average attentiveness scores than did those who took no leave and also shows that in the third test administration, those who took no leave had higher average scores than those who took 1–5 weeks of leave. But neither of these findings has a direct bearing on the researchers’ conclusion, which concerns a comparison of participants who took 2–4 days of leave with those who took 1–5 weeks, rather than a comparison of either group with participants who took no leave. Choice B is incorrect. Although the graph does show that in the first test administration, participants who took 2–4 days of leave had lower average attentiveness scores than did those who took 1–5 weeks of leave and those who took no leave, this test administration occurred before any participants went on leave; therefore, these results have no bearing on the researchers’ conclusion about how the amount of leave taken by participants affected their cognitive functioning. Choice D is incorrect. Although the graph does show that in the second and third test administrations, participants who took 2–4 days of leave had higher average attentiveness scores than did those who took no leave, the researchers’ conclusion is about the effects of short leave compared with the effects of long leave, not the effects of short leave compared with the effects of no leave. These results are therefore irrelevant to the conclusion.",
+    "image": "assets/coeq_d390118e.png",
+    "alt": "Data figure: Mean Attentiveness Scores by Leave Time Condition. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "e1460856",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "The presence of other individuals of the same species has been observed to mitigate stress in highly social mammals. To investigate whether this phenomenon, known as social buffering, also occurs in reptiles, researchers led by Chelsea E. Martin monitored stress responses in wild southern Pacific rattlesnakes (Crotalus helleri) in three experimental treatments: when alone, with a rope, and with a companion C. helleri. The researchers compared the percent change between baseline and peak heart rate in response to a (harmless) disturbance, with higher values indicating higher stress levels.",
+    "question": "Which finding, if true, would most directly support the idea that social buffering occurs among C. helleri?",
+    "options": [
+      "A. The average percent change in heart rate was lower among C. helleri with a companion than among solitary C. helleri and C. helleri with a rope.",
+      "B. Average peak heart rates were highest among solitary C. helleri, but no differences were observed in average peak heart rates between C. helleri with a companion and C. helleri with a rope.",
+      "C. C. helleri with a companion displayed a lower average baseline heart rate and lower average peak heart rate than did solitary C. helleri or C. helleri with a rope.",
+      "D. Solitary C. helleri had higher average baseline heart rates than did C. helleri in the other treatments, but the average percent change in heart rate was smaller among solitary C. helleri than among C. helleri with a companion."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents a finding that, if true, would most directly support the idea that social buffering—the mitigation of stress by the presence of other animals of the same species—occurs among C. helleri. According to the text, the researchers quantified the amount of stress in C. helleri as the percent change between baseline and peak heart rate, with higher values indicating greater stress. The text also describes the researchers’ three treatments: snakes alone, snakes with a rope, and snakes with a companion C. helleri. If the average percent change in heart rate was lower among snakes with a companion than among either solitary snakes or snakes with a rope, that would indicate two things: snakes accompanied by a companion experienced less stress than they did when alone, and the reduction wasn’t simply the result of any object being present, since the rope didn’t produce the same effect. Together, these results would directly support the conclusion that the companion’s presence mitigated stress, as the social buffering hypothesis predicts. Choice B is incorrect because the finding compares peak heart rates among the three treatments rather than the percent change in heart rates among those treatments. The finding also indicates that snakes with a companion and snakes with a rope showed no differences in peak heart rates. If a rope produced the same effect as a companion did, that would suggest that the effect, whatever its extent, isn’t caused specifically by the presence of another individual of the same species and so wouldn’t support the social buffering hypothesis. Choice C is incorrect because the finding addresses absolute baseline and peak heart rates rather than the percent change between them, which is the measure of stress response the researchers used. Lower absolute heart rates in companion-present snakes could reflect a generally calmer state but wouldn’t show that the stress response to the disturbance was reduced and so wouldn’t directly demonstrate social buffering as defined in the study. Choice D is incorrect because the finding states that the percent change in heart rate was smaller among solitary snakes than among snakes with a companion, which would indicate a smaller stress response when alone. This pattern would directly contradict the social buffering hypothesis rather than support it. Furthermore, a comparison of baseline heart rates would be immaterial for determining whether social buffering occurs among C. helleri because the text indicates that a change in heart rate, not average baseline heart rate, indicates a stress response.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "fda10103",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "For many years, the only existing fossil evidence of mixopterid eurypterids—an extinct family of large aquatic arthropods known as sea scorpions and related to modern arachnids and horseshoe crabs—came from four species living on the paleocontinent of Laurussia. In a discovery that expands our understanding of the geographical distribution of mixopterids, paleontologist Bo Wang and others have identified fossilized remains of a new mixopterid species, Terropterus xiushanensis, that lived over 400 million years ago on the paleocontinent of Gondwana.",
+    "question": "According to the text, why was Wang and his team’s discovery of the Terropterus xiushanensis fossil significant?",
+    "options": [
+      "A. The fossil constitutes the first evidence found by scientists that mixopterids lived more than 400 million years ago.",
+      "B. The fossil helps establish that mixopterids are more closely related to modern arachnids and horseshoe crabs than previously thought.",
+      "C. The fossil helps establish a more accurate timeline of the evolution of mixopterids on the paleocontinents of Laurussia and Gondwana.",
+      "D. The fossil constitutes the first evidence found by scientists that mixopterids existed outside the paleocontinent of Laurussia."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it states why Wang and his team’s discovery of the Terropterus xiushanensis fossil was significant. The text explains that up until Wang and his team’s discovery, the only fossil evidence of mixopterids came from the paleocontinent of Laurussia. Wang and his team, however, identified fossil remains of a mixopterid species from the paleocontinent Gondwana. Therefore, the team’s discovery was significant because the fossil remains of a mixopterid species were outside of the paleocontinent Laurussia. Choice A is incorrect. Although the text states that Wang and his team identified fossilized remains of a mixopterid species that lived more than 400 million years ago, it doesn’t indicate that mixopterid fossils previously found by scientists dated to a more recent period than that. Choice B is incorrect. Although the text states that mixopterids are related to modern arachnids and horseshoe crabs, it doesn’t suggest that the fossil discovered by Wang and his team confirmed that this relationship is closer than scientists had previously thought. Choice C is incorrect because the team’s fossil established the presence of mixopterids on Gondwana, not on Laurussia. Moreover, the text only discusses the fossil in relation to the geographical distribution of mixopterids, not in relation to their evolution.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "f2cd80e9",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "In subtropical Asia, Apis dorsata (giant honeybee) plays an essential role in pollinating a wide variety of crops and wild plants. To study how different agricultural land covers affect the species, Rika Raffiudin and colleagues monitored the foraging activity of the bees as well as the pollen content of the honey from A. dorsata colonies at two sites in Indonesia: Kampar, characterized by its surrounding monoculture farms (growing a single crop), and Kerinci, a forest-agriculture site where multiple crops, including hot peppers and coffee, are grown nearby. The researchers concluded that a lack of crop variety may reduce total pollen collection by A. dorsata.",
+    "question": "Which finding, if true, would most directly support the researchers’ conclusion?",
+    "options": [
+      "A. Pollen in honey samples from Kampar bee colonies was predominantly sourced from a single plant species, whereas pollen in honey samples from Kerinci bee colonies was sourced from multiple different plant species.",
+      "B. In one Kerinci bee colony, a greater proportion of bees returned to their nests with pollen than returned without pollen, whereas the inverse was observed in a second Kerinci bee colony.",
+      "C. Significantly fewer bees were observed engaging in foraging activities with the crops surrounding Kerinci than with the crops surrounding Kampar.",
+      "D. Honey samples from Kerinci bee colonies contained significantly higher concentrations of pollen than honey samples from Kampar bee colonies did."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents a finding that, if true, would most directly support the researchers’ conclusion that a lack of crop variety may reduce total pollen collection by A. dorsata. The text explains that the researchers compared two sites: Kampar, which is surrounded by farms all growing the same crop, and Kerinci, which is a forest-agriculture site with multiple crops. If honey samples from Kerinci bee colonies contained significantly higher pollen concentrations than honey samples from Kampar bee colonies did, this finding would suggest that bees in the multiple-crop environment collected more pollen overall, thereby supporting the conclusion that the low crop variety at the Kampar site corresponds with reduced total pollen collection. Choice A is incorrect because this finding addresses the diversity of pollen sources—single species at the Kampar site versus multiple species at the Kerinci site—not the total quantity of pollen collected. Choice B is incorrect because this finding compares two colonies within Kerinci rather than comparing the two sites and it concerns whether bees returned with pollen, which doesn’t address the total quantity of pollen collected. Choice C is incorrect because the finding that fewer bees foraged at Kerinci—the higher-variety site—than at Kampar doesn’t address the conclusion about total pollen collected. If anything, a lower number of foraging bees would suggest reduced activity and hence a lower amount of pollen collected in the variety-rich environment, which would undermine rather than support the researchers’ conclusion.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "b7cff5f4",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Poetry in Classical Nahuatl, the language of the Aztec Empire, relies on difrasismo, or a parallel noun construction that conventionally operates as a single metaphor. For example, the common difrasismo in cuauhtli in ocelotl (literally, “the eagle, the jaguar”) signifies “warrior.”The device’s function is both formal—providing structure to lines of verse—and ritual: semantic relations among the two nouns and the concept they signify can be tenuous, as in the previous example, such that difrasismos are often only intelligible according to the conceptual associations observed in Aztec ceremonial culture.",
+    "question": "Which statement about the difrasismo in cuauhtli in ocelotl is most strongly supported by the text?",
+    "options": [
+      "A. Its metaphorical significance derives from the semantic equivalence of the two nouns constituting the difrasismo.",
+      "B. Its unintelligibility may cause its formal function within a line of verse to go unnoticed by present-day readers.",
+      "C. Its apparent obscurity can be resolved when considered in the proper cultural context.",
+      "D. Its frequency in Classical Nahuatl poetry confirms its intelligibility to the Aztec audience."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it presents a statement about the difrasismo in cuauhtli in ocelotl that is directly supported by the text. The text begins by describing difrasismo, a device used in Classical Nahuatl poetry. The text then mentions the device’s two functions: a formal one (giving structure to lines of verse) and a ritualistic one. The text indicates that the relation between the words in a difrasismo may appear tenuous without the additional information supplied by Aztec ceremonial culture but that the meaning becomes intelligible in the context of that information. Therefore, the difrasismo’s apparent obscurity can be resolved when considered in the proper cultural context. Choice A is incorrect because the text doesn’t indicate that the two nouns used in a difrasismo are semantically equivalent; instead, the text indicates that the two nouns used in a difrasismo make up a single metaphor whose meaning is often intelligible only in the context of information supplied by Aztec ceremonial culture. Choice B is incorrect because the text doesn’t indicate that there’s a relationship between the formal function of the difrasismo and the difrasismo’s intelligibility. Additionally, the text suggests that present-day readers who are familiar with Aztec ceremonial culture wouldn’t find the difrasismo to be unintelligible. Choice D is incorrect because the text doesn’t indicate that the frequency of difrasismo’s use in Classical Nahuatl is a necessary feature of intelligibility: the text indicates that an infrequently used difrasismo would presumably also be intelligible to members of an Aztec audience who are sufficiently familiar with Aztec ceremonial culture.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "8d605fb1",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Although military veterans make up a small proportion of the total population of the United States, they occupy a significantly higher proportion of the jobs in the civilian government. One possible explanation for this disproportionate representation is that military service familiarizes people with certain organizational structures that are also reflected in the civilian government bureaucracy, and this familiarity thus ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. makes civilian government jobs especially appealing to military veterans.",
+      "B. alters the typical relationship between military service and subsequent career preferences.",
+      "C. encourages nonveterans applying for civilian government jobs to consider military service instead.",
+      "D. increases the number of civilian government jobs that require some amount of military experience to perform."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents the conclusion that most logically follows from the text’s discussion of military veterans working in civilian government jobs in the United States. The text indicates that the proportion of military veterans working in civilian government jobs is considerably higher than the proportion of military veterans in the population as a whole. The text also notes that the unusually high representation of military veterans in these jobs may be a result of the organizational structures shared by civilian government entities and the military. Hence, it’s reasonable to infer that it’s the familiarity of the structures of civilian government that makes jobs there particularly attractive to military veterans. Choice B is incorrect because the text doesn’t address what a typical relationship between military service and later career preferences would be, and there’s no indication that it’s atypical for veterans to work in civilian government jobs after they’ve left the military. On the contrary, the text suggests that many military veterans are drawn to such jobs. Choice C is incorrect because the text is focused on the high representation of military veterans in civilian government jobs and doesn’t address nonveterans or their possible interest in military service. Choice D is incorrect because the text conveys that military veterans may be particularly interested in civilian government jobs due to the familiarity of organizational structures that are already in place, but there’s no reason to think that this interest would mean that more civilian government jobs will start to require military experience.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "7370ee50",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Since its completion in 2014, Bosco Verticale (Vertical Forest)—a pair of residential towers in Milan, Italy, covered by vegetation—has become a striking symbol of environmental sustainability in architecture. Stefano Boeri intended his design, which features balconies that are home to hundreds of trees, to serve as a model for promoting urban biodiversity. However, the concept has faced skepticism: critics note that although the trees used in Bosco Verticale were specifically cultivated for the project, it’s too early to tell if they can thrive in this unusual setting.",
+    "question": "According to the text, why are some critics skeptical of the concept behind Bosco Verticale?",
+    "options": [
+      "A. Some essential aspects of Bosco Verticale’s design are difficult to adapt to locations other than Milan.",
+      "B. The plant life on Bosco Verticale ended up being less varied than Boeri had envisioned it would be.",
+      "C. The construction of Bosco Verticale was no less environmentally damaging than the construction of more conventional buildings is.",
+      "D. It is unclear whether Bosco Verticale can support the plant life included in its design."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents a statement about critics’ skepticism of Bosco Verticale that is supported by the text. The text states that Boeri’s design for Bosco Verticale features hundreds of trees on balconies and is intended to serve as a model for promoting urban biodiversity. But the text goes on to state that some critics believe that it is too early to determine if the trees planted on Bosco Verticale can thrive there. Therefore, according to the text, critics are skeptical of the concept behind Bosco Verticale because it is unclear whether Bosco Verticale can support the plant life included in its design. Choice A is incorrect. Although the text states that one of Boeri’s goals was for Bosco Verticale to serve as a model for promoting biodiversity in architecture, which suggests that Boeri would likely support the idea of reproducing the same concept in other locations, the text does not discuss whether it is feasible to adapt the design to locations other than Milan. Instead, the text describes critics’ concerns that the plant life that currently exists on Bosco Verticale might not thrive in its current setting. Choice B is incorrect. Although the text states that one of Boeri’s goals in creating Bosco Verticale was to promote biodiversity, which implies a goal of including varied plant life in the design, it does not mention whether the hundreds of trees that were planted on its balconies failed to meet this goal. Rather, the text states that some critics are concerned that the trees on Bosco Verticale’s balconies may not thrive in this setting. Choice C is incorrect because the text does not mention how Bosco Verticale was constructed, let alone how environmentally destructive its construction may have been relative to the construction of more conventional buildings.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "3caa2431",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "In 2018, scientists discovered an immense aggregation of Muusoctopus robustus (pearl octopuses) along a hydrothermal vent 3,200 meters beneath the ocean’s surface. Water temperatures at this site—named the Octopus Garden—climb as high as 11°C, much warmer than the ambient 1.6°C typical at this depth. Based on observations made over three years, scientists concluded that temperatures at the site likely confer reproductive benefits and that the site is used exclusively for reproduction—6,000 M. robustus adults, hatchlings, and eggs were observed at the garden, but no juveniles were present.",
+    "question": "Which statement about M. robustus and the Octopus Garden is best supported by the text?",
+    "options": [
+      "A. M. robustus leave the Octopus Garden upon reaching an intermediary stage of development.",
+      "B. The M. robustus population at the Octopus Garden remains stable despite variations in water temperature.",
+      "C. M. robustus nests in the Octopus Garden contain on average fewer but larger eggs than nests at similar ocean depths.",
+      "D. The Octopus Garden provides an ideal feeding ground for M. robustus hatchlings."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most logically completes the text’s discussion of the M. robustus population at the Octopus Garden. The text states that the scientists concluded that the site is likely used only for reproduction because over three years they saw many adults, freshly hatched octopuses, and eggs but didn’t see any juveniles. This suggests that the M. robustus octopuses that hatch at the Octopus Garden leave the site when they reach an intermediary state of development, returning only as adults for reproductive purposes. Choice B is incorrect because the text never discusses the stability of the M. robustus population at the site, only that the scientists observed 6,000 adults, hatchlings, and eggs there. Further, the text presents the site’s temperatures as likely beneficial. Choice C is incorrect because the text doesn’t provide any details about the eggs at the site and makes no mention of nests; it indicates only that eggs are present along with hatchlings and adults. Choice D is incorrect because the text makes no mention of the hatchlings feeding at the Octopus Garden, indicating only that the temperatures at the site are probably beneficial and that the site is likely used for reproduction.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "bc9c696f",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Like many other genera of wild bees, bumblebees have in recent decades experienced population collapse caused by, among other factors, habitat destruction and climate variation. Bumblebees are also one of the most researched bee genera, second only to honeybees. As a result, ecologists have gained much of their insight about wild-bee declines from bumblebees. In a 2021 paper, zoologist Guillaume Ghisbain notes that bumblebees are among the relatively few wild-bee genera that display social behaviors and dietary generalism (ability to obtain nectar and pollen from a diversity of plant species), two traits that are associated with increased resilience to some specific environmental changes. Ghisbain therefore contends that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. although bumblebees and many other wild bees have experienced similar population declines in the past, compared with other wild bees, bumblebees are likely at greater risk of being harmed by climate variation than by habitat destruction.",
+      "B. although bumblebees have been more extensively studied than most wild bees, researchers should not use bumblebees to draw conclusions about the decline of other wild bees, even ones with feeding patterns and levels of sociability that are similar to those of bumblebees.",
+      "C. because bumblebees and other bees with generalist diets are less negatively affected by environmental stress than bees with specialized diets are, they are less likely to experience major population changes in the future than bees with specialized diets are.",
+      "D. because the responses of bumblebees and other wild bees to environmental threats are not always comparable, researchers need to exercise caution when extrapolating information about wild-bee population declines from bumblebees."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most logically completes the text’s discussion of wild-bee declines. The text establishes that bumblebees and other wild bees have been experiencing population collapse as a result of habitat destruction, climate variation, and other factors. The text then indicates that because bumblebees are very extensively researched, ecologists rely heavily on findings about them to understand wild-bee declines in general. However, the text then introduces Ghisbain’s observation that unlike most other wild-bee genera, bumblebees have certain traits (social behaviors and dietary generalism) linked to increased resilience to certain environmental changes. In other words, bumblebees aren’t necessarily representative of wild bees as a whole because they are likely more tolerant of some pressures. Therefore, it logically follows that Ghisbain would urge researchers to exercise caution when using bumblebee data to draw conclusions about other wild-bee population declines, since bumblebees and other wild bees don’t always respond comparably to environmental threats. Choice A is incorrect because the text doesn’t indicate that climate variation is more of a threat to bumblebees than habitat destruction is or that it is a bigger threat to bumblebees than it is to other wild bees. The text simply indicates that climate variation and habitat destruction are among the factors that have caused population collapses for bumblebees and other wild-bee genera. Choice B is incorrect. As it is presented in the text, Ghisbain notes that bumblebees may respond to environmental changes differently than many other wild-bee genera do; this suggests that bumblebees shouldn’t be treated as representative of all wild bees, but there’s no reason to think that Ghisbain would go so far as to assert that bumblebee data shouldn’t be used to draw conclusions about other wild-bee genera that are similar to bumblebees in their dietary and social traits, even if there are relatively few. The text suggests caution in extrapolation, not a complete rejection of using bumblebee research. Choice C is incorrect. Although the text indicates that dietary generalism is linked to increased resilience to specific environmental changes (that is, to some but not all environmental stresses), it doesn’t suggest that bumblebees and other bees with this trait are less likely than bees with specialized diets to experience major population changes. In fact, the text makes it clear that like many other wild-bee genera—most of which don’t display dietary generalism—bumblebees are already experiencing population collapse.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "f2040ca2",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Some ethicists hold that the moral goodness of an individual’s actions depends solely on whether the actions themselves are good, irrespective of the context in which they are carried out. Philosopher L. Sebastian Purcell has shown that surviving works of Aztec (Nahua) philosophy express a very different view. Purcell reveals that these works posit an ethical system in which an individual’s actions are judged in light of how well they accord with the individual’s role in society and how well they contribute to the community. To the extent that these works are representative of Aztec thought, Purcell’s analysis suggests that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. the Aztecs would have disputed the idea that the morality of an individual’s actions can be assessed by appealing to standards of behavior that are independent of the individual’s social circumstances.",
+      "B. the Aztecs would not have accepted the notion that the morality of an individual’s actions can be fairly evaluated by people who do not live in the same society as that individual.",
+      "C. actions by members of Aztec society who contributed a great deal to their community could be judged as morally good even if those actions were inconsistent with behaviors the Aztecs regarded as good in all contexts.",
+      "D. similar actions performed by people in different social roles in Aztec society would have been regarded as morally equivalent unless those actions led to different outcomes for the community."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most logically completes the text’s discussion about Aztec (Nahua) ethics. The text indicates that, according to Purcell’s interpretation of available Aztec philosophical works, the Aztec ethical system views an individual’s actions in relation to that individual’s societal role and how the actions affect the community. The text contrasts this view with another held by some ethicists, namely that actions are morally good or bad regardless of the context in which they occur. Thus, Purcell’s analysis suggests that the Aztecs would have asserted that the morality of an individual’s actions are rooted in that person’s position in the community and the actions’ effects and therefore cannot be determined in the absence of that context. Choice B is incorrect. Although the text indicates that morally judging an action according to Aztec ethics requires an understanding of the action’s effects and the individual’s social circumstances, it does not specify that only members of that society can acquire this information. Choice C is incorrect because it implies that the Aztecs considered some actions good or bad regardless of the surrounding context, which contradicts the text’s claim that the Aztecs believed that the morality of an individual’s action is dependent on the action’s effects on the community and the person’s specific circumstances. Choice D is incorrect. Although the text indicates that in Aztec ethics the morality of an action depends in part on how it affects the community, this is only one of the two factors—the other being the person’s societal role—that need to be considered. Therefore, it is possible that two actions with the same effect on the community could be considered morally distinct if they are performed by individuals in different social roles.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "7aefd1b2",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the graph to complete the text?",
+    "options": [
+      "A. Brazil increased from the previous marketing year but remained lower than the percentage exported by the United States.",
+      "B. Brazil exceeded the percentage exported by Argentina for the first time.",
+      "C. Argentina decreased from the previous marketing year but remained the highest among the three countries.",
+      "D. the United States reached its highest point during the five marketing years."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most effectively uses data from the graph to complete the text’s discussion of the percentages of maize exported in the marketing year 2012/2013. The graph presents percentages of maize exported by Argentina, Brazil, and the United States in marketing years 2009/2010 to 2013/2014 and indicates that for the marketing year 2012/2013, the percentage of maize exported by Argentina decreased to about 70 percent from about 80 percent in the previous marketing year. The graph also shows that the percentage of maize exported by Argentina remained highest among the three countries in the marketing year 2012/2013, surpassing the percentage exported by Brazil (about 31 percent) and by the United States (about 8 percent). Choice A is incorrect because for the marketing year 2012/2013, the graph indicates that the percentage of maize exported by Brazil didn’t increase from the previous year; rather, it decreased from about 34 percent to about 31 percent. Moreover, the graph shows that the percentage of maize exported by Brazil remained higher, not lower, than the percentage exported by the United States in the marketing year 2012/2013. Choice B is incorrect because the graph indicates that the percentage of maize exported by Brazil never exceeded the percentage exported by Argentina for any of the marketing years represented. Choice D is incorrect because the graph indicates that the percentage of maize exported by the United States reached its lowest point, not its highest, during the five marketing years in 2012/2013, with the United States exporting only about 8 percent of its maize in that marketing year.",
+    "image": "assets/coeq_7aefd1b2.png",
+    "alt": "Data figure: Percentage of Maize Exported by Three Countries for Marketing Years 2009/2010–2013/2014. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "bf781ef7",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "One challenge when researching whether holding elected office changes a person’s behavior is the problem of ensuring that the experiment has an appropriate control group. To reveal the effect of holding office, researchers must compare people who hold elected office with people who do not hold office but who are otherwise similar to the office-holders. Since researchers are unable to control which politicians win elections, they therefore ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. struggle to find valid data about the behavior of politicians who do not currently hold office.",
+      "B. can only conduct valid studies with people who have previously held office rather than people who presently hold office.",
+      "C. should select a control group of people who differ from office-holders in several significant ways.",
+      "D. will find it difficult to identify a group of people who can function as an appropriate control group for their studies."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents the conclusion that most logically follows from the text’s discussion of the challenge researchers face when studying the effects of holding elected office on a person’s behavior. The text explains that it’s hard for researchers to test for the effects that elected office has on people because finding people to serve as a control group is difficult. The text indicates that a control group needs to be made up of people who share characteristics of the group being tested but don’t have the variable being tested (in this case, holding elected office). Because researchers aren’t able to influence who wins elections, they’re also unable to determine who would serve as an appropriately similar member of a control group. Thus, it logically follows that researchers will find it difficult to identify a group of people who can function as an appropriate control group for their studies. Choice A is incorrect because the text focuses on the struggle to put together a control group for experiments; it doesn’t suggest that finding information about politicians’ behavior is difficult. Choice B is incorrect because the experiments mentioned in the text are testing the effects of holding elected office on a person’s behavior. Studying people who have already held elected office wouldn’t provide an opportunity to note any behavioral changes that the position might cause. Choice C is incorrect because the text defines people in a control group as those \"who are otherwise similar to the office-holders\"; selecting people who differ from the office-holders wouldn’t fit the criteria for an appropriate control group.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "8bcb5400",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "A student is examining a long, challenging poem that was initially published in a quarterly journal without explanatory notes, then later republished in a stand-alone volume containing only that poem and accompanying explanatory notes written by the poet. The student asserts that the explanatory notes were included in the republication primarily as a marketing device to help sell the stand-alone volume.",
+    "question": "Which statement, if true, would most directly support the student’s claim?",
+    "options": [
+      "A. The text of the poem as published in the quarterly journal is not identical to the text of the poem published in the stand-alone volume.",
+      "B. Many critics believe that the poet’s explanatory notes remove certain ambiguities of the poem and make it less interesting as a result.",
+      "C. The publishers of the stand-alone volume requested the explanatory notes from the poet in order to make the book attractive to readers who already had a copy of the poem in a journal issue.",
+      "D. Correspondence between the poet and the publisher reveals that the poet’s explanatory notes went through several drafts."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it would most directly support the student’s claim about the motivation for including explanatory notes with the stand-alone volume of the poem. The text explains that the poem had previously been published without the notes in a quarterly journal. It stands to reason that readers who had purchased the journal issue containing the poem would be unlikely to purchase an unchanged version of the poem in a stand-alone volume. However, the inclusion of notes in that volume would encourage the purchase of a stand-alone volume, since the later text would differ from the original by including the author’s own explanation of the poem. Therefore, if it were true that the publishers of the stand-alone volume had requested the notes to make the book attractive to readers who already had a copy of the journal issue, this fact would support the student’s claim that the notes were included primarily as a marketing device. Choice A is incorrect because the student’s claim is about the motivation for including the explanatory notes in the stand-alone volume, not about changes that might have been made to the poem itself for publication in that volume; moreover, the text never suggests that such changes were made. Choice B is incorrect because the student’s claim is about why the explanatory notes were included in the stand-alone volume, not about how the notes affected readers’ and critics’ subsequent experience of the poem. Choice D is incorrect because the fact that the poet drafted multiple versions of the explanatory notes doesn’t directly address the issue of whether the notes were intended as a marketing device, as the student claims; the correspondence would support this claim only if it showed that the poet had revised the notes specifically to make them useful to the marketing of the stand-alone volume.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "db6ef573",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the comparison?",
+    "options": [
+      "A. suppressed the growth of Deschampsia antarctica, which covered a smaller area of land in 2018 than it had in 2009.",
+      "B. saw a greater expansion than Deschampsia antarctica did, increasing the area of land it covered by more than half.",
+      "C. showed a greater increase in the average size of individual plants than Deschampsia antarctica did.",
+      "D. covered land newly freed from ice at a rate 55% faster than that of Deschampsia antarctica."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most effectively uses data from the table to complete the comparison of how Colobanthus quitensis benefited from warming temperatures with how Deschampsia antarctica benefited from them. The table shows the land area covered by these two plant species at a site in Antarctica. According to the table, Colobanthus quitensis increased the area it covered by 55% from 2009 to 2018, whereas Deschampsia antarctica increased the area it covered by 28% during the same period. It therefore follows that Colobanthus quitensis saw a greater expansion than Deschampsia antarctica did and that Colobanthus quitensis increased the area of land it covered by more than half. Choice A is incorrect because according to the table, Deschampsia antarctica covered 1,230 square meters of land in 2009 and 1,576 square meters of land in 2018. Deschampsia antarctica therefore covered a larger, not a smaller, area of land in 2018 than in 2009. Moreover, there’s no information in the text or the table that suggests that one species of the plant suppressed the other. Choice C is incorrect because it inaccurately describes the data in the table. The table shows the land area covered by Colobanthus quitensis and Deschampsia antarctica and the percent increase in area covered by the two species from 2009 to 2018, not the average size of individual plants belonging to the two species. The data in the table therefore can’t be used to make a comparison of the increase in individual plants’ average size. Choice D is incorrect because the table shows the land area covered by Colobanthus quitensis and Deschampsia antarctica and the percent increase in area covered by the two species from 2009 to 2018, not the rate at which the species increased the area they covered. Moreover, there’s nothing in the table or the text that suggests that the areas covered by the two species were newly freed from ice.",
+    "image": "assets/coeq_db6ef573.png",
+    "alt": "Data figure: Land Area Covered by Native Flowering Plants at a Site in Antarctica. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "b65d942c",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Born in Chile in 1917, artist and ethnomusicologist Violeta Parra was a pioneer in the nueva canción chilena (Chilean New Song) movement that emerged in the late 1950s and then spread throughout Latin America, Portugal, and Spain as nueva canción. Parra traveled all over Chile compiling extensive records of authentic folk music as well as recipes, proverbs, and other facets of cultural history. These records formed the foundation for the early movement’s revival of traditional Chilean folk forms in new songs that represented modern realities of the working class and strongly advocated for social change. <u>As the movement spread beyond Chile, the breadth of musical traditions incorporated into its foundation also expanded.</u>",
+    "question": "Which detail about songs associated with nueva canción, if true, would best illustrate the underlined claim?",
+    "options": [
+      "A. Many feature political commentary addressing contemporary issues that stemmed from shared experiences of European colonization in Latin American countries.",
+      "B. Many demonstrate the stylistic influence of corrido, a genre of narrative songs from Mexico that had come to be characterized by political themes in the early 1800s.",
+      "C. Many were written with parts meant to be played on the quena, a traditional flute used across Andean countries, including Chile.",
+      "D. Many were produced by Argentinian artists in the late 1950s, with others by artists in additional Latin American countries first emerging soon after."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it presents a detail that, if true, would most effectively illustrate the underlined claim that as nueva canción spread beyond Chile, the breadth of musical traditions incorporated into its foundation also expanded. The text explains that the movement was initially founded on traditional Chilean folk forms compiled by Parra, so if many nueva canción songs demonstrate the stylistic influence of corrido—a Mexican narrative song genre—that would show that a musical tradition originating outside Chile became part of the movement’s foundation, directly illustrating the text’s claim about how the breadth of nueva canción expanded. Choice A is incorrect because the finding addresses lyrical content—political commentary on issues stemming from European colonization— rather than musical traditions. Even if nueva canción songs across different countries share political themes, that doesn’t indicate that new musical forms or styles were incorporated into the movement’s foundation. Thematic content is distinct from the musical traditions that songs draw on stylistically. Choice C is incorrect because the quena is described as a “traditional flute used across Andean countries, including Chile,” meaning it’s part of the Chilean folk tradition that underpinned nueva canción at its origin. Use of the quena therefore wouldn’t illustrate the incorporation of musical traditions beyond those that founded the early movement in Chile. Choice D is incorrect because the finding establishes only that artists in additional Latin American countries produced nueva canción songs, not that those artists incorporated musical traditions from their own countries into the movement. Artists in other countries could still have been drawing on the same Chilean folk forms that originally founded the movement, so geographic spread alone doesn’t illustrate an expansion of musical traditions.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "260c2199",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Belonging to neither the minimalist nor the abstract art movements but heavily influencing both, Constantin Brâncuşi spent his sculpting career returning to the same few themes—a kiss, a sleeping head, and a bird in flight—each rendered in pristine, simple, almost abstract forms. Perhaps the most famous example is Bird in Space (1923), a tall, slender bronze sculpture that arcs upward in a manner suggestive of flight but that otherwise lacks any identifiable characteristics of a bird. Despite the seeming simplicity of his works, the exacting standards to which Brâncuşi held his work meant that he produced relatively few pieces over his career. There is thus something of a disparity between ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. the nature of much of Brâncuşi’s work and the abstraction of Bird in Space.",
+      "B. Brâncuşi’s relatively limited productivity and the diversity of his sculptures.",
+      "C. the themes Brâncuşi explored and the themes favored by artists he inspired.",
+      "D. Brâncuşi’s importance to the history of art and his total artistic output."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most logically completes the text’s discussion of the sculptor Constantin Brâncuşi. The text establishes Brâncuşi’s significance by noting that although he belonged to neither the minimalist nor the abstract art movements, he heavily influenced both —a detail that signals his importance to the history of art. At the same time, the text notes that the exacting standards to which Brâncuşi held his work meant that he produced relatively few pieces over his career. Because the text presents both Brâncuşi’s major artistic influence and his limited output, it is reasonable to infer that the disparity the text identifies is between his importance to the history of art and his total artistic output. Choice A is incorrect because the text explicitly identifies Brâncuşi’s Bird in Space as “a famous example” of how the artist conveyed his preferred themes—in this case, a bird in flight—through simplicity bordering on abstraction. Thus, this particular sculpture is consistent with the nature of much of Brâncuşi’s work instead of showing a disparity, or marked difference, with it. Choice B is incorrect because the text indicates that Brâncuşi returned to the same few themes, suggesting limited thematic diversity. Since his productivity and his thematic diversity were both limited, these two aspects of Brâncuşi’s work are consistent with each other instead of showing a disparity, or a marked difference. Choice C is incorrect because although the text mentions that Brâncuşi heavily influenced both the minimalist and abstract art movements, it doesn’t discuss the specific themes favored by artists in those movements. There is therefore no basis for identifying a disparity between Brâncuşi’s themes and those of artists he inspired.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "9fabb264",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "A contraction of “you all,” the pronoun “y’all” has long been used as a plural version of “you” in the South and in Black communities around the US. In recent decades, most other English-speaking communities in the US have begun to use “y’all.” What explains its rise in popularity? Many varieties of English have no pronoun that specifically addresses more than one person and instead must use “you” to address both one person and more than one. But “y’all” always refers to two or more people. As a result, it conveys the speaker’s meaning more precisely than “you” can.",
+    "question": "Which question does the text most directly attempt to answer?",
+    "options": [
+      "A. How many other plural versions of the pronoun “you” are there in English, besides “y’all”?",
+      "B. Why has the pronoun “y’all” become more widely used in the US?",
+      "C. When was the first recorded use of the pronoun “y’all” in the English language?",
+      "D. Is “y’all” commonly used in English-speaking regions of the world besides the US?"
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it presents a question that the text is attempting to answer: why has the pronoun \"y’all\" become more widely used in the US? The text begins by explaining where and how the plural pronoun \"y’all\" originated and then goes on to state that its use has been rising in popularity, even in areas outside of its place of origin. The text then attributes this rise in popularity to the fact that many varieties of English do not have a pronoun to address more than one person, and thus \"you\" must function as both a singular and plural pronoun. Choice A is incorrect because while the text states that \"y’all\" is used as a plural of \"you\" in English, it does not discuss other plural forms of the word. Choice C is incorrect because while the text discusses the general origins of the pronoun \"y’all,\" it does not state when the use of the pronoun was first recorded in the English language. Choice D is incorrect because though the text addresses the use of the pronoun \"y’all\" within English-speaking communities in the US, it does not address its use outside of that geographic area.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "bd5cb387",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "“Ad recall” measures how memorable an advertising campaign is. To provide advertisers with information about their ads’ memorability, a social media site regularly surveys users about whether they remember ads they had recently interacted with on the site. In a study that drew on this survey data, advertising researcher Kristen Sussman and colleagues noted that different kinds of social media interactions involve different levels of cognitive engagement: commenting on or sharing a post is more cognitively demanding than is clicking on embedded links or on a “like” button. The researchers hypothesized that interactions indicating high levels of cognitive engagement with ad content would result in relatively high levels of ad recall.",
+    "question": "Which finding, if true, would most directly support the researchers’ hypothesis?",
+    "options": [
+      "A. Users who interacted with an ad were much more likely to do so by clicking on the ad’s “like” button than they were to interact with the ad in any other way.",
+      "B. Users who interacted with an ad were significantly more likely to purchase the advertised product at the time they saw the ad than were users who saw the ad but did not interact with it.",
+      "C. Compared with users who clicked on links in an ad, users who commented on that same ad were significantly more likely to remember seeing the ad when surveyed two days later.",
+      "D. Although users who shared an ad were highly likely to remember details from the ad when surveyed two days later, those same users tended to forget those details when surveyed again a week later."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it details a finding that, if true, would most directly support the researchers’ hypothesis about ad recall. According to the text, the researchers found that commenting on an ad that appears as a social media post is more cognitively demanding for users than simply clicking on embedded links in such an ad. The researchers then hypothesized that a high level of cognitive engagement with ad content would result in a high level of ad recall, or memory of ad content. This hypothesis would be supported by the finding that users who had commented on an ad were more likely to recall its content when surveyed two days later than users who had simply clicked on links in the same ad. Choice A is incorrect. Although the text compares one form of social media user interaction with ads—clicking on the ad’s \"like\" button—with other forms of interaction—commenting on the ad and sharing it through social media—it does so in order to determine which form of interaction is associated with a higher level of ad recall. The text doesn’t note whether users were more likely to click on the \"like\" button than they were to interact with the ad in other ways. Choice B is incorrect because the text doesn’t indicate that the study attempted to track whether social media users purchased the advertised product or to determine which form of interaction with ad content was more strongly associated with making a purchase. Choice D is incorrect. Finding that social media users who shared an ad forgot the content one week later would weaken, not support, the researchers’ hypothesis that cognitive engagement is associated with a high level of recall.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "f4f1a62b",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "The following text is adapted from Guy de Maupassant’s nineteenth-century short story “The Trip of Le Horla” (translated by Albert M. C. McMaster, A. E. Henderson, Mme. Quesada, et al.). The narrator is part of a group traveling in a hot-air balloon at night.\n\nThe earth no longer seems to exist, it is buried in milky vapors that resemble a sea. We are now alone in space with the moon, which looks like another balloon travelling opposite us; and our balloon, which shines in the air, appears like another, larger moon, a world wandering in the sky amid the stars, through infinity. We no longer speak, think nor live; we float along through space in delicious inertia. The air which is bearing us up has made of us all beings which resemble itself, silent, joyous, irresponsible beings, peculiarly alert, although motionless.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. The narrator feels a growing sense of isolation even though his companions are nearby during the balloon ride.",
+      "B. The narrator and his companions are completely absorbed in the change in perspective they gain while riding in the balloon.",
+      "C. The narrator and his companions are troubled by the disorienting effects of the altitude while riding in the balloon.",
+      "D. The narrator is pleasantly surprised by his companions’ unrestrained enthusiasm about the sensation of riding in the balloon."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most accurately states the main idea of the text. The narrator describes the view he and his companions have from the balloon: the earth lies beneath \"milky vapors,\" and the balloon itself looks like another moon. The narrator goes on to explain how the people riding in the balloon are affected by the ride, explaining that they are immersed in the experience: floating along in \"delicious inertia,\" or inactivity, like \"silent, joyous, irresponsible beings.\" Thus, the main idea is that the narrator and his companions are completely absorbed in the change in perspective they gain while riding in the balloon. Choice A is incorrect because the narrator never describes himself as feeling isolated from his companions; instead, he characterizes riding in the balloon as an experience he is sharing with them. And although he does imply a sense of isolation, it is isolation from those on the ground, as when he says of himself and his companions, \"We are now alone.\" Choice C is incorrect because the narrator doesn’t suggest that he or his companions are troubled by the effects of the balloon ride. Instead, he describes himself and his companions as \"joyous\" and the experience of floating in the balloon as \"delicious.\" Choice D is incorrect because nothing in the text suggests that the narrator is surprised by his companions’ response to the balloon ride. In fact, the text indicates that the narrator and his companions are having the same experience: they’re described as \"silent\" and \"motionless,\" rather than as having unrestrained enthusiasm.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "5ff15e74",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Many insects are iridescent, or have colors that appear to shimmer and change when seen from different angles. Scientists have assumed that this feature helps to attract mates but could also attract predators. But biologist Karin Kjernsmo and a team had the idea that the shifting appearance of colors might actually make it harder for other animals to see iridescent insects. To test this idea, the team put beetle forewings on leaves along a forest path and then asked human participants to look for them. Some of the wings were naturally iridescent. Others were painted with a nonchanging color from the iridescent spectrum, such as purple or blue.",
+    "question": "Which finding, if true, would most directly support the team’s idea?",
+    "options": [
+      "A. On average, participants found most of the purple wings and blue wings and far fewer of the iridescent wings.",
+      "B. On average, participants found the iridescent wings faster than they found the purple wings or blue wings.",
+      "C. Some participants reported that the purple wings were easier to see than the blue wings.",
+      "D. Some participants successfully found all of the wings on the leaves."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents the finding that, if true, would most strongly support the research team’s idea about the effect of iridescence, or colors that appear to shimmer and change. The text indicates that although some scientists have assumed that iridescence could attract predators, Kjernsmo’s team wondered if iridescent insects might be harder for other animals to see. The team tested this idea by asking human participants to look for both iridescent beetle wings and beetle wings that weren’t iridescent but that had been painted colors such as purple or blue. If participants located most of the purple or blue wings but far fewer of the iridescent wings, that finding would support the team’s idea since it would suggest that noniridescent wings are easier to see than iridescent wings. Choice B is incorrect because if participants located the iridescent wings more quickly than the purple or blue wings, that finding would weaken the team’s idea, not support the team’s idea, since it would suggest that the iridescent wings were easier to see than the noniridescent wings. Choice C is incorrect because finding that some participants believed that the purple wings were easier to see than the blue wings would be irrelevant to the team’s idea. The purple and blue wings were both noniridescent, so any difference in how easy those two colors were to see would have nothing to do with the idea that iridescent insects are harder to see than noniridescent insects. Choice D is incorrect because if some participants found all the wings, that wouldn’t support the team’s idea that iridescent insects may be harder to see than noniridescent insects. If anything, this finding might weaken the team’s idea since it could suggest that iridescence had no effect on how difficult the wings were to see.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "75e54954",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Data collected by the Mars rover Curiosity at the Gale Crater’s Murray Formation are suggestive of hydrological deposition of sediment in the distant past. To characterize the nature of the depositional environment, Frances Rivera-Hernández et al. analyzed the grain size of Murray Formation sediment, finding that although there are intervals of coarse grains, most of the sediment consists of fine grains that show signs of cracking due to episodic desiccation. Rivera-Hernández et al. concluded that the coarse grains are sandstone, which tends to be deposited by flowing water, whereas the fine grains are mudstone, which is slowly deposited by settling out of suspension in low-flow water, leading the researchers to posit that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. although the area of the Murray Formation experienced a prolonged period of dryness that prevented a lake from forming, water flowing from a distant source was present.",
+      "B. a lake existed at the Murray Formation for a prolonged period, though the lake occasionally experienced drying and there were periods in which one or more streams were present.",
+      "C. one or more streams existed at the Murray Formation for an extended period until being replaced by a lake that persisted for only a brief period before permanently drying.",
+      "D. a stream-fed lake was present at the Murray Formation for an extended period, and although the streams experienced occasional drying, the lake did not."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most logically completes the text’s discussion of the sediments found at the Gale Crater’s Murray Formation on Mars. The text states that data gathered by the Curiosity rover suggest that bodies of water deposited sediment on Mars’s surface long ago. The text goes on to say that studying the sediment, Rivera-Hernández et al. found some coarse grains they believe are sandstone, which tends to be left by flowing water, and many more fine grains they believe are mudstone, which tends to slowly sink in low-flow water. The text further indicates that the researchers noted cracks in the fine grains that suggest there were cycles of desiccation, or drying, at the site. Taken together, this information suggests that a lake (a body of low-flow water) existed at the site for a prolonged period but occasionally experienced drying and that there were periods in which one or more streams (flowing water) were present, since the extended existence of a lake would account for the abundance of fine grains, periods of drying would account for the cracks in the fine grains, and periods with streams would account for the sections of coarse grains. Choice A is incorrect because the text indicates that an abundance of fine grains of sediment was found at the Murray Formation site, which suggests that a low-flow water source (such as a lake) was present. Further, the text makes no mention of where the water at the site may have originated from. Choice C is incorrect because the evidence described in the text doesn’t support the idea that there were streams at the Murray Formation for an extended period and a lake for just a short time. The abundance of fine grains suggests that a lake (a body of low-flow water) was present for an extended time, not just a short time, and the sections of coarse grains suggest that one or more streams (bodies of flowing water) were intermittently present while the lake existed, not at a separate time. Choice D is incorrect. Although the text suggests that both a low- flow body of water (such as a lake) and flowing water (such as streams) existed at the Murray Formation site, meaning that there could have been a stream-fed lake, the text explains that the fine grains that signify the presence of a lake exhibit cracking that indicates periods of desiccation, or drying, which suggests that a lake was present but did occasionally dry out.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "9f06aadb",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "The morphological novelty of echinoderms—marine invertebrates with radial symmetry, usually starlike, around a central point—impedes comparisons with most other animals, in which bilateral symmetry on an anterior-posterior (head to tail) axis through a trunk is typical. Particularly puzzling are sea stars, thought to have evolved a headless layout from a known bilateral origin. Applying genomic knowledge of Saccoglossus kowalevskii acorn worms (close relatives of sea stars, and thus expected to have similar markers for corresponding anatomical regions) to the body patterning genes of Patiria miniata sea stars, Laurent Formery et al. observed activity only in anterior genes across P. miniata’s entire body and some posterior genes limited to the edges, suggesting that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. despite the greater prevalence of anterior genes in sea stars’ genetic makeup, posterior genes active at the body’s perimeter are primarily responsible for the starlike layout that distinguishes sea stars’ radial symmetry from that of other echinoderms.",
+      "B. contrary to the belief that they evolved from early ancestors with the bilateral form typical of many other animals, sea stars instead originated with an atypical body layout that was neither bilaterally nor radially symmetrical.",
+      "C. although the two species are closely related, there is only minimal correspondence in the genetic markers for head, tail, and trunk region development in P. miniata sea stars and S. kowalevskii acorn worms.",
+      "D. rather than undergoing changes resulting in the eventual elimination of a head region in their radial body plan, as previously assumed, sea stars’ morphology evolved to completely lack a trunk and consist primarily of a head region."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most logically completes the text’s discussion of the morphology (form and structure) of sea stars, a type of echinoderm. The text indicates that echinoderms have radially symmetrical body plans (symmetrical around a central point, usually in the form of a star), whereas most animals have bilaterally symmetrical body plans (symmetrical along an axis running from head to tail through a trunk). According to the text, sea stars are unusual echinoderms because, despite their radial body plan, they descended from known bilateral ancestors. This shift in body plan was thought to be a process of losing the genetic markers associated with the head region. The text explains that by comparing the genes of one sea star species (P. miniata) to those of a close relative, the acorn worm, researchers determined that instead, anterior (head) genes are active across the sea star’s entire body, posterior (tail) genes are active in limited, peripheral locations of the body, and no trunk-related genes are active. This finding strongly suggests that, rather than becoming \"headless\" as they evolved from a bilateral ancestor, sea stars developed a body plan consisting almost entirely of a head region with a minimal tail region and no trunk region present. Choice A is incorrect because the text doesn’t identify how any particular region of sea stars’ bodies influences the layout of sea stars’ radial symmetry. Moreover, the text indicates that the radial symmetry of echinoderms is \"usually starlike,\" not that a starlike layout distinguishes sea stars from other echinoderms. Choice B is incorrect because the text doesn’t suggest that the idea that sea stars evolved from an ancestor with bilateral symmetry is incorrect (describing the bilateral origin as \"known\") and doesn’t address any body plans other than those with radial or bilateral symmetry. The text strongly suggests that rather than revealing something about sea stars’ origin, Formery et al.’s findings contradict the assumption that the current body plan of sea stars is \"headless.\" Choice C is incorrect because the text suggests that Formery et al. were able to make determinations about P. miniata sea stars’ body plan based on the comparability of genetic markers between P. miniata and S. kowalevskii acorn worms. The text indicates only that little or no activity was observed in certain types of genes associated with body development in P. miniata, not that those genes turned out to largely differ from body-development genes in S. kowalevskii.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "a8b34bf5",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "The following text is adapted from Lewis Carroll’s 1889 satirical novel Sylvie and Bruno. A crowd has gathered outside a room belonging to the Warden, an official who reports to the Lord Chancellor.\n\nOne man, who was more excited than the rest, flung his hat high into the air, and shouted (as well as I could make out) “Who roar for the Sub- Warden?” Everybody roared, but whether it was for the Sub-Warden, or not, did not clearly appear: some were shouting “Bread!” and some “Taxes!”, but no one seemed to know what it was they really wanted.\n\nAll this I saw from the open window of the Warden’s breakfast-saloon, looking across the shoulder of the Lord Chancellor.\n\n“What can it all mean?” he kept repeating to himself. “I never heard such shouting before—and at this time of the morning, too! And with such unanimity!”",
+    "question": "Based on the text, how does the Lord Chancellor respond to the crowd?",
+    "options": [
+      "A. He asks about the meaning of the crowd’s shouting, even though he claims to know what the crowd wants.",
+      "B. He indicates a desire to speak to the crowd, even though the crowd has asked to speak to the Sub-Warden.",
+      "C. He expresses sympathy for the crowd’s demands, even though the crowd’s shouting annoys him.",
+      "D. He describes the crowd as being united, even though the crowd clearly appears otherwise."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents a statement about how the Lord Chancellor responds to the crowd that is supported by the text. The text indicates that the people in the crowd are roaring and shouting “Bread!” or “Taxes!” and presents them as not knowing what they really want. The Lord Chancellor’s response is to ask what their shouting means but also to observe that they’re shouting with “unanimity,” or total agreement. Clearly, this isn’t the case, which supports the statement that the Lord Chancellor describes the crowd as being united even though it’s not. Choice A is incorrect because it isn’t supported by the text. Although the text indicates that the Lord Chancellor asks about the meaning of the crowd’s shouting, it doesn’t suggest that he knows what the crowd really wants. Choice B is incorrect because the text doesn’t suggest that the Lord Chancellor wants to speak to the crowd. Furthermore, the text doesn’t indicate that the crowd wants to hear from the Sub-Warden. Although the crowd roars when asked “Who roar for the Sub-Warden?” it’s unclear what the roaring means. Choice C is incorrect because the text doesn’t suggest that the Lord Chancellor knows of or sympathizes with the crowd’s demands. In addition, the text doesn’t indicate that the crowd’s shouting annoys the Lord Chancellor, just that it causes him to keep repeating “What can it all mean?”",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "262f9643",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Several artworks found among the ruins of the ancient Roman city of Pompeii depict a female figure fishing with a cupid nearby. Some scholars have asserted that the figure is the goddess Venus, since she is known to have been linked with cupids in Roman culture, but University of Leicester archaeologist Carla Brain suggests that cupids may have also been associated with fishing generally. The fact that a cupid is shown near the female figure, therefore, ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. is not conclusive evidence that the figure is Venus.",
+      "B. suggests that Venus was often depicted fishing.",
+      "C. eliminates the possibility that the figure is Venus.",
+      "D. would be difficult to account for if the figure is not Venus."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents the conclusion that most logically completes the text’s discussion about the significance of the cupid found at Pompeii. The text indicates that the cupid is near a statue of a female figure who is fishing, and it goes on to indicate that because Venus is associated with cupids, some scholars believe the female figure to be the goddess Venus. But the text then says that, according to archaeologist Carla Brain, cupids may have also been associated with the activity of fishing, which, if true, would suggest that the mere appearance of a cupid near a female figure engaged in fishing does not indicate with certainty that the figure is Venus (that is, the cupid might be associated with fishing, and the figure might be anyone at all). Choice B is incorrect because the text says nothing about how often Venus was depicted fishing in Roman art: it only implies that in certain instances a female figure may or may not be Venus. Choice C is incorrect because Carla Brain’s proposed explanation for the presence of the cupids makes no reference to the female figure, and so the possibility that the figure in the artworks is in fact Venus cannot be definitively eliminated. Choice D is incorrect because there is nothing in the text to suggest that the only reasonable way to interpret the figure is as Venus.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "9e9c9691",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice best describes data from the graph that support the researchers’ conclusion?",
+    "options": [
+      "A. The average numbers of managers and department leaders reporting directly to their CEO didn’t fluctuate from the 1991–1995 period to the 2001–2008 period.",
+      "B. The average number of managers reporting directly to their CEO was highest in the 1996–2001 period.",
+      "C. The average number of department leaders reporting directly to their CEO was greater than the average number of managers reporting directly to their CEO in each of the three periods studied.",
+      "D. The average number of department leaders reporting directly to their CEO rose over the three periods studied."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it describes data from the graph that support the researchers’ conclusion that there is a growing interest among CEOs in connecting with more departments in their companies. The graph shows the average number of individuals reporting directly to CEOs during three different time periods: the individuals are divided into managers and department leaders. The average number of department leaders directly reporting to their CEO during the 1991–1995 period was slightly more than three, during the 1996–2001 period it was four, and during the 2001–2008 period it was almost seven. Thus, the average number of department leaders reporting directly to their CEO rose over the three periods studied, which suggests that CEOs were connecting with more departments. Choice A is incorrect because the average number of managers and department leaders reporting directly to their CEO rose for both categories between the 1991–1995 and 2001–2008 periods; thus, it isn’t true that the average numbers didn’t fluctuate. Choice B is incorrect because the average number of managers reporting directly to their CEO was highest in the 2001–2008 period, not in the 1996–2001 period. Choice C is incorrect. Although it correctly describes a feature of the graph, the observation that more department leaders than managers are reporting to CEOs does not by itself address the question of whether CEOs are connecting with more departments over time—to address that question, one needs to know whether the number of department leaders reporting to CEOs is increasing over time.",
+    "image": "assets/coeq_9e9c9691.png",
+    "alt": "Data figure: Average Number of Individuals Reporting Directly to CEOs. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "8db5f22f",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice best describes data from the graph that support Martinez and colleagues’ conclusion?",
+    "options": [
+      "A. The lowest amount of grass cover was approximately 58,000 square meters, and the highest amount of forest cover was approximately 75,000 square meters.",
+      "B. There was more grass cover than forest cover in 1987, and this difference increased dramatically in 1993 and again in 2006.",
+      "C. There was less grass cover than bare soil in 1987 but more grass cover than bare soil in 1993 and 2006, whereas there was more forest cover than bare soil in all three years.",
+      "D. Grass cover increased from 1987 to 1993 and from 1993 to 2006, whereas forest cover decreased in those periods."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it describes data from the graph that support Martinez and colleagues’ conclusion that the Jordanelle Dam led to changes that benefited grass plants but not trees. The graph shows characteristics of the banks of the Provo River downstream of the Jordanelle Dam in three different years—1987, 1993, and 2006. Specifically, the graph shows the amount of grass cover, bare soil, and forest cover in those years. The text indicates that the Jordanelle Dam was built in 1992, meaning that the data from the graph for 1987 reflect conditions before the dam was built, whereas the data for 1993 and 2006 reflect conditions after the dam was built. The data show that grass cover increased substantially from 1987 to 1993 and again from 1993 to 2006. The data also show that forest cover declined over those periods. Together, these data support Martinez and colleagues’ conclusion that the dam was beneficial for grass plants but not for trees—grass cover increased significantly after the dam was built, while forest cover declined. Choice A is incorrect. Although it is true that, in the graph, the lowest value for grass cover is approximately 58,000 square meters and the highest value for forest cover is approximately 75,000 square meters, both values are from 1987, before the Jordanelle Dam was built in 1992. Therefore, this information alone cannot support Martinez and colleagues’ conclusion about changes in grass and tree cover following the construction of the dam. Choice B is incorrect because it presents an inaccurate description of data from the graph. The graph shows that there was more forest cover than grass cover in 1987, not that there was more grass cover than forest cover that year. Choice C is incorrect because, while it accurately reflects data from the graph when it compares grass cover and forest cover to bare soil, these data alone cannot support Martinez and colleagues’ conclusion that the dam led to changes that benefited grass plants but not trees. An increase in grass cover relative to bare soil following the construction of the dam might indicate that the dam benefited grass plants, but the fact that there was more forest cover than bare soil in all three years doesn’t indicate that the dam failed to benefit trees.",
+    "image": "assets/coeq_8db5f22f.png",
+    "alt": "Data figure: Characteristics of the Banks of the Provo River Downstream of the Jordanelle Dam. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "e7cfdb90",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice best describes data from the graph that support the student’s conclusion?",
+    "options": [
+      "A. The monthly hours of sunshine in both Anchorage and Fairbanks hold steady in June and July before beginning to decline in August.",
+      "B. The monthly hours of sunshine in both Anchorage and Fairbanks increase from April to June and then decrease from June to September.",
+      "C. Anchorage and Fairbanks both have less than 200 monthly hours of sunshine from April to September.",
+      "D. Anchorage and Fairbanks both have more than 300 monthly hours of sunshine from April to June and less than 200 hours from July to September."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it best describes data from the graph that support the student’s conclusion about weather patterns in Anchorage and Fairbanks. According to the graph, the amount of sunshine increases in both cities from April to June: in Anchorage, the number of monthly hours increases from about 250 to just under 300, and in Fairbanks the number of monthly hours increases from about 300 to just under 350. Also according to the graph, the amount of sunshine decreases in both cities from June to September: in Anchorage the number of monthly hours decreases from just under 300 to about 125, and in Fairbanks the number of monthly hours decreases from just under 350 to about 125. Thus, the monthly hours of sunshine in both cities follow a similar pattern, increasing from April to June and then decreasing from June to September. Choice A is incorrect because, according to the graph, the monthly hours of sunshine in both Anchorage and Fairbanks decrease from June to July. They don’t hold steady. In June there are slightly less than 300 hours of sunshine in Anchorage and slightly less than 350 hours in Fairbanks. Then, in July there are approximately 250 hours of sunshine in both cities. Choice C is incorrect because the graph shows that Anchorage and Fairbanks have less than 200 monthly hours of sunshine only in August and September. For the rest of the months represented in the graph, both cities have more than 200 monthly hours of sunshine. Choice D is incorrect because, according to the graph, Anchorage doesn’t have more than 300 monthly hours of sunshine from April to June. In addition, both cities have more than 200 hours of sunshine in July, although the amount of sunshine does decrease to less than 200 monthly hours in August and September.",
+    "image": "assets/coeq_e7cfdb90.png",
+    "alt": "Data figure: Monthly Hours of Sunshine from April to September in Anchorage and Fairbanks, Alaska. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "b7d21414",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "In the early 1970s, art historian Michael Baxandall created an approach to viewing art called the “period eye,” which explains how to look at art through the lens of its historical period. Baxandall argued that it is critical that art historians understand and communicate the original social and cultural contexts of older works of art so that it is clear what the artists intended and how the pieces would have been understood by their original viewers. <u>Since it was first introduced, Baxandall’s period eye has significantly influenced the practice of art history.</u>",
+    "question": "Which statement, if true, would most strongly support the claim in the underlined sentence?",
+    "options": [
+      "A. Art historians working today have largely rejected the idea, common among Baxandall’s predecessors, that artists’ intentions should influence how artworks are interpreted.",
+      "B. For some historical periods, it is difficult for art historians to reconstruct how the original viewers of artworks understood what artists’ intentions for their works were.",
+      "C. Numerous art historians of the late twentieth century and twenty-first century have focused their scholarship on how various artworks were interpreted at the time of their creation.",
+      "D. Many art historians working before the 1970s produced detailed analyses of the social and cultural contexts of older artworks, though few extended that approach to artworks produced in their own lifetimes."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it presents a statement that, if true, would most strongly support the underlined claim that Baxandall’s period eye has significantly influenced the practice of art history since its introduction. The text explains that the period eye—an approach Baxandall introduced in the early 1970s—directs art historians to understand how artworks were originally understood by viewers from the same historical period in which the works were created. If numerous art historians working in the late twentieth and twenty-first centuries—that is, in the decades after Baxandall’s introduction of the approach—have focused on how artworks were interpreted at the time of their creation, their scholarship would correspond to the definition of period eye provided by the text, thereby supporting the claim that the period eye has been significantly influential. Choice A is incorrect because, as the text explains, Baxandall explicitly recommended examining the social and cultural contexts in which older artworks were produced in order to appreciate the artists’ intentions. Thus, a widespread rejection of artistic intention as an interpretive guide would weaken, not support, the claim that Baxandall influenced the practice of art history. Choice B is incorrect because this statement considers a limitation in applying the period eye approach—namely, the difficulty of reconstructing original viewers’ understanding for some historical periods—instead of addressing whether the approach has influenced the practice of art history. Choice D is incorrect because the statement describes the practice of art historians working before the 1970s, prior to Baxandall’s introduction of the period eye. Pre-1970s scholarship cannot demonstrate Baxandall’s influence on art history; if anything, it would suggest that some elements of his approach predated him, which has no bearing on whether his particular formulation has shaped the field since.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "d5a404f4",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Under normal atmospheric pressure at Earth’s surface, water molecules form a tetrahedral network stabilized by hydrogen bonds between adjacent molecules. Extreme high pressure, such as can be found in deep ocean waters, destabilizes these bonds and compresses water’s structure, allowing water molecules within organisms to permeate proteins and impede crucial biological functions; yet deep-sea organisms known as piezophiles have adapted to extreme pressure. Studies have found a positive correlation between the depths that various piezophiles inhabit and concentrations of a compound called trimethylamine N-oxide (TMAO) in their muscle tissues, which has led a team of researchers to hypothesize that TMAO reduces water’s compressibility.",
+    "question": "Which finding, if true, would most directly support the researchers’ hypothesis?",
+    "options": [
+      "A. Water molecules are found to be impervious to TMAO even when the water molecules’ tetrahedral configuration has been distorted by high pressure.",
+      "B. Examination of TMAO’s molecular structure shows that TMAO molecules retain their shape even as pressure increases.",
+      "C. A positive correlation is found between concentrations of TMAO and the rate at which water’s molecular structure compresses as pressure increases.",
+      "D. Analysis of water’s molecular structure under high pressure reveals that hydrogen bonds are more stable when TMAO is present than when it is not."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents a finding that, if true, would support the researchers’ hypothesis that TMAO reduces water’s compressibility. The text explains that at great depths in the ocean, extreme pressure compresses the molecular structure of water by destabilizing the hydrogen bonds between adjacent molecules, thereby allowing water to penetrate proteins and harm the associated organisms. However, deep-sea organisms called piezophiles have adapted to live at these depths and previous studies show a positive correlation between the depth at which a piezophile species lives and the species’ level of the compound TMAO. Because this hypothesis links TMAO levels with reduced compressibility of water’s tetrahedral molecular structure, a finding that TMAO helps maintain the hydrogen bonds between water molecules under high pressure would strongly support that hypothesis. Choice A is incorrect. Although the researchers’ hypothesis suggests a relationship between TMAO and water molecules’ tetrahedral molecular structure, that relationship involves TMAO helping maintain water’s tetrahedral molecular structure under high pressure; as presented in the text, the hypothesis doesn’t contend that water molecules are impervious to, or incapable of being penetrated by, TMAO. Choice B is incorrect because the text discusses how the molecular structure of water, not TMAO, is compressed under extreme pressure and never addresses how TMAO might be affected by such pressure. Choice C is incorrect because the researchers’ hypothesis holds that water under extreme pressure is more resistant, not less, to being compressed when TMAO concentrations are higher. Moreover, the positive correlation mentioned in the text is between TMAO concentrations and the depths at which piezophiles live, not between concentrations of TMAO and the rate at which water’s molecular structure compresses as pressure increases.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "9b40b794",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the text?",
+    "options": [
+      "A. the selection process that enabled the Navajo-Churro to retain its somewhat coarse outer fiber also resulted in inner fiber that, at its softest, is softer than either the mouflon’s or the Merino’s inner fiber.",
+      "B. the Navajo-Churro more closely resembles its ancestor, the mouflon, in the uniform softness of its inner fiber, while the Merino more closely resembles the mouflon in the variable diameter of its outer fiber.",
+      "C. domestication resulted in a counterintuitive increase in the inner fiber’s minimum diameter, making the inner fiber of the Merino and the Navajo-Churro less suitable for delicate garments than the mouflon’s inner fiber is.",
+      "D. the domestication of the mouflon and the subsequent selection process that produced the Merino and the Navajo-Churro resulted in greater softness of outer and inner fiber alike."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it accurately uses data from the table to complete the statement about the fibers of three types of sheep. The text discusses some qualities of outer and inner fibers of mouflons, Spanish Merino sheep, and Navajo-Churro sheep and indicates that sheep fibers with finer, or smaller, diameters are softer than fibers with larger diameters. The text then sets up a conclusion that can be made by comparing the fibers of all three sheep types. The table shows that the minimum diameter of the Navajo-Churro’s inner fibers is 10 microns, which is smaller than the minimum diameters of the inner fibers of both the mouflon (15 microns) and the Spanish Merino (17 microns). Thus, comparing the fiber characteristics of all three sheep reveals that at its softest, the inner fiber of the Navajo-Churro is softer than either the mouflon’s or the Merino’s inner fiber. Choice B is incorrect because it doesn’t accurately describe the data in the table. The table shows that the softness of Navajo-Churro inner fiber isn’t uniform (since the diameter of Navajo-Churro inner fiber ranges from 10 microns to 35 microns) and that the diameter of the outer fiber of the mouflon isn’t variable (rather, it is a uniform 150 microns). Choice C is incorrect because it doesn’t accurately describe the data in the table. The text indicates that both Spanish Merino sheep and Navajo-Churro sheep were domesticated from mouflon sheep. The table doesn’t show that domestication increased the minimum diameter of inner fibers for both Spanish Merino sheep and Navajo-Churro sheep from the 15-micron diameter of mouflon inner fibers: the minimum diameter of Spanish Merino increased to 17 microns, but the minimum diameter of Navajo- Churro inner fibers decreased to 10 microns. Choice D is incorrect because it doesn’t accurately describe the data in the table. The text explains that sheep fibers with finer, or smaller, diameters are softer than fibers with larger diameters. The table does show that Spanish Merino outer fibers are finer, and thus softer, than mouflon outer fibers and that at their finest, Navajo-Churro outer fibers are softer than mouflon outer fibers, but it also shows that Spanish Merino inner fibers are less soft than mouflon inner fibers, since their minimum diameter is greater than 15 microns, and that Navajo-Churro inner fibers can be less soft than mouflon inner fibers, since the diameter ranges up to 35 microns.",
+    "image": "assets/coeq_9b40b794.png",
+    "alt": "Data figure: Fiber Characteristics of Mouflon, Navajo-Churro, and Spanish Merino Sheep Type of sheep Diameter of outer coat fibers (in microns) Diameter of inner coat fibers (in microns. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "5a89ebaa",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Many literary theorists distinguish between fabula, a narrative’s content, and syuzhet, a narrative’s arrangement and presentation of events. In the film The Godfather Part II, the fabula is the story of the Corleone family, and the syuzhet is the presentation of the story as it alternates between two timelines in 1901 and 1958. But literary theorist Mikhail Bakhtin maintained that fabula and syuzhet are insufficient to completely describe a narrative—he held that systematic categorizations of artistic phenomena discount the subtle way in which meaning is created by interactions between the artist, the work, and the audience.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. Literary theorist Mikhail Bakhtin argued that there are important characteristics of narratives that are not fully encompassed by two concepts that other theorists have used to analyze narratives.",
+      "B. Literary theorist Mikhail Bakhtin claimed that meaning is not inherent in a narrative but is created when an audience encounters a narrative so that narratives are interpreted differently by different people.",
+      "C. The storytelling methods used in The Godfather Part II may seem unusually complicated, but they can be easily understood when two concepts from literary theory are utilized.",
+      "D. Narratives that are told out of chronological order are more difficult for audiences to understand than are narratives presented chronologically."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most accurately states the main idea of the text. The text begins by explaining that many literary theorists rely on the concepts of fabula (a narrative’s content) and syuzhet (a narrative’s arrangement and presentation of events) and illustrates these concepts by explaining how they can be applied to the film The Godfather Part II. The text then discusses how Mikhail Bakhtin, a literary theorist, argued that fabula and syuzhet can’t fully describe a narrative, since systematic categorizations such as these fail to account for all the ways in which interactions between the artist, the work, and the audience produce meaning. Thus, the main idea is that Bakhtin argued that there are important characteristics of narratives that are not fully encompassed by two concepts that other theorists have used to analyze narratives. Choice B is incorrect because according to the text, Mikhail Bakhtin believed that meaning was created through the interactions of the artist, narrative, and audience, not simply through the interaction between the audience and narrative; moreover, the text doesn’t address whether Bakhtin focused on the ways in which different people interpret narratives differently. Choice C is incorrect. Although the text implies that the storytelling methods used in The Godfather Part II are complicated, it discusses the film only to illustrate how the concepts of fabula and syuzhet may be applied to a narrative. The film’s storytelling methods aren’t the primary focus of the text. Choice D is incorrect. The text discusses The Godfather Part II, whose narrative doesn’t adhere to a single chronological order, only to illustrate the concepts of fabula (a narrative’s content) and syuzhet (a narrative’s arrangement and presentation of events). The primary focus of this text isn’t the structure of this film or of other narratives that are told out of chronological order; moreover, the text doesn’t consider whether such structures make it harder for audiences to understand narratives.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "959f36c9",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Aerogels are highly porous foams consisting mainly of tiny air pockets within a solidified gel. These lightweight materials are often applied to spacecraft and other equipment required to withstand extreme conditions, as they provide excellent insulation despite typically being brittle and eventually fracturing due to degradation from repeated exposure to high heat. Now, Xiangfeng Duan of the University of California, Los Angeles, and colleagues have developed an aerogel with uniquely flexible properties. Unlike earlier aerogels, Duan’s team’s material contracts rather than expands when heated and fully recovers after compressing to just 5% of its original volume, suggesting that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. the aerogel’s remarkable flexibility results from its higher proportion of air pockets to solidified gel as compared to other aerogels.",
+      "B. the aerogel’s overall strength is greater than that of other insulators but its ability to withstand exposure to intense heat is lower.",
+      "C. the aerogel will be more effective as an insulator for uses that involve gradual temperature shifts than for those that involve rapid heat increases.",
+      "D. the aerogel will be less prone to the structural weakness that ultimately causes most other aerogels to break down with use."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most logically completes the text’s discussion of aerogels. The text states that aerogels—highly porous foams—offer \"excellent insulation\" but typically break down after prolonged exposure to high heat. However, according to the text, Duan and colleagues developed an aerogel that \"contracts rather than expands when heated\" and recovers its original volume after this contraction. Thus, it is logical to conclude that Duan’s team’s aerogel material will be less prone to the structural weakness that caused earlier aerogels to break down. Choice A is incorrect. Although the text indicates that aerogels consist \"mainly of tiny air pockets within a solidified gel,\" it doesn’t mention the number or proportion of air pockets to solidified gel in typical aerogels or in the aerogel developed by Duan’s team. Choice B is incorrect because the text suggests that the aerogel developed by Duan’s team has a higher, not a lower, ability to withstand exposure to intense heat due to its contraction and subsequent recovery. Choice C is incorrect. Although the text discusses temperature tolerances of aerogels and says that they offer \"excellent insulation despite typically being brittle and eventually fracturing,\" it doesn’t discuss how different rates of temperature change can affect aerogels.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "ff7d421b",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "A. above 344 km/s but below 378 km/s.",
+      "B. above 297 km/s but below 344 km/s.",
+      "C. above 378 km/s.",
+      "D. below 297 km/s."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it uses data from the table to give the range of velocities for the LMC from the 1980 value (344 km/s) to the 2006 value (378 km/s), thereby effectively completing the text. The text indicates that before 2006, all the estimated velocities of the LMC were within the range necessary to maintain orbit around the Milky Way galaxy. It then indicates that, according to Besla and colleagues, the 2006 estimate of 378 km/s is too high to maintain that orbit. This strongly implies that if the 1980 value (344 km/s) is below the orbital threshold, and if Besla and colleagues are correct that the 2006 value (378 km/s) is above that threshold, the maximum orbital velocity for the LMC must be somewhere in the range from above 344 km/s to below 378 km/s. Choice B is incorrect. The text indicates that the 2006 velocity estimate for the LMC (378 km/s) was the first estimate that exceeded the velocity needed to maintain orbit around the Milky Way. Thus, the 1980 estimate of 344 km/s and the 1994 estimate of 297 km/s must both be below the maximum possible orbital velocity for the LMC. Choice C is incorrect. The text states that Besla and colleagues’ analysis found that the velocity from the 2006 study (378 km/s) was too high for the LMC to maintain orbit around the Milky Way. Therefore, if a velocity of 378 km/s is too high, an even higher velocity will also be too high. Choice D is incorrect. The text indicates that the 2006 velocity estimate for the LMC (378 km/s) was the first to exceed the velocity range required to maintain orbit around the Milky Way. Thus, the 1994 estimate of 297 km/s must be below the maximum possible orbital velocity for the LMC.",
+    "image": "assets/coeq_ff7d421b.png",
+    "alt": "Data figure: Three Studies' Estimated Average Velocity of LMC Researchers Study year Estimated average velocity Murai and Fujimoto 1980 344 km/s Kallivayalil and colleagues 2006 378 km/s. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "7785d9c3",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "By running computer simulations of the development of our solar system, André Izidoro, Rajdeep Dasgupta, and colleagues concluded that the Sun may have been surrounded by three giant dust rings before the planets started to form. The researchers suggest that the materials in the innermost ring became the four planets closest to the Sun, the materials in the middle ring produced the rest of the planets, and the materials in the outermost ring created the asteroids and other small bodies in the region beyond Neptune. In one simulation, the researchers delayed the initial formation of the middle ring, causing oversized super-Earths to begin developing from the innermost ring. The researchers therefore hypothesize that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. the middle ring formed earlier in the solar system’s development than the initial simulations suggested.",
+      "B. the timing of the initial formation of the middle ring played an important role in determining the eventual size of Earth.",
+      "C. if the formation of the outermost ring had occurred earlier in a simulation, all the planets would have become super-Earths.",
+      "D. the innermost ring actually formed into all the planets in our solar system, not just the four closest to the Sun."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most logically follows from the text’s discussion of André Izidoro, Rajdeep Dasgupta, and colleagues’ computer simulations of our solar system’s development. The text begins by stating that the simulations led the researchers to conclude that the solar system likely formed from three giant dust rings that encircled the Sun. The text explains that the four inner planets, including Earth, formed from the innermost ring and that the remaining planets formed from the middle ring. It then explains that in one simulation, the researchers delayed the formation of the middle ring—that is, they tested to see what would happen if the middle ring had formed later than it actually did. They found that doing so affected the size of the innermost planets, resulting in oversized super-Earths, planets that are much larger than Earth. Since the delayed timing had the effect of changing the size of Earth in the simulation relative to Earth’s real size, it’s reasonable to conclude that the timing of the middle ring’s formation was important in determining Earth’s eventual size. Choice A is incorrect. Although the text explains that when the researchers delayed the formation of the middle ring in one simulation, the size of the innermost planets was affected (which suggests that the middle ring likely formed earlier than it did in this simulation), the text doesn’t indicate that this was an initial simulation—that is, a simulation that was conducted before other simulations. Moreover, the text makes no reference to the specific results of any other simulations; therefore, there is no basis for comparing any conclusions based on the simulation in which the middle ring’s formation was delayed with conclusions based on other simulations. Choice C is incorrect because the text discusses how altering the timing of the formation of the middle ring, not the outermost ring, affected the four innermost planets’ eventual size in the researchers’ simulation; therefore, the simulation offers no basis for a conclusion about how the outermost ring’s formation affected the size of the planets. Choice D is incorrect because there is nothing in the text to suggest that the innermost ring produced all the solar system’s planets. Rather, the text states that the simulations showed that the innermost planets formed from the innermost ring and that the remaining planets formed from the middle ring.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "12b639c7",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "For its 1974 work Instant Mural, the Chicano art collective Asco taped members Patssi Valdez and Humberto Sandoval to an outdoor wall in East Los Angeles. The work is manifestly a commentary on constraint, but many critics focus on Valdez and the social constraints women faced at the time, which is understandable but leaves the presence of Valdez’s male collaborator Sandoval unexplained. We should instead consider that in 1974, the art establishment’s recognition of Chicano artists was (and had long been) restricted to sociohistorical muralists, leaving nonmuralist Chicano artists—like Asco’s members—struggling to even exhibit their work; attending to this context opens an interpretation that accounts for all the evidence, allowing us to conclude that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. while Valdez’s presence in Instant Mural represents the social constraints placed on women at the time, Sandoval’s presence represents Chicano muralists’ frustration at their lack of recognition by the art establishment.",
+      "B. the main subject of Instant Mural is female Chicano artists’ experience of being doubly constrained by gender-role expectations and the marginalization of certain types of art.",
+      "C. Instant Mural is a reflection on the constraining aesthetic expectations placed on Chicano artists in general rather than on the social constraints placed on women specifically.",
+      "D. Instant Mural is best understood not as a critique of the social constraints placed on women but rather as a critique of sociohistorical muralists’ depictions of Chicano culture."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most logically completes the text’s discussion of Instant Mural. According to the text, the 1974 work Instant Mural involved taping two Asco members (Patssi Valdez and Humberto Sandoval) to an outdoor wall as a direct commentary on constraint (limitation or restriction). The text suggests that instead of focusing on Valdez’s role in the work and on social limitations women faced at the time—an approach that fails to explain the role of Sandoval, a man—people should consider that in 1974 (and long before) the art establishment limited recognition of Chicano artists to those who created murals with social and historical subjects, making it challenging for nonmuralist Chicano artists (such as Asco’s members) to show their work. The text suggests that considering the situation with the art establishment leads to a conclusion that accounts for the fact that Instant Mural is explicitly about constraint and features both a woman and a man taped to the wall: Instant Mural isn’t a reflection of the social constraints placed on women specifically but instead is a reflection on the constraining aesthetic expectations placed on Chicano artists in general (that is, the limits resulting from the lack of recognition of Chicano artists of any gender who did not create sociohistorical murals). Choice A is incorrect. The text indicates that the art establishment in 1974 (and earlier) did recognize Chicano muralists to the exclusion of other Chicano artists, so there’s no reason to assume Asco’s work Instant Mural was intended to represent Chicano muralists’ frustration; it’s far more likely that Asco’s members—described as Chicano nonmuralists—were representing their own frustration at being unrecognized by the art establishment. Choice B is incorrect. The text emphasizes that while a common approach to Instant Mural focuses on Valdez and the social limitations women faced in 1974 but fails to account for the presence of a man in the work, there is a conclusion that explains Sandoval’s role. But concluding that Instant Mural represents a double constraint experienced specifically by female Chicano artists would still fail to account for the inclusion of a man in the work. Choice D is incorrect. Although the text suggests that Instant Mural can be understood as something other than a commentary on social constraints women faced in 1974, it doesn’t suggest that the work is best understood as a critique of the content of any other artworks. The text doesn’t address how Chicano culture is depicted in sociohistorical murals; it discusses such murals only to make the point that in 1974 (and earlier) the art establishment recognized Chicano artists who produced them to the exclusion of Chicano nonmuralists, indicating a constraint all of Asco’s members faced, regardless of gender.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "4445ca92",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "In present-day Chiapas, Mexico, archaeologist Robert Rosenswig, remote-sensing specialist Ricardo López-Torrijos, and colleagues have located 41 smaller settlements surrounding the ancient Mesoamerican city of Izapa. The researchers have concluded that these settlements were culturally linked to Izapa because each of the settlements is the same age and configured in the same manner as Izapa, with a pyramid to the north and a plaza to the south. Their shared structural orientation suggests that residents of the settlements likely performed some of the same cultural ceremonies as residents in Izapa did.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. Researchers have determined that the arrangement of Izapa’s structures was based on those of other nearby settlements.",
+      "B. Cultural ceremonies in Izapa seem to have played a more important role for its residents than those in smaller, surrounding settlements did.",
+      "C. Although archaeologists have learned much about Izapa over years of research, they have only recently found the smaller settlements that surrounded it.",
+      "D. Researchers have inferred that Izapa was related to the smaller settlements that surrounded it based in part on the similarity of their construction."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most accurately states the main idea of the text. The text indicates that Rosenswig, López-Torrijos, and colleagues concluded that there is a cultural link between the city of Izapa and the 41 smaller settlements they located around the city. According to the text, the researchers reached this conclusion because Izapa and the settlements are of the same age and configuration in that all have a pyramid to the north and a plaza to the south. Thus, the main idea of the text is that researchers have inferred that Izapa was related to the smaller settlements that surrounded it based in part on the similarity of their construction. Choice A is incorrect. Although the text discusses a similarity between how structures in Izapa and nearby settlements are arranged, the text doesn’t indicate that the arrangement in Izapa is based on those of the nearby settlements. Choice B is incorrect. Although the text mentions that residents of Izapa and its surrounding settlements may have performed the same cultural ceremonies, the text doesn’t discuss the ceremonies’ importance for the residents. Choice C is incorrect. Although the text describes findings about Izapa, it doesn’t specify how much archaeologists have learned about Izapa over the years. Additionally, while the text indicates that the discovery of the 41 smaller settlements surrounding Izapa was made in present-day Chiapas and thus may be of recent date, this is a detail in the text, not its main idea.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "27c3bb84",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the text?",
+    "options": [
+      "A. 6.3% of respondents said it was most effective to use efficient cars or hybrids.",
+      "B. 2.8% of respondents said it was most effective to change the thermostat setting.",
+      "C. 12.9% of respondents said it was most effective to use a bike or public transportation.",
+      "D. 3.6% of respondents said it was most effective to use efficient light bulbs."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most effectively uses data from the table to complete the text’s discussion of Attari and her team’s survey results. The text states that the team asked respondents to identify the most effective action people can take to save energy, with the team classifying each action as either an efficiency or a curtailment. According to the text, respondents named curtailments more often than they did efficiencies. The text then offers an example that begins by citing a curtailment, turning off the lights, that was selected by a relatively high percentage of respondents (19.6%). Given that the example is presented in support of the idea that more respondents selected curtailments than efficiencies, the most effective way to complete the example is by citing an efficiency, using efficient light bulbs, that was selected by a relatively low percentage of respondents (only 3.6%). Choice A is incorrect because it inaccurately describes data in the table. The data indicate that 6.3% of respondents said the most effective action was to change the thermostat setting, not to use efficient cars or hybrids. Choice B is incorrect because it inaccurately describes data in the table. The data indicate that 2.8% of respondents said the most effective action was to use efficient cars/hybrids, not to change the thermostat setting. Choice C is incorrect because it mentions a curtailment (using a bike or public transportation) and not an efficiency. The text states that a research team asked respondents to identify the most effective action people can take to save energy, with the team classifying each action as either an efficiency or a curtailment. According to the text, respondents named curtailments more often than they did efficiencies. The text then offers an example that begins by citing a curtailment, turning off the lights, that was selected by a relatively high percentage of respondents (19.6%). Given that the example is presented in support of the idea that more people selected curtailments than efficiencies, the most effective way to complete the example is not by referring to another curtailment but rather by referring to an efficiency that was selected by a relatively low percentage of respondents.",
+    "image": "assets/coeq_27c3bb84.png",
+    "alt": "Data figure: Five of the Responses to Survey about Actions to Conserve Energy Action Action category Percentage of respondents selecting action (%) Use efficient cars/hybrids efficiency 2.8 Change thermostat setting curtailment 6.3. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "e1f26c47",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice best describes data in the graph that support Ayalew and her colleagues’ hypothesis?",
+    "options": [
+      "A. The control plants contained higher levels of zinc than iron, but plants exposed to kanamycin contained higher levels of iron than zinc.",
+      "B. Both groups of plants contained more than 200 parts per million of both iron and zinc.",
+      "C. Zinc levels were around 300 parts per million in the control plants but nearly 400 parts per million in the plants exposed to kanamycin.",
+      "D. The plants exposed to kanamycin showed lower levels of iron and zinc than the control plants did."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it best describes data in the graph supporting Ayalew and her colleagues’ hypothesis that plants’ response to kanamycin exposure involves altering their uptake of metals. The graph compares the metal content of two groups of plants, one with kanamycin exposure and a control group without such exposure. The amount of zinc in plants without kanamycin exposure is around 400 parts per million, while the amount of zinc in plants with kanamycin exposure is lower, at around 300 parts per million. Similarly, the amount of iron in plants without kanamycin exposure is a little over 600 parts per million, while the amount of iron in plants with kanamycin exposure is lower, at a little over 200 parts per million. Thus, the graph shows that plants with kanamycin exposure have significantly lower levels of both iron and zinc than the plants without kanamycin exposure. This is evidence supporting the hypothesis that kanamycin exposure results in plants altering their uptake of metals. Choice A is incorrect because the graph shows that control plants contained higher levels of iron than zinc, not higher levels of zinc than iron; similarly, the plants exposed to kanamycin contained higher levels of zinc than iron, not higher levels of iron than zinc. Choice B is incorrect. Though the claim that both groups of plants contained more than 200 parts per million of both iron and zinc is supported by the graph, this alone does not state whether plants with kanamycin exposure have a different metal content than plants without kanamycin exposure. Choice C is incorrect. The graph shows that the zinc levels for the control plants (those without kanamycin exposure) were around 400 parts per million, not 300 parts per million, and that the zinc levels for plants with kanamycin exposure were around 300 parts per million, not 400 parts per million.",
+    "image": "assets/coeq_e1f26c47.png",
+    "alt": "Data figure: Metal Content of Plants with and without Kanamycin Exposure. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "bd90e061",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "In West Africa, jalis have traditionally been keepers of information about family histories and records of important events. They have often served as teachers and advisers, too. New technologies may have changed some aspects of the role today, but jalis continue to be valued for knowing and protecting their peoples’ stories.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. Even though there have been some changes in their role, jalis continue to preserve their communities’ histories.",
+      "B. Although jalis have many roles, many of them like teaching best.",
+      "C. Jalis have been entertaining the people within their communities for centuries.",
+      "D. Technology can now do some of the things jalis used to be responsible for."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it best states the main idea of the text. According to the text, jalis’ traditional role has been to maintain information about families’ histories and significant events. The text goes on to say that although technological changes have altered jalis’ role somewhat, jalis are still valued for preserving the histories of their communities. Choice B is incorrect because the text says nothing about jalis’ views of the various tasks they perform. There is no information to support the idea that many jalis prefer teaching to other tasks. Choice C is incorrect because the text doesn’t describe jalis as being sources of entertainment. Rather, jalis are presented as valued sources of knowledge. Additionally, the text gives no indication of how long jalis have been serving their communities. Choice D is incorrect because the main focus of the text is on jalis’ role and their continued value despite the effects of technology, not on what technology can now do. Although the text indicates that jalis’ role has changed as a result of technological changes, the text doesn’t present any specific information about technology performing tasks that jalis once performed.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "f2ad1371",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "The following text is from Ahmet Hamdi Tanpinar’s 1961 novel The Time Regulation Institute (translated from the Turkish in 2014 by Maureen Freely and Alexander Dawe). The narrator was once involved with the Time Regulation Institute, a fictional bureaucracy that regulates the time of Turkey’s clocks.\n\nI may be the most humble and absurd man in the world and, as my wife says, the most slovenly creature you may ever meet—that is, before the founding of our institute—but I did come to know a truly great man who possessed a natural genius for invention. I spent years at his side. I watched the way he worked. I witnessed how an idea would suddenly catch fire in his mind and take shape, like a tree sprouting shoots and branches, before coming into being.\n\n©2014 by Maureen Freely and Alexander Dawe",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. A person was fortunate enough to have found love despite his obvious shortcomings.",
+      "B. An exceptionally talented person professes humility to avoid intimidating others.",
+      "C. A person appreciates the extensive time he passed in the company of someone he deeply admired.",
+      "D. A truly brilliant person lets ideas mature in his mind before expressing them aloud."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most accurately describes the main idea of the text: a person appreciates the extensive time he passed in the company of a man he deeply admired. The speaker says that he spent \"years\" (a long period of time) in the company of a \"truly great man\" with \"a natural genius for invention.\" These phrases indicate the speaker’s feelings of admiration. Choice A is incorrect because though the text indicates that the speaker feels professional admiration for the \"truly great man,\" the text does not indicate that the speaker feels love for him; nor does the text indicate that the speaker’s humility, absurdity, and slovenly nature proved to be an obstacle to this professional relationship. Choice B is incorrect because though the speaker describes himself as humble, the text does not indicate that he is exceptionally talented; nor does the text indicate that the \"truly great man\" professes humility or is concerned with whether he intimidates others. Choice D is incorrect because the text does not indicate how either the speaker or the \"truly great man\" express their ideas.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "6e98515a",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the graph to support the researchers’ recommendation?",
+    "options": [
+      "A. The 10% SSA mixture’s compressive strength was greater than or approximately equal to that of the control mixture on day 7 and on day 28, but on both days the 20% and 40% SSA mixtures had less compressive strength than the control mixture did.",
+      "B. The compressive strength of the 10% SSA mixture remained nearly the same from day 7 to day 28, while that of the 20% and 40% SSA mixtures changed substantially.",
+      "C. The 10% SSA mixture’s compressive strength was greater than that of the control mixture on day 7, but by day 28 the 10% SSA mixture’s compressive strength had decreased while that of the control mixture had increased.",
+      "D. The compressive strength of the 10% SSA mixture never surpassed the compressive strength measured for the control mixture on day 28."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most effectively uses data from the graph to support the researchers’ recommendation that Sururu shell aggregate (SSA) substitution be done in relatively small proportions to avoid compromising the compressive strength of mortar mixtures. The text explains that a research team investigated whether SSA can serve as a substitute for sand in mortar mixtures. The graph presents the compressive strength (in megapascals) of mortar mixtures with SSA replacing 0% (control), 10%, 20%, and 40% of the sand on day 7 and day 28 of curing. The graph shows that the compressive strength of the 10% SSA mixture was approximately 25 megapascals on day 7, which is greater than the control mixture’s approximately 22 megapascals on the same day. The graph also shows that the 10% SSA mixture’s compressive strength was slightly more than 25 megapascals on day 28, which is only slightly less than the control’s compressive strength on the same day (about 26 megapascals). Therefore, the graph shows that the compressive strength of the 10% SSA mixture was greater than that of the control on day 7 and roughly equal to that of the control on day 28, suggesting that substituting only 10% of the sand with SSA avoids compromising the mortar’s compressive strength. The graph also shows that on day 7, the 20% and 40% SSA mixtures had compressive strengths of about 19 and 13 megapascals, respectively (both lower than the control’s), and on day 28, they had compressive strengths of about 22 and 15 megapascals, respectively (once again lower than the control’s). Thus, the data support the recommendation by indicating that substituting relatively small proportions of sand with SSA in mortar mixtures doesn’t compromise strength compared with the control, whereas substituting larger proportions does. Choice B is incorrect because the comparison it makes isn’t relevant to the researchers’ recommendation. Although the graph does show that the bars representing the compressive strength of the 10% SSA mixture on day 7 and day 28 are roughly the same height (suggesting that the mixture’s compressive strength changed by only a small amount), and although there are relatively large gaps between the bars showing the compressive strength of the 20% and 40% SSA mixtures on day 7 and day 28 (suggesting that their compressive strength changed over time by a greater amount), this comparison concerns only how each SSA mixture’s strength changed over time and doesn’t compare the SSA mixtures with the control mixture. Supporting the recommendation that SSA substitution be done in small proportions requires evidence that small substitutions don’t compromise strength relative to the control while larger substitutions do. Choice C is incorrect because it doesn’t accurately represent the data in the graph, nor is the comparison it makes relevant to the researchers’ recommendation. While the graph does show that the compressive strength of the 10% SSA mixture was greater than that of the control on day 7 (about 25 megapascals vs. about 22 megapascals) and, moreover, that the compressive strength of the control increased from day 7 to day 28 (from about 22 megapascals to about 26 megapascals), the graph shows that the compressive strength of the 10% SSA mixture increased by a small amount (from about 25 megapascals to slightly more than 25 megapascals), not that it decreased. Moreover, the researchers recommended substituting relatively small proportions (compared with larger proportions) of the mixtures with SSA; comparing the compressive strength of the 10% SSA mixture with that of the control without also considering how the compressive strength of the 10% SSA mixture compared with that of the 20% and 40% SSA mixtures wouldn’t support the recommendation. Choice D is incorrect. Though the graph indicates that the 10% SSA mixture’s compressive strength on day 7 and day 28 (about 25 megapascals and slightly more than 25 megapascals, respectively) didn’t surpass the control mixture’s compressive strength on day 28 (about 26 megapascals), this observation doesn’t support the recommendation. The recommendation concerns the trade-off between SSA proportion and compressive strength; supporting it requires not just evidence about how the 10% SSA mixture compared with the control but also evidence about how the mixtures with larger proportions of SSA (20% and 40%) compared with the 10% SSA mixture and the control.",
+    "image": "assets/coeq_6e98515a.png",
+    "alt": "Data figure: Compressive Strength of Mortar Mixtures After Curing. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "0ffbb994",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Male túngara frogs make complex calls to attract mates, but their calls also attract frog-biting midges, insects that feed on the frogs’ blood. Researchers Ximena Bernal and Priyanka de Silva wondered if the calls alone are sufficient for midges to locate the frogs or if midges use carbon dioxide emitted by frogs as an additional cue to their prey’s whereabouts, like mosquitoes do. In an experiment, the researchers placed two midge traps in a túngara frog breeding area. One trap played recordings of túngara frog calls and the other released carbon dioxide along with playing the calls. Bernal and de Silva concluded that carbon dioxide does not serve as an additional cue to frog-biting midges.",
+    "question": "Which finding from the experiment, if true, would most directly support Bernal and de Silva’s conclusion?",
+    "options": [
+      "A. Only a small number of midges were found in the traps, though the majority were found in the trap that played calls and released carbon dioxide.",
+      "B. Midges entered the trap that released carbon dioxide and played calls only during or immediately after periods of carbon dioxide release.",
+      "C. More midges were found in the trap that only played calls than in the trap that played calls and released carbon dioxide.",
+      "D. The trap that released carbon dioxide and played calls attracted few midges when carbon dioxide concentrations were low but attracted many midges when carbon dioxide concentrations were high."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it presents a finding that, if true, would most directly support the researchers’ conclusion that carbon dioxide does not serve as an additional cue to frog-biting midges regarding the location of male túngara frogs. The text begins by stating that the mating call of the male túngara frogs also attracts frog-biting midges, which prey on the frogs’ blood. Researchers Bernal and de Silva were curious if the mating calls were sufficient signals for the midges to locate the frogs or if midges also used carbon dioxide emitted by the frogs to locate their prey. The text then details the procedure the researchers used to investigate their question and summarizes their conclusion—that carbon dioxide does not serve as an additional cue to the midges. Thus, if more midges were found in the researchers’ trap that only played calls than in the trap that played calls and released carbon dioxide, it follows that the frog calls seem sufficient without the carbon dioxide cue. This finding supports the researchers’ conclusion that carbon dioxide does not serve as an additional cue to frog-biting midges. Choice A is incorrect because finding that the majority of frog-biting midges were found in the traps that both played the mating call and released carbon dioxide would present evidence that directly refutes the researchers’ conclusion—that carbon dioxide does not serve as an additional cue to the frog-biting midges regarding the location of túngara frogs. Choice B is incorrect because if the midges entered the trap that played calls and released carbon dioxide only during or immediately after carbon dioxide was released, that would suggest that the midges used the carbon dioxide as a way to locate their prey, a finding that would contradict the researchers’ conclusion that carbon dioxide was not an additional cue to the midges. Choice D is incorrect because a trap attracting larger numbers of midges with high carbon dioxide concentrations than a trap with low carbon dioxide concentrations suggests that carbon dioxide might serve as an additional cue to the midges as to the location on the frogs, a finding contrary to the researchers’ conclusion.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "d4b74a36",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the graph to complete the text?",
+    "options": [
+      "A. the students tended to value the concert tickets more highly than did the more age-diverse group recruited online, but when considering what they could afford to pay, the students tended to choose a lower price than did the other group.",
+      "B. in all three messaging conditions, the group of participants recruited online tended to choose lower prices than did the students, but both groups tended to choose prices closest to the actual cost of the tickets when prompted to consider the tickets’ value.",
+      "C. the students tended to value the concert tickets more highly than did the more age-diverse group recruited online, but both groups tended to choose a higher price when considering the value of the tickets than when considering what they could afford or wanted to pay.",
+      "D. within each group of participants, there was wide variation in the value that individuals assigned to the concert tickets, but the students tended to assign a higher value to the tickets than did the more age-diverse group recruited online."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most effectively uses data from the graph to complete the text about the effect of messaging on participative pricing. The graph shows mean ticket prices chosen by participants in response to three messages across two studies: Study 1, which the text indicates was conducted with an age-diverse group recruited online, and Study 2, which was conducted with student participants. The graph indicates that in the \"pay what you think it’s worth\" condition, the mean price of the concert tickets in Study 2 was about $74, which is greater than the mean price of about $55 in Study 1. In other words, when participants were asked to consider their valuation of the tickets, the response was heterogeneous, or mixed. Moreover, according to the graph, both Study 1 and Study 2 show higher prices for the tickets under the \"pay what you think it’s worth\" condition than they do under both the \"pay what you can\" and the \"pay what you want\" conditions. That is, the data suggest that both groups of participants named higher prices when considering the value of the tickets than when considering either what they could afford or wanted to pay, a finding that supports the idea that sellers can benefit when prompting consumers to consider their own valuations when they choose prices. Choice A is incorrect because it contradicts information in the graph. Although the graph shows that students in Study 2 assigned a higher value to the tickets than did the age-diverse group in Study 1, which would support the idea that consumer valuations were heterogeneous, the graph shows that in the \"pay what you can\" (i.e., what you can afford) condition, the students in Study 2 assigned a higher price (about $40), not a lower price, than the age-diverse group in Study 1 did (about $30). Moreover, even if it were true that the students had assigned a lower price in this condition, it wouldn’t support the result described in the text, only that the participants across the two studies had different ideas of what they can afford to pay. Choice B is incorrect. Although a finding that participants tended to choose prices that were closest to the actual ticket costs in the \"pay what you think it’s worth\" condition would support the idea that sellers benefit by prompting consumers to think about their own valuations (since it’s implied that sellers would lose money in the other conditions, where chosen prices were lower than the participants’ valuations), neither the text nor the graph addresses how any of the prices chosen by the study participants relate to the tickets’ actual market price. Choice D is incorrect. Although the wide variation in participant valuations would support the idea that consumer valuations tend to be heterogeneous, neither the text nor the graph provides any information from which to discern the relative levels of variance among the responses from participants in either study.",
+    "image": "assets/coeq_d4b74a36.png",
+    "alt": "Data figure: Mean Ticket Prices Chosen in Two Studies of Participative Pricing Messaging. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "095be841",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "In documents called judicial opinions, judges explain the reasoning behind their legal rulings, and in those explanations they sometimes cite and discuss historical and contemporary philosophers. Legal scholar and philosopher Anita L. Allen argues that while judges are naturally inclined to mention philosophers whose views align with their own positions, the strongest judicial opinions consider and rebut potential objections; discussing philosophers whose views conflict with judges’ views could therefore ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. allow judges to craft judicial opinions without needing to consult philosophical works.",
+      "B. help judges improve the arguments they put forward in their judicial opinions.",
+      "C. make judicial opinions more comprehensible to readers without legal or philosophical training.",
+      "D. bring judicial opinions in line with views that are broadly held among philosophers."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most logically completes the text’s discussion of Anita Allen’s argument about judges citing philosophers in their judicial opinions. The text indicates that judges sometimes cite philosophers when writing their judicial opinions and that, according to Allen, judges tend to cite philosophers whose views are in agreement with those of the judges themselves. Allen claims, however, that the best judicial opinions consider potential objections and rebut them, which suggests that judges may be able to strengthen their opinions by including discussions of philosophers with views contrary to their own. Choice A is incorrect because Allen’s claim is that judges could improve their judicial opinions by citing philosophers who disagree with the views expressed in the opinions, which would necessarily require judges to consult philosophical works. Choice C is incorrect because there’s no discussion in the text about making judicial opinions more easily understood by any particular group of readers. The focus of the text is on Allen’s claim that judicial opinions could be strengthened by the inclusion of discussions of philosophers whose views disagree with those of the judges authoring the opinions. Choice D is incorrect because the text presents Allen’s argument that discussing philosophers whose views judges disagree with could strengthen judicial opinions, not that doing so could bring those opinions into line with views that are popular among philosophers.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "ea1de10e",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Scholars have noted that F. Scott Fitzgerald’s writings were likely influenced in part by his marriage to Zelda Fitzgerald, but many don’t recognize Zelda as a writer in her own right. Indeed, Zelda authored several works herself, such as the novel Save Me the Waltz and numerous short stories. Thus, those who primarily view Zelda as an inspiration for F. Scott’s writings ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. overlook the many other factors that motivated F. Scott to write.",
+      "B. risk misrepresenting the full range of Zelda’s contributions to literature.",
+      "C. may draw inaccurate conclusions about how F. Scott and Zelda viewed each other’s works.",
+      "D. tend to read the works of F. Scott and Zelda in an overly autobiographical light."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most logically completes the text’s discussion of Zelda Fitzgerald’s contributions to literature. The text begins by saying that many scholars view Zelda mainly in terms of her marriage to F. Scott Fitzgerald and “don’t recognize Zelda as a writer in her own right.” The text then mentions a novel and “numerous short stories” that she wrote and that such scholars tend to ignore. Therefore, those scholars who focus on Zelda only as an inspiration for F. Scott’s writings risk misrepresenting the full range of Zelda’s contributions to literature. Choice A is incorrect. Although the text does mention that Zelda Fitzgerald “likely influenced” her husband’s literary work, its focus is on Zelda’s own writing, not on her husband’s writing or factors that might have influenced it. Choice C is incorrect because the text does not discuss F. Scott and Zelda Fitzgerald’s opinions of each other’s works. Choice D is incorrect. Although the text does suggest that F. Scott Fitzgerald’s works were “likely influenced in part” by his marriage to Zelda, it does not discuss autobiographical interpretations of the works of either F. Scott or Zelda.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "6b0b6e65",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Puerto Rico is an island in the Caribbean Sea. Indigenous people there started raising guinea pigs about 1,700 years ago. Guinea pigs had originally been domesticated much earlier in both Colombia and Peru. So were guinea pigs brought to Puerto Rico from Colombia or from Peru? Ancient Caribbean trade routes connected Puerto Rico with Colombia but not with Peru. <u>Therefore, guinea pigs in Puerto Rico probably came from Colombia and descended from Colombian guinea pigs.</u>",
+    "question": "Which finding, if true, would most directly weaken the underlined claim?",
+    "options": [
+      "A. Ancient guinea pigs in Puerto Rico were genetically less similar to ancient guinea pigs in Colombia than to ancient guinea pigs in Peru.",
+      "B. Guinea pigs are common in ancient Puerto Rican art, especially in pottery.",
+      "C. Modern breeds of guinea pigs don’t look like images of guinea pigs in ancient art from Puerto Rico, Colombia, and Peru.",
+      "D. The guinea pig population of ancient Colombia was much larger than the guinea pig population of ancient Peru."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents a finding that, if true, would most directly weaken the underlined claim that guinea pigs in Puerto Rico probably came from Colombia and descended from Colombian guinea pigs. The text makes this claim based on the fact that ancient trade routes connected Puerto Rico with Colombia but not with Peru. However, if it’s true that ancient guinea pigs in Puerto Rico were genetically less similar to ancient guinea pigs in Colombia than to ancient guinea pigs in Peru, this would suggest that the Puerto Rican guinea pigs didn’t descend from Colombian guinea pigs. Instead, Puerto Rican guinea pigs’ greater genetic similarity to Peruvian guinea pigs implies that ancient guinea pigs in Puerto Rico were likely brought to the island from Peru, despite the lack of direct ancient trade routes between the two regions. Choice B is incorrect. While a finding about how common guinea pig imagery is in ancient Puerto Rican art would indicate the cultural significance of guinea pigs, it wouldn’t be relevant to a claim about the geographical origin or descent of the guinea pig population on the island. The guinea pigs depicted in the artwork could have descended from guinea pigs in either Colombia or Peru; therefore, the finding would neither weaken nor strengthen the claim that guinea pigs in Puerto Rico probably came from Colombia and descended from Colombian guinea pigs. Choice C is incorrect because the finding that modern breeds of guinea pigs don’t look like images of guinea pigs in ancient art from Puerto Rico, Colombia, and Peru wouldn’t address the ancestral relationships between ancient guinea pig populations in these three regions. Therefore, the finding would neither weaken nor strengthen the claim that guinea pigs in Puerto Rico probably came from Colombia and descended from Colombian guinea pigs. Choice D is incorrect because a finding about the population sizes of guinea pigs in ancient Colombia and ancient Peru wouldn’t be relevant to a claim about which population the Puerto Rican guinea pigs likely descended from. The smaller guinea pig population of Peru could still have been the source for the Puerto Rican guinea pig population.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "70d939f5",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which completion of the text is best supported by data in the graph?",
+    "options": [
+      "A. DptA confers defense against A. sicerae regardless of the presence of DptB.",
+      "B. DptB protects against only one bacteria species, whereas DptA protects against multiple species.",
+      "C. DptB may have developed as a specific defense against A. sicerae.",
+      "D. defense against A. sicerae is strongest when both DptA and DptB are present."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most logically completes the text based on supporting data in the graph. The text indicates that in the fly D. melanogaster, DptA and DptB are genes that encode peptides that both fight pathogens and promote beneficial microbes. Researchers tested D. melanogaster’s resistance to P. rettgeri and A. sicerae bacteria based on which variation of the peptide-encoding gene the flies exhibit: DptA silenced (referred to as type A), DptB silenced (type B), or both silenced (type AB). The text also indicates that resistance to P. rettgeri correlates with DptA activity but not with DptB activity (which would manifest as type B flies surviving at a higher rate than other fly types when exposed to P. rettgeri). The graph shows the post–A. sicerae infection results, which indicate that DptB activity was most strongly associated with survival, whereas DptA activity was not (manifesting in the graph as the type A flies having greater survival rates than the other fly types). In other words, when DptA activity was silenced, the flies showed relatively high survival rates, but when DptB activity was silenced, whether on its own or in conjunction with DptA activity being silenced, survival rates were low, suggesting that DptB may have developed as a specific defense against A. sicerae. Choice A is incorrect. The graph suggests that DptA activity is associated with a low rate of survival, not a high one. Furthermore, the graph shows results for flies where DptA alone was silenced, DptB alone was silenced, and both were silenced and thus does not show any flies with activity in both DptA and DptB, which would be necessary to determine whether DptA conferred defense against A. sicerae in the presence of DptB. Choice B is incorrect. Only two bacteria species were considered in the text: P. rettgeri and A. sicerae. The text and graph taken together suggest that activity in DptA is associated with resistance to P. rettgeri while DptB activity is not, and that DptB activity is associated with resistance to A. sicerae while DptA is not. There is no further information to suggest one genetic type confers resistance to a greater number of pathogens than the other. Choice D is incorrect. The graph does not address flies with activity in both DptA and DptB. All flies represented in the graph had one or both of DptA and DptB silenced, or inactive.",
+    "image": "assets/coeq_70d939f5.png",
+    "alt": "Data figure: Average Survival of Fruit Flies following Infection. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "b49d64a5",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "In countries with right-hand traffic, drivers who want to make a left turn at a traffic intersection with stoplights have to wait for either a gap in oncoming traffic or a designated left-turn signal to turn green. At busy intersections, this often causes a backup of vehicles waiting to turn left or being prevented from proceeding by left-turning vehicles in front of them. Transportation researcher Vikash V. Gayah claims that in urban areas eliminating the option to turn left at busy intersections—both with and without dedicated left-turn signals—would improve traffic flow and, as a result, reduce overall travel times even if such a restriction would require drivers to sometimes travel a slightly longer distance.",
+    "question": "Which finding, if true, would most directly support the researcher’s claim?",
+    "options": [
+      "A. In a town that installed left-turn signals at all busy intersections, seven out of ten survey respondents agreed with the statement “the streets in my community are easier to navigate by motor vehicle than before.”",
+      "B. A traffic study of intersections in a large city shows that on average drivers wait longer to make a left turn at intersections without left-turn signals than at intersections with such signals.",
+      "C. After a city eliminated left turns at busy intersections, a package-delivery company reports that its drivers have been able to reach more addresses in the city daily, on average, and therefore deliver more packages there annually.",
+      "D. Statistics reveal that school buses in a city that eliminated left turns at most intersections took on average two minutes longer to complete their routes after the restriction took effect than they did before."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it presents a finding that, if true, would most directly support Vikash V. Gayah’s claim that eliminating the option to turn left at busy intersections would improve traffic flow and reduce overall travel times. The text begins by describing a problem encountered by drivers in countries with right-hand traffic—namely that drivers wanting to make a left turn must wait for either gaps in oncoming traffic or for designated left-turn signals before proceeding. The resulting backup of vehicles causes increased traffic congestion at busy intersections that slows overall travel times. According to Gayah, eliminating left turns from busy intersections in urban areas would ease the congestion caused by vehicles waiting to turn left. If vehicles spend less time waiting at intersections for left turns, faster overall travel times would result even if some drivers would have to drive slightly longer distances to make the desired left turn. Drivers for package-delivery companies, who presumably spend most of the day driving to destinations across the city in which they are based, would likely provide a good indication of overall traffic patterns across the city. A finding that after a city had eliminated left turns at busy intersections, package-delivery companies were able to complete more daily deliveries on average—which implies faster travel times between package destinations—would therefore support the claim that overall travel times would decrease if left turns were eliminated at busy intersections. Choice A is incorrect because a finding that a majority of survey respondents agreed with the statement that implementing left-turn signals at all busy intersections made navigating streets in their communities easier wouldn’t support the claim that eliminating the option to turn left altogether at some busy intersections—both with and without dedicated left-turn signals—would improve the flow of traffic and overall traffic times. In fact, the text emphasizes that designated left-turn signals contribute to increased congestion because they require drivers to wait to turn left, which results in a backup of vehicles. Installing such signals at all busy intersections would thus potentially compound the problem of congestion, not improve it. Moreover, although making streets easier for drivers to navigate might indicate that left-turn signals are beneficial to drivers, it doesn’t indicate that overall travel times would necessarily be reduced. Choice B is incorrect because a study concluding that drivers wait longer to make left turns at intersections without dedicated left-turn signals than at intersections with such signals wouldn’t support the claim that eliminating the option to turn left altogether would reduce overall travel times. In fact, the finding would merely support the idea that installing left-turn signals would likely reduce the time drivers spend waiting at busy intersections that didn’t previously have left-turn signals, not that overall travel times would be reduced. Choice D is incorrect because the finding that after a restriction eliminating left turns at most intersections took effect, school buses took longer to complete their routes than they did before the restriction was implemented would contradict rather than support the researcher’s claim that eliminating left turns would reduce overall travel times.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "e465d17e",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "A. ranged from 5.0 to 92.00, indicating that well-being varied widely from participant to participant.",
+      "B. were lower for two measures, with the rating for only one measure indicating greater well-being for these participants.",
+      "C. ranged from 3.9 to 46.00, with no rating indicating greater well-being in any measure for these participants.",
+      "D. were higher for all three measures, indicating greater overall well-being for these participants."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most effectively uses data from the table to complete the statement comparing the mean ratings for two different groups of participants in a study. The text explains that a research team evaluated the study’s participants using various measures in order to learn whether there might be a medical benefit to telling patients they’re receiving a placebo. The table shows the team’s mean ratings for participants after 21 days for three of the measures: global improvement, symptom severity reduction, and quality of life improvement. According to the table, the mean ratings were higher for all three measures for participants aware of taking a placebo than for participants in the control group. Given that higher ratings indicate greater well-being, as the text states, the mean ratings in the table indicate greater overall well- being for participants aware of taking a placebo than for participants in the control group. Choice A is incorrect because the table doesn’t include data about individual participants; rather, it presents means, or mathematical averages, of ratings. For this reason, no conclusions can be drawn from data in the table about the extent to which well-being may have varied from participant to participant. Choice B is incorrect because according to the table, the mean ratings for participants aware of taking a placebo were higher for all three measures than for participants in the control group, not lower for two of the measures. Choice C is incorrect because it cites data from the table related to participants in the control group, not to participants aware of taking a placebo. Additionally, the mean ratings in the table for participants aware of taking a placebo are higher for all three measures than for participants in the control group. Given that higher ratings indicate greater well-being, as the text states, the ratings in the table for participants aware of taking a placebo indicate greater well-being for these participants in all three measures.",
+    "image": "assets/coeq_e465d17e.png",
+    "alt": "Data figure: Mean Ratings for Patients after 21 Days. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "9c5e75b6",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "To understand how Paleolithic artists navigated dark caves, archaeologist Mª Ángeles Medina-Alcaide and her team tested different lighting methods in a cave in Spain using replicas of artifacts found in European caves with art. They used three different Paleolithic light sources— torches, animal-fat lamps, and fireplaces—determining that each likely had a specific purpose. For instance, the team learned that the animal-fat lamps were less useful than torches while walking because the lamps didn’t illuminate the cave floor.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. Medina-Alcaide and her team’s study demonstrated that fireplaces were essential to the creators of Paleolithic cave art.",
+      "B. Medina-Alcaide and her team discovered that Paleolithic cave artists in Spain used animal-fat lamps more often than they used torches.",
+      "C. Medina-Alcaide and her team were reluctant to draw many conclusions from their study because of the difficulty they had replicating light sources based on known artifacts.",
+      "D. Medina-Alcaide and her team tested Paleolithic light sources and learned some details about how Paleolithic artists traveled within dark caves."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most accurately states the main idea of the text. The text indicates that archaeologist Mª Ángeles Medina-Alcaide and her team used replicas of Paleolithic light sources to understand how Paleolithic artists moved through dark caves. The researchers learned, for example, that torches were more helpful for moving through caves than animal-fat lamps were. Thus, the main idea of the text is that Medina-Alcaide and her team tested Paleolithic light sources and learned some details about how Paleolithic artists traveled within dark caves. Choice A is incorrect because the text doesn’t address the usefulness of fireplaces for Paleolithic cave artists; it only mentions fireplaces briefly as one of the three lighting methods the researchers tested. Choice B is incorrect because the text doesn’t discuss how often Paleolithic cave artists used each kind of light source tested. Although the text does compare animal-fat lamps with another lighting method, the point of that comparison is that animal-fat lamps were less useful than torches when walking, not that one method was used more often than another. Choice C is incorrect because the text doesn’t discuss either how difficult it was for Medina-Alcaide and her team to replicate light sources or how the team felt about drawing conclusions from their study. Instead, the text reveals that the team was able to conclude that each light source likely had a distinct purpose.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "f2761920",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Archaeologist Weiwei Wang and her colleagues analyzed footed grinding slabs and other food-preparation tools excavated from Óc Eo, a Southeast Asian port city that flourished between the first and sixth centuries CE. Wang and colleagues recovered microscopic remnants of turmeric and other spices from the surfaces of the tools. Turmeric is native to South Asia, more than a thousand miles west of Óc Eo, and the researchers showed that the footed grinding slabs at Óc Eo are very similar to footed grinding slabs common throughout South Asia from around 500 BCE to 300 CE. Wang and colleagues’ findings therefore indicate that there must have been a trade link, whether direct or indirect, between the two regions.",
+    "question": "Which finding, if true, would directly weaken the conclusion about Wang and her colleagues’ findings that is presented in the text?",
+    "options": [
+      "A. Some of the spices recovered from Óc Eo are native to the Maluku Islands, which are located approximately 2,000 miles southeast of Óc Eo.",
+      "B. In the first through third centuries CE, there was a significant migration of people from South Asia to Southeast Asia.",
+      "C. Other types of artifacts originating in South Asia and dating to the first through sixth centuries CE have been found throughout Southeast Asia.",
+      "D. The people of Óc Eo and several communities in South Asia regularly traded with people in the region that is now the Southeast Asian country of Malaysia no later than the first century CE."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it presents a finding that, if true, would most directly weaken the conclusion that Wang and colleagues’ findings indicate a trade link between Óc Eo and South Asia. The text explains that turmeric (native to South Asia) and footed grinding slabs of a style common in South Asia between roughly 500 BCE and 300 CE were found at Óc Eo, a Southeast Asian port that flourished between the first and sixth centuries CE. From this evidence, the text concludes that these items must have reached Óc Eo through trade. If, however, there was a significant migration of people from South Asia to Southeast Asia during the first through third centuries CE, that would offer an alternative explanation: South Asian people could have brought turmeric and grinding slabs with them when they migrated. Thus, the finding would weaken the conclusion that trade must account for the items’ presence at Óc Eo. Choice A is incorrect. A finding involving spices from a different region—the Maluku Islands, southeast of Óc Eo—wouldn’t undermine the conclusion because it wouldn’t reveal how the items from South Asia, a region to the west, reached Óc Eo. If anything, such a finding might be further evidence of broad trade networks involving Óc Eo. Choice C is incorrect. If it were true that other South Asian artifacts from the period when Óc Eo flourished have been found throughout Southeast Asia, that would suggest only that South Asian items other than turmeric and footed grinding slabs were present in the region at the time; it wouldn’t reveal anything about how any of those items reached Southeast Asia from South Asia. If anything, the widespread presence of South Asian artifacts in Southeast Asia during this period could be seen as further support for a trade network connecting the regions. Choice D is incorrect because the finding that Óc Eo and some South Asian communities traded with people in another Southeast Asian location (what is now Malaysia) would suggest that this location could have been an intermediary for the movement of items from South Asia to Óc Eo. Such a finding would support, not weaken, the plausibility of an indirect trade link that’s presented in the conclusion.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "2be71ef7",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Paleontologist Alan Tennyson and colleagues studied fossil bones found in New Zealand that are more than 55 million years old. The researchers determined that the fossil bones belonged to two previously unknown species of prehistoric penguins. Moreover, they estimated that one of the two penguin species was more than three times the size of the emperor penguin, which is the largest penguin species that exists today.",
+    "question": "Based on the text, which choice best describes the two previously unknown penguin species?",
+    "options": [
+      "A. They are frequently studied by paleontologists.",
+      "B. They are no longer living species.",
+      "C. They were smaller than penguin species that exist today.",
+      "D. They spent little of their lives in water."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it presents a statement about the two previously unknown penguin species that is supported by the text. According to the text, Alan Tennyson and colleagues studied fossil bones belonging to two previously unknown penguin species that are described as prehistoric, or ancient. The text goes on to say that one of the two species was considerably larger than the emperor penguin, which is currently the largest penguin in existence. Thus, the text indicates that the other species aren’t in existence today, or that the two previously unknown penguin species are no longer living species. Choice A is incorrect. Although the text states that Alan Tennyson is a paleontologist who studied the fossils of two previously unknown penguin species, it doesn’t say whether these penguins are frequently studied by paleontologists. Choice C is incorrect because the text says that one of the two previously unknown penguin species was three times larger than the emperor penguin (a penguin alive today), not that they were both smaller than penguin species that exist today. Choice D is incorrect because the text doesn’t discuss whether the two previously unknown penguin species spent any time in water.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "22b2f714",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice best describes data from the table that support the student’s argument?",
+    "options": [
+      "A. The tadpoles consumed a higher percentage of the striped burrowing frog eggs than they did of the eggs of the dainty green tree frog.",
+      "B. The tadpoles left a certain percentage of the eggs of each of the five species unharmed, thus ultimately allowing them to hatch.",
+      "C. The tadpoles consumed a lower percentage of the short-footed frog eggs than they did of the eggs of their own species.",
+      "D. The tadpoles consumed the same percentage of the dainty green tree frog eggs as they did of the little red tree frog eggs."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most effectively uses data from the table to support the student’s argument about the role of bufadienolide in the egg preferences of cane toad tadpoles. For each of five amphibian species included in the 2022 study, the table gives the percentage of available eggs that the cane toad tadpoles ate. According to the table, the tadpoles ate 10% of striped burrowing frog eggs and 1% of dainty green tree frog eggs, which suggests a preference for striped burrowing frog eggs over dainty green tree frog eggs. The table also indicates that neither of these species’ eggs produces bufadienolide. Thus, these data suggest that something other than the presence or absence of bufadienolide is needed to adequately explain the tadpoles’ egg preferences. Choice B is incorrect. Although the table shows that for each of the five amphibian species, the cane toad tadpoles ate less than 100% of that species’ eggs, which demonstrates that the tadpoles did indeed leave some eggs for each species unharmed, this fact alone is irrelevant to the tadpoles’ preferences for some species’ eggs over other species’ eggs. Choice C is incorrect. Although the table indicates that the cane toad tadpoles ate 90% of the cane toad eggs and 7% of the short-footed frog eggs, which suggests that they prefer cane toad eggs over short-footed frog eggs, the table also indicates that cane toad eggs produce bufadienolide, whereas short-footed frog eggs do not. Therefore, these data are not sufficient to exclude that bufadienolide alone could explain the tadpoles’ preference for some species’ eggs over other species’ eggs. Choice D is incorrect. Although the table shows that for both dainty green tree frog eggs and little red tree frog eggs, the cane toad tadpoles ate 1% of those species’ eggs, it also indicates that neither produces bufadienolide. Thus, these data alone don’t indicate bufadienolide’s role in the tadpoles’ egg preferences.",
+    "image": "assets/coeq_22b2f714.png",
+    "alt": "Data figure: Percentage of Available Eggs Eaten by Cane Toad Tadpoles. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "15b5df6c",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Paleontologist Lucas E. Fiorelli and colleagues have reported the discovery at a mine in Brazil of several egg clutches, partially preserved single eggs, and egg shells from the Late Cretaceous period. The researchers have concluded that the area was once a nesting and breeding site for titanosaurs, a group of sauropod dinosaurs. The finding is significant given the previous lack of known nesting sites in northern regions of South America, which led many paleontologists to assume that titanosaurs migrated south to lay eggs.",
+    "question": "What does the text most strongly suggest about the site discovered by the researchers?",
+    "options": [
+      "A. It is the earliest known example of a titanosaur nesting and breeding site.",
+      "B. It was very difficult to excavate given that it was discovered in a mine.",
+      "C. It may have been occupied by other sauropods in addition to titanosaurs.",
+      "D. It is farther north than any other nesting site discovered in South America."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents a statement about the site discovered by the researchers that is supported by the text. The text discusses Fiorelli and colleagues’ discovery of egg clutches, single eggs, and eggshells in a Brazilian mine. According to the text, the presence of these eggs, which are from the Late Cretaceous period, led the researchers to conclude that the location was once a nesting and breeding site for titanosaurs. The text then explains that the finding is important because of the “previous lack of known nesting sites in northern regions of South America.” If there haven’t been any other discoveries of a nesting site in South America’s northern regions and the site in the Brazilian mine is the first, then the text strongly suggests that the site is farther north than other nesting sites that have been discovered in South America. Choice A is incorrect because the text doesn’t suggest that the site discovered by Fiorelli and colleagues is the earliest titanosaur nesting and breeding site known to paleontologists but rather that it’s the first nesting site found in northern regions of South America. Moreover, the text doesn’t suggest how the timeline of the newly discovered site compares with that of other titanosaur nesting and breeding sites. Choice B is incorrect because there is no mention in the text about any difficulties that Fiorelli and colleagues faced when they were excavating the nesting and breeding site in the Brazilian mine. Choice C is incorrect because the text doesn’t support the idea that the nesting and breeding site in the Brazilian mine was occupied by sauropods other than titanosaurs. The text simply mentions that titanosaurs are sauropod dinosaurs and presents the researchers’ conclusion that the site they discovered was for titanosaurs.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "ccaa16c9",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Philadelphia’s Black Pearl Chamber Orchestra, founded by Jeri Lynne Johnson, performs classical music, from well-known compositions by Beethoven to contemporary works by Jessie Montgomery. For the orchestra’s iConduct! program, Johnson invites community members to learn some basic elements of conducting and then experience conducting the Black Pearl orchestra themselves.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. The Black Pearl orchestra performs music from all over the world but mostly performs music composed by Philadelphians.",
+      "B. Johnson founded the Black Pearl orchestra to perform classical music by contemporary artist Jessie Montgomery.",
+      "C. The Black Pearl orchestra gives community members the chance to both listen to and participate in classical music performance.",
+      "D. Johnson has community members conduct an orchestra to demonstrate how difficult the task is."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most accurately states the main idea of the text. The text begins by stating that the Black Pearl orchestra performs classical music, and then goes on to explain that the orchestra offers an iConduct! program. According to the text, this program offers community members the opportunity to learn some basics about conducting and then apply what they learn by conducting the orchestra themselves. Thus, the main idea of the text is that community members can both listen to and participate in a classical music performance. Choice A is incorrect. Although the text states that the Black Pearl orchestra is based in Philadelphia, it doesn’t indicate that most of the music it plays was composed by Philadelphians. Choice B is incorrect. Although the text does state that Johnson founded the Black Pearl orchestra, this is just a detail and not the main focus of the text. Moreover, while the text does say that the orchestra sometimes plays music by Montgomery, it doesn’t assert that the orchestra was founded solely for the purpose of performing Montgomery’s work. Choice D is incorrect. Although the text explains that community members are invited to conduct the Black Pearl orchestra after participating in the iConduct! program, the text doesn’t indicate that Johnson allows community members to do this for the specific purpose of showing how difficult the task is.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "9867b06a",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the graph to complete the example?",
+    "options": [
+      "A. most of the farmers who mainly cultivated cereals and most of the farmers who mainly cultivated non–root vegetables in south Ondo were women.",
+      "B. more women in central Ondo mainly cultivated root crops than mainly cultivated cereals.",
+      "C. most of the farmers who mainly cultivated non–root vegetables in north and south Ondo were women.",
+      "D. a relatively equal proportion of women across the three regions of Ondo mainly cultivated cereals."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it uses data from the graph to effectively complete the example of Eludoyin and his colleagues’ findings concerning female farmers in some regions of Ondo State, Nigeria. The graph presents values for the percentage of Ondo State small-scale farmers who are female, by type of crop and region. The graph shows that of the farmers mainly cultivating non-root vegetables, approximately 57% in north Ondo and approximately 54% in south Ondo are female; in other words, most of those farmers are female, which exemplifies the idea that female farmers make up the majority (more than half) of the farmers cultivating specific types of crops in some regions. Choice A is incorrect because it inaccurately cites data from the graph: the graph shows that in south Ondo, most of the farmers mainly cultivating non-root vegetables are women (approximately 54%), but that only about 35% (less than half) of the farmers mainly cultivating cereals are women. Choice B is incorrect because it inaccurately cites data from the graph: the graph shows that more women in central Ondo mainly cultivate cereals than mainly cultivate root crops (approximately 36% and 20%, respectively). Additionally, it doesn’t effectively complete the example because the graph shows that female farmers don’t make up the majority (more than half) of the farmers for any type of crop in central Ondo. Choice D is incorrect because it doesn’t effectively complete the example; it simply states that a relatively equal proportion of women across the three regions mainly cultivate cereals, which doesn’t address the value for that proportion and thus doesn’t show that a majority (more than half) of the farmers cultivating certain crops are female.",
+    "image": "assets/coeq_9867b06a.png",
+    "alt": "Data figure: Percentage of Ondo State Small-Scale Farmers Who Are Female, by Main Crop Grown. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "7ef0ad91",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "A. broccoli grown in soil containing mycorrhizal fungi had a slightly higher average mass than broccoli grown in soil that had been treated to kill fungi.",
+      "B. corn grown in soil containing mycorrhizal fungi had a higher average mass than broccoli grown in soil containing mycorrhizal fungi.",
+      "C. marigolds grown in soil containing mycorrhizal fungi had a much higher average mass than marigolds grown in soil that had been treated to kill fungi.",
+      "D. corn had the highest average mass of all three species grown in soil that had been treated to kill fungi, while marigolds had the lowest."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most effectively uses data from the table to complete the statement. The text explains that mycorrhizal hosts are plants that benefit from the presence of mycorrhizal fungi in the soil and that some such plants produce more mass when grown in the presence of these fungi, while for nonmycorrhizal species the fungi either have no effect or may be harmful. The experiment included two mycorrhizal hosts (corn and marigold) and one nonmycorrhizal species (broccoli). Given the claim in the text that nonmycorrhizal species will see either no difference or a decrease in mass when exposed to mycorrhizal fungi, the student would likely have been surprised by the higher average mass for broccoli grown in the presence of the fungi than the broccoli grown in the soil treated to kill fungi. Choice B is incorrect. Although this choice accurately describes the corn data from the table, the fact that the mycorrhizal host corn is more massive in the presence of the fungi likely fits with what the student expected and would therefore not be surprising. Choice C is incorrect. Although this choice accurately describes the marigold data from the table, the fact that the mycorrhizal host marigold is more massive in the presence of the fungi is likely what the student expected and thus would not be surprising. Choice D is incorrect because it does not accurately represent the data in the table—when grown in soil treated to kill fungi, corn had an average mass of 3.8 g while broccoli had an average mass of 7g—and because making comparisons among the plants in the no-fungi condition, by itself, does not provide a basis to compare the average mass of mycorrhizal hosts and nonmycorrhizal species grown in the presence of the fungi with those grown in the soil treated to kill fungi.",
+    "image": "assets/coeq_7ef0ad91.png",
+    "alt": "Data figure: Effects of Mycorrhizal Fungi on 3 Plant Species. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "ef2d59f9",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "To address the susceptibility of materials used in components of high-performance machinery, such as aircraft engines, to creep (deformation that is induced by persistent mechanical stress and that often occurs at elevated temperatures), materials researchers have developed silicon carbide (SiC) fibers for producing aerospace composites. Testing the thermomechanical properties of several commercially available SiC fibers, Ramakrishna T. Bhatt et al. found that in comparison with two polymer-derived SiC fibers, a nitrogen-treated SiC fiber exhibited a lower minimum creep rate, a measure of the rate at which a stress-exposed material deforms at a constant temperature and uniaxial load. The finding suggests that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. unlike the two polymer-derived SiC fibers, the nitrogen-treated SiC fiber can substantially inhibit creep, provided that temperatures and loads are consistent.",
+      "B. the two polymer-derived SiC fibers likely hold similar potential for reducing the creep resistance of materials exposed to stress and elevated temperatures, thus prolonging the life span of aerospace machinery.",
+      "C. composites based on the two polymer-derived SiC fibers have chemical properties that may improve the mechanical and thermal stability of aerospace equipment to a greater extent than do composites based on the nitrogen-treated SiC fiber.",
+      "D. aerospace composites containing the nitrogen-treated SiC fiber may have the ability to withstand mechanical stress for a longer period of time than can aerospace composites containing either of the two polymer-derived SiC fibers."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most logically completes the text’s discussion of silicon carbide (SiC) fibers and creep, or deformation related to ongoing mechanical stress and elevated temperatures. The text states that Bhatt et al. found that a nitrogen-treated SiC fiber had a lower minimum creep rate than two polymer-derived SiC fibers did. Because having a lower creep rate means that the material is slower to deform with exposure to stress, as the text explains, this finding suggests that aerospace composites made with the nitrogen-treated SiC fiber may be able to withstand mechanical stress for a longer period than those made with the other two polymer-derived SiC fibers can. Choice A is incorrect because it overstates the implications of the study’s findings, which have to do with the rate of a material’s deformation under stress, not the absolute degree of deformation. The text states that Bhatt et al. observed that a nitrogen-treated SiC fiber had a lower minimum creep rate than two polymer-derived SiC fibers did, meaning only that it deformed more slowly over time under constant stress, not that it underwent less deformation overall. Choice B is incorrect because the text doesn’t establish any similarity between the two polymer- derived SiC fibers other than that both had a higher creep rate than the nitrogen-treated SiC fiber did in Bhatt et al.’s study. Moreover, reducing a material’s resistance to creep would mean that the material becomes more susceptible to deformation with exposure to stress and elevated temperatures, which would be expected to shorten rather than prolong the lifespan of machinery made with that material. Choice C is incorrect because the text suggests that the stability of aerospace equipment may be better improved by composites containing nitrogen-treated SiC fiber than by composites containing the two polymer-derived SiC fibers, not the other way around. The text indicates that Bhatt et al. observed that the nitrogen-treated SiC fiber had a lower minimum creep rate than the other two fibers did, meaning that it was slower to degrade under exposure to mechanical stress and elevated temperatures—suggesting that it may remain stable for longer periods.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "b76bd8bc",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "In a study of the mechanisms underlying associative memory—or the ability to learn and remember connections between inherently unrelated things—neuroscientists Kei Igarashi, Jasmine Chavez, and others presented mice with memory tests. The team discovered that fan cells, a type of cell found in the medial temporal lobe of the brain, are necessary for the acquisition of new associative memories. They also found that fan cell activity requires dopamine, a chemical the brain produces in response to pleasure and rewards. Consequently, receiving a reward should likely help to ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. decrease an individual’s capacity to utilize dopamine.",
+      "B. increase an individual’s capacity to recognize differences between unrelated things.",
+      "C. increase an individual’s capacity to form associative memories.",
+      "D. decrease an individual’s capacity to create fan cells."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most logically completes the text’s discussion of the mechanisms underlying associative memory. The text explains that fan cells—a type of brain cell—are necessary for the acquisition of new associative memories, and that activity among these cells requires a chemical known as dopamine, which the brain produces in response to rewards. Since the brain cells that enable the formation of associative memories require dopamine in order to function, and since the brain produces dopamine in response to rewards, it can be inferred that receiving a reward should likely help to increase an individual’s capacity to form associative memories. Choice A is incorrect because the relationship between rewards and dopamine sketched by the text is that rewards result in the production of dopamine, not that they cause an individual’s capacity to utilize dopamine to decrease. Choice B is incorrect. The text suggests that receiving a reward would produce dopamine and thereby assist with associative memory formation. However, the text never suggests that associative memory involves the capacity to recognize differences between unrelated things, indicating only that associative memory involves remembering what connects those things. Choice D is incorrect because the text never discusses how fan cells are initially created and therefore provides no evidence for a conclusion about how receiving a reward would affect their creation.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "20a94cb0",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Artificial leaves are a developing renewable energy technology that mimics the process of photosynthesis in plants. These devices are silicon- based solar cells coated in chemical catalysts that activate reactions that split water molecules into hydrogen and oxygen gas. The technology, while generating lots of interest, is not yet commercially viable as a large-scale energy source. To meet this challenge, scientists from many fields are researching ways to store, transport, and distribute the energy the devices produce while other scientists are working to improve the cost and efficiency of the devices.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. Continued research and development in artificial-leaf technology is needed before the devices can be widely used as an energy source.",
+      "B. The recent increase in the commercial use of artificial leaves as an energy source has encouraged many scientists to research ways to improve the technology.",
+      "C. Artificial leaves split water molecules into oxygen and hydrogen gas using catalysts more efficiently than plants do using the process of photosynthesis.",
+      "D. Artificial leaves were developed to mimic the natural process of photosynthesis in plants in order to store energy for long-term commercial use."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most accurately states the main idea of the text. According to the text, artificial leaves are a renewable energy technology that’s in development and generating interest. The text goes on to state that artificial-leaf technology \"is not yet commercially viable as a large-scale energy source\" and that scientists from several fields are doing additional research to refine the technology. Thus, the main idea is that continued research and development in artificial-leaf technology is needed before the devices can be widely used as an energy source. Choice B is incorrect. While the text does state that scientists from many fields are researching artificial leaves, they’re doing so to address the fact that the leaves are not yet commercially viable, rather than in response to an increase in commercial use. Choice C is incorrect. Although the text does explain that artificial leaves help split water molecules into oxygen and hydrogen gas using catalysts, it doesn’t argue that this process is more efficient than photosynthesis. This is merely a detail of the text and not the main idea, which is about the additional research needed to improve the cost and efficiency of these artificial leaves. Choice D is incorrect. Although the text indicates that artificial leaves mimic photosynthesis in plants, this is an incidental detail in support of the main idea that additional research is needed to make artificial leaves commercially viable.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "112cecef",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "A. passenger pigeon (Ectopistes migratorius), which became extinct only a few years after the huia (Heteralocha acutirostris).",
+      "B. saber-toothed cat (Smilodon), which became extinct 11,000 years ago.",
+      "C. woolly mammoth (Mammuthus primigenius), which became extinct several thousand years before the saber-toothed cat (Smilodon).",
+      "D. Caribbean monk seal (Monachus tropicalis), which became extinct in 1952."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it uses data from the table to complete the statement regarding a species for which the problem of finding a suitable habitat would be especially concerning. For each candidate species, the table lists its common name, scientific name, and when the species became extinct. The text explains that scientists pursuing de-extinction for the candidate species also consider the length of time that has passed since the species’ extinction, noting that the longer the animal has been extinct, the less likely it is that a suitable habitat would exist for the species today. The possibility of not having a suitable habitat would be especially concerning for the candidate species for which the most time has passed since its extinction. According to the table this species would be the saber-toothed cat, which became extinct 11,000 years before present. Choice A is incorrect because it compares the time since the extinction of the passenger pigeon to the time since the extinction of the huia instead of citing the species listed in the table that has been extinct the longest (the saber-toothed cat). The text indicates that the longer a species has been extinct, the lower the chances are that a suitable habitat exists for it today. Neither the table nor the text supports the claim that the passenger pigeon is especially vulnerable to this problem. Choice C is incorrect because the text states that the longer a species has been extinct, the less likely it is that there would be a suitable habitat available for the species today. So, the problem would be especially concerning for the saber-toothed cat, which became extinct several thousand years before the woolly mammoth did—not the other way around. Choice D is incorrect because the text states that the longer a species has been extinct, the lower the chances are that a suitable habitat would be available for that species today. According to the table, the Caribbean monk seal became extinct in 1952, which is the most recent extinction listed for a candidate species in the table.",
+    "image": "assets/coeq_112cecef.png",
+    "alt": "Data figure: Partial List of Candidate Species for De-extinction Common name Scientific name Became extinct Huia Heteralocha acutirostris 1907 Caribbean monk seal Monachus tropicalis 1952. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "436f939d",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Modern dog breeds are largely the result of 160 years of owners crossbreeding certain dogs in order to select for particular physical appearances. Owners often say that some breeds are also more likely than others to have particular personality traits—basset hounds are affectionate; boxers are easy to train—but Kathleen Morrill and colleagues found through a combination of owner surveys and DNA sequencing of 2,000 dogs that while physical traits are predictably heritable among purebred dogs, behavior varies widely among dogs of the same breed.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. Dog breeds would not exist without many years of human intervention in dogs’ reproduction.",
+      "B. Research fails to confirm a commonly held belief about dog breeds and behavior.",
+      "C. The dog breeds most popular among owners have often changed over the past 160 years.",
+      "D. A study of dog breeds is notable for its usage of both opinion surveys and DNA sequencing."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most accurately states the main idea of the text. The text indicates that dog owners typically claim that some dog breeds are “more likely than others to have particular personality traits.” In other words, the text points out that a commonly held belief about dog breeds is that their personality traits are heritable. The text then states that Kathleen Morrill and colleagues undertook research about dog trait heritability and found that “behavior varies widely among dogs of the same breed.” Because Morrill and colleagues found evidence for variability rather than consistency in the behavior of dogs of the same breed, the statement that research fails to uphold a commonly held belief about dog breeds and behavior accurately reflects the main idea of the text. Choice A is incorrect. Although the text mentions that humans have long intervened in dogs’ reproduction by intentionally crossbreeding certain dogs, it doesn’t argue that such intervention is essential to the existence of dog breeds. Choice C is incorrect because the text doesn’t discuss the popularity of any dog breeds; breeds are mentioned as having certain traits, but the text says nothing about the popularity of these breeds or traits. Choice D is incorrect. Although the text briefly mentions that Morrill and colleagues conducted a study about dog traits using both surveys and DNA sequencing, this is not the main focus of the text. The text concerns the study’s results about the heritability of dog traits, not the particular methodology used by Morrill and colleagues.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "973505bb",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Marine archaeologists have found much of the wooden hull of a sixteenth-century ship in a flooded quarry in southeast England. When it is exposed to air and water, wood rots quickly unless it is protected by sediment that shields it from oxygen. Therefore, the discovered ship was likely ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. covered by a protective sediment layer in the quarry.",
+      "B. one of several other ships buried in the same quarry.",
+      "C. a confirmation of previous theories about the type of wood that was used in sixteenth-century ships.",
+      "D. first constructed much earlier than previously thought."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most logically completes the text’s discussion of the discovered ship. The text states that much of the ship’s wooden hull was found in a quarry. The text also states that wood rots quickly unless it is protected by sediment, which shields the wood from exposure to oxygen. It is therefore reasonable to infer that the surviving portion of the ship’s hull was covered by an oxygen-shielding layer of sediment. Choice B is incorrect because nothing in the text suggests other ships have been or are likely to be found in the same quarry. The fact that much of this ship’s wood survived for centuries in the quarry does raise the possibility that there might be other preserved ships, but the text provides no support for such a conclusion. Choice C is incorrect because the text does not address the type of wood used in sixteenth-century ships or any theories pertaining to wood choice in ships. Choice D is incorrect because the text states only that the ship is from the sixteenth century, with no other dates offered for its construction, and thus there is no basis to consider alternative ages for the ship. Additionally, even if the ship was constructed earlier, it is not logically connected to the text’s discussion of how it was preserved.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "c4985654",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Many linguists have claimed that the lyricism of Alexander Pushkin’s Russian novel in verse Eugene Onegin makes the work incapable of being faithfully translated, especially into English. The original work is written much like a long poem, featuring linguistic patterns and flourishes specific to the Russian language. Rather than striving to portray each scene of the novel literally, John Cranko, in his ballet adaptation of Eugene Onegin, opted to let the essence of the work’s emotions inspire the passion of the dancers. Critic Emma Golden writes that Cranko’s\n\n“choreography uses the poetry of the human body to summon the parts of Pushkin’s novel that were deemed untranslatable—its commitments to rhythm, cadence, symmetry.” It seems, then, that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. Cranko’s loose adaptation of Eugene Onegin into a different medium may have preserved fundamental elements of the source material better than a strictly literal written translation of the text would have.",
+      "B. though written works are frequently adapted into other formats, ballets are rarely considered to be faithful adaptations of texts.",
+      "C. English is a particularly difficult language into which to translate poetic works, as its rhythms differ from those of many other languages.",
+      "D. most critics believe that, like other English translations of Eugene Onegin, Cranko’s ballet adaptation fails to capture the essence of the original’s meaning."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most logically completes the text’s discussion of John Cranko’s ballet adaptation of Pushkin’s Russian novel in verse, Eugene Onegin. According to the text, the novel’s lyricism—specifically its reliance on linguistic patterns and flourishes that are unique to the Russian language—renders a faithful translation, especially one into English, impossible. The text then discusses Cranko’s adaptation of Eugene Onegin into a ballet whose choreography, according to one critic, evokes aspects of the novel that were deemed untranslatable: “its commitments to rhythm, cadence, symmetry.” Given the claim that the ballet captures what would seem untranslatable, it can be inferred that Cranko’s loose adaptation of the novel into a different medium—namely, dance—may have preserved fundamental elements of the source material better than a strictly literal written translation into English or another language would have. Choice B is incorrect because the text discusses one specific ballet adaptation of Eugene Onegin and one critic’s assessment of it. The text makes no general claims about the adaptation of written works into other formats or about whether ballets are typically considered faithful adaptations of such works. Choice C is incorrect because the text discusses the difficulty of translating only one poetic work—Pushkin’s Russian- language novel Eugene Onegin—into English and doesn’t consider whether English generally poses challenges for translators of poetic works of various languages. Moreover, the text focuses on the challenge presented by the Russian language’s unique patterns and flourishes, not a difficulty inherent to the English language. Choice D is incorrect because the text gives no indication of what most critics believe about Cranko’s adaptation of Eugene Onegin and instead presents the reaction of only one critic: Golden’s praise of Cranko’s ballet for capturing essential elements of the novel that have been “deemed untranslatable.” Nothing in the text suggests that most other critics would disagree with Golden’s positive view.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "d952096d",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Political scientists who favor the traditional view of voter behavior claim that voting in an election does not change a voter’s attitude toward the candidates in that election. Focusing on each US presidential election from 1976 to 1996, Ebonya Washington and Sendhil Mullainathan tested this claim by distinguishing between subjects who had just become old enough to vote (around half of whom actually voted) and otherwise similar subjects who were slightly too young to vote (and thus none of whom voted). Washington and Mullainathan compared the attitudes of the groups of subjects toward the winning candidate two years after each election.",
+    "question": "Which finding from Washington and Mullainathan’s study, if true, would most directly weaken the claim made by people who favor the traditional view of voter behavior?",
+    "options": [
+      "A. Subjects’ attitudes toward the winning candidate two years after a given election were strongly predicted by subjects’ general political orientation, regardless of whether subjects were old enough to vote at the time of the election.",
+      "B. Subjects who were not old enough to vote in a given election held significantly more positive attitudes towards the winning candidate two years later than they held at the time of the election.",
+      "C. Subjects who voted in a given election held significantly more polarized attitudes toward the winning candidate two years later than did subjects who were not old enough to vote in that election.",
+      "D. Two years after a given election, subjects who voted and subjects who were not old enough to vote were significantly more likely to express negative attitudes than positive attitudes toward the winning candidate in that election."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it presents a finding that, if true, would weaken the claim made by people who favor the traditional view of voter behavior. According to the text, people who favor that view believe that voting in an election doesn’t change a voter’s attitude toward the candidates in that election. If Washington and Mullainathan found that two years after an election, attitudes toward the winning candidate were significantly more polarized among subjects who had voted than among subjects who had been too young to vote, that would suggest that the act of voting did have an effect on the voters’ attitudes toward the candidates, which would undermine the claim that voting doesn’t change voters’ attitudes. Choice A is incorrect because a finding about links between subjects’ attitudes and general political orientation, regardless of age and ability to vote, wouldn’t address the presence or absence of changes in attitudes among those subjects who did actually vote. Therefore, the finding wouldn’t have any bearing on the claim that voting in an election doesn’t change a voter’s attitude toward the candidates in that election. Choice B is incorrect because a finding that positive attitudes toward a winning candidate significantly increased in the two years after the election among subjects who had been too young to vote would involve only people who didn’t vote; therefore, the finding wouldn’t have any bearing on the claim that when people do vote, the act of voting doesn’t change their attitudes toward the candidates. Choice D is incorrect because the finding that subjects in both groups were more likely to have negative attitudes than positive attitudes toward the winning candidate two years after an election would reflect all subjects’ attitudes at one particular time whether they voted or not, rather than the presence or absence of a change in voters’ attitudes after voting. Therefore, the finding would neither weaken nor strengthen the claim that voting in an election doesn’t change a voter’s attitude toward the candidates.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "c4e7d2e1",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the example?",
+    "options": [
+      "A. Dark Cloud acted in significantly fewer films than did Lillian St. Cyr, who is credited with 66 performances.",
+      "B. Edwin Carewe’s 47 credited acting roles includes only films made after 1934.",
+      "C. Lillian St. Cyr acted in far more than 66 films and Edwin Carewe directed more than 58.",
+      "D. James Young Deer actually directed 33 films and acted in only 10."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it uses data from the table to effectively exemplify the idea that the film outputs of the four individuals included in the table should be considered bare minimums—that is, that we should assume that the individuals actually had higher outputs than those recorded. The table presents the years during which the individuals were active and the number of known films the individuals are credited in. The table indicates that Lillian St. Cyr has 66 film credits as an actor and that Edwin Carewe has 58 film credits as a director; it follows that if some films and records for the era were lost, it’s possible that Lillian St. Cyr acted in far more than 66 films and that Edwin Carewe directed more than 58 films. Choice A is incorrect because it doesn’t effectively exemplify the idea that the film outputs of the four individuals included in the table should be considered bare minimums. Rather than addressing the idea that the individuals likely had higher outputs than those presented in the table, this choice simply compares data from the table to make the point that Dark Cloud has fewer credited acting roles than Lillian St. Cyr (35 and 66, respectively). Choice B is incorrect because it misrepresents data from the table, even though it may exemplify the idea that the film outputs of the four individuals included in the table should be considered bare minimums by implying that Edwin Carewe acted in more than 47 films. The table indicates that Edwin Carewe was active from 1912 to 1934, meaning that his 47 credited acting roles were in films made before or during 1934, not after that time. Choice D is incorrect because it doesn’t effectively exemplify the idea that the film outputs of the four individuals included in the table should be considered bare minimums. Instead of addressing the idea that the individuals likely had higher outputs than those recorded, this choice suggests that James Young Deer actually acted in and directed fewer films than presented in the table (only 33 known films as a director instead of 35, and only 10 known films as an actor instead of 33).",
+    "image": "assets/coeq_c4e7d2e1.png",
+    "alt": "Data figure: Credited Film Output of James Young Deer, Dark Cloud, Edwin Carewe, and Lillian St. Cyr Individual Years active Number of films known and commonly credited James Young Deer 1909–1924 33 (actor), 35 (director), 10 (writer. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "a7478480",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "ALSOL is a microcredit program in Mexico that makes small loans to female entrepreneurs who lack the collateral and credit history to secure financing from conventional banks. Borrowers use their business proceeds to repay loans in equal weekly installments and incur no penalty for missed payments other than lack of access to larger loans. Economists Gustavo Barboza and Sandra Trejos analyzed ALSOL data and found that rural borrowers, who mostly make and sell handicrafts, miss payments more often than urban borrowers do, partly because they sell their goods less frequently than they could. Barboza and Trejos claim that this behavior reflects strategic decisions that enable rural women to increase their profits per unit sold.",
+    "question": "Which finding, if true, would most directly support Barboza and Trejos’s claim?",
+    "options": [
+      "A. Many marketplaces require entrepreneurs to pay marketplace operators a fixed percentage of each day’s proceeds in exchange for permission to sell goods there.",
+      "B. Rural entrepreneurs can typically sell their goods for higher prices in cities than in their home areas, but the number of people selling competing goods tends to be higher in cities.",
+      "C. Due to the lower costs they incur, rural entrepreneurs tend to require smaller initial loans than urban entrepreneurs do.",
+      "D. The cost to rural entrepreneurs to bring their goods to towns with marketplaces is high but largely independent of the number of goods they bring."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents a finding that, if true, would most directly support Barboza and Trejos’s claim that rural female entrepreneurs who have received small loans from ALSOL are strategic in selling their goods less frequently than they could, even if it means missing payments. The text explains that borrowers in the ALSOL program use proceeds from their businesses to repay loans in equal weekly payments, with almost no penalty for missed payments. According to the text, Barboza and Trejos found that rural borrowers miss weekly payments in part because they don’t sell their goods as often as they could, a move the researchers claim allows the entrepreneurs to help increase profits for the goods they sell. Finding that the cost of bringing goods to towns with marketplaces is high for rural entrepreneurs but is largely independent of how many goods are brought would support the researchers’ claim: traveling to marketplaces less frequently would mean that a rural entrepreneur spends less on travel overall, and taking a large load of goods to a marketplace for essentially the same cost as taking a small load would allow the entrepreneur to more substantially offset the cost of travel with greater overall sales at the marketplace, resulting in more profit per good sold—even if those profits are earned less frequently and don’t support weekly loan payments. Choice A is incorrect because the finding that many marketplaces require entrepreneurs to pay the operators of the marketplace a fixed percentage of proceeds to be able to sell goods there wouldn’t explain why rural entrepreneurs strategically choose to sell their goods less frequently than they could in order to increase their profits per unit sold. With a fixed percentage of proceeds due to operators, the amount entrepreneurs have to pay operators would also be fixed regardless of frequency of selling. Choice B is incorrect because the finding that rural entrepreneurs can usually sell their goods for higher prices in cities than in their local areas but also face higher competition to sell goods in cities wouldn’t explain why rural entrepreneurs strategically choose to sell their goods less frequently than they could in order to increase their profits per unit sold. This is because both the higher prices and higher competition in cities would be stable factors—meaning there would be no clear reason for the rural entrepreneurs not to take every available chance to sell their goods in cities and to instead sell their goods in cities only sometimes. Choice C is incorrect because the finding that rural entrepreneurs have lower costs and thus tend to require smaller initial loans than urban entrepreneurs do has no bearing on rural borrowers strategically choosing to sell their goods less frequently than they could specifically to increase their profits per unit sold. The cost of producing goods doesn’t depend on the frequency with which an entrepreneur sells those goods, so lower frequency alone wouldn’t affect profits, and the initial loan amount is set and has nothing to do with how much profit is earned from each sale.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "7d2fd7fe",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Euphorbia esula (leafy spurge) is a Eurasian plant that has become invasive in North America, where it displaces native vegetation and sickens cattle. E. esula can be controlled with chemical herbicides, but that approach can also kill harmless plants nearby. Recent research on introducing engineered DNA into plant species to inhibit their reproduction may offer a path toward exclusively targeting E. esula, consequently ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. making individual E. esula plants more susceptible to existing chemical herbicides.",
+      "B. enhancing the ecological benefits of E. esula in North America.",
+      "C. enabling cattle to consume E. esula without becoming sick.",
+      "D. reducing invasive E. esula numbers without harming other organisms."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents the conclusion that most logically follows from the text’s discussion of leafy spurge and engineered DNA. The text establishes that using chemical herbicides to control leafy spurge in North America can also harm other plants nearby. The text then indicates that it might be possible to use engineered DNA to prevent plants from reproducing, which would be useful for “exclusively targeting” leafy spurge. If it’s possible to exclusively target leafy spurge with engineered DNA—meaning that only leafy spurge is affected by the engineered DNA—and prevent the plant from reproducing, then leafy spurge numbers could be reduced “without harming other organisms.” Choice A is incorrect because the text raises the possibility of using engineered DNA to prevent leafy spurge from reproducing, not to make individual leafy spurge plants more vulnerable to chemical herbicides that already exist. Choice B is incorrect because the text doesn’t describe any ecological benefits of leafy spurge in North America; instead, the text is focused on using engineered DNA to prevent leafy spurge from reproducing and thereby reduce its numbers. The only ecological effects of leafy spurge in North America that are described in the text are harmful. Choice C is incorrect because the text describes the possibility of using engineered DNA to prevent leafy spurge from reproducing; it doesn’t offer a way to enable cattle to eat leafy spurge without becoming sick.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "a3268d2a",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "The practice of logging (cutting down trees for commercial and other uses) is often thought to be at odds with forest conservation (the work of preserving forests). However, a massive study in forest management and preservation spanning 700,000 hectares in Oregon’s Malheur National Forest calls that view into question. So far, results of the study suggest that forest plots that have undergone limited logging (the careful removal of a controlled number of trees) may be more robust than plots that haven’t been logged at all. These results, in turn, suggest that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. logging may be useful for maintaining healthy forests, provided it is limited.",
+      "B. other forest management strategies are more effective than limited logging.",
+      "C. as time passes, it will be difficult to know whether limited logging has any benefits.",
+      "D. the best way to support forest health may be to leave large forests entirely untouched."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most logically completes the text’s discussion of the potential effects of logging on forest conservation. The text begins by stating that logging practices are often thought of as being contrary to forest conservation efforts. Then, the text presents the results of a research study examining the effect of limited logging practices on specific forest plots, finding that the plots with limited logging may be \"more robust\" (healthier) than the plots that hadn’t been logged at all. Given these results, it follows that logging may be a useful practice for maintaining healthy forests if it is practiced in a limited way. Choice B is incorrect because the study referenced in the text only provides information on limited logging as a potential forest management strategy. There is no information in the text about how other forest management strategies support forest conservation efforts. Therefore, the text does not support the assertion that other forest management strategies are more successful than limited logging. Choice C is incorrect because the text presents a research study with findings that specific plots of forest with limited logging may be more robust than the forest plots that were not logged. Rather than suggesting that it is hard to know whether limited logging might be beneficial, the text suggests that the practice could be useful in forest conservation efforts. Choice D is incorrect. The text discusses the results of a research study that compares the health of forest plots with limited logging to forest plots that were not logged. It does not take a position on the best way to support forest health but rather presents a research study with findings that question conventionally held thoughts regarding the practice of logging.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "e6b9ccc9",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Many mosquito repellents contain natural components that work by activating multiple odor receptors on mosquitoes’ antennae. As the insects develop resistance, new repellents are needed. Ke Dong and her team found that EBF, a molecular component of a chrysanthemum-flower extract, can repel mosquitoes by activating just one odor receptor—and this receptor, Or31, is present in all mosquito species known to carry diseases. Therefore, the researchers suggest that in developing new repellents, it would be most useful to ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. identify molecular components similar to EBF that target the activation of Or31 receptors.",
+      "B. investigate alternative methods for extracting EBF molecules from chrysanthemums.",
+      "C. verify the precise locations of Or31 and other odor receptors on mosquitoes’ antennae.",
+      "D. determine the maximum number of different odor receptors that can be activated by a single molecule."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most logically completes the text’s discussion of mosquito repellents. The text begins by explaining that many repellents work by using natural components to activate multiple odor receptors on mosquitoes’ antennae, and that new repellents must be created whenever mosquitoes become resistant to older ones. The text then highlights a research team’s discovery that EBF, a molecular component of a chrysanthemum-flower extract, can repel mosquitoes by activating a single odor receptor, Or31, that is shared by all species of mosquitoes known to carry diseases. The text suggests that compared to the repellents mentioned earlier, a repellent that acts on the Or31 receptor would be more effective: by noting that all mosquito species known to carry diseases share the Or31 receptor, the text suggests that the Or31 receptor may be unique in this respect, meaning that a repellent such as EBF that acts on it would be more effective since it works on a single receptor shared by all mosquito species that carry diseases, rather than a combination of receptors that is not shared by all species. Once mosquitoes become resistant to EBF, it would therefore make sense for researchers to look for other molecular components similar to EBF that target the activation of Or31 receptors, since a single such component could also repel all disease-carrying mosquitoes. Choice B is incorrect because nothing in the text suggests that EBF molecules are difficult to extract from chrysanthemums and that investigating alternative extraction methods would therefore be useful for developing efficient and effective mosquito repellents. Rather, the text suggests that researchers developing new mosquito repellents should aim to identify molecular components similar to EBF, since that component targets the Or31 odor receptor shared by all species of mosquitoes known to carry diseases. Choice C is incorrect because nothing in the text suggests that researchers are unaware of the precise location of Or31 and other odor receptors in mosquitoes’ antennae or that knowing this information would be useful for developing efficient and effective mosquito repellents. Rather, the text suggests that researchers developing new mosquito repellents should aim to identify molecular components similar to EBF, which targets the Or31 odor receptor. Choice D is incorrect because it doesn’t logically follow that the discovery of one odor receptor shared by all disease-bearing mosquitoes should lead to further research into which repellents might activate the greatest number of odor receptors. Rather, the text suggests that researchers developing new mosquito repellents should instead search for additional molecular components that, like EBF, activate the one odor receptor that is known to be shared by all disease-bearing mosquitoes.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "c86c32e8",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "An Ideal Husband is an 1895 play by Oscar Wilde. In the play, which is a satire, Wilde suggests that a character named Lady Gertrude Chiltern is perceived as both extremely virtuous and unforgiving, as is evident when another character says ______",
+    "question": "Which quotation from An Ideal Husband most effectively illustrates the claim?",
+    "options": [
+      "A. “Lady Chiltern is a woman of the very highest principles, I am glad to say. I am a little too old now, myself, to trouble about setting a good example, but I always admire people who do.”",
+      "B. “Do you know, [Lady Chiltern], I don’t mind your talking morality a bit. Morality is simply the attitude we adopt towards people whom we personally dislike.”",
+      "C. “[Lady Chiltern] does not know what weakness or temptation is. I am of clay like other men. She stands apart as good women do—pitiless in her perfection—cold and stern and without mercy.”",
+      "D. “Lady Chiltern, you are a sensible woman, the most sensible woman in London, the most sensible woman I know.”"
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most effectively uses a quotation to illustrate the claim that Lady Gertrude Chiltern is perceived as “both extremely virtuous and unforgiving.” In the quotation, a man describes Lady Chiltern as someone who “does not know what weakness or temptation is.” In other words, the man regards her as someone who is strong and adheres to a strict definition of moral perfection. However, he ironically suggests that this definition excludes mercy and forgiveness—qualities that are also thought of as virtues; according to him, Lady Chiltern is “pitiless in her perfection—cold and stern and without mercy.”This description supports the idea that Lady Chiltern is perceived by others as virtuous as well as unforgiving. Choice A is incorrect. The quotation supports the claim that Lady Chiltern is perceived as virtuous, in that it describes her as “a woman of the very highest principles.” However, it doesn’t characterize her as unforgiving or being perceived as such. Choice B is incorrect. The quotation suggests that Lady Chiltern is concerned with morality, but it suggests that her interest in discussing it is fundamentally hypocritical and functions as a means by which to judge others. However, the quotation doesn’t address the question of whether Lady Chiltern is unmerciful to those who seek forgiveness for harm they have caused. Choice D is incorrect because it doesn’t address either Lady Chiltern’s perceived virtuousness or her perceived lack of forgiveness; instead, it expresses the belief that she is sensible.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "b33e3d13",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Zines are small-scale, self-printed magazines. They have been around since the Black literary zine Fire!! was created in the 1920s. Since then, zines have appealed to creators looking for an inexpensive form of expression to share with a select audience. Zine creators often mix art with social commentary and challenge mainstream culture. At first, the internet appeared to replace the zine, but this old form persists. Today, there are enough zines in the United States to support annual zine festivals. This suggests that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. creators can reach a larger audience by posting online.",
+      "B. zines are still a meaningful form of expression.",
+      "C. creators can continue to explore new art forms.",
+      "D. zines are good sources of mainstream culture."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most logically follows from the text’s point about zines today. The text describes zines as a form of expression that goes back to the 1920s and asserts that \"this old form persists.\" The text then indicates that multiple zines exist in the US today and that they are popular enough to support annual festivals, a point that suggests that people continue to view zines as a meaningful form of expression. Choice A is incorrect because the text’s point about current interest in zines in the US doesn’t logically suggest that zine creators can reach a larger audience by posting online. The text indicates that zines have long had an audience, and there’s no indication that online posts have caused that audience to grow; there’s no mention of zine creators’ use of the internet at all. Choice C is incorrect because the idea that zine creators can explore new art forms—while objectively true—isn’t logically connected to the text’s discussion of zines as an existing form of expression (one that often includes art) or the point that zines are still popular enough in the US to support annual festivals. Choice D is incorrect because the point that zines are popular enough in the US today to support annual festivals doesn’t logically suggest that zines present mainstream culture (or are themselves mainstream); moreover, the text states that zine creators often \"challenge mainstream culture.\"",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "8c72f1a0",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "“The Yellow Wallpaper” is an 1892 short story by Charlotte Perkins Gilman. In the story, the narrator expresses mixed feelings about her surroundings: ______",
+    "question": "Which quotation from “The Yellow Wallpaper” most effectively illustrates the claim?",
+    "options": [
+      "A. “This wallpaper has a kind of sub-pattern in a different shade, a particularly irritating one, for you can only see it in certain lights, and not clearly then.”",
+      "B. “By moonlight—the moon shines in all night when there is a moon—I wouldn’t know it was the same paper.”",
+      "C. “I’m really getting quite fond of the big room, all but that horrid [wall]paper.”",
+      "D. “The color is repellant, almost revolting; a smouldering, unclean yellow, strangely faded by the slow-turning sunlight.”"
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most effectively illustrates the claim that the narrator of \"The Yellow Wallpaper\" has mixed feelings about her surroundings. She says she is \"really getting quite fond of the big room,\" a positive sentiment, but also describes the room’s wallpaper as \"horrid,\" a negative sentiment. Since some of her feelings about her surroundings are positive and others are negative, they are best described as mixed. Choice A is incorrect because though the narrator describes the room’s wallpaper as \"irritating,\" a negative sentiment, she does not mention a positive sentiment. Thus, the quotation does not effectively illustrate the claim that the narrator has mixed feelings about her surroundings. Choice B is incorrect because it describes how the appearance of the room’s wallpaper changes at night but does not mention the narrator’s feelings about her surroundings. Choice D is incorrect because though the narrator describes the room’s wallpaper as \"repellant,\" a negative sentiment, she does not mention a positive sentiment. Thus, the quotation does not effectively illustrate the claim that the narrator has mixed feelings about her surroundings.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "4c4fe342",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "In classical Greek and Roman mythology, female characters are typically cast as either villains lacking in psychological depth or passive victims who are marginal to these stories, which usually focus on the exploits of male characters. Recently, a subgenre has emerged in which writers reimagine these stories from the perspectives of their female characters, giving them agency and complex motivations. Purists argue that such efforts represent a distinctively modern tendency to impose our own values on past civilizations, obscuring those civilizations’ beliefs. Defenders of the subgenre counter that reimaginings of the myths for new cultural contexts are almost as old as the myths themselves, suggesting that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. bringing female perspectives to the forefront is not indicative of a novel attitude regarding fidelity to Greek and Roman myths’ ideologies.",
+      "B. modern writers’ foregrounding of female characters is chiefly motivated by a desire to counterbalance the primacy of male perspectives among earlier adaptations of Greek and Roman myths.",
+      "C. purists are overlooking a long tradition of adapting Greek and Roman myths to focus on female characters.",
+      "D. the complex motivations given to female characters in modern retellings of Greek and Roman myths reflect a recent shift toward psychological depth in fictional representation."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most logically completes the text’s discussion of a literary subgenre that reimagines Greek and Roman myths in a more modern cultural context—namely, the greater visibility and psychological depth of female characters. According to the text, purists object that this subgenre imposes modern values on past civilizations, while the subgenre’s defenders argue that reimagining old myths for new cultural contexts is “almost as old as the myths themselves.” If this argument in defense of the subgenre is accurate, then bringing female perspectives to the forefront of myth is reflective of a long-established attitude regarding writers’ freedom to recontextualize the ideologies of Greek and Roman myths instead of remaining absolutely faithful to them. Choice B is incorrect because the text suggests that modern writers who foreground female characters in their adaptations of Greek and Roman myths are motivated by a desire to counterbalance the primacy of male perspectives in the myths themselves, not in earlier adaptations of those myths. The text doesn’t indicate that the modern writers are responding to earlier adaptations and only discusses those adaptations in the context of the argument that recontextualizing Greek and Roman myths is a very old practice. Choice C is incorrect because the defenders’ claim concerns the general practice of reimagining myths for new cultural contexts, not specifically a tradition of focusing on female characters. The text doesn’t indicate that earlier reimaginings centered on female characters, so it wouldn’t be logical to conclude that purists are overlooking a long tradition of adapting myths to focus on female characters specifically. Choice D is incorrect. While the text supports the claim that the modern retellings of Greek and Roman myths have given complex motivations to the female characters, it doesn’t associate this development with a trend toward the portrayal of greater psychological depth in fiction more broadly or claim that such a trend exists. Moreover, the claim that there is an association wouldn’t follow logically from the last sentence of the text, which asserts that reimagining myths in new cultural contexts is an established practice.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "5dd777c7",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Zooarchaeologist Ophélie Lebrasseur and her team examined a fox skeleton discovered in 1991 at an archaeological site alongside artifacts of human habitation (like spear points) in central Argentina. Lebrasseur et al. determined that the fox was Dusicyon avus, an extinct species resembling a jackal, and radiocarbon dating placed the fox at the site at the same time as human inhabitants. (Indeed, the inhabitants may have deliberately buried the fox.) In addition, while wild foxes have a diet entirely made of meat, isotopic signatures of the skeleton’s teeth indicated that the fox’s diet, like that of the humans, was partly composed of plant material. Lebrasseur et al. therefore concluded that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. the humans who were alive at the same time as the fox most likely ate more meat than the fox did.",
+      "B. the fox may have been a companion animal of the humans who inhabited the site at the same time.",
+      "C. the fox had a diet more similar to that of jackals than to that of wild foxes.",
+      "D. the humans who were alive at the same time as the fox hunted using the spears whose points were also found at the site."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most logically completes the text’s discussion of Lebrasseur et al.’s examination of a fox skeleton found at an archaeological site in central Argentina. The text explains that the fox was found next to artifacts of human habitation, that radiocarbon dating indicated that it was at the site at the same time as human inhabitants, that humans at the site may have deliberately buried the fox, and that analysis indicated that the fox’s diet included meat and plant material, as the humans’ diet did, even though wild foxes eat only meat. The diet similarity, along with the fox’s location, the radiocarbon dating of its remains, and its possibly deliberate burial, suggests the fox was closely associated with the site’s human inhabitants—making it reasonable to conclude that the fox may have been a companion animal of those humans. Choice A is incorrect. The text indicates that both the fox and the human inhabitants at the site had a diet that included both meat and plant material, but the text gives no information about the relative proportions of meat in the fox’s and the humans’ respective diets. Choice C is incorrect. The text states that Dusicyon avus is an extinct species that resembled a jackal, but this description refers to the fox’s physical appearance, not its diet, and no information is given about what jackals eat. Choice D is incorrect. The last two sentences of the text focus on the possibility that the human inhabitants of the site may have given the fox a burial and that they and the fox may have eaten a similarly omnivorous diet—details pointing to the conclusion that the fox may have been a companion animal of the inhabitants. Thus, a conclusion about the hunting technology used by the inhabitants wouldn’t follow from the text.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "b5f9ec91",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "The following text is from Milan Kundera’s 1984 novel The Unbearable Lightness of Being (translated by Michael Henry Heim in 1984). Karenin is a dog that belongs to Tomas and Tereza.\n\nKarenin was not overjoyed by the move to Switzerland [from Prague]. Karenin hated change. Dog time cannot be plotted along a straight line; it does not move on and on, from one thing to the next. It moves in a circle like the hands of a clock, which—they, too, unwilling to dash madly ahead—turn round and round the face, day in and day out following the same path. In Prague, when Tomas and Tereza bought a new chair or moved a flower pot, Karenin would look on in displeasure. It disturbed his sense of time. It was as though they were trying to dupe the hands of the clock by changing the numbers on its face.\n\n©1984 by Milan Kundera. Translation\n\n©1984 by Harper & Row, Publishers, Inc.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. As a dog, Karenin possesses a sense of time that involves a strong preference for predictability and an aversion to disruption.",
+      "B. After he’s moved to a new home, Karenin’s negative response to changes has become more pronounced.",
+      "C. Similar to Tomas and Tereza, Karenin comprehends time as circular rather than as a straightforward progression.",
+      "D. As is the case for other dogs, Karenin’s sense of time seems to accelerate depending on the objects and places that surround him."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most accurately states the main idea of the text. The text begins by stating that Tomas and Tereza’s dog Karenin felt disrupted by a recent move because of his dislike of change. The text then goes on to suggest that this is because the way a dog experiences time differs from the way humans experience time: time for a dog doesn’t move linearly, going \"on and on, from one thing to the next,\" but instead moves circularly, \"like the hands of a clock.\" That is, time for a dog is experienced as a cyclical pattern characterized by routine and predictability, with each day \"following the same path.\" The text then concludes by providing examples of seemingly insignificant changes in routine that profoundly \"disturbed [Karenin’s] sense of time,\" causing him to feel displeasure. Thus, the main idea of the text is that Karenin’s sense of time as a dog involves a strong preference for predictability and an aversion to disruption. Choice B is incorrect. Although the text emphasizes Karenin’s displeasure with the recent move to a new home, it doesn’t suggest that the move has made his negative responses more pronounced than they once were. Rather, in accounting for Karenin’s displeasure with the move to Switzerland, the text explains that Karenin generally has a negative response to any kind of change. Choice C is incorrect because the text doesn’t suggest that Karenin comprehends time similarly to how Tomas and Tereza comprehend it. On the contrary, the text strongly implies a contrast between dogs’ circular experience of time with the way humans experience time as a straightforward progression that can be \"plotted on a straight line.\" Choice D is incorrect because the text provides no indication that a change in the places and objects surrounding Karenin causes him to feel as though time is accelerating. Although the text does use the language of \"dash[ing] madly ahead\" in relation to time, the phrase appears in the context of a comparison illustrating how dogs experience time: time for a dog moves just as the hands of a clock do, in a circle and \"unwilling to dash madly ahead\"—that is, always in a regular and predictable way.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "51c25798",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Cats can judge unseen people’s positions in space by the sound of their voices and thus react with surprise when the same person calls to them from two different locations in a short span of time. Saho Takagi and colleagues reached this conclusion by measuring cats’ levels of surprise based on their ear and head movements while the cats heard recordings of their owners’ voices from two speakers spaced far apart. Cats exhibited a low level of surprise when owners’ voices were played twice from the same speaker, but they showed a high level of surprise when the voice was played once each from the two different speakers.",
+    "question": "According to the text, how did the researchers determine the level of surprise displayed by the cats in the study?",
+    "options": [
+      "A. They watched how each cat moved its ears and head.",
+      "B. They examined how each cat reacted to the voice of a stranger.",
+      "C. They studied how each cat physically interacted with its owner.",
+      "D. They tracked how each cat moved around the room."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it explains how the researchers determined the level of surprise displayed by the cats in the study. The text states that Saho Takagi and colleagues played recordings of the voice of each cat’s owner and measured how surprised the cat was by the recording based on how it moved its ears and head. Choice B is incorrect because, as the text explains, the recordings played for each cat in the study were of the voice of the cat’s owner, not a stranger’s voice. Choice C is incorrect because the text explains that during the study, the cats didn’t interact directly with their owners; instead, the cats listened to recordings of their owners’ voices. Choice D is incorrect because the text doesn’t indicate that the researchers monitored the cats’ movement around the room in which the study was conducted.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "6d764ebc",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Readers sometimes divide the works of twentieth-century English author Evelyn Waugh into two periods: one consisting of his early satirical novels and the other consisting of his later, more serious—even ponderous—books. Critic Seamus Perry, however, challenges that strict division. Perry argues that Waugh’s writing didn’t change over time as much as some readers have suggested. For instance, Perry contends that some of Waugh’s earliest works, notably his biography of artist Dante Gabriel Rossetti, exhibit the earnest romanticism that would characterize Waugh’s later fiction.",
+    "question": "Based on the text, which statement about Waugh’s works would Perry most likely agree with?",
+    "options": [
+      "A. Waugh’s works can appropriately be separated into two periods by their subject matter and tone.",
+      "B. Regardless of when they were written, Waugh’s works have important similarities that transcend their differences.",
+      "C. The earliest of Waugh’s works exhibit a satirical tone, even if that tone is more apparent in Waugh’s later works.",
+      "D. Over time, Waugh’s works became less humorous and more focused on weightier topics."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it presents a statement that is consistent with Perry’s position as described in the text. The text explains that although Waugh’s works are sometimes divided into an early period typified by satirical novels and a later period consisting of “more serious” works, Perry “challenges that strict division” and argues that Waugh’s writing “didn’t change over time as much as some readers have suggested.” As evidence, Perry notes that Waugh’s biography of Dante Gabriel Rossetti and other early works show the “earnest romanticism” associated with Waugh’s later fiction, suggesting continuity across the two periods and also across genres. It is therefore likely that Perry would agree that Waugh’s works have important similarities that transcend their differences, regardless of when they were written. Choice A is incorrect because the text states that Perry challenges the “strict division” of Waugh’s works into two periods typified by their subject matter and tone. Perry therefore would likely disagree that such separation is appropriate; instead, he argues that Waugh’s writing shows more continuity across time than this division suggests. Choice C is incorrect because it mischaracterizes the similarity that Perry notes in Waugh’s earlier and later works. Perry contends that Waugh’s early works exhibit the “earnest romanticism” of his later fiction, not that the early works’ satirical tone appears more prominently later. Although the text mentions that Waugh’s earlier works are often satirical, Perry’s argument doesn’t emphasize this trait or trace its development over time. Choice D is incorrect because it reflects the periodization of Waugh’s works that Perry is challenging. The text indicates that Perry argues against the idea that Waugh’s writing changed dramatically over the course of his career, and Perry specifically emphasizes a point of similarity between Waugh’s earlier and later works. Given this stance, it’s unlikely that Perry would agree that Waugh’s works became less humorous and more serious over time.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "a805bf46",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "An archaeological team led by Piotr Bieliński and Sultan al-Bakri found remnants of a 4,000-year-old Bronze Age board game at a site in Oman. Little is left of the game except a stone board, which is carved with a grid and has places to hold game pieces. Some scholars claim that the game was largely played by traders.",
+    "question": "Which finding, if true, would most directly support the scholars’ claim?",
+    "options": [
+      "A. Other examples of the game dating to the same period have been found in the remains of several homes in the region, including in one home that may have belonged to a trader.",
+      "B. Similar games have been found in other sites dating to the same period that were connected to the site in Oman via trade routes.",
+      "C. The other known examples of the game dating to the same period have been found along routes that seem to have been used primarily by traders at the time.",
+      "D. Remnants of other goods have been found at the site in Oman that probably also reached the location through trade."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it presents a finding that, if true, would most directly support the scholars’ claim about the board game. The text explains that the remains of a 4,000-year-old board game were found in Oman. The text then states that scholars claim this board game was played mostly by traders. If the other known examples of this board game from the same time period were discovered along routes that seem to have been used primarily by traders, this finding would directly support the scholars’ claim because it suggests that the game was largely played by traders who brought it with them for entertainment as they traveled. Choice A is incorrect because this finding would suggest only that a single trader may have possessed examples of the board game, perhaps for the purpose of trading or selling the game to residents of Oman. For this reason, the finding wouldn’t directly support the scholars’ claim that the majority of the game’s players were traders. Choice B is incorrect because this finding doesn’t mention the board game at all, referring only to similar games found at other sites, and would therefore provide no direct support for the scholars’ claim about the board game. Choice D is incorrect because this finding doesn’t mention the board game at all, referring only to the remains of other goods found at the site in Oman, and would therefore provide no direct support for the scholars’ claim about the board game.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "858be80e",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice best describes data from the graph that support the biologists’ claim?",
+    "options": [
+      "A. The number of captive California condors steadily decreased between 2014 and 2020.",
+      "B. The numbers of California condors living both in captivity and in the wild decreased only slightly from 2019 to 2020.",
+      "C. The difference between the number of captive and wild California condors remained relatively steady between 2014 and 2017.",
+      "D. The number of wild California condors increased overall from 2014 to 2020 and exceeded the number of those living in captivity."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it best describes data from the graph that support the biologists’ claim. The text accompanying the graph describes the efforts of the California Condor Recovery Program, which is working to protect the condor from extinction. The program captured some condors in 1987 in order to breed them and has been reintroducing captive birds into the wild since 1992. Many biologists claim the program has been a success, as the text explains, and it is reasonable to infer that an indication of the program’s success would be an increase in the wild condor population compared to the captive condor population. The graph shows the wild and captive condor populations in California between 2014 and 2020. In 2014 there were slightly more than 200 wild condors in California, but by 2020 there were more than 300. Meanwhile, over the same period the captive condor population remained under 200. Thus, the biologists’ claim about the program’s success is supported by data from the graph showing that the number of wild California condors increased overall from 2014 to 2020 and exceeded the number of those living in captivity. Choice A is incorrect because it does not accurately describe data from the graph. The number of captive California condors did not steadily decrease between 2014 and 2020: rather, it increased slightly during some years and decreased slightly during others, generally remaining at slightly less than 200. Choice B is incorrect. Even though the graph does show a slight decrease in both the captive and wild condor populations from 2019 to 2020, such a decrease during a particular year would not demonstrate the program’s success. Choice C is incorrect because it does not accurately describe data from the graph. The difference between the number of captive and wild California condors did not remain relatively steady between 2014 and 2017. While the number of captive condors remained roughly the same during that period, the number of wild condors increased, so the difference between the number of captive and wild condors increased as well.",
+    "image": "assets/coeq_858be80e.png",
+    "alt": "Data figure: California Condor Populations. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "d8aa4eaf",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "The Indus River valley civilization flourished in South Asia from 3300 BCE to 1300 BCE. Many examples of the civilization’s writing system exist, but researchers haven’t yet deciphered it or identified which ancient language it represents. Nevertheless, archaeologists have found historical artifacts, such as clay figures and jewelry, that provide information about the civilization’s customs and how its communities were organized. The archaeologists’ findings therefore suggest that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. investigating an ancient civilization is easier without knowledge of the civilization’s language.",
+      "B. knowing an ancient civilization’s language isn’t necessary in order to learn details about the civilization.",
+      "C. archaeological research should focus on finding additional artifacts rather than deciphering ancient languages.",
+      "D. examining the civilization’s historical artifacts has resolved the debate about this civilization’s language."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most logically completes the text’s discussion of the Indus River valley civilization. The text establishes that archaeologists haven’t been able to interpret the Indus River valley civilization’s writing system but have nevertheless acquired information about the civilization through historical artifacts. The fact that archaeologists have been able to learn about the Indus River valley civilization’s customs and community organization from historical artifacts suggests that it isn’t necessary to understand an ancient civilization’s language to learn about the civilization. Choice A is incorrect because the text doesn’t discuss how easy it is to investigate ancient civilizations with or without knowledge of the civilization’s language; rather, it states that even though researchers have not yet deciphered the language of the Indus River valley civilization, they are still able to learn about it through historical artifacts. Choice C is incorrect because the text doesn’t make any claims as to what the focus of archaeological research should be. Rather, the text discusses how archaeologists have been able to learn about an ancient civilization through historical artifacts despite not understanding the civilization’s language. Choice D is incorrect because the text states that the civilization’s language has not yet been interpreted; it makes no mention of a debate about the language. Instead, the text suggests that examination of the historical artifacts has allowed archaeologists to learn about the civilization but has not aided thus far in deciphering its language.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "640f8469",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Researchers hypothesized that a decline in the population of dusky sharks near the mid-Atlantic coast of North America led to a decline in the population of eastern oysters in the region. Dusky sharks do not typically consume eastern oysters but do consume cownose rays, which are the main predators of the oysters.",
+    "question": "Which finding, if true, would most directly support the researchers’ hypothesis?",
+    "options": [
+      "A. Declines in the regional abundance of dusky sharks’ prey other than cownose rays are associated with regional declines in dusky shark abundance.",
+      "B. Eastern oyster abundance tends to be greater in areas with both dusky sharks and cownose rays than in areas with only dusky sharks.",
+      "C. Consumption of eastern oysters by cownose rays in the region substantially increased before the regional decline in dusky shark abundance began.",
+      "D. Cownose rays have increased in regional abundance as dusky sharks have decreased in regional abundance."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents a finding that, if true, would most directly support the researchers’ hypothesis about the connection between the dusky shark population decline and the eastern oyster population decline. The text indicates that although dusky sharks don’t usually eat eastern oysters, they do consume cownose rays, which are the main predators of eastern oysters. An increase in the abundance of cownose rays in the region in response to a decline in the abundance of dusky sharks would directly support the researchers’ hypothesis: a higher number of cownose rays would consume more eastern oysters, driving down the oyster population. Choice A is incorrect because a finding that there’s an association between a decline in the regional abundance of some of dusky sharks’ prey and the regional abundance of dusky sharks wouldn’t directly support the researchers’ hypothesis that a decline in dusky sharks has led to a decline in eastern oysters in the region. Although such a finding might help explain why shark abundance has declined, it would reveal nothing about whether the shark decline is related to the oyster decline. Choice B is incorrect because a finding that eastern oyster abundance tends to be greater when dusky sharks and cownose rays are present than when only dusky sharks are present wouldn’t support the researchers’ hypothesis that a decline in dusky sharks has led to a decline in eastern oysters in the region. The text indicates that the sharks prey on the rays, which are the main predators of the oysters; if oyster abundance is found to be greater when rays are present than when rays are absent, that would suggest that rays aren’t keeping oyster abundance down, and thus that a decline in rays’ predators, which would be expected to lead to an increase in the abundance of rays, wouldn’t bring about a decline in oyster abundance as the researchers hypothesize. Choice C is incorrect because a finding that consumption of eastern oysters by cownose rays increased substantially before dusky sharks declined in regional abundance wouldn’t support the researchers’ hypothesis that the decline in dusky sharks has led to a decline in eastern oysters in the region. Such a finding would suggest that some factor other than shark abundance led to an increase in rays’ consumption of oysters and thus to a decrease in oyster abundance, thereby weakening the researchers’ hypothesis.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "4af56f54",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Many of William Shakespeare’s tragedies address broad themes that still appeal to today’s audiences. For instance, Romeo and Juliet, which is set in the Italy of Shakespeare’s time, tackles the themes of parents versus children and love versus hate, and the play continues to be read and produced widely around the world. But understanding Shakespeare’s so-called history plays can require a knowledge of several centuries of English history. Consequently, ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. many theatergoers and readers today are likely to find Shakespeare’s history plays less engaging than the tragedies.",
+      "B. some of Shakespeare’s tragedies are more relevant to today’s audiences than twentieth-century plays.",
+      "C. Romeo and Juliet is the most thematically accessible of all Shakespeare’s tragedies.",
+      "D. experts in English history tend to prefer Shakespeare’s history plays to his other works."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most logically completes the text’s discussion of the relative appeal of different kinds of plays by Shakespeare to today’s audiences. According to the text, Shakespeare’s tragedies address broad themes that continue to appeal to today’s audiences. Indeed, the text suggests that these themes are timeless, as illustrated by the example of Romeo and Juliet, which the text states is still read and widely performed despite being set in the Italy of Shakespeare’s time. In contrast, the text indicates that audiences and readers may need to be familiar with several centuries of English history in order to understand Shakespeare’s history plays. Because many theatergoers and readers are unlikely to possess such extensive historical knowledge, it follows that they are likely to find Shakespeare’s history plays less engaging than his more accessible tragedies. Choice B is incorrect because the text never introduces a comparison between Shakespeare’s tragedies and twentieth-century plays, only between Shakespeare’s tragedies and his history plays. Since twentieth-century plays aren’t mentioned, there’s no basis in the text for the idea that some of Shakespeare’s tragedies are more relevant than twentieth-century plays to today’s audiences. Choice C is incorrect. Although the text indicates that Romeo and Juliet is thematically accessible to today’s audiences, it doesn’t suggest that Romeo and Juliet is more accessible than Shakespeare’s other tragedies. Rather, the text presents Romeo and Juliet as an example to support the idea that Shakespeare’s tragedies hold continued appeal for today’s readers and theatergoers. Choice D is incorrect. Although experts in English history would likely possess the knowledge needed to understand Shakespeare’s history plays, the text never mentions such experts or suggests that they would enjoy the history plays more than Shakespeare’s other works.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "663a6ee1",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to illustrate the claim?",
+    "options": [
+      "A. the percentage of 2016 cookbook sales that were e-books with the percentage of 2016 science fiction and fantasy sales that were e-books.",
+      "B. the percentage of 2006 romance sales that were e-books with the percentage of 2016 romance sales that were e-books.",
+      "C. the percentage of 2006 romance sales that were e-books with the 2006 science fiction and fantasy sales that were e-books.",
+      "D. the percentage of 2011 travel guide sales that were e-books with the percentage of 2016 travel guide sales that were e-books."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it uses data from the table to effectively support the claim that book genres that typically require the reader to start at the beginning of the story and read straight through are more commercially successful as e-books than other genres. For each of three years, the table presents four book genres and the percentage of total sales for each genre in e-book format. Cookbooks, a nonfiction genre, do not require the reader to read straight through. According to the table, 10.5 percent of total cookbook sales in 2016 were in the e-book format. The 2016 percentage of e-book sales was 36.7 percent in the science fiction and fantasy genre, which are typically stories read straight through from start to finish. The higher percentage of total sales of the story-based e-books in 2016 supports the claim in the text. Choice B is incorrect because it compares the e-book sales of romance books in 2006 to those in 2016. Romance books are meant to be read straight through from start to finish. The text claims that books that are not stories and do not require reading straight through are not as commercially successful in e-book format as those that do. As this choice is only comparing e-book sales for one genre, it does not support the claim. Choice C is incorrect because both science fiction and fantasy and romance novels are fiction books meant to be read straight through from beginning to end. The text claims that books that are not stories and do not require reading straight through are less commercially successful in e-book format than those that do. As this choice does not compare e-book sales of story genres to e-book sales in genres that are not stories, it does not support the claim. Choice D is incorrect. Although the data in the table show that the travel guide e-books made up a greater percentage of total sales in 2016 than in 2011, this doesn’t illustrate the claim in the text that e-books in nonfiction genres not meant to be read straight through are less commercially successful. The claim cannot be supported without comparing the percentage of e-book sales between fiction and nonfiction book genres from the table.",
+    "image": "assets/coeq_663a6ee1.png",
+    "alt": "Data figure: E-book Sales as a Percentage of Total Unit Sales in All Book Formats for a Large US Trade Publisher, by Genre, 2006. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "f4e69587",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Whistler waves are low-frequency plasma waves that on Earth are typically generated by lightning. Numerous recordings of whistler waves on Venus have led many scientists to suggest that the planet’s atmosphere is host to extensive amounts of lightning, and, in fact, Venusian whistler waves have similar energy signatures to those of whistler waves generated by lightning on Earth. The majority of Venusian whistler wave data come from two spacecraft missions—the Pioneer Venus Orbiter (PVO) and the Venus Express (VEX)—which have included few observations of other phenomena consistent with lightning occurrences (such as flashes of light), leading other scientists to suggest that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. similarities in the energy signatures of Venusian and Earth whistler waves may reflect imprecisions in the PVO and VEX data.",
+      "B. the purported Venusian whistler waves must actually be some other type of atmospheric activity than whistler waves.",
+      "C. Venusian lightning has properties that make it unlikely to generate whistler waves.",
+      "D. there are geophysical characteristics of Venus not shared with Earth that promote the generation of whistler waves."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most logically completes the text’s discussion of whistler waves on Venus and the question of their origin. The text explains that whistler waves are plasma waves and that on Earth they are generated by lightning. The text goes on to state that numerous recordings of whistler waves on Venus have led many scientists to suggest Venus hosts lightning. However, the text goes on to explain that data from the PVO and VEX missions have included little evidence of the other phenomena that would be expected if lightning were occurring in Venus’s atmosphere. Because there is a lack of additional evidence of lightning, it is reasonable to conclude that some scientists would be skeptical that lightning is the source of the whistler waves on Venus and would suggest unique geophysical characteristics of Venus as an alternative explanation for the waves’ generation. Choice A is incorrect because the text indicates that the other scientists are responding to the PVO and VEX data simply not showing additional evidence of lightning on Venus, not to flaws in the data. The text presents the similar energy signatures of Venusian and Earth whistler waves as an established observation and doesn’t suggest the PVO and VEX data are imprecise. Choice B is incorrect because the text presents the similar energy signatures of Venusian and Earth whistler waves as an established observation. The text indicates that the other scientists are concerned with the lack of corroborating evidence of lightning on Venus, suggesting not that they doubt that the waves are whistler waves but rather that they doubt that the waves are generated by lightning. Choice C is incorrect because the text indicates that the other scientists are responding to the data providing little corroborating evidence of lightning on Venus. This suggests that instead of making a suggestion about properties of Venusian lightning, the other scientists likely would suggest that there may not even be lightning on Venus.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "e4beb9be",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "In dialects of English spoken in Scotland, the “r” sound is strongly emphasized when it appears at the end of syllables (as in “car”) or before other consonant sounds (as in “bird”). English dialects of the Upland South, a region stretching from Oklahoma to western Virginia, place similar emphasis on “r” at the ends of syllables and before other consonant sounds. Historical records show that the Upland South was colonized largely by people whose ancestors came from Scotland. Thus, linguists have concluded that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. the English dialects spoken in the Upland South acquired their emphasis on the “r” sound from dialects spoken in Scotland.",
+      "B. emphasis on the “r” sound will eventually spread from English dialects spoken in the Upland South to dialects spoken elsewhere.",
+      "C. the English dialects spoken in Scotland were influenced by dialects spoken in the Upland South.",
+      "D. people from Scotland abandoned their emphasis on the “r” sound after relocating to the Upland South."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most logically completes the text’s discussion of English dialects spoken in Scotland and the Upland South. The text indicates that these dialects share a feature: putting emphasis on the \"r\" sound when it appears in certain positions in words. The text goes on to state that records indicate the Upland South was colonized largely by people of Scottish ancestry. It is reasonable to assume that the English dialects spoken by these colonizers were influenced by the English dialects spoken by their ancestors in Scotland. It follows, then, that the emphasis on the \"r\" sound in the dialects in Scotland carried over into the Upland South dialects as they developed—that is, that the Upland South dialects likely acquired it from dialects spoken in Scotland. Choice B is incorrect because the text suggests that Scottish ancestry explains the origin of the emphasis on the \"r\" sound in English dialects spoken in the Upland South, since that linguistic feature is also found in dialects spoken in Scotland; the text doesn’t address any other dialects or suggest that the feature will spread elsewhere. Choice C is incorrect because the text indicates that many Upland South colonizers were the descendants of Scottish people, suggesting that the English dialects spoken by these colonizers had been influenced by the English dialects spoken by the colonizers’ ancestors in Scotland and had acquired their emphasis on the \"r\" sound from those ancestors’ dialects—not the other way around. Choice D is incorrect because the text indicates that the emphasis on the \"r\" sound is part of English dialects spoken in the Upland South today, which almost certainly wouldn’t be the case if people from Scotland, who were the main colonizers of the Upland South, had eliminated that linguistic feature from their dialects.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "52bfe0be",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Given that stars and planets initially form from the same gas and dust in space, some astronomers have posited that host stars (such as the Sun) and their planets (such as those in our solar system) are composed of the same materials, with the planets containing equal or smaller quantities of the materials that make up the host star. This idea is also supported by evidence that rocky planets in our solar system are composed of some of the same materials as the Sun.",
+    "question": "Which finding, if true, would most directly weaken the astronomers’ claim?",
+    "options": [
+      "A. Most stars are made of hydrogen and helium, but when cooled they are revealed to contain small amounts of iron and silicate.",
+      "B. A nearby host star is observed to contain the same proportion of hydrogen and helium as that of the Sun.",
+      "C. Evidence emerges that the amount of iron in some rocky planets is considerably higher than the amount in their host star.",
+      "D. The method for determining the composition of rocky planets is discovered to be less effective when used to analyze other kinds of planets."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it presents a finding that, if true, would weaken the astronomers’ claim about the makeup of host stars and their planets. The text explains that because stars and planets begin forming from the same gas and dust, astronomers believe planets should be composed of the same materials as their host stars, but in equal or smaller quantities. The finding that the amount of iron in some rocky planets is much higher than the amount in their host star would weaken the astronomers’ claim because it would show that some planets contain the same material as their host star, but in higher quantities. Choice A is incorrect because a finding only about the makeup of stars, whether they’ve cooled or not, would provide no information about the makeup of planets. Thus, it wouldn’t have any bearing on the claim that planets and their host stars are composed of the same materials in differing quantities. Choice B is incorrect because a finding about two host stars having similar proportions of certain materials wouldn’t provide any information about the makeup of planets. Thus, it wouldn’t be relevant to the claim that planets and their host stars are composed of the same materials in differing quantities. Choice D is incorrect because the text indicates that the astronomers’ claim is based on a fact—that stars and planets begin forming from the same gas and dust in space—which would remain true regardless of the effectiveness of a method for analysis of compositions. The text does cite analysis of rocky planets in our solar system and the Sun, but only as a single piece of evidence that is consistent with the claim and not as the source of the claim; the finding that the method used for that analysis is less effective in other scenarios wouldn’t weaken a claim that’s based on knowledge of how stars and planets initially form.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "7f2a2e99",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "The Post Office is a 1912 play by Rabindranath Tagore, originally written in Bengali. The character Amal is a young boy who imagines that the people he sees passing the window of his home are carefree even when engaged in work or chores, as is evident when he says to the daughter of a flower seller, ______",
+    "question": "Which quotation from The Post Office most effectively illustrates the claim?",
+    "options": [
+      "A. “I see, you don’t wish to stop; I don’t care to stay on here either.”",
+      "B. “Oh, flower gathering? That is why your feet seem so glad and your anklets jingle so merrily as you walk.”",
+      "C. “I’ll pay when I grow up—before I leave to look for work out on the other side of that stream there.”",
+      "D. “Wish I could be out too. Then I would pick some flowers for you from the very topmost branches right out of sight.”"
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most effectively illustrates the claim that Amal imagines the people he sees are carefree even when engaged in work. In the quotation, Amal observes that the flower seller’s daughter is “flower gathering,” or working, as the text indicates. Moreover, Amal notes that the daughter’s feet “seem so glad” and her “anklets jingle so merrily,” suggesting that Amal believes that the flower seller’s daughter is cheerful. Choice A is incorrect because the quotation makes no observation about the cheerful mood of the flower seller’s daughter. Choice C is incorrect because the quotation discusses how Amal envisions his future, not the feelings of the flower seller’s daughter. Choice D is incorrect because the quotation discusses Amal’s wishes, not the feelings of the flower seller’s daughter.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "2cbb1a7d",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice best describes data in the graph that support the student’s claim?",
+    "options": [
+      "A. No turbines installed in 2011 had rotor diameters greater than 115 meters, whereas the majority of turbines installed in 2021 had rotor diameters greater than 130 meters.",
+      "B. Most turbines installed in 2011 had rotor diameters of less than 100 meters, whereas most turbines installed in 2021 had rotor diameters of at least 115 meters.",
+      "C. In 2011, nearly 80% of turbines installed had rotor diameters of less than 100 meters, whereas only a little more than 20% of turbines installed that year had rotor diameters of 100–115 meters.",
+      "D. The percentage of newly installed turbines with rotor diameters greater than 130 meters increased every year between 2011 and 2021."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer. The text tells us that turbines with larger rotor diameters produce more energy, so if rotor diameters have generally gotten larger between 2011 and 2021, then turbines created in 2021 should produce more energy than those created in 2011. Choice A is incorrect. This choice misreads the graph. In 2021, only about 25% of turbines installed in 2021 had rotor diameters greater than 130 meters. Choice C is incorrect. This choice doesn’t justify the claim. The claim is about increasing energy output from 2011 to 2021, but this choice only discusses 2011, so it can’t show evidence of change over time. Choice D is incorrect. This choice misreads the graph. The percentage of newly installed turbines with rotor diameters greater than 130 meters didn’t show any visible increase until 2018.",
+    "image": "assets/coeq_2cbb1a7d.png",
+    "alt": "Data figure: Rotor Diameters of Newly Installed Wind Turbines in the United States, 2011–2021. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "4b1da2e5",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "In 2019, 20 previously unknown moons were confirmed to be orbiting Saturn. Three of the moons have prograde orbits (orbiting in the direction the planet spins), and the other 17 have retrograde orbits (orbiting in the opposite direction of the planet’s spin). All but one of the 20 moons are thought to be remnants of bodies that orbited Saturn until they broke apart in collisions. Although the one exceptional moon orbits in the same direction as the planet’s spin, its orbit is highly eccentric compared to the rest, which may suggest that it has a different origin than the other 19 moons.",
+    "question": "Based on the text, which choice best describes the moon with the eccentric orbit?",
+    "options": [
+      "A. It doesn’t have a retrograde orbit, but it likely has the same origin as the moons with retrograde orbits.",
+      "B. Its orbit is so tilted with respect to the other moons’ orbits that it’s neither prograde nor retrograde.",
+      "C. It has a prograde orbit that is likely the result of having collided with another body orbiting Saturn.",
+      "D. It has a prograde orbit and may not be a remnant of an earlier body that orbited Saturn."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most accurately describes the moon with the eccentric orbit. The text indicates that three of the 20 newly discovered moons have prograde orbits, meaning that they orbit Saturn in the same direction as the planet’s spin, while the other 17 moons have retrograde orbits, meaning that they orbit Saturn in the opposite direction of the planet’s spin. The text then states that 19 of the 20 moons appear to be the remains of earlier bodies that orbited Saturn but were broken apart in collisions. The one exception is a moon that orbits Saturn in the same direction as the planet’s spin, meaning that the exceptional moon’s orbit is prograde. The text goes on to state that the exceptional moon’s orbit is so eccentric that the moon may have formed through a different process than the other 19 moons. The moon with the eccentric orbit, therefore, has a prograde orbit and may not be a remnant of an earlier body that orbited Saturn. Choice A is incorrect because nothing in the text supports the idea that the moon with the eccentric orbit likely has the same origin as the moons with retrograde orbits. Although it’s true that the moon has a prograde orbit (and thus doesn’t have a retrograde orbit), the only information the text provides about the moon’s origin is that it may be different than the origin of the other 19 moons. Choice B is incorrect because the text states that the moon in question orbits Saturn in the same direction as the planet’s spin, meaning that the moon’s orbit is prograde, not that its orbit is neither prograde nor retrograde. Choice C is incorrect because the text merely notes that the moon in question has a prograde orbit without giving any indication of what likely caused that orbit.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "c3629f2f",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Fish whose DNA has been modified to include genetic material from other species are known as transgenic. Some transgenic fish have genes from jellyfish that result in fluorescence (that is, they glow in the dark). Although these fish were initially engineered for research purposes in the 1990s, they were sold as pets in the 2000s and can now be found in the wild in creeks in Brazil. A student in a biology seminar who is writing a paper on these fish asserts that their escape from Brazilian fish farms into the wild may have significant negative long-term ecological effects.",
+    "question": "Which quotation from a researcher would best support the student’s assertion?",
+    "options": [
+      "A. “In one site in the wild where transgenic fish were observed, females outnumbered males, while in another the numbers of females and males were equivalent.”",
+      "B. “Though some presence of transgenic fish in the wild has been recorded, there are insufficient studies of the impact of those fish on the ecosystems into which they are introduced.”",
+      "C. “The ecosystems into which transgenic fish are known to have been introduced may represent a subset of the ecosystems into which the fish have actually been introduced.”",
+      "D. “Through interbreeding, transgenic fish might introduce the trait of fluorescence into wild fish populations, making those populations more vulnerable to predators.”"
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because this quotation would best support the student’s assertion that the escape of transgenic fish from Brazilian fish farms into the wild may have significant negative long-term ecological effects. The text explains that transgenic fish have DNA that includes genetic material from other species, that some transgenic fish have genes from jellyfish that make them glow in the dark, and that glow-in-the- dark transgenic fish can now be found in the wild in Brazilian creeks. The quotation indicates why the escape of these fish may have negative long-term ecological effects: glow-in-the-dark transgenic fish might introduce fluorescence into wild fish populations by breeding with wild fish, causing wild fish to glow in the dark and thereby allowing predators to prey on them much more easily. Choice A is incorrect because this quotation doesn’t mention any negative effects of the introduction of fluorescent transgenic fish into the wild. The quotation merely compares the ratio of females to males at two sites in the wild where transgenic fish have been observed. Choice B is incorrect because this quotation doesn’t support the idea that the escape of fluorescent transgenic fish from Brazilian fish farms may have significant negative long-term ecological effects. Rather, the quotation suggests that more research is needed to understand the effects. Choice C is incorrect because this quotation supports the idea that transgenic fish may be present in more ecosystems than has been observed; it doesn’t address whether the presence of fluorescent transgenic fish affects these ecosystems.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "bbdb6114",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Art collectives, like the United States- and Vietnam-based collective The Propeller Group or Cuba’s Los Carpinteros, are groups of artists who agree to work together: perhaps for stylistic reasons, or to advance certain shared political ideals, or to help mitigate the costs of supplies and studio space. Regardless of the reasons, art collectives usually involve some collaboration among the artists. Based on a recent series of interviews with various art collectives, an arts journalist claims that this can be difficult for artists who are often used to having sole control over their work.",
+    "question": "Which quotation from the interviews best illustrates the journalist’s claim?",
+    "options": [
+      "A. “The first collective I joined included many amazingly talented artists, and we enjoyed each other’s company, but because we had a hard time sharing credit and responsibility for our work, the collective didn’t last.”",
+      "B. “We work together, but that doesn’t mean that individual projects are equally the work of all of us. Many of our projects are primarily the responsibility of whoever originally proposed the work to the group.”",
+      "C. “Having worked as a member of a collective for several years, it’s sometimes hard to recall what it was like to work alone without the collective’s support. But that support encourages my individual expression rather than limits it.”",
+      "D. “Sometimes an artist from outside the collective will choose to collaborate with us on a project, but all of those projects fit within the larger themes of the work the collective does on its own.”"
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents the quotation that best illustrates the journalist’s claim. By indicating that a collective didn’t continue because it was hard to share credit and responsibilities within the group even though the company was enjoyable, the quotation shows that working collaboratively can be difficult for artists who are used to having complete control over their work. Choice B is incorrect because the quotation indicates that members of a collective are able to collaborate together and have agreed on a fair way to manage their responsibilities; this doesn’t demonstrate the challenge of sharing control among members of a collective. Choice C is incorrect because the quotation highlights the support and encouragement of individual expression an artist experiences due to working in a collective; these positive aspects don’t demonstrate the challenge of sharing control among members of a collective. Choice D is incorrect because the quotation doesn’t address any challenges of sharing control among members of a collective; it simply indicates that artists sometimes choose to work with collectives without having to be a member. Therefore, the quotation doesn’t illustrate the journalist’s claim.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "7cb08d0f",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Choctaw/Cherokee artist Jeffrey Gibson turns punching bags used by boxers into art by decorating them with beadwork and elements of Native dressmaking. These elements include leather fringe and jingles, the metal cones that cover the dresses worn in the jingle dance, a women’s dance of the Ojibwe people. Thus, Gibson combines an object commonly associated with masculinity (a punching bag) with art forms traditionally practiced by women in most Native communities (beadwork and dressmaking). In this way, he rejects the division of male and female gender roles.",
+    "question": "Which choice best describes Gibson’s approach to art, as presented in the text?",
+    "options": [
+      "A. He draws from traditional Native art forms to create his original works.",
+      "B. He has been influenced by Native and non-Native artists equally.",
+      "C. He finds inspiration from boxing in designing the dresses he makes.",
+      "D. He rejects expectations about color and pattern when incorporating beadwork."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most accurately describes Gibson’s approach to art. As the text explains, Gibson, who is Cherokee and Choctaw, transforms punching bags into art pieces by applying (or attaching) to them beadwork and elements of Native dressmaking, including leather fringe and the jingles of the jingle dress. The text goes on to say that in most Native communities, the art forms of beadwork and dressmaking are traditionally practiced by women. Therefore, Gibson’s approach to art consists of creating original works by drawing from traditional Native art forms. Choice B is incorrect. Because Gibson incorporates Native art forms into his own original artwork, it can be inferred that he has been influenced by other Native artists, but the text never suggests that non-Native artists have influenced him. Choice C is incorrect because the text doesn’t indicate that Gibson designs dresses influenced by boxing but instead that he turns punching bags, which are used in boxing, into works of art by applying elements of Native dressmaking to them. Choice D is incorrect. Although Gibson does incorporate beadwork into his art, the text never mentions the colors or patterns that he uses or suggests that his art defies the expectations that people might have about color and pattern in beadwork.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "74e1f4aa",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "NASA’s Aspera mission, led by Carlos Vargas, will investigate the circumgalactic medium (CGM), the huge swaths of low-density gas that fill and surround galaxies. Specifically, the team will focus on portions of the gas that exist in a “warm-hot” phase: these portions haven’t previously been observable but are thought to fuel new star formation and hold most of the mass that makes up a galaxy. Using a telescope capable of revealing these parts of the CGM, the Aspera mission should help answer long-standing questions about how galaxies emerge, change, and even interact.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. As the leader of NASA’s Aspera mission, Vargas will be the first person to investigate the makeup of the CGM.",
+      "B. Although galaxies that are surrounded by the CGM have been studied, researchers have been unable to directly observe low-density gas in the CGM in the “warm-hot” phase.",
+      "C. Researchers don’t yet have a complete understanding of the process of galaxy evolution but have raised the possibility that galaxies interact with each other at times.",
+      "D. The Aspera mission is expected to produce the first direct observations of CGM gas in the “warm-hot” phase, which likely has an important role in the evolution of galaxies."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most accurately states the main idea of the text. The text begins by mentioning NASA’s Aspera mission, which will investigate the low-density gas that makes up the circumgalactic medium (CGM). According to the text, this mission will focus on a portion of the CGM’s gas that exists in a “warm-hot” phase; this “warm-hot” gas has not been previously observed, but it is thought to make up most of the mass of galaxies and play a part in star formation. Finally, the text mentions a telescope capable of examining this previously unobservable “warm-hot” gas: the Aspera mission will use this telescope in the hope of answering questions about galaxy formation and change. Therefore, the main idea of the text is that the Aspera mission is likely to produce the first direct observations of CGM gas in the “warm- hot” phase, which likely has an important role in the evolution of galaxies. Choice A is incorrect. Although this choice mentions the Aspera mission, names its leader, and generally states the mission’s purpose, it does not reference the “warm-hot” gas or fully convey the reason why the Aspera mission is significant. Choice B is incorrect. Although this choice mentions the “warm-hot” gas that makes up a portion of the CGM, it does not reference the Aspera mission or describe its importance. The text also does not mention that galaxies surrounded by the CGM have been studied. Choice C is incorrect. Although this choice describes a problem related to the CGM that researchers have been attempting to solve and presents the speculation of those researchers, it does not mention the Aspera mission or describe its purpose.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "87101a14",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "A social species, chickens will cry out to one another in warning if they sense a hawk or other predator nearby. But if alone, a chicken will remain silent so as not to attract the predator’s attention. Sonja Hillemacher decided to use this behavior to determine whether individual chickens possess a capacity to recognize themselves visually when reflected in a mirror (a common standard for animal intelligence). In the first condition of her study, the subject could see its reflection, but no other chickens were present. In a second condition, another chicken was visible to the subject. Hillemacher presented an image of a hawk to the subject in both conditions, reasoning that if chickens lacked a capacity for visual self- recognition, then ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. neither study condition would elicit an audible response from the subject.",
+      "B. the subject likely would cry out a warning in both study conditions.",
+      "C. only the first study condition would elicit an audible response from the subject.",
+      "D. the subject would fail to distinguish its reflection from the image of the hawk."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most logically completes the text’s discussion of Hillemacher’s study of visual self-recognition in chickens. According to the text, when a predator is nearby, chickens cry out in warning if another chicken is present but remain silent if alone to avoid attracting the predator’s attention. The text explains that Hillemacher set up one condition in which a subject was alone and could see its reflection in a mirror and another condition in which the subject could see another chicken, and then presented an image of a hawk (a predator). It follows that if chickens aren’t capable of recognizing themselves visually in a mirror, the subject likely would cry out a warning in both conditions; in the first condition because it would perceive its reflection as another chicken—that is, it would think another chicken is present— and in the second condition because it would see that another chicken is actually present. Choice A is incorrect because the text suggests that regardless of chickens’ ability to visually recognize themselves in mirrors, the subject in the second condition would cry out a warning because another chicken is actually present. Further, if chickens do lack visual self-recognition, the subject in the first condition likely would also cry out because it would think its reflection is another chicken. Choice C is incorrect. The text does suggest that if chickens lack the ability to visually recognize themselves in mirrors, the subject would cry out a warning in the first condition because it would think its reflection is another chicken. However, the text also indicates that regardless of their capacity of self-recognition, chickens cry out a warning when other chickens are present, and another chicken is present in the second condition. Therefore, both conditions— not just the first one—likely would elicit an audible response from the subject. Choice D is incorrect because the text indicates that the study was focused on determining whether chickens recognize themselves visually in a mirror or instead perceive their reflections as other chickens; there’s no suggestion that a lack of self-recognition would cause a chicken to confuse its reflection with the image of a hawk.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "c1f917c6",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "The widespread use of social media enables linguists to study changes in language usage in real time. A notable recent example is the proliferation of the affix meng- among speakers of Bahasa Indonesia, the official language of Indonesia. Linguists observed meng- originate as an onomatopoetic tag that social-media users applied to images of cats they posted; over time, users increasingly applied it as a prefix to existing words (e.g., mengsedih affixes meng- to the word for sad) in text that they posted. From there, it has begun to move into spoken Bahasa Indonesia. Linguists have noted many similar examples of this phenomenon occurring in other languages, suggesting that social media ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. is more useful for studying informal language than for studying formal or official language.",
+      "B. appears to be exerting an exceptionally strong influence on the evolution of Bahasa Indonesia.",
+      "C. may give linguists a somewhat misleading sense of how languages are changing.",
+      "D. does not merely register changes in language usage but can facilitate such changes."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most logically completes the text’s discussion of linguists using social media to study changes in language usage in real time, providing the specific example of the affix meng- in Bahasa Indonesia. The text states that linguists first observed meng- being used as an onomatopoeic tag on social media, which then spread to being affixed to existing words in text posted on social media; from there, it has begun to move into spoken Bahasa Indonesia. As presented in the text, this progression from online usage to spoken language suggests that social media does more than just register or reflect changes in language—it can actively drive such changes. In the case of meng-, the text suggests, social media facilitated the movement of the affix from an online tag to part of spoken Bahasa Indonesia. Choice A is incorrect because the text doesn’t differentiate between social media’s usefulness for studying informal versus formal or official language; it merely notes that Bahasa Indonesia is an official language. Choice B is incorrect because while the example given in the text focuses on changes in Bahasa Indonesia, the text doesn’t provide any evidence that social media is exerting an exceptionally strong influence on the evolution of this particular language compared to others. In fact, the text states that \"linguists have noted many similar examples of this phenomenon occurring in other languages,\" suggesting that social media’s influence is evident across multiple languages and not unique to Bahasa Indonesia. Choice C is incorrect because the text never suggests that social media provides a somewhat misleading sense of how languages are changing. Rather, the text suggests that by allowing linguists to directly observe linguistic changes, social media offers a clear window into language evolution.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "1d08d7ec",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Pablo Picasso famously subverted the norms of traditional painting: in his cubist paintings he refused to let his expression be constrained, fragmenting objects and figures to present multiple perspectives simultaneously. Though less widely known, Picasso—who once lamented that writers of his time had “limited themselves to moving around words somewhat while respecting the syntax”—also wrote poetry that defied conventional grammar, semantic relationships, and text structure. Thus, the paintings and poems are linked in that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. the poems present many of the same subjects as the paintings but with different thematic approaches.",
+      "B. the poems are intended to be understood as explanations of the artistic inclinations reflected in the paintings.",
+      "C. both types of work are characterized by the simultaneous representation of multiple points of view that Picasso is known for.",
+      "D. both exhibit Picasso’s prioritization of creative expression over the standard rules of the art forms."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most logically completes the text’s discussion of the link between Picasso’s cubist paintings and his poetry. The text states that Picasso subverted, or intentionally went against, the norms of traditional painting; rather than following conventional rules about how paintings should look, he fragmented objects and figures to present multiple perspectives at the same time. The text explains that similarly, Picasso wrote poetry that defied conventions of grammar, semantics, and structure. Because Picasso subverted the conventions of both painting and written language in favor of unconstrained expression, it is reasonable to conclude that his paintings and poems are linked by their demonstration of his prioritization of creative expression over the standard rules of the art forms. Choice A is incorrect because the text doesn’t give any information about the subjects or themes of either Picasso’s paintings or his poems; it indicates only that Picasso didn’t adhere to the norms of either art form. Choice B is incorrect. Although the text explains that the forms of Picasso’s paintings and his poems demonstrate his inclination to not be constrained by convention, it doesn’t discuss any of the ideas expressed in his poems; there’s no indication that Picasso intended his poems to be understood as explanations of anything reflected in his paintings. Choice C is incorrect. The text mentions the simultaneous representation of multiple points of view as a characteristic of Picasso’s cubist paintings but doesn’t indicate that his poems had the same characteristic; the text doesn’t address perspective in Picasso’s poems at all.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "f0654e78",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "In her 1998 book Blues Legacies and Black Feminism, Angela Y. Davis bases her analysis in part on recordings of songs sung in the 1920s by Gertrude “Ma” Rainey and Bessie Smith. Davis focuses on how Rainey and Smith improvised the lyrics—replacing the original lines with mischievous jokes and wordplay. Davis’s work was particularly labor intensive because in order to transcribe, or write down, the lyrics as Rainey and Smith sang them, Davis had to listen repeatedly to the vinyl recordings, which weren’t very clear.",
+    "question": "What does the text most strongly suggest about the songs sung by Rainey and Smith?",
+    "options": [
+      "A. The songs have grown in popularity since Rainey and Smith first sang them.",
+      "B. There were more recordings made of Rainey’s songs than there were of Smith’s.",
+      "C. There were few, if any, reliable transcriptions of Smith’s and Rainey’s improvised lyrics when Davis began her research.",
+      "D. According to Davis, the songs sung by Rainey were more musically innovative than those sung by Smith typically were."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it describes the songs sung by Gertrude \"Ma\" Rainey and Bessie Smith in a way the text implies is accurate. The text describes Angela Y. Davis’s research on Rainey and Smith for her book Blues Legacies and Black Feminism, focusing on her efforts to transcribe the improvised lyrics in Rainey’s and Smith’s songs. The text calls Davis’s transcription process \"labor intensive\" since the lack of clarity in the recordings required her to listen to each repeatedly to verify the accuracy of her transcripts. The fact that Davis undertook a painstaking transcription process using only fairly low-fidelity recordings suggests that reliable transcriptions were otherwise unavailable to her. Choice A is incorrect. The text doesn’t discuss the popularity of Rainey’s and Smith’s songs either in the 1920s or after. Although it is plausible that the music of Rainey and Smith is more widely enjoyed than it was in the 1920s, this isn’t supported by the text. Choice B is incorrect. The text doesn’t discuss which of Rainey and Smith was the more prolific recording artist and so provides no support for such a claim. Choice D is incorrect. The text discusses the creativity of both Rainey and Smith, but it does so only to note similarities between them in terms of improvisation and wit, not to emphasize differences between them or Davis’s relative views of the artists’ inventiveness.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "664bf584",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Gorgets, or necklaces with large pendants, have been part of the ceremonial attire of tribes from the US Southeast for centuries. One of the oldest examples, the Fairfield Gorget, was found in Fairfield, Missouri, in 1958. Its overall design resembles that of other art from the region during the Mississippian period (900–1600 CE). Yet the image on the gorget is of a jaguar—a species whose range doesn’t extend to Missouri. Jaguar images are common in ancient Mexican art, and Mexico lies squarely in the species’ range. Therefore, some scholars argue that <u>long- distance trade in Mexican art objects brought the imagery to Missouri, where a local artist could have adopted it and incorporated it into the Fairfield Gorget.</u>",
+    "question": "Which finding, if true, would most strongly support the underlined explanation?",
+    "options": [
+      "A. The Fairfield Gorget is dated not to the Mississippian period but instead to the earlier Woodland period, which ended around 900 CE.",
+      "B. The range of the jaguar is shown to have expanded dramatically after the Mississippian period came to a close around 1600 CE.",
+      "C. An ancient Mexican art object is found at a site that dates to the Mississippian period and is close to where the Fairfield Gorget was found.",
+      "D. Certain works by present-day artists from Southeastern tribes reflect outside cultural influences, including contemporary Mexican art."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it presents a finding that, if true, would most strongly support the underlined explanation that the jaguar imagery on the Fairfield Gorget could have been inspired by art objects brought to Missouri from Mexico. The text describes the Fairfield Gorget as one of the oldest examples of these necklaces, noting that it’s similar to other art from the Mississippian period except for its image of a jaguar. The text goes on to explain that this is unusual because the jaguar’s range didn’t include Missouri. The Fairfield Gorget’s artist likely wouldn’t have encountered a live jaguar, but since such jaguar images were common in ancient Mexican art (and the jaguar’s range did include Mexico), perhaps some of that art inspired the gorget’s artist. Therefore, evidence that an ancient Mexican art object had been found at a site that was close to the Fairfield Gorget in both location and time period would strongly support the explanation that long-distance trade from Mexico took place during the Mississippian period and that jaguar imagery could have reached Missouri by those means. Choice A is incorrect. The underlined explanation indicates that Mexican artistic influence preceded the creation of the Fairfield Gorget. An artifact from Mexico that appeared in Missouri only after the gorget was created cannot support such a claim. Choice B is incorrect. The underlined explanation pertains to whether the jaguar image on the Fairfield Gorget was suggested to the Mississippian artist who made it by encounters with depictions of jaguars in Mexican art. The appearance of jaguars in Missouri after the Mississippian period cannot provide evidence for such a claim. Choice D is incorrect. The underlined explanation pertains to influence that Mexican art might have had on Mississippian art, restricted to the period from 900 CE to 1600 CE. The actions of contemporary artists cannot provide evidence for centuries-old networks of artistic influence and exchange.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "51f19433",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Archaeologists have discovered a runestone in Norway that may contain the earliest example of written words in Scandinavia. Carbon dating at the discovery site revealed that the stone was likely carved between 1 and 250 CE. Runologist Kristel Zilmer believes the stone will be helpful in learning more about the use of runic alphabets in early Iron Age Scandinavia.",
+    "question": "Which choice best states the main topic of the text?",
+    "options": [
+      "A. Battles of the Iron Age",
+      "B. A runestone found in Norway",
+      "C. A new method for dating rock samples",
+      "D. The research interests of Kristel Zilmer"
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most accurately states the main topic of the text. The text begins by stating that archaeologists in Norway have discovered what may be the oldest known runestone (a stone with an inscription in the runic alphabets used in the region in ancient times). According to the text, the object was created between 1 and 250 CE. The text then mentions a researcher who comments on the runestone’s significance to the study of runic alphabets. Thus, the main focus throughout the text is a runestone found in Norway. Choice A is incorrect because the text mentions the Iron Age only to indicate the era when the runestone was created and when runic alphabets were in use; there’s no discussion of battles during this era. Choice C is incorrect because the text mentions the carbon dating method just once and does so only to indicate the age of the runestone; moreover, the text doesn’t suggest that this method is new. Choice D is incorrect. Although the text indicates that Zilmer is a runologist, or a scholar of runestones, it does so in a single sentence, so Zilmer’s scholarly interests are therefore not a primary focus of the text.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "37fe89d4",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Outi Tervo and team studied the effect of human-caused noise on narwhals (Monodon monoceros), arctic marine mammals that are sensitive to acoustic changes in their environment. Hypothesizing that elevated sound levels affect foraging among narwhals, Tervo’s team compared narwhal diving behaviors in natural sound conditions with those behaviors in two human-caused sound exposure conditions—ship sounds and ship sounds coupled with sonic pulses. Both exposure conditions resulted in significant decreases in the number and target depth of deep dives (associated with foraging) relative to natural conditions. However, differences between diving behaviors in the two exposure types were negligible, a finding that could be attributed to the fact that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. sonic pulses can be heard at significantly greater ocean depths than ship sounds can.",
+      "B. ship sounds contribute so much to the overall sound level that the addition of sonic pulses has little effect on the narwhals’ auditory environment.",
+      "C. narwhals forage at shallower depths in the presence of ship sounds alone than in the presence of ship sounds coupled with sonic pulses.",
+      "D. the narwhals weren’t as sensitive to human-caused sounds as the researchers had predicted."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most logically completes the text’s discussion of human-caused noise and narwhal behavior. The text establishes that Outi Tervo and team found that while both ship sounds alone and ship sounds coupled with sonic pulses significantly affected narwhal foraging behaviors compared to natural conditions, there were negligible differences between the narwhals’ responses to the two sound exposure types (a somewhat surprising finding because one might expect that adding sonic pulses would have an even greater impact). It logically follows that if ship sounds are already so loud that adding sonic pulses to them doesn’t substantially increase the level of human- caused sound exposure, the two conditions would produce essentially the same behavioral responses because the additional sonic pulses are essentially irrelevant. Choice A is incorrect because the fact that sonic pulses are audible at greater depths than are ship sounds would be more likely to help explain a difference—not a similarity—in how the narwhals responded to the two types of sound exposure. If at some points during the study the narwhals were at depths where only sonic pulses (but not ship sounds) could be heard, then they might be expected to alter their diving behavior more dramatically in response to those pulses. But since the text reports negligible differences between diving behaviors in the two exposure types, the fact that sonic pulses reach greater depths than do ship sounds has little explanatory power in this context. Choice C is incorrect because the idea that the narwhals foraged at shallower depths in one of the two exposure conditions directly contradicts the information given in the text. The text states that there were negligible differences in the narwhals’ diving behaviors between the two conditions, meaning that the behaviors were essentially the same. Choice D is incorrect. Although the text states that two conditions with human-caused sounds (ship sounds alone and ship sounds coupled with sonic pulses) had essentially the same effect on narwhals’ deep dives, this indicates only that sonic pulses didn’t meaningfully change the effect of ship sounds, not that the narwhals were less sensitive to human-caused sounds than predicted. Indeed, the text makes it clear that the sounds significantly altered the narwhals’ behavior.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "6785f049",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "During the World War II era, some Mexican American women adopted a striking new look called pachuca style. They wore altered men’s jackets or zoot suits (wide-legged, long-coated suits) and dramatic makeup, and they combed their hair into high, rounded shapes. Some people criticized pachuca style, saying it was dangerous and women should dress traditionally. But historians see things differently. They see pachuca style as a form of rebellion against the era’s rigid social expectations for women. They say that it showed a desire for self-expression and freedom on the part of women who adopted the style.",
+    "question": "According to the text, how do historians view pachuca style?",
+    "options": [
+      "A. They think that pachuca style was such a popular trend that it continues to influence fashion in the United States to the present day.",
+      "B. They think that pachuca style was a way for some Mexican American women to express themselves and resist strict social expectations.",
+      "C. They think that pachuca style was celebrated because it enabled some Mexican American women to show their support for the United States during World War II.",
+      "D. They think that pachuca style was similar to other fashion trends that different groups of women adopted in the same period."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it presents a statement about how historians view pachuca style that is supported by the text. The text first describes the distinctive pachuca style of dress adopted by some Mexican American women during World War II, saying that some criticized it and asserted that women should dress traditionally. The text then goes on to contrast this position with that of historians, who \"see things differently\": according to these historians, the pachuca style showed a wish for freedom and self-expression, and it acted as a kind of rebellion against what society expected of women at the time. Therefore, according to the text, historians think that the pachuca style was a way for Mexican women to express themselves and resist strict social expectations. Choice A is incorrect because the text explicitly describes the pachuca style as a distinctive look adopted during the World War II era. It does not indicate that the pachuca style influences fashion in the United States in the present day. Choice C is incorrect because the text does not indicate that Mexican American women wore the pachuca style to show support for the United States during World War II; rather, the style was a means of self-expression and rebellion against social expectations. Choice D is incorrect because the text does not compare the pachuca style to other fashion trends: the pachuca style is the only style mentioned.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "bdce2fe0",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the graph to complete the statement?",
+    "options": [
+      "A. higher than the number of jobs in technical consulting services, and in 2019 was about the same as the number of jobs in engineering services.",
+      "B. about the same as the number of jobs in engineering services, and in 2019 was about the same as the number of jobs in technical consulting services.",
+      "C. lower than the number of jobs in engineering services, but in 2019 was higher than the number of jobs in engineering services.",
+      "D. about the same as the number of jobs in technical consulting services, but in 2019 was lower than the number of jobs in technical consulting services."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it uses data from the graph to effectively complete the statement regarding what the student notices about the number of jobs in computer services in 2010. The graph shows that in 2010, the number of computer services jobs was approximately 6,000, which is the same approximate number of jobs in engineering services. Additionally, the graph shows that in 2019, the number of jobs in technical consulting services and the number of jobs in computer services were about the same, at approximately 5,000. Choice A is incorrect. While the graph shows that in 2010 the number of computer services jobs (about 6,000) was higher than the number of technical consulting services jobs (about 4,000), in 2019 the number of computer services jobs (about 5,000) was not about the same as the number of engineering services jobs (about 6,000). Choice C is incorrect because according to the graph, the number of jobs in computer services was lower than the number of jobs in engineering services in 2019, not 2010. Additionally, the graph shows that in 2019, the number of computer services jobs (about 5,000) was not higher than the number of jobs in engineering services (about 6,000). Choice D is incorrect because the graph shows that the number of computer services jobs was about the same as the number of technical consulting services jobs in 2019, not 2010. This also means the number of computer services jobs could not have been lower than the technical consulting services jobs in 2019 if they were about the same.",
+    "image": "assets/coeq_bdce2fe0.png",
+    "alt": "Data figure: Employment in Technology in Hawaii in 2010 and 2019. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "5b0a7061",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "A student is writing a paper about One Night in Miami..., a 2020 film directed by Regina King and written by Kemp Powers. Powers adapted the film’s screenplay from his 2013 play, which he wrote after learning about a 1964 meeting that took place in Miami, Florida, between four prominent figures of the Civil Rights movement: Malcolm X, Muhammad Ali, Jim Brown, and Sam Cooke. The student claims that although Powers was inspired by this meeting, the film is best understood not as a precise retelling of historical events but rather as a largely imagined but informed representation of them.",
+    "question": "Which quotation from an article about One Night in Miami... would be the most effective evidence for the student to include in support of this claim?",
+    "options": [
+      "A. “When Powers learned of the meeting, he initially planned to write a much longer work about its four famous participants rather than focusing on the meeting itself.”",
+      "B. “One Night in Miami... received numerous awards and nominations, including an Academy Award nomination for Powers for Best Adapted Screenplay.”",
+      "C. “Powers has described One Night in Miami... as the story of four friends encouraging and supporting one another while engaged in a crucial political debate about how best to achieve equality for Black people in the United States.”",
+      "D. “Powers could find only the most superficial historical details about the meeting, so he read extensively about the four individuals and their thinking at the time in an effort to portray what might have happened between them.”"
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it provides a quotation that effectively supports the student’s claim about the film One Night in Miami…. The quotation states that in researching the play on which the film was based, Kemp Powers only found superficial details about what actually happened during the 1964 meeting in Miami between four leading Civil Rights leaders, meaning that there is very little information about the meeting in the historical record. In the absence of greater details, it wouldn’t have been possible for the film to be a precise retelling of the historical events it depicts. The quotation explains that to compensate for this lack of information about the meeting, Powers did extensive research into the four figures and how they thought at the time in order to speculate in an informed way about what they might have said or what might have occurred between them. Therefore, the quotation effectively supports the claim that the film is best understood not as a precise retelling of a historical event but as a deeply informed imaginative rendering of that event. Choice A is incorrect. Although the quotation discusses how on learning about the 1964 meeting in Miami, Powers was inspired to write a play and, later, to adapt it into a screenplay, it doesn’t discuss Powers’s approach to representing what had occurred in the meeting. Instead, it states that Powers didn’t initially plan to write a story only “focusing on the meeting itself” but rather had considered writing a “much longer” and more expansive work about the meeting’s four participants. Choice B is incorrect because the quotation doesn’t discuss Powers’s approach to representing historical events in his play and in the film; instead, the quotation focuses on the film’s positive critical reception by mentioning that it received numerous awards and nominations. Choice C is incorrect. Although the quotation references historical events that are discussed directly in the play and film by explaining how the four historical figures featured in the story engage in political debates about contemporary issues, it doesn’t specify to what extent Powers’s representation of what occurred during the 1964 meeting in Miami is a factual retelling of what happened and how much is an imaginative rendering of what might have happened. Rather, the quotation focuses on Powers’s description of the film’s basic premise and how the characters engage with the historical context of its setting.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "2bf179f2",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the claim?",
+    "options": [
+      "A. they are much younger than the samples brought back from any of the Apollo missions.",
+      "B. they were collected from the same landing site as the Apollo 11 mission.",
+      "C. they are closest in age to the samples brought back by the Apollo 17 mission.",
+      "D. they helped confirm the predicted ages of the lunar samples from the Apollo missions."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it effectively uses data from the table to complete the claim about the significance of the Chang’e 5 lunar samples. The table shows the approximate ages of lunar samples from four different missions: three Apollo missions and the Chang’e 5 mission. The Chang’e 5 samples are said to be approximately 2 billion years old, while the Apollo samples are each said to be more than 3 billion years old. In other words, based on the data in the table, the Chang’e 5 samples are much younger than those from the Apollo missions. Choice B is incorrect because the table shows that the Chang’e 5 samples were taken from a landing site at Oceanus Procellarum, which none of the Apollo missions are shown to have visited. Choice C is incorrect because the table shows the Apollo 17 samples as approximately 3.8 billion years old, the Apollo 15 samples as approximately 3.3 billion years old, and the Chang’e 5 samples as approximately 2 billion years old, and therefore, the Chang’e samples are closer in age to the Apollo 15 samples than they are to the Apollo 17 samples. Choice D is incorrect because nothing in the text or table suggests that the Chang’e 5 samples were used to confirm the ages of the Apollo samples.",
+    "image": "assets/coeq_2bf179f2.png",
+    "alt": "Data figure: Dated Ages of Lunar Samples from Select Missions. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "4851a1bf",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice best describes data from the graph that weaken the student’s conclusion?",
+    "options": [
+      "A. The spider population count was the same in both enclosures on day 1.",
+      "B. The spider population count also substantially declined by day 30 in the enclosure without lizards.",
+      "C. The largest decline in spider population count in the enclosure with lizards occurred from day 1 to day 10.",
+      "D. The spider population count on day 30 was lower in the enclosure with lizards than in the enclosure without lizards."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it describes data from the graph that weaken the student’s conclusion about the reduction in the spider population in the enclosure with lizards. The graph shows that the enclosure with lizards and the enclosure without lizards each began with about 85 spiders, and that the number of spiders in each enclosure fell over the 30 days of the study. The student’s claim is that the reduction in spiders in the enclosure with lizards is “entirely attributable to the presence of the lizards,” meaning that the spider population wouldn’t have declined except for the presence of the lizards. This claim is weakened, however, by the fact that the enclosure without lizards also saw a substantial reduction in the number of spiders. Since the number of spiders fell in the enclosure without lizards as well as in the enclosure with lizards, there must be some other factor than just the presence of the lizards that contributed to the reduction in the spider population. Choice A is incorrect because the fact that the two enclosures started with the same number of spiders is irrelevant to the claim that the reduction in spider population by day 30 in the enclosure with lizards can be entirely attributed to the lizards. Choice C is incorrect because the fact that the spider population in the enclosure with lizards fell more between days 1 and 10 than in other periods has nothing to do with the student’s claim that the reduction in spiders in that enclosure by day 30 can be entirely attributed to the lizards. Choice D is incorrect. Although it’s true that on day 30 the spider population was lower in the enclosure with lizards than in the enclosure without lizards, this fact doesn’t weaken the student’s claim that the reduction in the spider population in the enclosure with lizards can be entirely attributed to the lizards. Indeed, the lower spider population in the enclosure with lizards suggests that the lizards are contributing to the reduction in the spider population, though the fact that the spider population also fell substantially in the other enclosure means that the lizards aren’t the only cause of the reduction.",
+    "image": "assets/coeq_4851a1bf.png",
+    "alt": "Data figure: Spider Population Count. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "562f09f0",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "“Loon Point” is a 1912 poem by Amy Lowell. In the poem, which presents a nighttime scene on a body of water, Lowell describes an element of nature as an active participant in the experience, writing, ______",
+    "question": "Which quotation from “Loon Point” most effectively illustrates the claim?",
+    "options": [
+      "A. “Through the water the moon writes her legends / In light, on the smooth, wet sand.”",
+      "B. “Softly the water ripples / Against the canoe’s curving side.”",
+      "C. “Or like the snow-white petals / Which drop from an overblown rose.”",
+      "D. “But the moon in her wayward beauty / Is ever and always the same.”"
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most effectively illustrates the claim that Lowell describes an element of nature as an active participant in the experience of a nighttime scene on a body of water. The quotation presents the image of the moon shining on a body of water. However, instead of describing the moon in passive terms or simply stating that it reflects through the water and onto the sandy shore, the quotation portrays the moon as being engaged in the humanlike action of writing a legend. In other words, the moon is participating actively in the nighttime scene. Choice B is incorrect. Although the quotation describes a nighttime scene on a body of water, the element of nature in these lines—the waves— isn’t portrayed as an active participant in an experience; instead, the waves merely ripple softly against a canoe, as waves would normally do. Choice C is incorrect because the quotation doesn’t present a nighttime scene on a body of water; instead, it describes petals falling from a rose. Choice D is incorrect. Although the quotation presents an image of an element of nature—the moon—it doesn’t mention a body of water; moreover, it portrays the moon not as an active participant in a scene but instead as static or unchanging (“ever and always the same”).",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "766ca6ec",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Rivers rich in sediment appear yellow, while increases in red algae make rivers appear red. To track things like the sediment or algae content of large US rivers, John R. Gardner and colleagues used satellite data to determine the dominant visible wavelengths of light measured for various segments of these rivers. The researchers classified wavelengths of 495 nanometers (nm) and below as red, wavelengths between 495 and 560 nm as blue, and wavelengths of 560 nm and above as yellow. The researchers concluded that for the Missouri River, segments flowing into lakes tend to carry more sediment than those flowing out of lakes.",
+    "question": "Which finding, if true, would most directly support the researchers’ conclusion?",
+    "options": [
+      "A. The segments of the Missouri River that had higher levels of chlorophyll-a, which contributes to the green color of photosynthetic organisms, have dominant wavelengths of light between 490 and 560 nm.",
+      "B. In lakes through which segments of the Missouri River pass, the dominant wavelength of light tended to be above 560 nm near the lakes’ shores and below 560 nm in the lakes’ centers.",
+      "C. The majority of the segments of the Missouri River were found to have dominant wavelengths of light significantly higher than 560 nm.",
+      "D. Segments of the Missouri River flowing into lakes typically had dominant wavelengths of light above 560 nm, while segments flowing out of lakes typically had dominant wavelengths below 560 nm."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents a finding that, if true, would support Gardner and colleagues’ conclusion that segments of the Missouri River flowing into lakes tend to carry more sediment than do segments of the river flowing out of lakes. The text says that rivers appear yellow when they contain a lot of sediment and appear red when they contain a lot of algae. It goes on to explain that Gardner and colleagues measured the wavelengths of light for different segments of rivers in the United States and classified those wavelength measurements into colors: red for wavelengths of 495 nanometers and below, blue for wavelengths between 495 and 560 nanometers, and yellow for wavelengths of 560 nanometers and above. Combined with the earlier information about river colors, this suggests that rivers rich in sediment will have wavelengths of 560 nanometers and above (since such rivers appear yellow). If researchers found that Missouri River segments flowing into lakes tend to have wavelengths above 560 nanometers and segments flowing out of lakes tend to have wavelengths below 560 nanometers, this finding would support Gardner and colleagues’ conclusion, since it would suggest that the river tends to carry more sediment when it flows into lakes than when it flows out of lakes. Choice A is incorrect because finding that sections of the Missouri River with high chlorophyll-a levels have wavelengths between 490 and 560 nanometers would be irrelevant to the researchers’ conclusion that segments of the river flowing into lakes are richer in sediment than are segments of the river flowing out of lakes. This finding would not indicate anything about segments flowing into or out of lakes. Choice B is incorrect because finding that lakes through which the Missouri River passes have higher wavelengths near their shores than in the center would not support the researchers’ conclusion that segments of the river flowing into lakes have more sediment than segments flowing out of lakes. This finding would suggest only that there is more sediment around the edges of lakes than in their centers, which does not have any direct bearing on the researchers’ conclusion about river segments flowing into and out of lakes. Choice C is incorrect because finding that most segments of the Missouri River have wavelengths significantly higher than 560 nanometers would suggest that most segments of the river are high in sediment, not that segments flowing into lakes are higher in sediment than segments flowing out of lakes. Only a comparison of river segments flowing into lakes with segments flowing out of lakes can support the researchers’ conclusion.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "7c1e22ca",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice best describes data from the graph that support Ibáñez and colleagues’ conclusion?",
+    "options": [
+      "A. Growth with nitrogen under the current climate exceeded growth with nitrogen under moderate change, but the latter exceeded growth without nitrogen under extreme change.",
+      "B. Growth without nitrogen under the current climate exceeded growth without nitrogen under moderate change, but the latter exceeded growth with nitrogen under extreme change.",
+      "C. Growth with nitrogen under moderate change exceeded growth without nitrogen under moderate change, but the latter exceeded growth without nitrogen under extreme change.",
+      "D. Growth with nitrogen under moderate change exceeded growth without nitrogen under the current climate, but the latter exceeded growth with nitrogen under extreme change."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it describes data from the graph that support Ibáñez and colleagues’ conclusion that increasing anthropogenic nitrogen deposition can compensate for the negative effect of climate change on tree growth if that change is moderate but not if it’s extreme. The bar graph shows the growth of sugar maple trees with and without nitrogen fertilization under three different climate-change scenarios: current conditions, a moderate change, and an extreme change. According to the graph, radial growth without nitrogen fertilization is projected to be about 0.16 centimeters (cm) under current conditions, 0.15 cm under a moderate change, and 0.04 cm under an extreme change. The graph also shows that with nitrogen fertilization, growth is projected to be about 0.18 centimeters under a moderate change but only about 0.06 centimeters under an extreme change. Thus, the data in the graph support the researchers’ conclusion by showing greater growth for a moderate change using nitrogen fertilization than they do either under current conditions without nitrogen fertilization or under an extreme change with nitrogen fertilization. Choice A is incorrect. Although it accurately represents the data in the graph, this fact pattern doesn’t support Ibáñez and colleagues’ conclusion that the decline in radial growth due to climate change will be partly offset by higher levels of anthropogenic nitrogen, but only if change to the climate is moderate and not if it’s extreme. To support this would require comparing radial growth without nitrogen fertilization under current climate conditions to the growth with nitrogen fertilization under both moderate and extreme changes. This choice mentions only growth with nitrogen fertilization under current climate conditions and moderate change and growth without nitrogen fertilization under an extreme change, which don’t provide a basis to determine whether higher nitrogen in the future will be able to offset reduced growth due to climate change. Choice B is incorrect. Although it accurately represents the data in the graph, this fact pattern doesn’t support Ibáñez and colleagues’ conclusion that the decline in radial growth due to climate change will be partly offset by higher levels of atmospheric nitrogen, but only if change to the climate is moderate and not if it’s extreme. The support needed would compare radial growth under current climate conditions without nitrogen fertilization to the growth with nitrogen fertilization under moderate and extreme changes. This choice mentions only growth without nitrogen fertilization under current conditions and moderate change and growth with nitrogen fertilization under extreme change, which don’t provide a basis to determine whether higher nitrogen in the future will be able to offset reduced growth due to climate change. Choice C is incorrect. Although it accurately represents the data in the graph, this fact pattern doesn’t support Ibáñez and colleagues’ conclusion that the decline in radial growth due to climate change will be partly offset by higher levels of atmospheric nitrogen, but only if change to the climate is moderate and not if it’s extreme. The support needed would compare radial growth without adding nitrogen under current climate conditions to the growth with nitrogen fertilization under moderate and extreme changes. This choice mentions only the growth with and without nitrogen fertilization under moderate climate change and growth without nitrogen fertilization under extreme change, which don’t provide a basis to determine whether higher nitrogen in the future will be able to offset reduced growth due to climate change.",
+    "image": "assets/coeq_7c1e22ca.png",
+    "alt": "Data figure: Modeled Radial Growth of Sugar Maple Trees. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "fee87f2f",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the graph to complete the statement?",
+    "options": [
+      "A. a substantial increase in oxygenation in the Alboran Sea corresponded with the local decline in L. pertusa, but the opposite relationship between oxygenation and L. pertusa was found near the Mauritanian coast.",
+      "B. L. pertusa declined in the Alboran Sea during a period of substantial local decline in oxygenation, but L. pertusa declined near the Mauritanian coast during a period of little local change in oxygenation.",
+      "C. oxygenation in the Alboran Sea was higher before the decline in L. pertusa than after the decline, whereas oxygenation near the Mauritanian coast was relatively low both before and after the decline in L. pertusa.",
+      "D. oxygenation in the Alboran Sea tended to be substantially higher than oxygenation near the Mauritanian coast during the period studied."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it effectively uses data from the graph to complete the statement about Rodrigo da Costa Portilho-Ramos and colleagues’ conclusion. The graph shows the ratio of manganese to calcium in L. pertusa coral samples from the Alboran Sea and the Mauritanian coast. The graph reflects time in approximate years before present: in other words, the greater the number in years noted on the graph’s horizontal axis, the farther that moment is in the past. The text indicates that the researchers tested the samples to determine whether oxygenation played a role in the decline of L. pertusa. The text goes on to note that a change in the ratio of manganese to calcium would signal an inverse, or opposite, change in oxygenation. According to the graph, the ratio of manganese to calcium in samples from the Alboran Sea increased from about 30 micromoles per mole 10,000 years ago to about 80 micromoles per mole 8,000 years ago, which means that oxygenation decreased between 10,000 and 8,000 years ago. Meanwhile, there was almost no discernible change in the ratio of manganese to calcium in samples from the Mauritanian coast between 12,000 and 10,000 years ago. According to the text, the population of L. pertusa declined significantly around 9,000 years ago in the Alboran Sea and around 11,000 years ago near the Mauritanian coast. Thus, the increase in the ratio of manganese to calcium around 9,000 years ago in the Alboran Sea coincides with the decline in the L. pertusa population, suggesting an association between the decrease in oxygenation and the decline in population of the coral. No such relationship is suggested around 11,000 years ago near the Mauritanian coast. So, oxygenation likely played a role in the L. pertusa decline in the Alboran Sea but not in the coral’s decline near the Mauritanian coast. Choice A is incorrect because it asserts the opposite of what the graph indicates regarding oxygenation in the Alboran Sea, and it misrepresents what the graph indicates about oxygenation near the Mauritanian coast. The graph indicates that at the time of the decline in L. pertusa (approximately 9,000 years ago), the samples from the Alboran Sea contained a ratio of manganese to calcium that was increasing. According to the text, this ratio inversely correlates with ocean oxygenation levels, so if the ratio was increasing, oxygenation was decreasing, not substantially increasing. Furthermore, the graph shows that the ratio of manganese to calcium remained relatively stable in coral samples from the Mauritanian coast during the period studied, which suggests that there was no discernible relationship between oxygenation and the coral’s population decline in that location, not that there was a substantial decrease in oxygenation corresponding to the coral’s decline. Choice C is incorrect. Although the graph suggests that the level of oxygenation in the Alboran Sea was higher before the decline in L. pertusa than after— because the ratio of manganese to calcium inversely correlates with ocean oxygenation levels and this ratio was lower before the decline than after—the graph doesn’t support the claim that oxygenation near the Mauritanian coast was consistently low before and after the coral’s decline there. Rather, the graph indicates that relative to coral samples from the Alboran Sea, the ratio of manganese to calcium in samples from near the Mauritanian coast was consistently low, which suggests that oxygenation levels were relatively high both before and after the decline of L. pertusa. Choice D is incorrect because it states the opposite of what the graph indicates: the graph shows that throughout the period studied, the ratio of manganese to calcium was higher in coral samples from the Alboran Sea than it was in samples from near the Mauritanian coast. Since the text indicates that the ratio of manganese to calcium inversely correlates with ocean oxygenation levels, oxygenation in the Alboran Sea was therefore lower than, not higher than, oxygenation near the Mauritanian coast during the period studied. Moreover, even if choice D did accurately represent the graph, it wouldn’t effectively complete the statement since a comparison of the ocean oxygenation levels at the two locations is not relevant to the claim that a decline in oxygenation levels was associated with the decline of L. pertusa in the Alboran Sea but not near the Mauritanian coast.",
+    "image": "assets/coeq_fee87f2f.png",
+    "alt": "Data figure: Ratio of Manganese to Calcium in Samples from Alboran Sea and Mauritanian Coast. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "d1a9f1f6",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "A. 1900 with the employment by sector in 1950.",
+      "B. 1800 with the employment by sector in 2012.",
+      "C. 1900 with the employment by sector in 2012.",
+      "D. 1800 with the employment by sector in 1900."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents data from the table that most effectively complete the statement about the rates at which employment shifted in France and the United States. The text states that over the last two hundred years employment in the agricultural sector has declined while employment in the service sector has risen in both France and the US, and the data from the table reflect these trends. The text asserts, however, that the transition from agriculture to services “happened at very different rates in the two countries.” This assertion is best supported by a comparison of data from 1900 and 1950: the table shows that in those years, employment in agriculture went from 43% to 32% in France (a decline of 11 percentage points) and from 41% to 14% in the US (a decline of 27 percentage points), and that employment in services went from 28% to 35% in France (an increase of 7 percentage points) and from 31% to 53% in the US (an increase of 22 percentage points). In other words, the rate of change was greater in the US than in France for both sectors. Choice B is incorrect because comparing the data for 1800 and 2012 would suggest a similar rate of change in the two countries, not very different rates: employment in agriculture went from 64% in 1800 to 3% in 2012 in France, which is close to the change from 68% in 1800 to 2% in 2012 in the US, while employment in services went from 14% in 1800 to 76% in 2012 in France, which is close to the change from 13% in 1800 to 80% in 2012 in the US. Choice C is incorrect because comparing the data for 1900 and 2012 would suggest a similar rate of change in the two countries rather than very different rates: employment in agriculture went from 43% in 1900 to 3% in 2012 in France, which is close to the change from 41% in 1900 to 2% in 2012 in the US, while employment in services went from 28% in 1900 to 76% in 2012 in France, which is close to the change from 31% in 1900 to 80% in 2012 in the US. Choice D is incorrect because comparing the data for 1800 and 1900 would suggest a similar rate of change in the two countries, not very different rates: employment in agriculture went from 64% in 1800 to 43% in 1900 in France, which is fairly close to the change from 68% in 1800 to 41% in 1900 in the US, while employment in services went from 14% in 1800 to 28% in 1900 in France, which is close to the change from 13% in 1800 to 31% in 1900 in the US.",
+    "image": "assets/coeq_d1a9f1f6.png",
+    "alt": "Data figure: Employment by Sector in France and the United States, 1800–2012 (% of total employment) Year Agriculture in France Manufacturing in France Services in France Agriculture in US Manufacturing in US Services in US. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "91b09685",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "“John of God, the Water-Carrier” is a 1913 short story by María Cristina Mena. In the story, the narrator presents John as being a hard worker who is fully dedicated to his job as water carrier, or aguador: ______",
+    "question": "Which quotation from “John of God, the Water-Carrier” most effectively illustrates the claim?",
+    "options": [
+      "A. “Very happy, he would jog home, the heavy silver pieces in his leather pockets making a discreet and dulcet ‘trink-trak’ between his jugs and his body.”",
+      "B. “He learned that the city aguador may not blow his whistle to halt the traffic while he gravely crosses the street, but must wait for the passing of many vehicles, some with horses and some outlandishly without.”",
+      "C. “From early morn to the fall of the afternoon he would go from fountain to fountain and from portal to portal, his lean body so accustomed to bending that he never thought of straightening it, his head bowed as if in prayer.”",
+      "D. “When his first jugs had worn out—the sweet-scented, porous red clay becomes perforated in time—he had buried them to their necks in the corner where he slept, and they were now his treasury.”"
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most effectively illustrates the claim in the text that John is hard-working and dedicated to his job. In the quotation, John is portrayed as spending “early morn to the fall of the afternoon” working hard as a water carrier. John is also described as “so accustomed to bending” while doing his work “that he never thought of straightening” his body, instead remaining deeply focused on his work. These details portray John as a dedicated worker. Choice A is incorrect because this quotation portrays John as happy about heading home after being paid. It doesn’t showcase John being hard at work. Choice B is incorrect because this quotation doesn’t pertain to John’s commitment to his work; it describes difficulties the traffic in the city causes John in the performance of his work. Choice D is incorrect because this quotation doesn’t pertain to John’s commitment to his work; it discusses what John does with his worn-out water jugs.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "327a94c9",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Eighteenth-century economist Adam Smith is famed for his metaphor of the invisible hand, which he putatively used to illustrate a robust model of how individuals produce aggregate benefits by pursuing their own economic interests. Note “putatively”: as Gavin Kennedy has shown, Smith deploys this metaphor only once in his economic writings—to make a narrow point about the then-dominant economic theory of mercantilism— and it was largely ignored until some twentieth-century economists eager to secure an intellectual pedigree for their views elevated it to a fully- fledged paradigm.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. Although Smith is famed for his metaphor of the invisible hand, the metaphor was largely ignored until economists in the twentieth century came to realize that the metaphor was a robust model that anticipated their own views.",
+      "B. Some twentieth-century economists gave Smith’s metaphor of the invisible hand a significance it does not have in Smith’s work, but it is nevertheless a useful model of how individuals produce aggregate benefits by pursuing their own economic interests.",
+      "C. Smith’s metaphor of the invisible hand has been interpreted as a model of how individuals acting in their own interest produce aggregate benefits, but it was intended as a subtle critique of the economic theory of mercantilism.",
+      "D. The reputation of Smith’s metaphor of the invisible hand is not due to the importance of the metaphor in Smith’s work but rather to the promotion of the metaphor by some later economists for their own ends."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most accurately states the main idea of the text. The text explains that economist Adam Smith’s famous metaphor of the invisible hand was putatively (that is, widely assumed but not proven) intended to illustrate a robust model (a consistently accurate generalization) of how individuals pursuing their own economic interests can create broader benefits for the population. The text then emphasizes the lack of affirmative evidence for this idea by calling out the term \"putatively,\" and explaining that, according to Gavin Kennedy, Smith used the metaphor only once in his works, in reference to specific circumstances related to the now-outdated economic view known as mercantilism, and that the metaphor didn’t garner much attention until economists in the twentieth century held it up as a paradigm (a theoretical framework in the field) and thereby implied that Smith shared some of their views on economics. By emphasizing \"putatively,\" the text implies that there is no independent reason to believe that Smith would agree with the metaphor’s use outside of the specific context for which he wrote it and that, therefore, the twentieth-century economists who used it did so to support their own views without regard for the metaphor’s importance to Smith’s work. Choice A is incorrect. Although the text indicates that Smith’s metaphor was largely ignored until some twentieth-century economists revived it and bolstered its status, the text suggests that the later economists used Smith’s metaphor to self-servingly boost their own work while ignoring the original context in which Smith wrote it. Moreover, the statement in this choice fails to reflect the text’s emphasis on Smith’s limited use of the metaphor in his work. Choice B is incorrect. Although the text indicates that some twentieth-century economists altered the significance of Smith’s metaphor, the text doesn’t suggest that the metaphor is a \"useful model\" of how aggregate benefits arise from individuals’ selfish actions, let alone that this usefulness is unaffected by taking the metaphor out of its original context. Choice C is incorrect. Although the text indicates that Smith’s metaphor was intended as a model of how individuals acting in their own interest produce aggregate benefits and it was written within the context of the now-outdated economic theory of mercantilism, these points are subordinate to the primary idea in the text, which is that Smith’s use of the metaphor was tightly constrained but twentieth-century economists ignored the original context so that they could use the metaphor to suggest, without support, that Smith would agree with their economic views.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "ddc6182b",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "A subject of much speculation, distinctive sets of parallel ridges mark the icy crust of Europa, Jupiter’s smallest moon. Researchers now claim that the ridges’ formation mechanism mirrors that of a strikingly similar pair on Greenland’s ice sheet. There, surface water seeped through fissures in the sheet and formed a water pocket that subsequently disrupted the overlying ice, forcing fragments of it upward and outward into peaks, as the pocket froze and expanded. Although Europa lacks liquid surface water, the same process could be driven by the moon’s subsurface ocean.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. Researchers think that the ridges on Europa and the ridges in Greenland may have been formed by the same process even though Europa, unlike Greenland, doesn’t have liquid water on its surface.",
+      "B. The primary difference between the ridges on Europa and the ridges in Greenland is that unlike the Europa ridges, the Greenland ridges are parallel.",
+      "C. The pair of ridges found on Greenland’s ice sheet appear to have formed long before the recently discovered sets of ridges on Europa formed.",
+      "D. Researchers don’t understand why Europa is marked by so many sets of ridges when the moon doesn’t have any liquid water on its surface that could have collected and expanded under the icy crust."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it accurately states the main idea of the text. The text focuses on formations of parallel ice ridges on Jupiter’s moon Europa that are said to be formed by the same mechanism that formed a parallel set of ridges on Greenland’s ice sheet. The text indicates that in Greenland, water on the surface seeps to the lower portion of the ice sheet, resulting in uplift that creates the ridges, and it states that although Europa lacks liquid water on its surface, the same process could be driven by an ocean below Europa’s surface. In other words, the main idea of the text is that parallel ridges in the ice on Europa and Greenland are likely caused by similar processes even though in Greenland the process begins with liquid water on the surface while Europa lacks liquid water on the surface. Choice B is incorrect because the text states outright that the ridges on Europa are parallel and furthermore refers to Greenland’s ridges as \"strikingly similar\" to those on Europa. Choice C is incorrect because the text makes no mention of when any of the ice ridges formed, either separately or relative to one another. Choice D is incorrect because the text does not indicate any uncertainty about the reason for the ice ridges on Europa and, in fact, clearly states that researchers now claim to know the mechanism that created the ridges.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "b6ba6080",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "The Younger Dryas was a period of extreme cooling from 11,700 to 12,900 years ago in the Northern Hemisphere. Some scientists argue that a comet fragment hitting Earth brought about the cooling. Others disagree, partly because there is no known crater from such an impact that dates to the beginning of the period. In 2015, a team led by Kurt Kjær detected a 19-mile-wide crater beneath a glacier in Greenland. The scientists who believe an impact caused the Younger Dryas claim that this discovery supports their view. However, Kjær’s team hasn’t yet been able to determine the age of the crater. Therefore, the team suggests that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. it can’t be concluded that the impact that made the crater was connected to the beginning of the Younger Dryas.",
+      "B. it can’t be determined whether a comet fragment could make a crater as large as 19 miles wide.",
+      "C. scientists have ignored the possibility that something other than a comet fragment could have made the crater.",
+      "D. the scientists who believe an impact caused the Younger Dryas have made incorrect assumptions about when the period began."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most logically completes the text’s discussion of a crater’s connection to the start of the Younger Dryas. According to the text, some scientists believe that a comet fragment hitting Earth caused the cooling of the Younger Dryas period to come about. The text then indicates that a team of scientists found a crater in Greenland, which some believe supports the theory of a comet fragment hitting Earth to initiate the Younger Dryas. However, the text also notes that the team was unable to determine the age of the crater. If the age of the crater can’t be determined, then its connection to the Younger Dryas period of time can’t be confirmed either. Thus, it can’t be concluded that the impact that made the crater was connected to the beginning of the Younger Dryas. Choice B is incorrect because though the text suggests that the age of the comet crater found by a team of scientists is uncertain, it doesn’t address whether a comet fragment can make a crater as large as 19 miles wide. The text doesn’t consider the size of comet fragments and how they relate to the size of craters they might make. Choice C is incorrect because the debate in the text centers on the age of the crater found, not the cause of the crater. The text doesn’t indicate uncertainty about what caused the discovered crater. Choice D is incorrect because the text suggests that the age of the crater found by the team of scientists is uncertain, not that the dates of the Younger Dryas are uncertain or incorrect. The text states that \"the Younger Dryas was a period of extreme cooling from 11,700 to 12,900 years ago\" but doesn’t indicate any debate about the timing of the period.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "2ec91a9d",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice best describes data from the table that support Barrett and Rayfield’s suggestion?",
+    "options": [
+      "A. The study by Meers used body-mass scaling and produced the lowest estimated maximum bite force, while the study by Cost et al. used muscular and skeletal modeling and produced the highest estimated maximum.",
+      "B. In their study, Gignac and Erickson used tooth-bone interaction analysis to produce an estimated bite force range with a minimum of 8,000 newtons and a maximum of 34,000 newtons.",
+      "C. The bite force estimates produced by Bates and Falkingham and by Cost et al. were similar to each other, while the estimates produced by Meers and by Gignac and Erickson each differed substantially from any other estimate.",
+      "D. The estimated maximum bite force produced by Cost et al. exceeded the estimated maximum produced by Bates and Falkingham, even though both groups of researchers used the same method to generate their estimates."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it accurately describes data from the table that support Barrett and Rayfield’s suggestion about bite force estimates. According to the text, Barrett and Rayfield believe that estimates of dinosaur bite force may be strongly influenced by the methods used to produce them—that is, that different methods may produce significantly different results. The table shows that the studies by Bates and Falkingham and by Cost et al. used the same estimation method (muscular and skeletal modeling) and produced similar bite force estimates (approximately 35,000–57,000 newtons and 35,000–63,000 newtons, respectively). The study by Meers, however, used body-mass scaling and produced a much higher bite force estimate (183,000–235,000 newtons), while the study by Gignac and Erickson used tooth-bone interaction analysis and produced a much lower bite force estimate (8,000–34,000 newtons). The fact that one method produced similar estimates in two different studies and that two different methods used in other studies produced substantially different estimates supports the idea that dinosaur bite force estimates are significantly influenced by the methodology used to produce them. Choice A is incorrect because it inaccurately describes data from the table. The table does show that the studies by Meers and by Cost et al. used different estimation methods and produced very different ranges of estimated dinosaur bite force, which would support Barrett and Rayfield’s suggestion that different methodologies may produce significantly different estimates. However, the table doesn’t show that the study by Meers produced the lowest estimated maximum bite force while the study by Cost et al. produced the highest. In fact, the study by Meers estimated a maximum bite force of approximately 235,000 newtons, which is the highest of all the estimated maximums. Choice B is incorrect. Although the data from Gignac and Ericson’s study are accurately described, a single set of findings from one study using only one methodology can’t show that different methodologies may produce significantly different dinosaur bite force estimates, as Barrett and Rayfield suggest. Choice D is incorrect. Although the table shows that the maximum bite force estimated by Cost et al. was higher than that estimated by Bates and Falkingham, the difference is relatively small; in fact, both teams estimated a minimum bite force of approximately 35,000 newtons and a maximum bite force close to approximately 60,000 newtons. Because these findings demonstrate that a single methodology (muscular and skeletal modeling) produced similar overall results in two studies, the findings don’t support Barrett and Rayfield’s suggestion that different methodologies may produce significantly different dinosaur bite force estimates.",
+    "image": "assets/coeq_2ec91a9d.png",
+    "alt": "Data figure: Estimates of Tyrannosaurid Bite Force. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "7905cdfd",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "The recovery of a 1,000-year-old Chinese shipwreck in the Java Sea near present-day Indonesia has yielded a treasure trove of artifacts, including thousands of small ceramic bowls. Using a portable X-ray fluorescence analyzer tool, Lisa Niziolek and her team were able to detect the chemical composition of these bowls without damaging them. By comparing the chemical signatures of the bowls with those of the materials still at old Chinese kiln sites, Niziolek and her team can pinpoint which Chinese kilns likely produced the ceramic bowls.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. Because of a new technology, researchers can locate and recover more shipwrecks than they could in the past.",
+      "B. Researchers have been able to identify the location of a number of Chinese kilns in operation 1,000 years ago.",
+      "C. With the help of a special tool, researchers have determined the likely origin of bowls recovered from a shipwreck.",
+      "D. Before the invention of portable X-ray fluorescence, researchers needed to take a small piece out of an artifact to analyze its components."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most accurately states the main idea of the text. According to the text, thousands of ceramic bowls were found in a recovered Chinese shipwreck. The text goes on to say that Niziolek and her team used a special tool, a portable X-ray fluorescence analyzer, to determine the bowls’ chemical signatures. Comparing these chemical signatures with the chemical signatures of materials they had collected from old Chinese kiln sites, the text says, allowed the researchers to identify which kilns had produced the bowls. In other words, the researchers determined the bowls’ origin. Choice A is incorrect. Although the text indicates that the researchers used technology in the form of a portable X-ray fluorescence analyzer, it doesn’t specifically state that this technology is new. In addition, the text says that Niziolek and her team used the tool to determine the chemical composition of bowls that were found in a Chinese shipwreck, not to locate and recover the shipwreck itself. There’s no indication in the text that a new technology can help researchers locate and recover shipwrecks. Choice B is incorrect because the text indicates that the researchers collected materials from old kiln sites for chemical comparison with the ceramic bowls, which means that the researchers must have already known the location of those kiln sites. Rather than identifying the location of the kilns, the researchers determined which kilns in operation 1,000 years ago had likely produced the bowls that were found in the shipwreck. Choice D is incorrect. Although the text says that using a portable X- ray fluorescence analyzer tool enabled Niziolek and her team to analyze artifacts in the form of ceramic bowls without damaging them, the text doesn’t discuss how researchers analyzed artifacts before this tool was invented. Moreover, the point that the bowls were left undamaged isn’t the text’s main idea. Rather, it’s a detail that’s provided to develop the main idea, which is that the researchers used a special tool to determine where the bowls had been produced.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "74244848",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Declining fishing technology costs and overexploitation of near-shore fishing grounds have made isolated oceanic reefs, which often lack regulatory protections, increasingly attractive to commercial and sport fishers. A team led by Octavio Aburto-Oropeza surveyed the biomass density and species composition of two isolated reefs: Alacranes, a protected (fishing prohibited) reef 135 kilometers from the Yucatan Peninsula, and Bajos del Norte, an unprotected reef 25 kilometers farther out to sea. Species at the highest level of the trophic pyramid constituted 34% of the biomass at Alacranes and 10% of the biomass at Bajos del Norte. Aburto-Oropeza and colleagues attribute this difference to the two reefs’ difference in regulatory status.",
+    "question": "Which finding, if true, would most directly support Aburto-Oropeza and colleagues’ explanation?",
+    "options": [
+      "A. Total biomass at Alacranes is much greater than total biomass at Bajos del Norte, though the reefs’ biomass densities are similar.",
+      "B. Some of the species that compose the highest trophic level at Bajos del Norte are not found at Alacranes.",
+      "C. It is somewhat more expensive for commercial and sport fishers to reach Bajos del Norte than it is to reach Alacranes.",
+      "D. Commercial and sport fishers tend to disproportionately remove species at the highest trophic level."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it provides the finding that, if true, would most directly support Aburto-Oropeza and colleagues’ explanation that species composition differs between Alacranes and Bajos del Norte because of a difference in the regulation of fishing at the two reefs. The text explains that isolated oceanic reefs are often unprotected and are increasingly attracting commercial and sport fishing activity. According to the text, when Aburto-Oropeza and colleagues surveyed Alacranes, an isolated reef where fishing is prohibited, and Bajos del Norte, an isolated reef that is unprotected, they found that species at the highest trophic level (that is, top predators) make up a smaller proportion of the total mass of all living organisms at Bajos del Norte (10%) than they do at Alacranes (34%). If it were true that commercial and sport fishers tend to disproportionately remove top predators—that is, that they catch them at a higher rate than they catch other species—this would support the explanation that the allowance of fishing at Bajos del Norte and the prohibition of fishing at Alacranes has led to a lower proportion of top predator species remaining in the total biomass at Bajos del Norte. Choice A is incorrect. To support the researchers’ claim that the role of fishing regulations accounts for Alacranes having a greater proportion of species at the highest trophic level (top predators) than Bajos del Norte does, a finding would need to help explain how fishing affects the presence of top predator species in particular; the finding that the two reefs have similar biomass densities (that is, about the same mass of living organisms per unit) and that Alacranes has a much greater total biomass (total mass of living organisms) wouldn’t reveal anything about the species composition at each reef or help explain why the proportion of top predators in the total biomass at each reef differs. This finding might simply suggest that Alacranes is a larger reef, with more units at that density. Choice B is incorrect because the finding that there are species at the highest trophic level (top predators) at Bajos del Norte that aren’t found at Alacranes would reveal only that there are some different species in the reefs’ total biomasses (total mass of living organisms) but wouldn’t explain why that’s the case; this finding wouldn’t be clearly connected to the role of fishing regulations, which is what, according to the researchers, accounts for the reefs having different proportions of top predators in their total masses. Choice C is incorrect. To support the researchers’ claim that the role of fishing regulations accounts for Alacranes having a greater proportion of species at the highest trophic level (top predators) than Bajos del Norte does, a finding would need to help explain how fishing affects the presence of top predator species in particular, but different costs of reaching the two reefs wouldn’t affect fishing behavior at all because fishing isn’t even allowed on one of the reefs.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "21b1b74a",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "There Is Confusion is a 1924 novel by Jessie Redmon Fauset. In the novel, the narrator portrays the character Joanna as someone who admires ambition in other people to the exclusion of all other qualities: ______",
+    "question": "Which quotation from There Is Confusion most effectively illustrates the claim?",
+    "options": [
+      "A. “Joanna was mightily interested in people who had a ‘purpose’ in life. Otherwise not at all.”",
+      "B. “Indeed from the very beginning Joanna showed her preference for her father.”",
+      "C. “Joanna was like her father not only so far as ambition was concerned but also in her willingness to work.”",
+      "D. “She had a good sense of logic, a strong power of concentration, and a remarkably retentive and visualizing memory.”"
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most effectively presents a quotation from There Is Confusion that illustrates the claim that the narrator portrays Joanna as admiring the quality of ambition, or the determination to achieve something, and no other qualities in other people. By describing Joanna as not being interested in people unless they have \"a ‘purpose’ in life\"—that is, a goal they are determined to achieve—in which case she is very interested in them, the quotation reveals that Joanna cares only about others’ ambition. Choice B is incorrect because this quotation indicates only that Joanna has a preference for her father, without giving a reason for that preference; therefore, it doesn’t illustrate the claim that Joanna cares only about others’ ambition. Choice C is incorrect because this quotation doesn’t illustrate that Joanna greatly admires the quality of ambition in others; it refers to Joanna’s similarity to her father \"so far as ambition was concerned\" but doesn’t reveal how she (or her father) views that quality. Choice D is incorrect because this quotation describes qualities Joanna possesses—praising her logic, concentration, and memory—instead of Joanna’s interest in other people’s qualities.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "66f73ed8",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Conservationists worldwide are working to protect ecosystems from habitat destruction and biodiversity loss, and in many cases, initiatives that rely on natural features or processes can help address such challenges. In response to a rapidly dwindling population of blueback salmon, the Quinault Indian Nation (a tribe in Washington State) partnered with the conservation organization Wild Salmon Center to restore naturally occurring logjams in the Quinault River. The logjams create shady pools where the blueback salmon can rest and spawn, thus promoting blueback population recovery.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. A partnership between the Quinault Indian Nation and Wild Salmon Center shows the importance of collaborative approaches to preserving biodiversity.",
+      "B. Nature-based approaches can be effective ways to achieve conservation goals.",
+      "C. As indicated by a recent project, logjams help the blueback salmon thrive and reproduce.",
+      "D. Scientists now realize that nature-based conservation methods offer better long-term solutions to environmental issues than methods that are not nature-based do."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it best states the main idea of the text: that nature-based approaches can be effective for achieving conservation goals. The text indicates that in many cases where conservationists are trying to protect ecosystems, their methods depend on natural processes or features. The text then gives an example of this phenomenon, a project with the Quinault Indian Nation that allowed logjams to form naturally in a river, creating spawning habitats for blueback salmon. Choice A is incorrect. Although the text does suggest that the partnership with the Quinault Indian Nation was beneficial, this is not the central aim of the text; the text primarily argues that nature-based approaches to conservation can be effective. Choice C is incorrect. Although the text indicates that logjams are helpful to blueback salmon, the example of the blueback salmon project is included to illustrate the larger point made earlier in the text: that nature-based approaches to conservation are often effective. Choice D is incorrect. There is no evidence in the text to support a direct comparison of the efficacy of nature-based conservation approaches to other types of approaches. The text merely indicates that nature-based approaches can often be effective.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "05776a21",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Psychologists Dacher Keltner and Jonathan Haidt have argued that experiencing awe—a sensation of reverence and wonder typically brought on by perceiving something grand or powerful—can enable us to feel more connected to others and thereby inspire us to act more altruistically. Keltner, along with Paul K. Piff, Pia Dietze, and colleagues, claims to have found evidence for this effect in a recent study where participants were asked to either gaze up at exceptionally tall trees in a nearby grove (reported to be a universally awe-inspiring experience) or stare at the exterior of a nearby, nondescript building. After one minute, an experimenter deliberately spilled a box of pens nearby.",
+    "question": "Which finding from the researchers’ study, if true, would most strongly support their claim?",
+    "options": [
+      "A. Participants who had been looking at the trees helped the experimenter pick up significantly more pens than did participants who had been looking at the building.",
+      "B. Participants who helped the experimenter pick up the pens used a greater number of positive words to describe the trees and the building in a postexperiment survey than did participants who did not help the experimenter.",
+      "C. Participants who did not help the experimenter pick up the pens were significantly more likely to report having experienced a feeling of awe, regardless of whether they looked at the building or the trees.",
+      "D. Participants who had been looking at the building were significantly more likely to notice that the experimenter had dropped the pens than were participants who had been looking at the trees."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents a finding that, if true, would most strongly support the researchers’ claim that they found evidence that experiencing awe can make people feel more connected to others and thus more likely to behave altruistically (with beneficial and unselfish concern for others). According to the text, the researchers tested for this effect by first having participants look at either something known to be awe-inspiring (very tall trees) or something ordinary (a plain building) and then purposely spilling pens near the participants. The finding that participants who had looked at the trees helped pick up significantly more pens than did participants who had looked at the building would support the researchers’ claim by demonstrating that the people who had experienced awe behaved more altruistically when the experimenter needed help than the other participants did. Choice B is incorrect because a finding about helpful participants using positive words to describe the trees and the building after the experiment was over wouldn’t have any bearing on the researchers’ claim that experiencing awe increases altruistic behavior. The text doesn’t address the use of positive words to describe things or suggest any connection between using such words and having experienced awe, so that behavior wouldn’t serve as evidence that experiencing awe played a role in promoting helpful behavior. Choice C is incorrect because a finding that participants who didn’t help the experimenter were significantly more likely than others to report having experienced awe whether they had looked at the building or the trees would weaken the researchers’ claim that experiencing awe increases altruistic behavior by suggesting that the opposite might be true—that experiencing awe is in fact linked to choosing not to act in a way that benefits someone else. Choice D is incorrect because a finding about participants noticing that the experimenter had dropped the pens wouldn’t have any bearing on the researchers’ claim about people behaving altruistically. Being aware of a challenge or problem isn’t necessarily beneficial on its own and isn’t the same as offering help, so the finding wouldn’t support the idea that experiencing awe increases altruistic behavior.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "ed8fb966",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "East Australian humpback whales migrate up to 10,000 kilometers each year to reach their breeding grounds. Researchers long believed that migrating whales live only on the extra energy they stored up during the feeding season. But marine biologist Vanessa Pirotta and her team aren’t so sure. They analyzed 20 years of observations of the migrating whales made by citizen scientists (members of the public who help collect data for scientific research). The team claims that the whales may not live only on their stored energy during migration.",
+    "question": "Which finding, if true, would most directly support the team’s claim?",
+    "options": [
+      "A. Citizen scientists have observed many different types of marine animals feeding alongside the whales.",
+      "B. Citizen scientists have made many observations of the whales feeding as they migrate to their breeding grounds.",
+      "C. Citizen scientists have made more observations of the whales migrating to their breeding grounds than of the whales returning to their feeding grounds.",
+      "D. Citizen scientists have recently begun to observe the whales migrating to their breeding grounds earlier in the year."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it presents a finding that, if true, would most directly support Pirotta and her team’s claim that East Australian humpback whales may not live only on stored energy during migration. The text explains that it has long been thought that East Australian humpback whales store extra energy during the feeding season and then use that energy to survive while traveling to their breeding grounds. If it were true that citizen scientists have often seen the whales feeding as they migrate to the breeding grounds, that would indicate that the whales sometimes feed and take in additional energy during the journey, meaning that they may not rely only on energy they stored before migrating. Choice A is incorrect because finding that citizen scientists have observed many different types of marine animals feeding alongside the whales would have no bearing on the team’s claim; the behavior of other animals is irrelevant, and without indicating the timing of the observed feeding, the finding wouldn’t reveal whether the whales rely only on previously stored energy or ever take in additional energy during migration. Choice C is incorrect because finding that citizen scientists have more often observed whales on the way to their breeding grounds than returning to their feeding grounds would have no bearing on the team’s claim. Since it would provide information about the timing of observations but not about the whales’ observed activities, the finding wouldn’t reveal whether the whales rely only on previously stored energy or ever take in additional energy during migration. Choice D is incorrect because finding that citizen scientists have recently started seeing the whales migrate to their breeding grounds earlier in the year would have no bearing on the team’s claim. Since it would provide information about a change in the timing of migration but not about the whales’ observed activities while migrating, the finding wouldn’t reveal whether the whales rely only on previously stored energy or ever take in additional energy during migration.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "2678766c",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the graph to complete the statement?",
+    "options": [
+      "A. national governments of countries in Region 1 experienced declines in efficiency in the period from 2000 to 2014, relative to the period from 1970 to 2000.",
+      "B. countries in Region 1 experienced a slower rate of economic growth in the period from 2000 to 2014 than countries in Region 2 did, despite increasing national government efficiency in Region 1.",
+      "C. national governments of most countries in Region 2 became more efficient in the period from 2000 to 2014 than they had been in the period from 1970 to 2000, but those of several countries in this region did not.",
+      "D. national governments of countries in Region 1 and in Region 2 generally became more efficient in the period from 2000 to 2014 than they had been in the period from 1970 to 2000, but at different rates."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most effectively uses data from the graph to complete the statement about Mahtta et al.’s proposal regarding factors that affect urban land expansion (ULE). According to the text, ULE is influenced by urban population growth and by gross domestic product (GDP) growth per capita. Reasoning that efficient national governments provide urban services and infrastructure needed to attract economic investment, Mahtta et al. suggest that, as governments become more efficient at providing urban services and infrastructure, GDP growth per capita will account for more ULE and urban population growth will account for less. But according to the graph, Region 1 saw an increase in the percentage attributed to urban population growth from 1970–2000 (between 60 and 65%) to 2000–2014 (between 70 and 75%) and a decrease in the percentage attributed to GDP growth per capita from 1970–2000 (between 35 and 40%) to 2000–2014 (about 25%). Because the percentage attributed to GDP growth per capita decreased (the opposite of what Mahtta et al. claimed would happen if the governments had become more efficient), the data suggest that the governments of Region 1 became less efficient at providing urban services and infrastructure over that period. Choice B is incorrect. Neither the graph nor the text gives the regions’ relative levels of economic growth or what effect Mahtta et al. would expect such growth to have. Furthermore, Mahtta et al.’s proposal suggests that Region 1’s decline in the percentage of ULE attributed to GDP growth per capita from 1970–2000 (between 35 and 40%) to 2000–2014 (about 25%) would suggest decreasing, not increasing, government efficiency over this time. Choice C is incorrect. Neither the text nor the graph provides information about the relative efficiencies of different governments in Region 2. Choice D is incorrect. Mahtta et al.’s proposal suggests that more efficient governments will have a higher percentage of their ULE driven by GDP growth per capita and a lower percentage driven by urban population growth. For Region 2, the percentage of ULE attributed to GDP growth per capita increased from 1970–2000 (between 10 and 15%) to 2000–2014 (between 45 and 50%), but the opposite is true for Region 1, which saw the percentage of ULE attributed to GDP growth per capita decline over the same period. Thus, whereas the data suggest governments in Region 2 became more efficient, the data for Region 1 suggest that those governments became less efficient, not more.",
+    "image": "assets/coeq_2678766c.png",
+    "alt": "Data figure: Percentage of ULE Attributed to Population Growth and GDP per Capita Growth in Two World Regions. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "b2752304",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Some animal-behavior studies involve observing wild animals in their natural habitat, and some involve capturing wild animals and observing them in a laboratory. Each approach has advantages over the other. In wild studies, researchers can more easily presume that the animals are behaving normally, and in lab studies, researchers can more easily control factors that might affect the results. But if, for example, the results from a wild study and a lab study of Western scrub-jays (Aphelocoma californica) contradict each other, one or both of the studies must have failed to account for some factor that was relevant to the birds’ behavior.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. When the results of a natural-habitat study and those from a lab study of a wild animal such as the Western scrub-jay conflict, the study in the natural habitat is more likely than the lab study to have accurate results.",
+      "B. Studying wild animals such as the Western scrub-jay in both their natural habitat and lab settings is likely to yield conflicting results that researchers cannot fully resolve.",
+      "C. Wild animals such as the Western scrub-jay can be effectively studied in their natural habitat and in the lab, but each approach has drawbacks that could affect the accuracy of the findings.",
+      "D. Differing results between natural-habitat and lab studies of wild animals such as the Western scrub-jay are a strong indication that both of the studies had design flaws that affected the accuracy of their results."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most accurately states the main idea of the text. The text begins by explaining that wild animals can be studied in their natural habitat or in a laboratory setting, with each setting offering unique advantages to researchers. The text then highlights an instance in which Western scrub-jays were studied in both settings but with conflicting results, indicating that one or both studies may have failed to account for the disadvantages of its research setting. Thus, the main idea of the text is that while wild animals can be effectively studied in natural or lab settings, there are drawbacks to each that need to be considered to ensure accurate results. Choice A is incorrect because the text does not position one study setting (natural or lab) as superior to the other; rather, the text states that each one has advantages over the other. Choice B is incorrect. The text provides a hypothetical example of two studies in different environments with conflicting results, but this single example cannot be extrapolated to a general claim about the likelihood that results of studies in different environments will conflict. Additionally, the text does not assert anything about how researchers can or cannot resolve conflicting study results. Choice D is incorrect because the text does not state that discrepancies between natural-habitat and lab-based animal behavior studies are due to both of the designs being flawed. Rather, the text states that the conflict in results can be the consequence of one or both of the studies having failed to account for some factor.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "712bd7e2",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "In 2016 biological anthropologist Heather F. Smith and her team investigated the evolution of the appendix, an intestinal organ that is present in some mammals, including humans, but is generally thought to have no function. Studying 533 mammal species, the team found that the appendix has emerged independently across multiple lineages in separate instances and, significantly, hasn’t disappeared after emerging in specific lineages. Moreover, the team determined that species with the organ tend to have higher concentrations of lymphoid tissue, which supports immune responses, in the cecum, the organ the appendix is attached to. Therefore, the team hypothesized that the appendix likely ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. was once present in many nonmammal species but has since disappeared from those lineages.",
+      "B. has been preserved in certain mammal species because it benefits their immune systems.",
+      "C. will emerge in a greater number of mammal species because it may serve a necessary function in the immune system.",
+      "D. produced higher concentrations of lymphoid tissue in mammals in the past than it does currently."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most logically completes the text’s discussion of Smith and colleagues’ investigation of the evolution and biological role of the appendix. The text indicates that the team found several instances of the appendix emerging and not disappearing in the lineages of various mammal species the team examined. Furthermore, the text states that species that possess an appendix also tend to have relatively high amounts of lymphoid tissue—a type of tissue that supports immune system function. Taken together, these details strongly support the hypothesis that the appendix has persisted in some species because it has a function that contributes to effective immune responses in those species. Choice A is incorrect because the text doesn’t address any nonmammalian species. Choice C is incorrect because the text doesn’t make predictions about the evolutionary future of the species Smith and colleagues examined, and although the implication of the text is that the appendix likely does serve a function for the immune system, nothing in the text indicates that the appendix will become more widespread in the future. Choice D is incorrect. Although the text does suggest an association between having an appendix and relatively high concentrations of lymphoid tissue, it doesn’t claim that the appendix causes the tissue to grow, nor does it address the relative production of the tissue at different periods of time.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "79b6be43",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "A student in a political science course is writing a paper on Aristotle’s The Politics, in which Aristotle offers his opinion on political instability and gives advice on how constitutions can be preserved. Aristotle observes that different forms of government can fall in different ways—for example, oligarchies might grant power to military leaders during wartime who refuse to relinquish that power during peacetime—but some methods of preserving order apply across all forms of government. The student claims that in particular Aristotle asserts that in a healthy state obedience to law must be as close to absolute as possible and that even minor infractions should not be ignored.",
+    "question": "Which quotation from a philosopher’s analysis of The Politics would best support the student’s claim?",
+    "options": [
+      "A. “When constructing his argument regarding the characteristics of a well-functioning government, Aristotle asserts that ‘Transgression creeps in unperceived and at last ruins the state,’ illustrating this idea with a comparison to frequent small expenditures slowly and almost imperceptibly chipping away at a fortune until it is ultimately depleted.”",
+      "B. “When Aristotle writes on the necessity of avoiding corruption in government, he proposes that ‘every state should be so administered and so regulated by law that its magistrates cannot possibly make money.’ In particular, he thinks oligarchies are particularly susceptible to corruption through bribery.”",
+      "C. “When Aristotle considers the health of constitutions, he states that ‘Constitutions are preserved when their destroyers are at a distance, and sometimes also because they are near, for the fear of them makes the government keep in hand the constitution.’ He holds that rulers who wish to see constitutions preserved must continually remind the populace of the dangers that would result from a constitutional collapse.”",
+      "D. “When contrasting different forms of government, Aristotle holds that ‘oligarchies may last, not from any inherent stability in such forms of government, but because the rulers are on good terms both with the unenfranchised and with the governing classes.’That is, oligarchic leaders who wish to hold on to power will introduce members of disenfranchised classes into government in a participatory role.”"
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents the quotation that best supports the student’s claim that in The Politics, Aristotle gives advice on preserving constitutions—preventing governments from falling and maintaining order—and specifically asserts that in a healthy state, laws must be followed as strictly as possible and infractions should not be overlooked even if they are minor. The philosopher states that when Aristotle builds his argument about the characteristics of a well-functioning government, Aristotle asserts that transgression, or violation of law, will ruin the state if it \"creeps in unperceived,\" or goes unnoticed. The philosopher then adds that Aristotle illustrates this point by comparing the situation to one in which small but frequent expenses diminish a fortune almost unnoticeably until, eventually, the fortune is entirely gone. In other words, the philosopher indicates that Aristotle makes the point that total obedience to law preserves a healthy state while even small violations, if ignored, will undermine the health of the state. Choice B is incorrect because the philosopher addresses Aristotle’s observation about corruption within the government (in particular, preventing the possibility that members of the government can take bribes), and although corruption can involve infractions, the observation is about a subset of people within the state and isn’t directly connected to the importance of upholding total obedience to the law throughout the state. Choice C is incorrect because the philosopher discusses Aristotle’s point about those who would intentionally destroy a constitution altogether and the need for rulers to remind the populace that it would be dangerous for a constitution to collapse, but neither idea is directly connected to the importance of upholding total obedience to the law. Choice D is incorrect because the philosopher explains that Aristotle makes the point that oligarchic leaders may retain power by having members of disenfranchised classes participate in government alongside governing classes, and this point doesn’t address the importance of ensuring obedience to the law and addressing even minor violations.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "bc3f97d1",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Some businesses believe that when employees are interrupted while doing their work, they experience a decrease in energy and productivity. However, a team led by Harshad Puranik, who studies management, has found that interruptions by colleagues can have a social component that increases employees’ sense of belonging, resulting in greater job satisfaction that benefits employees and employers. Therefore, businesses should recognize that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. the interpersonal benefits of some interruptions in the workplace may offset the perceived negative effects.",
+      "B. in order to maximize productivity, employers should be willing to interrupt employees frequently throughout the day.",
+      "C. most employees avoid interrupting colleagues because they don’t appreciate being interrupted themselves.",
+      "D. in order to cultivate an ideal workplace environment, interruptions of work should be discouraged."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most logically completes the text’s discussion of potential benefits of interruptions in the workplace. The text indicates that a common belief in business is that interruptions to working employees decrease energy and productivity levels. However, the text goes on to explain that a research team led by Harshad Puranik has found that there could be a social benefit to these interruptions. Since the team found that workplace interruptions can increase employees’ sense of belonging and job satisfaction, it follows that the interpersonal benefits of some interruptions can offset the perceived negative effects. Choice B is incorrect. Although the text presents research findings that suggest some workplace interruptions can have a positive effect on employee job satisfaction, no further information is presented to suggest at what frequency these interruptions are ideal. Furthermore, the text doesn’t tie workplace interruptions to increased productivity, but rather links it to social benefits such as sense of belonging. Choice C is incorrect because the text doesn’t address employees’ motives for choosing not to interrupt their colleagues. The text presents research findings that suggest that there are some positive interpersonal effects of workplace interruptions that can increase employee job satisfaction. Choice D is incorrect because asking businesses to discourage workplace interruptions doesn’t follow from the team’s research about the benefits of workplace interruptions, nor does the text describe an ideal work environment. Instead, the text presents research suggesting that there may be positive aspects to workplace interruptions that haven’t previously been considered.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "970f115c",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "In 2022, Crystal Reeck and colleagues studied whether the decision-making modes that guide consumers influence their choice between nonenvironmentally friendly standard electricity plans and environmentally friendly green plans that cap electricity usage. Study participants who self-reported using either an Affect Mode or Role Mode—which prioritize choices that have a stronger positive emotional or social impact, respectively—were more likely to select a green plan. Conversely, participants using a Calculation Mode—which aims to minimize both financial cost and personal inconvenience—were more likely to select a standard plan, even when the green option was cheaper. This finding suggests that participants using a Calculation Mode ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. were equally unlikely to factor the financial savings of the green plan into their decision-making as were participants using either the Affect or Role Modes.",
+      "B. may have been less strongly motivated to appear socially responsible with their choice of plan than they realized.",
+      "C. may have determined that the green plan imposed additional burdens on them that were not sufficiently offset by the potential financial savings.",
+      "D. were less likely to believe that the green plan was truly cost-effective than were participants using either the Affect or Role Modes."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most logically completes the text’s discussion of the influence of decision-making modes on consumers’ choices of different electricity plans. The Affect Mode describes choices based on the decision-maker’s preferred emotional outcome, the Role Mode describes choices based on the decision-maker’s social motivations, and the Calculation Mode describes choices based on minimizing financial costs and maximizing the decision-maker’s convenience. Thus, if those using a Calculation Mode disfavor the green plan, it would be due to some financial or convenience burden the green plan imposes that the other doesn’t. The text indicates that the green plan had a lower financial cost but was nonetheless rejected by participants using the Calculation Mode. It therefore follows that the green plan likely imposed a convenience burden that outweighed potential financial savings for these participants. Choice A is incorrect. According to the text, the Affect Mode involves the decision-maker’s preferred emotional outcome, the Role Mode involves social motivations, and the Calculation Mode is oriented toward minimizing financial costs and maximizing the decision-maker’s convenience. Thus, unlike the Affect or Role Modes, the Calculation Mode would almost certainly involve taking price differences into account. Choice B is incorrect. According to the text, the Affect Mode involves the decision-maker’s preferred emotional outcome, the Role Mode involves social motivations, and the Calculation Mode is oriented toward minimizing financial costs and maximizing the decision-maker’s convenience. Thus, there is no reason to think that participants using the Calculation Mode at any point took social responsibility into account, let alone think that they discovered a disparity between their expectations and reality. Choice D is incorrect. According to the text, the Affect Mode involves the decision-maker’s preferred emotional outcome, the Role Mode involves social motivations, and the Calculation Mode is oriented toward minimizing financial costs and maximizing the decision-maker’s convenience. Thus, the text doesn’t indicate that cost-effectiveness is a factor for participants using the Affect or Role Modes, and there is no basis to compare their beliefs in the truthfulness of the green-plan description with those of the Calculation Mode users.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "89ad9aae",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Although most songbirds build open, cupped nests, some species build domed nests with roofs that provide much more protection. <u>Many ecologists have assumed that domed nests would provide protection from weather conditions and thus would allow species that build them to have larger geographic ranges than species that build open nests do.</u> To evaluate this assumption, a research team led by evolutionary biologist Iliana Medina analyzed data for over 3,000 species of songbirds.",
+    "question": "Which finding from Medina and her colleagues’ study, if true, would most directly challenge the assumption in the underlined sentence?",
+    "options": [
+      "A. Species that build open nests tend to have higher extinction rates than species that build domed nests.",
+      "B. Species that build open nests tend to be smaller in size than species that build domed nests.",
+      "C. Species that build open nests tend to use fewer materials to build their nests than species that build domed nests do.",
+      "D. Species that build open nests tend to have larger ranges than species that build domed nests."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents a finding that, if true, would challenge the assumption that many ecologists have made about the connection between the building of domed nests and geographic range in songbirds. The text says that many ecologists have assumed that since domed nests provide protection from weather conditions, songbird species that build such nests should be able to have larger geographic ranges than songbird species that build open nests do. If Medina and her colleagues found that species that build open nests tend to have larger geographic ranges than species that build domed nests do, their finding would show the opposite of what the ecologists have assumed. It would therefore challenge the ecologists’ assumption. Choice A is incorrect because nothing in the text suggests that there’s a relationship between songbird species’ extinction rates and their geographic ranges. The finding that species that build open nests tend to have higher extinction rates than species that build domed nests do would therefore have no clear bearing on the ecologists’ assumption that domed nests allow species that build them to have larger geographic ranges than those of species that build open nests. Choice B is incorrect because nothing in the text suggests that there’s a relationship between songbird species’ sizes and their geographic ranges. The finding that species that build open nests tend to be smaller in size than species that build domed nests are would therefore have no clear bearing on the ecologists’ assumption that domed nests allow species that build them to have larger geographic ranges than those of species that build open nests. Choice C is incorrect because although the text indicates that many ecologists have assumed that there’s a connection between how songbird species build their nests and the species’ geographic ranges, the text says that this assumption is based on the shape of the nests—that is, whether the nests are domed or open—not the number of materials used. The finding that species that build open nests tend to use fewer materials to build their nests than species that build domed nests do would therefore have no clear bearing on the ecologists’ assumption that domed nests allow species that build them to have larger geographic ranges than those of species that build open nests.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "13aa32c8",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "“Mrs. Spring Fragrance” is a 1912 short story by Sui Sin Far. In the story, Mrs. Spring Fragrance, a Chinese immigrant living in Seattle, is traveling in California. In letters to her husband and friend, she demonstrates her concern for what’s happening at her home in Seattle while she is away: ______",
+    "question": "Which quotation from Mrs. Spring Fragrance’s letters most effectively illustrates the claim?",
+    "options": [
+      "A. “My honorable cousin is preparing for the Fifth Moon Festival, and wishes me to compound for the occasion some American ‘fudge,’ for which delectable sweet, made by my clumsy hands, you have sometimes shown a slight prejudice.”",
+      "B. “Next week I accompany Ah Oi to the beauteous town of San José. There will we be met by the son of the Illustrious Teacher.”",
+      "C. “Forget not to care for the cat, the birds, and the flowers. Do not eat too quickly nor fan too vigorously now that the weather is warming.”",
+      "D. “I am enjoying a most agreeable visit, and American friends, as also our own, strive benevolently for the accomplishment of my pleasure.”"
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it presents a quotation that illustrates the claim that Mrs. Spring Fragrance demonstrates concern for what’s happening at home while she’s in California. By giving reminders to “care for the cat, the birds, and the flowers,” “not eat too quickly,” and avoid engaging in strenuous activity in the heat, Mrs. Spring Fragrance shows that she’s thinking about what’s happening at home and wants to ensure everything is taken care of. Choice A is incorrect because the quotation, while it does suggest that Mrs. Spring Fragrance has made fudge at home before, is focused on preparations for an upcoming festival, not on concerns for anything happening at home while Mrs. Spring Fragrance is away. Choice B is incorrect because the quotation has to do with an upcoming event during Mrs. Spring Fragrance’s trip—visiting San José and meeting someone new—rather than her concern for what’s happening at home. Choice D is incorrect because the quotation is focused on how Mrs. Spring Fragrance feels about her trip and the friends she’s seeing, not on her concern for what’s happening at home.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "f7753947",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "The following text is from Thomas Mann’s 1924 novel The Magic Mountain, translated by John E. Woods in 1995.\n\nThe story of Hans Castorp that we intend to tell here—not for his sake (for the reader will come to know him as a perfectly ordinary, if engaging young man), but for the sake of the story itself, which seems to us to be very much worth telling (although in Hans Castorp’s favor it should be noted that it is his story, and that not every story happens to everybody)—is a story that took place long ago, and is, so to speak, covered with the patina of history and must necessarily be told with verbs whose tense is that of the deepest past.\n\n©1995 by Alfred A. Knopf, Inc.",
+    "question": "What does the text most strongly suggest about the story of Hans Castorp?",
+    "options": [
+      "A. Though it is true that stories of even the most uninteresting people are themselves interesting because all people are unique, the reason this story is interesting is nonetheless difficult to understand because of the passage of time.",
+      "B. Even though it is a story of a person of no particular importance, its age and the manner in which it therefore must be told are both indicators that the story itself is important.",
+      "C. Like all stories about the lives of inconsequential people, this story must necessarily be related in a particular way if the reason the story is consequential is to be made evident to the audience.",
+      "D. It is a remarkable story that happened to an unremarkable person, though one could plausibly argue that because the story is valuable, some of its value accrues to the person at its center."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents a statement about Hans Castorp’s story that is suggested by the text. The narrator of the text indicates that the story about Hans Castorp will be told not because there is something particularly notable about him, since he is pleasant but \"perfectly ordinary,\" but because the story itself is remarkable (\"very much worth telling\"). The narrator then notes that there is a benefit in being at the heart of the story—that it is \"in Hans Castorp’s favor\" that the story is his, and maybe uniquely so (\"not every story happens to everybody\"). Thus, the text suggests both that the story that will be told is a remarkable one that happened to an unremarkable person and that it is reasonable to argue that the person at the center of a valuable story takes on some of the story’s value. Choice A is incorrect. Although the narrator of the text makes the point that \"not every story happens to everybody,\" the narrator doesn’t state that stories are interesting simply because the people they are about are unique. Rather, the narrator suggests that one particular story is \"very much worth telling\" on its own and that Hans Castorp benefits from the fact that the story is remarkable and may be unique to him. Further, the narrator never suggests that the story will be hard to understand even though it is old. Choice B is incorrect. Although the narrator of the text suggests that Hans Castorp is of no particular importance, since he is a \"perfectly ordinary\" person, the narrator never reveals what makes the story of Castorp important, just that \"the story itself\" is \"very much worth telling.\" The narrator states that the story \"took place long ago,\" is \"covered with the patina of history,\" and can be told only \"with verbs whose tense is that of the deepest past,\" but the story’s age and the way it must be told aren’t presented as reasons the story is important; the narrator is simply providing details about how the story will be told. Choice C is incorrect because the narrator of the text doesn’t suggest that all stories about people who are \"perfectly ordinary\" (like Hans Castorp) must be told in particular ways to make it clear why those stories are consequential. Further, the narrator suggests that Hans Castorp’s story must be told \"with verbs whose tense is that of the deepest past\" because it took place so long ago, not because telling it that way will convey the story’s importance.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "0279a039",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Elizabeth Asiedu has identified a negative correlation between the share of developing countries’ economies derived from natural-resource extraction and those countries’ receipts of foreign investment. This may appear counterintuitive—resource extraction requires initial investments (in extractive technology, for instance) at scales best met by multinational corporations—but Asiedu notes that natural-resource industries’ boom-bust cycle can destabilize local currencies and increase developing countries’ vulnerability to external shocks, creating levels of uncertainty to which foreign investors are typically averse.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. Although it may seem surprising that foreign investment declines in developing countries as natural-resource extraction makes up a larger share of those countries’ economies, that decline happens because resource extraction requires initial investments too large for foreign investors to supply.",
+      "B. Although developing countries tend to become less dependent on foreign investment as natural-resource industries make up a larger share of their economies, this change may not occur if the boom-bust cycle of those industries destabilizes local currencies or increases countries’ vulnerability to external shocks.",
+      "C. Although one might expect that foreign investment would increase as natural-resource extraction makes up a larger share of developing countries’ economies, the opposite happens because heavy reliance on natural resources can lead to unattractive conditions for investors.",
+      "D. Although foreign investors tend to avoid initial investments in natural-resource industries in developing countries, foreign investment may increase significantly as those industries stabilize and the risks associated with them decline."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it accurately states the main idea of the text. According to the text, contrary to what some might expect, foreign investment is typically lower in developing countries whose economies are more dependent on natural-resource extraction. The text explains that high reliance on natural-resource extraction can subject a developing country to economic shocks that can destabilize the local currency and introduce economic uncertainty that tends to keep investors away. In other words, although we may think otherwise, foreign investors are less willing to invest in projects in developing countries whose economies are heavily dependent on natural-resource extraction because those economies tend to exhibit instability that investors want to avoid. Choice A is incorrect. The text does indicate that foreign investment is typically lower in developing countries whose economies are more dependent on natural-resource extraction; the text further indicates that natural-resource extraction requires substantial initial investments (to acquire things like required technologies) for which there are fewer investors willing to participate at this stage than one might think. But the text does not implicate the cost of these initial investments as a reason why foreign investment is less widely available than some might think. Choice B is incorrect. The text indicates that greater dependence on natural-resource extraction makes a developing country less appealing to foreign investors because of associated economic instability. Rather than arguing that the goal of developing countries is to become less dependent on foreign investment, as the phrasing of choice B suggests, the text focuses only on why foreign investors become less involved with such countries, which suggests that more investment would be preferable. Choice D is incorrect. Although the text indicates that natural- resource extraction requires substantial initial investments (to acquire things like required technologies) and that there are fewer likely investors willing to participate at this stage than one might think, the text does not address what investors are likely to do over time as the industry stabilizes itself.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "e287d1d2",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "“Looking Back on Girlhood” is an 1892 short story by Sarah Orne Jewett. In the story, the narrator explains that she prefers her hometown to other places she has visited: ______",
+    "question": "Which quotation from “Looking Back on Girlhood” most effectively illustrates this claim?",
+    "options": [
+      "A. “There is always something fresh, something to be traced or discovered, something particularly to be remembered.”",
+      "B. “Two large rivers join just below the village at the head of tide-water, and these, with the great inflow from the sea, make a magnificent stream, bordered by lovely green fields that slope gently to long lines of willows at the water’s edge.”",
+      "C. “I have had a good deal of journeying in my life, and taken great delight in it, but I have never taken greater delight than in my rides and drives and tramps and voyages within the borders of my native town.”",
+      "D. “There is never-ending pleasure in making one’s self familiar with such a region.”"
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most effectively illustrates the claim that the narrator prefers her hometown to other places she has visited. In the quotation, the narrator compares how she feels about places she has traveled to how she feels about the town she’s from. The narrator states that although the many journeys she has made in her lifetime have brought her much pleasure, she has gained the most enjoyment from her experiences inside the borders of her hometown. Choice A is incorrect because it doesn’t express that the narrator likes her hometown better than other places she has visited; instead, the quotation describes something unspecified in positive terms, saying it continues to offer new things to explore and remember. Choice B is incorrect. Although the quotation praises a landscape surrounding a village, it doesn’t specify that this village is the narrator’s hometown, nor does it express a preference for this village over other places the narrator has visited. Choice D is incorrect. Although the quotation describes enjoyment from getting to know a region, it doesn’t compare the narrator’s feelings for this region with her feelings for her hometown.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "48ac34a1",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "The ancient Sumerian civilization formed around 4000 BCE between two large rivers in an area that is now Iraq and Syria. The extremely hot and sunny weather in that area helped crops grow very quickly, but it also made it hard to keep the crops from drying up and dying. So, the Sumerians used water from the rivers in their farming. That method worked so well that they often could harvest even more crops than they needed in a season. As a result, the Sumerians ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. harvested crops only on the hottest days of each season.",
+      "B. found ways to shield their crops from the sun.",
+      "C. did not begin farming until long after 4000 BCE.",
+      "D. were able to store extra crops for later use."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents the conclusion that most logically completes the text’s discussion of Sumerian civilization and crop growth. The text mentions the hot, sunny weather in the area where the Sumerians lived, which made crops grow quickly but also made it difficult to keep them alive. The Sumerians solved this problem by using river water for their farming—as a result, they often harvested more crops than were needed in a season. It follows that the Sumerians must have needed to find something to do with the surplus crops—that is, they stored the extra crops for later use. Choice A is incorrect because it doesn’t logically follow that a surplus in crops would lead the Sumerians to choose only certain days of the season to harvest. Nor is there any indication in the text that the Sumerians improved their farming methods with the goal of reducing the time spent farming. Choice B is incorrect because the text doesn’t suggest that the Sumerians tried to shield their crops from the sun: in fact, the text indicates that the sunny weather helped crops grow very quickly and that the Sumerians used river water to allow crops to be exposed to the sun without dying. Choice C is incorrect. Having a surplus of crops wouldn’t have caused the Sumerians to begin farming until long after 4000 BCE: in fact, since the text indicates that the Sumerian civilization formed around 4000 BCE and farming was a part of that civilization, the statement that Sumerians only began farming long after 4000 BCE isn’t supported by the text.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "ade61b86",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Microplastics are tiny pieces of plastic waste. Areas of the ocean with higher concentrations of microplastic particles also have smaller and fewer waves. A study by Yukun Sun and colleagues found that the concentration of microplastic particles cannot be the only reason for this reduced wave activity because the concentration of particles that would have the observed effect is much higher than that found in these areas of the ocean. However, they found that surfactants, chemicals often used to manufacture plastics, are released into the water from microplastics and have a much stronger wave-reducing effect.",
+    "question": "According to the text, what did Sun and colleagues discover about surfactants?",
+    "options": [
+      "A. They have a much stronger effect on wave activity than microplastics alone do.",
+      "B. They are mainly composed of water.",
+      "C. They are helpful for removing microplastics from the ocean.",
+      "D. They can be used to contain microplastics within certain areas of the ocean."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents a statement about surfactants that is supported by the text. The text indicates that higher concentrations of microplastics have been associated with waves that are relatively small and few. According to the text, however, a study by Sun and colleagues found that concentrations of microplastic particles can’t be the only reason for the reduced wave activity because a much higher concentration of particles is needed to produce that observed effect. Instead, the text indicates that Sun and colleagues found that surfactants are released from microplastics into the ocean and have a much stronger wave-reducing effect than microplastics alone do. Choice B is incorrect because the text doesn’t discuss what surfactants are made of. Instead, it indicates that surfactants are frequently used to manufacture microplastics and that Sun and colleagues discovered that surfactants are released from microplastics into the ocean. Choice C is incorrect because the text doesn’t discuss how microplastics can be removed from the ocean. Instead, the text indicates that Sun and colleagues discovered that surfactants are released into the ocean from microplastics and have a much stronger wave-reducing effect than microplastics alone do. Choice D is incorrect because the text doesn’t indicate that surfactants can be used to contain microplastics within certain areas of the ocean. Instead, the text indicates that Sun and colleagues discovered that surfactants are released from microplastics into the ocean and have a much stronger wave-reducing effect than microplastics alone do.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "45659801",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "The single origin hypothesis of iron metallurgy posits that the craft originated in Anatolia (West Asia) circa 2200–2000 BCE before diffusing to other parts of the world, including Africa. Some proponents of the hypothesis argue that iron production technologies first arrived in North Africa through Carthage, where the earliest evidence of ironworking dates to approximately 800–600 BCE, before these technologies spread to sub- Saharan Africa over the following centuries. However, excavation of multiple sites on the Adamawa plateau in Central Africa conducted by\n\nÉtienne Zangato and Augustin Holl uncovered evidence of iron workshops that may have been in operation as late as 900–750 BCE in Gbabari and as early as 2300–1900 BCE in Ôboui and Gbatoro. These findings suggest that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. iron production may have developed independently and relatively simultaneously in Anatolia and parts of Central Africa.",
+      "B. iron production technologies found in Gbabari likely derived directly from technologies transmitted from Anatolia, but those found in Ôboui and Gbatoro did not.",
+      "C. iron production technologies were likely transmitted from Anatolia to Central Africa via an alternate route than the one suggested by some proponents of the single origin hypothesis.",
+      "D. iron production may have originated in Anatolia much earlier than the available evidence currently indicates."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most logically completes the text’s discussion of the origin of iron metallurgy in Africa. The text explains that the single origin hypothesis suggests that iron metallurgy originated in Anatolia in West Asia circa 2200–2000 BCE and then spread to other parts of the world, with some advocates of this hypothesis arguing that the technology reached sub-Saharan Africa through the North African site of Carthage, where evidence of ironworking dates as far back as approximately 800–600 BCE. However, according to the text, researchers uncovered evidence of iron workshops at one Central African site, Gbabari, dating to circa 900–750 BCE—slightly before ironworking in Carthage —and at two other sites in Central Africa, Ôboui and Gbatoro, dating to as early as 2300–1900 BCE—significantly before ironworking spread to Carthage and roughly contemporaneous with its emergence in Anatolia. If iron metallurgy’s presence in Central Africa preceded its presence in North Africa, then this technology likely didn’t diffuse from Carthage to Central Africa. Moreover, this technology’s presence in Central Africa at roughly the same period when it originated in Anatolia would require its virtually immediate diffusion across the vast distances between the two regions—a development that would have been unlikely in the ancient world. Therefore, the researchers’ findings suggest that iron production may have developed independently and relatively simultaneously in Anatolia and parts of Central Africa. Choice B is incorrect. The findings presented in the text indicate that iron metallurgy may have been occurring in Ôboui and Gbatoro as early as 2300 BCE, which is earlier than it is thought to have emerged in Anatolia, and may have been occurring in Gbabari as early as 900 BCE, which is earlier than it is thought to have arrived in Carthage as it began diffusing into Africa. These earlier instances suggest that instead of diffusing from Anatolia to Central Africa, this technology independently emerged in Central Africa instead, spreading from the earlier iron production sites in the region to the later site. Moreover, the text doesn’t indicate any differences in the iron technologies used at the two earlier sites in Central Africa and the technology used at the later site that might suggest separate origins for iron metallurgy within the region. Choice C is incorrect because the text discusses findings that iron metallurgy may have been occurring in Central Africa at nearly the same time as or even slightly before it emerged in Anatolia, without time for it to have spread there from Anatolia—suggesting that the technology may have independently developed in parts of Central Africa. Thus, instead of suggesting an alternate route for the diffusion of iron production into Central Africa, the findings suggest that the technology didn’t arrive there by diffusion through an intermediate geographical region at all. Choice D is incorrect because, as the text explains, researchers found that iron metallurgy may have been practiced at a Central African site as early as 2300–1900 BCE—a chronological range that not only predates the technology’s spread from Anatolia to Carthage in North Africa circa 800–600 BCE but also overlaps with, and slightly precedes, the range assigned to its invention in Anatolia, 2200–2000 BCE. This finding suggests that instead of diffusing from Anatolia to Central Africa over a vast distance and a great expanse of time, this technology may have been independently invented by Central African civilizations at the same time as it was invented in Anatolia, if not slightly before then. Nothing in the text necessarily suggests that technology arose “much earlier” in Anatolia than the evidence there currently indicates.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "57c0f4fa",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice best presents a conclusion about the habits of New Year’s resolution makers that is best supported by information in the text and the table?",
+    "options": [
+      "A. Resolution makers between the ages of 50 and 64 are more likely to make resolutions related to personal relationships and less likely to make resolutions related to finances than resolution makers between the ages of 30 and 49 are.",
+      "B. Resolution makers between the ages of 18 and 29 are more likely to make resolutions about health and exercise than resolution makers between the ages of 30 and 49 are.",
+      "C. The majority of US adults who make resolutions related to health and exercise also make resolutions in multiple additional categories.",
+      "D. Among all US adults, people become less likely to make New Year’s resolutions as they age, regardless of the type of resolution."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents a conclusion about the habits of New Year’s resolution makers that is best supported by information in the text and the table. The table presents percentages of resolution makers who make particular kinds of resolutions, indexed by age bracket. According to the table, 58 percent of resolution makers ages 50 to 64 made resolutions related to personal relationships, compared to 53 percent of resolution makers ages 30 to 49—indicating that the older group is more likely to make such resolutions. The table also shows that 56 percent of resolution makers ages 50 to 64 made resolutions related to finances, compared to 63 percent of resolution makers ages 30 to 49—indicating that the older group is less likely to make financial resolutions. Thus, the data support the conclusion that resolution makers between the ages of 50 and 64 are more likely to make resolutions related to personal relationships and less likely to make resolutions related to finances than resolution makers between the ages of 30 and 49 are. Choice B is incorrect because according to the table, 79 percent of resolution makers ages 18 to 29 made resolutions about health and exercise, while 80 percent of resolution makers ages 30 to 49 made such resolutions. Therefore, resolution makers ages 18 to 29 are slightly less likely, not more likely, to make resolutions about health and exercise than resolution makers ages 30 to 49 are. Choice C is incorrect because neither the text nor the table provides information about whether resolution makers who make resolutions related to health and exercise also make resolutions in multiple additional categories. The text indicates that half of those who make a resolution make more than one, but it doesn’t specify how many or in which categories, and the table presents only the percentages of resolution makers in each age bracket who made particular kinds of resolutions. Choice D is incorrect because the table presents data only about people who chose to make resolutions, not about all US adults; the table therefore can’t support a conclusion about whether US adults overall become less likely to make resolutions as they age. Furthermore, although percentages of resolution makers generally decline as age bracket increases in some resolution categories, the table shows that the percentage of resolution makers who made health and exercise resolutions remains relatively stable across age brackets; thus, even among resolution makers, there isn’t a consistent age-related decline across all types of resolutions.",
+    "image": "assets/coeq_57c0f4fa.png",
+    "alt": "Data figure: Percentages of New Year’s Resolution Makers Who Make Certain Kinds of Resolutions Type of resolution Age 18-29 Age 30-49 Age 50-64 Age 65. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "6151aa36",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "External shopping cues are a type of marketing that uses obvious messaging—a display featuring a new product, for example, or a “buy one, get one free” offer—to entice consumers to make spontaneous purchases. In a study, data scientist Sam K. Hui and colleagues found that this effect can also be achieved with a less obvious cue: rearranging a store’s layout. The researchers explain that trying to find items in new locations causes shoppers to move through more of the store, exposing them to more products and increasing the likelihood that they’ll buy an item they hadn’t planned on purchasing.",
+    "question": "Which response from a survey given to shoppers who made a purchase at a retail store best supports the researchers’ explanation?",
+    "options": [
+      "A. “I needed to buy some cleaning supplies, but they weren’t in their regular place. While I was looking for them, I saw this interesting notebook and decided to buy it, too.”",
+      "B. “I didn’t buy everything on my shopping list today. I couldn’t find a couple of the items in the store, even though I looked all over for them.”",
+      "C. “The store sent me a coupon for a new brand of soup, so I came here to find out what kinds of soup that brand offers. I decided to buy a few cans because I had the coupon.”",
+      "D. “This store is larger than one that’s closer to where I live, and it carries more products. I came here to buy some things that the other store doesn’t always have.”"
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it best supports the researchers’ explanation of the results of rearranging a store’s layout. According to the text, Sam K. Hui and colleagues found that rearranging a store’s layout can encourage customers to make spontaneous purchases. The text states that the researchers explain that a change in layout causes shoppers to hunt for items’ new locations, which exposes the shoppers to more products and increases the likelihood that they’ll make an unplanned purchase. This quotation from a surveyed shopper indicates that the shopper spontaneously purchased a notebook while looking for cleaning supplies that weren’t in their usual place. The quotation therefore supports the researchers’ explanation that rearranging a store’s layout can lead shoppers to make unanticipated purchases. Choice B is incorrect because it doesn’t support the researchers’ explanation that rearranging a store’s layout can lead shoppers to make unanticipated purchases. Instead of attributing an unplanned purchase to a change in layout, the quotation notes that the shopper searched for but couldn’t find some items, and as a result the shopper purchased less, not more, than what was anticipated. Choice C is incorrect because the quotation attributes what was purchased to coupons that the shopper received, not to a new store layout. Thus, the quotation doesn’t support the researchers’ explanation that rearranging a store’s layout can lead shoppers to make unanticipated purchases. Choice D is incorrect because the quotation attributes what was purchased to the size and stock of the store, not to a new store layout. The shopper simply purchased products that the shopper wanted in a particular store because other stores didn’t carry those products, so the quotation doesn’t support the researchers’ explanation that rearranging a store’s layout can lead shoppers to make spontaneous purchases.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "806bc176",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "The Intertropical Convergence Zone (ITCZ), a band of clouds that encircles Earth in the tropics and is a major rainfall source, shifts position in response to temperature variations across Earth’s hemispheres. Data from Huagapo Cave in Peru suggest the ITCZ shifted south during the Little Ice Age (circa 1300–1850), but a shift as far into South America as Huagapo should have led to dry conditions in Central America, which is inconsistent with climate models. To resolve the issue, geologist Yemane Asmerom and colleagues collected data from Yok Balum Cave in Central America and compared them with the Huagapo data. They concluded that during the Little Ice Age, the ITCZ may have expanded northward and southward rather than simply shifted.",
+    "question": "Which finding from Asmerom and colleagues’ study, if true, would most directly support their conclusion?",
+    "options": [
+      "A. Neither the Yok Balum data nor the Huagapo data show significant local variations in temperature during the Little Ice Age.",
+      "B. Both the Yok Balum data and the Huagapo data show increased temperatures and prolonged dry conditions during the Little Ice Age.",
+      "C. The Yok Balum data show prolonged dry conditions during the same portions of the Little Ice Age in which the Huagapo data show heightened levels of rainfall.",
+      "D. The Yok Balum data and the Huagapo data show strongly correlated patterns of high rainfall during the Little Ice Age."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents a finding that, if true, would support Asmerom and colleagues’ conclusion that the ITCZ may have expanded northward and southward rather than shifting south during the Little Ice Age. The text indicates that the ITCZ, a band of clouds in the tropics that is a significant rainfall source, can change position. Data from Peru’s Huagapo Cave suggest that the ITCZ shifted south during the Little Ice Age. But according to the text, if the ITCZ moved into South America in that way, then Central America should have been drier than climate models suggest it was. In other words, rainfall should have been reduced in Central America because the ITCZ, a significant rainfall source, had shifted into South America, but climate models do not show such a reduction in Central America. The text goes on to say that Asmerom and colleagues tried to resolve this apparent conflict by collecting data from Yok Balum cave in Central America and comparing them with data from Huagapo, which led the researchers to conclude that the ITCZ may have expanded both northward and southward rather than simply shifting south. If it is true that Yok Balum in Central America and Huagapo in South America show strongly correlated patterns of high rainfall during the Little Ice Age, such a finding would support Asmerom and colleagues’ conclusion by suggesting that the two areas were affected by the same rainfall source, and thus that the ITCZ may have expanded rather than shifted. Choice A is incorrect because there is no information in the text about how, if at all, the ITCZ affects temperature in areas where it is located. Rather, the text states that temperature variations across Earth’s hemispheres can shift the position of the ITCZ. Finding that neither Yok Balum nor Huagapo data show evidence of significant local variations in temperature during the Little Ice Age would have no clear bearing on Asmerom and colleagues’ claim. Choice B is incorrect because finding that both Yok Balum and Huagapo experienced prolonged dry conditions during the Little Ice Age would not support Asmerom and colleagues’ conclusion that the ITCZ, a major source of rainfall, may have expanded northward and southward rather than simply shifting south. Dry conditions in both locations would suggest that the ITCZ did not cover either location. Additionally, finding that temperatures were elevated in both locations would have no clear bearing on Asmerom and colleagues’ conclusion, since there is no information in the text that indicates how, if at all, the ITCZ affects temperature. Choice C is incorrect because finding that Yok Balum experienced prolonged dry conditions at the same time that Huagapo experienced high rainfall would weaken Asmerom and colleagues’ conclusion, not strengthen it. Such a finding would suggest that the ITCZ shifted south and left Central America dry rather than expanding both northward and southward.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "b67c0ec9",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Sandra Cisneros’s 1984 novella The House on Mango Street made a lasting impact on US literature. Its depiction of Mexican American culture inspired later authors to examine their own heritage within their fictional works. Also influential was the book’s portrayal of the main character, Esperanza, during a pivotal year of her youth. <u>This insightful depiction of a preteen girl encouraged authors who, like Cisneros herself, are Latina to use fictional works to examine experiences from their own youth.</u>",
+    "question": "Which statement, if true, would most strongly support the claim in the underlined sentence?",
+    "options": [
+      "A. In interviews, a number of Latina authors say that The House on Mango Street inspired them to write about their own adolescence in their novels.",
+      "B. In published writings, several prominent authors who are not Latina say that reading The House on Mango Street influenced their approach to writing fiction.",
+      "C. The House on Mango Street has sold over six million copies and is one of the most commonly read books among high school and university students in the US.",
+      "D. Since 1984, new novels about young Latina characters by Latina authors have often been compared to The House on Mango Street."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents a finding that, if true, would most strongly support the claim in the underlined sentence. The text begins by explaining that the portrayal of Mexican American culture in Sandra Cisneros’s The House on Mango Street inspired later authors to explore their own heritage. Noting that Cisneros’s novella was also influential for its depiction of a formative year in a female character’s youth, the text then claims that this depiction inspired other Latina authors to use fiction to explore their own experiences of youth. Since this claim addresses how Cisneros encouraged Latina authors specifically to portray their youthful experiences, it would be directly supported by such authors stating that her novella influenced them to write about their own adolescence, or the transitional period between childhood and adulthood. Choice B is incorrect. The text states that with its portrayal of Mexican American culture, The House on Mango Street inspired later authors to explore their own heritage, and since this statement isn’t limited to only Latina authors, it can be inferred that authors who aren’t Latina were also likely influenced by the novella. But because the claim in the underlined sentence concerns the novella’s influence on Latina authors specifically, the finding that the book also influenced authors who weren’t Latina would fail to provide support for the claim. Choice C is incorrect because the finding that The House on Mango Street has sold millions of copies and is widely read among students in the US doesn’t relate directly to the text’s claim that the novella has influenced Latina authors specifically. Choice D is incorrect. While comparisons of new novels about young Latina characters by Latina authors to Cisneros’s The House on Mango Street would likely be founded on similarities between those novels and Cisneros’s novella, such similarities wouldn’t necessarily be evidence of the novella’s influence; such similarities might arise if Cisneros and younger Latina authors alike depicted certain basic cultural and historical features of their communities. Testimony from younger Latina authors about how The House on Mango Street had inspired them would be far more persuasive evidence of the novella’s influence.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "41a6bb19",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "“Lines Written in Early Spring” is a 1798 poem by William Wordsworth. In the poem, the speaker describes having contradictory feelings while experiencing the sights and sounds of a spring day: ______",
+    "question": "Which quotation from “Lines Written in Early Spring” most effectively illustrates the claim?",
+    "options": [
+      "A. “Through primrose-tufts, in that sweet bower, / The periwinkle trail’d its wreathes; / And ’tis my faith that every flower / Enjoys the air it breathes.”",
+      "B. “The budding twigs spread out their fan, / To catch the breezy air; / And I must think, do all I can, / That there was pleasure there.”",
+      "C. “The birds around me hopp’d and play’d: / Their thoughts I cannot measure, / But the least motion which they made, / It seem’d a thrill of pleasure.”",
+      "D. “I heard a thousand blended notes, / While in a grove I [sat] reclined, / In that sweet mood when pleasant thoughts / Bring sad thoughts to the mind.”"
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most effectively illustrates the claim that the speaker has contradictory feelings while experiencing the sights and sounds of spring. This quotation indicates that the speaker is reclined in a grove listening to a thousand sounds. Even though the speaker is in a \"sweet mood\" and thinking \"pleasant thoughts,\" those pleasant thoughts also bring to mind \"sad thoughts.\" In other words, these lines illustrate the claim that the speaker is having contradictory thoughts while immersed in the sights and sounds of spring. Choice A is incorrect. Although this quotation refers to several flowers (primroses and periwinkles) and indicates that the speaker is in a \"bower,\" or shady spot among the trees—details which suggest that the speaker is experiencing the sights of spring—it doesn’t suggest that the speaker is having contradictory feelings, only that the speaker believes that the flowers are experiencing enjoyment. Choice B is incorrect. Although this quotation focuses on the sights of spring—namely, new leaves on nearby trees appear to be opening up (\"The budding twigs spread out their fan\") to feel the breeze—the quotation doesn’t suggest that the speaker feels conflicted about this: the statement \"And I must think, do all I can\" suggests the speaker’s determination to attribute feelings of pleasure to the trees, not that the speaker is experiencing contradictory feelings. Choice C is incorrect. Although this quotation indicates that the speaker isn’t certain what the birds are thinking (\"Their thoughts I cannot measure\"), there’s nothing to suggest that the speaker is experiencing contradictory feelings. Rather, the quotation suggests that although the speaker is uncertain about the birds’ feelings, the speaker believes that the birds’ movements likely suggest their pleasure.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "dea40f22",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Narwhals are shy whales that live in the remote Arctic Ocean. Some of them have a long tusk, like a unicorn horn, with sensitive nerves. Narwhals are known for this tusk, but many actually don’t have one and its purpose is unknown. One group of scientists came up with a possible purpose in 2014. The scientists suggested that the tusk may help narwhals determine when water around them is likely to start freezing and become dangerous for them. Marine biologist Kristin Laidre disagrees with that idea, though. She reasons that if the narwhal’s tusk serves such an important purpose, then it’s most likely that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. some narwhals would seek a new habitat.",
+      "B. fewer marine animals would also have tusks.",
+      "C. more narwhals would have a tusk.",
+      "D. narwhals would become less shy over time."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most logically completes the text’s discussion of Kristin Laidre’s reasoning about the purpose of the tusk that many, but not all, narwhals have. The text explains that one group of scientists thinks the tusk may help narwhals detect the threat of freezing water and that Laidre disagrees with that idea, given the importance of avoiding a dangerous situation. It’s logical to suggest that if the tusk serves such an important purpose for narwhals, the trait would be more common among them—specifically, that more narwhals would have a tusk. Choice A is incorrect because there’s no reason to think Laidre would say that if the tusk has the important function of helping narwhals detect when the water around them is about to freeze (meaning that it isn’t always freezing), some narwhals would choose a different habitat altogether. Indeed, if it’s true that the tusk helps narwhals avoid areas with dangerous conditions when they occur in their Arctic Ocean habitat, the tusk would likely enable the narwhals to continue living in that habitat rather than drive them elsewhere entirely. Choice B is incorrect because the text focuses only on narwhals and makes no mention of other marine animals or how having a tusk might affect them. And if anything, it would be more logical to expect a very important trait to be more widespread, not less common, among other similar types of animals. Choice D is incorrect. Although the text describes narwhals as shy, it doesn’t indicate that the scientists’ conclusion has anything to do with shyness. And because shyness and detection of the threat of freezing water aren’t logically connected, there’s no reason to think that Laidre would expect narwhals to become less shy over time if the tusk serves that important purpose.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "666d3795",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "The Uto-Aztecan language family is divided into a northern branch, which includes the Shoshone language of present-day Idaho and Utah, and a southern one, whose best-known representative is Nahuatl, the language of the Aztec Empire in Mexico. Lexical similarities across the family, including of botanical terms, confirm descent from a single language spoken millennia ago, and the family’s geographical distribution suggests an origin in what is now the US Southwest. However, vocabulary pertaining to maize isn’t shared between northern and southern branches, despite the crop’s universal cultivation among Uto-Aztecan tribes. Given archaeological evidence that maize originated in Mexico and diffused northward into what became the US Southwest, some linguists reason that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. northern Uto-Aztecan tribes likely obtained the crop directly from a southern Uto-Aztecan tribe rather than from a non-Uto-Aztecan tribe.",
+      "B. variation in maize-related vocabulary within each branch of the Uto-Aztecan family likely reflects regionally specific methods for cultivating the crop.",
+      "C. southern Uto-Aztecan tribes likely acquired maize at roughly the same time as northern Uto-Aztecan tribes did, though from different sources.",
+      "D. the family’s division into northern and southern branches likely preceded the acquisition of the crop by the Uto-Aztecan tribes."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most logically completes the discussion of Uto-Aztecan languages. The text explains that the northern and southern branches of the Uto-Aztecan language family descended from a single language (believed to have originated in what is now the US Southwest), resulting in similarities across the family’s languages; however, the branches don’t have similar vocabulary for maize, even though maize has been cultivated by all Uto-Aztecan tribes. The text also indicates that maize originated in Mexico and spread northward into what is now the US Southwest—the area where the Uto-Aztecan language family originated. It follows, then, that the language family had already divided into northern and southern branches before maize reached that area; if maize had been present before the division occurred, the family’s origin language would have had terminology for it that likely would have been reflected in the branches, meaning they would have had similar vocabulary for maize. If maize arrived after the division occurred, however, the tribes in the two regions likely would have developed vocabulary pertaining to maize separately, at the times when they acquired the crop. Choice A is incorrect because the text focuses on vocabulary pertaining to maize in the branches of the Uto-Aztecan language family, and referring only to how some Uto-Aztecan tribes obtained maize wouldn’t directly address the role of language. Moreover, if northern Uto-Aztecan tribes had acquired maize from a southern Uto-Aztecan tribe, it’s reasonable to assume that the northern tribes might have also picked up southern Uto-Aztecan terminology for maize in that exchange. Choice B is incorrect because the text discusses the fact that the northern and southern branches of the Uto-Aztecan language family don’t have shared vocabulary pertaining to maize, not the idea that there are variations in such vocabulary within each branch—that is, the text focuses on differences between the two branches, not on differences between languages within a branch. Choice C is incorrect because the text focuses on vocabulary pertaining to maize in the branches of the Uto-Aztecan language family, and referring only to the timing and source of maize acquisition wouldn’t directly address the role of language. Furthermore, the text implies that southern Uto-Aztecan tribes probably acquired maize before the northern tribes did, given the evidence that maize originated in Mexico—the location of the best-known representative of the southern branch of the Uto-Aztecan language family—before spreading to the north.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "51618190",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the graph to complete the text?",
+    "options": [
+      "A. most lizard species use about the same percentage of their maximal speed when escaping predation as they do when pursuing prey.",
+      "B. multiple lizard species move at an average of less than 90% of their maximal speed while escaping predation.",
+      "C. more lizard species use, on average, 90%–100% of their maximal speed while escaping predation than use any other percentage of their maximal speed.",
+      "D. at least 4 lizard species use, on average, less than 100% of their maximal speed while pursuing prey."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it describes data from the graph that complete the text’s discussion of lizard species’ use of maximal speed when escaping predators. According to the text, moving at maximal speed (the highest speed possible) requires so much energy that it is not always an effective strategy for animals, even when they are escaping predators. The graph displays data on the average percent of maximal speed used by lizard species while either escaping predators or pursuing prey. The graph categorizes the data for both pursuing and escaping by the number of species using 30%–39% of maximal speed, 40%–49% of maximal speed, 50%–59% of maximal speed, 60%–69% of maximal speed, 70%–79% of maximal speed, 80%–89% of maximal speed, and 90%–100% of maximal speed, respectively. In the graph, there is at least one species in each of the following percent categories for maximal speed while escaping predators: 50%–59%, 60%–69%, 70%–79%, and 80%– 89%. Thus, the data in the graph show that multiple lizard species move at an average of less than 90% of their maximal speed while escaping predation. Choice A is incorrect because the data in the graph isn’t organized in such a way that a comparison of the percentage of maximal speed used when escaping predation with the percentage used when pursuing prey is possible at the level of individual species. Choice C is incorrect. It is true that in the graph, the percent category with the largest number of species using maximal speed while escaping predators is 90%–100% (8 species total). However, these data don’t complete the text, which is concerned instead with how animals are discouraged from using maximal speed even when escaping predators because of the amount of energy required to use it. Choice D is incorrect because these data from the graph pertain to maximal speed while pursuing prey and therefore don’t complete the text’s discussion of lizard species’ use of maximal speed when escaping predators.",
+    "image": "assets/coeq_51618190.png",
+    "alt": "Data figure: Number of Lizard Species by Average Percent of Maximal Speed Used When Pursuing Prey or Escaping Predators. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "0a2366bb",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice best describes data from the table that support the researchers’ claim?",
+    "options": [
+      "A. Among the five languages in the table, Thai and Hungarian have the lowest rates of speech and the lowest rates of information conveyed.",
+      "B. Vietnamese conveys information at approximately the same rate as Spanish despite being spoken at a slower rate.",
+      "C. Among the five languages in the table, the language that is spoken the fastest is also the language that conveys information the fastest.",
+      "D. Serbian and Spanish are spoken at approximately the same rate, but Serbian conveys information faster than Spanish does."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it provides the most direct support from the table for the claim that two languages can convey similar amounts of information even if they’re spoken at different rates. The table shows the approximate rates at which five languages are spoken and the rates at which those five languages convey information. Vietnamese is spoken at around 5.3 syllables per second, whereas Spanish is spoken at around 7.7 syllables per second, but the two languages convey information at very similar rates: Vietnamese at a rate of around 42.5 bits per second and Spanish at a rate of around 42.0 bits per second. Thus, the description of Vietnamese conveying information at around the same rate that Spanish does despite being spoken more slowly supports the claim in the text that languages can convey the same amount of information even if spoken at different rates. Choice A is incorrect because it isn’t true that Thai and Hungarian have the lowest rates of speech of the five languages shown. According to the table, Hungarian is spoken at around 5.9 syllables per second, which is faster than Vietnamese (5.3 syllables per second). Additionally, even if this statement were true, the assertion that two languages are spoken the slowest and convey information the slowest wouldn’t support the claim that languages can convey the same amount of information even if they’re spoken at different rates. Choice C is incorrect because it isn’t true that the fastest-spoken language (Spanish, at 7.7 syllables per second) also conveys information the fastest: Spanish conveys information at 42.0 bits per second, which is slower than the 42.5 bits-per-second rate at which Vietnamese conveys information. Additionally, even if this statement were true, the assertion that the language spoken the fastest also conveys information the fastest has no bearing on the claim that languages can convey the same amount of information even if they’re spoken at different rates. Choice D is incorrect because it isn’t true that Serbian conveys information faster than Spanish does. According to the table, Serbian conveys information at a rate of around 39.1 bits per second, which is slower than the 42.0 bits-per-second rate at which Spanish conveys information.",
+    "image": "assets/coeq_0a2366bb.png",
+    "alt": "Data figure: Approximate Rates of Speech and Information Conveyed for Five Languages Language Rate of speech (syllables per second) Rate of information conveyed (bits per second. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "19ab4c77",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Using the Stratospheric Observatory for Infrared Astronomy (SOFIA), a team of astronomers mapped out the magnetic field of G47, one of the Milky Way’s galactic bones (dense clouds of gas and dust that run through the middle of the arm of a spiral galaxy). Surprisingly, the map revealed a magnetic field with no clear pattern or direction. The researchers had expected the magnetic field to be similar to the more uniform fields seen in galactic bones in other arms of the Milky Way.",
+    "question": "According to the text, what was surprising about the researchers’ mapping of the magnetic field of galactic bone G47?",
+    "options": [
+      "A. It showed a weaker magnetic field than expected.",
+      "B. It implied that previous mappings of the magnetic field were inaccurate.",
+      "C. It produced magnetic field measurements similar to those for other galactic bones.",
+      "D. It revealed a magnetic field that wasn’t uniform."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents the point about the magnetic field mapping that the text describes as surprising. The text indicates that a team of astronomers mapped the magnetic field of G47, a galactic bone in the Milky Way, and that the mapping \"surprisingly\" revealed \"no clear pattern or direction\" in the magnetic field. The text then adds that the researchers had thought the magnetic field would be as uniform as the magnetic fields of other galactic bones in the Milky Way are. In other words, the researchers were surprised that the mapping revealed a magnetic field that wasn’t uniform. Choice A is incorrect because the text doesn’t indicate that the mapping surprisingly showed a weaker magnetic field than the researchers had expected. The text makes no mention of the magnetic field’s strength, only its lack of a clear pattern or direction. Choice B is incorrect because the text doesn’t indicate that the magnetic field mapping suggested to researchers that previous mappings were inaccurate. Although the text states that the mapping didn’t show what researchers had expected based on their knowledge of other magnetic fields, there’s no indication that G47’s magnetic field had ever been mapped before. Choice C is incorrect because the text indicates that the researchers were surprised that the magnetic field was different from, not similar to, the magnetic fields of other galactic bones; the text states that because other galactic bones in the Milky Way are more uniform, the researchers had expected the magnetic field of G47 to be more uniform than it turned out to be.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "b20620af",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Initially observed in 2017, the interstellar object ‘Oumuamua is the first object of its kind to be seen in our solar system. Researchers have been puzzled because its acceleration cannot be entirely explained by the gravitational pull of nearby bodies: there must be a nongravitational influence on its velocity and trajectory. Some previously suggested explanations for this nongravitational acceleration involve mechanisms that are unlikely or unrealistic, such as geometric effects from ‘Oumuamua being potentially composed of several spatially separated bodies. Now, Jennifer Bergner and colleagues propose that the nongravitational acceleration is due to the gaseous expulsion of entrapped hydrogen from\n\n‘Oumuamua’s water-rich icy body.",
+    "question": "Which statement, if true, would most strongly support the claim made by Bergner and colleagues about the cause of ‘Oumuamua’s acceleration?",
+    "options": [
+      "A. Existing proposed models of outgassing from ‘Oumuamua include the direct conversion of nitrogen or carbon monoxide from a solid to a gaseous state without becoming liquid, but these models have theoretical or observational inconsistencies.",
+      "B. ‘Oumuamua’s trajectory is inconsistent with a nongravitational acceleration that would be caused by the release of hydrogen gas resulting from the processing of water ice (H 2 O), but the interstellar object’s observable properties can be explained if it has a significant component of molecular hydrogen ice (H 2 ).",
+      "C. Since nongravitational accelerations of interstellar objects are several orders of magnitude weaker than gravitational accelerations, deviation from behavior that could be fully attributed to gravitational pull has been detected on a limited number of objects similar to ‘Oumuamua.",
+      "D. Exposure to interstellar cosmic radiation can result in the formation of embedded pockets of hydrogen gas in water ice; moreover, when traveling through the solar system, ‘Oumuamua experienced warming sufficient to alter its icy structure and allow for outgassing."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents findings that, if true, would support the claim made by Bergner and colleagues that the nongravitational acceleration of ‘Oumuamua is due to the expulsion of entrapped hydrogen. The text first introduces the observation of a unique interstellar object named ‘Oumuamua and goes on to explain that the object exhibited nongravitational acceleration that could not be fully attributed to the expected cause: gravitational pull of nearby celestial bodies. The text concludes by stating that Bergner and colleagues claim that the nongravitational acceleration is caused by expulsion of hydrogen gas from ‘Oumuamua’s water-rich icy body. To support this claim requires evidence that hydrogen gas could be present within ‘Oumuamua at all, which this answer choice presents: cosmic radiation can result in embedded pockets of hydrogen gas in water ice. Additionally, evidence that this gas can be released from such a body is required to fully support the claim, which this answer choice goes on to provide: ‘Oumuamua experienced sufficient warming as it traveled through the solar system to alter its icy structure and release the hydrogen gas. Thus, this answer choice provides the best evidence to support Bergner and colleagues’ claim. Choice A is incorrect because this answer choice concerns faults with previous models of outgassing from ‘Oumuamua of carbon monoxide and nitrogen, which would not support a claim regarding hydrogen outgassing. Furthermore, inconsistencies in other models would not provide evidence in support of a different model or explanation. Choice B is incorrect. The evidence presented in this answer choice would weaken the claim proposed by Bergner and colleagues that the nongravitational acceleration of ‘Oumuamua is caused by the expulsion of hydrogen gas because this answer choice suggests that there is evidence that refutes this claim: ‘Oumuamua’s trajectory is inconsistent with a nongravitational acceleration caused by the release of hydrogen gas. Furthermore, the remaining portion of this answer choice is unrelated to the claim. Choice C is incorrect because the claim being made by Bergner and colleagues concerns the expulsion of entrapped hydrogen gas, but this answer choice is concerned solely with the differences in magnitude of gravitational and nongravitational acceleration, which would not support Bergner’s claim. Furthermore, this answer choice discusses interstellar objects similar to ‘Oumuamua, but the text states that ‘Oumuamua is the first observed object of its kind in our solar system, so evidence from other, similar bodies would not be available.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "73feebf8",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "The ancient writing system used in the Maya kingdoms of southern Mexico and Central America had a symbol for the number zero. The earliest known example of the symbol dates to more than 2,000 years ago. At that time, almost none of the writing systems elsewhere in the world possessed a zero symbol. And the use of zero in Mexico and Central America may be even more ancient. Some historians suggest that Maya mathematicians inherited it from the Olmec civilization, which flourished in the region 2,400–3,600 years ago.",
+    "question": "According to the text, what do some historians suggest about Maya civilization?",
+    "options": [
+      "A. Maya civilization acquired the use of zero from the Olmec civilization.",
+      "B. Maya civilization respected its historians more than it respected its mathematicians.",
+      "C. Maya civilization was highly secretive about its intellectual achievements.",
+      "D. Maya civilization tried to introduce its writing system to other civilizations."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents information about Maya civilization that is supported by the text. The text states that the writing system used in the Maya kingdoms had a symbol for the number zero. It goes on to say that at the time of the zero symbol’s earliest example, more than 2,000 years ago, almost no other writing systems in the world featured such a symbol. The text also points out that some historians suggest that Maya mathematicians inherited the use of zero from the Olmec civilization, which existed in the same area as the Maya civilization at an earlier date. Thus, according to the text, some historians suggest that the Maya civilization acquired the use of zero from the Olmec civilization. Choice B is incorrect because although the text mentions present-day historians and Maya mathematicians, it does not say anything about how much the Maya civilization respected its historians and mathematicians. Choice C is incorrect because the text does not indicate that the Maya civilization treated its use of the zero symbol, or any other intellectual achievements, as secrets to be kept from other civilizations. Choice D is incorrect because although the text mentions historians who suggest that the writing system of the Maya civilization inherited some features from the earlier Olmec civilization, the text does not describe any attempts of Maya civilization to introduce its writing system to other civilizations.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "1c5739ec",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "“The Young Girl” is a 1920 short story by Katherine Mansfield. In the story, the narrator takes an unnamed seventeen-year-old girl and her younger brother out for a meal. In describing the teenager, Mansfield frequently contrasts the character’s pleasant appearance with her unpleasant attitude, as when Mansfield writes of the teenager, ______",
+    "question": "Which quotation from “The Young Girl” most effectively illustrates the claim?",
+    "options": [
+      "A. “I heard her murmur, ‘I can’t bear flowers on a table.’ They had evidently been giving her intense pain, for she positively closed her eyes as I moved them away.”",
+      "B. “While we waited she took out a little, gold powder-box with a mirror in the lid, shook the poor little puff as though she loathed it, and dabbed her lovely nose.”",
+      "C. “I saw, after that, she couldn’t stand this place a moment longer, and, indeed, she jumped up and turned away while I went through the vulgar act of paying for the tea.”",
+      "D. “She didn’t even take her gloves off. She lowered her eyes and drummed on the table. When a faint violin sounded she winced and bit her lip again. Silence.”"
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most effectively illustrates the claim in the text that in describing the teenaged girl, Mansfield contrasts the character’s pleasant appearance with her unpleasant attitude. In the quotation, Mansfield describes the teenager as having a “lovely nose” (a compliment about her appearance) but also as treating her makeup puff “as though she loathed it” (a judgment suggesting her unpleasant attitude). Choice A is incorrect because the teenager′s reaction to the flowers doesn’t make it clear that she has an unpleasant attitude, and nothing in the quotation indicates that any part of her appearance is pleasant. Choice C is incorrect because the quotation suggests that the teenager has an unpleasant attitude (being upset with the location and leaving the table before the narrator has paid for the meal) but doesn’t give any indication that she has a pleasant appearance. Choice D is incorrect because the quotation suggests that the teenager may have an unpleasant attitude (lowering her eyes, wincing, and sitting in silence) but doesn’t give any indication that any part of her appearance is pleasant.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "2f5f8b2e",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Icebergs generally appear to be mostly white or blue, depending on how the ice reflects sunlight. Ice with air bubbles trapped in it looks white because much of the light reflects off the bubbles. Ice without air bubbles usually looks blue because the light travels deep into the ice and only a little of it is reflected. However, some icebergs in the sea around Antarctica appear to be green. One team of scientists hypothesized that this phenomenon is the result of yellow-tinted dissolved organic carbon in Antarctic waters mixing with blue ice to produce the color green.",
+    "question": "Which finding, if true, would most directly weaken the team’s hypothesis?",
+    "options": [
+      "A. White ice doesn’t change color when mixed with dissolved organic carbon due to the air bubbles in the ice.",
+      "B. Dissolved organic carbon has a stronger yellow color in Antarctic waters than it does in other places.",
+      "C. Blue icebergs and green icebergs are rarely found near each other.",
+      "D. Blue icebergs and green icebergs contain similarly small traces of dissolved organic carbon."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents a finding that, if true, would weaken the scientists’ hypothesis about icebergs that appear to be green. The text indicates that most icebergs are either mostly white or blue in color but that some icebergs in Antarctica appear to be green. The text goes on to say that the scientists hypothesized that this green color occurs when yellow-tinted dissolved organic carbon in ocean waters mixes with blue ice. A finding that both blue icebergs and green icebergs contain similarly small traces of dissolved organic carbon would suggest that something other than yellow-tinted organic carbon causes some icebergs’ green color, since the blue icebergs that contain yellow- tinted organic carbon remained blue instead of turning green. Choice A is incorrect because, according to the text, the scientists’ hypothesis was that blue icebergs, not white ones, change color when their ice mixes with yellow-tinted dissolved organic carbon. A finding that white ice, because of its air bubbles, doesn’t change color when it’s mixed with dissolved organic carbon would therefore have no bearing on the scientists’ hypothesis. Choice B is incorrect because the text focuses only on Antarctic icebergs that appear to be green. It doesn’t indicate that icebergs in locations other than Antarctica have been found to have a green hue. A finding that dissolved organic carbon has a stronger yellow color in Antarctic waters than in other places would therefore have no bearing on the scientists’ hypothesis that green color in icebergs in Antarctica is caused by yellow-tinted dissolved organic carbon mixing with blue ice. Choice C is incorrect because, according to the text, the scientists’ hypothesis was that blue icebergs turn green when their ice mixes with yellow-tinted dissolved organic carbon in the sea around them. If that’s correct, one would expect blue icebergs and green icebergs to be located at a distance from each other since all blue icebergs in an area where the waters contain yellow-tinted dissolved organic carbon would take on a green hue. A finding that blue icebergs and green icebergs are rarely found near each other would therefore strengthen, not weaken, the researchers’ hypothesis.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "789cd595",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "To understand how temperature change affects microorganism-mediated cycling of soil nutrients in alpine ecosystems, Eva Kaštovská et al. collected plant-soil cores in the Tatra Mountains at elevations around 2,100 meters and transplanted them to elevations of 1,700–1,800 meters, where the mean air temperature was warmer by 2°C. Microorganism-mediated nutrient cycling was accelerated in the transplanted cores; crucially, microorganism community composition was unchanged, allowing Kaštovská et al. to attribute the acceleration to temperature-induced increases in microorganism activity.",
+    "question": "It can most reasonably be inferred from the text that the finding about the microorganism community composition was important for which reason?",
+    "options": [
+      "A. It provided preliminary evidence that microorganism-mediated nutrient cycling was accelerated in the transplanted cores.",
+      "B. It suggested that temperature-induced changes in microorganism activity may be occurring at increasingly high elevations.",
+      "C. It ruled out a potential alternative explanation for the acceleration in microorganism-mediated nutrient cycling.",
+      "D. It clarified that microorganism activity levels in the plant-soil cores varied depending on which microorganisms comprised the community."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it accurately describes why the finding about the microorganism community composition was important. The text describes an experiment by Eva Kaštovská and her team in which they collected plant-soil cores at one elevation and transplanted them to sites at a lower elevation, where the mean air temperature was warmer. Kaštovská and her team observed that microorganism-mediated nutrient cycling was accelerated in the transplanted cores and that \"crucially, microorganism community composition was unchanged,\" which allowed the team to attribute the acceleration to changes in microorganism activity brought about by the difference in temperature. This strongly implies that the team wouldn’t have been able to make that attribution otherwise, meaning that a change in microorganism composition represented another possible explanation for the acceleration that had to be ruled out. Choice A is incorrect. Although the text says microorganism-mediated cycling of soil nutrients increased in the transplanted cores, this is unrelated to what’s important about the finding that the microorganism composition didn’t change—that it allowed the team to attribute the change in activity solely to the change in temperature. Choice B is incorrect. Although the text compares activity in one core at two different elevations, the text doesn’t address changes in activity at various elevations over time. Choice D is incorrect. Although different microorganisms likely exhibit different levels of activity, the text indicates that there was no change in microorganism composition, and there is nothing in the text about different microorganisms having different activity levels.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "b611a44e",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice best describes data from the graph that support the researchers’ conclusion?",
+    "options": [
+      "A. There was a strong positive correlation between participants’ ignobility scores and admirable-trait candidates’ likability ratings, but there was no correlation between ignobility scores and ignoble-trait candidates’ likability ratings.",
+      "B. Participants with an ignobility score of 5 or less rated admirable-trait candidates as more likable than ignoble-trait candidates, whereas participants with an ignobility score of 6 or more rated ignoble-trait candidates as equally likable as or even more likable than admirable-trait candidates.",
+      "C. Overall, participants rated admirable-trait candidates as quite likable, and that rating was not significantly affected by the participants’ ignobility scores.",
+      "D. Unlike participants with an ignobility score of 6, participants with an ignobility score either greater or less than 6 gave admirable-trait candidates and ignoble-trait candidates different likability ratings."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it describes data from the graph that support the researchers’ conclusion that the trend of admirable-trait candidates being rated as more likable than ignoble-trait candidates held true when participants’ own personality-trait scores were factored in, except among participants with high ignobility scores. The values on the x-axis represent survey participants grouped by their own ignobility scores, from low ignobility (1) to high ignobility (7), while the values on the y-axis represent the likability scores given to the political candidates. The graph shows that the full range of participants (from least to most ignoble) gave the admirable-trait candidates (represented by the line with triangles) a likability rating of approximately 70 out of 100; that is, regardless of their own level of ignobility, participants generally found admirable-trait candidates quite likable. However, the graph shows that participants varied in their views of ignoble-trait candidates (represented by the line with squares); likability ratings increased as the participants’ own ignobility scores increased. Participants with low to medium-high ignobility scores (1 to 5) still rated the ignoble-trait candidates as less likable than the admirable-trait candidates, with all ratings falling below approximately 70, but participants with high ignobility scores (6 and 7) gave ratings equal to or higher than approximately 70. In other words, the previously observed trend of ranking admirable-trait candidates as more likable than ignoble-trait candidates persisted for participants with low to medium-high ignobility but not for participants with high ignobility. Choice A is incorrect because it describes the opposite of what the graph shows. The graph shows a positive correlation between participants’ ignobility scores and ignoble-trait candidates’ likability ratings (as participants’ ignobility scores increased, so did their ratings for ignoble-trait candidates’ likability) and no correlation between ignobility scores and admirable-trait candidates’ likability ratings (all participants gave admirable-trait candidates a rating of approximately 70 out of 100). Choice C is incorrect. The graph does show that regardless of their own ignobility scores, participants rated admirable-trait candidates as quite likable (a rating of approximately 70 out of 100). However, this doesn’t support the researchers’ conclusion because the conclusion has to do with how participants rated both types of candidates, not just the admirable-trait ones; moreover, the conclusion is that relative ratings were actually affected by the participants’ ignobility scores. Choice D is incorrect. The graph does show that only participants with an ignobility score of 6 gave the same likability score to both admirable- and ignoble- trait candidates while participants with other ignobility scores gave a different rating for each candidate, but this doesn’t support the researchers’ conclusion. The conclusion isn’t just that participants gave different ratings to the two types of candidates—it’s that participants with low to medium-high ignobility scores specifically gave higher likability ratings to admirable-trait candidates than to ignoble-trait candidates and that participants with high ignobility scores didn’t.",
+    "image": "assets/coeq_b611a44e.png",
+    "alt": "Data figure: Participants’ Likability Ratings for Candidates by Candidates’ Traits and Participants’ Ignoble-Trait Scores. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "4fc36d8b",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Almost all works of fiction contain references to the progression of time, including the time of day when events in a story take place. In a 2020 study, Allen Kim, Charuta Pethe, and Steven Skiena claim that an observable pattern in such references reflects a shift in human behavior prompted by the spread of electric lighting in the late nineteenth century. The researchers drew this conclusion from an analysis of more than 50,000 novels spanning many centuries and cultures, using software to recognize and tally both specific time references—that is, clock phrases, such as 7 a.m. or 2:30 p.m.—and implied ones, such as mentions of meals typically associated with a particular time of day.",
+    "question": "Which finding from the study, if true, would most directly support the researchers’ conclusion?",
+    "options": [
+      "A. Novels published after the year 1800 include the clock phrase 10 a.m. less often than novels published before the year 1800 do.",
+      "B. Novels published after 1880 contain significantly more references to activities occurring after 10 p.m. than do novels from earlier periods.",
+      "C. Among novels published in the nineteenth century, implied time references become steadily more common than clock phrases as publication dates approach 1900.",
+      "D. The time references of noon (12 p.m.) and midnight (12 a.m.) are used with roughly the same frequency in the novels."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it presents a finding that, if true, would most directly support the researchers’ conclusion that an observable pattern in time references in novels reflects a shift in human behavior prompted by the spread of electric lighting in the late nineteenth century. If novels published after 1880 contain significantly more references to activities occurring after 10 p.m. than novels from earlier periods do, this would suggest a change in human behavior and daily routines enabled by the availability of electric lighting. Before electric lighting—which provided illumination more easily than other available forms of light—many activities ceased after nightfall, so references to late-night activities would be less common in earlier novels. An increase in such references after 1880 would align with the researchers’ conclusion, reflecting an increase in late-night activities made possible by electric lighting. Choice A is incorrect because a decrease in references to 10 a.m. after the year 1800 would not support the researchers’ conclusion involving a shift in human behavior prompted by the spread of electric lighting toward the end of the 1800s. The time of 10 a.m. is in the morning and, in most places, characterized by daylight, so a change in references to that time would not be clearly linked to the impact of electric lighting. Choice C is incorrect because while an increase in implied time references relative to clock phrases in nineteenth-century novels could suggest a change in writing style or conventions, it does not directly support the conclusion involving a shift in human behavior prompted by the spread of electric lighting. The text indicates that the researchers’ conclusion is based on the content of the time references themselves, not the phrasing used. Choice D is incorrect. If references to noon and midnight are used with roughly the same frequency in all the novels analyzed by the researchers, this would reflect a lack of change in human behavior with regard to time and therefore would not support the researchers’ conclusion involving a shift in human behavior that occurred in response to the spread of electric lighting.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "74e64e13",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the graph that support the student’s assertion?",
+    "options": [
+      "A. Between 1970 and 2000, the median age of first marriage rose more sharply for men in England and Wales than it did for men in the United States.",
+      "B. The median age of first marriage for men in England and Wales was lower in 1970 than in 1950 or 1990.",
+      "C. Between 1900 and 2000, the median age of first marriage for women in England and Wales was consistently higher than for women in the United States, as was the case for men.",
+      "D. In England and Wales, the median age of first marriage was consistently higher for men than for women between 1900 and 2000, but this was not always the case in the United States."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer. The student concluded that country-specific factors influence changes to median age of first marriage. This choice describes a time period when the rate of change differed between countries, suggesting that country-specific factors may have played a role in these changes. Choice B is incorrect. The student concluded that country-specific factors influence changes to median age of first marriage. However, this choice doesn’t provide any contrasts between countries and thus doesn’t support the idea of country-specific factors influencing median age of first marriage. Choice C is incorrect. The students’ conclusion is about changes that occurred during the 20th century. This choice provides broad information about the century as a whole, so it doesn’t give insight into how median age at first marriage changed over time. Choice D is incorrect. This choice misreads the graph. The median age of first marriage was consistently higher for men than for women in the United States during the time period depicted.",
+    "image": "assets/coeq_74e64e13.png",
+    "alt": "Data figure: Median Ages of First Marriage for Men and Women in the United States and in England and Wales, 1900–2000. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "a3e58704",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "The following text is from Mick Herron’s 2023 novel The Secret Hours. The narrator is describing members of a government committee.\n\nFinally, and adding much-needed gravitas, was Sir Winston Day, whose features seemed moulded to adorn a bust, or possibly a stamp, and whose forehead was so evidently bulging with grey matter that it would have been impertinent to inquire too closely into the actual achievements his half century of public service had produced. His recently published memoirs possibly cast light on this enigma, but given that such details were not provided until after the thirty-page mark, they might as well have remained state secrets.\n\n©2023 by Mick Herron",
+    "question": "Based on the text, which choice best describes Sir Winston Day?",
+    "options": [
+      "A. He has the appearance of a distinguished figure, but it is uncertain whether he has accomplished anything to earn distinction.",
+      "B. He looks like a person worthy of respect, but his memoirs reveal that some of his actions were dishonorable.",
+      "C. He would be a celebrated public figure if his achievements did not have to be kept secret.",
+      "D. He has maintained a modest profile even though he has served the public capably for many years."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it accurately describes Sir Winston Day as he is portrayed in the text. The text indicates that Sir Winston’s “features seemed moulded to adorn a bust, or possibly a stamp,” suggesting that he appeared distinguished. But the text also indicates that his “actual achievements” during his long public service constitute an “enigma,” or mystery, highlighting the point with a joke about Sir Winston’s uninteresting memoirs (any information about his achievements past the first thirty pages “might as well have remained state secrets” since, it’s implied, no one bothered to read that far). Thus, the text suggests that Sir Winston appears distinguished even though his known accomplishments, if any, are relatively few. Choice B is incorrect because nothing in the text indicates that Sir Winston behaved dishonorably. Rather, the text indicates that his “actual achievements” during his long public service constitute an enigma, or mystery, suggesting that he may have done very little, not that what he has done was disreputable. Choice C is incorrect. Although the text says that Sir Winston’s achievements that appear “after the thirty-page mark” in his memoirs “might as well have remained state secrets,” this is a joke about the public’s lack of interest in the memoirs, not a sincere claim that secrecy was intended. Choice D is incorrect because the text does not associate Sir Winston with modesty, nor does it suggest that he was a capable public servant. Rather, by indicating that Sir Winston’s “features seemed moulded to adorn a bust, or possibly a stamp,” the text suggests that Sir Winston’s appearance communicated importance, not modesty. The text further indicates that his “actual achievements” during his long public service constitute an enigma, or mystery, suggesting that he may have done very little, not that he was particularly capable.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "da68671e",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to support the underlined claim?",
+    "options": [
+      "A. Tanzania has approximately 61 million Swahili speakers, which is much more than the estimated total number of people worldwide for whom Swahili is their first language.",
+      "B. Tanzania is estimated to have at most 15 million Swahili speakers, while the country’s total population is approximately 61 million people.",
+      "C. Approximately 100 percent of the people who speak Swahili as their first language live in Kenya, which has a total population of approximately 55 million people.",
+      "D. Approximately 100 percent of Kenya’s population speaks Swahili, while only about 25 percent of the Democratic Republic of the Congo’s population speaks Swahili."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most effectively uses data from the table to support the underlined claim. The text indicates that Swahili is the first language of up to 15 million people worldwide. The text goes on to claim, in the underlined portion, that even in countries where nearly everyone speaks Swahili, many of the language’s speakers don’t have Swahili as their first language. The table indicates that 61 million people in Tanzania, which amounts to 100 percent of the population, speak Swahili. If 61 million people in Tanzania speak Swahili, but only 15 million people worldwide have Swahili as their first language, that means there are many people in Tanzania who speak Swahili as a language other than their first language. This information about Swahili speakers in Tanzania therefore supports the claim that many Swahili speakers in countries where nearly everyone speaks Swahili speak it as a language other than their first language (such as their second, third, or fourth language). Choice B is incorrect because it doesn’t accurately describe information in the table. According to the table, Tanzania has 61 million Swahili speakers, not at most 15 million Swahili speakers. Additionally, the table indicates that 100 percent of Tanzania’s population speak Swahili, which means that the number of Swahili speakers in the country and the country’s total population should be the same, not that they should differ by such a large amount. Choice C is incorrect because there’s no information in the table or the text that indicates where people who speak Swahili as their first language live. Although Kenya’s total population can be inferred from the table—if Kenya has 55 million Swahili speakers and 100% of Kenya’s population speak Swahili, then Kenya must have a population of 55 million people—nothing suggests that all the people who speak Swahili as their first language live in a single country, let alone that they all live in Kenya. Choice D is incorrect. Although the table does indicate that 100 percent of Kenya’s population and 25 percent of the Democratic Republic of the Congo’s population speak Swahili, this comparison is irrelevant to the claim that Swahili isn’t the first language of many of its speakers even in countries where almost everyone speaks Swahili. On its own, a difference in the proportions of the population who speak Swahili cannot reveal whether those Swahili speakers have Swahili as their first language or a subsequent language.",
+    "image": "assets/coeq_da68671e.png",
+    "alt": "Data figure: Swahili Speakers in Three African Countries. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "9f430d93",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "The Cretaceous pterosaur Tupandactylus navigans is known for having an anomalously oversized head crest. Until an almost complete fossil skeleton was found in Brazil, paleontologists had been able to study only skull specimens from T. navigans, though it was presumed that, like other pterosaurs, the species’s primary form of locomotion was powered flight. Examining the fuller skeleton in 2016, Victor Beccari and his team determined that T. navigans had long hind legs, short wings, and an unusually long neck—characteristics that, combined with the creature’s large-crested head, would have made sustained flight difficult and walking upright relatively comfortable. Based on these findings the team suggests that T. navigans likely ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. flew for longer distances than did other pterosaur species that had oversized head crests.",
+      "B. had longer wings than other pterosaur species considered to have been comfortable walking.",
+      "C. had a smaller head than researchers expected based on the earlier T. navigans skull specimens.",
+      "D. flew for shorter distances and spent more time walking than researchers previously thought."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most logically completes the text’s discussion of the Cretaceous pterosaur Tupandactylus navigans. The text first describes what paleontologists initially speculated to be true of T. navigans based on observing only fossilized skulls of the pterosaur rather than complete skeletons—namely, that T. navigans had an oversized head crest and that, like other pterosaurs, its main mode of movement must have been flight. The text goes on to describe what researcher Victor Beccari and his team concluded based on studying a nearly complete fossilized skeleton of T. navigans, which provided additional information that fossilized skulls alone could not. Beccari and colleagues determined that T. navigans had long hind legs, short wings, and an unusually long neck, in addition to the oversized head crest previously observed by paleontologists. Taken together, these characteristics would have made sustained flight difficult and upright walking comfortable, which would make T. navigans different from other pterosaurs that moved mainly through flight. Thus, Beccari and colleagues suggest that previously held speculations of paleontologists are inaccurate: that instead of moving mainly through powered flight, T. navigans likely flew for shorter distances and spent more time walking than researchers previously thought. Choice A is incorrect because Beccari and his team determined, based on their examination of a nearly complete skeleton, that T. navigans would have found \"sustained flight difficult,\" which would differentiate it from most other pterosaurs that moved mainly through flight. Therefore, Beccari’s team would not suggest that T. navigans flew for longer distances than did other pterosaur species with large head crests. Choice B is incorrect because the fossilized skeleton studied by Beccari and colleagues was notable for its short wings, and because no indication in the text is made that other pterosaurs were thought by paleontologists to be comfortable walking. Therefore, Beccari’s team would not suggest that T. navigans had longer wings than other pterosaur species considered to have been comfortable walking. Choice C is incorrect because the text indicates that Beccari and his team agree with the paleontologists mentioned earlier in the text that T. navigans had a large-crested head. Therefore, Beccari’s team would not suggest that T. navigans had a smaller head than researchers previously expected.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "496b1927",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Ana Castillo’s 1986 novel The Mixquiahuala Letters is a story told entirely through expressive letters from the narrator to her friend—letters that Castillo suggests could be read in several different orders. As they began reading it in class, some students remarked that they found the novel’s letter format daunting and its treatment of gender relations old-fashioned. The professor, however, pointed out that the novel is written in modern-sounding language and addresses issues that still matter today, suggesting that The Mixquiahuala Letters ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. has more to say about gender relations than other novels from the same period.",
+      "B. is more relevant to contemporary audiences than it may seem at first.",
+      "C. is easier to read than many contemporary novels that focus on friendship.",
+      "D. is best understood after multiple readings in different orders."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most logically completes the text’s discussion of Ana Castillo’s 1986 novel The Mixquiahuala Letters. The text states that the novel consists entirely of letters from the narrator to her friend—a format that some students reading the novel in a class found intimidating. According to the text, those students also found the novel’s treatment of gender to be old-fashioned. In response to the students’ concerns, their professor emphasized the novel’s relevance: it’s written in modern-sounding language and addresses issues that still matter. This, in turn, suggests that The Mixquiahuala Letters is more relevant to contemporary audiences than it may initially seem. Choice A is incorrect because the professor’s response to the students only mentions The Mixquiahuala Letters: it doesn’t compare the novel to others from the same period. Choice C is incorrect because nothing in the professor’s response to the students compares The Mixquiahuala Letters to contemporary novels about friendship. Choice D is incorrect because the professor’s response to the students doesn’t address the idea of reading the novel’s letters multiple times and in different orders.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "0b8b5844",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "As media consumption has become increasingly multiplatform and socially mediated, active news acquisition has diminished in favor of an attitude known as “news finds me” (NFM), in which people passively rely on their social networks and ambient media environments for information about current events. Homero Gil de Zúñiga and Trevor Diehl examined data on a representative group of adults in the United States to determine participants’ strength of NFM attitude, political knowledge, and political interest. Although no major election took place sufficiently near the study for Gil de Zúñiga and Diehl to identify causality between NFM and voting behavior, they did posit that NFM may reduce voting probability through an indirect effect.",
+    "question": "Which finding, if true, would most directly support the idea advanced by Gil de Zúñiga and Diehl?",
+    "options": [
+      "A. NFM attitude tends to increase in strength as major elections approach, and people are significantly more likely to vote in major elections than in minor elections.",
+      "B. NFM attitude has a strong negative effect on political knowledge and interest, and there is known to be a strong positive correlation between political knowledge and interest and the likelihood of voting.",
+      "C. Political interest is known to have a strong positive effect on likelihood of voting but shows only a weak positive effect on political knowledge, and NFM attitude shows little correlation with either political knowledge or political interest.",
+      "D. The likelihood of voting increases as political knowledge increases, and the relationship between NFM attitude and political knowledge tends to strengthen as the size of people’s social networks increases."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it presents a finding that, if true, would most directly support the idea advanced by Homero Gil de Zúñiga and Trevor Diehl that NFM (\"news finds me\") attitude may reduce voting probability through an indirect effect. The text describes NFM as an attitude that has lowered people’s interest in actively acquiring news and introduces Gil de Zúñiga and Diehl’s study on the effects of NFM on people in the United States’ political knowledge and interest. The text goes on to say that despite the fact that the study didn’t occur near a major election, Gil de Zúñiga and Diehl still conclude that NFM may reduce voting probability. If the likelihood, or probability, that a person will vote is linked to that person’s level of political knowledge and interest, that would suggest that negatively affecting a person’s level of political knowledge and interest would also negatively affect how likely that person is to vote. Thus, if NFM attitude has a negative effect on political knowledge and interest, then it would also likely reduce voting probability. Choice A is incorrect because the finding that NFM attitude increases as major elections approach wouldn’t address the effect of NFM on the likelihood of voting, which is the idea advanced by Gil de Zúñiga and Diehl. Moreover, although the text mentions that there were no major elections that occurred near the time of the study, it doesn’t discern between major and minor elections when discussing voting probability. Choice C is incorrect because finding that NFM attitude shows little correlation with either political knowledge or political interest would undermine, not support, Gil de Zúñiga and Diehl’s idea that NFM may reduce voting probability because it suggests that NFM has no effect on political knowledge or political interest. Choice D is incorrect. Although Gil de Zúñiga and Diehl’s idea would be supported by the finding that the likelihood of voting increases as political knowledge increases, nothing in the text suggests that the researchers’ idea hinges on the size of people’s social networks.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "07b472d2",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice best describes data from the table that support Persad and her colleagues’ conclusion?",
+    "options": [
+      "A. If baseline precipitation is somewhat concentrated, the amount of water being used for irrigation will increase 0.4% for surface water and 0.9% for groundwater, whereas the amount of water entering aquifers will increase 11.0% if baseline precipitation is evenly distributed.",
+      "B. If baseline precipitation is somewhat concentrated, water use for irrigation will increase only slightly, whereas it will increase 9.0% for surface water and 7.9% for groundwater if baseline precipitation is evenly distributed.",
+      "C. If baseline precipitation is somewhat concentrated, the amount of water entering aquifers will increase 4.9%, while the amount being used for irrigation will increase 0.4% for surface water and 0.9% for groundwater.",
+      "D. If baseline precipitation is somewhat concentrated, water use for irrigation will decline by a small amount, whereas it will increase 11.0% for surface water and 9.0% for groundwater if baseline precipitation is evenly distributed."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it describes data from the table that support Persad and her colleagues’ conclusion. The text explains that, according to some climate models, precipitation in the western United States will become concentrated into fewer, more intense rain and snow events. According to the text, Persad and her colleagues concluded that more irrigation will consequently be needed but that the change in irrigation output will be highly sensitive to, or greatly affected by, the baseline concentration of precipitation in an area. This conclusion is supported by data from the researchers’ simulations of changes in annual irrigation output in two different scenarios—one in which an area’s annual precipitation is already somewhat concentrated and one in which its annual precipitation is evenly distributed. The table shows that if baseline precipitation is somewhat concentrated, water use for irrigation will increase only slightly, whereas if baseline precipitation is evenly distributed, water use for irrigation will increase much more—9.0% for surface water and 7.9% for groundwater. This difference illustrates the researchers’ conclusion that the amount of additional water needed for irrigation will vary greatly depending on how concentrated or spread out the annual precipitation in an area already is. Choice A is incorrect because it compares changes in the amount of water being used for irrigation to changes in the amount of water entering aquifers. Persad and her colleagues’ conclusion doesn’t focus on changes to the amount of water entering aquifers; rather, the researchers’ conclusion focuses on changes to irrigation output relative to how concentrated or spread out the annual precipitation in an area is. Choice C is incorrect because it supports only part of Persad and her colleagues’ conclusion. According to the text, the researchers concluded that the concentration of precipitation into fewer events will trigger more irrigation but that this change in irrigation output will be highly sensitive to an area’s baseline concentration of annual precipitation. The data in this choice support the idea that more irrigation will be needed, but to support the rest of the researchers’ conclusion, additional data from the table are required to show that the increases in water use for irrigation will vary depending on how concentrated or spread out the annual precipitation in an area already is. Choice D is incorrect because data in the table indicate no declines in water use for irrigation, showing only increases in the form of positive values.",
+    "image": "assets/coeq_07b472d2.png",
+    "alt": "Data figure: Simulated Change in Annual Aquifer Input and Irrigation Output if Precipitation Concentration Increases as Climate Models Predict. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "a8e4c671",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Online surveys are a common tool researchers use to collect information. These surveys are usually designed for use on personal computers (PCs), but more people are using smartphones to complete them than they are PCs. This shift in device usage may change how participants interact with online surveys. When researchers Jean Philippe Décieux and Philipp E. Sischka investigated, they found that PC users were more likely to multitask while taking surveys than smartphone users were, but PC users were also more likely to complete the surveys.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. People are choosing to take online surveys on smartphones more often than they are on PCs because smartphones are convenient.",
+      "B. Researchers are investigating why survey completion rates are higher on PCs than they are on smartphones, despite increased multitasking on PCs.",
+      "C. Researchers prefer online surveys to other ways of collecting information because they think online survey results are more reliable.",
+      "D. A study shows that the type of device people use to complete online surveys affects how they interact with these surveys."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most accurately states the main idea of the text. The text opens by noting that online surveys are usually designed for PCs but that more people now use smartphones to take them—a shift, the text proposes, that may affect how participants interact with the surveys. The text then describes study findings—PC users were more likely to multitask but also more likely to complete surveys than smartphone users were—as evidence to illustrate the overall point that device type does indeed change how participants behave when responding to surveys. Thus, the text as a whole conveys the idea that according to a study, the type of device people use to complete online surveys affects how they interact with these surveys. Choice A is incorrect. Although the text notes that more people are using smartphones than PCs for surveys, it doesn’t indicate why people are making this choice, much less suggest that convenience is a factor in this shift. The text focuses on the consequences of the shift in device usage, not on its causes. Choice B is incorrect. Although the text reports that PC users were more likely to complete surveys than smartphone users were despite also being more likely to multitask while taking the surveys, it doesn’t frame the study as an inquiry into the reasons for these differences in completion rates. Instead, the text presents these findings to illustrate how device type affects survey participants’ interactions with online surveys. Choice C is incorrect. Although the text states that online surveys are commonly used in research, the text doesn’t discuss whether researchers prefer online surveys over other data collection methods, nor does it indicate that online surveys are more reliable than alternative methods. Rather, the text focuses on how different devices affect the way participants interact with online surveys.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "4874b36d",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Colonized by Spain in the 1600s, New Mexico is home to a dialect of Spanish that differs significantly from dialects spoken in Spain’s other former colonies in the Americas. Most notably, the New Mexican dialect retains older features of the language that other dialects lost in later centuries. But why would it have done so? New Mexico was so distant from population centers in Spain’s other colonies that it attracted few colonists after its initial colonization. Geographical isolation in turn would have limited the exposure of New Mexican colonists to changes occurring to Spanish grammar and vocabulary elsewhere in the empire. Thus, the present-day uniqueness of the New Mexican dialect suggests the extent to which ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. a language can protect itself from being influenced by other languages.",
+      "B. the grammar and vocabulary of any given language change from one generation to the next.",
+      "C. geographical isolation can influence how a language develops.",
+      "D. speakers of one dialect of a language can understand speakers of another dialect of that language."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it is the choice that most logically completes the text. The text mentions a dialect of Spanish spoken in New Mexico, which was colonized by Spain in the 1600s. The text then states that the New Mexican dialect differs greatly from other Spanish dialects in that it still has characteristics of an older Spanish that other dialects eventually lost. After asking why this might be, the text points out that the New Mexico colony was distant from Spain’s other colonies, making it less attractive to colonists after the initial colonization. This geographic isolation limited the colony’s exposure to other Spanish colonists who would have otherwise introduced the changes to the Spanish language that occurred in their respective colonies. It can therefore be inferred that this isolation is a reason why the New Mexican dialect still has characteristics of an older Spanish, while the Spanish dialects spoken in less isolated areas that have more interaction with speakers of other dialects would lose those characteristics over time. Thus, the most logical completion of the text is that geographical isolation can influence how a language develops. Choice A is incorrect because the text discusses different dialects of Spanish, not different languages altogether. Choice B is incorrect because the text focuses on how the New Mexican dialect has stayed the same over time in some ways, not on how it has changed from one generation to the next. Choice D is incorrect because though the text discusses how the New Mexican dialect of Spanish is different from others, it does not discuss how speakers of different dialects are able to understand each other.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "1acd1d92",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Electronic music pioneer Wendy Carlos is credited with the music for three feature films: A Clockwork Orange (1971), The Shining (1980), and Tron (1982). However, her musical score for A Clockwork Orange is mostly made up of her arrangements of Ludwig van Beethoven’s work. Also, almost all the music that she and Rachel Elkind composed for The Shining was unused by director Stanley Kubrick. It did not appear in the film. Of the three films, Tron is the one in which audiences can hear the most of Carlos’s original compositions.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. Of the three films for which Carlos is credited, Tron features the most original music from her.",
+      "B. The director of The Shining used most of the music that Carlos composed for it.",
+      "C. Beethoven is widely considered to be a more important composer than Carlos.",
+      "D. Carlos is a notable innovator among film composers in the 1970s and 1980s."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it best states the main idea of the text. The text indicates that Wendy Carlos scored three feature films: A Clockwork Orange, The Shining, and Tron. It also indicates that Carlos’s work on A Clockwork Orange consisted primarily of electronic arrangements of Beethoven compositions and that very little of what she and Rachel Elkind composed for The Shining was used in the film. But the soundtrack for Tron consists largely of music composed by Carlos, so it contains more of her original music than do the soundtracks for the other two films. Thus, the main idea of the text is that of the three films for which Carlos is credited, Tron features the most original music from her. Choice B is incorrect because it directly contradicts the text’s claim that \"very little of what she and Rachel Elkind composed for The Shining was used in the film.\" Choice C is incorrect because the text doesn’t address the perceived quality of different composers, instead, it discusses how much of Carlos’s original work was used in each of the three films she scored. Choice D is incorrect because it doesn’t relate to any of the major themes of the text: the work Wendy Carlos did for three feature films, how much of that work was composed by Carlos, and how much of her original work was ultimately used in the film.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "de4478c3",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Born in 1891 to a Quechua-speaking family in the Andes Mountains of Peru, Martín Chambi is today considered to be one of the most renowned figures of Latin American photography. In a paper for an art history class, a student claims that Chambi’s photographs have considerable ethnographic value—in his work, Chambi was able to capture diverse elements of Peruvian society, representing his subjects with both dignity and authenticity.",
+    "question": "Which finding, if true, would most directly support the student’s claim?",
+    "options": [
+      "A. Chambi took many commissioned portraits of wealthy Peruvians, but he also produced hundreds of images carefully documenting the peoples, sites, and customs of Indigenous communities of the Andes.",
+      "B. Chambi’s photographs demonstrate a high level of technical skill, as seen in his strategic use of illumination to create dramatic light and shadow contrasts.",
+      "C. During his lifetime, Chambi was known and celebrated both within and outside his native Peru, as his work was published in places like Argentina, Spain, and Mexico.",
+      "D. Some of the peoples and places Chambi photographed had long been popular subjects for Peruvian photographers."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents a finding that, if true, would support the claim about Chambi’s photographs. The text describes a student advancing the claim that Chambi’s photographs “have considerable ethnographic value”—meaning that they are valuable as records of cultures—and that they “capture diverse elements of Peruvian society” in a respectful way. If it’s true that Chambi carefully photographed people from a range of different communities in Peru as well as photographed the customs and sites of different communities, that would lend support to the claim that the photographs have ethnographic value as depictions of diverse elements of society in Peru. Choice B is incorrect because the student’s claim is that Chambi’s photographs have considerable ethnographic value because they depict diverse elements of Peruvian society; the student doesn’t claim anything about the technical skill demonstrated in the photographs. Choice C is incorrect because neither Chambi’s reputation nor the locations where his photographs may have been published would be relevant to the student’s claim that his photographs are valuable as an ethnographic record of Peru’s diverse society. Choice D is incorrect because the popularity among other photographers of the people and places that Chambi photographed would be irrelevant to the student’s claim that Chambi’s photographs are valuable as an ethnographic record of Peru’s diverse society.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "29546833",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Overgrazing by purple sea urchins has caused many kelp forests along North America’s west coast to be replaced by urchin barrens—areas stripped of vegetation and covered in purple sea urchins. Urchins in barrens persist in a state of starvation that lessens their nutritional value— and thus their appeal—to many predators. Sarah Gravem and colleagues placed sunflower sea stars, a once-abundant predator species suffering massive population declines in recent years, in aquariums that each contained a nutritionally poor and a nutritionally rich purple sea urchin. The researchers found that the sea stars selected the nutritionally rich urchin in 42.7% of trials and the nutritionally poor urchin in 37.5% of trials, suggesting that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. sunflower sea stars are willing to hunt sea urchins, but if given a choice, they will prey on other more nutritious marine animals instead.",
+      "B. sunflower sea stars are reluctant to feed on both nutritionally poor and nutritionally rich sea urchins and are therefore unlikely to thrive in kelp forests.",
+      "C. sunflower sea stars are less likely to consume sea urchins in barrens than other species of sea stars are, putting sunflower sea stars at a high risk of extinction.",
+      "D. sunflower sea stars do not always avoid foraging on nutritionally poor sea urchins, making sunflower sea star population recovery a potentially important tool for controlling urchin barrens."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents the conclusion that most logically follows from the text’s discussion of the researchers’ findings about purple sea urchins and sunflower sea stars. The text explains that urchin barrens are areas that used to be kelp forests but are now covered by purple sea urchins. The text suggests that because there is no more vegetation to be consumed in those areas, the urchins exist in a state of starvation that makes them less nutritional for many predators. The text goes on to explain that in a study with a choice between two purple sea urchins, sunflower sea stars (a predator species that has been substantially declining) consumed a nutritionally rich urchin 42.7% of the time and a nutritionally poor urchin 37.5% of the time. Because the sunflower sea stars didn’t always avoid consuming nutritionally poor urchins, even when nutritionally rich ones were available, it follows that helping sunflower sea star populations to grow could help control urchin barrens by increasing the number of sea stars that may consume and thus remove nutritionally poor purple sea urchins from barrens. Choice A is incorrect because the text indicates only that when presented with purple sea urchins, the sunflower sea stars in the study consumed both nutritionally rich and nutritionally poor ones. It doesn’t suggest that sunflower sea stars generally prefer other marine animals that are more nutritious; there’s no mention of other marine animals. Choice B is incorrect because the text doesn’t suggest that sunflower sea stars are generally reluctant to feed on sea urchins. In fact, the text indicates that the sunflower sea stars in the study did consume sea urchins, feeding on both nutritionally poor and nutritionally rich ones. Choice C is incorrect because the text addresses only the willingness of sunflower sea stars to consume the type of sea urchins found in barrens (nutritionally poor sea urchins), not how likely other species of sea stars are to consume them.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "fe9787b9",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "If some artifacts recovered from excavations of the settlement of Kuulo Kataa, in modern Ghana, date from the thirteenth century CE, that may lend credence to claims that the settlement was founded before or around that time. There is other evidence, however, strongly supporting a fourteenth century CE founding date for Kuulo Kataa. If both the artifact dates and the fourteenth century CE founding date are correct, that would imply that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. artifacts from the fourteenth century CE are more commonly recovered than are artifacts from the thirteenth century CE.",
+      "B. the artifacts originated elsewhere and eventually reached Kuulo Kataa through trade or migration.",
+      "C. Kuulo Kataa was founded by people from a different region than had previously been assumed.",
+      "D. excavations at Kuulo Kataa may have inadvertently damaged some artifacts dating to the fourteenth century CE."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most logically completes the text’s discussion of artifacts and Kuulo Kataa’s founding date. If it were true both that Kuulo Kataa was founded in the fourteenth century CE and that artifacts found in excavations of the settlement are from the thirteenth century CE, it would be reasonable to conclude that the artifacts weren’t created in the Kuulo Kataa settlement. That would suggest, then, that the artifacts originated somewhere else and eventually reached the settlement through trading or as people migrated. Choice A is incorrect because the existence of thirteenth-century CE artifacts recovered during excavations of a settlement founded in the fourteenth century CE isn’t logically connected to artifacts from one century being more commonly recovered than artifacts from another century. Rather than suggesting anything about how frequently artifacts from different times are found, the existence of artifacts confirmed as predating the settlement’s founding suggests that those items arrived in Kuulo Kataa during or after its establishment. Choice C is incorrect because the text focuses on time periods and says nothing about which region the founders of Kuulo Kataa have been thought to come from; similarly, the text doesn’t suggest anything about where the thirteenth-century CE artifacts originated other than not from Kuulo Kataa. Therefore, it isn’t logical to conclude that the mere existence of artifacts confirmed as predating the Kuulo Kataa settlement suggests that the founders of the settlement came from a particular region other than one previously assumed. Choice D is incorrect because the existence of artifacts from the thirteenth century CE at a site dated to the fourteenth century CE doesn’t imply that fourteenth-century objects were damaged during excavations. There’s nothing in the text to suggest that any objects were damaged; rather, the existence of artifacts confirmed as predating the settlement’s founding suggests that those items were brought to Kuulo Kataa during or after its establishment.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "5b48954a",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the example?",
+    "options": [
+      "A. in each year shown, the revenue from tourism by residents of those countries was greater than the revenue from international tourism.",
+      "B. Japan’s international tourism revenue was higher in 2016 than it was in 2018.",
+      "C. South Korea’s annual international tourism revenue decreased from 2016 to 2017.",
+      "D. in each year shown, Thailand had higher international tourism income than any of the other countries."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most effectively uses data from the table to complete the text, providing an example that illustrates that the annual increases in international tourism revenue in 2017 and 2018 weren’t universal. The table shows the annual spending by international tourists (which indicates annual international tourism revenue) in 2016–2018 in four Asian countries. According to the table, annual spending by international tourists in South Korea was $21.0 billion in 2016 and then decreased to $17.2 billion in 2017. This decrease shows that not all of the countries included in the table saw increases in annual international tourism revenue in 2017. Choice A is incorrect because the table doesn’t provide any data regarding revenue from tourism by residents of those countries. Even if that data were provided, it wouldn’t be relevant to the claim that the trend of annual increases in international tourism revenue in 2017 and 2018 was not universal. Choice B is incorrect because the data in the table do not support the statement that Japan’s international tourism revenue was higher in 2016 than it was in 2018: the table indicates that Japan’s annual international tourism revenue was $33.5 billion in 2016, which is less than Japan’s annual international tourism revenue of $45.3 billion in 2018. Choice D is incorrect. Although the table does indicate that Thailand’s revenue from international tourism was higher than that of the other three Asian countries in 2016, 2017, and 2018, this information has no direct bearing on the text’s claim that not all the Asian countries represented in the table saw an increase in revenue from international tourism.",
+    "image": "assets/coeq_5b48954a.png",
+    "alt": "Data figure: Annual Spending by International Tourists in Four Countries (in billions of US dollars. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "d4b4a4b2",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "A student performs an experiment testing her hypothesis that a slightly acidic soil environment is more beneficial for the growth of the plant Brassica rapa parachinensis (a vegetable commonly known as choy sum) than a neutral soil environment. She plants sixteen seeds of choy sum in a mixture of equal amounts of coffee grounds (which are highly acidic) and potting soil and another sixteen seeds in potting soil without coffee grounds as the control for the experiment. The two groups of seeds were exposed to the same growing conditions and monitored for three weeks.",
+    "question": "Which finding, if true, would most directly weaken the student’s hypothesis?",
+    "options": [
+      "A. The choy sum planted in the soil without coffee grounds were significantly taller at the end of the experiment than the choy sum planted in the mixture of soil and coffee grounds.",
+      "B. The choy sum grown in the soil without coffee grounds weighed significantly less at the end of the experiment than the choy sum grown in the mixture of soil and coffee grounds.",
+      "C. The choy sum seeds planted in the soil without coffee grounds sprouted significantly later in the experiment than did the seeds planted in the mixture of soil and coffee grounds.",
+      "D. Significantly fewer of the choy sum seeds planted in the soil without coffee grounds sprouted plants than did the seeds planted in the mixture of soil and coffee grounds."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it describes an experimental outcome that would most directly weaken the student’s hypothesis. According to the text, the student hypothesizes that Brassica rapa parachinensis (choy sum) will benefit more from acidic soil than it will from neutral soil. The text then explains that the student planted 16 choy sum seeds in potting soil with coffee grounds added to increase acidity and another 16 seeds in soil without coffee grounds as a control (a group identical to the experimental group except for the experimental modification being tested). If the hypothesis were correct, the plants in the more acidic soil-and-coffee-grounds mixture would grow faster than those in the control group. However, choice A proposes a scenario in which the plants in soil without coffee grounds were “significantly taller” than those in the more acidic mixture—an outcome that weakens the hypothesis that higher acidity is beneficial to the plants’ growth. Choice B is incorrect. If the choy sum planted in the neutral soil produced less plant matter and therefore weighed less than the choy sum planted in the acidic soil-and-coffee-grounds mixture, this finding would strengthen the student’s hypothesis, not weaken it. Choice C is incorrect. If seeds planted in neutral soil (without coffee grounds) sprouted significantly later than seeds planted in the acidic soil-and-coffee-grounds mixture, this finding would strengthen, not weaken, the student’s hypothesis that acidic soil benefits choy sum. Choice D is incorrect. If seeds planted in the neutral soil (without coffee grounds) sprouted significantly fewer plants than seeds planted in the acidic soil-and-coffee-grounds mixture did, this finding would strengthen, not weaken, the student’s hypothesis that choy sum benefits from acidic soil.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "fd1acad3",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "In a three-year study of parasitic infections by Anomotaenia brevis tapeworms in Temnothorax nylanderi ants, entomologist Susanne Foitzik and colleagues found something unexpected: rather than reducing its host’s fitness, as is typical of parasites, A. brevis greatly extends the lifespan of a T. nylanderi worker ant and seems to halt the effects of aging. Furthermore, those infected receive special treatment, ceasing their share of labor to sustain the colony and remaining in the nest as uninfected workers feed, groom, and transport them. By contrast, the researchers observed that uninfected workers in parasitized colonies have shortened lifespans, most likely because the ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. uninfected workers are at high risk for direct exposure to A. brevis in the course of providing social care to the infected workers in the nest.",
+      "B. need to compensate for reduced contributions within the colony while also caring for infected workers is burdensome to the uninfected workers.",
+      "C. high level of activity maintained by the uninfected workers makes them better able than infected workers to quickly disperse when the nest is attacked by a predator.",
+      "D. average lifespan of T. nylanderi worker ants in colonies without parasitic activity typically falls well below three years, the range covered by the study."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer. The text describes a study examining the relationship between a species of parasitic tapeworm, A. brevis, and its host insect, the T. nylanderi ant. According to the text, researchers were surprised to find that the tapeworm extends the life of its ant host, rather than reducing it. The text goes on to state that the infected ants end up doing less work to sustain the colony and that as a result, the uninfected ants take on the infected ants’ share of labor in addition to caring for them in their infected state. The study’s researchers also observed that the uninfected ants have shorter lifespans than expected. If the infected ants, who are doing less work in the colony, have longer lifespans, it can be inferred that the less an ant works, the longer it will live. The opposite of this statement can also be inferred: the more an ant works, the shorter its life. So, since the workload within the colony is being redistributed so that the infected ants work less while the uninfected ants work more (as they take on the neglected duties of the infected ants and also care for those ants), then it can be inferred that the lifespans of the uninfected ants are shortened because the need to compensate for reduced contributions within the colony while also caring for infected workers is burdensome to the uninfected workers. Choice A is incorrect because the text does not indicate how A. brevis is transmitted to the ants or assert that uninfected ants are more likely to be directly exposed to A. brevis while caring for infected ants. Choice C is incorrect because the text makes no mention of the relative abilities of infected and uninfected ants to escape predators: in fact, predators are not mentioned in the text at all. Choice D is incorrect because the text does not supply any information about the average lifespans of the ants in colonies without parasitic activity; the text only indicates factors that lengthen and shorten the lifespans of ants in parasitized colonies.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "d38d1da0",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Aptamers—synthetic DNA or RNA molecules that bind to target molecules—can be used to test for foodborne bacterial pathogens, though their specificity (the probability of returning a negative result in the absence of the focal pathogen) in real-world foods has been unclear. Sandeep Somvanshi et al. fabricated test paper incorporating aptamers targeting strain O157:H7 of the bacteria Escherichia coli; the paper shifts from pink to purple as the aptamers bind to target molecules. Somvanshi et al. tested the paper in store-bought pear juice they treated with E. coli O157:H7, other strains of E. coli, or other bacteria species. Following exposure, the paper from the O157:H7 test was purple while papers from the other tests were pink, suggesting that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. aptamer-based tests in real-world foods are more likely to show a high degree of specificity if the focal pathogen is E. coli O157:H7 than if the focal pathogen is another strain of E. coli or another species.",
+      "B. uncertainty about the specificity of aptamer-based tests for pathogens in real-world foods may be due to the similarity between E. coli O157:H7 and other E. coli strains.",
+      "C. the specificity of the tests in a real-world food was unaffected by the aptamers’ tendency to bind to different strains of E. coli.",
+      "D. the aptamers successfully bound to E. coli O157:H7 and the tests displayed a high degree of specificity in a real-world food."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most logically completes the text’s discussion of aptamers’ capacity to test for pathogens in food. The text explains that although synthetic aptamer molecules can be used to test for foodborne bacterial pathogens because they bind to target molecules, it hasn’t been clear how likely it is that they will indicate a negative result when a target pathogen is absent in real-world foods. The text then indicates that Somvanshi et al. created test paper that changes from pink to purple when aptamers in it bind to a particular strain of E. coli bacteria, O157:H7, and tested it with store-bought pear juice (that is, a real-world food); the paper changed to purple when exposed to juice to which the target pathogen E. coli O157:H7 had been added, but it remained pink when exposed to juice treated with other E. coli strains or other bacteria species. Based on this result, it seems the aptamers in the paper successfully bound to the target (O157:H7) and the tests had a high degree of specificity (providing negative results for samples where the target was absent even though other bacteria were present) when applied to a real-world food. Choice A is incorrect because nothing in the text suggests that E. coli O157:H7 differs from other pathogens in a way that makes it more suitable for aptamer-based testing of any kind and that specificity is likely to be lower when aptamer-based tests target other bacteria; the text simply indicates that Somvanshi et al. used O157:H7 as the target for aptamer-based test paper in their study and suggests that the paper had a high degree of specificity. Choice B is incorrect because the text indicates that the specificity of aptamer-based tests in real-world foods is uncertain for pathogens broadly, not just for E. coli, and similarity between strains (of E. coli or of other pathogens) isn’t mentioned. Moreover, the results presented in the text suggest that aptamers are actually capable of distinguishing between strains of E. coli, since Somvanshi et al.’s paper turned purple when exposed to E. coli O157:H7 and remained pink when exposed to other strains. Choice C is incorrect because the text suggests that the aptamers in the test papers didn’t bind to different strains of E. coli. The text explains that the test papers turn purple when the aptamers bind to the targeted pathogen and that in the pear juice tests, the test papers turned purple when exposed to samples with the targeted strain of E. coli (O157:H7) but remained pink when exposed to samples with other strains of E. coli. In other words, the aptamers bound only to the targeted strain, not to the other strains. Further, specificity would be affected if the aptamers had bound to multiple strains and not just the targeted one; that result would cause the specificity to be low.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "df9fc9c6",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Silicon-based photovoltaic cells account for 95% of the cells used in solar panels worldwide despite converting an average of only 18–22% of the sunlight that reaches them. In a study addressing this relative inefficiency, a team led by Laura Miranda-Pérez demonstrated that the addition of a thin layer of the mineral perovskite—which captures the blue range of light in the solar spectrum, whereas silicon captures the red range— allows the cells to convert 29.5% or more of the Sun’s energy into usable electricity. Cells made with only perovskite, however, are no more efficient than silicon-based ones. It’s reasonable to conclude, then, that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. photovoltaic cells with both silicon and perovskite are more efficient because they make use of more of the solar spectrum.",
+      "B. photovoltaic cells with only perovskite and no silicon would likely convert more than 29.5% of the Sun’s energy.",
+      "C. solar power will remain elusive until photovoltaic cells are replaced with a more practical technology.",
+      "D. researchers need to evaluate whether other minerals like perovskite are as effective as perovskite seems to be."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents the conclusion that most logically completes the text’s discussion of the efficiency of various photovoltaic cells. The text indicates that Miranda-Pérez and her team found that adding a layer of perovskite to silicon-based cells increased the percentage of sunlight converted to usable electricity relative to the percentage converted to electricity by silicon-based cells. Using cells with only perovskite and no silicon, however, resulted in no improvement in efficiency over silicon-based cells. The text also states that perovskite captures light in the blue range of the solar spectrum and silicon captures light in the red range of the spectrum. If perovskite and silicon capture different parts of the solar spectrum and the combination of perovskite and silicon results in greater efficiency than the use of either perovskite or silicon alone does, then it is reasonable to infer that the improved efficiency of perovskite-silicon cells could be attributable to their making use of more of the solar spectrum than perovskite-based or silicon-based cells do. Choice B is incorrect because it is directly contradicted by the text, which says that silicon-based cells convert 18%–22% of the sunlight that reaches them to electricity and that cells with only perovskite are no more efficient than silicon-based cells are. Perovskite-only cells thus must convert 22% or less—not more than 29.5%—of the sunlight that reaches them to electricity. Choice C is incorrect because the text focuses on a possible improvement to photovoltaic cells and makes no mention of any alternatives to those cells, so there is no reason to conclude that photovoltaic cells must be replaced with some other technology. Additionally, the text presents solar power as something that currently exists, so it wouldn’t make sense to conclude that solar power will remain elusive. Choice D is incorrect because nothing in the text suggests that there is a need to evaluate the effectiveness of other minerals than perovskite. In fact, the text gives no indication that it is even possible to use other minerals than silicon and perovskite in photovoltaic cells. Instead, the text is focused on the effect of combining perovskite and silicon and the different parts of the solar spectrum that perovskite and silicon capture.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "97fe7e30",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "While attending school in New York City in the 1980s, Okwui Enwezor encountered few works by African artists in exhibitions, despite New York’s reputation as one of the best places to view contemporary art from around the world. According to an arts journalist, later in his career as a renowned curator and art historian, Enwezor sought to remedy this deficiency, not by focusing solely on modern African artists, but by showing how their work fits into the larger context of global modern art and art history.",
+    "question": "Which finding, if true, would most directly support the journalist’s claim?",
+    "options": [
+      "A. As curator of the Haus der Kunst in Munich, Germany, Enwezor organized a retrospective of Ghanaian sculptor El Anatsui’s work entitled El Anatsui: Triumphant Scale, one of the largest art exhibitions devoted to a Black artist in Europe’s history.",
+      "B. In the exhibition Postwar: Art Between the Pacific and the Atlantic, 1945–1965, Enwezor and cocurator Katy Siegel brought works by African artists such as Malangatana Ngwenya together with pieces by major figures from other countries, like US artist Andy Warhol and Mexico’s David Siqueiros.",
+      "C. Enwezor’s work as curator of the 2001 exhibition The Short Century: Independence and Liberation Movements in Africa, 1945–1994 showed how African movements for independence from European colonial powers following the Second World War profoundly influenced work by African artists of the period, such as Kamala Ibrahim Ishaq and Thomas Mukarobgwa.",
+      "D. Enwezor organized the exhibition In/sight: African Photographers, 1940 to the Present not to emphasize a particular aesthetic trend but to demonstrate the broad range of ways in which African artists have approached the medium of photography."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it presents a finding that, if true, would most directly support the arts journalist’s claim about Enwezor’s work as a curator and art historian. In the text, the arts journalist asserts that Enwezor wished not just to focus on modern African artists but also to show “how their work fits into the larger context of global modern art and art history,” or how their work relates to artistic developments and work by other artists elsewhere in the world. The description of Postwar: Art Between the Pacific and the Atlantic, 1945–1965 indicates that Enwezor and Siegel’s exhibition brought works by African artists together with works by artists from other countries, thus supporting the arts journalist’s claim that Enwezor sought to show works by African artists in a context of global modern art and art history. Choice A is incorrect because it describes a retrospective that wouldn’t support the arts journalist’s claim that Enwezor wanted to show how works by modern African artists fit into the larger context of global modern art and art history. The description of El Anatsui: Triumphant Scale indicates that the retrospective focused only on the work of a single African artist, El Anatsui. The description doesn’t suggest that the exhibition showed how El Anatsui’s works fit into a global artistic context. Choice C is incorrect because it describes an exhibition that wouldn’t support the arts journalist’s claim that Enwezor wanted to show how works by modern African artists relate to the larger context of global modern art and art history. The description of The Short Century: Independence and Liberation Movements in Africa, 1945–1994 indicates that the exhibition showed how African artists were influenced by movements for independence from European colonial powers following the Second World War. Although this suggests that Enwezor intended the exhibition to place works by African artists in a political context, it doesn’t indicate that the works were placed in a global artistic context. Choice D is incorrect because it describes an exhibition that wouldn’t support the arts journalist’s claim that Enwezor wanted to show how works by modern African artists relate to the larger context of global modern art and art history. The description of In/sight: African Photographers, 1940 to the Present indicates that the exhibition was intended to reveal the broad range of approaches taken by African photographers, not that the exhibition showed how photography by African artists fits into a global artistic context.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "8894fd89",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Duckweed is a small freshwater plant that is often exposed to zinc pollution. Sofia Vámos and colleagues collected samples of four duckweed ecotypes (genetically and geographically distinct populations within a species), along with water from each ecotype’s habitat. Hypothesizing that each ecotype is adapted to its local conditions in ways that bolster its growth and resistance to pollutants, the researchers grew each ecotype in all four water samples and with three levels of zinc (none, low, high). (The researchers did not replicate local differences in light or temperature.) They found that the ecotypes grew equally well in all four water samples and that adding zinc consistently enhanced growth, regardless of concentration, suggesting that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. while the ecotypes are genetically and geographically distinct, those differences do not represent adaptations to local environmental conditions.",
+      "B. there may not be significant differences in the water that each ecotype inhabits, but there are significant differences in each ecotype’s resistance to zinc pollution.",
+      "C. if each ecotype is indeed locally adapted as the researchers hypothesized, those adaptations are to other environmental conditions than the water each ecotype inhabits.",
+      "D. although the researchers’ hypothesis does not appear to be supported, this may be because the levels of zinc exposure the plants in the experiment received did not match their exposure in their natural environments."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most logically completes the text’s discussion of Vámos and colleagues’ experiment with four duckweed ecotypes. According to the text, the researchers hypothesized that each ecotype is adapted to its local habitat in ways that help it grow more effectively and better tolerate pollutants. To test this, they grew each ecotype in water collected from all four habitats and exposed them to three different zinc levels. If the hypothesis were correct, each ecotype would be expected to thrive more in water from its own habitat than in the other waters and to respond to zinc levels differently depending on the level of zinc pollution in its home environment. However, the results showed that every ecotype grew just as well in every water sample, and that zinc boosted growth the same way across all ecotypes no matter the concentration. In other words, the experiment found no evidence that these ecotypes have specifically adapted to their local water or their local zinc exposure. It follows, then, that if each ecotype is actually locally adapted, it is adapted not to the water conditions in its habitat but to other environmental factors—such as local light or temperature levels, which the text notes the researchers didn’t account for in their experiment. Choice A is incorrect because the findings presented in the text suggest only that the ecotypes’ genetic and geographic differences don’t represent adaptations to local water conditions and zinc levels, not that the differences don’t represent adaptations to any local environmental conditions. Indeed, the text notes that the researchers didn’t account for light or temperature levels in each habitat, suggesting the possibility that the ecotypes are adapted to those or other local environmental factors. Choice B is incorrect because it contradicts the findings presented in the text. The text states that zinc consistently enhanced growth regardless of concentration, meaning the ecotypes all responded similarly to zinc. This uniform response indicates there aren’t significant differences in their resistance to zinc pollution. Choice D is incorrect because the findings presented in the text don’t demonstrate that the researchers’ hypothesis of local adaptation isn’t supported. That the ecotypes grew equally well in all of the water samples and equally benefited from added zinc at all levels, regardless of zinc levels in their natural environments, suggests only that the ecotypes aren’t adapted to their local water conditions and zinc levels; these findings don’t rule out the possibility that the ecotypes are adapted to other local factors in their habitats, such as light or temperature (which the text notes the researchers didn’t examine).",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "f8c79e36",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Although Eastern North Pacific (ENP) gray whales generally migrate between their wintering waters along the coast of Mexico and their foraging waters in the Arctic, a subset of this population—known as the Pacific Coast Feeding Group (PCFG)—forages along the coastlines of Northern California (USA) and British Columbia (Canada) instead. Interestingly, individuals in this subset reach smaller maximum sizes than other ENP whales do, despite having similar pre-maximum growth rates. Researchers hypothesize that this difference may be an adaptation to distinct resource opportunities in the PCFG foraging range.",
+    "question": "Which finding, if true, would most directly support the researchers’ claim regarding the size of PCFG whales?",
+    "options": [
+      "A. The average body size of PCFG whales observed along the coasts of Northern California and British Columbia has remained relatively steady in recent decades, while the average body size of ENP whales in the main group has slightly decreased.",
+      "B. When present along the coasts of Northern California and British Columbia, PCFG whales tend to forage in rocky kelp beds at shallow depths inaccessible to whales as large as those in the ENP main group.",
+      "C. When foraging along the coasts of Northern California and British Columbia, PCFG whales are in closer proximity to major ports and urban populations than ENP whales in the main group are when foraging in Arctic waters.",
+      "D. Certain crustacean prey species available along the coasts of Northern California and British Columbia where PCFG whales tend to forage are not available in the Arctic waters where ENP whales in the main group forage."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it presents a finding that, if true, would most directly support the researchers’ hypothesis that the smaller maximum size of PCFG whales is an adaptation to resource opportunities particular to their foraging range. The text explains that PCFG whales, a subgroup of ENP gray whales, forage along the coasts of Northern California and British Columbia rather than in the Arctic, where the main ENP group forages. The text goes on to state that PCFG whales reach smaller maximum sizes than other ENP gray whales despite having similar pre-maximum growth rates. If PCFG whales tend to forage in shallow, rocky kelp beds that whales as large as those in the main group cannot access, that would indicate that smaller body size confers a direct advantage in this foraging range—namely, access to a food source that larger whales cannot reach. Choice A is incorrect because a finding describing recent trends in average body size for both groups of whales wouldn’t address whether the smaller maximum size of PCFG whales reflects an adaptation to their foraging environment. Recent stability or change in average size doesn’t speak to why the size difference between PCFG whales and the main ENP group exists. Choice C is incorrect because a finding about PCFG whales’ proximity to ports and urban populations wouldn’t address the resources available to PCFG whales or the relationship between body size and foraging. Proximity to human activity is irrelevant to a hypothesis about body size being an adaptation to resource opportunities. Choice D is incorrect. Although a finding about a certain prey species being available in the PCFG whales’ foraging waters but not in the main group of ENP whales’ foraging waters would establish that the PCFG foraging range offers distinct prey species, it wouldn’t connect the availability of those prey species to body size in a way that would explain the PCFG whales’ smaller size. Without indicating that the available prey in the PCFG range favors smaller whales, the finding falls short of supporting the hypothesis that smaller size is an adaptation to resource opportunities.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "b054f7ad",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "When the Vinland Map, a map of the world purported to date to the mid-1400s, surfaced in 1957, some scholars believed it demonstrated that European knowledge of the eastern coast of present-day North America predated Christopher Columbus’s 1492 arrival. In 2021, a team including conservators Marie-France Lemay and Paula Zyats and materials scientist Anikó Bezur performed an extensive analysis of the map and the ink used. They found that the ink contains titanium dioxide, a compound that was first introduced in ink manufacturing in the early 1900s. Therefore, the team concluded that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. mid-1400s Europeans could not have known about the eastern coast of present-day North America.",
+      "B. the Vinland Map could not have been drawn by mid-1400s mapmakers.",
+      "C. mapmakers must have used titanium compounds in their ink in the 1400s.",
+      "D. there isn’t enough information to determine when the ink was created."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most logically completes the text’s discussion of Lemay, Zyats, and Bezur’s 2021 analysis of the Vinland Map. The text indicates that while some scholars have believed that the map was drawn in the mid-1400s, the 2021 analysis showed the presence of the compound titanium dioxide in the ink used to draw the map. The text goes on to say that titanium dioxide wasn’t used to manufacture ink until the early 1900s, which means that ink containing this compound couldn’t have been available to mapmakers in the 1400s. Since mapmakers in the mid-1400s couldn’t have used ink with titanium dioxide, it follows that the Vinland Map couldn’t have been drawn by mid- 1400s mapmakers. Choice A is incorrect because the 2021 finding that the ink used to draw the Vinland Map wasn’t available until the early 1900s doesn’t imply that Europeans in the mid-1400s couldn’t have known about the eastern coast of North America. While this finding suggests that the map couldn’t have been created in the mid-1400s, it doesn’t preclude the possibility that Europeans nevertheless had knowledge—and perhaps even drew other maps that are no longer in existence or are yet to be discovered by researchers—of the eastern coast of present-day North America as early as the mid-1400s. Choice C is incorrect because there’s nothing in the text that suggests that the 2021 discovery of the presence of titanium dioxide in the ink used to draw the Vinland Map caused Lemay, Zyats, and Bezur to question or reach a new conclusion about when mapmakers began using ink containing titanium compounds. Instead, the text indicates that titanium dioxide wasn’t used in ink before the early 1900s. This knowledge led the team to conclude that the map, which was drawn with ink containing titanium dioxide, couldn’t have been created in the mid- 1400s. Choice D is incorrect because although the text doesn’t indicate that Lemay, Zyats, and Bezur established an exact date for the creation of the ink that was used to draw the Vinland Map, the text does say that titanium dioxide was introduced in ink manufacturing in the early 1900s. This fact provides enough information to determine that the ink that was used to draw the map was created no earlier than the early 1900s. This finding, in turn, led the team to conclude that the Vinland Map couldn’t have been drawn in the mid-1400s.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "0e089cb6",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "The following text is from Anton Chekhov’s 1898 short story “Ionitch” (translated by Marian Fell in 1915). The text is set in a Russian city referred to as the city of S.\n\nIf newcomers to the little provincial city of S. complained that life there was monotonous and dull, its inhabitants would answer that, on the contrary, S. was a very amusing place, indeed, that it had a library and a club, that balls were given there, and finally, that very pleasant families lived there with whom one might become acquainted. And they always pointed to the Turkins as the most accomplished and most enlightened family of all.",
+    "question": "What does the text suggest about the Turkins?",
+    "options": [
+      "A. They are relative newcomers to the city of S.",
+      "B. They have a unique status in the city of S.",
+      "C. They have long disliked living in the city of S.",
+      "D. They are amused by the other residents of the city of S."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it presents a statement about the Turkins that is suggested by the text. The text explains that while many pleasant families live in the city of S., inhabitants of the city consider the Turkins to be \"the most accomplished and most enlightened family of all.\" Thus, by indicating that they are seen as more accomplished and more enlightened than all the other families in the city of S., the text suggests that the Turkins have a unique status there. Choice A is incorrect because the text doesn’t indicate that the Turkins have recently moved to the city of S.; it provides no information about when the Turkins arrived. Choice C is incorrect because the text explains how the Turkins are viewed by others in the city of S. but gives no indication of how the Turkins feel about living there. Choice D is incorrect because the text explains how the Turkins are viewed by other residents of the city of S. but gives no indication of how the Turkins view the other residents.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "72bb08bd",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Utah is home to Pando, a colony of about 47,000 quaking aspen trees that all share a single root system. Pando is one of the largest single organisms by mass on Earth, but ecologists are worried that its growth is declining in part because of grazing by animals. The ecologists say that strong fences could prevent deer from eating young trees and help Pando start thriving again.",
+    "question": "According to the text, why are ecologists worried about Pando?",
+    "options": [
+      "A. It isn’t growing at the same rate it used to.",
+      "B. It isn’t producing young trees anymore.",
+      "C. It can’t grow into new areas because it is blocked by fences.",
+      "D. Its root system can’t support many more new trees."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents an explanation that is directly stated in the text for why ecologists are worried about Pando. The text states that Pando is a colony of about 47,000 quaking aspen trees that represents one of the largest organisms on Earth. According to the text, ecologists are worried that Pando’s growth is declining, partly because animals are feeding on the trees. In other words, the ecologists are worried that Pando isn’t growing at the same rate it used to. Choice B is incorrect. Rather than indicating that Pando isn’t producing young trees anymore, the text reveals that Pando is indeed producing young trees, stating that those trees can be protected from grazing deer by strong fences. Choice C is incorrect because the text states that fences can be used to prevent deer from eating Pando’s young trees, not that Pando itself can’t grow in new areas because it’s blocked by fences. Choice D is incorrect because the text offers no evidence that Pando’s root system is incapable of supporting new trees or is otherwise a cause of worry for ecologists.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "dc29fcae",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Pigments give paints and dyes their color. Ocher is a mineral-based pigment used to make several colors, including red. Red ocher gets its color from iron oxide. Pigments can also be plant-based; plant-based pigments contain a high level of carbon. In a 2023 study, archaeologists tested the red pigment on decorated beads made by members of the Natufian culture approximately 15,000 years ago. The test showed that the pigment found on several beads contained no iron but had a high level of carbon. This finding led the researchers to conclude that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. the Natufian beads examined in the study are the oldest surviving examples of the use of plant-based pigments for decorating beads.",
+      "B. the Natufian beadmakers used plant-based pigments rather than ocher to decorate some of the beads examined in the study.",
+      "C. the Natufian beadmakers preferred to use plant-based pigments because they are much brighter than mineral-based pigments are.",
+      "D. the pigments used by the Natufian beadmakers likely came from plants because ocher was difficult to find."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it presents the conclusion that most logically follows from the text’s discussion of the chemical content of pigments. The text begins by differentiating between two kinds of pigments: mineral-based pigments such as red ocher, which get their color from iron oxide, and plant-based pigments, which have a high level of carbon. The text then goes on to describe an analysis by archaeologists of the pigment of decorated beads made by members of the Natufian culture around 15,000 years ago. The archaeologists found that the red pigment on some of the beads contained no iron but had a high level of carbon. Since red ocher gets its color from iron oxide, while plant-based pigments have a high level of carbon, the researchers concluded that the Natufian beadmakers used plant-based pigments to decorate some of the beads examined in the study. Choice A is incorrect because the text does not indicate that the Natufians were the first to use plant-based pigments, so it cannot be concluded that the beads in the study were the oldest surviving examples of the use of plant-based pigments for decorating beads. Choice C is incorrect because the text does not compare the brightness of plant-based and mineral-based pigments. Choice D is incorrect. While it can be concluded that the Natufian beadmakers used plant-based pigments because the pigment found on several beads had a high level of carbon, the text offers no evidence that ocher was difficult to find.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "918e9322",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Many music streaming services also function as social media platforms: by giving users the option to follow friends and share curated playlists or information about their listening history, these platforms allow people to convey their music preferences and listening activities directly to their social networks. In a 2023 study, researcher Michael James Walsh interviewed frequent users of a popular music streaming platform to investigate how its social media dimensions shape their listening habits. Walsh found that these dimensions tended to make study participants feel more mindful of how their listening activities may be perceived, which in turn influenced how they managed those activities.",
+    "question": "Which quotation from a music streaming platform user would best illustrate Walsh’s finding?",
+    "options": [
+      "A. “When I create playlists or choose songs to listen to, I often pick songs that I think the friends who are following me might be interested in listening to, rather than what I might actually prefer listening to in that moment.”",
+      "B. “Because the predictions the platform makes about what new songs I might like depend on my past listening habits, at times its recommendations can feel overly repetitive and unvarying.”",
+      "C. “The social aspects of music streaming make it really easy to create a sense of a shared listening experience with my friends, even if we aren’t in the same room.”",
+      "D. “Listening to music through a streaming platform feels a lot more passive, since I don’t need to make any deliberate choices about what music I’m going to consume, like I do when buying digital downloads or records and CDs.”"
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it directly reflects both aspects of Walsh’s finding about the social media dimensions of music streaming platforms: that they make their users more mindful of how their listening activities may be perceived and that self-awareness then influences how users manage those activities. The quotation illustrates this by showing that the user considers the music preferences of their followers when selecting music (“songs that I think the friends who are following me might be interested in”), even if those choices differ from their own preferences (“rather than what I might actually prefer listening to in that moment”). This supports both aspects of Walsh’s finding: users have increased social awareness and deliberately change their listening habits based on that awareness. Choice B is incorrect because it focuses on how the platform’s algorithmic recommendation system influences user choice, not on how the imagined opinions of other users might influence that choice. The quotation highlights a user’s concern about repetitive music recommendations based on their past listening behavior. It does not suggest that the user is adjusting their listening habits based on how they think others may perceive what they listen to. Choice C is incorrect because it focuses on the social connection that can be created by music streaming rather than illustrating how social awareness affects users’ management of their listening activities. While this quotation addresses the social dimensions of streaming platforms, it describes how these features create shared experiences rather than demonstrating how concern about others’ perceptions influences users’ listening choices. Choice D is incorrect because it compares streaming platforms to traditional music purchasing methods. This comparison doesn’t address the social media dimensions of streaming platforms or how awareness of others’ perceptions of music selections influences what users choose to listen to.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "8f81fb74",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "“To You” is an 1856 poem by Walt Whitman. In the poem, Whitman suggests that he deeply understands the reader, whom he addresses directly, writing, ______",
+    "question": "Which quotation from “To You” most effectively illustrates the claim?",
+    "options": [
+      "A. “Your true soul and body appear before me.”",
+      "B. “Whoever you are, now I place my hand upon you, that you be my poem.”",
+      "C. “I should have made my way straight to you long ago.”",
+      "D. “Whoever you are, I fear you are walking the walks of dreams.”"
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most directly illustrates the text’s claim about Whitman’s poem, “To You.” The text says that in this poem, Whitman suggests that he deeply understands the poem’s reader. This quotation says that the reader’s “true soul and body appear before” Whitman, thereby asserting that he can see the reader as the reader truly is, suggesting that he deeply understands the reader. Choice B is incorrect because this quotation describes Whitman making the reader the subject of the poem (“you be my poem”), not Whitman deeply understanding the reader. Choice C is incorrect because instead of suggesting that Whitman deeply understands the reader, it emphasizes Whitman’s regret at not having addressed the reader sooner. Choice D is incorrect. Although this quotation shows Whitman directly addressing the reader and expressing concern about the reader, it doesn’t illustrate the idea that Whitman suggests that he deeply understands the reader. The quotation is simply expressing concern about the reader, which doesn’t necessarily imply deep understanding of the reader.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "b4465562",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the example?",
+    "options": [
+      "A. 1.51 days, which is the shortest rotational period of any of the TRAPPIST planets.",
+      "B. 6.1 days, and its rotational period is also 6.1 days.",
+      "C. 9.21 days, which is the same as the rotational period of TRAPPIST -1f.",
+      "D. 6.1 days, and its rotational period is 0.92 days."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it correctly uses data from the table to illustrate the relationship between orbital and rotational periods described in the text. For Earth and each of four TRAPPIST -1 exoplanets, the table provides the orbital period and radius (in relation to the radius of Earth). The text explains that for each TRAPPIST -1 exoplanet, gravitational forces cause the rotational period (how long the planet takes to spin once on its axis) to equal the orbital period (how long the planet takes to orbit the star). According to the table, TRAPPIST -1e has an orbital period of 6.1 days. Since the text states that the orbital and rotational periods are equal for these planets, TRAPPIST -1e’s rotational period must also be 6.1 days. Choice A is incorrect because the table shows that TRAPPIST -1e has an orbital period (and thus a rotational period) of 6.1 days, not 1.51 days, which is the orbital period (and thus the rotational period) of TRAPPIST -1b. Furthermore, comparing the length of TRAPPIST -1e’s rotational period to those of the other exoplanets would not logically complete the example, which should illustrate how the orbital and rotational periods of a planet in TRAPPIST -1 are the same length. Choice C is incorrect because the table shows that TRAPPIST -1e has an orbital period (and thus a rotational period) of 6.1 days, not 9.21 days, which the table shows is the orbital period (and thus rotational period) of TRAPPIST -1f. Additionally, comparing the rotational periods of two exoplanets would not logically complete the example, which should illustrate how the orbital and rotational periods of a planet in TRAPPIST -1 are the same length. Choice D is incorrect because although it correctly identifies TRAPPIST -1e’s orbital period as 6.1 days, it incorrectly states that its rotational period is 0.92 days. This contradicts the text’s statement that the orbital and rotational periods are equal for TRAPPIST -1 exoplanets. The value 0.92 actually represents TRAPPIST -1e’s radius in relation to Earth’s radius, not its rotational period.",
+    "image": "assets/coeq_b4465562.png",
+    "alt": "Data figure: Properties of TRAPPIST -1 Exoplanets Compared to Earth’s Properties Planet Orbital period (days) Planet radius (Earth radii. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "e372d155",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "“Poetry” is a 1919 poem by Marianne Moore. The poem highlights an ambivalence toward poetry as the speaker acknowledges its merits while also expressing a sense of displeasure, writing ______",
+    "question": "Which quotation from “Poetry” most effectively illustrates the claim?",
+    "options": [
+      "A. “nor is it valid / to discriminate against ‘business documents and / school-books’; all these phenomena are important.”",
+      "B. “One must make a distinction / however: when dragged into prominence by half poets, the result is not / poetry”",
+      "C. “when [poems] become so derivative as to become unintelligible, the / same thing may be said for all of us—that we / do not admire what / we cannot understand.”",
+      "D. “Reading [poetry], however, with a perfect contempt for it, one discovers that there is in / it after all, a place for the genuine.”"
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most effectively uses a quotation from \"Poetry\" to illustrate the claim that the poem highlights an ambivalence, or a conflicted attitude, toward poetry. In the quotation, the speaker suggests that one might read poetry with \"contempt,\" or disdain, for it, but even with this negative attitude one will find \"a place for the genuine.\" Because the quotation expresses conflicting attitudes toward poetry, it effectively illustrates the speaker’s ambivalence in discussing the merits and displeasure of reading poetry. Choice A is incorrect because it doesn’t mention poetry or show ambivalence. Choice B is incorrect. Although the idea of \"half poets\" may seem to relate to ambivalence, the speaker mentions only negative attitudes toward certain works and the quotation therefore lacks a contrasting positive or neutral attitude that would be needed to indicate ambivalence. Choice C is incorrect because the speaker mentions only negative attitudes toward certain works and the quotation therefore lacks a contrasting positive or neutral attitude that would be needed to indicate ambivalence.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "c4c64e57",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Violins made by Antonio Stradivari and other craftspeople in the sixteenth to eighteenth centuries in Cremona, Italy, produce a sound that is considered superior to that of modern stringed instruments. Some experts have claimed that the type of wood used to create Cremonese violins is responsible for their prized sound, but modern and Cremonese violins are made of the same kinds of wood: maple and spruce. New analysis, however, has revealed unique indications that the wood in the older violins was chemically treated by the makers, leading researchers to suggest that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. Cremonese violins probably were not considered superior to other instruments at the time they were made.",
+      "B. the sound quality of Cremonese violins results in part from a method the craftspeople used to alter the wood.",
+      "C. if modern violins were made of a wood other than maple or spruce, they likely would sound as good as Cremonese violins.",
+      "D. the current process of making violins is the same process that was used centuries ago by Cremonese craftspeople."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most logically completes the text’s discussion of the sound quality of Cremonese and modern violins. The text states that violins made in Cremona in the sixteenth to eighteenth centuries sound superior to modern violins. It then indicates that some experts attribute the difference to different woods being used to make these violins, but both Cremonese and modern violins are made of the same woods (maple and spruce); thus this cannot account for the difference. The text then says that recent analysis suggests the wood in Cremonese violins was chemically treated by the craftspeople who made them, thereby providing an alternate explanation for the sound differences: the chemical alteration that is present in the Cremonese violins but absent from the modern ones. Choice A is incorrect because the text does not discuss how the sound quality of Cremonese violins compares with the sound quality of other instruments made during the sixteenth to eighteenth centuries. Instead it focuses on how the sound of the Cremonese violins compares with that of modern violins. Choice C is incorrect. The text states that there are differences in sound quality between the Cremonese and modern violins, and that both types of violin are made with maple or spruce. Thus the type of wood alone does not determine a violin’s sound quality. Furthermore, even if the type of wood alone could account for differences in sound quality, the text makes no mention of other woods, so there is no basis to judge how modern violins would sound if they were made using woods besides maple and spruce. Choice D is incorrect because the text states that there is evidence that Cremonese craftspeople chemically treated the wood used in Cremonese violins. This evidence is attributed to “new analysis,” which strongly suggests that this process was unknown to modern violin makers before that analysis. If the chemical treatment was unknown until recently, the manufacturing process for modern violins must differ with respect to the previously unknown practice of chemically treating the wood.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "a5076a43",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Sir Gawain and the Green Knight is a circa 1400 poem written in Middle English—an archaic form of the English spoken today. Over the last several centuries, the English language has undergone such transformations in vocabulary, spelling, and grammar that most readers now rely on translations to read Sir Gawain. In the introduction to his 2007 translation, Simon Armitage remarks that the sonic patterns of the poem, which was written in alliterative verse (a verse form featuring extensive repetition of initial consonant sounds), are essential to its structure. Because many Modern English words begin with different sounds than their Middle English equivalents do, a strictly literal translation of Sir Gawain would therefore likely ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. preserve much of the original text’s meaning at the expense of other qualities that are also integral to the experience of reading the poem.",
+      "B. appeal more to modern readers than would translations like Armitage’s that instead prioritize the original text’s sonic and structural qualities.",
+      "C. be more faithful to the original intentions of the poem than most strictly literal translations of alliterative Middle English poems are to their originals.",
+      "D. be preferable to modern readers who are primarily interested in learning what the poem reveals about historical conditions during the time it was originally written."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most logically completes the text’s discussion of translating Sir Gawain and the Green Knight. The text states that the poem was written in alliterative verse, a form that features extensive repetition of initial consonant sounds, and that, according to Armitage, the patterns of sound in the poem are essential to the poem’s structure. The text also notes that many Modern English words begin with different sounds than their Middle English equivalents (that is, the words with the same meanings) do. This means that if a translator were to render the poem’s Middle English words into their direct Modern English equivalents, the initial consonant sounds of many words would change and the original alliterative patterns wouldn’t hold. It follows, then, that a strictly literal (word for word) translation would preserve much of the original text’s meaning at the expense of sonic and structural qualities that are also integral to the experience of reading the poem. Choice B is incorrect because the text doesn’t address modern readers’ preferences among translation approaches. Although the text implies that Armitage may have prioritized the sonic patterns and structure of the original poem in his translation, it doesn’t give any indication that this approach would be less appealing to modern readers than an approach that directly translates the words but loses the original patterns of sounds in the poem. Choice C is incorrect. The text actually suggests that a strictly literal Modern English translation of Sir Gawain and the Green Knight wouldn’t be especially faithful to the original intentions of the poem because the Modern English words would change the sonic patterns Armitage notes are essential to the alliterative poem’s structure—that is, such a translation would change patterns of sound that are a fundamental part of the original poem’s composition. Moreover, there’s no reason to think that a strictly literal translation of that poem would be more faithful to the original intentions than literal translations of other alliterative Middle English poems would be, since they would presumably all face the issue of a change in the patterns of sounds. Choice D is incorrect because the end of the text makes a point about sounds, not meaning. Modern readers interested in gathering historical information from the poem might prefer a strictly literal translation (one that directly translates the words without making additional changes), but that idea doesn’t logically follow from the fact that many Modern English words start with different sounds than their Middle English counterparts; a change in the sounds wouldn’t have any effect on the information the poem conveys.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "d6f90d28",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Recently, scientists looked at data collected by NASA’s InSight lander to learn more about seismic activity on Mars, known as marsquakes. The data show that the marsquakes all started from the same location on the planet. This discovery was surprising to scientists, as they expected that the marsquakes would originate from all over the planet because of the cooling of the planet’s surface. Now, scientists believe that there could be areas of active magma flows deep beneath the planet’s surface that trigger the marsquakes.",
+    "question": "According to the text, what was surprising to scientists studying the seismic activity data from NASA’s InSight lander?",
+    "options": [
+      "A. The surface temperature of Mars has been rising.",
+      "B. There were different types of seismic waves causing marsquakes.",
+      "C. NASA’s InSight lander collected less data than scientists had expected.",
+      "D. All the marsquakes started from the same location on the planet."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents a statement about what surprised the scientists that is supported by the text. The text states that the marsquakes described in the data from NASA’s InSight lander originated from the same location on Mars. The text goes on to say that because they had expected the opposite (that marsquakes would originate from all over the planet) this discovery surprised the scientists. Choice A is incorrect because the text doesn’t say that the data from NASA’s InSight lander revealed any surprising information about the planet’s surface temperature. Instead, the text mentions the cooling of Mars’s surface as a reason the scientists expected that marsquakes had multiple origins. In addition, cooling would indicate that the temperature has been falling rather than rising. Choice B is incorrect. Although the text indicates that by studying seismic activity scientists found a possible explanation for what causes marsquakes, the text doesn’t say that they discovered that marsquakes are caused by different types of seismic waves. Rather, the text states that based on the data from NASA’s InSight lander, scientists now believe that this seismic activity happens because of areas of active magma that flow below the planet’s surface. Choice C is incorrect because the text doesn’t discuss the amount of data NASA’s InSight lander collected or whether scientists who studied the data found the amount to be as expected. Instead, the text focuses on what the data revealed about where on Mars the marsquakes originated.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "2b65799c",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Early Earth is thought to have been characterized by a stagnant lid tectonic regime, in which the upper lithosphere (the outer rocky layer) was essentially immobile and there was no interaction between the lithosphere and the underlying mantle. Researchers investigated the timing of the transition from a stagnant lid regime to a tectonic plate regime, in which the lithosphere is fractured into dynamic plates that in turn allow lithospheric and mantle material to mix. Examining chemical data from lithospheric and mantle-derived rocks ranging from 285 million to 3.8 billion years old, the researchers dated the transition to 3.2 billion years ago.",
+    "question": "Which finding, if true, would most directly support the researchers’ conclusion?",
+    "options": [
+      "A. Among rocks known to be older than 3.2 billion years, significantly more are mantle derived than lithospheric, but the opposite is true for the rocks younger than 3.2 billion years.",
+      "B. Mantle-derived rocks older than 3.2 billion years show significantly more compositional diversity than lithospheric rocks older than 3.2 billion years do.",
+      "C. There is a positive correlation between the age of lithospheric rocks and their chemical similarity to mantle-derived rocks, and that correlation increases significantly in strength at around 3.2 billion years old.",
+      "D. Mantle-derived rocks younger than 3.2 billion years contain some material that is not found in older mantle-derived rocks but is found in older and contemporaneous lithospheric rocks."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents a finding that, if true, would most directly support the researchers’ conclusion that the transition from a stagnant lid regime to a tectonic plate regime occurred around 3.2 billion years ago. The text explains that early in Earth’s history, Earth exhibited a stagnant lid regime in which there’s no interaction between the lithosphere and the underlying mantle. The text further explains that, by contrast, once Earth began to exhibit a tectonic plate regime, its lithospheric and mantle material began to mix. If mantle-derived rocks younger than 3.2 billion years contain material not found in older mantle-derived rocks, that material must have originated somewhere other than the mantle. And if this material is found in both older and contemporaneous lithospheric rocks, that would imply that the lithosphere was able to mix with mantle material beginning around 3.2 billion years ago, as the researchers concluded. Choice A is incorrect. The text gives no basis for comparing the quantities of lithospheric and mantle-derived rocks. Choice B is incorrect. The text gives no basis for comparing the material makeup of lithospheric rocks to that of mantle-derived rocks. Choice C is incorrect. A positive correlation between the age of lithospheric rocks and these rocks’ chemical similarity to mantle-derived rocks would mean that the oldest rocks would be the most similar, which contradicts the text’s claim that lithospheric and mantle-derived rocks were completely separate until 3.2 billion years ago. If the researchers’ conclusion about the onset of tectonics on Earth is correct, then younger lithospheric rocks would show greater chemical similarity to mantle-derived rocks than older lithospheric rocks do.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "a8c85a70",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Some geologists have proposed designating the period from 1950 to the present as a new geological epoch (the Anthropocene) characterized by human impact on Earth, but they have struggled to identify reliable stratigraphic markers of the epoch’s onset. Inta Dimante-Deimantovica and a research team investigated whether the initial appearance of primary microplastics—invented and mass-produced for industrial and other purposes, beginning around the middle of the twentieth century—in sedimentary layers could serve this role. The researchers analyzed European lake sediment profiles from the late eighteenth century to the present. Microplastics were present in all layers, likely because certain microplastic shapes enabled rapid downward migration. The researchers therefore concluded that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. the lowest sedimentary layer in which microplastics are found cannot be treated as indicative of the chronological beginning of the Anthropocene.",
+      "B. the presence of microplastics in sediment dating to the late eighteenth century casts doubt on the appropriateness of designating 1950 as the onset of the Anthropocene.",
+      "C. microplastics are not prevalent enough in sediment to serve as a reliable sign of the human impact characteristic of the Anthropocene.",
+      "D. using the earliest presence of microplastics as a stratigraphic marker of the beginning of the Anthropocene is likely to be viable in some locations but is not viable in Europe."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most logically completes the text’s discussion of microplastics as a proposed stratigraphic marker for the onset of the Anthropocene. The text indicates that although primary microplastics (used for industrial and other purposes) were invented and mass-produced beginning only around the mid-twentieth century, researchers found microplastics throughout European lake sediment profiles dating from the late eighteenth century to the present. According to the text, microplastics were in all layers of sediment likely because microplastics of certain shapes can rapidly migrate downward—that is, they can move into sedimentary layers that predate their manufacture. Since it can’t be assumed that the date of a layer in which microplastics are found indicates when the microplastics were first deposited, it follows that the lowest sedimentary layer containing microplastics can’t be treated as indicative of the chronological beginning of the Anthropocene. Choice B is incorrect. The text explains that microplastics appeared in layers of sediment long predating 1950 likely because certain shapes allowed them to rapidly migrate downward—that is, the particles physically moved into older layers. This finding doesn’t cast doubt on the appropriateness of considering 1950 as the onset of the Anthropocene; it doesn’t suggest a flaw in thinking that humans’ impact on Earth shifted around 1950 but simply suggests that the position of microplastics in sediment isn’t useful as an indicator of such a shift. Choice C is incorrect because the issue presented in the text isn’t a lack of prevalence of microplastics (and though no quantity is indicated, microplastics were found across all the layers) but rather the inability to determine when microplastics were originally deposited, since the particles can migrate rapidly into older sediment layers. Choice D is incorrect because the text indicates that the likely cause of microplastics being present in all layers of the sediment profiles is a property of microplastic particles themselves (certain shapes allowing them to rapidly move downward into older layers), not a characteristic of European lake sediment or anything else specific to Europe. There’s no reason to think the issue of particle migration wouldn’t occur in other locations.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "675ae013",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "In the mountains of Brazil, Barbacenia tomentosa and Barbacenia macrantha—two plants in the Velloziaceae family—establish themselves on soilless, nutrient-poor patches of quartzite rock. Plant ecologists Anna Abrahão and Patricia de Britto Costa used microscopic analysis to determine that the roots of B. tomentosa and B. macrantha, which grow directly into the quartzite, have clusters of fine hairs near the root tip; further analysis indicated that these hairs secrete both malic and citric acids. The researchers hypothesize that the plants depend on dissolving underlying rock with these acids, as the process not only creates channels for continued growth but also releases phosphates that provide the vital nutrient phosphorus.",
+    "question": "Which finding, if true, would most directly support the researchers’ hypothesis?",
+    "options": [
+      "A. Other species in the Velloziaceae family are found in terrains with more soil but have root structures similar to those of B. tomentosa and B. macrantha.",
+      "B. Though B. tomentosa and B. macrantha both secrete citric and malic acids, each species produces the acids in different proportions.",
+      "C. The roots of B. tomentosa and B. macrantha carve new entry points into rocks even when cracks in the surface are readily available.",
+      "D. B. tomentosa and B. macrantha thrive even when transferred to the surfaces of rocks that do not contain phosphates."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it presents a finding that, if true, would support the researchers’ hypothesis about the plants’ dependence on dissolving rock. The text indicates that the roots of the two plant species grow directly into quartzite rock, where hairs on the roots secrete acids that dissolve the rock. The researchers hypothesize that the plants depend on this process because dissolving rock opens spaces for the roots to grow and releases phosphates that provide the plants with phosphorus, a vital nutrient. If the plants carry out this process of dissolving rock even when the rock already has spaces into which the roots could grow, that would support the researchers’ hypothesis because it suggests that the plants are getting some advantage—such as access to phosphorus—from the action of dissolving rock. If the plants don’t benefit from dissolving rock, they would be expected to grow in the cracks that already exist, as doing so would mean that the plants don’t have to spend energy creating and secreting acids; if, however, the plants create new entry points by dissolving rock even when cracks already exist, that would support the hypothesis that they depend on dissolving rock for some benefit. Choice A is incorrect because the existence of soil-inhabiting members of the Velloziaceae family with similar root structures to those of the two species discussed in the text wouldn’t support the researchers’ hypothesis that the species discussed in the text depend on dissolving rock. If other such members exist, that might suggest that the root structures can serve more functions than secreting acids to dissolve rock (since dissolving rock may not be necessary for plants living in soil), but that wouldn’t suggest anything about whether the species discussed in the text benefit from dissolving rock. Choice B is incorrect because differences in the proportions of citric and malic acid secreted by the two species would be irrelevant to the hypothesis that the plants depend on dissolving rock. There’s no information in the text to suggest that the proportion of each acid has any bearing on the process of dissolving rock or on any benefits the plants might receive from that process. Choice D is incorrect because if the two species thrive on rocks without phosphates, that would weaken the researchers’ hypothesis that the plants depend on dissolving rock partly because dissolving rock gives them access to phosphates. If the plants can survive on rocks without getting a vital nutrient by dissolving those rocks, then either the nutrient isn’t actually vital for those plants or they can get the nutrient in some way other than by dissolving rocks.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "3aa777e2",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "During their larval phase, numerous species of coral reef fish are drawn toward areas where light is present. To better understand how artificial light at night (ALAN) might affect some coral reef fish, researchers explored the effect of exposure to low levels of ALAN on the reproductive success of the common clownfish (Amphiprion ocellaris). While exposure to low levels of ALAN had no significant effect on spawning frequency and egg fertilization in A. ocellaris, incubation in the presence of ALAN completely inhibited hatching. These findings suggest that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. A. ocellaris that settle in areas with low levels of ALAN have significantly higher rates of successful egg fertilization than A. ocellaris that settle in areas without ALAN do.",
+      "B. the reproductive success of A. ocellaris would be at risk if they were to selectively settle in regions that are regularly exposed to low levels of ALAN.",
+      "C. the reproductive success of A. ocellaris is more greatly affected by the presence of low levels of ALAN during incubation than the reproductive success of other species of coral reef fish is.",
+      "D. the spawning frequency of A. ocellaris was more strongly affected by the presence of low levels of ALAN than egg fertilization was, though both were less affected than incubation."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most logically completes the text’s discussion of artificial light at night (ALAN) and the common clownfish (A. ocellaris). The text indicates that researchers found that when A. ocellaris is exposed to low levels of ALAN, spawning frequency and egg fertilization aren’t significantly affected but hatching is completely inhibited—that is, the eggs never hatch. Therefore, if A. ocellaris were to settle only in regions where the fish would be regularly exposed to low levels of ALAN, their eggs would stop hatching and their reproductive success would be at risk. Choice A is incorrect because the text indicates that exposure to low levels of ALAN had no significant effect on egg fertilization for A. ocellaris, so there’s no reason to expect there would be any significant difference in rates of successful egg fertilization between areas with low levels of ALAN and areas without ALAN. Choice C is incorrect because the text doesn’t discuss the particular effects of low levels of ALAN on any species of coral reef fish besides A. ocellaris. For this reason, there’s no support in the text for the idea that the reproductive success of A. ocellaris is more greatly affected by the presence of low levels of ALAN than the reproductive success of other species of coral reef fish is. Choice D is incorrect. The text does indicate that A. ocellaris incubation was most strongly affected by low levels of ALAN, but it doesn’t indicate that there was a greater effect on spawning frequency than on egg fertilization; in fact, the text states that there was no significant effect on either.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "0906d0e9",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice best describes data from the table that support the researchers’ conclusion?",
+    "options": [
+      "A. For pin flowers, damage led to longer times per flower in all pollinator genera, whereas for thrum flowers, damage led to longer times per flower only in Habropoda and Osmia.",
+      "B. Compared with pollinators belonging to the genus Osmia, pollinators belonging to the genus Xylocopa spent less time on damaged pin flowers but more time on damaged thrum flowers.",
+      "C. Damage led to shorter times per thrum flower in three pollinator genera (Osmia, Pierid, and Xylocopa), whereas it led to longer times per thrum flower in one pollinator genus (Habropoda).",
+      "D. Pollinators belonging to the genus Habropoda spent 2.7 seconds on intact pin flowers and 4.1 seconds on intact thrum flowers."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it describes data from the table that support the researchers’ conclusion that the effect of floral damage on time spent per flower varied by both floral morph and the genus of the pollinator. The table presents the average time pollinators spent per floral morph. The data in the table shows that for pin flowers, the average time spent per flower by all pollinator genera was higher for flowers that had been artificially damaged than for intact flowers. By contrast, for thrum flowers, the difference in time spent on intact and damaged flowers is seen for only some pollinator genera. This supports the researchers’ conclusion that both floral morph and the genus of the pollinator are factors involved in the effect that floral damage has on time pollinators spend per flower. Choice B is incorrect. The table shows that pollinators belonging to the genus Xylocopa spent less time on both damaged pin flowers and damaged thrum flowers than pollinators belonging to the genus Osmia did. Choice C is incorrect. The table shows that the artificial damage to the thrum flowers led to shorter average times spent by pollinators on those flowers for only two of the four pollinator genera represented in the table, not three. Furthermore, this choice doesn’t address the effect the artificial damage had on pin flowers; thus, even if accurate, this evidence doesn’t support the researchers’ conclusion that both floral morph and pollinator genus affect time spent per flower when a flower has been damaged. Choice D is incorrect. While this statement is true based on the information in the table, it doesn’t provide evidence that supports the researchers’ conclusion that the effect of floral damage on time spent per flower varied by both floral morph and the genus of the pollinator because this choice provides information only about how much time one pollinator genus spent on intact flowers.",
+    "image": "assets/coeq_0906d0e9.png",
+    "alt": "Data figure: Mean Time (in Seconds) Spent per Flower for Four Pollinator Genera. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "9830c350",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "The novelist Toni Morrison was the first Black woman to work as an editor at the publishing company Random House, from 1967 to 1983. A scholar asserts that one of Morrison’s likely aims during her time as an editor was to strengthen the presence of Black writers on the list of Random House’s published authors.",
+    "question": "Which finding, if true, would most strongly support the scholar’s claim?",
+    "options": [
+      "A. The percentage of authors published by Random House who were Black rose in the early 1970s and stabilized throughout the decade.",
+      "B. Black authors who were interviewed in the 1980s and 1990s were highly likely to cite Toni Morrison’s novels as a principal influence on their work.",
+      "C. The novels written by Toni Morrison that were published after 1983 sold significantly more copies and received wider critical acclaim than the novels she wrote that were published before 1983.",
+      "D. Works that were edited by Toni Morrison during her time at Random House displayed stylistic characteristics that distinguished them from works that were not edited by Morrison."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents a finding that, if true, would support the scholar’s claim about Toni Morrison’s likely goal of strengthening the presence of Black writers on Random House’s list of published authors. The text explains that Morrison was the first Black woman to be an editor for Random House and that she was an editor there from 1967 to 1983. If it were true that Random House published a higher percentage of works by Black authors throughout the 1970s—during most of Morrison’s time working there—than it had previously published, that would suggest that Morrison may have made a deliberate effort to strengthen the presence of Black authors on the list of Random House’s published authors, thus supporting the scholar’s claim. Choice B is incorrect because the scholar’s claim is about Morrison’s work as an editor at a publishing company and her likely effort to strengthen the presence of Black writers on that company’s list of published authors. It might be true that Black authors interviewed in the 1980s and 1990s often cited Morrison’s novels as an influence on their work, but that finding would simply suggest something about how those authors approached their work; it wouldn’t show that Morrison intended to increase the number of Black writers among the published authors specifically at Random House. Choice C is incorrect because the scholar’s claim is about Morrison’s work as an editor at a publishing company, not about her work as a novelist. Therefore, a finding that Morrison’s novels published after 1983 sold more copies and were more widely acclaimed than her earlier novels would have no bearing on the claim that as an editor Morrison made an effort to ensure that more Black writers were present on Random House’s list of published authors. Choice D is incorrect. Although the text discusses Morrison’s work as an editor at Random House, the scholar’s claim focuses on Morrison’s likely effort in that role to increase the number of Black writers present on Random House’s list of published authors, not on the influence she may have had on the content of the works she edited. Without knowing whether Morrison’s stylistic influence led to more publications or if Morrison applied her influence specifically to works by Black writers, the finding that works edited by Morrison could be identified by stylistic characteristics would have no bearing on the claim that Morrison intended to strengthen the presence of Black writers among the published authors at Random House.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "edbe9fab",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "At over a thousand pages across two volumes, The Fifty-Year Mission, compiled by Edward Gross and Mark A. Altman, is presented as the\n\n“complete, uncensored, unauthorized oral history” as told by the people behind the media franchise Star Trek. The work aspires to be comprehensive by, for example, including accounts from cast and crew members of every Star Trek television series and film to date. But while The Fifty-Year Mission is clearly a unique and valuable resource, it has a shortcoming common among oral histories: it lacks a clear authorial point of view that could otherwise unite the various accounts into a cohesive whole.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. The compilers of The Fifty-Year Mission had lofty goals for their oral history of the Star Trek franchise, but the published work lacks information about many key events in the franchise’s history.",
+      "B. The Fifty-Year Mission includes more accounts from people involved with Star Trek television shows than it does from people involved with Star Trek films.",
+      "C. The large amount of material compiled into The Fifty-Year Mission is surprising given that many of the people involved in the Star Trek franchise did not participate in the oral history project.",
+      "D. The Fifty-Year Mission represents a worthwhile attempt to thoroughly recount the history of the Star Trek franchise, but its approach has an important limitation."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most accurately states the main idea of the text. According to the text, Gross and Altman’s book is a \"valuable resource\" because it’s a \"complete, uncensored, unauthorized oral history\" that features accounts from people involved with \"every Star Trek television series and film\" made. However, the text also points out an inherent shortcoming of the oral history approach used by the book’s creators: the lack of an authorial voice that could unify the many accounts into a coherent narrative. Thus, the text’s main idea is that while the book’s attempt at presenting a comprehensive oral history of the Star Trek franchise is a worthwhile one, the approach the creators selected has an important limitation. Choice A is incorrect. While the goal of the book’s creators (providing a comprehensive history of the Star Trek franchise) could be described as lofty, the text’s criticism of the book is focused on the shortcomings of the oral history form, not on events in the Star Trek franchise that were not reflected in the book. Choice B is incorrect because the text doesn’t suggest that the book includes more accounts from people involved with television shows than with films. In fact, the text explicitly states that the book includes accounts from people involved with \"every Star Trek television series and film\" ever made. Choice C is incorrect because the text doesn’t indicate that many people involved with the Star Trek franchise failed to participate in the book’s oral history project. The only mention of the scope of participation states that the book includes accounts \"from cast and crew members of every Star Trek television series and film to date.\" This information implies a high level of participation from relevant individuals, not a lack of participation.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "d24485cd",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Conventional theories of rhetoric hold that presenting information as coming from credentialed experts increases that information’s credibility. When communications researcher Sungkyoung Lee and her colleagues tested messages seeking volunteers for clinical trials, however, they found that participants in their study judged recruitment messages from former trial volunteers as significantly more credible than messages from doctors (i.e., credentialed experts). One reason for this may be that the doctors’ status as credentialed experts wasn’t ignored but rather was outweighed by participants’ views of the experiential relevance of the two types of messengers; that is, participants may have reacted the way they did because ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. messages from former trial volunteers depicted clinical trials as being more positive experiences than did messages from doctors.",
+      "B. participants did not have enough experience to evaluate the credibility of the doctors’ messages but did have enough experience to evaluate the credibility of former trial volunteers’ messages.",
+      "C. the fact that former trial volunteers went through the same experience that participants were contemplating while doctors did not was more important to participants than the doctors’ status as credentialed experts was.",
+      "D. participants regarded the experiences of both the doctors and former trial volunteers as relevant to the subject of clinical trials but were skeptical of the doctors’ status as credentialed experts."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it presents the conclusion that most logically follows from the text’s discussion of how participants considered messages from former trial volunteers and doctors. The text first establishes that information coming from credentialed experts typically increases the credibility of that information. However, the text goes on to describe a situation that goes against this expectation: the messages from previous trial volunteers were judged as more credible than the messages from licensed doctors when recruiting clinic trial participants. The text then goes on to speculate as to why this may have been the case, stating that participants likely considered the messages from the former trial volunteers to be more convincing than the messages from the doctors because the former trial volunteers were perceived as having undergone the same experience that the participants were considering. It is reasonable to infer, then, that participants regarded the former trial volunteers’ direct experience as more important to their decision-making than the doctors’ status as credentialed experts. Choice A is incorrect because the text does not provide any indication as to the content or the tone of the messages provided by either the doctors or the former trial volunteers regarding the clinical trials. Choice B is incorrect. Since the study participants had not themselves participated in the clinical trial, they could not rely on their experience to evaluate the credibility of either the former trial volunteers or the doctors. Choice D is incorrect. While the text does establish that the participants likely considered the messages from both the doctors and the former trial volunteers, it does not suggest that the participants doubted the doctors’ credentials. Rather, the text speculates that participants may have given the experiences of the former trial volunteers more importance than the doctors’ credentials when considering the recruitment messages.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "0a7bd8ff",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "An analysis by Alain Elayi and colleagues of coins minted in Sidon in the fifth and fourth centuries BCE reveals a change in their composition over time: while a coin from circa 450 BCE contains about 98% silver and 1% copper, a coin from 367 BCE (the end of Ba’alšillem II’s reign) contains 74.2% silver and 24.7% copper, giving it a relatively yellowish appearance that traders would have noticed. Because coins with a silver content below 80% were widely considered unsuitable for trade, Elayi et al. speculate that a crisis in confidence in the currency occurred in Sidon around 367 BCE, which was likely relieved—despite Sidon’s persistent oppressive financial obligations—as a result of Ba’alšillem II’s successor Abd’aštart I’s decision to ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. proclaim that the percentage of silver in coins suitable for trade would be raised to a threshold higher than 80%.",
+      "B. keep the amount of silver in Sidonian coins consistent with that in coins minted in 367 BCE but decrease their weight.",
+      "C. begin minting heavier coins with a proportion of silver to copper similar to that in coins minted in 367 BCE.",
+      "D. fund the mining of some copper deposits that were not available to Ba’alšillem II."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it most logically completes the text’s discussion of Sidonian coins. As the text explains, researchers determined that Sidonian coins were made of silver and copper and that from 450 BCE to 367 BCE, the percentage of silver in each coin decreased from 98% to 74.2% while the percentage of copper increased from 1% to 24.7%. The text indicates that because the coins containing less than 80% silver weren’t considered suitable for trade (suggesting that copper was less valuable than silver) and looked different from coins containing more silver, the researchers suspect there was a serious loss in confidence in the currency in Sidon in 367 BCE when the copper content was high. It’s reasonable to assume that it wasn’t possible to boost confidence simply by devoting a greater amount of valuable silver to the currency, since Sidon was under significant and ongoing financial pressure; however, keeping the total amount of silver the same and reducing the amount of copper in the coins would have resulted in smaller coins with a higher percentage of silver. Therefore, it makes sense to suggest that Abd’aštart I (the ruler after 367 BCE) likely restored confidence in the currency by deciding to keep the amount of silver in Sidonian coins consistent with that in coins minted in 367 BCE but to decrease the coins’ weight. Choice A is incorrect because the text conveys that a crisis in confidence in the currency of Sidon likely occurred around 367 BCE because the percentage of silver in coins had fallen below 80% (presumably because Sidon’s financial pressures meant that less silver was available for currency), making the coins unsuitable for trade. Thus, announcing that the threshold for the percentage of silver in coins would be raised—that is, that coins would need to contain even more than 80% silver to be suitable for trade—likely would have worsened the crisis rather than relieved it. Choice C is incorrect because the text strongly suggests that a crisis in confidence in the currency of Sidon was caused by the proportion of silver to copper in the coins in 367 BCE, with 74.2% being too little silver for the coins to be considered suitable for trade; therefore, it’s unlikely that minting coins with a similar proportion of silver to copper (that is, still around 74.2% silver) would have restored confidence, even if the coins were heavier. Choice D is incorrect because the text gives no indication that funding the mining of more copper would have relieved a crisis in confidence in the currency of Sidon. The text establishes that Sidonian coins that visibly contained copper weren’t considered suitable for trade, so Abd’aštart I wouldn’t have wanted to add even more copper to them, and it’s unclear how else copper mining would affect views of the currency.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "a339bfca",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Mosasaurs were large marine reptiles that lived in the Late Cretaceous period, approximately 100 million to 66 million years ago. Celina Suarez, Alberto Pérez-Huerta, and T. Lynn Harrell Jr. examined oxygen-18 isotopes in mosasaur tooth enamel in order to calculate likely mosasaur body temperatures and determined that mosasaurs were endothermic—that is, they used internal metabolic processes to maintain a stable body temperature in a variety of ambient temperatures. Suarez, Pérez-Huerta, and Harrell claim that endothermy would have enabled mosasaurs to include relatively cold polar waters in their range.",
+    "question": "Which finding, if true, would most directly support Suarez, Pérez-Huerta, and Harrell’s claim?",
+    "options": [
+      "A. Mosasaurs’ likely body temperatures are easier to determine from tooth enamel oxygen-18 isotope data than the body temperatures of nonendothermic Late Cretaceous marine reptiles are.",
+      "B. Fossils of both mosasaurs and nonendothermic marine reptiles have been found in roughly equal numbers in regions known to be near the poles during the Late Cretaceous, though in lower concentrations than elsewhere.",
+      "C. Several mosasaur fossils have been found in regions known to be near the poles during the Late Cretaceous, while relatively few fossils of nonendothermic marine reptiles have been found in those locations.",
+      "D. During the Late Cretaceous, seawater temperatures were likely higher throughout mosasaurs’ range, including near the poles, than seawater temperatures at those same latitudes are today."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it presents the finding that, if true, would best support Suarez, Pérez-Huerta, and Harrell’s claim about mosasaurs. The text states that Suarez, Pérez-Huerta, and Harrell’s research on mosasaur tooth enamel led them to conclude that mosasaurs were endothermic, which means that they could live in waters at many different temperatures and still maintain a stable body temperature. The researchers claim that endothermy enabled mosasaurs to live in relatively cold waters near the poles. If several mosasaur fossils have been found in areas that were near the poles during the period when mosasaurs were alive and fossils of nonendothermic marine reptiles are rare in such locations, that would support the researchers’ claim: it would show that mosasaurs inhabited polar waters but nonendothermic marine mammals tended not to, suggesting that endothermy may have been the characteristic that enabled mosasaurs to include polar waters in their range. Choice A is incorrect because finding that it’s easier to determine mosasaur body temperatures from tooth enamel data than it is to determine nonendothermic reptile body temperatures wouldn’t support the researchers’ claim. Whether one research process is more difficult than another indicates nothing about the results of those processes and therefore is irrelevant to the issue of where mosasaurs lived and what enabled them to live in those locations. Choice B is incorrect because finding roughly equal numbers of mosasaur and nonendothermic marine reptile fossils in areas that were near the poles in the Late Cretaceous would suggest that endothermy didn’t give mosasaurs any particular advantage when it came to expanding their range to include relatively cold polar waters, thereby weakening the researchers’ claim rather than supporting it. Choice D is incorrect because finding that the temperature of seawater in the Late Cretaceous was warmer than seawater today wouldn’t weaken the researchers’ claim. Seawater in the Late Cretaceous could have been warmer than seawater today but still cold enough for endothermy to be advantageous to mosasaurs, so this finding wouldn’t provide enough information to either support or weaken the researchers’ claim.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "5b585115",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice best describes data in the graph that support the researchers’ conclusion?",
+    "options": [
+      "A. None of the three groups’ average humility scores exceeded 3.5.",
+      "B. The managers in the control group exhibited only slightly less humility on average than the managers in the two experimental groups did.",
+      "C. The managers who reflected on a past mistake that resulted in learning exhibited more humility on average than the managers in the other two groups did.",
+      "D. All three groups exhibited less humility on average than the researchers expected."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it describes data in the graph that support the researchers’ conclusion that their hypothesis about workplace leaders and humility was correct. According to the text, Jia Hu and colleagues \"hypothesized that workplace leaders who reflect on lessons learned from past mistakes are likely to exhibit more humility than leaders who don’t engage in such reflection.\" The bar graph shows the humility scores for managers who participated in Jia Hu and colleagues’ study. It shows average humility scores for managers who reflected on a past mistake that they learned from, managers who reflected on a past mistake that they didn’t learn from, and managers who were in the control group that, according to the text, simply reflected on their daily routines. The graph shows that managers who reflected on a past mistake they learned from received an average humility score between 3.0 and 3.5. Both the control group and managers who reflected on a mistake they didn’t learn from received a lower average humility score of between 2.5 and 3.0. Thus, the managers who reflected on a past mistake that resulted in learning exhibited more humility on average than the managers in the other two groups did. This supports the researchers’ conclusion that their initial hypothesis that workplace leaders who reflect on past mistakes they learned from exercise greater humility was correct. Choice A is incorrect. Although according to the graph it’s true that none of the group’s humility scores exceeded 3.5, this idea does not support the researchers’ conclusion that their initial hypothesis was correct. The statement that none of the three groups’ average humility scores exceeded 3.5 does not distinguish between those leaders who reflected on lessons learned from past mistakes and those who didn’t, so it would not support Hu and colleagues’ hypothesis that workplace leaders who reflect on past mistakes they learned from exercise greater humility. Choice B is incorrect. While the graph shows that managers in the control group did exhibit less humility than the experimental group of managers who reflected on a mistake they learned from, the graph also shows that the control group exhibited more (not less) humility than the experimental group that reflected on a mistake they didn’t learn from. Furthermore, the idea that the managers in the control group exhibited only slightly less humility on average than the managers in the two experimental groups did would not support the researchers’ conclusion that their initial hypothesis that workplace leaders who reflect on past mistakes they learned from exercise greater humility was correct. Choice D is incorrect because there is no indication in the graph that all three groups of participants exhibited less humility on average than the researchers expected. The graph and text don’t cite any specific expectations that the researchers had with regard to the humility scores for each group.",
+    "image": "assets/coeq_5b585115.png",
+    "alt": "Data figure: Humility Scores for Participants’ Scenario Responses. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "98ad8d86",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the text?",
+    "options": [
+      "A. sales and related occupations.",
+      "B. installation, maintenance, and repair occupations.",
+      "C. construction and resource extraction occupations.",
+      "D. management, business, and financial services occupations."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it most effectively uses data from the table to complete the text. The text discusses self-employed workers in the US, and the table shows the US incorporated and unincorporated self-employment rates in four occupational fields in 2015. According to the table, the incorporated self-employment rate was 8.9% for the management, business, and financial services occupational field, which is higher than the incorporated self-employment rate shown for any other occupational field. Choice A is incorrect because according to the table, the incorporated self-employment rate was 5.8% for the sales and related occupational field, which is lower than the 8.9% for the management, business, and financial services occupational field. Choice B is incorrect because according to the table, the incorporated self-employment rate was 2.7% for the installation, maintenance, and repair occupational field, which is lower than the 8.9% for the management, business, and financial services occupational field. Choice C is incorrect because according to the table, the incorporated self-employment rate was 4.4% for the construction and resource extraction occupational field, which is lower than the 8.9% for the management, business, and financial services occupational field.",
+    "image": "assets/coeq_98ad8d86.png",
+    "alt": "Data figure: Incorporated and Unincorporated Self-Employment Rates in Four Occupational Fields, 2015 Occupational field Incorporated self-employment rate Unincorporated self-employment rate Construction and resource extraction 4.4% 14.8% Installation, maintenance, and repair 2.7% 6.2. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "30cc1132",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "The following text is from William Shakespeare’s play The Tempest, first performed in 1611. Miranda has lived on an island with her father, Prospero, since she was three years old. Prospero has stated that Miranda likely does not remember anything other than her life on the island.\n\nMIRANDA: ’Tis far off,\n\nAnd rather like a dream than an assurance\n\nThat my remembrance warrants. Had I not\n\nFour or five women once that tended me?\n\nPROSPERO: Thou hadst, and more, Miranda. But how is it\n\nThat this lives in thy mind? What seest thou else\n\nIn the dark backward and abysm of time?\n\nIf thou remember’st ought ere thou camest here,\n\nHow thou camest here thou mayst.",
+    "question": "In the text, which point does Prospero most directly make about Miranda and her memories?",
+    "options": [
+      "A. Miranda’s reminiscences about her early childhood have a melancholy quality that betrays her discontented view of her current circumstances.",
+      "B. Miranda’s doubts about the accuracy of one recollection of a place other than the island are clouding her judgment and seem to be making her reluctant to explore her recollection of traveling to the island.",
+      "C. Miranda’s ability to summon details of an experience she had before arriving on the island suggests that she may also be able to summon details of her arrival on the island.",
+      "D. Miranda’s impression of a scene is vague because she is remembering a scenario she had daydreamed about as a child rather than a scenario that had occurred in reality."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it presents a point that Prospero makes about Miranda. The text begins with Miranda responding to Prospero’s claim that she probably doesn’t remember her life before the island. She describes a distant memory, asking if she had \"four or five women\" caring for her. Prospero confirms this (\"thou hadst\") and then asks what else she can recall, stating that because she remembers one thing from the time before she lived on the island (\"ought ere thou camest here\"), she might also remember arriving on the island (\"how thou camest here\"). That is, Prospero indicates that Miranda’s ability to summon details of an experience from before her arrival on the island suggests that she may also be able to summon details of her arrival. Choice A is incorrect because Prospero doesn’t say anything about how Miranda presents her early childhood memory of having several people care for her—he indicates only his surprise that she remembers something from so long ago (\"the dark backward and abysm of time\") and his thought that she may also be able to recall another childhood event: her arrival on the island. Further, Prospero doesn’t suggest that he believes Miranda is discontent in her current circumstances. Choice B is incorrect. Although Miranda suggests some doubt about her recollection of a place other than the island, in that she describes it as \"like a dream\" she can’t be certain of, Prospero doesn’t mention her uncertainty—though he himself wonders how it is possible that she correctly recalls something from so long ago (\"abysm of time\"). Rather than indicating that doubt is making Miranda reluctant, Prospero simply states that Miranda may have the ability to remember traveling to the island. Choice D is incorrect. Although Miranda describes a vague impression of several people who cared for her as a young child and states that it is \"rather like a dream\" instead of something she is certain is real, Prospero doesn’t indicate that Miranda is remembering a childhood daydream. Instead, he confirms that what Miranda remembers actually happened, answering her question about having had caregivers with \"thou hadst,\" and asks her what else she can remember from long ago.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "e2095ffa",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice best describes data from the table that support Rodriguez and colleagues’ assertion?",
+    "options": [
+      "A. None of the planets have an orbital period of more than 10 days, and TOI-628 b has a mass of 6.33 Jupiters.",
+      "B. TOI-1478 b has an orbital period of 153 days, and the masses of all the planets range from 0.85 to 6.33 Jupiters.",
+      "C. All the planets have a radius between 1.060 and 1.771 Jupiters, and only TOI-1333 b has an orbital period of more than 10 days.",
+      "D. Each of the planets has a mass greater than 0.25 Jupiters, and all except for TOI-1478 b have an orbital period of less than 10 days."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it accurately describes data from the table that support Rodriguez and colleagues’ assertion about the classifications of the five new gas exoplanets. The text describes two categories of gas planets: hot Jupiters, which have a mass of at least 0.25 Jupiters and an orbital period of less than 10 days, and warm Jupiters, which have the same mass characteristic but have orbital periods of more than 10 days. According to the table, four of the gas exoplanets discovered by Rodriguez and colleagues have a mass of at least 0.25 Jupiters and an orbital period of less than 10 days, while one of the planets has a mass of at least 0.25 Jupiters and an orbital period of more than 10 days. These data therefore support Rodriguez and colleagues’ assertion that four of the new exoplanets are hot Jupiters and one is a warm Jupiter. Choice A is incorrect because it doesn’t accurately describe the data from the table. Although the table shows that TOI-628 b has a mass equivalent to 6.33 Jupiters, the table also shows that one of the planets—TOI-1478 b—does indeed have an orbital period of more than 10 days. Choice B is incorrect because it doesn’t accurately describe the data from the table. Although the table does show that the masses of the five planets range from 0.85 to 6.33 Jupiters, the table also shows that TOI-1478 b has an orbital period of 10.180 days, not 153 days. Choice C is incorrect. According to the table, TOI-1333 b has an orbital period of only 4.720 days, not more than 10 days. Additionally, although the table does show that all the planets have a radius between 1.060 and 1.771 Jupiters, the text indicates that a planet may be classified as a hot Jupiter or a warm Jupiter based on its mass and orbital period, not on its radius, making the information about the range of the five planets’ radius values irrelevant.",
+    "image": "assets/coeq_e2095ffa.png",
+    "alt": "Data figure: Characteristics of Five Recently Discovered Gas Exoplanets. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "5dfe9098",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Some astronomers searching for extraterrestrial life have proposed that atmospheric NH 3 (ammonia) can serve as a biosignature gas—an indication that a planet harbors life. Jingcheng Huang, Sara Seager, and colleagues evaluated this possibility, finding that on rocky planets, atmospheric NH 3 likely couldn’t reach detectably high levels in the absence of biological activity. But the team also found that on so-called mini- Neptunes—gas planets smaller than Neptune but with atmospheres similar to Neptune’s—atmospheric pressure and temperature can be high enough to produce atmospheric NH 3.",
+    "question": "Based on the text, Huang, Seager, and colleagues would most likely agree with which statement about atmospheric NH 3?",
+    "options": [
+      "A. Its presence is more likely to indicate that a planet is a mini-Neptune than that the planet is a rocky planet that could support life.",
+      "B. Its absence from a planet that’s not a mini-Neptune indicates that the planet probably doesn’t have life.",
+      "C. It should be treated as a biosignature gas if detected in the atmosphere of a rocky planet but not if detected in the atmosphere of a mini- Neptune.",
+      "D. It doesn’t reliably reach high enough concentrations in the atmospheres of rocky planets or mini-Neptunes to be treated as a biosignature gas."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it states a conclusion the researchers likely agree with, given the details in the text. The text explains that a biosignature gas is a gas that can be used as an indicator that a planet harbors some form of life and some astronomers have proposed that NH 3 could serve as a biosignature gas. The researchers evaluating this claim found that the atmosphere of rocky planets would be unlikely to reach \"detectably high levels\" of NH 3 without biological activity, which would support the proposal of NH 3 serving as a biosignature gas. However, the text also states that mini-Neptune planets can produce NH 3 in the absence of biological activity. Thus, the text is structured to lead to the conclusion that detectable levels of NH 3 in the atmospheres of rocky planets could constitute a biosignature, but that is not the case for detectable levels of the gas in the atmospheres of mini-Neptune planets. Choice A is incorrect because the text indicates that biological activity likely accounts for detectable levels of NH 3 in the atmospheres of rocky planets but mini-Neptune planets can have detectable levels of NH 3 in their atmospheres in the absence of biological activity. Therefore, both rocky planets and mini-Neptune planets can have detectable levels of atmospheric NH 3. Choice B is incorrect because the text states that for NH 3 to reach detectable levels in the atmospheres of rocky planets likely means they harbor biological activity, meaning that rocky planets with detectable NH 3 usually harbor biological activity. However, that does not entail that every rocky planet with biological activity will have detectable levels of NH 3 in their atmospheres. Choice D is incorrect because the text claims only that some astronomers have proposed using NH 3 as a biosignature gas without mentioning a minimum concentration of atmospheric NH 3 that must be met for it to function as a biosignature gas.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "7fd1fa43",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "Culinary anthropologist Vertamae Smart-Grosvenor may be known for her decades of work in national public television and radio, but her book Vibration Cooking: or, the Travel Notes of a Geechee Girl is likely her most influential project. The 1970 book, whose title refers to Smart- Grosvenor’s roots in the Low Country of South Carolina, was unusual for its time. It combined memoir, recipes, travel writing, and social commentary and challenged notions about conventions of food and cooking. Long admired by many, the book and its author have shaped contemporary approaches to writing about cuisine.",
+    "question": "Which choice best describes the main idea of the text?",
+    "options": [
+      "A. Smart-Grosvenor’s unconventional book Vibration Cooking: or, the Travel Notes of a Geechee Girl is an important contribution to food writing.",
+      "B. Smart-Grosvenor held many different positions over her life, including reporter and food writer.",
+      "C. Smart-Grosvenor’s groundbreaking book Vibration Cooking: or, the Travel Notes of a Geechee Girl didn’t receive the praise it deserved when it was first published in 1970.",
+      "D. Smart-Grosvenor was a talented chef whose work inspired many people to start cooking for themselves."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most accurately states the main idea of the text. The text describes the book Vibration Cooking: or, the Travel Notes of a Geechee Girl as Smart-Grosvenor’s “most influential project” and as “unusual for its time.” The text also notes that the book and author have influenced contemporary approaches to writing about food and cooking. Therefore, the text mainly conveys that Vibration Cooking: or, the Travel Notes of a Geechee Girl is an unconventional and important contribution to food writing. Choice B is incorrect. Although the text mentions that Smart-Grosvenor worked in national public television and radio and was a food writer, these details aren’t the main focus. Rather than focusing on Smart-Grosvenor’s various jobs, the text focuses specifically on one specific book she wrote. Choice C is incorrect. Although the text suggests that Vibration Cooking: or, the Travel Notes of a Geechee Girl was groundbreaking, it doesn’t suggest that the book didn’t receive praise when it was published. In fact, the text states that the book is “long admired.” Choice D is incorrect because the text states that Smart-Grosvenor was a culinary anthropologist and that her book influenced later approaches to food writing but doesn’t indicate that Smart-Grosvenor or her book influenced people to begin cooking for themselves.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "b42341f9",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "In a research paper, a student criticizes some historians of modern African politics, claiming that they have evaluated Patrice Lumumba, the first prime minister of what is now the Democratic Republic of the Congo, primarily as a symbol rather than in terms of his actions.",
+    "question": "Which quotation from a work by a historian would best illustrate the student’s claim?",
+    "options": [
+      "A. “Lumumba is a difficult figure to evaluate due to the starkly conflicting opinions he inspired during his life and continues to inspire today.”",
+      "B. “The available information makes it clear that Lumumba’s political beliefs and values were largely consistent throughout his career.”",
+      "C. “Lumumba’s practical accomplishments can be passed over quickly; it is mainly as the personification of Congolese independence that he warrants scholarly attention.”",
+      "D. “Many questions remain about Lumumba’s ultimate vision for an independent Congo; without new evidence coming to light, these questions are likely to remain unanswered.”"
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it illustrates the student’s claim about some historians viewing Lumumba primarily as a symbol. This quotation argues that Lumumba “warrants” (or deserves) “scholarly attention” as a symbol and not for his “practical accomplishments”—that is, his actions as prime minister—which “can be passed over quickly,” or dismissed as being of comparatively little importance. Thus, the quotation expresses the view that the student criticizes some historians for holding. Choice A is incorrect. Although this quotation touches on the difficulty of evaluating Lumumba’s legacy, it doesn’t address how historians of modern African politics view him as a symbol. Choice B is incorrect. While this quotation mentions Lumumba’s political beliefs, it doesn’t discuss historians viewing him as a symbol. Choice D is incorrect. This quotation touches on Lumumba’s vision for his country, but it doesn’t discuss historians viewing him as a symbol.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "8b77ddbd",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "Archaeologist Petra Vaiglova, anthropologist Xinyi Liu, and their colleagues investigated the domestication of farm animals in China during the Bronze Age (approximately 2000 to 1000 BCE). By analyzing the chemical composition of the bones of sheep, goats, and cattle from this era, the team determined that wild plants made up the bulk of sheep’s and goats’ diets, while the cattle’s diet consisted largely of millet, a crop cultivated by humans. The team concluded that cattle were likely raised closer to human settlements, whereas sheep and goats were allowed to roam farther away.",
+    "question": "Which finding, if true, would most strongly support the team’s conclusion?",
+    "options": [
+      "A. Analysis of the animal bones showed that the cattle’s diet also consisted of wheat, which humans widely cultivated in China during the Bronze Age.",
+      "B. Further investigation of sheep and goat bones revealed that their diets consisted of small portions of millet as well.",
+      "C. Cattle’s diets generally require larger amounts of food and a greater variety of nutrients than do sheep’s and goats’ diets.",
+      "D. The diets of sheep, goats, and cattle were found to vary based on what the farmers in each Bronze Age settlement could grow."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents a finding that, if true, would most strongly support the team’s conclusion that cattle were likely raised closer to human settlements than sheep and goats were. The text explains that Vaiglova, Liu, and their colleagues analyzed the chemical composition of sheep, goat, and cattle bones from the Bronze Age in China in order to investigate the animals’ domestication, or their adaptation from a wild state to a state in which they existed in close connection with humans. According to the text, the team’s analysis showed that sheep and goats of the era fed largely on wild plants, whereas cattle fed on millet—importantly, a crop cultivated by humans. If analysis of the animal bones shows that the cattle’s diet also consisted of wheat, another crop cultivated by humans in China during the Bronze Age, the finding would support the team’s conclusion by offering additional evidence that cattle during this era fed on human-grown crops—and, by extension, that humans raised cattle relatively close to the settlements where they grew these crops, leaving goats and sheep to roam farther away in areas with wild vegetation, uncultivated by humans. Choice B is incorrect because if it were true that sheep’s and goats’ diets consisted of small portions of millet, which the text states was a crop cultivated by humans, the finding would suggest that sheep and goats were raised relatively close to human settlements, weakening the team’s conclusion that cattle were likely raised closer to those settlements than sheep and goats were. Choice C is incorrect because the finding that cattle generally require more food and nutrients than do sheep and goats wouldn’t support the team’s conclusion that cattle were likely raised closer to human settlements than sheep and goats were. Nothing in the text suggests that cattle were incapable of obtaining sufficient food and nutrients without access to human-grown crops. Hence, even if cattle’s diets are found to have different requirements than the diets of sheep and goats, the cattle could have met those requirements from food located far from human settlements. Choice D is incorrect because if it were true that the diets of sheep, goats, and cattle varied based on what the farmers in each Bronze Age settlement could grow, the finding would weaken the team’s conclusion that cattle were likely raised closer to human settlements than sheep and goats were, suggesting instead that all three types of animals were raised close enough to human settlements to feed on those settlements’ crops.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "963703e5",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Tatiana R. Feuerborn and colleagues analyzed the genomes of more than a hundred domesticated dogs from sites in Siberia dating from 11,000 years ago to the present. They found that the dogs constituted a genetically isolated population of Arctic breeds until approximately 2,000 years ago, at which point there was substantial interbreeding with Near Eastern dog breeds. Furthermore, beginning around 2,000 years ago, some sites contain artifacts consistent with a Near East origin, like glass beads, but the people show no evidence of having traveled extensively outside Siberia. From this, Feuerborn and colleagues concluded that around 2,000 years ago ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. dogs and artifacts like glass beads began to be transported from the Near East to Siberia.",
+      "B. people from Siberia began to reach the Near East, where they acquired dogs and artifacts such as glass beads.",
+      "C. glass beads and other artifacts from the Near East began to be exchanged for dogs from Siberia.",
+      "D. dogs from the Near East began to be exchanged for glass beads and other artifacts from Siberia."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it presents the conclusion that most logically follows from the text’s discussion of Feuerborn and colleagues’ findings about sites in Siberia. The text states that genomic analysis of many domesticated dogs from Siberian sites dating from the last 11,000 years revealed that the dogs represented a genetically isolated population of breeds (that is, they didn’t reproduce with dogs of any outside breeds) until about 2,000 years ago, when there is evidence that the dogs began interbreeding with breeds from the Near East. The text also indicates that around the same time, the sites began to contain glass beads and other artifacts seeming to be from the Near East, even though there is no evidence that the people of those sites traveled widely outside Siberia. Because there is evidence of Near East dog breeds and Near East artifacts at Siberian sites beginning about 2,000 years ago but no evidence of the people’s travel to the Near East around that time, it’s reasonable to infer that Feuerborn and colleagues concluded that dogs and artifacts like glass beads were transported to Siberia from the Near East, starting around 2,000 years ago. Choice B is incorrect because the text explicitly states that there is no evidence that the people of the Siberian sites 2,000 years ago traveled extensively beyond Siberia, which they would’ve had to do to reach the Near East; therefore, it wouldn’t make sense to conclude that the presence of Near East dog breeds and artifacts like glass beads suggests that people from Siberia began arriving in the Near East around 2,000 years ago. Choice C is incorrect because the text addresses the presence of Near East dog breeds (and evidence of interbreeding with Siberian dogs) and artifacts like glass beads at Siberian sites starting about 2,000 years ago, suggesting only that the dogs and artifacts started to arrive in Siberia around that time. The text doesn’t suggest the purpose of the arrival of the Near East dogs and artifacts or give any indication of Siberian dog breeds being transported elsewhere through trade. Choice D is incorrect because the text addresses the presence of Near East dog breeds and artifacts like glass beads at Siberian sites starting about 2,000 years ago, suggesting only that the dogs and artifacts started to arrive in Siberia around that time; it doesn’t suggest the purpose of this arrival and makes no mention of Siberian glass beads or other artifacts of Siberian origin.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "c43e52c9",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Even with the widespread adoption of personal computers, many authors still choose to write and revise their novels by hand and only then transcribe the final version on a computer. It may be tempting to speculate about how a novel written this way would be affected if it had been exclusively typed instead, but each novel is a unique entity resulting from a specific set of circumstances. Therefore, ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. in order to increase their efficiency, authors who currently write their novels largely by hand should instead work only on a computer.",
+      "B. authors who do most of their drafting and revising by hand likely have more success than those who work entirely on a computer.",
+      "C. novels written by hand take less time to produce, on average, than novels written on a computer do.",
+      "D. there is no way to reasonably evaluate how a work would be different if it had been written by other means."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents the conclusion that most logically follows from the text’s discussion of the means authors use to write and revise their novels. After stating that many authors still choose to draft novels by hand even though computers are now widely used, the text acknowledges the speculation that the opposite choice—using only a computer—would have had an effect on such novels. However, the text then points out that every novel is the singular result of a combination of the particular conditions surrounding its creation. This suggests that it isn’t possible to determine the effect of any single condition (such as the means of writing) on its own; thus, there would be no way to reasonably evaluate how a novel would have turned out differently if it had been written by other means. Choice A is incorrect because the text doesn’t suggest that it’s more efficient to write a novel on a computer than to write it by hand; it doesn’t address efficiency at all. Therefore, it isn’t logical to conclude that authors who currently choose to write novels largely by hand should instead work only on a computer to increase their efficiency. Choice B is incorrect because the text doesn’t suggest anything about how successful authors are, regardless of the means by which they choose to write; therefore, it isn’t logical to conclude that authors who write largely by hand are likely to be more successful than those who work only on a computer. Choice C is incorrect because the text makes no mention of the time it takes to produce a novel, regardless of the means by which it’s written; therefore, it isn’t logical to conclude that novels written by hand take less time on average to produce than those written on a computer do.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "dcf7e4e1",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Parthenogenesis is a form of reproduction in which a female reproduces without mating. She produces an egg containing a single offspring whose DNA, or genetic material, comes entirely from its mother. Among birds, parthenogenesis has been found in a handful of species, including pigeons and turkeys. When scientists at the San Diego Zoo analyzed the DNA of the zoo’s California condors (a species of vulture), they discovered that two individuals weren’t genetically similar enough to any of the males in the condor enclosure to be their offspring. However, both had hatched from eggs laid by females in the enclosure. Thus, the scientists concluded that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. at least one of those individuals’ mothers was born as a result of parthenogenesis.",
+      "B. California condors may reproduce through parthenogenesis in zoos but not in the wild.",
+      "C. the mothers of the two individuals probably reproduced through parthenogenesis.",
+      "D. California condors reproduce through parthenogenesis only if females lack sufficient access to males."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most logically completes the text’s discussion of parthenogenesis as it relates to two California condors at the San Diego Zoo. The text explains that parthenogenesis is a form of reproduction in which a female reproduces without mating, producing an egg containing an offspring with DNA that comes entirely from its mother. After noting examples of parthenogenesis among birds, the text then reports on a discovery at the San Diego Zoo. According to the text, scientists at the zoo found that two of the zoo’s California condors weren’t similar enough to any of the zoo’s male condors to be their offspring. Given that parthenogenesis occurs without mating and results in an offspring with DNA entirely from its mother, it can reasonably be inferred that the scientists concluded that the mothers of the two condors probably didn’t mate with any of the male condors at the zoo, reproducing through parthenogenesis instead. Choice A is incorrect because the text never suggests that at least one of the condors’ mothers was born as a result of parthenogenesis. Rather, the text suggests that the two condors were themselves both probably born as a result of parthenogenesis, which would account for their lack of strong genetic resemblance to any of the male condors in the zoo’s condor enclosure. Choice B is incorrect because the text never discusses wild California condors, only California condors living at the San Diego Zoo. For this reason, the text doesn’t support a conclusion that distinguishes between how California condors reproduce in zoos and how they reproduce in the wild. Choice D is incorrect because the text never suggests that the zoo’s female condors lacked sufficient access to males or that this would be a cause of parthenogenesis, indicating only that the condor enclosure included males.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "f252182a",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Indigenous cultures possess unique knowledge of the medicinal uses of plants. According to a 2021 study, 73 percent of the medicinal uses of plants native to North America are reflected in the vocabulary of a single Indigenous language. However, as more and more Indigenous people exclusively speak a globally dominant language, such as English, their ancestral languages fade from daily use. These facts lend added importance to tribal nations’ efforts to preserve their languages. By ensuring the continued use of Cherokee, Ojibwe, and the hundreds of other Indigenous languages in what is now the United States, tribal nations are also ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. increasing the number of medicinal plants represented in the vocabularies of Indigenous languages.",
+      "B. transmitting terms for medicinal plants from Indigenous languages to globally dominant languages.",
+      "C. preserving knowledge about the medicinal value of plants native to the tribal nations’ lands.",
+      "D. ensuring that citizens of tribal nations have physical access to medicinal plants."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most logically completes the text’s discussion of the relationship between Indigenous languages and knowledge of the medicinal uses of plants. The text states that Indigenous cultures possess special knowledge of the medicinal uses of plants, which is reflected in their vocabulary. The text then discusses how tribal nations are working to preserve their languages, whose daily use is declining as globally dominant languages become increasingly dominant in Indigenous communities. Given that the languages of tribal nations in what is now the United States function as repositories of knowledge about plants’ medicinal uses, it logically follows that continued use of those languages will assist with passing on knowledge about the medicinal value of plants native to the tribal nations’ lands. Choice A is incorrect because the text states that preserving Indigenous languages will increase the knowledge, not the number, of medicinal plants. Choice B is incorrect because the text is concerned with how vocabulary about the medicinal value of plants can be preserved through the continued daily use of Indigenous languages, not with how such vocabulary can be incorporated into globally dominant, non-Indigenous languages. Moreover, the text explains that the exclusive use of globally dominant languages in Indigenous communities comes at an expense to the continued daily use of those communities’ languages. Given this relationship, it is unlikely globally dominant languages would borrow Indigenous vocabulary pertaining to plants’ medicinal uses. Choice D is incorrect because the text doesn’t discuss physical access to medicinal plants, instead focusing on Indigenous knowledge and language surrounding the medicinal uses of plants.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "124329d2",
+    "skill": "Central Ideas and Details",
+    "difficulty": "Hard",
+    "passage": "The painter María Izquierdo played an important role in the development of twentieth-century Mexican art, but her work has never been well- known in the United States except among art historians. One reason for Izquierdo’s relative obscurity is the enormous popularity of some of her peers. In particular, the painters Frida Kahlo and Diego Rivera have so captivated the interest of US audiences that Izquierdo and other Mexican artists from the period often get overlooked, despite the high quality of their work.",
+    "question": "Which choice best states the main idea of the text?",
+    "options": [
+      "A. Izquierdo’s work is not as well-known in the United States as it should be because Kahlo and Rivera draw so much of the public’s attention.",
+      "B. During Izquierdo’s lifetime, her paintings were displayed in galleries in the United States much more frequently than paintings by Kahlo and Rivera were.",
+      "C. Izquierdo painted some of the same subjects that Kahlo and Rivera painted but used different techniques than they used.",
+      "D. Few of Izquierdo’s works are in galleries today because she produced only a small number of paintings."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most accurately states the main idea of the text. The text begins by stating that María Izquierdo was an important figure in the history of twentieth-century Mexican art, but despite her importance, her work hasn’t received widespread recognition in the United States. According to the text, one reason for this is that Frida Kahlo and Diego Rivera are so famous in the US that they overshadow other important Mexican artists, including Izquierdo. Thus, the main idea of the text is that Izquierdo’s work is less well known in the US than it should be because Kahlo and Rivera draw most of the public’s attention. Choice B is incorrect because the text doesn’t discuss the appearance of Izquierdo’s paintings in galleries in the US during her lifetime, nor does it suggest that her paintings were displayed more frequently than paintings by Kahlo or Rivera were. Instead, the text focuses on the fact that Izquierdo has been overlooked in the US because of Kahlo’s and Rivera’s greater popularity. Choice C is incorrect because the text doesn’t discuss either the subject matter of Izquierdo’s paintings or the techniques she used, nor does it compare these aspects of her paintings with those of Kahlo’s and Rivera’s paintings. Choice D is incorrect because the text doesn’t mention how many of Izquierdo’s paintings appear in galleries today, nor does it state that she produced only a small number of paintings.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "cc4d3cac",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice most effectively uses data from the table to complete the statement?",
+    "options": [
+      "A. J0614-03 has the shortest amount of time between consecutive pulses of all the RRATs in the table.",
+      "B. J0545-03 and J0121+53 have the same amount of time between consecutive pulses.",
+      "C. J1654-2335 has the longest amount of time between consecutive pulses of all the RRATs in the table.",
+      "D. J0103+54 and J0121+53 both have more than one second of time between consecutive pulses."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it most accurately uses data from the table to complete the statement about certain rotating radio transients (RRATs). The table contains information about the right ascensions, periods, and frequencies of various pulsar stars called RRATs. According to the text, the period of an RRAT is defined as the time between consecutive pulses. The table shows that the period of RRAT J0614- 03 is 0.136 seconds, which is the lowest number of all the periods of the RRATs listed in the table. If the period is the time between consecutive pulses, and J0614-03 has the shortest period, then J0614-03 has the shortest amount of time between consecutive pulses of all the RRATs in the table. Choice B is incorrect because according to the table, J0545-03 has a period of 1.074 seconds and J0121+53 has a period of 2.725 seconds. According to the text, the period of an RRAT is the time between consecutive pulses. Therefore, since J0545-03 and J0121+53 have different periods, they do not have the same amount of time between consecutive pulses. Choice C is incorrect because according to the table, J1654- 2335 has a period of 0.545 seconds, which is not the longest period of all the RRATs listed in the table. According to the text, the period of an RRAT is the time between consecutive pulses, and both J0545-03 and J0121+53 have longer periods than J1654-2335, so J1654-2335 does not have the longest time between consecutive pulses of all the RRATs in the table. Choice D is incorrect because according to the table, J0103+54 has a period of 0.354 seconds, and J0121+53 has a period of 2.725 seconds. According to the text, the period of an RRAT is the time between consecutive pulses, and only J0121+53 has more than one second of time between consecutive pulses, not J0103+54.",
+    "image": "assets/coeq_cc4d3cac.png",
+    "alt": "Data figure: Properties of Select Rotating Radio Transients. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "b6c2f552",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice best describes data from the graph that support the student’s assertion?",
+    "options": [
+      "A. Processing imports with inputs were greater than both ordinary imports and processing imports with assembly in 2006.",
+      "B. From 2000 to 2006, processing imports with inputs rose much more sharply than processing imports with assembly did.",
+      "C. From 2000 to 2006, neither processing imports with inputs nor processing imports with assembly were greater than ordinary imports.",
+      "D. Processing imports with assembly were greater in 2006 than processing imports with inputs in 2000."
+    ],
+    "answer": "B",
+    "explanation": "Choice B is the best answer because it describes data from the graph that best support the student’s assertion that initial efforts at trade liberalization in China were shaped by firms having limited capital (assets available for use) and that this situation resolved during the 2000s. The text explains that an approach to trade liberalization involves engaging in processing imports, one type of which doesn’t require payment to a trade partner (processing with assembly) and one type of which requires upfront payment to a trade partner for raw materials (processing with inputs). The graph, which presents China’s imports for ordinary imports and both types of processing imports in the years 2000, 2003, and 2006, shows that while processing imports with assembly rose from about 250 hundred million dollars in 2000 to about 750 hundred million dollars in 2006, processing imports with inputs rose much more sharply, increasing from approximately 650 hundred million dollars in 2000 to about 2,300 hundred million dollars in 2006. Because processing with inputs requires firms to pay for materials (expending capital) and processing with assembly doesn’t, the sharper rise in processing imports with inputs suggests that Chinese firms’ assets—and thus their ability to engage in that type of processing imports—were relatively limited in (and before) 2000 and then substantially increased from 2000 to 2006. In other words, the data suggest that the situation of having limited capital resolved during the 2000s. Choice A is incorrect because the graph indicates that ordinary imports were greater than both types of processing imports in 2006, not that processing imports with inputs were greater than ordinary imports and processing imports with assembly that year. Choice C is incorrect because the observation that ordinary imports were greater than both types of processing imports in 2000, 2003, and 2006 doesn’t address a change within any type of imports from 2000 to 2006, and an indication of a change in that period that might be related to the availability of assets is needed to support the assertion that the situation of having limited capital resolved during the 2000s. Choice D is incorrect because the fact that processing imports with assembly were greater at the end of the period from 2000 to 2006 than processing imports with inputs were at the start of the same period doesn’t address a change within either type of imports during the period, and an indication of such a change that might be related to the availability of assets is needed to support the assertion that the situation of having limited capital resolved during the 2000s.",
+    "image": "assets/coeq_b6c2f552.png",
+    "alt": "Data figure: China’s Imports by Type, 2000–2006. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "c1445a5e",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "The linguistic niche hypothesis (LNH) posits that the exotericity of languages (how prevalent non-native speakers are) and grammatical complexity are inversely related, which the LNH ascribes to attrition of complex grammatical rules as more non-native speakers adopt the language but fail to acquire those rules. Focusing on two characteristics that are positive indices of grammatical complexity, fusion (when new phonemes arise from the merger of previously distinct ones) and informativity (languages’ capacity for meaningful variation), Olena Shcherbakova and colleagues conducted a quantitative analysis for more than 1,300 languages and claim the outcome is inconsistent with the LNH.",
+    "question": "Which finding, if true, would most directly support Shcherbakova and colleagues’ claim?",
+    "options": [
+      "A. Shcherbakova and colleagues’ analysis showed a slightly negative correlation between grammatical complexity and fusion and between grammatical complexity and informativity.",
+      "B. Shcherbakova and colleagues’ analysis showed a slightly negative correlation between grammatical complexity and exotericity.",
+      "C. Shcherbakova and colleagues’ analysis showed a slightly positive correlation between grammatical complexity and fusion.",
+      "D. Shcherbakova and colleagues’ analysis showed a slightly positive correlation between fusion and exotericity and between informativity and exotericity."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents a finding that, if true, would support Shcherbakova and colleagues’ claim that the outcome of their study is inconsistent with the linguistic niche hypothesis (LNH). The text explains that the LNH holds that there is an inverse relationship between the prevalence of non-native speakers of a language (exotericity) and the grammatical complexity of that language—that is, that as the number of non-native speakers increases, grammatical complexity decreases, and vice versa. According to the text, Shcherbakova and colleagues focused on two positive indications of grammatical complexity—fusion and informativity—and analyzed their occurrence in over 1,300 languages. If the researchers found a slightly positive correlation between fusion and exotericity and between informativity and exotericity —meaning that to some extent, grammatical complexity increases as the number of non-native speakers of a language increases—their outcome would not be consistent with the assumption that exotericity and grammatical complexity are inversely related (the LNH). Choice A is incorrect because it wouldn’t be possible to say that a finding of a slightly negative correlation between grammatical complexity and both fusion and informativity is inconsistent or consistent with the LNH, since the finding would address only grammatical complexity (given that fusion and informativity are aspects of grammatical complexity) and wouldn’t move beyond that factor to address its relationship to the prevalence of non-native speakers of a language (exotericity), which is the relationship the LNH focuses on. Choice B is incorrect because a finding of a slightly negative correlation between grammatical complexity and the prevalence of non-native speakers of a language (exotericity)— meaning that as the number of non-native speakers increases, grammatical complexity somewhat decreases, and vice versa—would be consistent, not inconsistent, with the LNH, since the text indicates that according to the LNH, there is an inverse relationship between grammatical complexity and exotericity; a negative correlation reflects an inverse relationship. Choice C is incorrect because it wouldn’t be possible to say that a finding of a slightly positive correlation between grammatical complexity and fusion is inconsistent or consistent with the LNH, since the finding would address only grammatical complexity (given that fusion is a positive indication of grammatical complexity) and wouldn’t move beyond that factor to address its relationship to the prevalence of non-native speakers of a language (exotericity), which is the relationship the LNH focuses on.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "96f6219f",
+    "skill": "Command of Evidence — Quantitative",
+    "difficulty": "Hard",
+    "passage": "",
+    "question": "Which choice best describes data in the graph that support Charles and Stephens’s claim?",
+    "options": [
+      "A. At each point on the political orientation scale, high-information voters were more likely than low-information voters to vote.",
+      "B. Only low-information voters who identify as independents had a voting probability below 50%.",
+      "C. The closer that low-information voters are to the ends of the political orientation scale, the more likely they were to vote.",
+      "D. High-information voters were more likely to identify as strong Democrats or strong Republicans than low-information voters were."
+    ],
+    "answer": "A",
+    "explanation": "Choice A is the best answer because it uses data from the graph to effectively support Charles and Stephens’s claim about how level of information affects voters. The graph shows the probability of voting for both high- and low-information voters in seven categories of political orientation. Charles and Stephens claim that “the more informed voters are about politics…the more likely they are to vote.”This statement correctly asserts that the graph shows a higher probability of voting for high-information voters than for low-information voters at each of the seven political orientations. Thus, this statement accurately cites data from the graph that support Charles and Stephens’s claim about how level of information affects voters. Choice B is incorrect. Although this statement is correct that the only probability in the graph below 50% is for low-information voters categorized as independent (orientation 4), the claim in question is about the relative likelihood that low- and high-information voters will vote, and without some reference to high-information voters, this statement cannot help support such a comparison. Choice C is incorrect. Although this statement is correct that the highest probabilities of voting for low-information voters are at the ends of the orientation scale (1 and 7), the claim in question is about the relative likelihood that low- and high-information voters will vote, and without some reference to high-information voters, this statement cannot help support such a comparison. Choice D is incorrect because the graph does not give any information about how many people are represented in any of the categories, so this statement is not based on data from the graph. Furthermore, even if we did have this information, the claim is about how level of information affects voters’ probability of voting, not whether they’re likely to strongly identify with a particular political party.",
+    "image": "assets/coeq_96f6219f.png",
+    "alt": "Data figure: Voters’ Political Orientation, Level of Political Information, and Probability of Voting. The figure and the text that goes with it are shown as an image.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "19f133b4",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "In 1967 the US Congress created the Corporation for Public Broadcasting, which in turn created National Public Radio (NPR). NPR began producing and distributing high-quality news and cultural programming to affiliate stations across the United States in 1971. In a research paper, a student claims that the Corporation for Public Broadcasting and NPR were inspired by the British Broadcasting System (BBC), which had been established in the 1920s.",
+    "question": "Which quotation from a work by a historian would be the most effective evidence for the student to include in support of this claim?",
+    "options": [
+      "A. “Although the BBC had begun as a private corporation, politicians successfully argued to make it a public company because they believed a public broadcaster could help build national unity in the aftermath of World War I.”",
+      "B. “For many decades, the BBC had no competition since it held Britain’s only broadcasting license, whereas in the United States, the Corporation for Public Broadcasting launched NPR in a broadcasting market already filled with competitors.”",
+      "C. “Congress’s embrace of publicly funded broadcasting reflected a common belief among US politicians that the role of government was not only to ensure people’s safety and liberty but also to enrich people’s lives in other ways.”",
+      "D. “The goal of the BBC was to support British democracy by promoting an informed citizenry, and US legislators believed that ensuring access to high-quality programming could do the same for democracy in the United States.”"
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because this quotation would be the most effective evidence to include in support of the claim that the Corporation for Public Broadcasting and NPR were inspired by the British Broadcasting System (BBC). The quotation states that the goal of the BBC was to support British democracy and that US legislators believed high-quality programming could accomplish the same goal for democracy in the United States. In other words, US legislators looked to the BBC as a model, taking direct inspiration from it when they created the Corporation for Public Broadcasting, which in turn created NPR. Choice A is incorrect because this quotation provides historical information about the BBC, not information about the inspiration for the creation of the Corporation for Public Broadcasting and NPR. This quotation, therefore, is irrelevant to the student’s claim that the BBC inspired the creation of the Corporation for Public Broadcasting, which in turn created NPR. Choice B is incorrect because this quotation contrasts the lack of competition faced by the BBC with the substantial competition faced by NPR, which has no bearing on the student’s claim that the Corporation for Public Broadcasting and NPR were inspired by the BBC. Choice C is incorrect because this quotation focuses on a common belief among US politicians that inspired Congress’s embrace of publicly funded broadcasting. The quotation doesn’t say anything about the BBC and therefore doesn’t support the claim that the BBC inspired Congress to create the Corporation for Public Broadcasting, which in turn created NPR.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "e5999796",
+    "skill": "Inferences",
+    "difficulty": "Hard",
+    "passage": "Archaeologists and historians used to believe that the Maya civilization during its Classic period (roughly 250–900) lacked agricultural marketplaces. One reason for this belief was that these scholars misunderstood the ecology of the regions the Maya inhabited. Marketplaces typically emerge because different individuals or groups want to trade resources they control for resources they don’t control. Scholars seriously underestimated the ecological diversity of the Maya landscape and thus assumed that ______",
+    "question": "Which choice most logically completes the text?",
+    "options": [
+      "A. marketplaces likely would not have attracted many traders from outside the regions controlled by the Maya.",
+      "B. farming practices would have been largely the same throughout Maya lands even if the crops people produced varied significantly.",
+      "C. marketplaces would not have enabled Maya people to acquire many products different from those they already produced.",
+      "D. farmers would trade agricultural products only if they had already produced enough to meet their own needs."
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it presents the conclusion that most logically follows from the text’s discussion of scholars’ understanding of Maya ecology and agricultural marketplaces. The text indicates that scholars used to believe that during the Classic period, the Maya civilization didn’t have agricultural marketplaces. According to the text, scholars held this view because they misunderstood the ecology of areas where the Maya lived. The text points out that people tend to create marketplaces in order to acquire resources they don’t otherwise control. Agricultural marketplaces would have allowed farmers who produced one type of crop to trade that crop for other types of crops that they didn’t produce. The text goes on to say, however, that scholars underestimated the ecological diversity of the Maya areas, meaning that scholars thought that the Maya landscape produced a smaller range of resources than it actually produced. Taken together, then, this information suggests that scholars assumed that marketplaces wouldn’t have allowed Maya people to acquire products different from the products they already produced: that is, if everyone produced the same array of crops, as scholars mistakenly believed, then there wouldn’t have been any need for marketplaces where people could trade those crops. Choice A is incorrect because the text doesn’t say anything about trade between the Maya and people from outside the regions controlled by the Maya. Although scholars’ mistaken belief that the Maya lands weren’t very ecologically diverse would give those scholars a reason to think that the Maya didn’t have marketplaces, it wouldn’t lead scholars to assume that traders from outside Maya lands were uninterested in acquiring resources produced by the Maya. Even if the Maya actually did produce only a small array of resources throughout their lands, there is no reason to believe from the text that people outside Maya lands also produced these same resources and thus would have no need to trade with the Maya people. Choice B is incorrect because the text indicates that scholars underestimated the ecological diversity of the Maya lands, which suggests that they mistakenly believed that the Maya produced a relatively small array of resources throughout their territory, not that the crops the Maya produced varied significantly throughout the Maya lands. Although the scholars might have assumed that a lack of ecological diversity suggests that Maya farming practices were largely the same everywhere, the text does not support that they also assumed there was a lot of variation in the crops that Maya people produced. In fact, the text states that marketplaces emerge when people want to obtain resources they don’t already control. If it were the case that scholars assumed that the crops Maya people produced varied significantly, this would have led them to conclude that Maya people likely established marketplaces so they could trade for resources they didn’t already possess, not that the Maya civilization lacked marketplaces. Choice D is incorrect because nothing in the text suggests that scholars assumed that farmers wouldn’t trade their agricultural products unless they had already met their own needs with those products. Instead, the text says that scholars thought that the Maya lands produced a smaller array of resources than they actually did, which the text suggests led scholars to assume that the Maya didn’t have any need for marketplaces. The scholars’ mistaken belief has no bearing on the issue of whether farmers met their own needs before trading their products.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "429c8b61",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "“Odalie” is an 1899 short story by Alice Dunbar-Nelson. In the story, a young woman named Odalie attends the annual Mardi Gras carnival in New Orleans, where she lives with her guardian Tante Louise. Dunbar-Nelson portrays Odalie as eager to escape the monotony of her everyday life: ______",
+    "question": "Which quotation from “Odalie” most effectively illustrates the claim?",
+    "options": [
+      "A. “Mardi Gras was a tiresome day, after all, she sighed, and Tante Louise agreed with her for once.”",
+      "B. “In the old French house on Royal Street, with its quaint windows and Spanish courtyard green and cool, and made musical by the plashing of the fountain and the trill of caged birds, lived Odalie in convent-like seclusion.”",
+      "C. “When one is shut up in a great French house with a grim sleepy tante and no companions of one’s own age, life becomes a dull thing, and one is ready for any new sensation.”",
+      "D. “It was Mardi Gras day at last, and early through her window Odalie could hear the jingle of folly bells on the [participants’] costumes, the tinkle of music, and the echoing strains of songs.”"
+    ],
+    "answer": "C",
+    "explanation": "Choice C is the best answer because it most effectively uses a quotation from “Odalie” to illustrate the claim that Odalie is eager to escape the monotony, or tedious lack of variety, of her everyday life. In the quotation, Odalie describes feeling “shut up” and complains that she has “no companions” except for her “sleepy tante.” Odalie goes on to say that, as a result, her life is “dull” and she is “ready for any new sensation,” meaning she wants a change. This suggests that Odalie wishes to get away from her monotonous everyday life. Choice A is incorrect. Although this quotation includes the word “tiresome,” which means dull, it does so to suggest Odalie’s negative feelings about Mardi Gras, which is a once-a-year celebration, not her feelings about her everyday life. This quotation therefore doesn’t express that Odalie’s everyday life is monotonous or that she wishes to escape. Choice B is incorrect. Although this quotation ends by saying that Odalie lives in seclusion, or isolation, it doesn’t express that Odalie’s everyday life is monotonous or that she wishes to escape. Instead, it describes the pleasant qualities of the house Odalie lives in, saying that it has “quaint windows” and a “green and cool” courtyard that is “made musical” by the sounds of a fountain and pet birds. Choice D is incorrect because this quotation describes the lively sounds of a Mardi Gras celebration that Odalie hears through her window, not the monotony of Odalie’s everyday life or her wish to escape.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
+  },
+  {
+    "id": "2c5b7402",
+    "skill": "Command of Evidence — Textual",
+    "difficulty": "Hard",
+    "passage": "In the twentieth century, ethnographers made a concerted effort to collect Mexican American folklore, but they did not always agree about that folklore’s origins. Scholars such as Aurelio Espinosa claimed that Mexican American folklore derived largely from the folklore of Spain, which ruled Mexico and what is now the southwestern United States from the sixteenth to early nineteenth centuries. Scholars such as Américo Paredes, by contrast, argued that while some Spanish influence is undeniable, Mexican American folklore is mainly the product of the ongoing interactions of various cultures in Mexico and the United States.",
+    "question": "Which finding, if true, would most directly support Paredes’s argument?",
+    "options": [
+      "A. The folklore that the ethnographers collected included several songs written in the form of a décima, a type of poem originating in late sixteenth-century Spain.",
+      "B. Much of the folklore that the ethnographers collected had similar elements from region to region.",
+      "C. Most of the folklore that the ethnographers collected was previously unknown to scholars.",
+      "D. Most of the folklore that the ethnographers collected consisted of corridos—ballads about history and social life—of a clearly recent origin."
+    ],
+    "answer": "D",
+    "explanation": "Choice D is the best answer because it presents a finding that, if true, would support Paredes’s argument that Mexican-American folklore is mostly the result of cultural interactions in Mexico and the United States rather than an adaptation of Spanish folklore. The text describes a disagreement among scholars about whether Mexican-American folklore mostly derived from the folklore of Spain or originated in Mexico and the United States as cultures there have interacted. The latter view is the argument that Paredes puts forward. If Mexican-American folklore collected in the twentieth century mostly consists of ballads about history and social life that originated recently, then that would support Paredes’s argument, since it would suggest that the folklore mostly arose after Spanish rule ended in the early nineteenth century and that the folklore reflects cultural interactions in Mexico and the United States rather than traditions from Spain. Choice A is incorrect because the inclusion of songs influenced by sixteenth-century Spanish poetry among Mexican-American folklore collected in the twentieth century would not support Paredes’s view that the folklore was the result of cultural interactions in Mexico and the United States rather than an offshoot of Spanish folklore. If anything, the presence of such songs among the folklore collected in the twentieth century would weaken Paredes’s argument, since it would reflect the influence of Spanish culture on the folklore. Choice B is incorrect because the mere presence of similarities in Mexican-American folklore across regions would not be sufficient to draw a conclusion about where the folklore originated, let alone to support Paredes’s argument that the folklore reflects cultural interactions in Mexico and the United States. In fact, since Paredes argued that Mexican-American folklore is the product of various cultures interacting in Mexico and the United States, he would likely expect there to be regional variations in folklore as different cultures have interacted in different places. Choice C is incorrect because scholars’ previous ignorance of the folklore would have no bearing on Paredes’s argument that Mexican-American folklore mostly reflects cultural interactions in Mexico and the United States. The folklore’s origins are independent of scholars’ knowledge of the folklore.",
+    "origin": "cb-psat89",
+    "psatDifficulty": "Hard",
+    "altIds": [],
+    "psatDifficultyFrom": "native"
   }
 ];
