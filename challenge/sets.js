@@ -1827,3 +1827,244 @@ window.CHALLENGE_SETS["Luke"].push({
     ]
   }
 });
+
+// Class route: retrieval, specific repairs, protected independent work, and exits.
+window.CHALLENGE_SETS["Maysa"].push({
+  "setId": "structure-evidence-route-20261009",
+  "title": "Decide from evidence, then move",
+  "source": "Class route",
+  "date": "2026-10-09",
+  "tileIntro": "Retrieve the methods, try different sentences, then take a short independent set.",
+  "ids": [
+    "ef21e818",
+    "0ff6c528",
+    "11add1e8",
+    "16fa54b2",
+    "7ac9793d",
+    "d561db9c"
+  ],
+  "learningPath": {
+    "protectedTransfer": true,
+    "singleCredit": true,
+    "intro": "Work with your tutor. Give a short deciding reason before choices. For grammar, name the subject and verb, the whole list items, or the ends of an interruption. For reading, name the clue and the required meaning or function.",
+    "order": "One warm-up → four structure repairs → two reading methods → four fresh checks → six independent questions → review → two exit checks. Agree the next practice dates after class.",
+    "steps": [
+      {
+        "bankId": "cae07228",
+        "stage": "Start with the clue",
+        "minReasonWords": 2,
+        "note": "Predict a meaning from the clue before comparing words. Give a short phrase and the clue that supports it."
+      },
+      {
+        "bankId": "155c9bf7",
+        "stage": "Find the subject head",
+        "minReasonWords": 2,
+        "reasonPrompt": "Name the subject head and the verb it requires.",
+        "explanation": "The method is singular. Remove which can take forms including flash cards, practice tests and open-ended writing prompts. The remaining spine is The method helps learners. Nearby plural examples do not control helps.",
+        "followUp": {
+          "id": "class-20261009-sva-repair",
+          "stage": "A different example",
+          "skill": "Form, Structure, and Sense",
+          "difficulty": "Original practice",
+          "passage": "The reports from the analyst ______ the same pattern.",
+          "question": "Which choice completes the sentence correctly?",
+          "options": [
+            "A. show",
+            "B. shows",
+            "C. is showing",
+            "D. has shown"
+          ],
+          "answer": "A",
+          "explanation": "Reports is plural; from the analyst does not control agreement. Reports show.",
+          "minReasonWords": 2
+        }
+      },
+      {
+        "bankId": "78b88c04",
+        "stage": "Group whole list items",
+        "minReasonWords": 2,
+        "reasonPrompt": "Name the whole items and where one ends. Keep each name and date inside its item.",
+        "explanation": "The three whole products are a language app, Chickasaw Basic, in 2009; an online television network, Chickasaw TV, in 2010; and a language course, in 2015. Internal commas stay within the items. C closes the app item after 2009 and begins the network item. Semicolons can separate complex-list items; each item need not be a sentence.",
+        "followUp": {
+          "id": "class-20261009-list-repair",
+          "stage": "A different example",
+          "skill": "Boundaries",
+          "difficulty": "Original practice",
+          "passage": "The archive holds letters, written in 1910; maps, drawn in ______ and photographs, taken in 1930.",
+          "question": "Which choice completes the sentence correctly?",
+          "options": [
+            "A. 1920,",
+            "B. 1920;",
+            "C. 1920:",
+            "D. 1920"
+          ],
+          "answer": "B",
+          "explanation": "Each date belongs inside its whole item. The blank ends the maps item; a semicolon separates it from photographs.",
+          "minReasonWords": 2
+        }
+      },
+      {
+        "bankId": "01f418eb",
+        "stage": "Close both ends",
+        "minReasonWords": 2,
+        "reasonPrompt": "Name the interruption and the main sentence left when it is removed.",
+        "explanation": "The comma after His poems opens the supplementary which clause. Close it after compositions: His poems, which ... compositions, often defy easy understanding. The main sentence is His poems often defy easy understanding. D closes the pair without separating often from defy.",
+        "followUp": {
+          "id": "class-20261009-pair-repair",
+          "stage": "A different example",
+          "skill": "Boundaries",
+          "difficulty": "Original practice",
+          "passage": "The notebooks, which contain sketches and measurements ______ useful to historians.",
+          "question": "Which choice completes the sentence correctly?",
+          "options": [
+            "A. are",
+            "B. ; are",
+            "C. , are",
+            "D. — are"
+          ],
+          "answer": "C",
+          "explanation": "Which contain sketches and measurements is supplementary. Close the comma pair before the main predicate: notebooks are useful.",
+          "minReasonWords": 2
+        }
+      },
+      {
+        "bankId": "790fc366",
+        "stage": "Locate though and the clause boundary",
+        "minReasonWords": 2,
+        "reasonPrompt": "Name the subject and finite verb on each side; say which side though belongs to.",
+        "explanation": "Nakalembe does not just compile the information and she also shares her findings are independent clauses. Though belongs at the end of the first: information, though;. The comma sets off though and the semicolon supplies the sentence boundary. Though can also introduce a dependent clause in another sentence; identify its role here.",
+        "followUp": {
+          "id": "class-20261009-adverb-repair",
+          "stage": "A different example",
+          "skill": "Boundaries",
+          "difficulty": "Original practice",
+          "passage": "The route was shorter ______ it was harder to navigate.",
+          "question": "Which choice completes the sentence correctly?",
+          "options": [
+            "A. however,",
+            "B. , however,",
+            "C. ; however,",
+            "D. ; however;"
+          ],
+          "answer": "C",
+          "explanation": "The route was shorter and it was harder to navigate are independent clauses. A semicolon supplies the boundary; however belongs to the second clause and takes its comma.",
+          "minReasonWords": 2
+        }
+      },
+      {
+        "bankId": "9cdf094a",
+        "stage": "Predict the shape of an unfamiliar word",
+        "minReasonWords": 2,
+        "note": "Predict what kind of behavior the blank describes. After opening choices, sort them into known fits, known misfits, and unknowns. Eliminate known misfits; choose the remaining option best supported by the passage. An unknown word is not automatically correct.",
+        "reasonPrompt": "Describe the behavior required and quote a short clue.",
+        "explanation": "Customers keep paying after they stop valuing the subscription. Passivity and not deliberately canceling point to inaction or resistance to change: inertia. Decisiveness is the opposite; evasion and turnover do not describe this behavior. The context decides even if inertia was unfamiliar.",
+        "followUp": {
+          "id": "class-20261009-word-repair",
+          "stage": "A different example",
+          "skill": "Words in Context",
+          "difficulty": "Original practice",
+          "passage": "The path took longer, but the hikers welcomed the ______ change: they could rest and watch the birds.",
+          "question": "Which choice completes the sentence correctly?",
+          "options": [
+            "A. unpleasant",
+            "B. beneficial",
+            "C. unrelated",
+            "D. imaginary"
+          ],
+          "answer": "B",
+          "explanation": "Welcomed, rest, and watch the birds require a positive, helpful effect: beneficial.",
+          "minReasonWords": 2
+        }
+      },
+      {
+        "bankId": "0cd95707",
+        "stage": "Name what the exact detail does",
+        "minReasonWords": 2,
+        "note": "For function questions, say what the underlined words do. Read each option’s action verb, then test the whole option and its scope. Introduce names a term; illustrate gives an example; qualify limits a claim; corroborate supports it; refute argues it is false.",
+        "reasonPrompt": "State the job of the underlined sentence and how the next sentence uses it.",
+        "explanation": "The underlined sentence names aeolian transport. The discussion that follows explains and investigates that process. Its job is to introduce a scientific term, not explain the researchers’ difficulties or emphasize the later result.",
+        "followUp": {
+          "id": "class-20261009-function-repair",
+          "stage": "A different example",
+          "skill": "Text Structure and Purpose",
+          "difficulty": "Original practice",
+          "passage": "A species can thrive in one habitat and struggle in another. Scientists call this variation habitat sensitivity. The next paragraph describes how they measure habitat sensitivity.",
+          "question": "Which choice completes the sentence correctly?",
+          "options": [
+            "A. Challenge the researchers",
+            "B. Introduce a term used next",
+            "C. Describe an unrelated event",
+            "D. Prove every habitat is identical"
+          ],
+          "answer": "B",
+          "explanation": "The sentence naming habitat sensitivity introduces the term developed in the next paragraph.",
+          "minReasonWords": 2
+        }
+      }
+    ],
+    "checks": [
+      {
+        "bankId": "51f50248",
+        "stage": "Fresh check",
+        "minReasonWords": 2
+      },
+      {
+        "bankId": "b1ee8d09",
+        "stage": "Fresh check",
+        "minReasonWords": 2
+      },
+      {
+        "id": "class-20261009-though-check",
+        "stage": "Fresh check",
+        "skill": "Boundaries",
+        "difficulty": "Original practice",
+        "passage": "The conservator does not just restore ______ she also documents their history.",
+        "question": "Which choice completes the sentence correctly?",
+        "options": [
+          "A. fabrics, though,",
+          "B. fabrics; though",
+          "C. fabrics, though;",
+          "D. fabrics though,"
+        ],
+        "answer": "C",
+        "explanation": "The first clause ends with though, set off by a comma; the semicolon separates two complete clauses.",
+        "minReasonWords": 2
+      },
+      {
+        "bankId": "86165aba",
+        "stage": "Fresh check",
+        "minReasonWords": 2
+      }
+    ],
+    "transfer": [
+      "ef21e818",
+      "0ff6c528",
+      "11add1e8",
+      "16fa54b2",
+      "7ac9793d",
+      "d561db9c"
+    ],
+    "exitChoices": [
+      {
+        "bankId": "fa821b89",
+        "stage": "Whole items and internal punctuation",
+        "minReasonWords": 2
+      },
+      {
+        "bankId": "a9a95639",
+        "stage": "Closing an interruption",
+        "minReasonWords": 2
+      },
+      {
+        "bankId": "89f2d981",
+        "stage": "A familiar word in a different sense",
+        "minReasonWords": 2
+      },
+      {
+        "bankId": "99bd56d8",
+        "stage": "The exact underlined sentence",
+        "minReasonWords": 2
+      }
+    ]
+  }
+});

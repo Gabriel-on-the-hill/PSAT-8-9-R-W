@@ -36,8 +36,8 @@
   function render(ctx) {
     var path=ctx.set.learningPath,s=state(ctx);
     function resolve(ref) {
-      var q=ctx.bank.find(function(x){return x.id===ref.bankId;});
-      if(!q) throw new Error('Missing class question: '+ref.bankId);
+      var q=ref.bankId?ctx.bank.find(function(x){return x.id===ref.bankId;}):ref;
+      if(!q || !q.id || !/^[ABCD]$/.test(q.answer) || !Array.isArray(q.options) || q.options.length!==4) throw new Error('Missing class question: '+(ref.bankId||ref.id));
       return Object.assign({},q,ref,{answerIndex:q.answer.charCodeAt(0)-65});
     }
     var lesson,gate,exits,transfer;
@@ -80,12 +80,26 @@
         (isGate&&all&&!s.reasonsReady?button('scReasons','My tutor has checked these reasons'):'')+'<div class="crow">'+button('scHome','Return to class route')+'</div>');
       wire('scReasons',function(){s.reasonsReady=true;save(ctx,s);home();});wire('scHome',home);
     }
-    function run(qs,block,label,immediate) {
-      if(block.done){results(qs,block,label);return;}
+    function validReason(value,q) {
+      var words=value.match(/[A-Za-z][A-Za-z'-]*/g)||[];
+      return words.length>=(q.minReasonWords||1) && words.some(function(w){return w.length>1;});
+    }
+    function passageText(value) {
+      return esc(value).replace(/&lt;(\/?)(u|sub|sup|i|em|b|strong)&gt;/gi,'<$1$2>').replace(/\n/g,'<br>');
+    }
+    function run(qs,block,label,immediate,onDone) {
+      function advance() {
+        block.index++;if(block.index===qs.length){block.done=true;postBlock(ctx,qs,block,label);}
+        save(ctx,s);run(qs,block,label,immediate,onDone);
+      }
+      if(block.repair) {
+        run([resolve(qs[block.index].followUp)],block.repair,'Different example',true,function(){delete block.repair;advance();});return;
+      }
+      if(block.done){if(onDone)onDone();else results(qs,block,label);return;}
       var i=block.index,q=qs[i];
       paint('<p class="cnote"><b>'+esc(label)+' '+(i+1)+' of '+qs.length+'</b>'+(immediate?' · '+esc(q.stage||q.skill):' · notes closed · no hints')+'</p>'+
-        (q.image?'<div class="cq"><img src="'+esc(q.image)+'" alt="'+esc(q.alt||'Question figure')+'" style="display:block;max-width:100%;height:auto"></div>':'<div class="cq">'+esc(q.passage)+'</div>')+'<div class="cq"><b>'+esc(q.question)+'</b></div>'+
-        '<label for="scReason">Predict the answer or deciding relationship before choosing.</label><textarea id="scReason" rows="2" style="width:100%;box-sizing:border-box;font:inherit;padding:.65rem;margin:.5rem 0"></textarea>'+button('scCommit','Commit the prediction',true)+
+        (immediate&&q.note?'<div class="cbox">'+passageText(q.note)+'</div>':'')+(q.image?'<div class="cq"><img src="'+esc(q.image)+'" alt="'+esc(q.alt||'Question figure')+'" style="display:block;max-width:100%;height:auto"></div>':'<div class="cq">'+passageText(q.passage)+'</div>')+'<div class="cq"><b>'+esc(q.question)+'</b></div>'+
+        '<label for="scReason">'+esc(immediate&&q.reasonPrompt?q.reasonPrompt:'Predict the answer or deciding relationship before choosing.')+'</label><textarea id="scReason" rows="2" style="width:100%;box-sizing:border-box;font:inherit;padding:.65rem;margin:.5rem 0"></textarea>'+button('scCommit','Commit the prediction',true)+
         '<div id="scOptions" style="display:none">'+q.options.map(function(o,j){return '<button class="copt" data-i="'+j+'">'+esc(o)+'</button>';}).join('')+'</div><div id="scFeedback" aria-live="polite"></div><div class="crow">'+button('scNext',i===qs.length-1?'Finish this block':'Commit and continue',true)+'</div>');
       function refresh() {
         var committed=block.reasons[i]!==undefined, chosen=block.answers[i]!==undefined;
@@ -96,10 +110,10 @@
         if(immediate&&chosen)el('scFeedback').innerHTML=feedback(q,block,i);
       }
       if(typeof Eliminator!=='undefined')Eliminator.decorate(el('scOptions'),{ns:'route:'+ctx.student+':'+ctx.set.setId+':'+label,id:q.id,selector:'.copt'});
-      el('scReason').oninput=function(){el('scCommit').disabled=el('scReason').value.trim().length<2;};
-      wire('scCommit',function(){var value=el('scReason').value.trim();if(value.length<2||block.reasons[i]!==undefined)return;block.reasons[i]=value;save(ctx,s);refresh();});
+      el('scReason').oninput=function(){el('scCommit').disabled=!validReason(el('scReason').value.trim(),q);};
+      wire('scCommit',function(){var value=el('scReason').value.trim();if(!validReason(value,q)||block.reasons[i]!==undefined)return;block.reasons[i]=value;save(ctx,s);refresh();});
       document.querySelectorAll('#scOptions .copt').forEach(function(b){b.onclick=function(){if(block.reasons[i]===undefined||(immediate&&block.answers[i]!==undefined))return;block.answers[i]=Number(b.dataset.i);save(ctx,s);refresh();};});
-      wire('scNext',function(){if(block.answers[i]===undefined)return;if(typeof recordExposure==='function')recordExposure(q.bankId||q.id,'class',block.answers[i]===q.answerIndex);block.index++;if(block.index===qs.length){block.done=true;postBlock(ctx,qs,block,label);}save(ctx,s);run(qs,block,label,immediate);});
+      wire('scNext',function(){if(block.answers[i]===undefined)return;if(typeof recordExposure==='function')recordExposure(q.bankId||q.id,'class',block.answers[i]===q.answerIndex);if(immediate&&block.answers[i]!==q.answerIndex&&q.followUp){block.repair={index:0,reasons:[],answers:[]};save(ctx,s);run(qs,block,label,immediate,onDone);}else advance();});
       refresh();
     }
     function selectExits() {

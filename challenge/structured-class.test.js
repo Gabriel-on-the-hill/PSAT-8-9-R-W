@@ -12,7 +12,8 @@ async function setup(saved){
  if(saved)Object.entries(saved).forEach(([k,v])=>w.localStorage.setItem(k,v));
  function inject(s){const e=w.document.createElement('script');e.textContent=s;w.document.body.appendChild(e);}
  inject(read('challenge/sets.js'));
- const account=Object.keys(w.CHALLENGE_SETS).find(n=>w.CHALLENGE_SETS[n].at(-1).learningPath?.protectedTransfer);
+ const accounts=Object.keys(w.CHALLENGE_SETS);
+ const account=accounts.find(n=>{const p=w.CHALLENGE_SETS[n].at(-1).learningPath;return p?.protectedTransfer&&p.steps.some(q=>q.followUp);})||accounts.find(n=>w.CHALLENGE_SETS[n].at(-1).learningPath?.protectedTransfer);
  const set=w.CHALLENGE_SETS[account].at(-1),p=set.learningPath;
  w.sessionStorage.setItem('psat89_user',account);
  for(const f of ['config.js','progress.js','sheet-sync.js','session-responses.js','storage.js','timer.js','history.js','data-craft-structure.js','data-expression-of-ideas.js','data-info-ideas.js','data-conventions.js','eliminator.js','app.js','homework/assignments.js','challenge/challenge-core.js','challenge/structured-class.js','challenge/class-path.js','challenge/challenge.js'])inject(read(f));
@@ -20,7 +21,7 @@ async function setup(saved){
  if(w.document.readyState==='loading')await new Promise(resolve=>w.document.addEventListener('DOMContentLoaded',resolve));
  function reason(){ $('scReason').value='the exact relationship or sentence spine';$('scReason').dispatchEvent(new w.Event('input'));$('scCommit').click(); }
  function choose(index){w.document.querySelector('#scOptions [data-i="'+index+'"]').click();}
- function answer(ref,wrong=false){const q=w.__peek().bank.find(q=>q.id===ref.bankId);reason();choose(wrong?(q.answer.charCodeAt(0)-64)%4:q.answer.charCodeAt(0)-65);$('scNext').click();}
+ function answer(ref,wrong=false){const q=ref.bankId?w.__peek().bank.find(q=>q.id===ref.bankId):ref;reason();choose(wrong?(q.answer.charCodeAt(0)-64)%4:q.answer.charCodeAt(0)-65);$('scNext').click();}
  function storage(){const out={};for(let i=0;i<w.localStorage.length;i++){const k=w.localStorage.key(i);out[k]=w.localStorage.getItem(k);}return out;}
  function close(){ok(errors.length===0,'no browser runtime errors: '+errors.join('; '));dom.window.close();}
  w.openChallenge();
@@ -28,14 +29,15 @@ async function setup(saved){
 }
 async function main(){
  let t=await setup();let {w,$,p,set,account}=t;
- ok(w.HOMEWORK[account].days.length===0&&w.HOMEWORK[account].start==='2026-09-26','class clears cards without resetting history keys');
+ ok(w.HOMEWORK[account].days.length===0&&w.HOMEWORK[account].classOnly===true,'class clears cards without resetting history keys');
  w.HW_USE_SHEET=true;w.SHEET_SYNC_ENDPOINT='https://example.invalid';let plan;w.hwLoadPlan(account,x=>plan=x);ok(plan===w.HOMEWORK[account],'class-only plan cannot be overridden by old sheet homework');
  const prior=new Set(w.CHALLENGE_SETS[account].slice(0,-1).flatMap(s=>s.ids));
  ok(set.ids.every(id=>!prior.has(id)),'scored class IDs preserve prior challenge denominators');
- const fresh=p.checks.concat(p.transfer.map(bankId=>({bankId})),p.exitChoices).map(q=>q.bankId);
+ const fresh=p.checks.concat(p.transfer.map(bankId=>({bankId})),p.exitChoices).map(q=>q.bankId||q.id);
  ok(new Set(fresh).size===14,'fresh checks, independent and exits do not overlap');
  ok(!$('scOff')&&!$('scTimed'),'no independent set is offered before the four checks');
  $('scLearn').click();ok($('scOptions').style.display==='none'&&$('scNext').disabled,'prediction precedes visible choices');
+ for(const value of ['_____','---','A']){$('scReason').value=value;$('scReason').dispatchEvent(new w.Event('input'));ok($('scCommit').disabled,'placeholder or answer letter cannot open choices');}
  t.reason();const saved=t.storage();t.close();
  t=await setup(saved);({w,$,p,set}=t);$('scLearn').click();
  ok($('scReason').disabled&&$('scOptions').style.display==='block','reload keeps the first committed prediction');
@@ -46,13 +48,13 @@ async function main(){
   ok(post&&post.questions.length===p.steps.length,'finished learning steps post a class-route row, one question each');
   ok(post&&post.questions.slice(1).every(q=>q.prediction==='the exact relationship or sentence spine'),'the typed reasons reach the sheet as the prediction');}
  $('scHome').click();$('scGate').click();
- p.checks.forEach(q=>{t.reason();const item=w.__peek().bank.find(x=>x.id===q.bankId);t.choose(item.answer.charCodeAt(0)-65);ok(!$('scFeedback').textContent,'readiness feedback withheld before all four');$('scNext').click();});
+ p.checks.forEach(q=>{t.reason();const item=q.bankId?w.__peek().bank.find(x=>x.id===q.bankId):q;t.choose(item.answer.charCodeAt(0)-65);ok(!$('scFeedback').textContent,'readiness feedback withheld before all four');$('scNext').click();});
  ok($('scReasons')&&$('challengeScreen').textContent.includes('Your prediction:'),'answer checks display original reasons for tutor review');
  $('scHome').click();ok(!$('scTimed'),'correct answers alone cannot enable the clock');ok($('scOff'),'clock-off independent set is offered once the four checks are done');
  $('scGate').click();$('scReasons').click();ok($('scTimed'),'tutor reason review enables seven-minute option');
  ok(Object.keys(w.getProgress()).length===0,'retrieval, repair and readiness checks award no mastery');
  const met=w.getExposure();
- ok(p.steps.concat(p.checks).every(q=>met[q.bankId]&&met[q.bankId].by.class&&met[q.bankId].by.class.result==='correct'),'every committed step and check is recorded as met, with its result, outside the ledger');
+ ok(p.steps.concat(p.checks).every(q=>met[q.bankId||q.id]&&met[q.bankId||q.id].by.class&&met[q.bankId||q.id].by.class.result==='correct'),'every committed step and check is recorded as met, with its result, outside the ledger');
  $('scTimed').click();let peek=w.__peek();
  ok(peek.mode==='exam'&&peek.timer===420&&peek.questions.map(q=>q.id).join()===p.transfer.join(),'actual runner uses exact six and seven minutes');
  ok(!$('timerDisplay').classList.contains('hidden'),'ready transfer shows countdown');
@@ -80,6 +82,16 @@ async function main(){
  ok(w.__peek().answers[1].chosen===peek.questions[1].answer&&$('timerDisplay').classList.contains('hidden'),'full reload resumes clock-off independent conditions');
  ok($('app').style.display!=='none','full reload resume displays questions');w.finalizeSession();$('cReturnToRoute').click();
  w.StructuredClass=undefined;w.openChallenge();ok($('challengeScreen').textContent.includes('did not load')&&!$('cBeginBtn'),'missing structured script fails closed');t.close();
+ t=await setup();({w,$,p,set}=t);$('scLearn').click();t.answer(p.steps[0]);
+ const q=w.__peek().bank.find(q=>q.id===p.steps[1].bankId);t.reason();t.choose((q.answer.charCodeAt(0)-64)%4);$('scNext').click();
+ ok($('challengeScreen').textContent.includes('Different example'),'a teaching miss requires a different example before advancing');
+ const repairSave=t.storage();t.close();t=await setup(repairSave);({w,$,p,set}=t);$('scLearn').click();
+ ok($('challengeScreen').textContent.includes(p.steps[1].followUp.passage),'reload retains pending different-example repair');
+ t.answer(p.steps[1].followUp);ok($('challengeScreen').textContent.includes('Learning step 3'),'repair returns to the next planned step');
+ const routeRecord=JSON.parse(w.localStorage.getItem('psat89_classroute_'+t.account+'_'+set.setId));
+ ok(routeRecord.lesson.answers[1]!==q.answer.charCodeAt(0)-65,'successful repair does not rewrite the original miss');t.close();
+ t=await setup();({w,$,p}=t);$('scLearn').click();p.steps.slice(0,-1).forEach(q=>t.answer(q));
+ ok($('challengeScreen').querySelector('u'),'the exact underlined sentence renders as underlined text');t.close();
  console.log('ALL '+count+' ASSERTIONS PASSED');
 }
 main().catch(e=>{console.error(e);process.exitCode=1;});
