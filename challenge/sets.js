@@ -1852,7 +1852,7 @@ window.CHALLENGE_SETS["Maysa"].push({
       {
         "bankId": "cae07228",
         "stage": "Start with the clue",
-        "minReasonWords": 2,
+        "minReasonWords": 1,
         "note": "Predict a meaning from the clue before comparing words. Give a short phrase and the clue that supports it."
       },
       {

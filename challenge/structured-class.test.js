@@ -36,12 +36,16 @@ async function main(){
  const fresh=p.checks.concat(p.transfer.map(bankId=>({bankId})),p.exitChoices).map(q=>q.bankId||q.id);
  ok(new Set(fresh).size===14,'fresh checks, independent and exits do not overlap');
  ok(!$('scOff')&&!$('scTimed'),'no independent set is offered before the four checks');
- $('scLearn').click();ok($('scOptions').style.display==='none'&&$('scNext').disabled,'prediction precedes visible choices');
- for(const value of ['_____','---','A']){$('scReason').value=value;$('scReason').dispatchEvent(new w.Event('input'));ok($('scCommit').disabled,'placeholder or answer letter cannot open choices');}
- t.reason();const saved=t.storage();t.close();
+ $('scLearn').click();ok($('scOptions').style.display==='none'&&$('scNext').style.display==='none','prediction precedes visible choices and Continue');
+ for(const value of ['','_____','---','A']){$('scReason').value=value;$('scReason').dispatchEvent(new w.Event('input'));$('scCommit').click();ok($('scOptions').style.display==='none'&&w.document.activeElement===$('scReason')&&$('scStatus').textContent.includes('Write'),'invalid prediction gives guidance without opening choices');}
+ $('scReason').value='melodic';$('scCommit').click();
+ ok($('scOptions').style.display==='block'&&$('scReason').value==='melodic','a single-word vocabulary prediction commits even without an input event');
+ $('scNext').click();ok($('challengeScreen').textContent.includes('Learning step 1')&&$('scStatus').textContent.includes('Choose A')&&w.document.activeElement===w.document.querySelector('#scOptions .copt'),'Continue explains a missing choice and stays on the same question');
+ const saved=t.storage();t.close();
  t=await setup(saved);({w,$,p,set}=t);$('scLearn').click();
  ok($('scReason').disabled&&$('scOptions').style.display==='block','reload keeps the first committed prediction');
  const first=w.__peek().bank.find(q=>q.id===p.steps[0].bankId);t.choose(first.answer.charCodeAt(0)-65);$('scNext').click();
+ $('scReason').value='helps';$('scCommit').click();ok($('scOptions').style.display==='none'&&$('scStatus').textContent.includes('at least two words'),'grammar requires a deciding reason with visible guidance');
  ok(w.document.querySelectorAll('#scOptions .elim-x').length===4&&w.document.querySelectorAll('#scOptions button').length===4,'route choices carry the cross-out control without adding buttons');
  p.steps.slice(1).forEach(q=>t.answer(q));
  {const post=w.__posts.find(x=>x.type==='class-route'&&/Learning steps/.test(x.focus));
