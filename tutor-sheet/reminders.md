@@ -11,11 +11,11 @@ An hourly trigger on the tutor sheet reads the plans file the hub itself reads
 (`homework/assignments.js` on the live site), checks which sets each student has submitted, and
 sends email. At most one message per student per day.
 
-| Message | To | When | Stops when |
-|---|---|---|---|
-| Set open: which set, how many questions, how long | Student | The day a set opens, at the student's own hour | That set is done |
-| Nudge: the set still waiting | Student | 2 days with no homework while a set is waiting, once the last set has opened | Any homework arrives; at most 2 per plan, 2 days apart |
-| Digest: who needs a follow-up | Tutor | 3 days with no homework, or class tomorrow with sets undone; daily, only when there is something to say | The plan ended more than 3 days ago |
+| Message                                           | To      | When                                                                                                    | Stops when                                             |
+| ------------------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| Set open: which set, how many questions, how long | Student | The day a set opens, at the student's own hour                                                          | That set is done                                       |
+| Nudge: the set still waiting                      | Student | 2 days with no homework while a set is waiting, once the last set has opened                            | Any homework arrives; at most 2 per plan, 2 days apart |
+| Digest: who needs a follow-up                     | Tutor   | 3 days with no homework, or class tomorrow with sets undone; daily, only when there is something to say | The plan ended more than 3 days ago                    |
 
 It never messages a parent, never sends after a plan's last day, and never messages about a
 class-only plan, an in-class set (focus says "in class"), or a day marked `remind: false`.

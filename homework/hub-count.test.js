@@ -154,7 +154,10 @@ console.log('\n  answered but not submitted');
         ok('a student with a plan exists to test the state against', false);
     } else {
         const plan = renderFor(student).plan;
-        const key = 'psat89_hwrec_' + student + '_' + plan.start + '_1';
+        // The first set is not always n=1: a plan that keeps its start date continues the
+        // calendar numbering (Faith's 10 Oct plan opens at Day 15).
+        const n = plan.days[0].n;
+        const key = 'psat89_hwrec_' + student + '_' + plan.start + '_' + n;
         const worked = JSON.stringify({ at: Date.now(), recs: [{ id: 'a', chosen: 'B', ok: true }] });
 
         const clean = renderFor(student).rendered;
@@ -166,10 +169,10 @@ console.log('\n  answered but not submitted');
             /Answered\s*&middot;\s*not submitted/.test(seeded),
             'the card still calls answered work "Available"');
         ok('and its button says Finish, not Start',
-            /Finish set 1/.test(seeded),
+            new RegExp('Finish set ' + n).test(seeded),
             'the hub must not ask her to start a set she has already worked');
 
-        const doneKey = 'psat89_hw_' + student + '_' + plan.start + '_1';
+        const doneKey = 'psat89_hw_' + student + '_' + plan.start + '_' + n;
         const submitted = renderFor(student, { [key]: worked, [doneKey]: '1' }).rendered;
         ok('a submitted set still reads Done, not the new state',
             /Done/.test(submitted) && !/not submitted/.test(submitted));

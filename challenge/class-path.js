@@ -11,6 +11,11 @@
     return sessions[key] || (sessions[key] = { taught:false, passed:false, form:0, transferStarted:false, transferDone:false, exited:false });
   }
   function render(ctx) {
+    if (ctx.set.learningPath.cycles) {
+      if (window.CycleClass) CycleClass.render(ctx);
+      else ctx.paint(ctx.header() + '<div class="cbanner">The class route did not load. Reload before starting.</div>');
+      return;
+    }
     if (ctx.set.learningPath.protectedTransfer) {
       if (window.StructuredClass) StructuredClass.render(ctx);
       else ctx.paint(ctx.header() + '<div class="cbanner">The class route did not load. Reload before starting.</div>');
@@ -100,5 +105,5 @@
     }
     home();
   }
-  window.ChallengeLearning = {render:render, completeTransfer:function(ctx){if(ctx.set.learningPath.protectedTransfer){if(window.StructuredClass)StructuredClass.completeTransfer(ctx);}else state(ctx).transferDone=true;}};
+  window.ChallengeLearning = {render:render, completeTransfer:function(ctx){if(ctx.set.learningPath.cycles){if(window.CycleClass)CycleClass.completeTransfer(ctx);}else if(ctx.set.learningPath.protectedTransfer){if(window.StructuredClass)StructuredClass.completeTransfer(ctx);}else state(ctx).transferDone=true;}};
 })();

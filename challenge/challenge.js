@@ -520,7 +520,7 @@
                 if (actions && !$('cReturnToRoute')) {
                     var b = document.createElement('button');
                     b.id = 'cReturnToRoute'; b.className = 'btn btn-primary completion-action-btn';
-                    b.textContent = 'Review with tutor, then exit checks'; b.onclick = openChallenge;
+                    b.textContent = state.set.learningPath.cycles ? 'Return to the class route' : 'Review with tutor, then exit checks'; b.onclick = openChallenge;
                     actions.insertBefore(b, actions.firstChild);
                 }
             }

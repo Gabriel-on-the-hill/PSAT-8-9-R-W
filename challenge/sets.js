@@ -2068,3 +2068,85 @@ window.CHALLENGE_SETS["Maysa"].push({
     ]
   }
 });
+
+// Class route, 10 Oct 2026 — the house Session Plan Standard (teach, check, decide).
+// Two parts, each a worked example the student tries first and three silent checks
+// (Right / Not yet at once, explanations after the third), then a protected mixed check.
+// Rendered by challenge/cycle-class.js. Every item here was new to the bank on 8 Oct.
+window.CHALLENGE_SETS["Faith"].push({
+  "setId": "faith-cycles-route-20261010",
+  "title": "Name the relationship, then check yourself",
+  "source": "Class route",
+  "date": "2026-10-10",
+  "tileIntro": "Two short parts, each with a worked example and three questions on your own, then a mixed check.",
+  "ids": ["9c5e75b6", "08241402", "416dc9e5", "9452459b"],
+  "learningPath": {
+    "protectedTransfer": true,
+    "singleCredit": true,
+    "mixedSeconds": 300,
+    "intro": "Work with your tutor. Two short parts, then a mixed check. In each part you try the worked example first, then answer three questions on your own. Predict before the choices appear.",
+    "order": "Part 1: transitions → Part 2: main idea (or punctuation, if your tutor chooses) → mixed check of four → review → open your first homework set.",
+    "close": "Tell your tutor the two methods in your own words, then open homework Set 1 together before you leave.",
+    "cycles": [
+      {
+        "id": "A",
+        "title": "Transitions: name the relationship first",
+        "model": {
+          "bankId": "7923766b",
+          "stage": "Yes, but still",
+          "minReasonWords": 2,
+          "reasonPrompt": "What does the last sentence do to the one before it? Name the relationship in a few words: same direction, turn, zoom in, example, or cause/time.",
+          "explanation": "Sentence 2 admits a limit: of course the painting doesn't technically show a fourth dimension. Sentence 3 turns back despite that admission and says what Metzinger still achieves. Relationship: yes, that limit is true, but still. That said fits. The same family includes all the same, granted, still and even so. Moreover would continue in the same direction, In other words would restate, and For example would give an instance of the limit."
+        },
+        "checks": [
+          { "bankId": "25e55fc4", "stage": "Transitions", "minReasonWords": 2, "reasonPrompt": "Name the relationship between the sentences before the choices appear." },
+          { "bankId": "12439831", "stage": "Transitions", "minReasonWords": 2, "reasonPrompt": "Name the relationship between the sentences before the choices appear." },
+          { "bankId": "037ca0e3", "stage": "Transitions", "minReasonWords": 2, "reasonPrompt": "Name the relationship between the sentences before the choices appear." }
+        ],
+        "reserves": [
+          { "bankId": "b6306a5e", "stage": "A different example", "minReasonWords": 2, "reasonPrompt": "Name the relationship between the sentences before the choices appear." },
+          { "bankId": "53c9ecdf", "stage": "A different example", "minReasonWords": 2, "reasonPrompt": "Name the relationship between the sentences before the choices appear." }
+        ]
+      },
+      {
+        "id": "B",
+        "title": "Main idea: topic and point, then test each option",
+        "model": {
+          "bankId": "436f939d",
+          "stage": "Topic + point",
+          "minReasonWords": 4,
+          "reasonPrompt": "Write the topic and the point in one line: who did what, and what it showed.",
+          "explanation": "Topic and point: breeding predicts how dogs look, but the study found it does not predict behavior, so the common belief is not confirmed. Then test each option with two questions: is it in the text, and is it the whole point or only one sentence? A is background from the first sentence. D describes the method, not the finding. C is not in the text. B is the only option that carries the point."
+        },
+        "checks": [
+          { "bankId": "4445ca92", "stage": "Main idea", "minReasonWords": 4, "reasonPrompt": "Write the topic and the point in one line before the choices appear." },
+          { "bankId": "74e1f4aa", "stage": "Main idea", "minReasonWords": 4, "reasonPrompt": "Write the topic and the point in one line before the choices appear." },
+          { "bankId": "ddc6182b", "stage": "Main idea", "minReasonWords": 4, "reasonPrompt": "Write the topic and the point in one line before the choices appear." }
+        ],
+        "reserves": [
+          { "bankId": "7905cdfd", "stage": "A different example", "minReasonWords": 4, "reasonPrompt": "Write the topic and the point in one line before the choices appear." }
+        ],
+        "alternate": {
+          "when": "Choose the punctuation part only if most of the misses on your latest practice test were punctuation. Otherwise choose main idea.",
+          "title": "Punctuation: find the subject and main verb first",
+          "model": {
+            "bankId": "2d2cbb86",
+            "stage": "Find each sentence",
+            "minReasonWords": 2,
+            "reasonPrompt": "Name the subject and main verb on each side of the blank.",
+            "explanation": "Find each subject and main verb first: scholars dreamed … and That fantasy became reality … Two complete sentences meet at the blank, so they need a period (or a semicolon). A comma alone makes a comma splice; B and D attach the second sentence as if it were a description of the first."
+          },
+          "checks": [
+            { "bankId": "1318fdb1", "stage": "Punctuation", "minReasonWords": 2, "reasonPrompt": "Name the subject and main verb, then what the blank sits between." },
+            { "bankId": "e07ee967", "stage": "Punctuation", "minReasonWords": 2, "reasonPrompt": "Name the subject and main verb, then what the blank sits between." },
+            { "bankId": "c272488a", "stage": "Punctuation", "minReasonWords": 2, "reasonPrompt": "Name the subject and main verb, then what the blank sits between." }
+          ],
+          "reserves": [
+            { "bankId": "2b2bcae4", "stage": "A different example", "minReasonWords": 2, "reasonPrompt": "Name the subject and main verb, then what the blank sits between." }
+          ]
+        }
+      }
+    ],
+    "transfer": ["9c5e75b6", "08241402", "416dc9e5", "9452459b"]
+  }
+});

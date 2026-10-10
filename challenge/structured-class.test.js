@@ -13,7 +13,7 @@ async function setup(saved){
  function inject(s){const e=w.document.createElement('script');e.textContent=s;w.document.body.appendChild(e);}
  inject(read('challenge/sets.js'));
  const accounts=Object.keys(w.CHALLENGE_SETS);
- const account=accounts.find(n=>{const p=w.CHALLENGE_SETS[n].at(-1).learningPath;return p?.protectedTransfer&&p.steps.some(q=>q.followUp);})||accounts.find(n=>w.CHALLENGE_SETS[n].at(-1).learningPath?.protectedTransfer);
+ const account=accounts.find(n=>{const p=w.CHALLENGE_SETS[n].at(-1).learningPath;return p?.protectedTransfer&&!p.cycles&&p.steps?.some(q=>q.followUp);})||accounts.find(n=>{const p=w.CHALLENGE_SETS[n].at(-1).learningPath;return p?.protectedTransfer&&!p.cycles;});
  const set=w.CHALLENGE_SETS[account].at(-1),p=set.learningPath;
  w.sessionStorage.setItem('psat89_user',account);
  for(const f of ['config.js','progress.js','sheet-sync.js','session-responses.js','storage.js','timer.js','history.js','data-craft-structure.js','data-expression-of-ideas.js','data-info-ideas.js','data-conventions.js','eliminator.js','app.js','homework/assignments.js','challenge/challenge-core.js','challenge/structured-class.js','challenge/class-path.js','challenge/challenge.js'])inject(read(f));

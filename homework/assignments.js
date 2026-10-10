@@ -48,12 +48,24 @@ const HOMEWORK = {
     days: []
   },
 
+  // Faith — 10 Oct 2026. Class route `faith-cycles-route-20261010` (Challenge tile and hub).
+  // `start` stays 2026-09-26 so Day 1's completion key survives; new days continue the
+  // calendar numbering (Day 15 = 10 Oct). Set 1 is the default prepared before class and
+  // is opened with the tutor at the end of it; later sets are added after class.
   "Faith": {
-    title: "Class route — homework follows the class",
+    title: "After class — the two methods, spaced",
     start: "2026-09-26",
-    challenge: "reading-structure-route-20261003",
-    classOnly: true,
-    days: []
+    through: "2026-10-12",
+    unlock: "cumulative",
+    days: [
+      { n:15, focus:"Set 1 — relationships, main idea and sentence spines, no clock", minutes:0,
+        sections:[
+          { skills:["Transitions"],               diffs:["Hard"], count:2 },
+          { skills:["Central Ideas and Details"], diffs:["Hard"], count:2 },
+          { skills:["Boundaries"],                diffs:["Hard"], count:2 },
+        ],
+        tip:"No clock. Do this after today's class, notes closed, in one sitting.\nTransitions: before you look at the choices, name what the second sentence does to the first: same direction, turn (including \"yes, but still\"), zoom in, example, or cause/time.\nMain idea: write the topic and the point in one line. Then test every option: is it in the text, and is it the whole point or only one sentence?\nPunctuation: find the subject and main verb on each side of the blank before you look at the marks.\nAfterward, read the explanation for anything you got wrong." },
+    ]
   },
   "Gabe": {
     title: "This week — mixed Reading & Writing review",
@@ -90,14 +102,38 @@ const HOMEWORK = {
     ]
   },
 
-  // Luke — class route only, 5 Oct 2026. Existing completion keys retain their start date.
-  // The week's homework is authored after class, from the route's responses.
+  // Luke — two sets before the 12 Oct class, one opening a day (Sat, Sun). Untimed first,
+  // then the same skills at the test's pace, so class can tell method from pace.
   "Luke": {
-    title: "Class route — homework follows the class",
-    start: "2026-09-28",
-    challenge: "luke-craft-route-20261005",
-    classOnly: true,
-    days: []
+    title: "Two short sets before Monday's class",
+    start: "2026-10-10",
+    through: "2026-10-12",
+    unlock: "cumulative",
+    days: [
+      { n:1, focus:"Purpose, two texts, evidence and semicolons — no clock", minutes:0, review:0,
+        sections:[
+          { skills:["Text Structure and Purpose"],         diffs:["Medium"], count:1 },
+          { skills:["Text Structure and Purpose"],         diffs:["Hard"],   count:1 },
+          { skills:["Cross-Text Connections"],             diffs:["Medium"], count:1 },
+          { skills:["Command of Evidence — Textual"],      diffs:["Hard"],   count:1 },
+          { skills:["Command of Evidence — Quantitative"], diffs:["Medium"], count:1 },
+          { skills:["Boundaries"],                         diffs:["Medium"], count:1, ruleTypes:["Colon","Semi"] },
+          { skills:["Boundaries"],                         diffs:["Hard"],   count:1, ruleTypes:["Semi"] },
+          { skills:["Form, Structure, and Sense"],         diffs:["Hard"],   count:1, ruleTypes:["SVA"] },
+        ],
+        tip:"Before Monday's class. Eight questions, no clock, about fifteen minutes.\nCover the choices and type your prediction first: what the answer has to DO, not a summary of the passage.\nPurpose questions: name what the text or sentence does with a verb (shows, challenges, explains, gives an example).\nTwo texts: one line for each text's main idea, then decide whether they agree or disagree, and on what.\nGraphs: say the claim in your own words, then find the numbers that prove exactly that.\nBefore you choose a semicolon, period or colon, find the real verb on each side. No real verb on one side, no semicolon.\nKeep going to the results screen, or it doesn't save." },
+
+      { n:2, focus:"Six questions at test pace — seven minutes", minutes:7, review:0,
+        sections:[
+          { skills:["Words in Context"],           diffs:["Hard"],   count:1 },
+          { skills:["Text Structure and Purpose"], diffs:["Medium"], count:1 },
+          { skills:["Inferences"],                 diffs:["Hard"],   count:1 },
+          { skills:["Boundaries"],                 diffs:["Hard"],   count:1, ruleTypes:["Semi"] },
+          { skills:["Transitions"],                diffs:["Hard"],   count:1 },
+          { skills:["Rhetorical Synthesis"],       diffs:["Hard"],   count:1 },
+        ],
+        tip:"Opens Sunday. Do it in a different sitting from Set 1. Six questions in test order, seven minutes: the real test's pace, about seventy seconds each.\nUse the time. If you finish with more than three minutes left, you went too fast.\nStill say to yourself what the answer has to do before you look at the choices.\nIf one is taking too long, put something down, flag it, and come back. Never leave a square blank.\nKeep going to the results screen, or it doesn't save." },
+    ]
   }
 };
 
