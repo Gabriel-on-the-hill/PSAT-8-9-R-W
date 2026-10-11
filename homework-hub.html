@@ -224,12 +224,13 @@
   // step with the same resolution in homework-run.html — if the two ever disagree, the
   // card lies to the student about the length of her own set. That is what this fixes.
   function reviewDose(day){
+    if(day.slots) return 0;
     return (typeof day.review === 'number') ? day.review
          : (typeof plan.review === 'number') ? plan.review
          : 2;
   }
   function dayQuestionCount(day){
-    var own = day.sections
+    var own = day.slots ? day.slots.length : day.sections
       ? day.sections.reduce(function(s,x){ return s + (x.count||0); }, 0)
       : (day.count || 0);
     return own + reviewDose(day);
@@ -271,7 +272,7 @@
           // offered again: on 29 Sep a finished 27-question module was re-run a minute
           // later in 77 seconds, which drew 27 fresh questions, spent them, and logged a
           // score that meant nothing. Untimed sets keep "Do it again".
-          + ((isDone && day.minutes>0) ? '' : '<a class="btn'+((isDone||reviewable(day.n))?' sec':'')+'" href="homework-run.html?student='+encodeURIComponent(student)+'&day='+day.n+'">'+(isDone?'Do it again':started?'Finish set '+day.n:(seq?'Start set ':'Start day ')+day.n)+'</a>')
+          + ((isDone && (day.minutes>0 || day.slots)) ? '' : '<a class="btn'+((isDone||reviewable(day.n))?' sec':'')+'" href="homework-run.html?student='+encodeURIComponent(student)+'&day='+day.n+'">'+(isDone?'Do it again':started?'Finish set '+day.n:(seq?'Start set ':'Start day ')+day.n)+'</a>')
           + '</div>' : '')
       + '</div>';
   });
