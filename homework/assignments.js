@@ -151,7 +151,8 @@ function hwParseDate(s) {
 
 // Is set `n` open to this student yet?
 //
-// THE DEFAULT IS `sequential`: set 1 is always open, and each later set opens
+// HOUSE DEFAULT (11 Oct 2026) IS `cumulative`, one set a day: see AGENTS.md "One set opens a
+// day". What follows describes `sequential`, still supported: set 1 is always open, and each later set opens
 // when the one before it is SUBMITTED. A set is earned, not waited for. This
 // replaced `cumulative` (one per calendar day) because a student who sat down
 // on a free Saturday could only ever reach that day's set, and a student who
