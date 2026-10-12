@@ -2150,3 +2150,82 @@ window.CHALLENGE_SETS["Faith"].push({
     "transfer": ["9c5e75b6", "08241402", "416dc9e5", "9452459b"]
   }
 });
+
+// Luke, class 8 (12 Oct 2026). Cycles route under the Session Plan Standard (teach, check, decide).
+// Each part opens on one of his own practice-test misses as the worked example (he tries it again first),
+// with another of his misses as the repair example. Every check and mixed-check item is unseen by him
+// as of the 12 Oct sheet. Tutor rationale lives outside this repo.
+window.CHALLENGE_SETS["Luke"].push({
+  "setId": "luke-cycles-route-20261012",
+  "title": "Find the verbs, name the job",
+  "source": "Class route",
+  "date": "2026-10-12",
+  "tileIntro": "Two short parts, each with a worked example and three questions on your own, then a mixed check.",
+  "ids": ["473808bd", "e4236503", "bd36d75d", "dd948d66"],
+  "learningPath": {
+    "protectedTransfer": true,
+    "singleCredit": true,
+    "mixedSeconds": 285,
+    "intro": "Work with your tutor. Two short parts, then a mixed check. Each part starts with a question from your practice test: try it again first. Then answer three questions on your own. Write what the question needs before the choices appear.",
+    "order": "Part 1: punctuation, find the real verb on each side → Part 2: what a sentence does → mixed check of four → review → open your homework set.",
+    "close": "Tell your tutor both methods in your own words, then open homework Set 1 together before you leave.",
+    "cycles": [
+      {
+        "id": "A",
+        "title": "Punctuation: find the real verb on each side first",
+        "model": {
+          "bankId": "17609fea",
+          "stage": "From your practice test: try it again",
+          "minReasonWords": 2,
+          "responseProfile": {
+            "title": "Both sides of the blank",
+            "instructions": "Before the choices: look at the words before the blank and the words after it. Can each side stand alone as a sentence?",
+            "phase": "before-options",
+            "fields": [
+              { "id": "left", "label": "Before the blank: its subject and real verb, or write none" },
+              { "id": "right", "label": "After the blank: its subject and real verb, or write none" },
+              { "id": "join", "label": "So what can go at the blank?" }
+            ]
+          },
+          "explanation": "Before the blank: Hoping to help her students and their families outside the classroom. There's no subject and no real verb (hoping is an -ing word, not a verb that can run a sentence), so it can't stand alone. After the blank: Huerta left teaching. Subject Huerta, real verb left, so it can stand alone. A phrase that opens a sentence is joined to the main sentence with a comma, so C. A semicolon (B) or a period (A) needs a complete sentence on BOTH sides, and the left side isn't one. No mark (D) runs them together. A semicolon is only right when both sides have their own real verb."
+        },
+        "checks": [
+          { "bankId": "779f904a", "stage": "Punctuation", "minReasonWords": 2, "reasonPrompt": "Before the choices: name the real verb before the blank and the real verb after it, or write none for a side that has no verb of its own." },
+          { "bankId": "fa795825", "stage": "Punctuation", "minReasonWords": 2, "reasonPrompt": "Before the choices: name the real verb before the blank and the real verb after it, or write none for a side that has no verb of its own." },
+          { "bankId": "26c448a2", "stage": "Punctuation", "minReasonWords": 2, "reasonPrompt": "Before the choices: name the real verb before the blank and the real verb after it, or write none for a side that has no verb of its own." }
+        ],
+        "reserves": [
+          { "bankId": "610faed3", "stage": "From your practice test: try it again", "minReasonWords": 2, "reasonPrompt": "Before the choices: name the real verb before the blank and the real verb after it, or write none for a side that has no verb of its own." }
+        ]
+      },
+      {
+        "id": "B",
+        "title": "Purpose: say what the underlined part does, with a verb",
+        "model": {
+          "bankId": "a91c661e",
+          "stage": "From your practice test: try it again",
+          "minReasonWords": 2,
+          "responseProfile": {
+            "title": "The job of the underlined part",
+            "instructions": "Before the choices: say what the whole text claims in one line. Then say what ONLY the underlined words do for that claim, starting with a verb (shows how big, gives an example, explains why, sets up, contrasts).",
+            "phase": "before-options",
+            "fields": [
+              { "id": "text", "label": "What the whole text claims" },
+              { "id": "function", "label": "What only the underlined words do, starting with a verb" }
+            ]
+          },
+          "explanation": "The text claims the Citizen Education Program was a crucial part of the movement's success. The underlined words are only the number: more than 7,000 attendees in all. A number of people shows how big something was, so the underlined portion underscores the extent of the CEP's impact, which is A. B is about the workshop topics. Those are in the same sentence, but they aren't in the underlined words. Right topic, wrong part. C and D aren't in the text at all. Read only the underlined words, name their job with a verb, then match the verb."
+        },
+        "checks": [
+          { "bankId": "922591db", "stage": "Purpose", "minReasonWords": 2, "reasonPrompt": "Before the choices: what does the underlined sentence do in the text? Start with a verb." },
+          { "bankId": "78f43f9b", "stage": "Purpose", "minReasonWords": 2, "reasonPrompt": "Before the choices: what does the underlined sentence do in the text? Start with a verb." },
+          { "bankId": "bed309f6", "stage": "Purpose", "minReasonWords": 2, "reasonPrompt": "Before the choices: what does each part of the text do, in order? Use a verb for each part." }
+        ],
+        "reserves": [
+          { "bankId": "d11b5a4a", "stage": "From your practice test: try it again", "minReasonWords": 2, "reasonPrompt": "Before the choices: what does the first sentence do in the text? Start with a verb." }
+        ]
+      }
+    ],
+    "transfer": ["473808bd", "e4236503", "bd36d75d", "dd948d66"]
+  }
+});

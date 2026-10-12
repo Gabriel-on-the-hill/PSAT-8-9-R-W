@@ -204,37 +204,38 @@ const HOMEWORK = {
     ]
   },
 
-  // Luke — two sets before the 12 Oct class, one opening a day (Sat, Sun). Untimed first,
-  // then the same skills at the test's pace, so class can tell method from pace.
+  // Luke — week of 12 Oct 2026. Replaces the two pre-class sets (10–12 Oct), which were not opened.
+  // Set 1 is opened in class on 12 Oct, Set 2 the next day (one set a day). The full practice test is
+  // the timed sitting at the weekend, so there is no third set. Set 2 runs at test pace and carries only
+  // skill types already answered correctly untimed. Class-route misses return as review.
   "Luke": {
-    title: "Two short sets before Monday's class",
-    start: "2026-10-10",
-    through: "2026-10-12",
+    title: "Two short sets this week",
+    start: "2026-10-12",
+    through: "2026-10-17",
     unlock: "cumulative",
+    reviewClassMisses: true,
     days: [
-      { n:1, focus:"Purpose, two texts, evidence and semicolons — no clock", minutes:0, review:0,
+      { n:1, focus:"Purpose, two texts, evidence and verbs — no clock", minutes:0,
         sections:[
           { skills:["Text Structure and Purpose"],         diffs:["Medium"], count:1 },
           { skills:["Text Structure and Purpose"],         diffs:["Hard"],   count:1 },
           { skills:["Cross-Text Connections"],             diffs:["Medium"], count:1 },
           { skills:["Command of Evidence — Textual"],      diffs:["Hard"],   count:1 },
-          { skills:["Command of Evidence — Quantitative"], diffs:["Medium"], count:1 },
-          { skills:["Boundaries"],                         diffs:["Medium"], count:1, ruleTypes:["Colon","Semi"] },
           { skills:["Boundaries"],                         diffs:["Hard"],   count:1, ruleTypes:["Semi"] },
-          { skills:["Form, Structure, and Sense"],         diffs:["Hard"],   count:1, ruleTypes:["SVA"] },
+          { skills:["Form, Structure, and Sense"],         diffs:["Hard"],   count:1, ruleTypes:["VForm"] },
         ],
-        tip:"Before Monday's class. Eight questions, no clock, about fifteen minutes.\nCover the choices and type your prediction first: what the answer has to DO, not a summary of the passage.\nPurpose questions: name what the text or sentence does with a verb (shows, challenges, explains, gives an example).\nTwo texts: one line for each text's main idea, then decide whether they agree or disagree, and on what.\nGraphs: say the claim in your own words, then find the numbers that prove exactly that.\nBefore you choose a semicolon, period or colon, find the real verb on each side. No real verb on one side, no semicolon.\nKeep going to the results screen, or it doesn't save." },
+        tip:"Start it with your tutor at the end of class, and finish it on Tuesday. Six new questions and up to two you have seen before. No clock, about fifteen minutes.\nBefore the choices, write what the question needs: what the sentence DOES (start with a verb), what each text claims, or what the claim needs the evidence to show.\nBefore you choose a semicolon or a period, name the real verb on each side. No real verb on one side, no semicolon. For verb questions: does the sentence already have its real verb, or does the blank have to be it?\nKeep going to the results screen, or it doesn't save." },
 
       { n:2, focus:"Six questions at test pace — seven minutes", minutes:7, review:0,
         sections:[
           { skills:["Words in Context"],           diffs:["Hard"],   count:1 },
-          { skills:["Text Structure and Purpose"], diffs:["Medium"], count:1 },
+          { skills:["Central Ideas and Details"],  diffs:["Hard"],   count:1 },
           { skills:["Inferences"],                 diffs:["Hard"],   count:1 },
           { skills:["Boundaries"],                 diffs:["Hard"],   count:1, ruleTypes:["Semi"] },
           { skills:["Transitions"],                diffs:["Hard"],   count:1 },
           { skills:["Rhetorical Synthesis"],       diffs:["Hard"],   count:1 },
         ],
-        tip:"Opens Sunday. Do it in a different sitting from Set 1. Six questions in test order, seven minutes: the real test's pace, about seventy seconds each.\nUse the time. If you finish with more than three minutes left, you went too fast.\nStill say to yourself what the answer has to do before you look at the choices.\nIf one is taking too long, put something down, flag it, and come back. Never leave a square blank.\nKeep going to the results screen, or it doesn't save." },
+        tip:"Opens Tuesday. Do it on a different day from Set 1, at the time you agreed with your tutor. Six questions in test order, seven minutes: the real test's pace, about seventy seconds each.\nUse the time. If you finish with more than three minutes left, you went too fast.\nStill say to yourself what the answer has to do before you look at the choices.\nIf one is taking too long, put something down, flag it, and come back. Never leave a square blank.\nKeep going to the results screen, or it doesn't save." },
     ]
   }
 };
