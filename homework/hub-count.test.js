@@ -98,10 +98,13 @@ function renderFor(student, seed) {
 // What the runner will build: the day's own draw, plus the dose. Derived from
 // the plan, so neither page's copy of the rule is trusted here.
 function expectedCount(plan, day) {
-    const own = day.sections
+    // Precise sets serve exactly their slots; the legacy review dose is never appended to them.
+    const own = day.slots ? day.slots.length
+        : day.sections
         ? day.sections.reduce((s, x) => s + (x.count || 0), 0)
         : (day.count || 0);
-    const dose = (typeof day.review === 'number') ? day.review
+    const dose = day.slots ? 0
+               : (typeof day.review === 'number') ? day.review
                : (typeof plan.review === 'number') ? plan.review
                : 2;
     return { own, dose, total: own + dose };

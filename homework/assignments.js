@@ -48,15 +48,18 @@ const HOMEWORK = {
     days: []
   },
 
-  // Faith — 10 Oct 2026. Class route `faith-cycles-route-20261010` (Challenge tile and hub).
-  // `start` stays 2026-09-26 so Day 1's completion key survives; new days continue the
-  // calendar numbering (Day 15 = 10 Oct). Set 1 is the default prepared before class and
-  // is opened with the tutor at the end of it; later sets are added after class.
+  // Faith — week of 12 Oct 2026, exam Tue 20 Oct. Tutor notes: Faith/Homework Recommendation - 12 Oct 2026.md.
+  // Day 15 (sections) is unchanged. Days 18/19/20/23 are precise `slots` sets, one opening a day
+  // on its calendar date (start 2026-09-26 → Day 18 = Tue 13, 19 = Wed 14, 20 = Thu 15, 23 = Sun 18).
+  // Chain: untimed method rep (18) → same skills at 71 s/q (19) → full module, 27 in 32 min, run on a
+  // booked call (20) → Medium-only paced confidence set (23). Review is explicit (two delayed misses in 18).
+  // heldIds: Bluebook-matched items and the 10 Oct class-route items stay out of every precise draw.
   "Faith": {
-    title: "After class — the two methods, spaced",
+    title: "Test week — short sets, then a full timed module",
     start: "2026-09-26",
-    through: "2026-10-12",
+    through: "2026-10-19",
     unlock: "cumulative",
+    heldIds: ["037ca0e3", "08241402", "0906d0e9", "12439831", "1318fdb1", "25e55fc4", "2b2bcae4", "2d2cbb86", "327a94c9", "416dc9e5", "436f939d", "4445ca92", "496aaf68", "50fcd5b9", "53c9ecdf", "610faed3", "748e3f2e", "74e1f4aa", "7905cdfd", "7923766b", "898ccd6c", "9452459b", "9c5e75b6", "a91c661e", "adac21ac", "b2752304", "b33e3d13", "b5fe1485", "b6306a5e", "bf0d6766", "c272488a", "c31e12f5", "ddc6182b", "e07ee967", "efc485e8", "f49dd3d5", "f5554e1a"],
     days: [
       { n:15, focus:"Set 1 — relationships, main idea and sentence spines, no clock", minutes:0,
         sections:[
@@ -65,6 +68,69 @@ const HOMEWORK = {
           { skills:["Boundaries"],                diffs:["Hard"], count:2 },
         ],
         tip:"No clock. Do this after today's class, notes closed, in one sitting.\nTransitions: before you look at the choices, name what the second sentence does to the first: same direction, turn (including \"yes, but still\"), zoom in, example, or cause/time.\nMain idea: write the topic and the point in one line. Then test every option: is it in the text, and is it the whole point or only one sentence?\nPunctuation: find the subject and main verb on each side of the blank before you look at the marks.\nAfterward, read the explanation for anything you got wrong." },
+      { n:18, focus:"Set 2 — purpose, main idea, graphs, verbs and transitions, no clock", minutes:0, review:0,
+        slots:[
+          {"skills": ["Text Structure and Purpose"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "6b4942f5", "reserveIds": ["2eefc4f4", "09a0c561"], "allowPool": false},
+          {"skills": ["Central Ideas and Details"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "0e089cb6", "reserveIds": ["20a94cb0", "3caa2431"], "allowPool": false},
+          {"skills": ["Central Ideas and Details"], "diffs": ["Hard"], "intent": "review", "preferredId": "66bb1c57", "reserveIds": ["17135825"], "allowPool": false},
+          {"skills": ["Command of Evidence — Quantitative"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "b611a44e", "reserveIds": ["9867b06a", "b6c2f552"], "allowPool": false},
+          {"skills": ["Form, Structure, and Sense"], "diffs": ["Medium"], "ruleType": "VForm", "intent": "fresh", "preferredId": "2b146272", "reserveIds": ["6f033643", "9c958b1d"], "allowPool": false},
+          {"skills": ["Form, Structure, and Sense"], "diffs": ["Medium"], "ruleType": "VForm", "intent": "fresh", "preferredId": "9976b8b0", "reserveIds": ["50e9ae29"], "allowPool": false},
+          {"skills": ["Transitions"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "c3b660af", "reserveIds": ["d2a4946d", "99de7e8a"], "allowPool": false},
+          {"skills": ["Transitions"], "diffs": ["Hard"], "intent": "review", "preferredId": "8c46294f", "reserveIds": ["d8594b7f"], "allowPool": false},
+        ],
+        tip:"Opens Tuesday. Eight questions, no clock, about fifteen minutes, in one sitting.\nBefore the choices appear, write what the answer has to do:\nPurpose: what does this exact sentence or phrase DO? Use a verb (shows, explains, gives an example, answers a question).\nMain idea: topic + point in one line. Then test each choice: is it in the text, and is it the whole point?\nGraph: write the exact conclusion first, then find the numbers that prove THAT conclusion.\nVerbs: strip away the descriptions. Find the subject. Does its sentence still need a real verb? \"having served\" or \"to serve\" cannot be the main verb.\nTransitions: name the link first. Sequence (first/then/previously) is not contrast. \"Specifically\" gives exact details; \"thus\" gives a result.\nKeep going to the results screen, or it doesn't save." },
+      { n:19, focus:"Set 3 — six questions at test pace, seven minutes", minutes:7, review:0,
+        slots:[
+          {"skills": ["Text Structure and Purpose"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "f1947c86", "reserveIds": ["ae580208", "8dad50ee"], "allowPool": false},
+          {"skills": ["Central Ideas and Details"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "b7cff5f4", "reserveIds": ["5a89ebaa", "fda10103"], "allowPool": false},
+          {"skills": ["Inferences"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "dea40f22", "reserveIds": ["ef2d59f9", "7785d9c3"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Colon", "intent": "fresh", "preferredId": "685b423c", "reserveIds": ["eeef834b", "772f062c"], "allowPool": false},
+          {"skills": ["Form, Structure, and Sense"], "diffs": ["Hard"], "ruleType": "VForm", "intent": "fresh", "preferredId": "a9f8dd79", "reserveIds": ["63141bea"], "allowPool": false},
+          {"skills": ["Transitions"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "29dd7b26", "reserveIds": ["b2934aaa", "167ae50b"], "allowPool": false},
+        ],
+        tip:"Opens Wednesday. Six questions, seven minutes: the real test's pace, about seventy seconds each.\nStill say to yourself what the answer has to do before you look at the choices.\nIf a question passes about seventy-five seconds, pick the best choice, flag it, move on. Never leave a blank.\nUse the time. Finishing with more than three minutes left means you rushed.\nKeep going to the results screen, or it doesn't save." },
+      { n:20, focus:"Set 4 — full timed module with Mr. on the call (booked)", minutes:32, review:0,
+        slots:[
+          {"skills": ["Words in Context"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "1fe42bd4", "reserveIds": ["f5cd59f3", "80025650"], "allowPool": false},
+          {"skills": ["Words in Context"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "5c80bb1c", "reserveIds": ["cc7c67b3", "95d55b5e"], "allowPool": false},
+          {"skills": ["Words in Context"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "cd945a25", "reserveIds": ["a0a6ac5d", "7a4e133e"], "allowPool": false},
+          {"skills": ["Text Structure and Purpose"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "d7eb6d4b", "reserveIds": ["674fb15c", "15074829"], "allowPool": false},
+          {"skills": ["Text Structure and Purpose"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "f914b408", "reserveIds": ["b6b54cca", "c9d1aa69"], "allowPool": false},
+          {"skills": ["Text Structure and Purpose"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "61ac22f2", "reserveIds": ["628b96b0", "f23fc383"], "allowPool": false},
+          {"skills": ["Cross-Text Connections"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "a2d8df04", "reserveIds": ["005d770c", "369729c4"], "allowPool": false},
+          {"skills": ["Central Ideas and Details"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "e111c334", "reserveIds": ["bf09f839", "737a2aca"], "allowPool": false},
+          {"skills": ["Central Ideas and Details"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "a8b34bf5", "reserveIds": ["6d764ebc", "73feebf8"], "allowPool": false},
+          {"skills": ["Command of Evidence — Textual"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "da9a6075", "reserveIds": ["fc6556b6", "6abd46ef"], "allowPool": false},
+          {"skills": ["Command of Evidence — Textual"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "f05ad7e3", "reserveIds": ["41a6bb19", "4c48be56"], "allowPool": false},
+          {"skills": ["Command of Evidence — Quantitative"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "12ab9acf", "reserveIds": ["f3f5de3c", "4c90d0f0"], "allowPool": false},
+          {"skills": ["Command of Evidence — Quantitative"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "5b585115", "reserveIds": ["7aefd1b2", "dfc317a2"], "allowPool": false},
+          {"skills": ["Inferences"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "29546833", "reserveIds": ["a5076a43", "496b1927"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Medium"], "ruleType": "Commas", "intent": "fresh", "preferredId": "35541d09", "reserveIds": ["ec600740", "e98847d4"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Semi", "intent": "fresh", "preferredId": "fa795825", "reserveIds": ["e3051a8e", "3b93a177"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "NoPunct", "intent": "fresh", "preferredId": "41ad9634", "reserveIds": ["c2a8dd7d", "281b76ba"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Commas", "intent": "fresh", "preferredId": "a0ea5596", "reserveIds": ["3c238600", "95aee254"], "allowPool": false},
+          {"skills": ["Form, Structure, and Sense"], "diffs": ["Medium"], "ruleType": "VForm", "intent": "fresh", "preferredId": "530e1b55", "reserveIds": ["392848bf", "dc712bbf"], "allowPool": false},
+          {"skills": ["Form, Structure, and Sense"], "diffs": ["Hard"], "ruleType": "VForm", "intent": "fresh", "preferredId": "55ccbcd9", "reserveIds": ["f3290e7d", "b8a4eae1"], "allowPool": false},
+          {"skills": ["Form, Structure, and Sense"], "diffs": ["Hard"], "ruleType": "SVA", "intent": "fresh", "preferredId": "9f8d0acb", "reserveIds": ["ab9270d9", "6e014516"], "allowPool": false},
+          {"skills": ["Transitions"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "e45736e2", "reserveIds": ["27d79d34", "607fe98c"], "allowPool": false},
+          {"skills": ["Transitions"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "d8635251", "reserveIds": ["97204b3c", "82b8b285"], "allowPool": false},
+          {"skills": ["Transitions"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "adb959d5", "reserveIds": ["8391c507", "8056b5f8"], "allowPool": false},
+          {"skills": ["Rhetorical Synthesis"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "4d8edd97", "reserveIds": ["76725790", "0027950d"], "allowPool": false},
+          {"skills": ["Rhetorical Synthesis"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "aa76c2b1", "reserveIds": ["df4ccc47", "603e0856"], "allowPool": false},
+          {"skills": ["Rhetorical Synthesis"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "f5141f88", "reserveIds": ["5a0672df", "c6763188"], "allowPool": false},
+        ],
+        tip:"Thursday, at the time we book together, with me on the call. Do not start it alone.\nTwenty-seven questions in thirty-two minutes, in test order: a full module, like the real one.\nHave your scratch paper and your pacing plan written at the top:\n1. About seventy-five seconds, then pick, flag and move.\n2. Question 14 done with about sixteen minutes left.\n3. At question 20 with under six minutes left, jump to the last questions (the notes ones), then come back.\nWrite a quick note of what each answer must do on the paper as you go.\nKeep going to the results screen, or it doesn't save." },
+      { n:23, focus:"Set 5 — steady six at test pace, two days before the test", minutes:7, review:0,
+        slots:[
+          {"skills": ["Words in Context"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "2f08e056", "reserveIds": ["4975287b", "8d6335c5"], "allowPool": false},
+          {"skills": ["Central Ideas and Details"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "83b074cc", "reserveIds": ["2a1e59e3", "467fb475"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "59f8e37f", "reserveIds": ["f281f151", "f4d1cea7"], "allowPool": false},
+          {"skills": ["Form, Structure, and Sense"], "diffs": ["Medium"], "ruleType": "VForm", "intent": "fresh", "preferredId": "a4a5bb86", "reserveIds": ["0173be83", "351084bd"], "allowPool": false},
+          {"skills": ["Transitions"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "f7dcc617", "reserveIds": ["4b4a5906", "5d05716d"], "allowPool": false},
+          {"skills": ["Rhetorical Synthesis"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "81f94a8d", "reserveIds": ["f80c991d", "c28b909d"], "allowPool": false},
+        ],
+        tip:"Opens Sunday. Six questions, seven minutes. No new topics: a short, steady run two days before the test.\nSame routine as Thursday: say what the answer must do, about seventy-five seconds, flag and move.\nThen stop for the day. Monday is for rest and getting your device and login ready.\nKeep going to the results screen, or it doesn't save." },
     ]
   },
   "Gabe": {
