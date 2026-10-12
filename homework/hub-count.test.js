@@ -149,9 +149,11 @@ for (const student of STUDENTS) {
 // days of it went unnoticed.
 console.log('\n  answered but not submitted');
 {
+    // Use a plan whose first set is open today. A plan that starts tomorrow renders its first
+    // card as not-yet-open, which says nothing about the answered-but-not-submitted state.
     const student = STUDENTS.find(s => {
-        const p = renderFor(s).plan;
-        return p && p.days && p.days.length;
+        const r = renderFor(s);
+        return r.plan && r.plan.days && r.plan.days.length && /Available/.test(r.rendered);
     });
     if (!student) {
         ok('a student with a plan exists to test the state against', false);

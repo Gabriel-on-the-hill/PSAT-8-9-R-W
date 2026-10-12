@@ -37,15 +37,51 @@
 // ══════════════════════════════════════════════════════════════════
 
 const HOMEWORK = {
-  // Three required sittings: untimed structure practice, a conditional clock, then mixed retention.
-  // Fixed question coverage keeps the total at 6 / 6 / 4; the regular ledger still records each attempt.
+  // Maysa — week of 12 Oct 2026, exam Wed 21 Oct. Tutor notes: Maysa/2026-10-12 — Homework recommendation (week of 12 Oct).md.
+  // Replaces the 9 Oct class-only card; that route's definition stays in challenge/sets.js.
+  // Three precise sets, one opening a day (start 2026-10-13 → Day 1 = Tue 13, 2 = Wed 14, 3 = Thu 15, before class).
+  // Chain: untimed method rep with one delayed review (1) → untimed delayed retry plus contrast items where a
+  // semicolon is offered and wrong (2) → six at 71 s/q in test order, only skill types already answered untimed (3).
+  // Boundaries method notes are taken with the choices visible (the deciding words sit in the options).
   "Maysa": {
-    title: "Class today — decide from evidence",
-    start: "2026-10-05",
-    through: "2026-10-09",
-    classOnly: true,
-    challenge: "structure-evidence-route-20261009",
-    days: []
+    title: "Three short sets before Thursday's class",
+    start: "2026-10-13",
+    through: "2026-10-15",
+    unlock: "cumulative",
+    days: [
+      { n:1, focus:"Tuesday — words, purpose and sentence structure, no clock", minutes:0, review:0,
+        responses:{"16fa54b2":{key:"boundaries", phase:"with-options"}, "7ac9793d":{key:"boundaries", phase:"with-options"}, "a481fe22":{key:"boundaries", phase:"with-options"}, "6c8a1cc2":{key:"boundaries", phase:"with-options"}, "3b93a177":{key:"boundaries", phase:"with-options"}, "174c3487":{key:"boundaries", phase:"with-options"}, "4d176409":{key:"boundaries", phase:"with-options"}, "0ecf02c1":{key:"boundaries", phase:"with-options"}},
+        slots:[
+          {"skills": ["Words in Context"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "ef21e818", "reserveIds": ["05f213a7", "7269f02b"], "allowPool": false},
+          {"skills": ["Text Structure and Purpose"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "0ff6c528", "reserveIds": ["0e3ef14c", "2eefc4f4"], "allowPool": false},
+          {"skills": ["Form, Structure, and Sense"], "diffs": ["Hard"], "ruleType": "SVA", "intent": "fresh", "preferredId": "11add1e8", "reserveIds": ["ca1a7097", "9f8d0acb"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Semi", "intent": "fresh", "preferredId": "16fa54b2", "reserveIds": ["6c8a1cc2", "3b93a177"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Semi", "intent": "fresh", "preferredId": "7ac9793d", "reserveIds": ["174c3487", "4d176409"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Commas", "intent": "review", "preferredId": "a481fe22", "reserveIds": ["0ecf02c1"], "allowPool": false},
+        ],
+        tip:"Opens Tuesday. Six questions, no clock, about fifteen minutes, in one sitting.\nWrite what decides the answer before you choose. A blank line or a single word doesn't count.\nWords: the meaning the sentence needs in your own words, then sort the choices: fits, doesn't fit, don't know.\nPurpose: what the exact underlined part DOES, with a verb.\nVerbs: cross out the extra description and find the subject. One or more than one?\nPunctuation: look at the choices, then name what sits on each side of the blank. A full sentence? A list item? Words like however or though belong to one side. Then ask again: are both sides full sentences?\nKeep going to the results screen, or it doesn't save." },
+      { n:2, focus:"Wednesday — lists and though/however, no clock", minutes:0, review:0,
+        responses:{"fa821b89":{key:"boundaries", phase:"with-options"}, "87a786d7":{key:"boundaries", phase:"with-options"}, "f10d84ef":{key:"boundaries", phase:"with-options"}, "96beb3e2":{key:"boundaries", phase:"with-options"}, "a181c44b":{key:"boundaries", phase:"with-options"}, "6c8a1cc2":{key:"boundaries", phase:"with-options"}, "0be4dd74":{key:"boundaries", phase:"with-options"}, "c272488a":{key:"boundaries", phase:"with-options"}, "be6f3070":{key:"boundaries", phase:"with-options"}, "7e989974":{key:"boundaries", phase:"with-options"}, "7e67e829":{key:"boundaries", phase:"with-options"}, "c3d3b49b":{key:"boundaries", phase:"with-options"}},
+        slots:[
+          {"skills": ["Words in Context"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "a123ac00", "reserveIds": ["e96916fa", "2735f617"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Semi", "intent": "fresh", "preferredId": "fa821b89", "reserveIds": ["6c8a1cc2", "0be4dd74"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Commas", "intent": "fresh", "preferredId": "87a786d7", "reserveIds": ["c272488a"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Semi", "intent": "review", "preferredId": "f10d84ef", "reserveIds": ["be6f3070"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Medium"], "ruleType": "Commas", "intent": "fresh", "preferredId": "96beb3e2", "reserveIds": ["7e989974"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Semi", "intent": "fresh", "preferredId": "a181c44b", "reserveIds": ["7e67e829", "c3d3b49b"], "allowPool": false},
+        ],
+        tip:"Opens Wednesday. Six questions, no clock, about fifteen minutes.\nWords: same as Tuesday. Your own meaning first, then sort the choices.\nLists: before you pick, bracket each whole item in the list. If the items already have commas inside them, semicolons go between the items. If they don't, commas are enough.\nThough and however: first decide which side the word belongs to. Then check both sides again. Two full sentences still need a semicolon or a full stop. If one side isn't a full sentence, commas.\nWrite your reason before you choose.\nKeep going to the results screen, or it doesn't save." },
+      { n:3, focus:"Thursday — six at test pace, seven minutes", minutes:7, review:0,
+        slots:[
+          {"skills": ["Words in Context"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "89f2d981", "reserveIds": ["5181c59f", "e20bb38b"], "allowPool": false},
+          {"skills": ["Text Structure and Purpose"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "922591db", "reserveIds": ["9bd6421b", "b5fe1485"], "allowPool": false},
+          {"skills": ["Command of Evidence — Quantitative"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "74a816be", "reserveIds": ["92add068", "cee94893"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "NoPunct", "intent": "fresh", "preferredId": "508ab5ba", "reserveIds": ["bdd3c593", "4bd2fb5a"], "allowPool": false},
+          {"skills": ["Form, Structure, and Sense"], "diffs": ["Hard"], "ruleType": "SVA", "intent": "fresh", "preferredId": "67165318", "reserveIds": ["8da67ee3", "fe423c5d"], "allowPool": false},
+          {"skills": ["Transitions"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "740ada1b", "reserveIds": ["3e75bfa7", "8f0226dc"], "allowPool": false},
+        ],
+        tip:"Opens Thursday. Do it before class. Six questions in seven minutes: the real test's pace, about seventy seconds each, in test order.\nKeep the short prediction in your head or on paper: what does the answer have to do?\nAt about seventy-five seconds, pick your best answer, flag it and move on. Come back if there's time. Never leave a blank.\nAfterwards, pick three or four questions you missed this week. For each one, write: my prediction, was it right, what pulled me to the wrong choice, and the words that prove the right one. Bring it to class.\nKeep going to the results screen, or it doesn't save." },
+    ]
   },
 
   // Faith — week of 12 Oct 2026, exam Tue 20 Oct. Tutor notes: Faith/Homework Recommendation - 12 Oct 2026.md.
