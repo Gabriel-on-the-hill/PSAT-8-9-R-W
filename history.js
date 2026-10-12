@@ -78,6 +78,7 @@ function logSession(skills, diffs, sessionScore, total) {
         isCorrect:  r.isCorrect,
         secs:       r.secs || 0,
         trap:       r.q.trapName || '',
+        prediction: r.prediction || '',
         ..._elimFields(r.q),
     }));
     const blurCount = (typeof getBlurCount === 'function') ? getBlurCount() : 0;
@@ -179,7 +180,7 @@ function logPartialSession() {
         planned:   activeQuestions.length,
         questions: rows.map(r => ({
             id: r.q.id, skill: r.q.skill, difficulty: r.q.difficulty,
-            chosen: r.selected, correct: r.correct, isCorrect: r.isCorrect,
+            chosen: r.selected, correct: r.correct, isCorrect: r.isCorrect, prediction: r.prediction || '',
             secs: r.secs || 0, trap: r.q.trapName || '',
             ..._elimFields(r.q),
         })),

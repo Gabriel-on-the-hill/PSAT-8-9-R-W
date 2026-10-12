@@ -149,21 +149,30 @@
         (immediate&&q.note?'<div class="cbox">'+passageText(q.note)+'</div>':'')+
         (q.image?'<div class="cq"><img src="'+esc(q.image)+'" alt="'+esc(q.alt||'Question figure')+'" style="display:block;max-width:100%;height:auto"></div>':'<div class="cq">'+passageText(q.passage)+'</div>')+
         '<div class="cq"><b>'+esc(q.question)+'</b></div>'+
-        '<label for="ccReason">'+esc(q.reasonPrompt||'Predict the answer or the deciding relationship before choosing.')+'</label><textarea id="ccReason" rows="2" aria-describedby="ccStatus" style="width:100%;box-sizing:border-box;font:inherit;padding:.65rem;margin:.5rem 0"></textarea>'+button('ccCommit','Commit the prediction')+
+        '<label for="ccReason">'+esc(q.reasonPrompt||'Give the deciding information from the method you have been taught.')+'</label><textarea id="ccReason" rows="2" aria-describedby="ccStatus" style="width:100%;box-sizing:border-box;font:inherit;padding:.65rem;margin:.5rem 0"></textarea>'+button('ccCommit','Save the method notes')+
         '<p id="ccStatus" class="cnote" role="status" aria-live="polite"></p><div id="ccOptions" style="display:none">'+q.options.map(function(o,j){return '<button type="button" class="copt" data-i="'+j+'">'+esc(o)+'</button>';}).join('')+'</div>'+
         '<div id="ccFeedback" aria-live="polite"></div><div class="crow">'+button('ccLock','Lock in this answer')+button('ccNext',i===qs.length-1?'Finish':'Next question')+'</div>');
+      var method=typeof StrategyResponse!=='undefined'?StrategyResponse.mount(el('ccReason'),q,{
+        profile:q.responseProfile,values:(block.methodValues&&block.methodValues[i])||(block.methodDrafts&&block.methodDrafts[i]),onChange:function(h){block.methodDrafts=block.methodDrafts||[];block.methodDrafts[i]=h.values();save(ctx,s);predictionStatus();}
+      }):null;
+      function methodReady(){
+        if(!method)return validReason(el('ccReason').value.trim(),q);
+        var words=Object.values(method.values()).join(' ').trim().split(/\s+/).length;
+        return method.complete()&&words>=(q.minReasonWords||1);
+      }
+      function methodValue(){return method?method.text():el('ccReason').value.trim();}
       function locked() { return block.locked===i; }
       function predictionStatus() {
-        el('ccStatus').textContent=validReason(el('ccReason').value.trim(),q)?'Prediction ready. Commit it to see the choices.':
-          ((q.minReasonWords||1)>1?'Write a short deciding reason of at least two words, then commit it to see the choices.':'Write a predicted word or short phrase, then commit it to see the choices.');
+        el('ccStatus').textContent=methodReady()?'Method notes complete. Save them before choosing.':
+          (method?'Complete: '+method.missing().join('; '):((q.minReasonWords||1)>1?'Write a short deciding reason of at least two words, then commit it to see the choices.':'Write a predicted word or short phrase, then commit it to see the choices.'));
       }
       function refresh() {
         var committed=block.reasons[i]!==undefined, chosen=block.answers[i]!==undefined, done=locked();
-        el('ccReason').value=committed?block.reasons[i]:'';el('ccReason').disabled=committed;
-        el('ccCommit').style.display=committed?'none':'';el('ccOptions').style.display=committed?'block':'none';
+        if(method){if(committed&&block.methodValues&&block.methodValues[i])method.restore(block.methodValues[i]);else if(committed){el('ccReason').value=block.reasons[i];method.box.querySelector('label').textContent='Original saved response (earlier format)';method.box.querySelectorAll('[data-response-field]').forEach(function(e){if(e.id!=='ccReason'){e.previousElementSibling.hidden=true;e.hidden=true;}});}method.freeze(committed);}else el('ccReason').value=committed?block.reasons[i]:'';el('ccReason').disabled=committed;
+        el('ccCommit').style.display=committed?'none':'';el('ccOptions').style.display=(committed||(method&&method.profile.phase==='with-options'))?'block':'none';
         el('ccLock').style.display=committed&&!done?'':'none';el('ccNext').style.display=done?'':'none';
         if(!committed)predictionStatus();
-        else el('ccStatus').textContent=done?'Answer locked.':(chosen?'Choice '+('ABCD'[block.answers[i]])+' selected. Lock it in when you are sure.':'Prediction saved. Choose A, B, C, or D, then lock it in.');
+        else el('ccStatus').textContent=done?'Answer locked.':(chosen?'Choice '+('ABCD'[block.answers[i]])+' selected. Lock it in when you are sure.':'Method notes saved. Choose A, B, C, or D, then lock it in.');
         document.querySelectorAll('#ccOptions .copt').forEach(function(b){b.disabled=done;var on=Number(b.dataset.i)===block.answers[i];b.style.borderColor=on?'#7c3aed':'';b.classList.toggle('sel',on);b.setAttribute('aria-pressed',on?'true':'false');});
         if(done) el('ccFeedback').innerHTML=immediate?feedback(q,block,i):
           '<div class="cmsg"><b>'+(block.answers[i]===q.answerIndex?'Right.':'Not yet.')+'</b> Explanations come after the last question in this part.</div>';
@@ -171,7 +180,7 @@
       }
       if(typeof Eliminator!=='undefined')Eliminator.decorate(el('ccOptions'),{ns:'cycle:'+ctx.student+':'+ctx.set.setId+':'+label,id:q.id,selector:'.copt'});
       el('ccReason').oninput=predictionStatus;el('ccReason').onchange=predictionStatus;
-      wire('ccCommit',function(){var value=el('ccReason').value.trim();if(block.reasons[i]!==undefined)return;if(!validReason(value,q)){predictionStatus();el('ccReason').focus();return;}block.reasons[i]=value;save(ctx,s);refresh();});
+      wire('ccCommit',function(){var value=methodValue();if(block.reasons[i]!==undefined)return;if(!methodReady()){predictionStatus();el('ccReason').focus();return;}block.reasons[i]=value;if(method){block.methodValues=block.methodValues||[];block.methodValues[i]=method.values();}save(ctx,s);refresh();});
       document.querySelectorAll('#ccOptions .copt').forEach(function(b){b.onclick=function(){if(block.reasons[i]===undefined||locked())return;block.answers[i]=Number(b.dataset.i);save(ctx,s);refresh();};});
       wire('ccLock',function(){
         if(block.answers[i]===undefined){el('ccStatus').textContent='Choose A, B, C, or D before locking in.';el('ccOptions').querySelector('.copt').focus();return;}

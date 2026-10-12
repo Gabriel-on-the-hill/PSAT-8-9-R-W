@@ -99,25 +99,34 @@
       var i=block.index,q=qs[i];
       paint('<p class="cnote"><b>'+esc(label)+' '+(i+1)+' of '+qs.length+'</b>'+(immediate?' · '+esc(q.stage||q.skill):' · notes closed · no hints')+'</p>'+
         (immediate&&q.note?'<div class="cbox">'+passageText(q.note)+'</div>':'')+(q.image?'<div class="cq"><img src="'+esc(q.image)+'" alt="'+esc(q.alt||'Question figure')+'" style="display:block;max-width:100%;height:auto"></div>':'<div class="cq">'+passageText(q.passage)+'</div>')+'<div class="cq"><b>'+esc(q.question)+'</b></div>'+
-        '<label for="scReason">'+esc(immediate&&q.reasonPrompt?q.reasonPrompt:'Predict the answer or deciding relationship before choosing.')+'</label><textarea id="scReason" rows="2" aria-describedby="scStatus" style="width:100%;box-sizing:border-box;font:inherit;padding:.65rem;margin:.5rem 0"></textarea>'+button('scCommit','Commit the prediction')+
+        '<label for="scReason">'+esc(immediate&&q.reasonPrompt?q.reasonPrompt:'Give the deciding information from the method you have been taught.')+'</label><textarea id="scReason" rows="2" aria-describedby="scStatus" style="width:100%;box-sizing:border-box;font:inherit;padding:.65rem;margin:.5rem 0"></textarea>'+button('scCommit','Save the method notes')+
         '<p id="scStatus" class="cnote" role="status" aria-live="polite"></p><div id="scOptions" style="display:none">'+q.options.map(function(o,j){return '<button type="button" class="copt" data-i="'+j+'">'+esc(o)+'</button>';}).join('')+'</div><div id="scFeedback" aria-live="polite"></div><div class="crow">'+button('scNext',i===qs.length-1?'Finish this block':'Commit and continue')+'</div>');
+      var method=typeof StrategyResponse!=='undefined'?StrategyResponse.mount(el('scReason'),q,{
+        profile:q.responseProfile,values:(block.methodValues&&block.methodValues[i])||(block.methodDrafts&&block.methodDrafts[i]),onChange:function(h){block.methodDrafts=block.methodDrafts||[];block.methodDrafts[i]=h.values();save(ctx,s);predictionStatus();}
+      }):null;
+      function methodReady(){
+        if(!method)return validReason(el('scReason').value.trim(),q);
+        var words=Object.values(method.values()).join(' ').trim().split(/\s+/).length;
+        return method.complete()&&words>=(q.minReasonWords||1);
+      }
+      function methodValue(){return method?method.text():el('scReason').value.trim();}
       function predictionStatus() {
-        el('scStatus').textContent=validReason(el('scReason').value.trim(),q)?'Prediction ready. Commit it to see the choices.':
-          ((q.minReasonWords||1)>1?'Write a short deciding reason of at least two words, then commit it to see the choices.':'Write a predicted word or short phrase, then commit it to see the choices.');
+        el('scStatus').textContent=methodReady()?'Method notes complete. Save them before choosing.':
+          (method?'Complete: '+method.missing().join('; '):((q.minReasonWords||1)>1?'Write a short deciding reason of at least two words, then commit it to see the choices.':'Write a predicted word or short phrase, then commit it to see the choices.'));
       }
       function refresh() {
         var committed=block.reasons[i]!==undefined, chosen=block.answers[i]!==undefined;
-        el('scReason').value=committed?block.reasons[i]:'';el('scReason').disabled=committed;
-        el('scCommit').style.display=committed?'none':'';el('scOptions').style.display=committed?'block':'none';
+        if(method){if(committed&&block.methodValues&&block.methodValues[i])method.restore(block.methodValues[i]);else if(committed){el('scReason').value=block.reasons[i];method.box.querySelector('label').textContent='Original saved response (earlier format)';method.box.querySelectorAll('[data-response-field]').forEach(function(e){if(e.id!=='scReason'){e.previousElementSibling.hidden=true;e.hidden=true;}});}method.freeze(committed);}else el('scReason').value=committed?block.reasons[i]:'';el('scReason').disabled=committed;
+        el('scCommit').style.display=committed?'none':'';el('scOptions').style.display=(committed||(method&&method.profile.phase==='with-options'))?'block':'none';
         el('scNext').style.display=committed?'':'none';
         if(!committed)predictionStatus();
-        else el('scStatus').textContent=chosen?'Choice '+('ABCD'[block.answers[i]])+' selected. Click '+el('scNext').textContent+' to save it and move on.':'Prediction saved. Choose A, B, C, or D, then click '+el('scNext').textContent+'.';
+        else el('scStatus').textContent=chosen?'Choice '+('ABCD'[block.answers[i]])+' selected. Click '+el('scNext').textContent+' to save it and move on.':'Method notes saved. Choose A, B, C, or D, then click '+el('scNext').textContent+'.';
         document.querySelectorAll('#scOptions .copt').forEach(function(b){b.disabled=immediate&&chosen;var on=Number(b.dataset.i)===block.answers[i];b.style.borderColor=on?'#7c3aed':'';b.classList.toggle('sel',on);b.setAttribute('aria-pressed',on?'true':'false');});
         if(immediate&&chosen)el('scFeedback').innerHTML=feedback(q,block,i);
       }
       if(typeof Eliminator!=='undefined')Eliminator.decorate(el('scOptions'),{ns:'route:'+ctx.student+':'+ctx.set.setId+':'+label,id:q.id,selector:'.copt'});
       el('scReason').oninput=predictionStatus;el('scReason').onchange=predictionStatus;
-      wire('scCommit',function(){var value=el('scReason').value.trim();if(block.reasons[i]!==undefined)return;if(!validReason(value,q)){predictionStatus();el('scReason').focus();return;}block.reasons[i]=value;save(ctx,s);refresh();});
+      wire('scCommit',function(){var value=methodValue();if(block.reasons[i]!==undefined)return;if(!methodReady()){predictionStatus();el('scReason').focus();return;}block.reasons[i]=value;if(method){block.methodValues=block.methodValues||[];block.methodValues[i]=method.values();}save(ctx,s);refresh();});
       document.querySelectorAll('#scOptions .copt').forEach(function(b){b.onclick=function(){if(block.reasons[i]===undefined||(immediate&&block.answers[i]!==undefined))return;block.answers[i]=Number(b.dataset.i);save(ctx,s);refresh();};});
       wire('scNext',function(){if(block.reasons[i]===undefined){predictionStatus();el('scReason').focus();return;}if(block.answers[i]===undefined){el('scStatus').textContent='Choose A, B, C, or D before continuing.';el('scOptions').querySelector('.copt').focus();return;}if(typeof recordExposure==='function')recordExposure(q.bankId||q.id,'class',block.answers[i]===q.answerIndex);if(immediate&&block.answers[i]!==q.answerIndex&&q.followUp){block.repair={index:0,reasons:[],answers:[]};save(ctx,s);run(qs,block,label,immediate,onDone);}else advance();});
       refresh();
