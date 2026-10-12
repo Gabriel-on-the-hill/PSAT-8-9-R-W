@@ -245,16 +245,16 @@ section('13 · Multi-student: one frozen set, independent progress, zero new sto
     const bank = [Q('q1'), Q('q2')];
     const { questions } = C.resolveSet(SET, bank);
 
-    user('Jeffrey');
-    setLedger({ q1: { correct: 2, wrong: 0, lastSeen: now() } }, 'Jeffrey');
+    user('__A__');
+    setLedger({ q1: { correct: 2, wrong: 0, lastSeen: now() } }, '__A__');
     const jc = C.counts(questions, ctx.getProgress());
 
-    user('Bruce');
-    setLedger({ q1: { correct: 0, wrong: 1, lastSeen: now() } }, 'Bruce');
+    user('__B__');
+    setLedger({ q1: { correct: 0, wrong: 1, lastSeen: now() } }, '__B__');
     const bc = C.counts(questions, ctx.getProgress());
 
-    eq('Jeffrey: 1 mastered, 1 unseen', [jc.mastered, jc.notAttempted, jc.wrong], [1, 1, 0]);
-    eq('Bruce:   0 mastered, 1 wrong, 1 unseen', [bc.mastered, bc.notAttempted, bc.wrong], [0, 1, 1]);
+    eq('__A__: 1 mastered, 1 unseen', [jc.mastered, jc.notAttempted, jc.wrong], [1, 1, 0]);
+    eq('__B__:   0 mastered, 1 wrong, 1 unseen', [bc.mastered, bc.notAttempted, bc.wrong], [0, 1, 1]);
     ok('same denominator for both', jc.total === bc.total && jc.total === 2);
     ok('no challenge-specific storage key exists',
         ctx.localStorage.getItem('psat89_challenge_p8') === null);

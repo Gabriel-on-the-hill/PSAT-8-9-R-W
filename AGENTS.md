@@ -25,11 +25,14 @@ NODE_PATH=/tmp/j/node_modules node homework/selection.test.js        # exact slo
 NODE_PATH=/tmp/j/node_modules node homework/bank.test.js              # the bank is classified right
 NODE_PATH=/tmp/j/node_modules node homework/review-ladder.test.js     # spacing + calibration
 NODE_PATH=/tmp/j/node_modules node homework/homework-nav.test.js      # moving inside a homework set
+NODE_PATH=/tmp/j/node_modules node homework/set-number.test.js       # a set is found by its number (n:15), not its place
+NODE_PATH=/tmp/j/node_modules node eliminator.test.js                 # the cross-out tool
 node homework/hub-count.test.js                                      # the card matches the set served
 NODE_PATH=/tmp/j/node_modules node challenge/challenge-core.test.js   # challenge tally + set building
 NODE_PATH=/tmp/j/node_modules node challenge/challenge-ui.test.js     # the challenge, driven for real
 NODE_PATH=/tmp/j/node_modules node challenge/structured-class.test.js # reasons, untimed transfer, reload, exit checks
 NODE_PATH=/tmp/j/node_modules node challenge/class-path.test.js     # ordered attempts, fresh gates, independent transfer
+NODE_PATH=/tmp/j/node_modules node challenge/cycle-class.test.js    # cycles route: model, checks, mixed check
 NODE_PATH=/tmp/j/node_modules node ratio-mix.test.js                 # custom practice in a ratio
 NODE_PATH=/tmp/j/node_modules node ruletype.test.js                  # Conventions tagged by rule
 NODE_PATH=/tmp/j/node_modules node gate.test.js                      # tutor pages stay tutor-only; one login at a time
@@ -43,6 +46,7 @@ NODE_PATH=/tmp/j/node_modules node baseline-sync.test.js             # the tutor
 NODE_PATH=/tmp/j/node_modules node baseline-recover.test.js          # a stranded baseline can be sent
 NODE_PATH=/tmp/j/node_modules node tutor-sheet/tutor-dashboard.test.js # the dashboard can read the sheet
 node tutor-sheet/lease.test.js                                       # one login at a time (server half)
+node tutor-sheet/reminders.test.js                                   # reminder emails: open notes, nudges, digest
 NODE_PATH=/tmp/j/node_modules node strategy-response.test.js           # method fields, drafts, timing and logging
 node cache-tags.test.js                                              # students get the CURRENT files
 ```

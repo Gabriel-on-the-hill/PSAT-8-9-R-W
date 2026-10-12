@@ -3,7 +3,7 @@
 // build-challenge-set.js — OFFLINE generator. Never shipped, never
 // loaded by the app, never run in a browser.
 //
-//   node challenge/build-challenge-set.js Jeffrey
+//   node challenge/build-challenge-set.js <gate name>
 //
 // Reads a student's real misses, selects sibling questions from the four
 // banks, and emits (a) a human-review shortlist and (b) a frozen id list.
@@ -62,50 +62,22 @@ const BANDS = ['Hard', 'Medium'];
 // ═════════════════════════════════════════════════════════════════
 // SPEC — one block per student per test. Everything here is evidence.
 // ═════════════════════════════════════════════════════════════════
-const STUDENTS = {
-    Jeffrey: {
-        setId:  'p8-rw',
-        title:  'Practice 8 misses',
-        source: 'SAT Practice Test 8',
-        date:   '2026-07-04',
-        target: 28,
-        exclude: [],   // ids already committed to this student's earlier sets
-
-        // Knowledge-and-Skills bars, 4 July 2026 score report. [filled, total]
-        bars: {
-            'Information & Ideas': [2, 7],
-            'Craft & Structure':   [4, 7],
-            'Std. English Conv.':  [5, 7],
-            'Expression of Ideas': [5, 5],
-        },
-
-        // Coverage, stated so nobody forgets it.
-        captured: 16,
-        actualIncorrect: 23,
-
-        // The misses are DERIVED from the debrief payload — one source of
-        // truth. Edit the tags there and the seeds follow; they cannot drift.
-        // (A student with only a score report and no transcribed questions
-        // would instead declare an inline `misses: [{ skill, ruleType? }, …]`.)
-        reviewFile: 'data-challenge-jeffrey-p8.js',
-        reviewVar:  'CHALLENGE_P8',
-
-        // Transcription errors found on 10 Jul and fixed in the debrief file.
-        // Listed here only so the shortlist reminds a reviewer to re-check them.
-        corrections: [
-            { q: 'Q17',  fix: 'answer D → C ("emerged:"); ruleType Commas → Colon. "emerged, whereas A…, B…" leaves a comma splice.' },
-            { q: 'Q20',  fix: 'answer C → A ("varied:"); ruleType Commas → Colon. "varied, while…" strands "others only six".' },
-            { q: 'Q19b', fix: 'answer A → C ("works,"); skill Form/Structure/Sense → Boundaries, ruleType VTense → Commas. The sentence already prints the closing comma of the supplement.' },
-        ],
-
-        notes: [
-            'The export holds 16 of 23 R&W misses. The 7 absent ones are almost certainly Information & Ideas: its bar is 2/7, yet the folder credits it with only 5 misses while Standard English Conventions (5/7) shows 6.',
-            'Domain quotas therefore follow the score-report bars, not the captured miss counts.',
-            'Difficulty is unknown. Each skill is split across Medium and Hard so he must master both bands.',
-            'The 2 Math misses (Problem-Solving and Data Analysis) are excluded: no math bank exists here, and Michael SAT\'s Challenge_App already seeds Jeffrey on mean/median/histogram.',
-        ],
-    },
-};
+// One block per student per test, keyed by the gate name. This app has no live spec:
+// the one this file was copied with belonged to the sister app and is not repeated here.
+// Shape, with illustrative values:
+//
+//   "<gate name>": {
+//       setId: 'p8-rw', title: 'Practice 8 misses', source: 'Practice Test 8', date: 'YYYY-MM-DD',
+//       target: 28, exclude: [],
+//       bars: { 'Information & Ideas': [2, 7], 'Craft & Structure': [4, 7],
+//               'Std. English Conv.': [5, 7], 'Expression of Ideas': [5, 5] },
+//       captured: 16, actualIncorrect: 23,
+//       misses: [{ skill: 'Boundaries', ruleType: 'Semi' }],   // or reviewFile + reviewVar
+//       corrections: [], notes: [],
+//   },
+//
+// Assessment notes about a student do not go in this public file (see AGENTS.md).
+const STUDENTS = {};
 
 // ═════════════════════════════════════════════════════════════════
 function loadBank() {
@@ -320,4 +292,6 @@ function build(name) {
 
 function chunk(a, n) { const o = []; for (let i = 0; i < a.length; i += n) o.push(a.slice(i, i + n)); return o; }
 
-build(process.argv[2] || 'Jeffrey');
+if (!process.argv[2] || !STUDENTS[process.argv[2]]) {
+    console.log('Usage: node challenge/build-challenge-set.js <gate name>  (add the student to STUDENTS first)');
+} else build(process.argv[2]);

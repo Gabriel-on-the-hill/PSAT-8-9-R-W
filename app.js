@@ -6,6 +6,10 @@ const questionBank = [
     ...(typeof questionBank_CON !== 'undefined' ? questionBank_CON : []),
 ];
 
+// Fresh draws skip questions held only for the sets that name them (`retireAfter`:
+// SAT and book items awaiting retirement). Challenge sets still find them by id.
+const drawableBank = questionBank.filter(q => !q.retireAfter);
+
 // ── Constants ─────────────────────────────────────────────────────
 // The countdown on the home screen. It is one date for the whole app, not a
 // per-student one — everyone who signs in shares this build, so it can only be
@@ -186,7 +190,7 @@ function getLimit() {
 function getFilteredPool() {
     const skills = getSelectedSkills();
     const diffs  = getSelectedDiffs();
-    return questionBank.filter(q => skills.includes(q.skill) && diffs.includes(q.psatDifficulty));
+    return drawableBank.filter(q => skills.includes(q.skill) && diffs.includes(q.psatDifficulty));
 }
 
 // ══════════════════════════════════════════════════════════════════
@@ -627,12 +631,12 @@ function buildWeakAreaSet(limit) {
         rate[s] = sum.total ? sum.mastered / sum.total : 0;
     });
     // Questions he's missed (and not yet mastered) come first.
-    const needsWork = questionBank.filter(q => {
+    const needsWork = drawableBank.filter(q => {
         const r = ledger[q.id];
         return r && (r.wrong || 0) > 0 && !_isMastered(r);
     });
     // Then unseen questions, weakest skills first.
-    const unseen = questionBank.filter(q => !ledger[q.id]);
+    const unseen = drawableBank.filter(q => !ledger[q.id]);
     unseen.sort((a, b) => rate[a.skill] - rate[b.skill]);
     return _fyShuffle(needsWork).concat(unseen).slice(0, limit);
 }
@@ -676,7 +680,7 @@ let mockMissed        = [];   // accumulated misses across modules
 function buildMockModule(spread, used) {
     const out  = [];
     MOCK_DOMAIN_MIX.forEach(([domain, n]) => {
-        const pool = questionBank.filter(q =>
+        const pool = drawableBank.filter(q =>
             SKILL_DOMAIN[q.skill] === domain && !used.has(q.id));
         const byDiff = {
             Easy:   _fyShuffle(pool.filter(q => q.psatDifficulty === 'Easy')),
@@ -774,7 +778,7 @@ function updateSetupUI() {
     Object.entries(SKILL_COUNT_IDS).forEach(([skill, id]) => {
         const el = document.getElementById(id);
         if (!el) return;
-        const n = questionBank.filter(
+        const n = drawableBank.filter(
             q => q.skill === skill && diffs.includes(q.psatDifficulty)
         ).length;
         el.textContent = n + ' q';
@@ -1240,6 +1244,15 @@ function formatPassage(text, skill) {
     return escapePassage(html);
 }
 
+// Assisted mode keeps the skill's strategy hint; the method instruction goes on a line beneath it.
+function addHintLine(hint, text) {
+    const line = document.createElement('div');
+    line.className = 'method-hint-line';
+    line.style.marginTop = '.5rem';
+    line.textContent = text;
+    hint.appendChild(line);
+}
+
 function buildStrategyHint(skill) {
     switch (skill) {
         case 'Words in Context':
@@ -1374,7 +1387,7 @@ function loadQuestion(index) {
             let area=document.getElementById('practiceMethod');
             if(!area){area=document.createElement('div');area.id='practiceMethod';hint.parentNode.insertBefore(area,document.getElementById('revealChoicesBtn'));}
             area.innerHTML='<textarea id="practiceMethodText"></textarea><p id="practiceMethodError" role="status"></p>';
-            hint.textContent='Make the method checks before choosing.';
+            addHintLine(hint,'Make the method checks before choosing.');
             const current=responses[currentQuestionIndex];
             methodResponse=StrategyResponse.mount(document.getElementById('practiceMethodText'),q,{values:current.methodValues,onChange:function(h){current.methodValues=h.values();saveSessionState();}});
             if(current.methodRevealed){methodResponse.freeze(true);}
@@ -1382,7 +1395,7 @@ function loadQuestion(index) {
             document.getElementById('revealChoicesBtn').textContent='Save method notes — show choices';
         }else if(typeof StrategyResponse!=='undefined'){
             const cue=StrategyResponse.profile(q),area=document.getElementById('practiceMethod');if(area)area.innerHTML='';
-            hint.textContent=cue.instructions+' Make the checks briefly in your head or on paper.';
+            addHintLine(hint,cue.instructions+' Make the checks briefly in your head or on paper.');
             document.getElementById('revealChoicesBtn').textContent='I have made the checks — show choices';
         }
         predictionStep.classList.remove('hidden');

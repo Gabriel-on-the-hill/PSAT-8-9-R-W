@@ -149,16 +149,16 @@
         (immediate&&q.note?'<div class="cbox">'+passageText(q.note)+'</div>':'')+
         (q.image?'<div class="cq"><img src="'+esc(q.image)+'" alt="'+esc(q.alt||'Question figure')+'" style="display:block;max-width:100%;height:auto"></div>':'<div class="cq">'+passageText(q.passage)+'</div>')+
         '<div class="cq"><b>'+esc(q.question)+'</b></div>'+
-        '<label for="ccReason">'+esc(q.reasonPrompt||'Give the deciding information from the method you have been taught.')+'</label><textarea id="ccReason" rows="2" aria-describedby="ccStatus" style="width:100%;box-sizing:border-box;font:inherit;padding:.65rem;margin:.5rem 0"></textarea>'+button('ccCommit','Save the method notes')+
+        '<label for="ccReason">'+esc(q.reasonPrompt||(immediate?'Give the deciding information from the method you have been taught.':'Predict the answer or the deciding relationship before choosing.'))+'</label><textarea id="ccReason" rows="2" aria-describedby="ccStatus" style="width:100%;box-sizing:border-box;font:inherit;padding:.65rem;margin:.5rem 0"></textarea>'+button('ccCommit','Save the method notes')+
         '<p id="ccStatus" class="cnote" role="status" aria-live="polite"></p><div id="ccOptions" style="display:none">'+q.options.map(function(o,j){return '<button type="button" class="copt" data-i="'+j+'">'+esc(o)+'</button>';}).join('')+'</div>'+
         '<div id="ccFeedback" aria-live="polite"></div><div class="crow">'+button('ccLock','Lock in this answer')+button('ccNext',i===qs.length-1?'Finish':'Next question')+'</div>');
       var method=typeof StrategyResponse!=='undefined'?StrategyResponse.mount(el('ccReason'),q,{
-        profile:q.responseProfile,values:(block.methodValues&&block.methodValues[i])||(block.methodDrafts&&block.methodDrafts[i]),onChange:function(h){block.methodDrafts=block.methodDrafts||[];block.methodDrafts[i]=h.values();save(ctx,s);predictionStatus();}
+        // Checks run notes closed with no hints: one own-words box. A tutor-written prompt is kept as written.
+        profile:q.responseProfile||(q.reasonPrompt?StrategyResponse.own(q.reasonPrompt):!immediate?StrategyResponse.own('Predict the answer or the deciding relationship before choosing.'):undefined),values:(block.methodValues&&block.methodValues[i])||(block.methodDrafts&&block.methodDrafts[i]),onChange:function(h){block.methodDrafts=block.methodDrafts||[];block.methodDrafts[i]=h.values();save(ctx,s);predictionStatus();}
       }):null;
       function methodReady(){
         if(!method)return validReason(el('ccReason').value.trim(),q);
-        var words=Object.values(method.values()).join(' ').trim().split(/\s+/).length;
-        return method.complete()&&words>=(q.minReasonWords||1);
+        return method.complete()&&validReason(Object.values(method.values()).join(' ').trim(),q);
       }
       function methodValue(){return method?method.text():el('ccReason').value.trim();}
       function locked() { return block.locked===i; }

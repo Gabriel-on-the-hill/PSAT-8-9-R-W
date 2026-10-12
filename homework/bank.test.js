@@ -144,6 +144,15 @@ section('Retired questions cannot reach any draw');
     ok('every held SAT/book question is still named by a plan (otherwise retire it)', orphan.length === 0,
         orphan.map(q => q.id).join(', '));
     ok('only SAT/book questions carry retireAfter', held.every(q => q.origin !== 'cb-psat89'));
+    // Until they are retired, held items are served only where a set names them by id:
+    // never by a skill/difficulty draw, a practice pool, or the review ladder.
+    const run = read('homework-run.html'), app = read('app.js');
+    ok('homework sections skip held items unless the section names them',
+        /q\.retireAfter && !\(sec\.questionIds/.test(run));
+    ok('the plain homework pool and the review draw skip held items',
+        /!q\.retireAfter && spec\.skills/.test(run) && /if\(q\.retireAfter\) _inSet\[q\.id\] = true/.test(run));
+    ok('practice draws come from the held-free bank', /const drawableBank = questionBank\.filter\(q => !q\.retireAfter\)/.test(app)
+        && !/return questionBank\.filter\(q => skills\.includes/.test(app));
 }
 
 section('Provisional questions are eligible without taking over a pool');

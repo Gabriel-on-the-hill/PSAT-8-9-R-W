@@ -195,12 +195,22 @@ function seed(w, n) {
         ok('every non-empty skill × difficulty draw returns the requested PSAT rung',
             checked > 0 && wrong === null, wrong || `${checked} pools checked`);
 
-        const shifted = PEEK.questionBank.find(q => q.difficulty !== q.psatDifficulty);
-        setSkills(w, [shifted.skill]);
-        setDiffs(w, [shifted.psatDifficulty]);
-        ok('a shifted item is selected by psatDifficulty, not its native SAT label',
-            w.getFilteredPool().some(q => q.id === shifted.id),
-            `${shifted.id}: native ${shifted.difficulty}, PSAT ${shifted.psatDifficulty}`);
+        // Every shifted item left in the bank is a held SAT/book item (`retireAfter`), and
+        // held items are no longer drawn into practice. Test the label rule on a drawable
+        // shifted item when one exists; otherwise test that the held item stays out.
+        const shifted = PEEK.questionBank.find(q => q.difficulty !== q.psatDifficulty && !q.retireAfter);
+        if (shifted) {
+            setSkills(w, [shifted.skill]);
+            setDiffs(w, [shifted.psatDifficulty]);
+            ok('a shifted item is selected by psatDifficulty, not its native SAT label',
+                w.getFilteredPool().some(q => q.id === shifted.id),
+                `${shifted.id}: native ${shifted.difficulty}, PSAT ${shifted.psatDifficulty}`);
+        } else {
+            const held = PEEK.questionBank.find(q => q.retireAfter);
+            setSkills(w, [held.skill]);
+            setDiffs(w, [held.psatDifficulty]);
+            ok('a held SAT/book item is not drawn into practice', !w.getFilteredPool().some(q => q.id === held.id), held.id);
+        }
     }
 
     // ═══════════════════════════════════════════════════════════
