@@ -24,12 +24,17 @@
   function button(id,text,disabled) { return '<button type="button" class="cbtn" id="'+id+'"'+(disabled?' disabled':'')+'>'+esc(text)+'</button>'; }
   function wire(id,fn) { if(el(id)) el(id).onclick=fn; }
   function key(ctx) { return 'psat89_cycleroute_'+ctx.student+'_'+ctx.set.setId; }
-  function fresh() { return {index:0,reasons:[],answers:[]}; }
+  function fresh() { return {index:0,reasons:[],answers:[],help:[],recognised:[]}; }
   function state(ctx) {
     var k=key(ctx);
-    if(memory[k]) return memory[k];
+    if(memory[k]) return normalise(memory[k]);
     try { memory[k]=JSON.parse(localStorage.getItem(k)); } catch(e) {}
-    return memory[k] || (memory[k]={cycles:{},transferStarted:false,transferDone:false});
+    return normalise(memory[k] || (memory[k]={cycles:{},transferStarted:false,transferDone:false}));
+  }
+  function normalise(s) {
+    s.cycles=s.cycles||{};s.opening=s.opening||fresh();s.spares=s.spares||{};s.mixed=s.mixed||fresh();
+    s.sessionId=s.sessionId||('cycle_'+Date.now().toString(36)+'_'+Math.random().toString(36).slice(2,8));
+    return s;
   }
   function save(ctx,s) { try { localStorage.setItem(key(ctx),JSON.stringify(s)); } catch(e) {} }
   function postBlock(ctx,qs,block,label) {
@@ -37,13 +42,18 @@
       if(typeof syncSessionToSheet!=='function')return;
       var L='ABCD',rows=qs.map(function(q,i){
         var a=block.answers[i],e=(typeof Eliminator!=='undefined')?Eliminator.report('cycle:'+ctx.student+':'+ctx.set.setId+':'+label,q.id,q.answer):{elim:'',elimAnswer:false};
-        return {id:q.id,skill:q.skill,difficulty:q.psatDifficulty||q.difficulty,chosen:(a==null?null:L[a]),correct:q.answer,
-          isCorrect:a===q.answerIndex,prediction:block.reasons[i]||'',stage:q.stage||'',elim:e.elim,elimAnswer:e.elimAnswer};
+        var help=(block.help&&block.help[i])||'unrecorded',recognised=!!(block.recognised&&block.recognised[i]);
+        return {id:q.id,skill:q.skill,difficulty:ctx.difficulty?ctx.difficulty(q):(q.psatDifficulty||q.difficulty),chosen:(a==null?null:L[a]),correct:q.answer,
+          isCorrect:a===q.answerIndex,prediction:(block.reasons[i]||'')+'\nConditions: help: '+help+'; recognised: '+recognised,
+          stage:q.stage||'',help:help,recognised:recognised,elim:e.elim,elimAnswer:e.elimAnswer};
       });
-      syncSessionToSheet({source:'class-route',student:ctx.student,focus:ctx.set.setId+' · '+label,
+      syncSessionToSheet({source:pathSource(ctx,label),student:ctx.student,
+        sessionId:state(ctx).sessionId+'_'+encodeURIComponent(label),assignmentId:ctx.set.setId,
+        assignmentTitle:ctx.set.title+' · '+label,mode:'untimed-class',
         score:rows.filter(function(r){return r.isCorrect;}).length,total:rows.length,questions:rows});
     } catch(e) {}
   }
+  function pathSource(ctx,label) { return ctx.set.learningPath.mixedInRoute&&label==='Mixed check'?'class-transfer':'class-route'; }
   function completeTransfer(ctx) { var s=state(ctx);s.transferStarted=true;s.transferDone=true;save(ctx,s); }
 
   function render(ctx) {
@@ -54,19 +64,27 @@
       return Object.assign({},q,ref,{answerIndex:q.answer.charCodeAt(0)-65});
     }
     function plan(c) { return {title:c.title,model:resolve(c.model),checks:c.checks.map(resolve),reserves:(c.reserves||[]).map(resolve)}; }
-    var cycles,transfer;
+    function transferRef(id) { return Object.assign({bankId:id},(path.itemOverrides&&path.itemOverrides[id])||{}); }
+    var cycles,opening,spares,transfer;
     function paint(body) { ctx.paint(ctx.header()+body+'<div class="crow">'+button('ccHub','Back to hub')+'</div>');wire('ccHub',ctx.back); }
     try {
       cycles=path.cycles.map(function(c){return {id:c.id,main:plan(c),alt:c.alternate?Object.assign(plan(c.alternate),{when:c.alternate.when}):null};});
-      transfer=path.transfer.map(function(id){return resolve({bankId:id});});
+      opening=path.opening?resolve(path.opening):null;
+      spares=(path.spares||[]).map(resolve);
+      transfer=path.transfer.map(function(id){return resolve(transferRef(id));});
     } catch(e) { paint('<div class="cbanner">The class question list is incomplete. Ask your tutor to check it before starting.</div>');return; }
 
     function cs(c) { return s.cycles[c.id] || (s.cycles[c.id]={variant:null,model:fresh(),checks:fresh(),reserve:null}); }
     function active(c) { var x=cs(c); return x.variant==='alt'&&c.alt?c.alt:c.main; }
     function score(c) { var x=cs(c),qs=active(c).checks; return x.checks.answers.filter(function(a,i){return a===qs[i].answerIndex;}).length; }
     function cycleDone(c) { return !!cs(c).checks.done; }
-    function modelStarted() { var c=cycles[0]; return !!cs(c).model.done; }
+    function openingDone() { return !opening||!!s.opening.done; }
+    function modelStarted() { var c=cycles[0]; return openingDone()&&!!cs(c).model.done; }
     function clockReady() { return cycles.every(function(c){return cycleDone(c)&&score(c)>=2;}); }
+    function mixedQuestions() {
+      var ids=(path.transferAfterSkip&&cycles.some(function(c){return !!cs(c).skipped;}))?path.transferAfterSkip:path.transfer;
+      return ids.map(function(id){return resolve(transferRef(id));});
+    }
     function rule(n,total) {
       if(n===total) return 'All three correct. Move on to the next part.';
       if(n===total-1) return 'Two of three. With your tutor, name the step that went wrong on the miss, then move on.';
@@ -74,32 +92,70 @@
     }
 
     function home() {
+      var openingButton=opening&&!s.opening.done?button('ccOpening','Opening retrieval: start'):
+        (opening?button('ccOpening','Opening retrieval: review'):'');
       var rows=cycles.map(function(c,i){
         var x=cs(c),p=active(c),label='Part '+(i+1)+' — '+p.title;
         if(x.skipped&&!x.model.done) return '<p class="cnote">'+esc(label)+': skipped today.</p>';
-        if(!x.model.done) return (i===0||cycleDone(cycles[i-1])||cs(cycles[i-1]).skipped)?button('ccCycle'+i,label+': start'):'';
+        if(!x.model.done) return openingDone()&&(i===0||cycleDone(cycles[i-1])||cs(cycles[i-1]).skipped)?button('ccCycle'+i,label+': start'):'';
         if(!x.checks.done) return button('ccCycle'+i,label+': continue');
         return button('ccCycle'+i,label+': review ('+score(c)+' of '+p.checks.length+')');
       }).join('');
+      var spareButtons=cycleDone(cycles[0])?spares.map(function(q,i){
+        var block=s.spares[q.id];return button('ccSpare'+i,'Tutor: '+(block&&block.done?'review':'open')+' spare '+(i+1));
+      }).join(''):'';
       var mixed='';
       if(!s.transferStarted && modelStarted()) {
+        var mq=mixedQuestions();
         mixed=button('ccOff','When your tutor says: mixed check, no clock')+
-          (clockReady()?button('ccTimed','Mixed check: '+transfer.length+' questions, '+Math.round(path.mixedSeconds/60)+' minutes'):'');
+          (!path.mixedInRoute&&path.mixedSeconds>0&&clockReady()?button('ccTimed','Mixed check: '+mq.length+' questions, '+Math.round(path.mixedSeconds/60)+' minutes'):'');
       }
       if(s.transferStarted&&!s.transferDone) mixed=button('ccResume','Resume the mixed check');
       paint('<div class="cbox"><p>'+esc(path.intro)+'</p><p>'+esc(path.order)+'</p></div>'+
-        '<div class="crow">'+rows+mixed+'</div>'+
+        '<div class="crow">'+openingButton+rows+spareButtons+mixed+'</div>'+
         '<p class="cnote">Predict before the choices appear. In each part you try the worked example first, then three questions on your own: you see Right or Not yet straight away, and the explanations come after the third. '+
         (clockReady()||s.transferStarted?'':'The mixed check runs without a clock unless every part ended with at least two of three right. ')+
         'Class answers earn no mastery; only the mixed check counts.</p>'+
         (s.transferDone?'<div class="cmsg"><b>Class route complete.</b> '+esc(path.close)+'</div>':''));
+      wire('ccOpening',openOpening);
       cycles.forEach(function(c,i){wire('ccCycle'+i,function(){openCycle(c,i);});});
+      spares.forEach(function(q,i){wire('ccSpare'+i,function(){openSpare(q,i);});});
       wire('ccOff',function(){start(false);});wire('ccTimed',function(){start(true);});
-      wire('ccResume',function(){if(!ctx.resume())paint('<div class="cmsg">The saved mixed check is unavailable. Ask your tutor before reopening these questions; they are now familiar.</div>'+button('ccHome','Return to route'));wire('ccHome',home);});
+      wire('ccResume',function(){if(path.mixedInRoute){openMixed();return;}if(!ctx.resume())paint('<div class="cmsg">The saved mixed check is unavailable. Ask your tutor before reopening these questions; they are now familiar.</div>'+button('ccHome','Return to route'));wire('ccHome',home);});
     }
     function start(timed) {
       if(s.transferStarted || !modelStarted() || (timed&&!clockReady())) return;
-      if(ctx.transfer(transfer,timed?path.mixedSeconds:0)){s.transferStarted=true;s.clock=timed?'countdown':'off';save(ctx,s);}
+      if(path.mixedInRoute){s.transferStarted=true;s.clock='off';save(ctx,s);openMixed();return;}
+      var questions=mixedQuestions();
+      if(ctx.transfer(questions,timed?path.mixedSeconds:0)){s.transferStarted=true;s.clock=timed?'countdown':'off';save(ctx,s);}
+    }
+    function openOpening() {
+      if(!opening)return home();
+      if(s.opening.done)return paint(feedback(opening,s.opening,0)+'<div class="crow">'+button('ccHome','Return to class route')+'</div>'),wire('ccHome',home);
+      run([opening],s.opening,'Opening retrieval',{immediate:true,heading:'Opening retrieval · notes closed'},home);
+    }
+    function openSpare(q,i) {
+      var block=s.spares[q.id]||(s.spares[q.id]=fresh());
+      if(block.done)return paint(feedback(q,block,0)+'<div class="crow">'+button('ccHome','Return to class route')+'</div>'),wire('ccHome',home);
+      run([q],block,'Spare '+(i+1),{immediate:true,heading:'Tutor-opened spare'},home);
+    }
+    function openMixed() {
+      var qs=mixedQuestions();
+      if(s.mixed.done)return mixedResults(qs);
+      run(qs,s.mixed,'Mixed check',{immediate:false,verdict:false,heading:'Mixed check · unlabelled · notes closed · no hints'},function(){finishMixed(qs);});
+    }
+    function finishMixed(qs) {
+      if(!s.mixed.credited&&path.singleCredit&&typeof recordAnswer==='function'){
+        qs.forEach(function(q,i){recordAnswer(q.id,s.mixed.answers[i]===q.answerIndex,'class-transfer',{skill:q.skill});});
+        s.mixed.credited=true;
+      }
+      s.transferDone=true;save(ctx,s);mixedResults(qs);
+    }
+    function mixedResults(qs) {
+      var n=s.mixed.answers.filter(function(a,i){return a===qs[i].answerIndex;}).length;
+      paint('<div class="cmsg"><b>Mixed check: '+n+' of '+qs.length+' right.</b> Review at most two items with your tutor, then close the class.</div>'+
+        qs.map(function(q,i){return feedback(q,s.mixed,i);}).join('')+'<div class="crow">'+button('ccHome','Return to class route')+'</div>');
+      wire('ccHome',home);
     }
     function openCycle(c,i) {
       var x=cs(c);
@@ -118,7 +174,8 @@
       results(c,i);
     }
     function feedback(q,block,i) {
-      return '<div class="cexpl"><b>'+esc(q.stage||q.skill)+' — '+(block.answers[i]===q.answerIndex?'right':'not yet')+'</b><p>Your prediction: '+esc(block.reasons[i])+'</p><p>Your choice: '+esc(q.options[block.answers[i]])+'</p><p>'+esc(q.explanation)+'</p></div>';
+      var help=(block.help&&block.help[i])||'unrecorded',recognised=!!(block.recognised&&block.recognised[i]);
+      return '<div class="cexpl"><b>'+esc(q.stage||q.skill)+' — '+(block.answers[i]===q.answerIndex?'right':'not yet')+'</b><p>Your method notes: '+esc(block.reasons[i])+'</p><p>Your choice: '+esc(q.options[block.answers[i]])+'</p><p>Conditions: help '+esc(help)+(recognised?' · recognised':' · not recognised')+'</p><p>'+esc(q.explanation)+'</p></div>';
     }
     function results(c,i) {
       var x=cs(c),p=active(c),n=score(c),used=x.reserve?x.reserve.qs:[];
@@ -138,8 +195,21 @@
       return words.length>=(q.minReasonWords||1) && words.some(function(w){return w.length>1;});
     }
     function passageText(value) { return esc(value).replace(/&lt;(\/?)(u|sub|sup|i|em|b|strong)&gt;/gi,'<$1$2>').replace(/\n/g,'<br>'); }
+    function tableText(table) {
+      if(!table)return '';
+      return '<div class="ctable-wrap"><table class="ctable">'+(table.caption?'<caption>'+esc(table.caption)+'</caption>':'')+
+        '<thead><tr>'+table.headers.map(function(h){return '<th scope="col">'+esc(h)+'</th>';}).join('')+'</tr></thead><tbody>'+
+        table.rows.map(function(row){return '<tr>'+row.map(function(cell){return '<td>'+esc(cell)+'</td>';}).join('')+'</tr>';}).join('')+
+        '</tbody></table></div>';
+    }
+    function questionBody(q) {
+      if(q.table)return tableText(q.table)+'<div class="cq">'+passageText(q.passage)+'</div>';
+      if(q.image)return '<div class="cq"><img src="'+esc(q.image)+'" alt="'+esc(q.alt||'Question figure')+'" style="display:block;max-width:100%;height:auto"></div>';
+      return '<div class="cq">'+passageText(q.passage)+'</div>';
+    }
     function run(qs,block,label,opt,onDone) {
       if(block.done){onDone();return;}
+      block.help=block.help||[];block.recognised=block.recognised||[];
       var i=block.index,q=qs[i],immediate=opt.immediate;
       function advance() {
         block.index++;if(block.index===qs.length){block.done=true;postBlock(ctx,qs,block,label);}
@@ -147,11 +217,13 @@
       }
       paint('<p class="cnote"><b>'+esc(opt.heading)+'</b> · '+(qs.length>1?'question '+(i+1)+' of '+qs.length:esc(q.stage||q.skill))+'</p>'+
         (immediate&&q.note?'<div class="cbox">'+passageText(q.note)+'</div>':'')+
-        (q.image?'<div class="cq"><img src="'+esc(q.image)+'" alt="'+esc(q.alt||'Question figure')+'" style="display:block;max-width:100%;height:auto"></div>':'<div class="cq">'+passageText(q.passage)+'</div>')+
+        questionBody(q)+
         '<div class="cq"><b>'+esc(q.question)+'</b></div>'+
+        '<p><label><input id="ccRecognised" type="checkbox"'+(block.recognised[i]?' checked':'')+'> I recognise this question</label></p>'+
         '<label for="ccReason">'+esc(q.reasonPrompt||(immediate?'Give the deciding information from the method you have been taught.':'Predict the answer or the deciding relationship before choosing.'))+'</label><textarea id="ccReason" rows="2" aria-describedby="ccStatus" style="width:100%;box-sizing:border-box;font:inherit;padding:.65rem;margin:.5rem 0"></textarea>'+button('ccCommit','Save the method notes')+
         '<p id="ccStatus" class="cnote" role="status" aria-live="polite"></p><div id="ccOptions" style="display:none">'+q.options.map(function(o,j){return '<button type="button" class="copt" data-i="'+j+'">'+esc(o)+'</button>';}).join('')+'</div>'+
-        '<div id="ccFeedback" aria-live="polite"></div><div class="crow">'+button('ccLock','Lock in this answer')+button('ccNext',i===qs.length-1?'Finish':'Next question')+'</div>');
+        '<div id="ccFeedback" aria-live="polite"></div><div id="ccConditions" style="display:none"><label for="ccHelp">Help actually used</label><select id="ccHelp"><option value="">Choose after the attempt</option><option value="none">No tutor help</option><option value="process">Process cue</option><option value="direction">Directional cue</option><option value="model">Modelled</option></select></div>'+
+        '<div class="crow">'+button('ccLock','Lock in this answer')+button('ccNext',i===qs.length-1?'Finish':'Next question',true)+'</div>');
       var method=typeof StrategyResponse!=='undefined'?StrategyResponse.mount(el('ccReason'),q,{
         // Checks run notes closed with no hints: one own-words box. A tutor-written prompt is kept as written.
         profile:q.responseProfile||(q.reasonPrompt?StrategyResponse.own(q.reasonPrompt):!immediate?StrategyResponse.own('Predict the answer or the deciding relationship before choosing.'):undefined),values:(block.methodValues&&block.methodValues[i])||(block.methodDrafts&&block.methodDrafts[i]),onChange:function(h){block.methodDrafts=block.methodDrafts||[];block.methodDrafts[i]=h.values();save(ctx,s);predictionStatus();}
@@ -171,15 +243,18 @@
         if(method){if(committed&&block.methodValues&&block.methodValues[i])method.restore(block.methodValues[i]);else if(committed){el('ccReason').value=block.reasons[i];method.box.querySelector('label').textContent='Original saved response (earlier format)';method.box.querySelectorAll('[data-response-field]').forEach(function(e){if(e.id!=='ccReason'){e.previousElementSibling.hidden=true;e.hidden=true;}});}method.freeze(committed);}else el('ccReason').value=committed?block.reasons[i]:'';el('ccReason').disabled=committed;
         el('ccCommit').style.display=committed?'none':'';el('ccOptions').style.display=(committed||(method&&method.profile.phase==='with-options'))?'block':'none';
         el('ccLock').style.display=committed&&!done?'':'none';el('ccNext').style.display=done?'':'none';
+        el('ccRecognised').checked=!!block.recognised[i];el('ccConditions').style.display=done?'block':'none';el('ccHelp').value=block.help[i]||'';el('ccNext').disabled=!(done&&block.help[i]);
         if(!committed)predictionStatus();
         else el('ccStatus').textContent=done?'Answer locked.':(chosen?'Choice '+('ABCD'[block.answers[i]])+' selected. Lock it in when you are sure.':'Method notes saved. Choose A, B, C, or D, then lock it in.');
         document.querySelectorAll('#ccOptions .copt').forEach(function(b){b.disabled=done;var on=Number(b.dataset.i)===block.answers[i];b.style.borderColor=on?'#7c3aed':'';b.classList.toggle('sel',on);b.setAttribute('aria-pressed',on?'true':'false');});
         if(done) el('ccFeedback').innerHTML=immediate?feedback(q,block,i):
-          '<div class="cmsg"><b>'+(block.answers[i]===q.answerIndex?'Right.':'Not yet.')+'</b> Explanations come after the last question in this part.</div>';
+          (opt.verdict===false?'<div class="cmsg"><b>Answer locked.</b> Results come after the last question in this mixed check.</div>':'<div class="cmsg"><b>'+(block.answers[i]===q.answerIndex?'Right.':'Not yet.')+'</b> Explanations come after the last question in this part.</div>');
         else el('ccFeedback').innerHTML='';
       }
       if(typeof Eliminator!=='undefined')Eliminator.decorate(el('ccOptions'),{ns:'cycle:'+ctx.student+':'+ctx.set.setId+':'+label,id:q.id,selector:'.copt'});
       el('ccReason').oninput=predictionStatus;el('ccReason').onchange=predictionStatus;
+      el('ccRecognised').onchange=function(){block.recognised[i]=el('ccRecognised').checked;save(ctx,s);refresh();};
+      el('ccHelp').onchange=function(){block.help[i]=el('ccHelp').value;save(ctx,s);refresh();};
       wire('ccCommit',function(){var value=methodValue();if(block.reasons[i]!==undefined)return;if(!methodReady()){predictionStatus();el('ccReason').focus();return;}block.reasons[i]=value;if(method){block.methodValues=block.methodValues||[];block.methodValues[i]=method.values();}save(ctx,s);refresh();});
       document.querySelectorAll('#ccOptions .copt').forEach(function(b){b.onclick=function(){if(block.reasons[i]===undefined||locked())return;block.answers[i]=Number(b.dataset.i);save(ctx,s);refresh();};});
       wire('ccLock',function(){

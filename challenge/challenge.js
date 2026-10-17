@@ -130,6 +130,7 @@
             '.copt:hover{border-color:#7c3aed}',
             '.copt.right{border-color:#15803d;background:#eef8f0}.copt.wrong{border-color:#b91c1c;background:#fdeced}',
             '.cexpl{background:#f8fafc;border-radius:.6rem;padding:.85rem 1rem;font-size:.88rem;line-height:1.55;white-space:pre-line;margin-top:.6rem}',
+            '.ctable-wrap{overflow-x:auto;margin:.8rem 0}.ctable{width:100%;border-collapse:collapse;background:var(--surface,#fff);font-size:.88rem}.ctable caption{text-align:left;font-weight:700;padding:0 0 .45rem}.ctable th,.ctable td{border:1px solid var(--border,#e2e8f0);padding:.45rem .55rem;text-align:left;vertical-align:top}.ctable th{background:#f8fafc}',
             '.cunscored{font-size:.75rem;color:var(--text-muted,#64748b);font-style:italic;margin-top:.6rem}',
             '#challengeCompletion{background:#f5f3ff;border:1.5px solid #ddd6fe;border-radius:.8rem;padding:.9rem 1.1rem;margin:0 0 1rem}',
         ].join('');

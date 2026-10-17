@@ -28,7 +28,7 @@ async function setup(account,saved){
  function reason(text){$('ccReason').value=text||'the exact relationship between them';$('ccReason').dispatchEvent(new w.Event('input'));$('ccCommit').click();}
  function choose(i){w.document.querySelector('#ccOptions [data-i="'+i+'"]').click();}
  function answer(ref,wrong){const q=bank(ref.bankId);reason();const right=q.answer.charCodeAt(0)-65;choose(wrong?(right+1)%4:right);$('ccLock').click();}
- function next(){$('ccNext').click();}
+ function next(){if($('ccHelp')&&!$('ccHelp').value){$('ccHelp').value='none';$('ccHelp').dispatchEvent(new w.Event('change'));}$('ccNext').click();}
  function storage(){const out={};for(let i=0;i<w.localStorage.length;i++){const k=w.localStorage.key(i);out[k]=w.localStorage.getItem(k);}return out;}
  function close(){ok(errors.length===0,'no browser runtime errors: '+errors.join('; '));dom.window.close();}
  w.openChallenge();
@@ -56,7 +56,7 @@ async function main(){
  ok($('ccOptions').style.display==='none'&&$('ccLock').style.display==='none','prediction precedes the choices');
  t.reason('x');ok($('ccOptions').style.display==='none'&&$('ccStatus').textContent.includes('at least two words'),'a one-word reason does not open the choices');
  t.answer(p.cycles[0].model);
- ok($('ccFeedback').textContent.includes(t.bank(p.cycles[0].model.bankId)?'Your prediction':'')&&$('ccFeedback').textContent.includes(p.cycles[0].model.explanation.slice(0,30)),'worked example shows its explanation straight after the answer');
+ ok($('ccFeedback').textContent.includes('Your method notes')&&$('ccFeedback').textContent.includes(p.cycles[0].model.explanation.slice(0,30)),'worked example shows its explanation straight after the answer');
  t.next();
  // ── Checks: right / not yet, no explanation until the third ───
  const c0=p.cycles[0].checks;
@@ -67,7 +67,7 @@ async function main(){
  ok(/Right\./.test($('ccFeedback').textContent)&&$('ccReason').disabled,'reload keeps the locked answer and its verdict');
  t.next();t.answer(c0[1],true);ok(/Not yet\./.test($('ccFeedback').textContent)&&!$('ccFeedback').textContent.includes('Your choice'),'a wrong check shows Not yet, with no explanation or hint');
  t.next();t.answer(c0[2]);t.next();
- ok(text(t).includes('2 of 3 right')&&text(t).includes('name the step')&&text(t).includes('Your prediction'),'after the third: score, the 2/3 routing rule, and every explanation');
+ ok(text(t).includes('2 of 3 right')&&text(t).includes('name the step')&&text(t).includes('Your method notes'),'after the third: score, the 2/3 routing rule, and every explanation');
  ok($('ccReserve')&&!$('ccSkip'),'2/3 offers a different example but no skip of part 2');
  $('ccReserve').click();t.answer(p.cycles[0].reserves[0]);ok($('ccFeedback').textContent.includes('Your choice'),'the repair example explains straight away');t.next();
  ok(text(t).includes('Different example'),'results list the repair example separately');
