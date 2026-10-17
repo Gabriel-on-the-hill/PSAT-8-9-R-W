@@ -18,7 +18,8 @@ async function setup(account,saved){
  if(saved)Object.entries(saved).forEach(([k,v])=>w.localStorage.setItem(k,v));
  function inject(s){const e=w.document.createElement('script');e.textContent=s;w.document.body.appendChild(e);}
  inject(read('challenge/sets.js'));
- if(!account)account=Object.keys(w.CHALLENGE_SETS).find(n=>w.CHALLENGE_SETS[n].at(-1).learningPath?.cycles);
+ // The standard-shape walk below uses the latest two-part route; a Final-week route has its own block at the end.
+ if(!account)account=Object.keys(w.CHALLENGE_SETS).find(n=>{const lp=w.CHALLENGE_SETS[n].at(-1).learningPath;return lp?.cycles&&lp.variant!=='final-week';});
  w.sessionStorage.setItem('psat89_user',account);
  for(const f of SCRIPTS)inject(read(f));
  inject('window.__peek=function(){return {questions:activeQuestions,mode:userMode,timer:countdownRemaining,timerMode:timerMode,bank:questionBank,answers:responses};};window.__expire=function(){countdownRemaining=0;handleTimeUp();};');
@@ -100,6 +101,32 @@ async function main(){
  ok($('ccSkip'),'the tutor can skip part 2 after a failed part 1');$('ccSkip').click();
  ok(!$('ccCycle1')&&text(t).includes('skipped today')&&$('ccOff')&&!$('ccTimed'),'a skipped part keeps the mixed check untimed (untimed before timed)');
  $('ccOff').click();peek=w.__peek();ok(peek.mode==='exam'&&peek.timerMode==='off'&&$('timerDisplay').classList.contains('hidden'),'clock-off mixed check hides the timer');
+ t.close();
+ // ── Final-week variant: one repair cycle, then the timed rehearsal whatever the cycle scored ──
+ const FW=(()=>{const g={window:{}};require('vm').runInNewContext(read('challenge/sets.js'),g);return Object.keys(g.window.CHALLENGE_SETS).find(n=>g.window.CHALLENGE_SETS[n].at(-1).learningPath?.variant==='final-week');})();
+ {const g={window:{}};require('vm').runInNewContext(read('challenge/sets.js'),g);
+  const all=Object.values(g.window.CHALLENGE_SETS).flat().filter(s=>s.learningPath);
+  ok(all.every(s=>s.learningPath.clockGate!==false||s.learningPath.variant==='final-week'),'clockGate:false appears only on a Final-week route');}
+ if(!FW){console.log('NOTE — no account has a Final-week route as its latest set; that block skipped.');return;}
+ t=await setup(FW);({w,$,p,set}=t);
+ {const c=p.cycles[0];
+  const ids=[p.opening.bankId,c.model.bankId].concat(c.checks.map(q=>q.bankId),(c.reserves||[]).map(q=>q.bankId),(p.spares||[]).map(q=>q.bankId),p.transfer);
+  ok(ids.every(id=>t.bank(id)),'final-week: every route id resolves in the bank');
+  ok(new Set(ids).size===ids.length,'final-week: opening, cycle, reserves, spares and the timed set never share an item');
+  ok(p.cycles.length===1&&c.checks.length===3,'final-week: one repair cycle of three checks');
+  ok(set.ids.join()===p.transfer.join()&&p.transfer.length>=4&&p.transfer.length<=14,'final-week: the timed set is the scored list, at most half a module');
+  ok(p.mixedSeconds>=p.transfer.length*60&&p.mixedSeconds<=p.transfer.length*80,'final-week: the clock is at real test pace (about 71 s a question)');
+  ok(p.clockGate===false,'final-week: the clock is not gated on the cycle score');}
+ ok($('ccOpening')&&!$('ccCycle0')&&!$('ccOff'),'final-week: the opening question comes first');
+ $('ccOpening').click();t.answer(p.opening);t.next();
+ ok($('ccCycle0'),'final-week: the cycle opens after the opening question');
+ $('ccCycle0').click();t.answer(p.cycles[0].model);t.next();
+ p.cycles[0].checks.forEach(q=>{t.answer(q,true);t.next();});
+ ok(text(t).includes('0 of 3 right'),'final-week: a failed cycle still reports its score and repair rule');
+ $('ccHome').click();
+ ok($('ccTimed')&&$('ccTimed').textContent.includes(p.transfer.length+' questions, '+Math.round(p.mixedSeconds/60)+' minutes'),'final-week: 0 of 3 still offers the timed rehearsal');
+ $('ccTimed').click();{const peek=w.__peek();
+  ok(peek.mode==='exam'&&peek.timer===p.mixedSeconds&&peek.questions.map(q=>q.id).join()===p.transfer.join(),'final-week: the rehearsal runs in the exam runner, in test order, on its clock');}
  t.close();
 }
 main().then(()=>console.log('ALL '+count+' ASSERTIONS PASSED')).catch(e=>{console.error(e);process.exit(1);});

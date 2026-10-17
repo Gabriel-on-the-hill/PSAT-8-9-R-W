@@ -85,17 +85,18 @@ const HOMEWORK = {
   },
 
   // Faith — week of 12 Oct 2026, exam Tue 20 Oct. Tutor notes: Faith/Homework Recommendation - 12 Oct 2026.md.
-  // Day 15 (sections) is unchanged. Days 18/19/20/23 are precise `slots` sets, one opening a day
-  // on its calendar date (start 2026-09-26 → Day 18 = Tue 13, 19 = Wed 14, 20 = Thu 15, 23 = Sun 18).
-  // Chain: untimed method rep (18) → same skills at 71 s/q (19) → full module, 27 in 32 min, run on a
-  // booked call (20) → Medium-only paced confidence set (23). Review is explicit (two delayed misses in 18).
-  // heldIds: Bluebook-matched items and the 10 Oct class-route items stay out of every precise draw.
+  // Day 15 (sections) is unchanged. Days 18/19/23 are precise `slots` sets, one opening a day
+  // on its calendar date (start 2026-09-26 → Day 18 = Tue 13, 19 = Wed 14, 23 = Sun 18).
+  // Chain: untimed method rep (18) → same skills at 71 s/q (19) → module back half (Q15–27) timed in the
+  // 17 Oct class route → module front half (Q1–14), 14 in 17 min (23). Day 20 removed 17 Oct: timed
+  // rehearsals run inside class time, never as homework. Review is explicit (two delayed misses in 18).
+  // heldIds: Bluebook-matched items and the 10 and 17 Oct class-route items stay out of every precise draw.
   "Faith": {
-    title: "Test week — short sets, then a full timed module",
+    title: "Test week — short sets, then a module in two halves",
     start: "2026-09-26",
     through: "2026-10-19",
     unlock: "cumulative",
-    heldIds: ["037ca0e3", "08241402", "0906d0e9", "12439831", "1318fdb1", "25e55fc4", "2b2bcae4", "2d2cbb86", "327a94c9", "416dc9e5", "436f939d", "4445ca92", "496aaf68", "50fcd5b9", "53c9ecdf", "610faed3", "748e3f2e", "74e1f4aa", "7905cdfd", "7923766b", "898ccd6c", "9452459b", "9c5e75b6", "a91c661e", "adac21ac", "b2752304", "b33e3d13", "b5fe1485", "b6306a5e", "bf0d6766", "c272488a", "c31e12f5", "ddc6182b", "e07ee967", "efc485e8", "f49dd3d5", "f5554e1a"],
+    heldIds: ["037ca0e3", "03fac32d", "08241402", "0906d0e9", "12439831", "1318fdb1", "25e55fc4", "2b2bcae4", "2d2cbb86", "327a94c9", "35541d09", "416dc9e5", "41ad9634", "436f939d", "4445ca92", "496aaf68", "4b752f9e", "4d8edd97", "4ea959e8", "50fcd5b9", "530e1b55", "53c9ecdf", "55ccbcd9", "610faed3", "748e3f2e", "74e1f4aa", "7905cdfd", "7923766b", "795f82e0", "898ccd6c", "9145aba0", "9452459b", "9c5e75b6", "9f8d0acb", "a0ea5596", "a30567fd", "a91c661e", "aa76c2b1", "ad601e7d", "adac21ac", "adb959d5", "b2752304", "b33e3d13", "b5fe1485", "b6306a5e", "bf0d6766", "c272488a", "c31e12f5", "cb3c6dd5", "d8635251", "ddc6182b", "e07ee967", "e45736e2", "efc485e8", "f0e50576", "f49dd3d5", "f5141f88", "f5554e1a", "fa795825"],
     days: [
       { n:15, focus:"Set 1 — relationships, main idea and sentence spines, no clock", minutes:0,
         sections:[
@@ -126,7 +127,7 @@ const HOMEWORK = {
           {"skills": ["Transitions"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "29dd7b26", "reserveIds": ["b2934aaa", "167ae50b"], "allowPool": false},
         ],
         tip:"Opens Wednesday. Six questions, seven minutes: the real test's pace, about seventy seconds each.\nStill say to yourself what the answer has to do before you look at the choices.\nIf a question passes about seventy-five seconds, pick the best choice, flag it, move on. Never leave a blank.\nUse the time. Finishing with more than three minutes left means you rushed.\nKeep going to the results screen, or it doesn't save." },
-      { n:20, focus:"Set 4 — full timed module with Mr. on the call (booked)", minutes:32, review:0,
+      { n:23, focus:"Set 5 — questions 1 to 14 of a module, on the clock", minutes:17, review:0,
         slots:[
           {"skills": ["Words in Context"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "1fe42bd4", "reserveIds": ["f5cd59f3", "80025650"], "allowPool": false},
           {"skills": ["Words in Context"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "5c80bb1c", "reserveIds": ["cc7c67b3", "95d55b5e"], "allowPool": false},
@@ -142,31 +143,8 @@ const HOMEWORK = {
           {"skills": ["Command of Evidence — Quantitative"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "12ab9acf", "reserveIds": ["f3f5de3c", "4c90d0f0"], "allowPool": false},
           {"skills": ["Command of Evidence — Quantitative"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "5b585115", "reserveIds": ["7aefd1b2", "dfc317a2"], "allowPool": false},
           {"skills": ["Inferences"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "29546833", "reserveIds": ["a5076a43", "496b1927"], "allowPool": false},
-          {"skills": ["Boundaries"], "diffs": ["Medium"], "ruleType": "Commas", "intent": "fresh", "preferredId": "35541d09", "reserveIds": ["ec600740", "e98847d4"], "allowPool": false},
-          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Semi", "intent": "fresh", "preferredId": "fa795825", "reserveIds": ["e3051a8e", "3b93a177"], "allowPool": false},
-          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "NoPunct", "intent": "fresh", "preferredId": "41ad9634", "reserveIds": ["c2a8dd7d", "281b76ba"], "allowPool": false},
-          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Commas", "intent": "fresh", "preferredId": "a0ea5596", "reserveIds": ["3c238600", "95aee254"], "allowPool": false},
-          {"skills": ["Form, Structure, and Sense"], "diffs": ["Medium"], "ruleType": "VForm", "intent": "fresh", "preferredId": "530e1b55", "reserveIds": ["392848bf", "dc712bbf"], "allowPool": false},
-          {"skills": ["Form, Structure, and Sense"], "diffs": ["Hard"], "ruleType": "VForm", "intent": "fresh", "preferredId": "55ccbcd9", "reserveIds": ["f3290e7d", "b8a4eae1"], "allowPool": false},
-          {"skills": ["Form, Structure, and Sense"], "diffs": ["Hard"], "ruleType": "SVA", "intent": "fresh", "preferredId": "9f8d0acb", "reserveIds": ["ab9270d9", "6e014516"], "allowPool": false},
-          {"skills": ["Transitions"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "e45736e2", "reserveIds": ["27d79d34", "607fe98c"], "allowPool": false},
-          {"skills": ["Transitions"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "d8635251", "reserveIds": ["97204b3c", "82b8b285"], "allowPool": false},
-          {"skills": ["Transitions"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "adb959d5", "reserveIds": ["8391c507", "8056b5f8"], "allowPool": false},
-          {"skills": ["Rhetorical Synthesis"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "4d8edd97", "reserveIds": ["76725790", "0027950d"], "allowPool": false},
-          {"skills": ["Rhetorical Synthesis"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "aa76c2b1", "reserveIds": ["df4ccc47", "603e0856"], "allowPool": false},
-          {"skills": ["Rhetorical Synthesis"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "f5141f88", "reserveIds": ["5a0672df", "c6763188"], "allowPool": false},
         ],
-        tip:"Thursday, at the time we book together, with me on the call. Do not start it alone.\nTwenty-seven questions in thirty-two minutes, in test order: a full module, like the real one.\nHave your scratch paper and your pacing plan written at the top:\n1. About seventy-five seconds, then pick, flag and move.\n2. Question 14 done with about sixteen minutes left.\n3. At question 20 with under six minutes left, jump to the last questions (the notes ones), then come back.\nWrite a quick note of what each answer must do on the paper as you go.\nKeep going to the results screen, or it doesn't save." },
-      { n:23, focus:"Set 5 — steady six at test pace, two days before the test", minutes:7, review:0,
-        slots:[
-          {"skills": ["Words in Context"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "2f08e056", "reserveIds": ["4975287b", "8d6335c5"], "allowPool": false},
-          {"skills": ["Central Ideas and Details"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "83b074cc", "reserveIds": ["2a1e59e3", "467fb475"], "allowPool": false},
-          {"skills": ["Boundaries"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "59f8e37f", "reserveIds": ["f281f151", "f4d1cea7"], "allowPool": false},
-          {"skills": ["Form, Structure, and Sense"], "diffs": ["Medium"], "ruleType": "VForm", "intent": "fresh", "preferredId": "a4a5bb86", "reserveIds": ["0173be83", "351084bd"], "allowPool": false},
-          {"skills": ["Transitions"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "f7dcc617", "reserveIds": ["4b4a5906", "5d05716d"], "allowPool": false},
-          {"skills": ["Rhetorical Synthesis"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "81f94a8d", "reserveIds": ["f80c991d", "c28b909d"], "allowPool": false},
-        ],
-        tip:"Opens Sunday. Six questions, seven minutes. No new topics: a short, steady run two days before the test.\nSame routine as Thursday: say what the answer must do, about seventy-five seconds, flag and move.\nThen stop for the day. Monday is for rest and getting your device and login ready.\nKeep going to the results screen, or it doesn't save." },
+        tip:"Opens Sunday. Fourteen questions in seventeen minutes: the first half of a module, in test order. You did the second half in class on Saturday, so together that is a full module.\nWrite your pacing rule at the top of your paper first:\n1. Name the job before the choices: grammar, find the subject and its main verb; transitions, what the sentence after the blank does to the one before it.\n2. About seventy-five seconds, then pick, flag and move. Never leave a blank.\n3. Question 14 done with about sixteen minutes left on a real test. Here, that is the end of the clock.\nThen stop for the day. Monday is for rest.\nKeep going to the results screen, or it doesn't save." },
     ]
   },
   "Gabe": {

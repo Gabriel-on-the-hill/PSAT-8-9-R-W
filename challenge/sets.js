@@ -2229,3 +2229,73 @@ window.CHALLENGE_SETS["Luke"].push({
     "transfer": ["473808bd", "e4236503", "bd36d75d", "dd948d66"]
   }
 });
+
+// Faith, 17 Oct 2026: last class before the exam (Session Plan Standard, Final-week + Pacing variants).
+// Opening retrieval, one repair cycle that shows both outcomes of the verb check side by side, then a timed
+// run of the back half of a module (Q15–27 order, 13 items in 16:00). clockGate:false keeps that clock
+// available whatever the cycle scored. All items unseen by her as of the 17 Oct sheet except the model,
+// which is her own earlier miss, used as the repair example. Tutor rationale lives outside this repo.
+window.CHALLENGE_SETS["Faith"].push({
+  "setId": "faith-cycles-route-20261017",
+  "title": "One main verb, then the clock",
+  "source": "Class route",
+  "date": "2026-10-17",
+  "tileIntro": "One opening question, one short part on verbs, then the back half of a module on the clock.",
+  "ids": ["35541d09", "fa795825", "41ad9634", "a0ea5596", "530e1b55", "55ccbcd9", "9f8d0acb", "e45736e2", "d8635251", "adb959d5", "4d8edd97", "aa76c2b1", "f5141f88"],
+  "learningPath": {
+    "variant": "final-week",
+    "clockGate": false,
+    "protectedTransfer": true,
+    "singleCredit": true,
+    "mixedSeconds": 960,
+    "intro": "Work with your tutor. One opening question, one short part on verbs, then questions 15 to 27 of a module on a real clock. Name the job before the choices appear.",
+    "order": "Opening question → verbs: one clause, one main verb → write your pacing rule → 13 questions in 16 minutes → review → your test-day plan.",
+    "close": "Tell your tutor the verb check and your pacing rule in your own words. Then look at Sunday's set on your hub together.",
+    "opening": {
+      "bankId": "f0e50576",
+      "stage": "Opening question · notes closed",
+      "minReasonWords": 2,
+      "reasonPrompt": "Before the choices: what does the sentence after the blank do to the sentence before it?"
+    },
+    "cycles": [
+      {
+        "id": "A",
+        "title": "One clause, one main verb",
+        "outcomes": [
+          { "label": "The main verb is already there, so the blank only describes (an -ing or to- form)", "ids": ["4b752f9e", "cb3c6dd5", "a30567fd"] },
+          { "label": "No main verb yet, so the blank is the main verb and it matches its subject", "ids": ["4ea959e8", "03fac32d", "795f82e0"] }
+        ],
+        "model": {
+          "bankId": "4b752f9e",
+          "stage": "From your practice: try it again",
+          "minReasonWords": 2,
+          "responseProfile": {
+            "title": "One clause, one main verb",
+            "instructions": "Before the choices: find the subject, then look for its main verb anywhere in the sentence, even far after the blank.",
+            "phase": "before-options",
+            "fields": [
+              { "id": "subject", "label": "Subject" },
+              { "id": "mainverb", "label": "Its main verb, already in the sentence (or write none)" },
+              { "id": "blank", "label": "So the blank is: the main verb, or only a description?" }
+            ]
+          },
+          "explanation": "Subject: Richard Serra. Now look for his main verb anywhere in the sentence: assembles (Serra … assembles large-scale steel plates). The main verb is already there, so the blank cannot be a second main verb. It can only describe Serra, so it takes an -ing form, set off by commas: Serra, intending his installations to …, assembles. That is C. D (Serra intends) gives the sentence two main verbs with nothing joining them. The check has two outcomes, and you need both: if the main verb is already there, the blank describes; if there is no main verb yet, the blank IS the main verb and must match its subject. Last week's newspaper and acoustic-wave questions were the second outcome. This one is the first."
+        },
+        "checks": [
+          { "bankId": "cb3c6dd5", "stage": "Verbs", "minReasonWords": 2, "reasonPrompt": "Before the choices: name the subject and its main verb, or write none. Then say whether the blank is the main verb or only a description." },
+          { "bankId": "4ea959e8", "stage": "Verbs", "minReasonWords": 2, "reasonPrompt": "Before the choices: name the subject and its main verb, or write none. Then say whether the blank is the main verb or only a description." },
+          { "bankId": "03fac32d", "stage": "Verbs", "minReasonWords": 2, "reasonPrompt": "Before the choices: name the subject and its main verb, or write none. Then say whether the blank is the main verb or only a description." }
+        ],
+        "reserves": [
+          { "bankId": "a30567fd", "stage": "A different example", "minReasonWords": 2, "reasonPrompt": "Before the choices: name the subject and its main verb, or write none. Then say whether the blank is the main verb or only a description." },
+          { "bankId": "795f82e0", "stage": "A different example", "minReasonWords": 2, "reasonPrompt": "Before the choices: name the subject and its main verb, or write none. Then say whether the blank is the main verb or only a description." }
+        ]
+      }
+    ],
+    "spares": [
+      { "bankId": "ad601e7d", "stage": "Tutor spare: transitions", "minReasonWords": 2, "reasonPrompt": "Before the choices: what does the sentence after the blank do to the sentence before it?" },
+      { "bankId": "9145aba0", "stage": "Tutor spare: transitions", "minReasonWords": 2, "reasonPrompt": "Before the choices: what does the sentence after the blank do to the sentence before it?" }
+    ],
+    "transfer": ["35541d09", "fa795825", "41ad9634", "a0ea5596", "530e1b55", "55ccbcd9", "9f8d0acb", "e45736e2", "d8635251", "adb959d5", "4d8edd97", "aa76c2b1", "f5141f88"]
+  }
+});
