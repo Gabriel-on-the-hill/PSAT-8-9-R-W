@@ -127,6 +127,13 @@ async function main(){
  ok($('ccTimed')&&$('ccTimed').textContent.includes(p.transfer.length+' questions, '+Math.round(p.mixedSeconds/60)+' minutes'),'final-week: 0 of 3 still offers the timed rehearsal');
  $('ccTimed').click();{const peek=w.__peek();
   ok(peek.mode==='exam'&&peek.timer===p.mixedSeconds&&peek.questions.map(q=>q.id).join()===p.transfer.join(),'final-week: the rehearsal runs in the exam runner, in test order, on its clock');}
+ // Opened then closed: the saved sitting is gone, so Resume cannot work; the tutor can restart it.
+ w.clearSessionState();{const closed=t.storage();t.close();t=await setup(FW,closed);({w,$,p}=t);}
+ ok($('ccResume'),'an opened mixed check offers Resume after a reload');
+ $('ccResume').click();
+ ok($('ccRestart')&&text(t).includes("can't be resumed"),'a lost sitting explains itself and offers the tutor restart');
+ $('ccRestart').click();{const peek=w.__peek();
+  ok(peek.mode==='exam'&&peek.timer===p.mixedSeconds&&peek.questions.map(q=>q.id).join()===p.transfer.join(),'the restart reopens the same items from question 1 with the same clock');}
  t.close();
 }
 main().then(()=>console.log('ALL '+count+' ASSERTIONS PASSED')).catch(e=>{console.error(e);process.exit(1);});
