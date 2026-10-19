@@ -2332,7 +2332,7 @@ window.CHALLENGE_SETS["Luke"].push({
         "id": "A",
         "title": "Is there a full sentence on each side?",
         "outcomes": [
-          { "label": "A full sentence on both sides, so a semicolon or a period (a comma alone is not enough)", "ids": ["a181c44b", "53295319", "3b93a177"] },
+          { "label": "A full sentence on both sides, so a semicolon or a period, or a colon when the right side explains the left (a comma alone is never enough)", "ids": ["a181c44b", "53295319", "3b93a177"] },
           { "label": "One side is not a full sentence, so no semicolon: a colon if the left side is full and the right side explains or lists, otherwise a comma or nothing", "ids": ["610faed3", "6d07e4e3", "785a7162"] }
         ],
         "model": {
@@ -2349,7 +2349,7 @@ window.CHALLENGE_SETS["Luke"].push({
               { "id": "mark", "label": "So which marks are allowed here?" }
             ]
           },
-          "explanation": "Before the blank: what had started … had grown into something far more extensive. Subject what had started, real verb had grown. Full sentence: yes. After the blank: a network of such committees that … helped lay the groundwork. There is no real verb for a network; helped belongs to that. Full sentence: no. One side is not a full sentence, so a semicolon is out, and so is a period. The left side is full and the right side explains what it had grown into, so a colon: A. The check has two outcomes, and you need both. Full sentence on BOTH sides: a semicolon or a period, never a comma alone (the golden orb-weaver question last week). Full sentence on ONE side only: no semicolon. If you write no for either side, cross out every semicolon before you choose."
+          "explanation": "Before the blank: what had started … had grown into something far more extensive. Subject what had started, real verb had grown. Full sentence: yes. After the blank: a network of such committees that … helped lay the groundwork. There is no real verb for a network; helped belongs to that. Full sentence: no. One side is not a full sentence, so a semicolon is out, and so is a period. The left side is full and the right side explains what it had grown into, so a colon: A. The check has two outcomes, and you need both. Full sentence on BOTH sides: a semicolon or a period (or a colon if the right side explains the left), never a comma alone (the golden orb-weaver question last week). Full sentence on ONE side only: no semicolon. If you write no for either side, cross out every semicolon before you choose."
         },
         "checks": [
           { "bankId": "6d07e4e3", "stage": "Punctuation", "minReasonWords": 2, "reasonPrompt": "Before the choices: full sentence before the blank? After it? Then the mark that is allowed." },
