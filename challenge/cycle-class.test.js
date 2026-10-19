@@ -24,6 +24,7 @@ async function setup(account,saved){
  for(const f of SCRIPTS)inject(read(f));
  inject('window.__peek=function(){return {questions:activeQuestions,mode:userMode,timer:countdownRemaining,timerMode:timerMode,bank:questionBank,answers:responses};};window.__expire=function(){countdownRemaining=0;handleTimeUp();};');
  if(w.document.readyState==='loading')await new Promise(r=>w.document.addEventListener('DOMContentLoaded',r));
+ if(!account)return {};
  const set=w.CHALLENGE_SETS[account].at(-1),p=set.learningPath;
  const bank=id=>w.__peek().bank.find(q=>q.id===id);
  function reason(text){$('ccReason').value=text||'the exact relationship between them';$('ccReason').dispatchEvent(new w.Event('input'));$('ccCommit').click();}
@@ -38,8 +39,9 @@ async function setup(account,saved){
 function text(t){return t.$('challengeScreen').textContent;}
 async function main(){
  let t=await setup();
- if(!t.account||!t.p){console.log('SKIP — no account has a cycles route.');return;}
- let {w,$,p,set,account}=t;
+ let w,$,p,set,account;
+ if(!t.account||!t.p){console.log('SKIP — no account has a standard cycles route as its latest set; standard walk skipped.');}
+ else {({w,$,p,set,account}=t);
  // ── Data contract ─────────────────────────────────────────────
  const parts=p.cycles.flatMap(c=>[c].concat(c.alternate?[c.alternate]:[]));
  const ids=parts.flatMap(c=>[c.model.bankId].concat(c.checks.map(q=>q.bankId),(c.reserves||[]).map(q=>q.bankId))).concat(p.transfer);
@@ -102,13 +104,15 @@ async function main(){
  ok(!$('ccCycle1')&&text(t).includes('skipped today')&&$('ccOff')&&!$('ccTimed'),'a skipped part keeps the mixed check untimed (untimed before timed)');
  $('ccOff').click();peek=w.__peek();ok(peek.mode==='exam'&&peek.timerMode==='off'&&$('timerDisplay').classList.contains('hidden'),'clock-off mixed check hides the timer');
  t.close();
+ }
  // ── Final-week variant: one repair cycle, then the timed rehearsal whatever the cycle scored ──
- const FW=(()=>{const g={window:{}};require('vm').runInNewContext(read('challenge/sets.js'),g);return Object.keys(g.window.CHALLENGE_SETS).find(n=>g.window.CHALLENGE_SETS[n].at(-1).learningPath?.variant==='final-week');})();
+ const FW=(()=>{const g={window:{}};require('vm').runInNewContext(read('challenge/sets.js'),g);return Object.keys(g.window.CHALLENGE_SETS).filter(n=>g.window.CHALLENGE_SETS[n].at(-1).learningPath?.variant==='final-week');})();
  {const g={window:{}};require('vm').runInNewContext(read('challenge/sets.js'),g);
   const all=Object.values(g.window.CHALLENGE_SETS).flat().filter(s=>s.learningPath);
   ok(all.every(s=>s.learningPath.clockGate!==false||s.learningPath.variant==='final-week'),'clockGate:false appears only on a Final-week route');}
- if(!FW){console.log('NOTE — no account has a Final-week route as its latest set; that block skipped.');return;}
- t=await setup(FW);({w,$,p,set}=t);
+ if(!FW.length){console.log('NOTE — no account has a Final-week route as its latest set; that block skipped.');return;}
+ for(const fw of FW){
+ t=await setup(fw);({w,$,p,set}=t);
  {const c=p.cycles[0];
   const ids=[p.opening.bankId,c.model.bankId].concat(c.checks.map(q=>q.bankId),(c.reserves||[]).map(q=>q.bankId),(p.spares||[]).map(q=>q.bankId),p.transfer);
   ok(ids.every(id=>t.bank(id)),'final-week: every route id resolves in the bank');
@@ -128,12 +132,13 @@ async function main(){
  $('ccTimed').click();{const peek=w.__peek();
   ok(peek.mode==='exam'&&peek.timer===p.mixedSeconds&&peek.questions.map(q=>q.id).join()===p.transfer.join(),'final-week: the rehearsal runs in the exam runner, in test order, on its clock');}
  // Opened then closed: the saved sitting is gone, so Resume cannot work; the tutor can restart it.
- w.clearSessionState();{const closed=t.storage();t.close();t=await setup(FW,closed);({w,$,p}=t);}
+ w.clearSessionState();{const closed=t.storage();t.close();t=await setup(fw,closed);({w,$,p}=t);}
  ok($('ccResume'),'an opened mixed check offers Resume after a reload');
  $('ccResume').click();
  ok($('ccRestart')&&text(t).includes("can't be resumed"),'a lost sitting explains itself and offers the tutor restart');
  $('ccRestart').click();{const peek=w.__peek();
   ok(peek.mode==='exam'&&peek.timer===p.mixedSeconds&&peek.questions.map(q=>q.id).join()===p.transfer.join(),'the restart reopens the same items from question 1 with the same clock');}
  t.close();
+ }
 }
 main().then(()=>console.log('ALL '+count+' ASSERTIONS PASSED')).catch(e=>{console.error(e);process.exit(1);});

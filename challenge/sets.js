@@ -2299,3 +2299,73 @@ window.CHALLENGE_SETS["Faith"].push({
     "transfer": ["35541d09", "fa795825", "41ad9634", "a0ea5596", "530e1b55", "55ccbcd9", "9f8d0acb", "e45736e2", "d8635251", "adb959d5", "4d8edd97", "aa76c2b1", "f5141f88"]
   }
 });
+
+// Luke, 19 Oct 2026: last class before the exam (Session Plan Standard, Final-week variant).
+// Opening retrieval, one repair cycle on sentence boundaries that shows both outcomes of the
+// "full sentence on each side?" check, then a timed back half of a module (13 items in 16:00).
+// clockGate:false keeps the clock whatever the cycle scored. The model is his own earlier miss;
+// every other item is unseen by him as of the 19 Oct sheet. Tutor rationale lives outside this repo.
+window.CHALLENGE_SETS["Luke"].push({
+  "setId": "luke-cycles-route-20261019",
+  "title": "Both sides first, then the clock",
+  "source": "Class route",
+  "date": "2026-10-19",
+  "tileIntro": "One opening question, one short part on punctuation, then the back half of a module on the clock.",
+  "ids": ["fa821b89", "7d92fcc5", "e3ac81a5", "87b8696b", "cc0dcd9a", "11add1e8", "b88a40b6", "49c962ea", "d94990a0", "ebdb4c1d", "9d8d3faf", "b81aa0f6", "412eafc5"],
+  "learningPath": {
+    "variant": "final-week",
+    "clockGate": false,
+    "protectedTransfer": true,
+    "singleCredit": true,
+    "mixedSeconds": 960,
+    "intro": "Work with your tutor. One opening question, one short part on punctuation, then 13 questions on a real clock. Check both sides of the blank before the choices.",
+    "order": "Opening question → punctuation: is there a full sentence on each side? → 13 questions in 16 minutes → review → your test-day plan.",
+    "close": "Tell your tutor the both-sides check and your pacing rule in your own words.",
+    "opening": {
+      "bankId": "e864a04f",
+      "stage": "Opening question · notes closed",
+      "minReasonWords": 2,
+      "reasonPrompt": "Before the choices: what does Text 1 claim in the underlined part, and what would Text 2 say about it?"
+    },
+    "cycles": [
+      {
+        "id": "A",
+        "title": "Is there a full sentence on each side?",
+        "outcomes": [
+          { "label": "A full sentence on both sides, so a semicolon or a period (a comma alone is not enough)", "ids": ["a181c44b", "53295319", "3b93a177"] },
+          { "label": "One side is not a full sentence, so no semicolon: a colon if the left side is full and the right side explains or lists, otherwise a comma or nothing", "ids": ["610faed3", "6d07e4e3", "785a7162"] }
+        ],
+        "model": {
+          "bankId": "610faed3",
+          "stage": "From your practice test: try it again",
+          "minReasonWords": 2,
+          "responseProfile": {
+            "title": "Both sides first",
+            "instructions": "Before the choices: check each side of the blank for a subject and its real verb.",
+            "phase": "before-options",
+            "fields": [
+              { "id": "before", "label": "Before the blank: full sentence? (yes, or no)" },
+              { "id": "after", "label": "After the blank: full sentence? (yes, or no)" },
+              { "id": "mark", "label": "So which marks are allowed here?" }
+            ]
+          },
+          "explanation": "Before the blank: what had started … had grown into something far more extensive. Subject what had started, real verb had grown. Full sentence: yes. After the blank: a network of such committees that … helped lay the groundwork. There is no real verb for a network; helped belongs to that. Full sentence: no. One side is not a full sentence, so a semicolon is out, and so is a period. The left side is full and the right side explains what it had grown into, so a colon: A. The check has two outcomes, and you need both. Full sentence on BOTH sides: a semicolon or a period, never a comma alone (the golden orb-weaver question last week). Full sentence on ONE side only: no semicolon. If you write no for either side, cross out every semicolon before you choose."
+        },
+        "checks": [
+          { "bankId": "6d07e4e3", "stage": "Punctuation", "minReasonWords": 2, "reasonPrompt": "Before the choices: full sentence before the blank? After it? Then the mark that is allowed." },
+          { "bankId": "a181c44b", "stage": "Punctuation", "minReasonWords": 2, "reasonPrompt": "Before the choices: full sentence before the blank? After it? Then the mark that is allowed." },
+          { "bankId": "53295319", "stage": "Punctuation", "minReasonWords": 2, "reasonPrompt": "Before the choices: full sentence before the blank? After it? Then the mark that is allowed." }
+        ],
+        "reserves": [
+          { "bankId": "785a7162", "stage": "A different example", "minReasonWords": 2, "reasonPrompt": "Before the choices: full sentence before the blank? After it? Then the mark that is allowed." },
+          { "bankId": "3b93a177", "stage": "A different example", "minReasonWords": 2, "reasonPrompt": "Before the choices: full sentence before the blank? After it? Then the mark that is allowed." }
+        ]
+      }
+    ],
+    "spares": [
+      { "bankId": "fa795825", "stage": "Tutor spare: punctuation", "minReasonWords": 2, "reasonPrompt": "Before the choices: full sentence before the blank? After it? Then the mark that is allowed." },
+      { "bankId": "efc485e8", "stage": "Tutor spare: verbs", "minReasonWords": 2, "reasonPrompt": "Before the choices: name the subject and its main verb, or write none." }
+    ],
+    "transfer": ["fa821b89", "7d92fcc5", "e3ac81a5", "87b8696b", "cc0dcd9a", "11add1e8", "b88a40b6", "49c962ea", "d94990a0", "ebdb4c1d", "9d8d3faf", "b81aa0f6", "412eafc5"]
+  }
+});
