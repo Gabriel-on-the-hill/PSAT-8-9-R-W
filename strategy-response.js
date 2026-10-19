@@ -53,6 +53,9 @@
         });
       }
     }
+    // House rule (19 Oct 2026): Standard English Conventions questions always show their choices.
+    // The choices are what show which marks or forms are in play, so no route or plan can hide them.
+    if(q&&(q.skill==='Boundaries'||q.skill==='Form, Structure, and Sense'))out.phase='with-options';
     return out;
   }
   function meaningful(value){var v=String(value||'').trim();return !!v && !/^(?:_+|-{2,}|\.{2,})$/.test(v) && /[\p{L}\p{N}]/u.test(v);}

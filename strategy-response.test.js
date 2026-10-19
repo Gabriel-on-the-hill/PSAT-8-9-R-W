@@ -35,6 +35,14 @@ test('prompts do not read the answer, explanations or options to supply method e
  for(const key of ['answer','explanation','options'])Object.defineProperty(guarded,key,{get(){throw Error('answer leakage');}});
  assert.equal(S.profile(guarded).key,'sva');
 });
+test('conventions questions always show their choices; reading questions keep the before-choices phase',()=>{
+ for(const c of [{skill:'Boundaries'},{skill:'Form, Structure, and Sense',ruleType:'SVA'},{skill:'Form, Structure, and Sense',ruleType:'VForm'}]){
+  assert.equal(S.profile(c).phase,'with-options');
+  assert.equal(S.profile(c,{phase:'before-options'}).phase,'with-options','a route or plan cannot hide conventions choices');
+  assert.equal(S.profile(c,S.own('Before anything: what is on each side?')).phase,'with-options');}
+ assert.equal(S.profile({skill:'Words in Context'}).phase,'before-options');
+ assert.equal(S.profile({skill:'Transitions'}).phase,'before-options');
+});
 test('question overrides preserve their timing phase and reject malformed fields',()=>{
  const p=S.profile(q,{phase:'with-options',fields:[{id:'changes',label:'What changes?'},{id:'decider',label:'What decides?'}]});
  assert(S.text(p,{changes:'verb form',decider:'the sentence spine'}).includes('with choices visible'));
@@ -76,7 +84,7 @@ function homework(minutes=0,saved={},response){
 }
 test('homework refuses incomplete agreement fields and persists unfinished drafts',()=>{
  let b=homework();b.advance();const w=b.w,$=id=>w.document.getElementById(id);
- $('predText').value='verbs';$('predGo').click();assert($('opts').classList.contains('hidden'));assert($('predErr').textContent.includes('number'));
+ $('predText').value='verbs';$('predGo').click();assert(!$('opts').classList.contains('hidden'),'conventions choices stay visible while the method is incomplete');assert($('predErr').textContent.includes('number'));
  fill(w);const saved=b.saved();b.close();b=homework(0,saved);
  assert.equal(b.w.document.getElementById('predText').value,'cycle');assert.equal(b.w.document.querySelector('select[data-response-field="number"]').value,'Singular → singular');b.close();
 });
@@ -127,7 +135,7 @@ test('older class learning/check routes retain and log the requested method note
  w.ChallengeLearning.render(ctx);w.document.getElementById('lpLearn').click();fill(w);w.document.getElementById('lpCommit').click();w.document.querySelector('[data-i="0"]').click();w.document.getElementById('lpNext').click();
  assert(posts[0].questions[0].prediction.includes('Controlling subject'));w.document.getElementById('lpGate').click();
  for(let i=0;i<4;i++){fill(w);w.document.getElementById('lpGateCommit').click();w.document.querySelector('[data-i="0"]').click();w.document.getElementById('lpNext').click();}
- assert.equal(posts.at(-1).score,4);assert(posts.at(-1).questions.every(r=>r.prediction==='The exact deciding relationship.'));dom.window.close();
+ assert.equal(posts.at(-1).score,4);assert(posts.at(-1).questions.every(r=>r.prediction==='[Notes with choices visible] The exact deciding relationship.'));dom.window.close();
 });
 if(fs.existsSync(path.join(__dirname,'challenge/cycle-class.js')))test('cycle class saves unfinished drafts and locks the original method response',()=>{
  const dom=new JSDOM('<body></body>',{url:'https://test.local',runScripts:'dangerously'}),w=dom.window,posts=[];
@@ -140,7 +148,7 @@ if(fs.existsSync(path.join(__dirname,'challenge/cycle-class.js')))test('cycle cl
 });
 test('independent checks carry no method checklist; tutor-written prompts are kept as written',()=>{
  const own=S.profile(q,S.own('Your prediction, in your own words'));assert.deepEqual(own.fields.map(f=>f.id),['reason']);assert.equal(own.instructions,'');
- assert.equal(S.text(own,{reason:'singular subject'}),'singular subject');assert.equal(S.complete(own,{reason:'?'}),false);
+ assert.equal(S.text(own,{reason:'singular subject'}),'[Notes with choices visible] singular subject');assert.equal(S.complete(own,{reason:'?'}),false);
  const dom=new JSDOM('<body></body>',{url:'https://test.local',runScripts:'dangerously'}),w=dom.window,posts=[];
  function inject(t){const e=w.document.createElement('script');e.textContent=t;w.document.body.appendChild(e);}
  w.syncSessionToSheet=p=>posts.push(p);w.recordExposure=()=>{};inject(read('strategy-response.js'));

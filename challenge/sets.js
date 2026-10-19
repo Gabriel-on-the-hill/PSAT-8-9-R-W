@@ -2271,8 +2271,8 @@ window.CHALLENGE_SETS["Faith"].push({
           "minReasonWords": 2,
           "responseProfile": {
             "title": "One clause, one main verb",
-            "instructions": "Before the choices: find the subject, then look for its main verb anywhere in the sentence, even far after the blank.",
-            "phase": "before-options",
+            "instructions": "With the choices in view: find the subject, then look for its main verb anywhere in the sentence, even far after the blank.",
+            "phase": "with-options",
             "fields": [
               { "id": "subject", "label": "Subject" },
               { "id": "mainverb", "label": "Its main verb, already in the sentence (or write none)" },
@@ -2282,13 +2282,13 @@ window.CHALLENGE_SETS["Faith"].push({
           "explanation": "Subject: Richard Serra. Now look for his main verb anywhere in the sentence: assembles (Serra … assembles large-scale steel plates). The main verb is already there, so the blank cannot be a second main verb. It can only describe Serra, so it takes an -ing form, set off by commas: Serra, intending his installations to …, assembles. That is C. D (Serra intends) gives the sentence two main verbs with nothing joining them. The check has two outcomes, and you need both: if the main verb is already there, the blank describes; if there is no main verb yet, the blank IS the main verb and must match its subject. Last week's newspaper and acoustic-wave questions were the second outcome. This one is the first."
         },
         "checks": [
-          { "bankId": "cb3c6dd5", "stage": "Verbs", "minReasonWords": 2, "reasonPrompt": "Before the choices: name the subject and its main verb, or write none. Then say whether the blank is the main verb or only a description." },
-          { "bankId": "4ea959e8", "stage": "Verbs", "minReasonWords": 2, "reasonPrompt": "Before the choices: name the subject and its main verb, or write none. Then say whether the blank is the main verb or only a description." },
-          { "bankId": "03fac32d", "stage": "Verbs", "minReasonWords": 2, "reasonPrompt": "Before the choices: name the subject and its main verb, or write none. Then say whether the blank is the main verb or only a description." }
+          { "bankId": "cb3c6dd5", "stage": "Verbs", "minReasonWords": 2, "reasonPrompt": "With the choices in view: name the subject and its main verb, or write none. Then say whether the blank is the main verb or only a description." },
+          { "bankId": "4ea959e8", "stage": "Verbs", "minReasonWords": 2, "reasonPrompt": "With the choices in view: name the subject and its main verb, or write none. Then say whether the blank is the main verb or only a description." },
+          { "bankId": "03fac32d", "stage": "Verbs", "minReasonWords": 2, "reasonPrompt": "With the choices in view: name the subject and its main verb, or write none. Then say whether the blank is the main verb or only a description." }
         ],
         "reserves": [
-          { "bankId": "a30567fd", "stage": "A different example", "minReasonWords": 2, "reasonPrompt": "Before the choices: name the subject and its main verb, or write none. Then say whether the blank is the main verb or only a description." },
-          { "bankId": "795f82e0", "stage": "A different example", "minReasonWords": 2, "reasonPrompt": "Before the choices: name the subject and its main verb, or write none. Then say whether the blank is the main verb or only a description." }
+          { "bankId": "a30567fd", "stage": "A different example", "minReasonWords": 2, "reasonPrompt": "With the choices in view: name the subject and its main verb, or write none. Then say whether the blank is the main verb or only a description." },
+          { "bankId": "795f82e0", "stage": "A different example", "minReasonWords": 2, "reasonPrompt": "With the choices in view: name the subject and its main verb, or write none. Then say whether the blank is the main verb or only a description." }
         ]
       }
     ],
@@ -2318,7 +2318,7 @@ window.CHALLENGE_SETS["Luke"].push({
     "protectedTransfer": true,
     "singleCredit": true,
     "mixedSeconds": 960,
-    "intro": "Work with your tutor. One opening question, one short part on punctuation, then 13 questions on a real clock. Check both sides of the blank before the choices.",
+    "intro": "Work with your tutor. One opening question, one short part on punctuation, then 13 questions on a real clock. Check both sides of the blank before you choose.",
     "order": "Opening question → punctuation: is there a full sentence on each side? → 13 questions in 16 minutes → review → your test-day plan.",
     "close": "Tell your tutor the both-sides check and your pacing rule in your own words.",
     "opening": {
@@ -2341,8 +2341,8 @@ window.CHALLENGE_SETS["Luke"].push({
           "minReasonWords": 2,
           "responseProfile": {
             "title": "Both sides first",
-            "instructions": "Before the choices: check each side of the blank for a subject and its real verb.",
-            "phase": "before-options",
+            "instructions": "With the choices in view: check each side of the blank for a subject and its real verb.",
+            "phase": "with-options",
             "fields": [
               { "id": "before", "label": "Before the blank: full sentence? (yes, or no)" },
               { "id": "after", "label": "After the blank: full sentence? (yes, or no)" },
@@ -2352,19 +2352,19 @@ window.CHALLENGE_SETS["Luke"].push({
           "explanation": "Before the blank: what had started … had grown into something far more extensive. Subject what had started, real verb had grown. Full sentence: yes. After the blank: a network of such committees that … helped lay the groundwork. There is no real verb for a network; helped belongs to that. Full sentence: no. One side is not a full sentence, so a semicolon is out, and so is a period. The left side is full and the right side explains what it had grown into, so a colon: A. The check has two outcomes, and you need both. Full sentence on BOTH sides: a semicolon or a period (or a colon if the right side explains the left), never a comma alone (the golden orb-weaver question last week). Full sentence on ONE side only: no semicolon. If you write no for either side, cross out every semicolon before you choose. One more step when a word like however, though, rather or even so sits at the blank: decide which sentence it belongs to. It goes with the sentence whose meaning it turns, and the semicolon goes on the other side of it."
         },
         "checks": [
-          { "bankId": "6d07e4e3", "stage": "Punctuation", "minReasonWords": 2, "reasonPrompt": "Before the choices: full sentence before the blank? After it? Then the mark that is allowed." },
-          { "bankId": "3b93a177", "stage": "Punctuation", "minReasonWords": 2, "reasonPrompt": "Before the choices: full sentence before the blank? After it? Then the mark that is allowed." },
-          { "bankId": "53295319", "stage": "Punctuation", "minReasonWords": 2, "reasonPrompt": "Before the choices: full sentence before the blank? After it? Then the mark that is allowed." }
+          { "bankId": "6d07e4e3", "stage": "Punctuation", "minReasonWords": 2, "reasonPrompt": "With the choices in view: full sentence before the blank? After it? Then the mark that is allowed." },
+          { "bankId": "3b93a177", "stage": "Punctuation", "minReasonWords": 2, "reasonPrompt": "With the choices in view: full sentence before the blank? After it? Then the mark that is allowed." },
+          { "bankId": "53295319", "stage": "Punctuation", "minReasonWords": 2, "reasonPrompt": "With the choices in view: full sentence before the blank? After it? Then the mark that is allowed." }
         ],
         "reserves": [
-          { "bankId": "785a7162", "stage": "A different example", "minReasonWords": 2, "reasonPrompt": "Before the choices: full sentence before the blank? After it? Then the mark that is allowed." },
-          { "bankId": "a181c44b", "stage": "A different example", "minReasonWords": 2, "reasonPrompt": "Before the choices: full sentence before the blank? After it? Then the mark that is allowed." }
+          { "bankId": "785a7162", "stage": "A different example", "minReasonWords": 2, "reasonPrompt": "With the choices in view: full sentence before the blank? After it? Then the mark that is allowed." },
+          { "bankId": "a181c44b", "stage": "A different example", "minReasonWords": 2, "reasonPrompt": "With the choices in view: full sentence before the blank? After it? Then the mark that is allowed." }
         ]
       }
     ],
     "spares": [
-      { "bankId": "fa795825", "stage": "Tutor spare: punctuation", "minReasonWords": 2, "reasonPrompt": "Before the choices: full sentence before the blank? After it? Then the mark that is allowed." },
-      { "bankId": "efc485e8", "stage": "Tutor spare: verbs", "minReasonWords": 2, "reasonPrompt": "Before the choices: name the subject and its main verb, or write none." }
+      { "bankId": "fa795825", "stage": "Tutor spare: punctuation", "minReasonWords": 2, "reasonPrompt": "With the choices in view: full sentence before the blank? After it? Then the mark that is allowed." },
+      { "bankId": "efc485e8", "stage": "Tutor spare: verbs", "minReasonWords": 2, "reasonPrompt": "With the choices in view: name the subject and its main verb, or write none." }
     ],
     "transfer": ["fa821b89", "7d92fcc5", "e3ac81a5", "87b8696b", "cc0dcd9a", "11add1e8", "b88a40b6", "49c962ea", "d94990a0", "ebdb4c1d", "9d8d3faf", "b81aa0f6", "412eafc5"]
   }
