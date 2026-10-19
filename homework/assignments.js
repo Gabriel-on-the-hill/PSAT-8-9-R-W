@@ -182,58 +182,25 @@ const HOMEWORK = {
     ]
   },
 
-  // Luke — final week, 14–16 Oct 2026, exam Tue 20 Oct. Tutor notes: Luke/Homework_Rec_2026-10-14.md.
-  // Replaces the 12 Oct two-set plan (archived below). Three precise untimed sets, one opening a day
-  // (start 2026-10-14 → Set 1 = Wed 14, Set 2 = Thu 15, Set 3 = Fri 16). The two punctuation sets are
-  // Wed and Fri so tutor feedback on Set 1 lands before the next punctuation practice; Thursday is
-  // reading and expression only, with two practice-test misses as review. The full Bluebook practice test on Sat 17 is the timed sitting, so
-  // no set here is timed. Review is explicit: two delayed punctuation misses in Set 1, one punctuation
-  // and one verb-form miss in Set 3. Boundaries method notes are taken with the choices visible.
+  // Luke — 20 Oct 2026, the night of the 19 Oct class (exam Tue 20 Oct). The five verb questions promised in class.
+  // One untimed set, both outcomes of the main-verb check, choices visible. Tutor notes: Luke/LEDGER.md.
+  // Replaces the 14 Oct three-set plan (archived below).
   "Luke": {
-    title: "Three short sets before the practice test",
-    start: "2026-10-14",
-    through: "2026-10-16",
+    title: "Five verb questions",
+    start: "2026-10-20",
+    through: "2026-10-20",
     unlock: "cumulative",
     days: [
-      { n:1, focus:"Wednesday — punctuation, purpose and two texts, no clock", minutes:0, review:0,
-        responses:{"6d07e4e3":{key:"boundaries", phase:"with-options"}, "d294d324":{key:"boundaries", phase:"with-options"}, "772f062c":{key:"boundaries", phase:"with-options"}, "a181c44b":{key:"boundaries", phase:"with-options"}, "0be4dd74":{key:"boundaries", phase:"with-options"}, "7ac9793d":{key:"boundaries", phase:"with-options"}, "fa795825":{key:"boundaries", phase:"with-options"}, "610faed3":{key:"boundaries", phase:"with-options"}, "be6f3070":{key:"boundaries", phase:"with-options"}, "f10d84ef":{key:"boundaries", phase:"with-options"}, "9e1567fe":{key:"boundaries", phase:"with-options"}},
+      { n:1, focus:"Verbs — is the main verb already there? No clock", minutes:0, review:0,
+        responses:{"e32abb06":{key:"verbForm", phase:"with-options"}, "f49dd3d5":{key:"verbForm", phase:"with-options"}, "dc712bbf":{key:"verbForm", phase:"with-options"}, "2ce70cd2":{key:"verbForm", phase:"with-options"}, "a9f8dd79":{key:"verbForm", phase:"with-options"}, "63141bea":{key:"verbForm", phase:"with-options"}, "7817773e":{key:"verbForm", phase:"with-options"}, "f3290e7d":{key:"verbForm", phase:"with-options"}, "351084bd":{key:"verbForm", phase:"with-options"}, "392848bf":{key:"verbForm", phase:"with-options"}},
         slots:[
-          {"skills": ["Text Structure and Purpose"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "5cb1e7d4", "reserveIds": ["e7b4523e", "f7214ef4"], "allowPool": false},
-          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Colon", "intent": "fresh", "preferredId": "6d07e4e3", "reserveIds": ["d294d324", "772f062c"], "allowPool": false},
-          {"skills": ["Cross-Text Connections"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "e864a04f", "reserveIds": ["005d770c", "369729c4"], "allowPool": false},
-          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Semi", "intent": "review", "preferredId": "fa795825", "reserveIds": ["be6f3070", "f10d84ef"], "allowPool": false},
-          {"skills": ["Form, Structure, and Sense"], "diffs": ["Medium"], "ruleType": "VForm", "intent": "fresh", "preferredId": "cc0dcd9a", "reserveIds": ["0cdbfd0f", "b50e1ec3"], "allowPool": false},
-          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Semi", "intent": "fresh", "preferredId": "a181c44b", "reserveIds": ["0be4dd74", "7ac9793d"], "allowPool": false},
-          {"skills": ["Rhetorical Synthesis"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "9d8d3faf", "reserveIds": ["36246bab", "fedee38c"], "allowPool": false},
-          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Colon", "intent": "review", "preferredId": "610faed3", "reserveIds": ["9e1567fe"], "allowPool": false},
+          {"skills": ["Form, Structure, and Sense"], "diffs": ["Medium"], "ruleType": "VForm", "intent": "fresh", "preferredId": "e32abb06", "reserveIds": ["f49dd3d5"], "allowPool": false},
+          {"skills": ["Form, Structure, and Sense"], "diffs": ["Medium"], "ruleType": "VForm", "intent": "fresh", "preferredId": "dc712bbf", "reserveIds": ["2ce70cd2"], "allowPool": false},
+          {"skills": ["Form, Structure, and Sense"], "diffs": ["Hard"], "ruleType": "VForm", "intent": "fresh", "preferredId": "a9f8dd79", "reserveIds": ["63141bea"], "allowPool": false},
+          {"skills": ["Form, Structure, and Sense"], "diffs": ["Hard"], "ruleType": "VForm", "intent": "fresh", "preferredId": "7817773e", "reserveIds": ["f3290e7d"], "allowPool": false},
+          {"skills": ["Form, Structure, and Sense"], "diffs": ["Medium"], "ruleType": "VForm", "intent": "fresh", "preferredId": "351084bd", "reserveIds": ["392848bf"], "allowPool": false},
         ],
-        tip:"Opens Wednesday. Eight questions, no clock, about fifteen to twenty minutes, in one sitting.\nWrite what decides the answer before you choose. A blank line or a single word doesn't count.\nPurpose: what the exact part DOES, starting with a verb (shows, explains, contrasts, gives an example).\nTwo texts: one line for what each text claims, then how Text 2 would answer Text 1.\nVerbs: does the sentence already have its real verb, or does the blank have to be it?\nPunctuation: look at the choices, then write what sits on each side of the blank (full sentence, or not?) AND which marks that allows. Words ending in -ing can be the subject of a full sentence. Check that the mark you pick matches what you wrote.\nKeep going to the results screen, or it doesn't save." },
-
-      { n:2, focus:"Thursday — words, main idea, inferences, links and goals, no clock", minutes:0, review:0,
-        slots:[
-          {"skills": ["Words in Context"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "7821db13", "reserveIds": ["5c80bb1c", "6d7897fa"], "allowPool": false},
-          {"skills": ["Central Ideas and Details"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "e43225b7", "reserveIds": ["17135825", "6eecc3d4"], "allowPool": false},
-          {"skills": ["Central Ideas and Details"], "diffs": ["Hard"], "intent": "review", "preferredId": "b2752304", "reserveIds": ["7905cdfd", "fb473f4d"], "allowPool": false},
-          {"skills": ["Inferences"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "ab0ec9fa", "reserveIds": ["854807a4", "f2bc29cb"], "allowPool": false},
-          {"skills": ["Transitions"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "49c962ea", "reserveIds": ["7eaa4a96", "a6ee8d2f"], "allowPool": false},
-          {"skills": ["Words in Context"], "diffs": ["Hard"], "intent": "review", "preferredId": "5181c59f", "reserveIds": ["49a892fb", "b16d5265"], "allowPool": false},
-          {"skills": ["Rhetorical Synthesis"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "b81aa0f6", "reserveIds": ["7bf4fe1b", "491d1285"], "allowPool": false},
-        ],
-        tip:"Opens Thursday. Seven questions, no clock, about fifteen minutes. No punctuation today. Two are practice-test questions we went over in class: do them fresh, without looking back.\nBefore you choose, check that your choice answers what the question asked, not just that it is true.\nWords: your own word for the blank first, then sort the choices: fits, doesn't fit, not sure.\nMain idea: topic + point in one line. Then test each choice: is it in the text, and is it the whole point?\nInferences: what must be true from the text, not what could be true.\nTransitions: name what the second sentence does to the first before you look at the words.\nNotes questions: write the goal in the question first, then find the choice that does exactly that.\nKeep going to the results screen, or it doesn't save." },
-
-      { n:3, focus:"Friday — punctuation, purpose, evidence and verbs, no clock", minutes:0, review:0,
-        responses:{"53295319":{key:"boundaries", phase:"with-options"}, "174c3487":{key:"boundaries", phase:"with-options"}, "7e67e829":{key:"boundaries", phase:"with-options"}, "fa821b89":{key:"boundaries", phase:"with-options"}, "b1ee8d09":{key:"boundaries", phase:"with-options"}, "16fa54b2":{key:"boundaries", phase:"with-options"}, "473808bd":{key:"boundaries", phase:"with-options"}, "f10d84ef":{key:"boundaries", phase:"with-options"}, "be6f3070":{key:"boundaries", phase:"with-options"}},
-        slots:[
-          {"skills": ["Text Structure and Purpose"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "b0275cf7", "reserveIds": ["66bee7b8", "b46f4b75"], "allowPool": false},
-          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Semi", "intent": "fresh", "preferredId": "53295319", "reserveIds": ["174c3487", "7e67e829"], "allowPool": false},
-          {"skills": ["Command of Evidence — Textual"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "759cd784", "reserveIds": ["c4972b33", "f339fd26"], "allowPool": false},
-          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Semi", "intent": "review", "preferredId": "473808bd", "reserveIds": ["f10d84ef", "be6f3070"], "allowPool": false},
-          {"skills": ["Command of Evidence — Quantitative"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "fbe4ec84", "reserveIds": ["b9ed9215", "da325f7b"], "allowPool": false},
-          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Semi", "intent": "fresh", "preferredId": "fa821b89", "reserveIds": ["b1ee8d09", "16fa54b2"], "allowPool": false},
-          {"skills": ["Form, Structure, and Sense"], "diffs": ["Hard"], "ruleType": "SVA", "intent": "fresh", "preferredId": "11add1e8", "reserveIds": ["ca1a7097", "9436c09a"], "allowPool": false},
-          {"skills": ["Form, Structure, and Sense"], "diffs": ["Hard"], "ruleType": "VForm", "intent": "review", "preferredId": "efc485e8", "reserveIds": ["9b158590"], "allowPool": false},
-        ],
-        tip:"Opens Friday. Eight questions, no clock, about fifteen to twenty minutes. Saturday is the full practice test, so finish this on Friday.\nPunctuation: words like however, though and even so belong to one side. Decide which side first, then check whether both sides are full sentences. In a list where the items already have commas inside them, semicolons go between the items. Write what is on each side and which marks that allows, then choose.\nPurpose: what the exact part DOES, with a verb.\nEvidence: write the claim, then what the evidence has to show. For a graph, write the comparison and the units.\nVerbs: cross out the extra description, find the subject, one or more than one?\nKeep going to the results screen, or it doesn't save." },
+        tip:"Five verb questions, no clock, about ten minutes, in one sitting tonight. If you haven't started by 1 am, skip it and sleep: tomorrow matters more.\nFor each one: name the subject, then look through the WHOLE sentence for its main verb, even far after the blank.\nMain verb already there? The blank only describes (an -ing, -ed or to- form).\nNo main verb yet? The blank IS the main verb, and it must match its subject.\nThe choices are visible: use them to see what changes, but decide the job of the blank first." },
     ]
   }
 };
@@ -692,6 +659,59 @@ if (typeof window !== "undefined") {
           { skills:["Rhetorical Synthesis"],       diffs:["Hard"],   count:1 },
         ],
         tip:"Opens Tuesday. Do it on a different day from Set 1, at the time you agreed with your tutor. Six questions in test order, seven minutes: the real test's pace, about seventy seconds each.\nUse the time. If you finish with more than three minutes left, you went too fast.\nStill say to yourself what the answer has to do before you look at the choices.\nIf one is taking too long, put something down, flag it, and come back. Never leave a square blank.\nKeep going to the results screen, or it doesn't save." },
+    ]
+  };
+}
+
+// Luke's 14 Oct final-week plan, superseded on 20 Oct by the five verb questions above.
+if (typeof window !== "undefined") {
+  window.HOMEWORK_ARCHIVE = window.HOMEWORK_ARCHIVE || {};
+  window.HOMEWORK_ARCHIVE["Luke"] = window.HOMEWORK_ARCHIVE["Luke"] || {};
+  window.HOMEWORK_ARCHIVE["Luke"]["2026-10-14"] = {
+    title: "Three short sets before the practice test",
+    start: "2026-10-14",
+    through: "2026-10-16",
+    unlock: "cumulative",
+    days: [
+      { n:1, focus:"Wednesday — punctuation, purpose and two texts, no clock", minutes:0, review:0,
+        responses:{"6d07e4e3":{key:"boundaries", phase:"with-options"}, "d294d324":{key:"boundaries", phase:"with-options"}, "772f062c":{key:"boundaries", phase:"with-options"}, "a181c44b":{key:"boundaries", phase:"with-options"}, "0be4dd74":{key:"boundaries", phase:"with-options"}, "7ac9793d":{key:"boundaries", phase:"with-options"}, "fa795825":{key:"boundaries", phase:"with-options"}, "610faed3":{key:"boundaries", phase:"with-options"}, "be6f3070":{key:"boundaries", phase:"with-options"}, "f10d84ef":{key:"boundaries", phase:"with-options"}, "9e1567fe":{key:"boundaries", phase:"with-options"}},
+        slots:[
+          {"skills": ["Text Structure and Purpose"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "5cb1e7d4", "reserveIds": ["e7b4523e", "f7214ef4"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Colon", "intent": "fresh", "preferredId": "6d07e4e3", "reserveIds": ["d294d324", "772f062c"], "allowPool": false},
+          {"skills": ["Cross-Text Connections"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "e864a04f", "reserveIds": ["005d770c", "369729c4"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Semi", "intent": "review", "preferredId": "fa795825", "reserveIds": ["be6f3070", "f10d84ef"], "allowPool": false},
+          {"skills": ["Form, Structure, and Sense"], "diffs": ["Medium"], "ruleType": "VForm", "intent": "fresh", "preferredId": "cc0dcd9a", "reserveIds": ["0cdbfd0f", "b50e1ec3"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Semi", "intent": "fresh", "preferredId": "a181c44b", "reserveIds": ["0be4dd74", "7ac9793d"], "allowPool": false},
+          {"skills": ["Rhetorical Synthesis"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "9d8d3faf", "reserveIds": ["36246bab", "fedee38c"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Colon", "intent": "review", "preferredId": "610faed3", "reserveIds": ["9e1567fe"], "allowPool": false},
+        ],
+        tip:"Opens Wednesday. Eight questions, no clock, about fifteen to twenty minutes, in one sitting.\nWrite what decides the answer before you choose. A blank line or a single word doesn't count.\nPurpose: what the exact part DOES, starting with a verb (shows, explains, contrasts, gives an example).\nTwo texts: one line for what each text claims, then how Text 2 would answer Text 1.\nVerbs: does the sentence already have its real verb, or does the blank have to be it?\nPunctuation: look at the choices, then write what sits on each side of the blank (full sentence, or not?) AND which marks that allows. Words ending in -ing can be the subject of a full sentence. Check that the mark you pick matches what you wrote.\nKeep going to the results screen, or it doesn't save." },
+
+      { n:2, focus:"Thursday — words, main idea, inferences, links and goals, no clock", minutes:0, review:0,
+        slots:[
+          {"skills": ["Words in Context"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "7821db13", "reserveIds": ["5c80bb1c", "6d7897fa"], "allowPool": false},
+          {"skills": ["Central Ideas and Details"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "e43225b7", "reserveIds": ["17135825", "6eecc3d4"], "allowPool": false},
+          {"skills": ["Central Ideas and Details"], "diffs": ["Hard"], "intent": "review", "preferredId": "b2752304", "reserveIds": ["7905cdfd", "fb473f4d"], "allowPool": false},
+          {"skills": ["Inferences"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "ab0ec9fa", "reserveIds": ["854807a4", "f2bc29cb"], "allowPool": false},
+          {"skills": ["Transitions"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "49c962ea", "reserveIds": ["7eaa4a96", "a6ee8d2f"], "allowPool": false},
+          {"skills": ["Words in Context"], "diffs": ["Hard"], "intent": "review", "preferredId": "5181c59f", "reserveIds": ["49a892fb", "b16d5265"], "allowPool": false},
+          {"skills": ["Rhetorical Synthesis"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "b81aa0f6", "reserveIds": ["7bf4fe1b", "491d1285"], "allowPool": false},
+        ],
+        tip:"Opens Thursday. Seven questions, no clock, about fifteen minutes. No punctuation today. Two are practice-test questions we went over in class: do them fresh, without looking back.\nBefore you choose, check that your choice answers what the question asked, not just that it is true.\nWords: your own word for the blank first, then sort the choices: fits, doesn't fit, not sure.\nMain idea: topic + point in one line. Then test each choice: is it in the text, and is it the whole point?\nInferences: what must be true from the text, not what could be true.\nTransitions: name what the second sentence does to the first before you look at the words.\nNotes questions: write the goal in the question first, then find the choice that does exactly that.\nKeep going to the results screen, or it doesn't save." },
+
+      { n:3, focus:"Friday — punctuation, purpose, evidence and verbs, no clock", minutes:0, review:0,
+        responses:{"53295319":{key:"boundaries", phase:"with-options"}, "174c3487":{key:"boundaries", phase:"with-options"}, "7e67e829":{key:"boundaries", phase:"with-options"}, "fa821b89":{key:"boundaries", phase:"with-options"}, "b1ee8d09":{key:"boundaries", phase:"with-options"}, "16fa54b2":{key:"boundaries", phase:"with-options"}, "473808bd":{key:"boundaries", phase:"with-options"}, "f10d84ef":{key:"boundaries", phase:"with-options"}, "be6f3070":{key:"boundaries", phase:"with-options"}},
+        slots:[
+          {"skills": ["Text Structure and Purpose"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "b0275cf7", "reserveIds": ["66bee7b8", "b46f4b75"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Semi", "intent": "fresh", "preferredId": "53295319", "reserveIds": ["174c3487", "7e67e829"], "allowPool": false},
+          {"skills": ["Command of Evidence — Textual"], "diffs": ["Hard"], "intent": "fresh", "preferredId": "759cd784", "reserveIds": ["c4972b33", "f339fd26"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Semi", "intent": "review", "preferredId": "473808bd", "reserveIds": ["f10d84ef", "be6f3070"], "allowPool": false},
+          {"skills": ["Command of Evidence — Quantitative"], "diffs": ["Medium"], "intent": "fresh", "preferredId": "fbe4ec84", "reserveIds": ["b9ed9215", "da325f7b"], "allowPool": false},
+          {"skills": ["Boundaries"], "diffs": ["Hard"], "ruleType": "Semi", "intent": "fresh", "preferredId": "fa821b89", "reserveIds": ["b1ee8d09", "16fa54b2"], "allowPool": false},
+          {"skills": ["Form, Structure, and Sense"], "diffs": ["Hard"], "ruleType": "SVA", "intent": "fresh", "preferredId": "11add1e8", "reserveIds": ["ca1a7097", "9436c09a"], "allowPool": false},
+          {"skills": ["Form, Structure, and Sense"], "diffs": ["Hard"], "ruleType": "VForm", "intent": "review", "preferredId": "efc485e8", "reserveIds": ["9b158590"], "allowPool": false},
+        ],
+        tip:"Opens Friday. Eight questions, no clock, about fifteen to twenty minutes. Saturday is the full practice test, so finish this on Friday.\nPunctuation: words like however, though and even so belong to one side. Decide which side first, then check whether both sides are full sentences. In a list where the items already have commas inside them, semicolons go between the items. Write what is on each side and which marks that allows, then choose.\nPurpose: what the exact part DOES, with a verb.\nEvidence: write the claim, then what the evidence has to show. For a graph, write the comparison and the units.\nVerbs: cross out the extra description, find the subject, one or more than one?\nKeep going to the results screen, or it doesn't save." },
     ]
   };
 }
