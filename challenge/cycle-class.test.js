@@ -11,7 +11,7 @@ let count=0;
 function ok(c,m){assert.ok(c,m);count++;}
 const SCRIPTS=['config.js','progress.js','sheet-sync.js','session-responses.js','storage.js','timer.js','history.js','data-craft-structure.js','data-expression-of-ideas.js','data-info-ideas.js','data-conventions.js','eliminator.js','app.js','homework/assignments.js','challenge/challenge-core.js','challenge/structured-class.js','challenge/cycle-class.js','challenge/class-path.js','challenge/challenge.js'];
 ok(SCRIPTS.filter(f=>f.startsWith('challenge/')||f.startsWith('homework/')).every(f=>read(f.startsWith('homework/')?'homework-hub.html':'index.html').includes('src="'+f+'?v=')),'the pages load every route script this test drives');
-async function setup(account,saved){
+async function setup(account,saved,standard=true){
  const errors=[];
  const dom=new JSDOM(html,{url:'http://localhost/index.html',runScripts:'dangerously',beforeParse(w){w.__posts=[];w.fetch=(u,o)=>{try{w.__posts.push(JSON.parse(o.body));}catch(e){}return Promise.resolve({ok:true});};w.alert=()=>{};w.confirm=()=>true;w.scrollTo=()=>{};w.addEventListener('error',e=>errors.push(e.message));}});
  const w=dom.window,$=id=>w.document.getElementById(id);
@@ -19,7 +19,8 @@ async function setup(account,saved){
  function inject(s){const e=w.document.createElement('script');e.textContent=s;w.document.body.appendChild(e);}
  inject(read('challenge/sets.js'));
  // The standard-shape walk below uses the latest two-part route; a Final-week route has its own block at the end.
- if(!account)account=Object.keys(w.CHALLENGE_SETS).find(n=>{const lp=w.CHALLENGE_SETS[n].at(-1).learningPath;return lp?.cycles&&lp.variant!=='final-week';});
+ if(!account)account=Object.keys(w.CHALLENGE_SETS).find(n=>w.CHALLENGE_SETS[n].some(s=>s.learningPath?.cycles&&s.learningPath.variant!=='final-week'));
+ if(standard&&account){const list=w.CHALLENGE_SETS[account];let i=list.length-1;while(i>=0&&(!list[i].learningPath?.cycles||list[i].learningPath.variant==='final-week'))i--;w.CHALLENGE_SETS[account]=list.slice(0,i+1);}
  w.sessionStorage.setItem('psat89_user',account);
  for(const f of SCRIPTS)inject(read(f));
  inject('window.__peek=function(){return {questions:activeQuestions,mode:userMode,timer:countdownRemaining,timerMode:timerMode,bank:questionBank,answers:responses};};window.__expire=function(){countdownRemaining=0;handleTimeUp();};');
@@ -112,7 +113,7 @@ async function main(){
   ok(all.every(s=>s.learningPath.clockGate!==false||s.learningPath.variant==='final-week'),'clockGate:false appears only on a Final-week route');}
  if(!FW.length){console.log('NOTE — no account has a Final-week route as its latest set; that block skipped.');return;}
  for(const fw of FW){
- t=await setup(fw);({w,$,p,set}=t);
+ t=await setup(fw,undefined,false);({w,$,p,set}=t);
  {const c=p.cycles[0];
   const ids=[p.opening.bankId,c.model.bankId].concat(c.checks.map(q=>q.bankId),(c.reserves||[]).map(q=>q.bankId),(p.spares||[]).map(q=>q.bankId),p.transfer);
   ok(ids.every(id=>t.bank(id)),'final-week: every route id resolves in the bank');
@@ -132,7 +133,7 @@ async function main(){
  $('ccTimed').click();{const peek=w.__peek();
   ok(peek.mode==='exam'&&peek.timer===p.mixedSeconds&&peek.questions.map(q=>q.id).join()===p.transfer.join(),'final-week: the rehearsal runs in the exam runner, in test order, on its clock');}
  // Opened then closed: the saved sitting is gone, so Resume cannot work; the tutor can restart it.
- w.clearSessionState();{const closed=t.storage();t.close();t=await setup(fw,closed);({w,$,p}=t);}
+ w.clearSessionState();{const closed=t.storage();t.close();t=await setup(fw,closed,false);({w,$,p}=t);}
  ok($('ccResume'),'an opened mixed check offers Resume after a reload');
  $('ccResume').click();
  ok($('ccRestart')&&text(t).includes("can't be resumed"),'a lost sitting explains itself and offers the tutor restart');

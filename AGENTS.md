@@ -33,6 +33,7 @@ NODE_PATH=/tmp/j/node_modules node challenge/challenge-ui.test.js     # the chal
 NODE_PATH=/tmp/j/node_modules node challenge/structured-class.test.js # reasons, untimed transfer, reload, exit checks
 NODE_PATH=/tmp/j/node_modules node challenge/class-path.test.js     # ordered attempts, fresh gates, independent transfer
 NODE_PATH=/tmp/j/node_modules node challenge/cycle-class.test.js    # cycles route: model, checks, mixed check
+NODE_PATH=/tmp/j/node_modules node challenge/grammar-class.test.js   # grammar review gates, feedback and deadline integrity
 node challenge/route-outcomes.test.js                                # every taught rule is checked in both directions
 NODE_PATH=/tmp/j/node_modules node ratio-mix.test.js                 # custom practice in a ratio
 NODE_PATH=/tmp/j/node_modules node ruletype.test.js                  # Conventions tagged by rule
