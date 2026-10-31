@@ -38,6 +38,8 @@ async function setup(account,saved,standard=true){
  return {w,$,p,set,account,bank,reason,choose,answer,next,storage,close};
 }
 function text(t){return t.$('challengeScreen').textContent;}
+// A standard route may open with one retrieval question; the parts unlock after it.
+function openingFirst(t){if(t.p.opening&&t.$('ccOpening')){t.$('ccOpening').click();t.answer(t.p.opening);t.next();}}
 async function main(){
  let t=await setup();
  let w,$,p,set,account;
@@ -55,6 +57,7 @@ async function main(){
  ok(set.ids.every(id=>!prior.has(id)),'scored ids preserve earlier challenge denominators');
  // ── Gates before teaching ─────────────────────────────────────
  ok(!$('ccOff')&&!$('ccTimed'),'no mixed check before the first worked example');
+ if(p.opening){ok($('ccOpening')&&!$('ccCycle0'),'the opening question comes before part 1');openingFirst(t);}
  ok($('ccCycle0')&&!$('ccCycle1'),'part 2 waits for part 1');
  $('ccCycle0').click();
  ok($('ccOptions').style.display==='none'&&$('ccLock').style.display==='none','prediction precedes the choices');
@@ -98,7 +101,7 @@ async function main(){
  const done=t.storage();t.close();
  t=await setup(account,done);ok(!t.$('ccOff')&&!t.$('ccTimed'),'reload cannot replay the mixed check');t.close();
  // ── 0–1 of 3: repair, skip part 2, no clock ───────────────────
- t=await setup(account);({w,$,p}=t);$('ccCycle0').click();t.answer(p.cycles[0].model);t.next();
+ t=await setup(account);({w,$,p}=t);openingFirst(t);$('ccCycle0').click();t.answer(p.cycles[0].model);t.next();
  p.cycles[0].checks.forEach((q,i)=>{t.answer(q,i<2);t.next();});
  ok(text(t).includes('1 of 3 right')&&text(t).includes('repair this method'),'0–1 of 3 shows the stop-and-repair rule');
  ok($('ccSkip'),'the tutor can skip part 2 after a failed part 1');$('ccSkip').click();

@@ -2369,3 +2369,100 @@ window.CHALLENGE_SETS["Luke"].push({
     "transfer": ["fa821b89", "7d92fcc5", "e3ac81a5", "87b8696b", "cc0dcd9a", "11add1e8", "b88a40b6", "49c962ea", "d94990a0", "ebdb4c1d", "9d8d3faf", "b81aa0f6", "412eafc5"]
   }
 });
+
+// Faith, 24 Oct 2026: first class after the exam (Session Plan Standard, Standard variant).
+// Opening retrieval, two repair cycles on one habit (find the subject and its main verb):
+// Part 1 inside one sentence (verb form), Part 2 across the blank (sentence boundaries). Each cycle
+// declares both outcomes; the checks cover both. Mixed check of four; tutor runs it with the clock off (Standard variant).
+// Tutor rationale lives outside this repo.
+window.CHALLENGE_SETS["Faith"].push({
+  "setId": "faith-cycles-route-20261024",
+  "title": "Find the spine",
+  "source": "Class route",
+  "date": "2026-10-24",
+  "tileIntro": "One opening question, two short parts on subjects and main verbs, then a mixed check of four.",
+  "ids": ["c3a3b979", "4d47fc5f", "bacbde05", "3fdd09c7"],
+  "learningPath": {
+    "protectedTransfer": true,
+    "singleCredit": true,
+    "mixedSeconds": 300,
+    "intro": "Work with your tutor. One opening question, two short parts, then a mixed check. In each part you try the worked example first, then answer three questions on your own. On grammar questions, name the subject and its main verb before you choose.",
+    "order": "Opening question → Part 1: one sentence, one main verb → Part 2: one sentence or two across the blank? → mixed check of four → review → open your first homework set.",
+    "close": "Tell your tutor both checks in your own words, then open your first homework set together before you leave.",
+    "opening": {
+      "bankId": "8c4106fc",
+      "stage": "Opening question · notes closed",
+      "minReasonWords": 2,
+      "reasonPrompt": "Before the choices: what does the sentence after the blank do to the sentence before it?"
+    },
+    "cycles": [
+      {
+        "id": "A",
+        "title": "One sentence, one main verb",
+        "outcomes": [
+          { "label": "The main verb is already there, so the blank only describes", "ids": ["cb3c6dd5", "2fa22f76", "e1a31879", "b8a4eae1"] },
+          { "label": "No main verb yet, so the blank is the main verb", "ids": ["0173be83", "0bcf9a4d"] }
+        ],
+        "model": {
+          "bankId": "cb3c6dd5",
+          "stage": "From your last class: try it again",
+          "minReasonWords": 2,
+          "responseProfile": {
+            "title": "One sentence, one main verb",
+            "instructions": "With the choices in view: find the subject, then look for its main verb anywhere in the sentence, even far after the blank.",
+            "phase": "with-options",
+            "fields": [
+              { "id": "subject", "label": "Subject" },
+              { "id": "mainverb", "label": "Its main verb, already in the sentence (or write none)" },
+              { "id": "blank", "label": "So the blank is: the main verb, or only a description?" }
+            ]
+          },
+          "explanation": "Subject: a unique tradition of embroidery. Now look for its main verb anywhere in the sentence: remains (a tradition … remains popular). The main verb is already there, so the blank cannot be a second main verb. It only describes the tradition: dating back over two thousand years. That is C. A, B and D would give the sentence two main verbs with nothing joining them. The check has two outcomes, and you need both. If the main verb is already there, the blank describes (an -ing or to- form). If there is no main verb yet, the blank IS the main verb and must match its subject: last week's Goldin question was that second outcome (The trailblazing accomplishments … attest)."
+        },
+        "checks": [
+          { "bankId": "2fa22f76", "stage": "Verbs", "minReasonWords": 2, "reasonPrompt": "With the choices in view: name the subject and its main verb, or write none. Then say whether the blank is the main verb or only a description." },
+          { "bankId": "0173be83", "stage": "Verbs", "minReasonWords": 2, "reasonPrompt": "With the choices in view: name the subject and its main verb, or write none. Then say whether the blank is the main verb or only a description." },
+          { "bankId": "e1a31879", "stage": "Verbs", "minReasonWords": 2, "reasonPrompt": "With the choices in view: name the subject and its main verb, or write none. Then say whether the blank is the main verb or only a description." }
+        ],
+        "reserves": [
+          { "bankId": "0bcf9a4d", "stage": "A different example", "minReasonWords": 2, "reasonPrompt": "With the choices in view: name the subject and its main verb, or write none. Then say whether the blank is the main verb or only a description." },
+          { "bankId": "b8a4eae1", "stage": "A different example", "minReasonWords": 2, "reasonPrompt": "With the choices in view: name the subject and its main verb, or write none. Then say whether the blank is the main verb or only a description." }
+        ]
+      },
+      {
+        "id": "B",
+        "title": "One sentence or two across the blank?",
+        "outcomes": [
+          { "label": "Two subject and main verb pairs, so the blank needs a full stop or semicolon", "ids": ["a0ea5596", "7fae342d", "25273a8d", "3c238600"] },
+          { "label": "Only one subject and main verb pair, so a comma or no mark", "ids": ["26fa7d61", "18987e1b"] }
+        ],
+        "model": {
+          "bankId": "a0ea5596",
+          "stage": "From your last class: try it again",
+          "minReasonWords": 2,
+          "responseProfile": {
+            "title": "One sentence or two?",
+            "instructions": "With the choices in view: find each subject and its main verb on both sides of the blank. Count the pairs.",
+            "phase": "with-options",
+            "fields": [
+              { "id": "left", "label": "Before the blank: subject and main verb" },
+              { "id": "right", "label": "After the blank: subject and main verb (or write none)" },
+              { "id": "count", "label": "So: one sentence or two?" }
+            ]
+          },
+          "explanation": "Before the blank: Willard Wigan is known. That is a complete sentence. After the blank, the opening words (Creations so small that they are best viewed through a microscope) only describe; keep reading for the subject and main verb: Wigan's sculptures are made. That is a second complete sentence. Two subject and main verb pairs need a full stop (or semicolon) between them: microsculptures. Creations. That is C. A comma (B) would join two sentences with only a comma. The check has two outcomes, and you need both. If the words after the blank have no main verb of their own, they belong to the first sentence and take a comma or nothing: last week's Balanchine question was that outcome (modern dance, showcasing the stylistic diversity)."
+        },
+        "checks": [
+          { "bankId": "7fae342d", "stage": "Punctuation", "minReasonWords": 2, "reasonPrompt": "With the choices in view: name the subject and main verb on each side of the blank, or write none. One sentence or two?" },
+          { "bankId": "26fa7d61", "stage": "Punctuation", "minReasonWords": 2, "reasonPrompt": "With the choices in view: name the subject and main verb on each side of the blank, or write none. One sentence or two?" },
+          { "bankId": "25273a8d", "stage": "Punctuation", "minReasonWords": 2, "reasonPrompt": "With the choices in view: name the subject and main verb on each side of the blank, or write none. One sentence or two?" }
+        ],
+        "reserves": [
+          { "bankId": "18987e1b", "stage": "A different example", "minReasonWords": 2, "reasonPrompt": "With the choices in view: name the subject and main verb on each side of the blank, or write none. One sentence or two?" },
+          { "bankId": "3c238600", "stage": "A different example", "minReasonWords": 2, "reasonPrompt": "With the choices in view: name the subject and main verb on each side of the blank, or write none. One sentence or two?" }
+        ]
+      }
+    ],
+    "transfer": ["c3a3b979", "4d47fc5f", "bacbde05", "3fdd09c7"]
+  }
+});

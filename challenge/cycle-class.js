@@ -187,6 +187,7 @@
       results(c,i);
     }
     function feedback(q,block,i) {
+      if(window.ClassReview)return ClassReview.render(q,{number:i+1,chosen:block.answers[i],note:(block.reasons||[])[i],conditions:'Help: '+((block.help||[])[i]||'unrecorded')});
       var help=(block.help&&block.help[i])||'unrecorded',recognised=!!(block.recognised&&block.recognised[i]);
       return '<div class="cexpl"><b>'+esc(q.stage||q.skill)+' — '+(block.answers[i]===q.answerIndex?'right':'not yet')+'</b><p>Your method notes: '+esc(block.reasons[i])+'</p><p>Your choice: '+esc(q.options[block.answers[i]])+'</p><p>Conditions: help '+esc(help)+(recognised?' · recognised':' · not recognised')+'</p><p>'+esc(q.explanation)+'</p></div>';
     }

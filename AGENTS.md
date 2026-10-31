@@ -34,6 +34,7 @@ NODE_PATH=/tmp/j/node_modules node challenge/structured-class.test.js # reasons,
 NODE_PATH=/tmp/j/node_modules node challenge/class-path.test.js     # ordered attempts, fresh gates, independent transfer
 NODE_PATH=/tmp/j/node_modules node challenge/cycle-class.test.js    # cycles route: model, checks, mixed check
 NODE_PATH=/tmp/j/node_modules node challenge/grammar-class.test.js   # grammar review gates, feedback and deadline integrity
+NODE_PATH=/tmp/j/node_modules node challenge/class-review.test.js   # complete review cards and 90-second check integrity
 node challenge/route-outcomes.test.js                                # every taught rule is checked in both directions
 NODE_PATH=/tmp/j/node_modules node ratio-mix.test.js                 # custom practice in a ratio
 NODE_PATH=/tmp/j/node_modules node ruletype.test.js                  # Conventions tagged by rule
@@ -481,3 +482,11 @@ which is how tests stub them.
 ## Method-specific responses
 
 Read the parent house `Method_Response_Standard.md` for every class/homework plan. `strategy-response.js` requests the deciding information for the actual skill and grammar rule, with question/day overrides. `homework/METHOD-RESPONSES.md` documents profiles and option-visibility phases. The default is a written method response before choices in untimed work; `phase: "with-options"` is an explicit exception when the method requires inspecting alternatives. Required fields check completeness only, and the selected answer remains the score. Timed homework keeps brief method cues and the existing one-click gate, with paper notes when the plan needs written evidence. First answers and original notes stay fixed. Labelled responses use the existing Prediction field; no new Apps Script column is required. Run `strategy-response.test.js` with jsdom and the prescribed app suites.
+
+## Class review and the guided grammar route - 30 October 2026
+
+`challenge/class-review.js` renders complete numbered question cards across the class-route engines: original passage, figures/tables, stem, all choices, first response, then a separate explanation panel. Load it before the route scripts in index.html. Passing `note:false` omits the typed-note line.
+
+`challenge/grammar-class.js` is one guided path. Home lists the steps in order (warm-up, each section, mixed check) with a single Start/Continue button; any step can still be opened. A section runs lesson and cue, then worked example, then the independent check, then an optional untimed similar question when a check is missed. Checks, the warm-up and the mixed check work like the real test: Previous/Next and numbered buttons move freely, answers can be changed, and nothing is marked until Submit (a second press confirms if any are blank). `firstPick` keeps the first choice on each question and is logged when it was changed. Worked examples and similar questions explain each answer after Check and can be paged back and forward. The student screen has no notes box, recognition or help fields, approvals or timing choices: reasoning is said aloud or jotted on paper. Optional route fields: `cue` (one line shown above every question), `card` (rows of [each side, punctuation] shown on home), per-family `cue`, and `mixedTimed` (default true when `seconds` is set).
+
+Independent checks get one shared clock of `learningPath.checkSeconds` (default 90) per question. The deadline survives reload. When it passes, the choices stay selectable; an answer changed after the limit is saved with `expiredItems[i]=true`, and the selections at the limit are kept in `atDeadline`. The mixed check keeps its whole-block deadline and submits the chosen answers at expiry. Same-day work never awards mastery credit.

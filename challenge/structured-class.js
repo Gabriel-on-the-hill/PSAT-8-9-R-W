@@ -71,6 +71,7 @@
       if(ctx.transfer(transfer,timed?420:0)){s.transferStarted=true;s.clock=timed?'countdown':'off';save(ctx,s);}
     }
     function feedback(q,block,i) {
+      if(window.ClassReview)return ClassReview.render(q,{number:i+1,chosen:block.answers[i],note:(block.reasons||[])[i],conditions:'Help: '+((block.help||[])[i]||'unrecorded')});
       return '<div class="cexpl"><b>'+esc(q.stage||q.skill)+' — '+(block.answers[i]===q.answerIndex?'correct':'review')+'</b><p>Your prediction: '+esc(block.reasons[i])+'</p><p>Your choice: '+esc(q.options[block.answers[i]])+'</p><p>'+esc(q.explanation)+'</p></div>';
     }
     function results(qs,block,label) {
