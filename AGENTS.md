@@ -19,6 +19,7 @@ count of the three suites that existed when it was written.
 ```
 npm install jsdom --prefix /tmp/j
 NODE_PATH=/tmp/j/node_modules node homework/homework-run.test.js      # the learning loop
+NODE_PATH=/tmp/j/node_modules node hub/hub-runner.test.js             # the runner as EduTrack Hub serves it
 NODE_PATH=/tmp/j/node_modules node homework/assignments.test.js       # the plans are sane
 node exposure.test.js                                                # met elsewhere is not unseen
 NODE_PATH=/tmp/j/node_modules node homework/selection.test.js        # exact slots, imports, reserves and sitting integrity
@@ -75,6 +76,20 @@ hung.
 **`SKIP` is not a pass, and it looks like one.** Without jsdom every suite above prints
 `SKIP` and exits 0. On 17 Jul 2026 all five had been skipping while a doc asserted they
 were green. Check the last line says `ALL n ASSERTIONS PASSED`.
+
+
+## Served by EduTrack Hub
+
+EduTrack Hub (the learning platform) serves a copy of `homework-run.html`, with `strategy-response.js`
+and `eliminator.js`, for homework set in the Hub. The copy loads no bank, gate, plan or sheet script:
+identity, questions, marking and saving come from `hub/hub-client.js` and `hub/hub-runner.js`, which are
+copied from the Hub (`public/apps/` there). Do not edit them here.
+
+`hub/hub-patches.js` lists every change the Hub makes to the runner. `hub/hub-runner.test.js` applies
+those changes to THIS runner and drives it against a fake Hub, using this repo's bank as fixtures only.
+If you change a line a patch anchors on, that test fails: the Hub's `scripts/vendor-runners.mjs` and
+this file must change together, and the Hub copies the runner again. Nothing in `hub/` is loaded by
+this app's own pages.
 
 ## Every page has a password, and one login at a time
 
