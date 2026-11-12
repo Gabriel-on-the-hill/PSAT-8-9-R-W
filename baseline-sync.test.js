@@ -73,6 +73,11 @@ function waitFor(fn, ms) {
 
 (async function run() {
     await waitFor(() => ev('typeof questionBank !== "undefined" && questionBank.length') > 400);
+    // gate.js mounts its password overlay on DOMContentLoaded. The bank above is
+    // inlined, so it is ready the moment parsing ends, before that event has been
+    // dispatched; checking for the overlay then raced it and failed although a
+    // real browser shows the gate. Wait for the page to finish loading first.
+    await waitFor(() => win.document.readyState === 'complete');
 
     t('the page loads sheet-sync.js at all', () => {
         ok(inlined.includes('sheet-sync.js'),
